@@ -11,6 +11,13 @@ on:
         required: true
         default: '1.13.43'
 
+# https://docs.github.com/zh/actions/using-jobs/assigning-permissions-to-jobs
+permissions: write-all
+# permissions:
+#   pull-requests: write
+#   contents: write
+#   repository-projects: write
+
 env:
   APP_NAME: pxt-arcade-app
 
