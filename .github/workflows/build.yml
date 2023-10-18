@@ -60,9 +60,22 @@ jobs:
         with:
           node-version: 18.x
           cache: 'npm'
+      - name: 'Initialization'
+        run: |
+          sudo apt-get install xvfb
+          sudo npm install -g pxt
+          npm install
+        working-directory: pxt-arcade
+      - name: 'Patching...'
+        run: |
+          # to fix https://github.com/microsoft/pxt-arcade/issues/5751
+          # see allFiles in pxt-arcade/node_modules/pxt-core/built/nodeutil.js 
+          # fs.readdirSync(top) try to readdir of `public` in the root of pxt-arcade
+          # The fix could just make an empty `public` dir or config allowMissing: true
+          mkdir public 
+        working-directory: pxt-arcade
       - name: 'Building pxt-arcade'
         run: |
-          npm install
           node node_modules/pxt-core/built/pxt.js staticpkg
         working-directory: pxt-arcade
       - name: Prepare build files achive
