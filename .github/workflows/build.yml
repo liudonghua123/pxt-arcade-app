@@ -80,7 +80,7 @@ jobs:
         working-directory: pxt-arcade
       - name: Prepare build files achive
         run: |
-          ll ./pxt-arcade/built/packaged/
+          ls -lR ./pxt-arcade/built/
           7z a -tzip ${{env.APP_NAME}}-${{ github.event.inputs.tag_version }}.zip -r ./pxt-arcade/built/packaged/*
       - uses: actions/upload-artifact@v2
         with:
