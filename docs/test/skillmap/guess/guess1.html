@@ -1,0 +1,1052 @@
+<!DOCTYPE html>
+<html lang="" xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#"
+	xmlns:fb="http://www.facebook.com/2008/fbml">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Microsoft MakeCode Arcade</title>
+	<meta name="Description" content="Develop your programming skills by quickly creating and modding retro arcade games with Blocks and JavaScript in the MakeCode editor" />
+
+	<!-- ifdef incontexttranslations endif -->
+	
+<!-- include meta.html -->
+<!-- This file is typically overriden by the target, with own Twitter
+     account etc. Most data is taken from the theme file though.  
+  -->
+
+<!-- include robotsmeta.html -->
+
+<!-- end include robotsmeta.html -->
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@msmakecode" />
+<meta name="twitter:title" content="Microsoft MakeCode Arcade" />
+<meta name="twitter:description" content="Develop your programming skills by quickly creating and modding retro arcade games with Blocks and JavaScript in the MakeCode editor" />
+<meta name="twitter:image" content="/static/skillmap/puzzle/puzzle-activity-1.gif" />
+
+<meta property="og:title" content="Microsoft MakeCode Arcade" />
+<meta property="og:site_name" content="Microsoft MakeCode" />
+<meta property="og:type" content="website" />
+<meta property="og:description" content="Develop your programming skills by quickly creating and modding retro arcade games with Blocks and JavaScript in the MakeCode editor" />
+<meta property="fb:app_id" content="" />
+<meta property="og:image" content="/static/skillmap/puzzle/puzzle-activity-1.gif" />
+
+<meta name="format-detection" content="telephone=no">
+<link rel="apple-touch-icon" href="docs/static/icons/favicon.ico">
+<link rel="icon" type="image/png" href="docs/static/icons/favicon.ico">
+<link rel="shortcut icon" href="docs/static/icons/favicon.ico">
+<meta name="theme-color" content="">
+
+<!-- end include meta.html -->
+
+	
+<!-- include head.html -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width,height=device-height,user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
+
+<link rel="stylesheet" data-rtl="/blb/rtlsemantic.css" href="/pxt-arcade-app/semantic.css" />
+<link id="blocklycss"  data-rtl="/blb/rtlblockly.css" rel="stylesheet" href="/pxt-arcade-app/blockly.css" />
+<link rel="stylesheet" href="/pxt-arcade-app/docfiles/style.css" />
+<link rel="stylesheet" href="/pxt-arcade-app/docfiles/vs.css" />
+<link rel="stylesheet" href="/pxt-arcade-app/docfiles/target.css" />
+
+<script src="/pxt-arcade-app/jquery.js" type="text/javascript"></script>
+<script src="/pxt-arcade-app/semantic.js" type="text/javascript"></script>
+<script src="/pxt-arcade-app/docfiles/target.js" type="text/javascript"></script>
+<script src="/pxt-arcade-app/embed.js" type="text/javascript"></script>
+<script src="/pxt-arcade-app/docfiles/docs.js" type="text/javascript"></script>
+
+<style>
+    
+</style>
+
+<!-- end include head.html -->
+
+
+</head>
+
+<body id='root' class='root'>
+	<div id="accessibleMenu" class="ui accessibleMenu borderless fixed menu docs" role="menubar">
+		
+            <a href="#maincontent" class="ui item link" tabindex="0" role="menuitem">Skip to main content</a>
+        
+	</div>
+
+	
+<!-- include tocheader.html -->
+<div id="top-bar" class="ui fixed accent borderless inverted main menu hideprint docs" role="menubar">
+    <div>
+        
+            <a id="togglesidebar" class="launch icon item" tabindex="0" title="Side menu" aria-label="Side menu" role="menuitem" aria-expanded="false">
+                <i class="content icon"></i>
+            </a>
+        
+        <div class="item" role="menuitem">
+            <div class="header-org-logo">
+                <img src="/static/logo/Microsoft_logo_rgb_W-white_D.png" alt="Microsoft">
+            </div>
+            <div class="header-org-logo-sm">
+                <img src="/static/logo/Microsoft_logo_rgb_W-white_D-square.png" alt="Microsoft">
+            </div>
+            <div class="header-title"><span>MakeCode</span></div>
+        </div>
+    </div>
+    <div>
+        <div class="item">
+            <form id="tocsearch1" class="search" role="form" method="get" action="https://www.bing.com/search">
+                <div class="ui fluid icon input">
+                    <input type="hidden" name="q1" value="site:https://arcade.makecode.com/" />
+                    
+                <input type="search" name="q" placeholder="Search..." aria-label="Search Documentation">
+                <i onclick="document.getElementById('tocsearch1').submit();" tabindex="0" class="search link icon" aria-label="Search" role="button"></i>
+            
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div id="side-menu" class="ui vertical accent inverted sidebar menu left hideprint docs" role="menubar">
+    <!-- TOC Menu (tocheader.html) -->
+    <div class="menuContainer" role="menu">
+        
+    <a class="item " href="/pxt-arcade-app/docs/about.html" role="menuitem">About</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/faq.html" role="menuitem">FAQ</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/projects.html" role="menuitem">Projects</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/github.html" role="menuitem">GitHub</a>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/pxt-arcade-app/docs/reference.html">Reference</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-arcade-app/docs/reference/sprites.html" role="menuitem">sprites</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/reference/controller.html" role="menuitem">controller</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/reference/game.html" role="menuitem">game</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/reference/music.html" role="menuitem">music</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/reference/scene.html" role="menuitem">scene</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/reference/info.html" role="menuitem">info</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/reference/images.html" role="menuitem">images</a>
+
+        </div>
+    </div>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/pxt-arcade-app/docs/blocks.html">Blocks</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-arcade-app/docs/blocks/on-start.html" role="menuitem">On Start</a>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/pxt-arcade-app/docs/blocks/loops.html">Loops</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-arcade-app/docs/blocks/loops/repeat.html" role="menuitem">repeat</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/blocks/loops/for.html" role="menuitem">for</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/blocks/loops/while.html" role="menuitem">while</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/blocks/loops/for-of.html" role="menuitem">for of</a>
+
+        </div>
+    </div>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/pxt-arcade-app/docs/blocks/logic.html">Logic</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-arcade-app/docs/blocks/logic/if.html" role="menuitem">if</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/blocks/logic/boolean.html" role="menuitem">Boolean</a>
+
+        </div>
+    </div>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/pxt-arcade-app/docs/blocks/variables.html">Variables</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-arcade-app/docs/blocks/variables/assign.html" role="menuitem">assign</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/blocks/variables/change.html" role="menuitem">change var</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/blocks/variables/var.html" role="menuitem">var</a>
+
+        </div>
+    </div>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/blocks/math.html" role="menuitem">Math</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/blocks/javascript-blocks.html" role="menuitem">JavaScript blocks</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/blocks/custom.html" role="menuitem">Custom blocks</a>
+
+        </div>
+    </div>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/pxt-arcade-app/docs/python.html">Python</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-arcade-app/docs/python/call.html" role="menuitem">Calling</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/python/sequence.html" role="menuitem">Sequencing</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/python/variables.html" role="menuitem">Variables</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/python/operators.html" role="menuitem">Operators</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/python/statements.html" role="menuitem">Statements</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/python/functions.html" role="menuitem">Functions</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/python/classes.html" role="menuitem">Classes</a>
+
+        </div>
+    </div>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/pxt-arcade-app/docs/javascript.html">JavaScript</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-arcade-app/docs/javascript/call.html" role="menuitem">Calling</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/javascript/sequence.html" role="menuitem">Sequencing</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/javascript/variables.html" role="menuitem">Variables</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/javascript/operators.html" role="menuitem">Operators</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/javascript/statements.html" role="menuitem">Statements</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/javascript/functions.html" role="menuitem">Functions</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/javascript/types.html" role="menuitem">Types</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/javascript/classes.html" role="menuitem">Classes</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/javascript/interfaces.html" role="menuitem">Interfaces</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/javascript/generics.html" role="menuitem">Generics</a>
+
+        </div>
+    </div>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/pxt-arcade-app/docs/types.html">Types</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-arcade-app/docs/types/number.html" role="menuitem">Number</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/types/string.html" role="menuitem">String</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/types/boolean.html" role="menuitem">Boolean</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/types/array.html" role="menuitem">Array</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/types/function.html" role="menuitem">Function</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/types/image.html" role="menuitem">Image</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/types/sprite.html" role="menuitem">Sprite</a>
+
+        </div>
+    </div>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/block-gallery.html" role="menuitem">Blocks Gallery</a>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="">Miscellaneous</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-arcade-app/docs/about.html" role="menuitem">About</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/support.html" role="menuitem">Support</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/translate.html" role="menuitem">Translate</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/share.html" role="menuitem">Sharing projects</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/multiplayer.html" role="menuitem">Multiplayer</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/offline.html" role="menuitem">Offline support</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/save.html" role="menuitem">Save</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/identity/sign-in.html" role="menuitem">Sign In</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/identity/cloud-sync.html" role="menuitem">Cloud Sync</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/vscode.html" role="menuitem">VS Code</a>
+
+        </div>
+    </div>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/pxt-arcade-app/docs/hardware.html">Hardware</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-arcade-app/docs/hardware/errors.html" role="menuitem">Errors</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/hardware/adding.html" role="menuitem">Adding New Board</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/hardware/raspberry-pi.html" role="menuitem">Raspberry Pi</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/hardware/makey-makey.html" role="menuitem">Makey Makey</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/hardware/shoebox-controller.html" role="menuitem">Shoebox Controller</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/hardware/dev.html" role="menuitem">Dev</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/hardware/dbg.html" role="menuitem">Debug connector</a>
+
+        </div>
+    </div>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="">Developers</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-arcade-app/docs/cli.html" role="menuitem">Command Line Interface</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/code.html" role="menuitem">Visual Studio Code support</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/blocks-embed.html" role="menuitem">Blocks Embed</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/developer/images.html" role="menuitem">Art, images, colors</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/developer/sound.html" role="menuitem">Sounds</a>
+
+        </div>
+    </div>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/pxt-arcade-app/docs/lessons.html">Lessons</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-arcade-app/docs/lessons/cherry-pickr.html" role="menuitem">Cherry Pickr</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/lessons/barrel-dodger.html" role="menuitem">Barrel Dodger</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/lessons/dance-party.html" role="menuitem">Dance Party</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/lessons/block-out.html" role="menuitem">BlockOut</a>
+
+        </div>
+    </div>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/pxt-arcade-app/docs/courses.html">Courses</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-arcade-app/docs/courses/csintro1.html" role="menuitem">CS Intro 1</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/courses/csintro2.html" role="menuitem">CS Intro 2</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/courses/csintro3.html" role="menuitem">CS Intro 3</a>
+
+        </div>
+    </div>
+
+    </div>
+</div>
+<!-- end include tocheader.html -->
+
+
+	<div id="docs" class="pusher">
+
+		<div class="article" id="maincontent">
+			<div class="article-inner">
+
+				
+<!-- include header.html -->
+<div class="ui one column padded grid hideprint">
+    <div class="column ui container">
+        
+    </div>
+</div>
+<!-- end include header.html -->
+
+
+				<div class="main ui container fluid mainbody">
+					<button id="printbtn" class="circular ui icon right floated button hideprint hidemobile"
+						title="Print" aria-label="Print">
+						<i class="icon print"></i>
+					</button>
+					
+    <div class="ui text">
+        <h1 id="quick-puzzle">Quick Puzzle</h1><!-- autoexpandOff --><pre><code class="lang-assetjson">{
+  &quot;README.md&quot;: &quot; &quot;,
+  &quot;assets.json&quot;: &quot;&quot;,
+  &quot;images.g.jres&quot;: &quot;{\n    \&quot;image3\&quot;: {\n        \&quot;data\&quot;: \&quot;hwQYABgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADgAAAAAAAAAAQEREDgAAAEBERAAARETkAABARNTd3URAREQEAFAARO3u7k1E1N1ERFQA1O4R4d7U3d1NRFQA1B4REd7U3t3eRFQA1B4RH97d7d3dRFQA1B4REd7d3t3dRE0A1O4RUd7d3e3d1E0ARO3uXtXd3d3eRE0A1O4RUd7d3e3d1E0A1B4REd7d3t3dRE0A1B4RH97d7d3dRFQA1B4REd7U3t3eRFQA1O4R4d7U3d1NRFQARO3u7k1E1N1ERFRARNTd3QRAREQEAFAAAEBERAAARETkAAAAAAAAAAAAQEREDgAAAAAAAAAAAAAADgAAAAAAAAAAAAAAAAA=\&quot;,\n        \&quot;mimeType\&quot;: \&quot;image/x-mkcd-f4\&quot;,\n        \&quot;displayName\&quot;: \&quot;owl\&quot;\n    },\n    \&quot;image4\&quot;: {\n        \&quot;data\&quot;: \&quot;hwQYABgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAaAYAAAAAAAAAAABgZgYAAAAAAAAAAABmZgYAAAAAAAAAAGZmhggAAAAAAAAAZohmhgAAMCLuAAZgZmhmhgAAIiLiDoZmVmVmhgAAICIW7u7u7uXu7g4AAIBWEYFmZmZmZgAAZob2ERERZmZmZgBgaIZWQRERYWZmhgBgZob2ERERaGZmhgBgBoBWEWFmZmhmhgCAZgAWAQBmZlVmhgAAAAAGAQAAZgUAiAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=\&quot;,\n        \&quot;mimeType\&quot;: \&quot;image/x-mkcd-f4\&quot;,\n        \&quot;displayName\&quot;: \&quot;wizard\&quot;\n    },\n    \&quot;image1\&quot;: {\n        \&quot;data\&quot;: \&quot;hwQYABgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADgAAAACQmZkAAADg7gAAAJCZmZaZAADu7gAAAJmZmZlpme7u7gAAkJmRmZmZme7u7gAAkBGZmZmZmenu7gAAmZGZlZmTmenu7gAAGZGZmZmZmZbu7gCQGZmZmZmZmZnu7gCQmZmZmZmZmZnu7gCQmTmZmZlZiZnu7gCQmZmZmZmZiZnu7gCQmZmZmZmZmJnu7gCQmZmZmZmZmZbu7gAAmZmZmZOZmenu7gAAmZmZmZmZkenu7gAAkFmZmZmZme7u7gAAAJmZmZmZme7u7gAAAJCZmZmJAADu7gAAAACQiYkAAADg7gAAAAAAAAAAAAAADgAAAAAAAAAAAAAAAAA=\&quot;,\n        \&quot;mimeType\&quot;: \&quot;image/x-mkcd-f4\&quot;,\n        \&quot;displayName\&quot;: \&quot;crystal ball\&quot;\n    },\n    \&quot;*\&quot;: {\n        \&quot;mimeType\&quot;: \&quot;image/x-mkcd-f4\&quot;,\n        \&quot;dataEncoding\&quot;: \&quot;base64\&quot;,\n        \&quot;namespace\&quot;: \&quot;myImages\&quot;\n    }\n}&quot;,
+  &quot;images.g.ts&quot;: &quot;// Auto-generated code. Do not edit.\nnamespace myImages {\n\n    helpers._registerFactory(\&quot;image\&quot;, function(name: string) {\n        switch(helpers.stringTrim(name)) {\n            case \&quot;image3\&quot;:\n            case \&quot;owl\&quot;:return img`\n........................\n.....4.............4....\n.....444444444444444....\n.....44ddddd4ddddd44....\n.....4deeeeedeeeeed4....\n....4dee111eee111eed4...\n....4de11111e11111ed4...\n....4de11111e11111ed4...\n....4de11f11e11f11ed4...\n....4dee111555111eed4...\n.....4deeeee5eeeeed4....\n.....44ddddddddddd4.....\n......444ddddddd444.....\n.....44ddddddddddd44....\n....444dededddeded444...\n...444dddedddddeddd444..\n...444ddddddddddddd444..\n...444dddddededdddd444..\n...4444dedddeddded4444..\n...4e.44ddddddddd44.e4..\n..ee..4444444444444..ee.\n......44444d4d44444.....\n......4444ddddd4444.....\n.....555554444455555....\n`;\n            case \&quot;image4\&quot;:\n            case \&quot;wizard\&quot;:return img`\n........................\n.............6668.......\n.........2..68666.......\n........322.666.6.......\n........222.666.........\n........22288888........\n........e266666666......\n........ee15f5f51.......\n.........ee1111111......\n..........e11411........\n........66e11111........\n.........8e81116........\n.........6e611166.......\n........66e611166.......\n.......666e6618666......\n.......665e6666666......\n......688556666855......\n......6866e666665.......\n.....66666e666666.......\n....666666e666666.......\n...8666666e6666668......\n...6668888e6688888......\n...6668...e.............\n........................\n`;\n            case \&quot;image1\&quot;:\n            case \&quot;crystal ball\&quot;:return img`\n........................\n..........999999........\n........9999999999......\n......9991199999999.....\n.....991119999999999....\n....99919999399999599...\n....99199999999999999...\n...9999999999999999999..\n...9999959999999999999..\n...9999999999999999998..\n...9699999999999399999..\n...9999999999999999998..\n....99993999999999999...\n....96999999599999998...\n.....999999999899199....\n.....999999988999999....\n.....ee99699999699ee....\n.....eeee9999999eeee....\n....eeeeeeeeeeeeeeeee...\n...eeeeeeeeeeeeeeeeeee..\n..eeeeeeeeeeeeeeeeeeeee.\n...eeeeeeeeeeeeeeeeeee..\n........................\n........................\n`;\n        }\n        return null;\n    })\n\n    helpers._registerFactory(\&quot;animation\&quot;, function(name: string) {\n        switch(helpers.stringTrim(name)) {\n\n        }\n        return null;\n    })\n\n}\n// Auto-generated code. Do not edit.\n&quot;,
+  &quot;main.blocks&quot;: &quot;&lt;xml xmlns=\&quot;https://developers.google.com/blockly/xml\&quot;&gt;&lt;variables&gt;&lt;variable id=\&quot;Y`Xd;wY].HLCaU$6zwhl\&quot;&gt;mySprite&lt;/variable&gt;&lt;variable id=\&quot;IaBT:Q~V:3~4}Qn@%y`o\&quot;&gt;myNumber&lt;/variable&gt;&lt;variable id=\&quot;(wkNDj+((0G_1G-Luc]l\&quot;&gt;yourGuess&lt;/variable&gt;&lt;variable type=\&quot;KIND_SpriteKind\&quot; id=\&quot;W_wan:$}!Nj0QqwUqja:\&quot;&gt;Player&lt;/variable&gt;&lt;variable type=\&quot;KIND_SpriteKind\&quot; id=\&quot;G-mRz-3DuB]y7W9fBsv2\&quot;&gt;Projectile&lt;/variable&gt;&lt;variable type=\&quot;KIND_SpriteKind\&quot; id=\&quot;ODj/^{PRrXS%c0Yx(YML\&quot;&gt;Food&lt;/variable&gt;&lt;variable type=\&quot;KIND_SpriteKind\&quot; id=\&quot;57lh:+HwQGo|?BEod0=A\&quot;&gt;Enemy&lt;/variable&gt;&lt;/variables&gt;&lt;block type=\&quot;pxt-on-start\&quot; x=\&quot;0\&quot; y=\&quot;0\&quot;&gt;&lt;statement name=\&quot;HANDLER\&quot;&gt;&lt;block type=\&quot;variables_set\&quot;&gt;&lt;field name=\&quot;VAR\&quot; id=\&quot;Y`Xd;wY].HLCaU$6zwhl\&quot;&gt;mySprite&lt;/field&gt;&lt;value name=\&quot;VALUE\&quot;&gt;&lt;shadow type=\&quot;math_number\&quot;&gt;&lt;field name=\&quot;NUM\&quot;&gt;0&lt;/field&gt;&lt;/shadow&gt;&lt;block type=\&quot;spritescreate\&quot;&gt;&lt;value name=\&quot;img\&quot;&gt;&lt;shadow type=\&quot;screen_image_picker\&quot;&gt;&lt;field name=\&quot;img\&quot;&gt;assets.image`crystal ball`&lt;/field&gt;&lt;data&gt;{\&quot;commentRefs\&quot;:[],\&quot;fieldData\&quot;:{\&quot;img\&quot;:\&quot;myImages.image1\&quot;}}&lt;/data&gt;&lt;/shadow&gt;&lt;/value&gt;&lt;value name=\&quot;kind\&quot;&gt;&lt;shadow type=\&quot;spritekind\&quot;&gt;&lt;field name=\&quot;MEMBER\&quot;&gt;Player&lt;/field&gt;&lt;/shadow&gt;&lt;/value&gt;&lt;/block&gt;&lt;/value&gt;&lt;next&gt;&lt;block type=\&quot;variables_set\&quot;&gt;&lt;field name=\&quot;VAR\&quot; id=\&quot;IaBT:Q~V:3~4}Qn@%y`o\&quot;&gt;myNumber&lt;/field&gt;&lt;value name=\&quot;VALUE\&quot;&gt;&lt;shadow type=\&quot;math_number\&quot;&gt;&lt;field name=\&quot;NUM\&quot;&gt;0&lt;/field&gt;&lt;/shadow&gt;&lt;block type=\&quot;device_random\&quot;&gt;&lt;value name=\&quot;min\&quot;&gt;&lt;shadow type=\&quot;math_number\&quot;&gt;&lt;field name=\&quot;NUM\&quot;&gt;1&lt;/field&gt;&lt;/shadow&gt;&lt;/value&gt;&lt;value name=\&quot;limit\&quot;&gt;&lt;shadow type=\&quot;math_number\&quot;&gt;&lt;field name=\&quot;NUM\&quot;&gt;9&lt;/field&gt;&lt;/shadow&gt;&lt;/value&gt;&lt;/block&gt;&lt;/value&gt;&lt;next&gt;&lt;block type=\&quot;game_show_long_text\&quot;&gt;&lt;field name=\&quot;layout\&quot;&gt;DialogLayout.Bottom&lt;/field&gt;&lt;value name=\&quot;str\&quot;&gt;&lt;shadow type=\&quot;text\&quot;&gt;&lt;field name=\&quot;TEXT\&quot;&gt;I&#39;m thinking of a number between 1 and 9. Can you guess it?&lt;/field&gt;&lt;/shadow&gt;&lt;/value&gt;&lt;next&gt;&lt;block type=\&quot;variables_set\&quot;&gt;&lt;field name=\&quot;VAR\&quot; id=\&quot;(wkNDj+((0G_1G-Luc]l\&quot;&gt;yourGuess&lt;/field&gt;&lt;value name=\&quot;VALUE\&quot;&gt;&lt;shadow type=\&quot;math_number\&quot;&gt;&lt;field name=\&quot;NUM\&quot;&gt;0&lt;/field&gt;&lt;/shadow&gt;&lt;block type=\&quot;gameaskfornumber\&quot;&gt;&lt;mutation xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot; _expanded=\&quot;1\&quot; _input_init=\&quot;true\&quot;&gt;&lt;/mutation&gt;&lt;value name=\&quot;message\&quot;&gt;&lt;shadow type=\&quot;text\&quot;&gt;&lt;field name=\&quot;TEXT\&quot;&gt;Enter a number between 1 and 9&lt;/field&gt;&lt;/shadow&gt;&lt;/value&gt;&lt;value name=\&quot;answerLength\&quot;&gt;&lt;shadow type=\&quot;math_number_minmax\&quot;&gt;&lt;mutation min=\&quot;1\&quot; max=\&quot;10\&quot; label=\&quot;Number\&quot; precision=\&quot;0\&quot;/&gt;&lt;field name=\&quot;SLIDER\&quot;&gt;1&lt;/field&gt;&lt;/shadow&gt;&lt;/value&gt;&lt;/block&gt;&lt;/value&gt;&lt;next&gt;&lt;block type=\&quot;controls_if\&quot;&gt;&lt;mutation else=\&quot;1\&quot;/&gt;&lt;value name=\&quot;IF0\&quot;&gt;&lt;shadow type=\&quot;logic_boolean\&quot;&gt;&lt;field name=\&quot;BOOL\&quot;&gt;TRUE&lt;/field&gt;&lt;/shadow&gt;&lt;block type=\&quot;logic_compare\&quot;&gt;&lt;field name=\&quot;OP\&quot;&gt;EQ&lt;/field&gt;&lt;value name=\&quot;A\&quot;&gt;&lt;shadow type=\&quot;math_number\&quot;&gt;&lt;field name=\&quot;NUM\&quot;&gt;0&lt;/field&gt;&lt;/shadow&gt;&lt;block type=\&quot;variables_get\&quot;&gt;&lt;field name=\&quot;VAR\&quot; id=\&quot;(wkNDj+((0G_1G-Luc]l\&quot;&gt;yourGuess&lt;/field&gt;&lt;/block&gt;&lt;/value&gt;&lt;value name=\&quot;B\&quot;&gt;&lt;shadow type=\&quot;math_number\&quot;&gt;&lt;field name=\&quot;NUM\&quot;&gt;0&lt;/field&gt;&lt;/shadow&gt;&lt;block type=\&quot;variables_get\&quot;&gt;&lt;field name=\&quot;VAR\&quot; id=\&quot;IaBT:Q~V:3~4}Qn@%y`o\&quot;&gt;myNumber&lt;/field&gt;&lt;/block&gt;&lt;/value&gt;&lt;/block&gt;&lt;/value&gt;&lt;statement name=\&quot;DO0\&quot;&gt;&lt;block type=\&quot;spritesay\&quot;&gt;&lt;mutation xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot; _expanded=\&quot;0\&quot; _input_init=\&quot;false\&quot;&gt;&lt;/mutation&gt;&lt;value name=\&quot;sprite\&quot;&gt;&lt;block type=\&quot;variables_get\&quot;&gt;&lt;field name=\&quot;VAR\&quot; id=\&quot;Y`Xd;wY].HLCaU$6zwhl\&quot;&gt;mySprite&lt;/field&gt;&lt;/block&gt;&lt;/value&gt;&lt;value name=\&quot;text\&quot;&gt;&lt;shadow type=\&quot;text\&quot;&gt;&lt;field name=\&quot;TEXT\&quot;/&gt;&lt;/shadow&gt;&lt;block type=\&quot;text_join\&quot;&gt;&lt;mutation items=\&quot;3\&quot;/&gt;&lt;value name=\&quot;ADD0\&quot;&gt;&lt;shadow type=\&quot;text\&quot;&gt;&lt;field name=\&quot;TEXT\&quot;&gt;Yes! It was &lt;/field&gt;&lt;/shadow&gt;&lt;/value&gt;&lt;value name=\&quot;ADD1\&quot;&gt;&lt;shadow type=\&quot;text\&quot;&gt;&lt;field name=\&quot;TEXT\&quot;/&gt;&lt;/shadow&gt;&lt;block type=\&quot;variables_get\&quot;&gt;&lt;field name=\&quot;VAR\&quot; id=\&quot;(wkNDj+((0G_1G-Luc]l\&quot;&gt;yourGuess&lt;/field&gt;&lt;/block&gt;&lt;/value&gt;&lt;value name=\&quot;ADD2\&quot;&gt;&lt;shadow type=\&quot;text\&quot;&gt;&lt;field name=\&quot;TEXT\&quot;&gt;!&lt;/field&gt;&lt;/shadow&gt;&lt;/value&gt;&lt;/block&gt;&lt;/value&gt;&lt;next&gt;&lt;block type=\&quot;device_pause\&quot;&gt;&lt;value name=\&quot;pause\&quot;&gt;&lt;shadow type=\&quot;timePicker\&quot;&gt;&lt;field name=\&quot;ms\&quot;&gt;5000&lt;/field&gt;&lt;/shadow&gt;&lt;/value&gt;&lt;next&gt;&lt;block type=\&quot;gameOver\&quot;&gt;&lt;mutation xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot; _expanded=\&quot;0\&quot; _input_init=\&quot;false\&quot;&gt;&lt;/mutation&gt;&lt;value name=\&quot;win\&quot;&gt;&lt;shadow type=\&quot;toggleWinLose\&quot;&gt;&lt;field name=\&quot;win\&quot;&gt;true&lt;/field&gt;&lt;/shadow&gt;&lt;/value&gt;&lt;/block&gt;&lt;/next&gt;&lt;/block&gt;&lt;/next&gt;&lt;/block&gt;&lt;/statement&gt;&lt;statement name=\&quot;ELSE\&quot;&gt;&lt;block type=\&quot;spritesay\&quot;&gt;&lt;mutation xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot; _expanded=\&quot;0\&quot; _input_init=\&quot;false\&quot;&gt;&lt;/mutation&gt;&lt;value name=\&quot;sprite\&quot;&gt;&lt;block type=\&quot;variables_get\&quot;&gt;&lt;field name=\&quot;VAR\&quot; id=\&quot;Y`Xd;wY].HLCaU$6zwhl\&quot;&gt;mySprite&lt;/field&gt;&lt;/block&gt;&lt;/value&gt;&lt;value name=\&quot;text\&quot;&gt;&lt;shadow type=\&quot;text\&quot;&gt;&lt;field name=\&quot;TEXT\&quot;/&gt;&lt;/shadow&gt;&lt;block type=\&quot;text_join\&quot;&gt;&lt;mutation items=\&quot;3\&quot;/&gt;&lt;value name=\&quot;ADD0\&quot;&gt;&lt;shadow type=\&quot;text\&quot;&gt;&lt;field name=\&quot;TEXT\&quot;&gt;No. It was &lt;/field&gt;&lt;/shadow&gt;&lt;/value&gt;&lt;value name=\&quot;ADD1\&quot;&gt;&lt;shadow type=\&quot;text\&quot;&gt;&lt;field name=\&quot;TEXT\&quot;/&gt;&lt;/shadow&gt;&lt;block type=\&quot;variables_get\&quot;&gt;&lt;field name=\&quot;VAR\&quot; id=\&quot;IaBT:Q~V:3~4}Qn@%y`o\&quot;&gt;myNumber&lt;/field&gt;&lt;/block&gt;&lt;/value&gt;&lt;value name=\&quot;ADD2\&quot;&gt;&lt;shadow type=\&quot;text\&quot;&gt;&lt;field name=\&quot;TEXT\&quot;&gt;!&lt;/field&gt;&lt;/shadow&gt;&lt;/value&gt;&lt;/block&gt;&lt;/value&gt;&lt;next&gt;&lt;block type=\&quot;device_pause\&quot;&gt;&lt;value name=\&quot;pause\&quot;&gt;&lt;shadow type=\&quot;timePicker\&quot;&gt;&lt;field name=\&quot;ms\&quot;&gt;5000&lt;/field&gt;&lt;/shadow&gt;&lt;/value&gt;&lt;next&gt;&lt;block type=\&quot;gameOver\&quot;&gt;&lt;mutation xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot; _expanded=\&quot;0\&quot; _input_init=\&quot;false\&quot;&gt;&lt;/mutation&gt;&lt;value name=\&quot;win\&quot;&gt;&lt;shadow type=\&quot;toggleWinLose\&quot;&gt;&lt;field name=\&quot;win\&quot;&gt;false&lt;/field&gt;&lt;/shadow&gt;&lt;/value&gt;&lt;/block&gt;&lt;/next&gt;&lt;/block&gt;&lt;/next&gt;&lt;/block&gt;&lt;/statement&gt;&lt;/block&gt;&lt;/next&gt;&lt;/block&gt;&lt;/next&gt;&lt;/block&gt;&lt;/next&gt;&lt;/block&gt;&lt;/next&gt;&lt;/block&gt;&lt;/statement&gt;&lt;/block&gt;&lt;block type=\&quot;function_call\&quot; disabled=\&quot;true\&quot; x=\&quot;1006\&quot; y=\&quot;30\&quot;&gt;&lt;mutation name=\&quot;NewRound\&quot; functionid=\&quot;8^[sWL@=.5.F{z9/MZ@X\&quot;/&gt;&lt;/block&gt;&lt;block type=\&quot;function_definition\&quot; x=\&quot;986\&quot; y=\&quot;90\&quot;&gt;&lt;mutation name=\&quot;NewRound\&quot; functionid=\&quot;8^[sWL@=.5.F{z9/MZ@X\&quot;/&gt;&lt;field name=\&quot;function_name\&quot;&gt;NewRound&lt;/field&gt;&lt;/block&gt;&lt;block type=\&quot;gamelifeevent\&quot; x=\&quot;850\&quot; y=\&quot;310\&quot;&gt;&lt;statement name=\&quot;HANDLER\&quot;&gt;&lt;block type=\&quot;spritesay\&quot;&gt;&lt;mutation xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot; _expanded=\&quot;0\&quot; _input_init=\&quot;false\&quot;&gt;&lt;/mutation&gt;&lt;value name=\&quot;sprite\&quot;&gt;&lt;block type=\&quot;variables_get\&quot;&gt;&lt;field name=\&quot;VAR\&quot; id=\&quot;Y`Xd;wY].HLCaU$6zwhl\&quot;&gt;mySprite&lt;/field&gt;&lt;/block&gt;&lt;/value&gt;&lt;value name=\&quot;text\&quot;&gt;&lt;shadow type=\&quot;text\&quot;&gt;&lt;field name=\&quot;TEXT\&quot;/&gt;&lt;/shadow&gt;&lt;block type=\&quot;text_join\&quot;&gt;&lt;mutation items=\&quot;3\&quot;/&gt;&lt;value name=\&quot;ADD0\&quot;&gt;&lt;shadow type=\&quot;text\&quot;&gt;&lt;field name=\&quot;TEXT\&quot;&gt;The number was&lt;/field&gt;&lt;/shadow&gt;&lt;/value&gt;&lt;value name=\&quot;ADD1\&quot;&gt;&lt;shadow type=\&quot;text\&quot;&gt;&lt;field name=\&quot;TEXT\&quot;/&gt;&lt;/shadow&gt;&lt;block type=\&quot;variables_get\&quot;&gt;&lt;field name=\&quot;VAR\&quot; id=\&quot;IaBT:Q~V:3~4}Qn@%y`o\&quot;&gt;myNumber&lt;/field&gt;&lt;/block&gt;&lt;/value&gt;&lt;value name=\&quot;ADD2\&quot;&gt;&lt;shadow type=\&quot;text\&quot;&gt;&lt;field name=\&quot;TEXT\&quot;&gt;!&lt;/field&gt;&lt;/shadow&gt;&lt;/value&gt;&lt;/block&gt;&lt;/value&gt;&lt;next&gt;&lt;block type=\&quot;device_pause\&quot;&gt;&lt;value name=\&quot;pause\&quot;&gt;&lt;shadow type=\&quot;timePicker\&quot;&gt;&lt;field name=\&quot;ms\&quot;&gt;5000&lt;/field&gt;&lt;/shadow&gt;&lt;/value&gt;&lt;next&gt;&lt;block type=\&quot;gameOver\&quot;&gt;&lt;mutation xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot; _expanded=\&quot;0\&quot; _input_init=\&quot;false\&quot;&gt;&lt;/mutation&gt;&lt;value name=\&quot;win\&quot;&gt;&lt;shadow type=\&quot;toggleWinLose\&quot;&gt;&lt;field name=\&quot;win\&quot;&gt;false&lt;/field&gt;&lt;/shadow&gt;&lt;/value&gt;&lt;/block&gt;&lt;/next&gt;&lt;/block&gt;&lt;/next&gt;&lt;/block&gt;&lt;/statement&gt;&lt;/block&gt;&lt;block type=\&quot;controls_if\&quot; disabled=\&quot;true\&quot; x=\&quot;1106\&quot; y=\&quot;510\&quot;&gt;&lt;mutation else=\&quot;1\&quot;/&gt;&lt;value name=\&quot;IF0\&quot;&gt;&lt;shadow type=\&quot;logic_boolean\&quot;&gt;&lt;field name=\&quot;BOOL\&quot;&gt;TRUE&lt;/field&gt;&lt;/shadow&gt;&lt;block type=\&quot;logic_compare\&quot; disabled=\&quot;true\&quot;&gt;&lt;field name=\&quot;OP\&quot;&gt;LT&lt;/field&gt;&lt;value name=\&quot;A\&quot;&gt;&lt;shadow type=\&quot;math_number\&quot;&gt;&lt;field name=\&quot;NUM\&quot;&gt;0&lt;/field&gt;&lt;/shadow&gt;&lt;block type=\&quot;variables_get\&quot; disabled=\&quot;true\&quot;&gt;&lt;field name=\&quot;VAR\&quot; id=\&quot;(wkNDj+((0G_1G-Luc]l\&quot;&gt;yourGuess&lt;/field&gt;&lt;/block&gt;&lt;/value&gt;&lt;value name=\&quot;B\&quot;&gt;&lt;shadow type=\&quot;math_number\&quot;&gt;&lt;field name=\&quot;NUM\&quot;&gt;0&lt;/field&gt;&lt;/shadow&gt;&lt;block type=\&quot;variables_get\&quot; disabled=\&quot;true\&quot;&gt;&lt;field name=\&quot;VAR\&quot; id=\&quot;IaBT:Q~V:3~4}Qn@%y`o\&quot;&gt;myNumber&lt;/field&gt;&lt;/block&gt;&lt;/value&gt;&lt;/block&gt;&lt;/value&gt;&lt;statement name=\&quot;DO0\&quot;&gt;&lt;block type=\&quot;spritesay\&quot; disabled=\&quot;true\&quot;&gt;&lt;mutation xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot; _expanded=\&quot;0\&quot; _input_init=\&quot;false\&quot;&gt;&lt;/mutation&gt;&lt;value name=\&quot;sprite\&quot;&gt;&lt;block type=\&quot;variables_get\&quot; disabled=\&quot;true\&quot;&gt;&lt;field name=\&quot;VAR\&quot; id=\&quot;Y`Xd;wY].HLCaU$6zwhl\&quot;&gt;mySprite&lt;/field&gt;&lt;/block&gt;&lt;/value&gt;&lt;value name=\&quot;text\&quot;&gt;&lt;shadow type=\&quot;text\&quot; disabled=\&quot;true\&quot;&gt;&lt;field name=\&quot;TEXT\&quot;&gt;Nope! Too low.&lt;/field&gt;&lt;/shadow&gt;&lt;/value&gt;&lt;/block&gt;&lt;/statement&gt;&lt;statement name=\&quot;ELSE\&quot;&gt;&lt;block type=\&quot;spritesay\&quot; disabled=\&quot;true\&quot;&gt;&lt;mutation xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot; _expanded=\&quot;0\&quot; _input_init=\&quot;false\&quot;&gt;&lt;/mutation&gt;&lt;value name=\&quot;sprite\&quot;&gt;&lt;block type=\&quot;variables_get\&quot; disabled=\&quot;true\&quot;&gt;&lt;field name=\&quot;VAR\&quot; id=\&quot;Y`Xd;wY].HLCaU$6zwhl\&quot;&gt;mySprite&lt;/field&gt;&lt;/block&gt;&lt;/value&gt;&lt;value name=\&quot;text\&quot;&gt;&lt;shadow type=\&quot;text\&quot; disabled=\&quot;true\&quot;&gt;&lt;field name=\&quot;TEXT\&quot;&gt;Nope! Too high!&lt;/field&gt;&lt;/shadow&gt;&lt;/value&gt;&lt;/block&gt;&lt;/statement&gt;&lt;/block&gt;&lt;block type=\&quot;hudChangeLifeBy\&quot; disabled=\&quot;true\&quot; x=\&quot;886\&quot; y=\&quot;610\&quot;&gt;&lt;value name=\&quot;value\&quot;&gt;&lt;shadow type=\&quot;math_number\&quot; disabled=\&quot;true\&quot;&gt;&lt;field name=\&quot;NUM\&quot;&gt;-1&lt;/field&gt;&lt;/shadow&gt;&lt;/value&gt;&lt;next&gt;&lt;block type=\&quot;device_pause\&quot; disabled=\&quot;true\&quot;&gt;&lt;value name=\&quot;pause\&quot;&gt;&lt;shadow type=\&quot;timePicker\&quot; disabled=\&quot;true\&quot;&gt;&lt;field name=\&quot;ms\&quot;&gt;5000&lt;/field&gt;&lt;/shadow&gt;&lt;/value&gt;&lt;next&gt;&lt;block type=\&quot;function_call\&quot; disabled=\&quot;true\&quot;&gt;&lt;mutation name=\&quot;NewRound\&quot; functionid=\&quot;8^[sWL@=.5.F{z9/MZ@X\&quot;/&gt;&lt;/block&gt;&lt;/next&gt;&lt;/block&gt;&lt;/next&gt;&lt;/block&gt;&lt;block type=\&quot;device_pause\&quot; disabled=\&quot;true\&quot; x=\&quot;981\&quot; y=\&quot;850\&quot;&gt;&lt;value name=\&quot;pause\&quot;&gt;&lt;shadow type=\&quot;timePicker\&quot; disabled=\&quot;true\&quot;&gt;&lt;field name=\&quot;ms\&quot;&gt;5000&lt;/field&gt;&lt;/shadow&gt;&lt;/value&gt;&lt;/block&gt;&lt;block type=\&quot;device_pause\&quot; disabled=\&quot;true\&quot; x=\&quot;1029\&quot; y=\&quot;946\&quot;&gt;&lt;value name=\&quot;pause\&quot;&gt;&lt;shadow type=\&quot;timePicker\&quot; disabled=\&quot;true\&quot;&gt;&lt;field name=\&quot;ms\&quot;&gt;5000&lt;/field&gt;&lt;/shadow&gt;&lt;/value&gt;&lt;/block&gt;&lt;/xml&gt;&quot;,
+  &quot;main.ts&quot;: &quot;info.onLifeZero(function () {\n    mySprite.say(\&quot;The number was\&quot; + myNumber + \&quot;!\&quot;)\n    pause(3000)\n    game.over(false)\n})\nfunction NewRound () {\n\t\n}\nlet myNumber = 0\nlet mySprite: Sprite = null\nmySprite = sprites.create(assets.image`crystal ball`, SpriteKind.Player)\nmyNumber = randint(1, 9)\ngame.showLongText(\&quot;I&#39;m thinking of a number between 1 and 9. Can you guess it?\&quot;, DialogLayout.Bottom)\nlet yourGuess = game.askForNumber(\&quot;Enter a number between 1 and 9\&quot;, 1)\nif (yourGuess == myNumber) {\n    mySprite.say(\&quot;Yes! It was \&quot; + yourGuess + \&quot;!\&quot;)\n    pause(3000)\n    game.over(true)\n} else {\n    mySprite.say(\&quot;No. It was \&quot; + myNumber + \&quot;!\&quot;)\n    pause(3000)\n    game.over(false)\n}\n&quot;,
+  &quot;pxt.json&quot;: &quot;{\n    \&quot;name\&quot;: \&quot;Guessing Game 2\&quot;,\n    \&quot;description\&quot;: \&quot;\&quot;,\n    \&quot;dependencies\&quot;: {\n        \&quot;device\&quot;: \&quot;*\&quot;\n    },\n    \&quot;files\&quot;: [\n        \&quot;main.blocks\&quot;,\n        \&quot;main.ts\&quot;,\n        \&quot;README.md\&quot;,\n        \&quot;assets.json\&quot;,\n        \&quot;images.g.jres\&quot;,\n        \&quot;images.g.ts\&quot;\n    ],\n    \&quot;targetVersions\&quot;: {\n        \&quot;branch\&quot;: \&quot;v1.3.44\&quot;,\n        \&quot;tag\&quot;: \&quot;v1.3.44\&quot;,\n        \&quot;commits\&quot;: \&quot;https://github.com/microsoft/pxt-arcade/commits/d1e057830c0eebc87e3e400f2106c8e1f0e5a077\&quot;,\n        \&quot;target\&quot;: \&quot;1.3.44\&quot;,\n        \&quot;pxt\&quot;: \&quot;6.8.33\&quot;\n    },\n    \&quot;preferredEditor\&quot;: \&quot;blocksprj\&quot;\n}\n&quot;
+}</code></pre>
+<pre><code class="lang-ghost">info.onLifeZero(function () {
+    mySprite.say(&quot;The number was&quot; + myNumber + &quot;!&quot;)
+    pause(3000)
+    game.over(false)
+})
+function NewRound () {
+    yourGuess = game.askForNumber(&quot;Enter a number between 1 and 99&quot;, 2)
+    if (yourGuess == myNumber) {
+        mySprite.say(&quot;Yes! It was &quot; + yourGuess + &quot;!&quot;)
+        game.over(true)
+    } else {
+        if (yourGuess &lt; myNumber) {
+            mySprite.say(&quot;Nope! Too low.&quot;)
+        } else {
+            mySprite.say(&quot;Nope! Too high!&quot;)
+        }
+        info.changeLifeBy(-1)
+        pause(3000)
+        NewRound()
+    }
+}
+let yourGuess = 0
+let myNumber = 0
+let mySprite: Sprite = null
+mySprite = sprites.create(img`
+    . . . . . f f 4 4 f f . . . . .
+    . . . . f 5 4 5 5 4 5 f . . . .
+    . . . f e 4 5 5 5 5 4 e f . . .
+    . . f b 3 e 4 4 4 4 e 3 b f . .
+    . . f 3 3 3 3 3 3 3 3 3 3 f . .
+    . f 3 3 e b 3 e e 3 b e 3 3 f .
+    . f 3 3 f f e e e e f f 3 3 f .
+    . f b b f b f e e f b f b b f .
+    . f b b e 1 f 4 4 f 1 e b b f .
+    f f b b f 4 4 4 4 4 4 f b b f f
+    f b b f f f e e e e f f f b b f
+    . f e e f b d d d d b f e e f .
+    . . e 4 c d d d d d d c 4 e . .
+    . . e f b d b d b d b b f e . .
+    . . . f f 1 d 1 d 1 d f f . . .
+    . . . . . f f b b f f . . . . .
+    `, SpriteKind.Player)
+myNumber = randint(1, 99)
+game.showLongText(&quot;I&#39;m thinking of a number between 1 and 99. Can you guess it?&quot;, DialogLayout.Bottom)
+NewRound()
+</code></pre>
+<h2 id="welcome-">Welcome </h2><p>We’ve made stories, clicker games, and collector games…now it’s time to learn the secrets behind puzzle games!</p>
+<p>Today, we’ll make a  number guessing puzzle.</p>
+<p><img class="ui image" src="/static/skillmap/puzzle/puzzle-activity-1.gif" alt="A simple puzzle" title="Is it a puzzle, or is it luck?" loading="lazy"></p>
+<h2 id="step-2">Step 2</h2><p><strong>🧙‍♂️ Let’s add some character 🧙‍♂️</strong></p>
+<p>We’ll start by adding a sprite that can interact with the user.</p>
+<hr>
+<p>► From the <code>||sprites:Sprites||</code> category, grab a
+<code>||variables:set [mySprite] to sprite [ ] of kind [Player]||</code> block and
+snap it into the empty <strong>on start</strong> container already in the workspace.</p>
+<p>► Click the empty grey box in the new block and draw a wise character.</p>
+<pre><code class="lang-blocks">//@highlight
+let mySprite = sprites.create(img`
+    . . . . . f f 4 4 f f . . . . .
+    . . . . f 5 4 5 5 4 5 f . . . .
+    . . . f e 4 5 5 5 5 4 e f . . .
+    . . f b 3 e 4 4 4 4 e 3 b f . .
+    . . f 3 3 3 3 3 3 3 3 3 3 f . .
+    . f 3 3 e b 3 e e 3 b e 3 3 f .
+    . f 3 3 f f e e e e f f 3 3 f .
+    . f b b f b f e e f b f b b f .
+    . f b b e 1 f 4 4 f 1 e b b f .
+    f f b b f 4 4 4 4 4 4 f b b f f
+    f b b f f f e e e e f f f b b f
+    . f e e f b d d d d b f e e f .
+    . . e 4 c d d d d d d c 4 e . .
+    . . e f b d b d b d b b f e . .
+    . . . f f 1 d 1 d 1 d f f . . .
+    . . . . . f f b b f f . . . . .
+    `, SpriteKind.Player)
+</code></pre>
+<h2 id="step-3">Step 3</h2><p><strong>🏅 Issue a challenge 🏅</strong></p>
+<p>The sprite needs to challenge the user to guess their number.</p>
+<hr>
+<p>► From the <code>||game:Game||</code> category, grab a
+<code>||game:show long text [&quot; &quot;] [bottom]||</code> block and
+snap it into the end of the <strong>on start</strong> container.</p>
+<p>► Enter a message into the empty text box to challenge the user to guess a number between 1 &amp; 5.</p>
+<pre><code class="lang-blocks">let mySprite = sprites.create(img`
+    . . . . . f f 4 4 f f . . . . .
+    . . . . f 5 4 5 5 4 5 f . . . .
+    . . . f e 4 5 5 5 5 4 e f . . .
+    . . f b 3 e 4 4 4 4 e 3 b f . .
+    . . f 3 3 3 3 3 3 3 3 3 3 f . .
+    . f 3 3 e b 3 e e 3 b e 3 3 f .
+    . f 3 3 f f e e e e f f 3 3 f .
+    . f b b f b f e e f b f b b f .
+    . f b b e 1 f 4 4 f 1 e b b f .
+    f f b b f 4 4 4 4 4 4 f b b f f
+    f b b f f f e e e e f f f b b f
+    . f e e f b d d d d b f e e f .
+    . . e 4 c d d d d d d c 4 e . .
+    . . e f b d b d b d b b f e . .
+    . . . f f 1 d 1 d 1 d f f . . .
+    . . . . . f f b b f f . . . . .
+    `, SpriteKind.Player)
+    //@highlight
+game.showLongText(&quot;I&#39;m thinking of a number between 1 and 5. Can you guess it?&quot;, DialogLayout.Bottom)
+</code></pre>
+<h2 id="step-4">Step 4</h2><p><strong>🤷 Nothing to lose 🤷</strong></p>
+<p>Before we can check to see if the user is right, we need to choose
+a number.  To make this work, the
+computer should choose something at random.</p>
+<hr>
+<p>► First, we need a place to store the random number the computer will choose.
+From the <code>||variables:Variables||</code> category, grab a
+<code>||variables:set [mySprite] to [0]||</code> block and snap it into the <strong>top</strong>
+of the <strong>on start</strong> container (above where you set the player sprite.)</p>
+<p>► Click <strong>mySprite</strong> in the new block and choose <strong>New Variable…</strong> from
+the dropdown.</p>
+<p>► Give the new <a  rel="nofollow noopener" href="#varied" title="a label that holds the place for something that can change"><strong><em>variable</em></strong></a>
+a meaningful name, like <strong>myNumber</strong>.</p>
+<pre><code class="lang-blocks">//@highlight
+let myNumber = 0.0
+let mySprite = sprites.create(img`
+    . . . . . f f 4 4 f f . . . . .
+    . . . . f 5 4 5 5 4 5 f . . . .
+    . . . f e 4 5 5 5 5 4 e f . . .
+    . . f b 3 e 4 4 4 4 e 3 b f . .
+    . . f 3 3 3 3 3 3 3 3 3 3 f . .
+    . f 3 3 e b 3 e e 3 b e 3 3 f .
+    . f 3 3 f f e e e e f f 3 3 f .
+    . f b b f b f e e f b f b b f .
+    . f b b e 1 f 4 4 f 1 e b b f .
+    f f b b f 4 4 4 4 4 4 f b b f f
+    f b b f f f e e e e f f f b b f
+    . f e e f b d d d d b f e e f .
+    . . e 4 c d d d d d d c 4 e . .
+    . . e f b d b d b d b b f e . .
+    . . . f f 1 d 1 d 1 d f f . . .
+    . . . . . f f b b f f . . . . .
+    `, SpriteKind.Player)
+game.showLongText(&quot;I&#39;m thinking of a number between 1 and 5. Can you guess it?&quot;, DialogLayout.Bottom)
+</code></pre>
+<h2 id="step-5">Step 5</h2><p><strong>🔮 So random 🔮</strong></p>
+<p>Now we’ll add the block to set our new variable to a random number.</p>
+<hr>
+<p>► From the <code>||math:Math||</code> category, grab a
+<code>||math:pick random [0] to [10]||</code> value block and
+use it to replace the <strong>0</strong> assigned to <strong>myNumber</strong>.</p>
+<p>► Change the range of your random number to stay between <strong>1</strong> and <strong>5</strong>.</p>
+<pre><code class="lang-blocks">//@highlight
+let myNumber = randint(1, 5)
+let mySprite = sprites.create(img`
+    . . . . . f f 4 4 f f . . . . .
+    . . . . f 5 4 5 5 4 5 f . . . .
+    . . . f e 4 5 5 5 5 4 e f . . .
+    . . f b 3 e 4 4 4 4 e 3 b f . .
+    . . f 3 3 3 3 3 3 3 3 3 3 f . .
+    . f 3 3 e b 3 e e 3 b e 3 3 f .
+    . f 3 3 f f e e e e f f 3 3 f .
+    . f b b f b f e e f b f b b f .
+    . f b b e 1 f 4 4 f 1 e b b f .
+    f f b b f 4 4 4 4 4 4 f b b f f
+    f b b f f f e e e e f f f b b f
+    . f e e f b d d d d b f e e f .
+    . . e 4 c d d d d d d c 4 e . .
+    . . e f b d b d b d b b f e . .
+    . . . f f 1 d 1 d 1 d f f . . .
+    . . . . . f f b b f f . . . . .
+    `, SpriteKind.Player)
+game.showLongText(&quot;I&#39;m thinking of a number between 1 and 5. Can you guess it?&quot;, DialogLayout.Bottom)
+</code></pre>
+<h2 id="step-6">Step 6</h2><p><strong>📝 Guess and check 📝</strong></p>
+<p>Next, we need to check to see <strong>if</strong> the user’s guess is right.</p>
+<hr>
+<p>► From the <code>||logic:Logic||</code> category, grab a
+<code>||logic:if &lt;true&gt; then / else||</code> double category block and
+snap it into the end of your <strong>on start</strong> container.</p>
+<p>► Replace <strong><code>&lt;true&gt;</code></strong> with a <code>||logic:[0] [=] [0]||</code> value block.</p>
+<pre><code class="lang-blocks">let myNumber = randint(1, 5)
+let mySprite = sprites.create(img`
+    . . . . . f f 4 4 f f . . . . .
+    . . . . f 5 4 5 5 4 5 f . . . .
+    . . . f e 4 5 5 5 5 4 e f . . .
+    . . f b 3 e 4 4 4 4 e 3 b f . .
+    . . f 3 3 3 3 3 3 3 3 3 3 f . .
+    . f 3 3 e b 3 e e 3 b e 3 3 f .
+    . f 3 3 f f e e e e f f 3 3 f .
+    . f b b f b f e e f b f b b f .
+    . f b b e 1 f 4 4 f 1 e b b f .
+    f f b b f 4 4 4 4 4 4 f b b f f
+    f b b f f f e e e e f f f b b f
+    . f e e f b d d d d b f e e f .
+    . . e 4 c d d d d d d c 4 e . .
+    . . e f b d b d b d b b f e . .
+    . . . f f 1 d 1 d 1 d f f . . .
+    . . . . . f f b b f f . . . . .
+    `, SpriteKind.Player)
+game.showLongText(&quot;I&#39;m thinking of a number between 1 and 5. Can you guess it?&quot;, DialogLayout.Bottom)
+//@highlight
+if (0 == 0) {
+
+} else {
+
+}</code></pre>
+<h2 id="step-7">Step 7</h2><p>► Replace the first <strong>0</strong> in your logic value block with an
+<code>||game:ask for number [&quot;&quot;] ⊕||</code> value block.</p>
+<p>► Click the <strong>⊕</strong> to the right of the new block and limit your max length
+to <strong>1</strong> digit.</p>
+<p>► Replace the second <strong>0</strong> in your logic value block with a
+<code>||variables:myNumber||</code> value block.</p>
+<p>► Put a message in the <strong>ask for number</strong> block that reminds users
+what to do once they’re at the number pad.</p>
+<pre><code class="lang-blocks">let myNumber = randint(1, 5)
+let mySprite = sprites.create(img`
+    . . . . . f f 4 4 f f . . . . .
+    . . . . f 5 4 5 5 4 5 f . . . .
+    . . . f e 4 5 5 5 5 4 e f . . .
+    . . f b 3 e 4 4 4 4 e 3 b f . .
+    . . f 3 3 3 3 3 3 3 3 3 3 f . .
+    . f 3 3 e b 3 e e 3 b e 3 3 f .
+    . f 3 3 f f e e e e f f 3 3 f .
+    . f b b f b f e e f b f b b f .
+    . f b b e 1 f 4 4 f 1 e b b f .
+    f f b b f 4 4 4 4 4 4 f b b f f
+    f b b f f f e e e e f f f b b f
+    . f e e f b d d d d b f e e f .
+    . . e 4 c d d d d d d c 4 e . .
+    . . e f b d b d b d b b f e . .
+    . . . f f 1 d 1 d 1 d f f . . .
+    . . . . . f f b b f f . . . . .
+    `, SpriteKind.Player)
+game.showLongText(&quot;I&#39;m thinking of a number between 1 and 5. Can you guess it?&quot;, DialogLayout.Bottom)
+if (game.askForNumber(&quot;Enter a number between 1 and 5&quot;, 1) == myNumber) {
+
+} else {
+
+}</code></pre>
+<h2 id="step-8">Step 8</h2><p>Click on the game screen, then choose your guess using the arrow pad and the space key.</p>
+<p><strong>💎 Great! 💎</strong></p>
+<p>Your code ran, but nothing told you whether your were right or wrong…</p>
+<h2 id="step-9">Step 9</h2><p><strong>🔎 The moment of truth 🔍</strong></p>
+<p>To complete the game, we need to give the player a message
+to let them know if they guessed correctly.</p>
+<hr>
+<p>► We’ve already completed the code to check <strong>if</strong> the user’s guess matched
+the variable <strong>myNumber</strong>.  <strong>If</strong> it did, the computer will run the code in the top half of the container.  Stick a <code>||sprites:[mySprite] say [&quot;:)&quot;]||</code> block in there and add a message telling the user that they’re right!</p>
+<p>► If the user’s number didn’t match <strong>myNumber</strong>, the computer will run any
+code in the bottom (<strong>else</strong>) container. Add a <code>||sprites:[mySprite] say [&quot;:)&quot;]||</code> block down there and let the user know their guess was wrong.</p>
+<pre><code class="lang-blocks">let myNumber = randint(1, 5)
+let mySprite = sprites.create(img`
+    . . . . . f f 4 4 f f . . . . .
+    . . . . f 5 4 5 5 4 5 f . . . .
+    . . . f e 4 5 5 5 5 4 e f . . .
+    . . f b 3 e 4 4 4 4 e 3 b f . .
+    . . f 3 3 3 3 3 3 3 3 3 3 f . .
+    . f 3 3 e b 3 e e 3 b e 3 3 f .
+    . f 3 3 f f e e e e f f 3 3 f .
+    . f b b f b f e e f b f b b f .
+    . f b b e 1 f 4 4 f 1 e b b f .
+    f f b b f 4 4 4 4 4 4 f b b f f
+    f b b f f f e e e e f f f b b f
+    . f e e f b d d d d b f e e f .
+    . . e 4 c d d d d d d c 4 e . .
+    . . e f b d b d b d b b f e . .
+    . . . f f 1 d 1 d 1 d f f . . .
+    . . . . . f f b b f f . . . . .
+    `, SpriteKind.Player)
+game.showLongText(&quot;I&#39;m thinking of a number between 1 and 5. Can you guess it?&quot;, DialogLayout.Bottom)
+if (game.askForNumber(&quot;Enter a number between 1 and 5&quot;, 1) == myNumber) {
+    mySprite.say(&quot;Yep!&quot;)
+} else {
+    mySprite.say(&quot;Nope!&quot;)
+}</code></pre>
+<h2 id="finale">Finale</h2><p><strong>There you go!</strong></p>
+<p>Now you’ve got a game that will keep you guessing!</p>
+<p>Try your game, then click <strong>Done</strong> to return to the main page
+where you can get a link to share it!</p>
+
+    </div>
+
+					<div class="hideprint"></div>
+				</div>
+
+			</div>
+
+			
+<!-- include footer.html -->
+<footer class="ui vertical footer segment hideprint docs inverted" aria-hidden="false">
+    <div class="ui center aligned container">
+        <div class="ui horizontal link list">
+            <a
+                class="item"
+                href="https://twitter.com/intent/follow?screen_name=MsMakeCode"
+                title="Follow us on Twitter"
+                target="_blank"
+                rel="noopener">
+                <i class="huge icon twitter"></i>
+            </a>
+            <a class="item" href="https://www.youtube.com/channel/UCye7YlvFUUQ1dSy0WZZ1T_Q" title="Subscribe to our YouTube channel"
+                target="_blank" rel="noopened">
+                <i class="huge icon youtube"></i>
+            </a>
+            <a class="item" href="mailto:makecode@microsoft.com" title="Send us an Email"
+                target="_blank" rel="noopened">
+                <i class="huge icon mail"></i>
+            </a>
+        </div>
+        <div class="ui section divider"></div>
+        <div class="ui container horizontal small divided link list">
+            <a id="langpicker" tabindex="0" class="ui item" rel="noopener">
+                <i class="icon xicon globe" aria-hidden="true" role="presentation"></i>Language
+            </a>
+            <a class="item" href="https://makecode.com/privacy" target="_blank" rel="noopener">Privacy &amp; Cookies</a>
+            <a class="item" href="https://makecode.com/termsofuse" target="_blank" rel="noopener">Terms Of Use</a>
+            <a class="item" href="https://makecode.com/trademarks" target="_blank" rel="noopener">Trademarks</a>
+            <span class="item">© 2022 Microsoft</span>
+        </div>
+        <div class="ui container horizontal small link list poweredBy">
+            <span class="item">Powered by</span>
+            <a class="middle aligned" href="https://makecode.com/" title="Microsoft MakeCode"
+                target="_blank" rel="noopener">
+                <img width="100" src="/static/logo/Microsoft-logo_rgb_c-gray.png" alt="Microsoft">
+            </a>
+        </div>
+    </div>
+</footer>
+
+<!-- end include footer.html -->
+
+
+		</div>
+
+	</div>
+
+    
+<!-- include langpicker.html -->
+<div id="langmodal" class="ui modal docs" role="dialog" aria-modal="true" aria-describedby="langmodalheader" tabindex="-1">
+    <h2 id="langmodalheader" class="header">Select Language</h2>
+    <div role="button" class="closeIcon" tabindex="0" aria-label="Close">
+        <i class="icon close remove circle" aria-hidden="true"></i>
+    </div>
+
+	<div class="content">
+	    <div class="group">
+            <div id="availablelocales" class="ui cards centered" role="listbox" aria-label="List of available locales"></div>
+        </div>
+        <div class="ui" id="langmodalfooter">
+            <a class="ui" href="/pxt-arcade-app/docs/translate.html" target="_blank" rel="noopener noreferrer">
+                How do I add a new language?
+            </a>
+
+            <a id="translatebtn" class="ui button" role="button" tabindex="0">
+                Translate this page
+            </a>
+        </div>
+    </div>
+</div>
+
+
+<!-- end include langpicker.html -->
+
+	
+<!-- include macros.html -->
+<!-- macro button -->
+
+<!-- macro vimeo -->
+
+<!-- macro youtube -->
+
+<!-- macro section -->
+
+<!-- macro hide -->
+
+<!-- macro avatar -->
+
+<!-- macro hint -->
+
+<!-- macro codecard -->
+
+<!-- macro tutorialhint -->
+
+<!-- macro reminder -->
+
+<!-- macro alert -->
+
+<!-- macro tip -->
+
+<!-- wrapped around ordinary content -->
+<!-- macro main-container -->
+
+<!-- used for 'column' box - they are collected and wrapped in 'column-container' -->
+<!-- macro column -->
+<!-- macro column-container -->
+
+
+<!-- Menu on the top of the page -->
+<!-- macro item -->
+
+<!-- macro divider -->
+
+<!-- TOC in the sidebar -->
+<!-- macro item -->
+
+<!-- macro divider -->
+
+<!-- macro toc-dropdown -->
+
+<!-- macro toc-dropdown-noLink -->
+
+<!-- macro toc-dropdown-noHeading -->
+
+<!-- TODO: duplicates of above for compatability with docsrender.ts;
+    remove with pxtlib/docsrender.ts TOC TODOs after cloud bump. -->
+<!-- macro top-dropdown -->
+
+<!-- macro top-dropdown-noHeading -->
+
+<!-- macro inner-dropdown -->
+
+<!-- macro nested-dropdown -->
+<!-- end include macros.html -->
+
+	
+<!-- include tracking.html -->
+<script type="text/javascript" src="/pxt-arcade-app/pxtweb.js"></script>
+<script type="text/javascript">
+    window.loadAppInsights = function (includeCookie) {
+        //Backend will patch / + doccdn + / with CDN url and the check that URL ends with the sha would pass
+        var isProduction = includeCookie && (/[0-9a-f]{40}\/ai\.2\.min\.js$/.test("/pxt-arcade-app/ai.2.min.js"));
+        !function(T,l,y){var S=T.location,k="script",D="connectionString",C="ingestionendpoint",I="disableExceptionTracking",E="ai.device.",b="toLowerCase",w="crossOrigin",N="POST",e="appInsightsSDK",t=y.name||"appInsights";(y.name||T[e])&&(T[e]=t);var n=T[t]||function(d){var g=!1,f=!1,m={initialize:!0,queue:[],sv:"5",version:2,config:d};function v(e,t){var n={},a="Browser";return n[E+"id"]=a[b](),n[E+"type"]=a,n["ai.operation.name"]=S&&S.pathname||"_unknown_",n["ai.internal.sdkVersion"]="javascript:snippet_"+(m.sv||m.version),{time:function(){var e=new Date;function t(e){var t=""+e;return 1===t.length&&(t="0"+t),t}return e.getUTCFullYear()+"-"+t(1+e.getUTCMonth())+"-"+t(e.getUTCDate())+"T"+t(e.getUTCHours())+":"+t(e.getUTCMinutes())+":"+t(e.getUTCSeconds())+"."+((e.getUTCMilliseconds()/1e3).toFixed(3)+"").slice(2,5)+"Z"}(),iKey:e,name:"Microsoft.ApplicationInsights."+e.replace(/-/g,"")+"."+t,sampleRate:100,tags:n,data:{baseData:{ver:2}}}}var h=d.url||y.src;if(h){function a(e){var t,n,a,i,r,o,s,c,u,p,l;g=!0,m.queue=[],f||(f=!0,t=h,s=function(){var e={},t=d.connectionString;if(t)for(var n=t.split(";"),a=0;a<n.length;a++){var i=n[a].split("=");2===i.length&&(e[i[0][b]()]=i[1])}if(!e[C]){var r=e.endpointsuffix,o=r?e.location:null;e[C]="https://"+(o?o+".":"")+"dc."+(r||"services.visualstudio.com")}return e}(),c=s[D]||d[D]||"",u=s[C],p=u?u+"/v2/track":d.endpointUrl,(l=[]).push((n="SDK LOAD Failure: Failed to load Application Insights SDK script (See stack for details)",a=t,i=p,(o=(r=v(c,"Exception")).data).baseType="ExceptionData",o.baseData.exceptions=[{typeName:"SDKLoadFailed",message:n.replace(/\./g,"-"),hasFullStack:!1,stack:n+"\nSnippet failed to load ["+a+"] -- Telemetry is disabled\nHelp Link: https://go.microsoft.com/fwlink/?linkid=2128109\nHost: "+(S&&S.pathname||"_unknown_")+"\nEndpoint: "+i,parsedStack:[]}],r)),l.push(function(e,t,n,a){var i=v(c,"Message"),r=i.data;r.baseType="MessageData";var o=r.baseData;return o.message='AI (Internal): 99 message:"'+("SDK LOAD Failure: Failed to load Application Insights SDK script (See stack for details) ("+n+")").replace(/\"/g,"")+'"',o.properties={endpoint:a},i}(0,0,t,p)),function(e,t){if(JSON){var n=T.fetch;if(n&&!y.useXhr)n(t,{method:N,body:JSON.stringify(e),mode:"cors"});else if(XMLHttpRequest){var a=new XMLHttpRequest;a.open(N,t),a.setRequestHeader("Content-type","application/json"),a.send(JSON.stringify(e))}}}(l,p))}function i(e,t){f||setTimeout(function(){!t&&m.core||a()},500)}var e=function(){var n=l.createElement(k);n.src=h;var e=y[w];return!e&&""!==e||"undefined"==n[w]||(n[w]=e),n.onload=i,n.onerror=a,n.onreadystatechange=function(e,t){"loaded"!==n.readyState&&"complete"!==n.readyState||i(0,t)},n}();y.ld<0?l.getElementsByTagName("head")[0].appendChild(e):setTimeout(function(){l.getElementsByTagName(k)[0].parentNode.appendChild(e)},y.ld||0)}try{m.cookie=l.cookie}catch(p){}function t(e){for(;e.length;)!function(t){m[t]=function(){var e=arguments;g||m.queue.push(function(){m[t].apply(m,e)})}}(e.pop())}var n="track",r="TrackPage",o="TrackEvent";t([n+"Event",n+"PageView",n+"Exception",n+"Trace",n+"DependencyData",n+"Metric",n+"PageViewPerformance","start"+r,"stop"+r,"start"+o,"stop"+o,"addTelemetryInitializer","setAuthenticatedUserContext","clearAuthenticatedUserContext","flush"]),m.SeverityLevel={Verbose:0,Information:1,Warning:2,Error:3,Critical:4};var s=(d.extensionConfig||{}).ApplicationInsightsAnalytics||{};if(!0!==d[I]&&!0!==s[I]){var c="onerror";t(["_"+c]);var u=T[c];T[c]=function(e,t,n,a,i){var r=u&&u(e,t,n,a,i);return!0!==r&&m["_"+c]({message:e,url:t,lineNumber:n,columnNumber:a,error:i}),r},d.autoExceptionInstrumented=!0}return m}(y.cfg);function a(){y.onInit&&y.onInit(n)}(T[t]=n).queue&&0===n.queue.length?(n.queue.push(a),n.trackPageView({})):a()}(window,document,{
+            src: "https://js.monitor.azure.com/scripts/b/ai.2.min.js", // The SDK URL Source
+            onInit: function (sdk) {
+                sdk.addTelemetryInitializer(function (envelope) {
+                    // App Insights automatically sends a page view event on setup, but we send our own later with additional properties.
+                    // This stops the automatic event from firing, so we don't end up with duplicate page view events.
+                    if (envelope.baseType == "PageviewData" && !envelope.baseData.properties) {
+                        return false;
+                    }
+
+                    if (envelope.baseType == "PageviewPerformanceData") {
+                        var pageName = envelope.baseData.name;
+                        envelope.baseData.name = window.location.origin;
+                        if (!envelope.baseData.properties) {
+                            envelope.baseData.properties = {};
+                        }
+                        envelope.baseData.properties.pageName = pageName;
+                        var scrubbedUrl = scrubUrl(envelope.baseData.uri);
+                        envelope.baseData.uri = scrubbedUrl;
+                        var toUrl = new URL(scrubbedUrl);
+                        envelope.baseData.properties.pathName = toUrl ? toUrl.pathname : "";
+                        if (envelope.ext && envelope.ext.trace) {
+                            envelope.ext.trace.name = toUrl ? toUrl.pathname : "";
+                        }
+                    }
+
+                    var telemetryItem = envelope.baseData;
+                    telemetryItem.properties = telemetryItem.properties || {};
+                    telemetryItem.properties["cookie"] = isProduction;
+                    if (typeof pxtConfig === "undefined" || !pxtConfig || !pxtConfig.targetId) {
+                        telemetryItem.properties["target"] = "arcade";
+                        return true;
+                    }
+                    telemetryItem.properties["target"] = pxtConfig.targetId;
+                    telemetryItem.properties["stage"] = (pxtConfig.relprefix || "/--").replace(/[^a-z]/ig, '')
+                    if (typeof Windows !== "undefined")
+                        telemetryItem.properties["WindowsApp"] = 1;
+                    var userAgent = navigator.userAgent.toLowerCase();
+                    var electronRegexResult = /\belectron\/(\d+\.\d+\.\d+.*?)(?: |$)/i.exec(userAgent); // Example navigator.userAgent: "Mozilla/5.0 Chrome/61.0.3163.100 Electron/2.0.0 Safari/537.36"
+                    if (electronRegexResult) {
+                        telemetryItem.properties["Electron"] = 1;
+                        telemetryItem.properties["ElectronVersion"] = electronRegexResult[1];
+                    }
+                    if (typeof pxtElectron !== "undefined") {
+                        telemetryItem.properties["PxtElectron"] = 1;
+                        telemetryItem.properties["ElectronVersion"] = pxtElectron.versions.electronVersion;
+                        telemetryItem.properties["ChromiumVersion"] = pxtElectron.versions.chromiumVersion;
+                        telemetryItem.properties["NodeVersion"] = pxtElectron.versions.nodeVersion;
+                        telemetryItem.properties["PxtElectronVersion"] = pxtElectron.versions.pxtElectronVersion;
+                        telemetryItem.properties["PxtCoreVersion"] = pxtElectron.versions.pxtCoreVersion;
+                        telemetryItem.properties["PxtTargetVersion"] = pxtElectron.versions.pxtTargetVersion;
+                        telemetryItem.properties["PxtElectronIsProd"] = pxtElectron.versions.isProd;
+                    }
+                    // Kiosk UWP info is appended to the user agent by the makecode-dotnet-apps/arcade-kiosk UWP app
+                    var kioskUwpRegexResult = /\((MakeCode Arcade Kiosk UWP)\/([\S]+)\/([\S]+)\)/i.exec(userAgent); // Example navigator.userAgent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36 Edg/117.0.2045.60 (MakeCode Arcade Kiosk UWP/0.1.41.0/Windows.Xbox)"
+                    if (kioskUwpRegexResult) {
+                        telemetryItem.properties["KioskUwp"] = 1;
+                        telemetryItem.properties["KioskUwpVersion"] = kioskUwpRegexResult[2];
+                        telemetryItem.properties["KioskUwpPlatform"] = kioskUwpRegexResult[3];
+                    }
+                    return true;
+                });
+            },
+            cfg: {
+                instrumentationKey:"9801ed01-c40f-46ec-aa40-2a1742a9e71c",
+                disableAjaxTracking: true,
+                overridePageViewDuration: false,
+                disableExceptionTracking: true,
+                disableCorrelationHeaders: true,
+                disableCookiesUsage: !isProduction,
+                isStorageUseDisabled: !isProduction,
+                url: "/pxt-arcade-app/ai.2.min.js"
+            }
+        });
+        window.appInsights=appInsights;
+        var location = window.location.toString();
+        appInsights.trackPageView({
+            name: window.location.hostname,
+            uri: window.location.origin,
+            properties: {
+                url: scrubUrl(location),
+                urlReferrer: scrubUrl(document.referrer.toString())
+            }
+        });
+
+        // Scrub potential PII from the URL.
+        function scrubUrl(url) {
+            if (!url) return url;
+
+            var scriptIdRegex = /(?:S?\d{5}-\d{5}-\d{5}-\d{5})|(?:_[0-9a-zA-Z]{12})/g;
+            var scrubbedUrl = new URL(url.toLocaleLowerCase().replace(scriptIdRegex, "xxxxx-xxxxx-xxxxx-xxxxx"));
+
+            // Just as a precaution, strip any suspicious query parameters.
+            var blockedParamKeywords = ["username", "password", "token", "pwd"];
+            var searchParams = Array.from(scrubbedUrl.searchParams.keys());
+            for (var param of searchParams) {
+                if (blockedParamKeywords.some(k => param.indexOf(k) != -1)) {
+                    scrubbedUrl.searchParams.delete(param);
+                }
+            }
+
+            return scrubbedUrl.toString();
+        }
+
+        return isProduction;
+    }
+    pxt.initAnalyticsAsync();
+</script>
+
+<!-- end include tracking.html -->
+
+
+</body>
+
+</html>

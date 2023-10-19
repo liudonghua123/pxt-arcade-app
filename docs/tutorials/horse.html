@@ -1,0 +1,1105 @@
+<!DOCTYPE html>
+<html lang="" xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#"
+	xmlns:fb="http://www.facebook.com/2008/fbml">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Microsoft MakeCode Arcade</title>
+	<meta name="Description" content="Develop your programming skills by quickly creating and modding retro arcade games with Blocks and JavaScript in the MakeCode editor" />
+
+	<!-- ifdef incontexttranslations endif -->
+	
+<!-- include meta.html -->
+<!-- This file is typically overriden by the target, with own Twitter
+     account etc. Most data is taken from the theme file though.  
+  -->
+
+<!-- include robotsmeta.html -->
+
+<!-- end include robotsmeta.html -->
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@msmakecode" />
+<meta name="twitter:title" content="Microsoft MakeCode Arcade" />
+<meta name="twitter:description" content="Develop your programming skills by quickly creating and modding retro arcade games with Blocks and JavaScript in the MakeCode editor" />
+<meta name="twitter:image" content="/static/tutorials/horse/race.gif" />
+
+<meta property="og:title" content="Microsoft MakeCode Arcade" />
+<meta property="og:site_name" content="Microsoft MakeCode" />
+<meta property="og:type" content="website" />
+<meta property="og:description" content="Develop your programming skills by quickly creating and modding retro arcade games with Blocks and JavaScript in the MakeCode editor" />
+<meta property="fb:app_id" content="" />
+<meta property="og:image" content="/static/tutorials/horse/race.gif" />
+
+<meta name="format-detection" content="telephone=no">
+<link rel="apple-touch-icon" href="docs/static/icons/favicon.ico">
+<link rel="icon" type="image/png" href="docs/static/icons/favicon.ico">
+<link rel="shortcut icon" href="docs/static/icons/favicon.ico">
+<meta name="theme-color" content="">
+
+<!-- end include meta.html -->
+
+	
+<!-- include head.html -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width,height=device-height,user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
+
+<link rel="stylesheet" data-rtl="/blb/rtlsemantic.css" href="/pxt-arcade-app/semantic.css" />
+<link id="blocklycss"  data-rtl="/blb/rtlblockly.css" rel="stylesheet" href="/pxt-arcade-app/blockly.css" />
+<link rel="stylesheet" href="/pxt-arcade-app/docfiles/style.css" />
+<link rel="stylesheet" href="/pxt-arcade-app/docfiles/vs.css" />
+<link rel="stylesheet" href="/pxt-arcade-app/docfiles/target.css" />
+
+<script src="/pxt-arcade-app/jquery.js" type="text/javascript"></script>
+<script src="/pxt-arcade-app/semantic.js" type="text/javascript"></script>
+<script src="/pxt-arcade-app/docfiles/target.js" type="text/javascript"></script>
+<script src="/pxt-arcade-app/embed.js" type="text/javascript"></script>
+<script src="/pxt-arcade-app/docfiles/docs.js" type="text/javascript"></script>
+
+<style>
+    
+</style>
+
+<!-- end include head.html -->
+
+
+</head>
+
+<body id='root' class='root'>
+	<div id="accessibleMenu" class="ui accessibleMenu borderless fixed menu docs" role="menubar">
+		
+            <a href="#maincontent" class="ui item link" tabindex="0" role="menuitem">Skip to main content</a>
+        
+	</div>
+
+	
+<!-- include tocheader.html -->
+<div id="top-bar" class="ui fixed accent borderless inverted main menu hideprint docs" role="menubar">
+    <div>
+        
+            <a id="togglesidebar" class="launch icon item" tabindex="0" title="Side menu" aria-label="Side menu" role="menuitem" aria-expanded="false">
+                <i class="content icon"></i>
+            </a>
+        
+        <div class="item" role="menuitem">
+            <div class="header-org-logo">
+                <img src="/static/logo/Microsoft_logo_rgb_W-white_D.png" alt="Microsoft">
+            </div>
+            <div class="header-org-logo-sm">
+                <img src="/static/logo/Microsoft_logo_rgb_W-white_D-square.png" alt="Microsoft">
+            </div>
+            <div class="header-title"><span>MakeCode</span></div>
+        </div>
+    </div>
+    <div>
+        <div class="item">
+            <form id="tocsearch1" class="search" role="form" method="get" action="https://www.bing.com/search">
+                <div class="ui fluid icon input">
+                    <input type="hidden" name="q1" value="site:https://arcade.makecode.com/" />
+                    
+                <input type="search" name="q" placeholder="Search..." aria-label="Search Documentation">
+                <i onclick="document.getElementById('tocsearch1').submit();" tabindex="0" class="search link icon" aria-label="Search" role="button"></i>
+            
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div id="side-menu" class="ui vertical accent inverted sidebar menu left hideprint docs" role="menubar">
+    <!-- TOC Menu (tocheader.html) -->
+    <div class="menuContainer" role="menu">
+        
+    <a class="item " href="/pxt-arcade-app/docs/about.html" role="menuitem">About</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/faq.html" role="menuitem">FAQ</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/projects.html" role="menuitem">Projects</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/github.html" role="menuitem">GitHub</a>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/pxt-arcade-app/docs/reference.html">Reference</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-arcade-app/docs/reference/sprites.html" role="menuitem">sprites</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/reference/controller.html" role="menuitem">controller</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/reference/game.html" role="menuitem">game</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/reference/music.html" role="menuitem">music</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/reference/scene.html" role="menuitem">scene</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/reference/info.html" role="menuitem">info</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/reference/images.html" role="menuitem">images</a>
+
+        </div>
+    </div>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/pxt-arcade-app/docs/blocks.html">Blocks</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-arcade-app/docs/blocks/on-start.html" role="menuitem">On Start</a>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/pxt-arcade-app/docs/blocks/loops.html">Loops</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-arcade-app/docs/blocks/loops/repeat.html" role="menuitem">repeat</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/blocks/loops/for.html" role="menuitem">for</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/blocks/loops/while.html" role="menuitem">while</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/blocks/loops/for-of.html" role="menuitem">for of</a>
+
+        </div>
+    </div>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/pxt-arcade-app/docs/blocks/logic.html">Logic</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-arcade-app/docs/blocks/logic/if.html" role="menuitem">if</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/blocks/logic/boolean.html" role="menuitem">Boolean</a>
+
+        </div>
+    </div>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/pxt-arcade-app/docs/blocks/variables.html">Variables</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-arcade-app/docs/blocks/variables/assign.html" role="menuitem">assign</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/blocks/variables/change.html" role="menuitem">change var</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/blocks/variables/var.html" role="menuitem">var</a>
+
+        </div>
+    </div>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/blocks/math.html" role="menuitem">Math</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/blocks/javascript-blocks.html" role="menuitem">JavaScript blocks</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/blocks/custom.html" role="menuitem">Custom blocks</a>
+
+        </div>
+    </div>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/pxt-arcade-app/docs/python.html">Python</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-arcade-app/docs/python/call.html" role="menuitem">Calling</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/python/sequence.html" role="menuitem">Sequencing</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/python/variables.html" role="menuitem">Variables</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/python/operators.html" role="menuitem">Operators</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/python/statements.html" role="menuitem">Statements</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/python/functions.html" role="menuitem">Functions</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/python/classes.html" role="menuitem">Classes</a>
+
+        </div>
+    </div>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/pxt-arcade-app/docs/javascript.html">JavaScript</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-arcade-app/docs/javascript/call.html" role="menuitem">Calling</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/javascript/sequence.html" role="menuitem">Sequencing</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/javascript/variables.html" role="menuitem">Variables</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/javascript/operators.html" role="menuitem">Operators</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/javascript/statements.html" role="menuitem">Statements</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/javascript/functions.html" role="menuitem">Functions</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/javascript/types.html" role="menuitem">Types</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/javascript/classes.html" role="menuitem">Classes</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/javascript/interfaces.html" role="menuitem">Interfaces</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/javascript/generics.html" role="menuitem">Generics</a>
+
+        </div>
+    </div>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/pxt-arcade-app/docs/types.html">Types</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-arcade-app/docs/types/number.html" role="menuitem">Number</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/types/string.html" role="menuitem">String</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/types/boolean.html" role="menuitem">Boolean</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/types/array.html" role="menuitem">Array</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/types/function.html" role="menuitem">Function</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/types/image.html" role="menuitem">Image</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/types/sprite.html" role="menuitem">Sprite</a>
+
+        </div>
+    </div>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/block-gallery.html" role="menuitem">Blocks Gallery</a>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="">Miscellaneous</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-arcade-app/docs/about.html" role="menuitem">About</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/support.html" role="menuitem">Support</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/translate.html" role="menuitem">Translate</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/share.html" role="menuitem">Sharing projects</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/multiplayer.html" role="menuitem">Multiplayer</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/offline.html" role="menuitem">Offline support</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/save.html" role="menuitem">Save</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/identity/sign-in.html" role="menuitem">Sign In</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/identity/cloud-sync.html" role="menuitem">Cloud Sync</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/vscode.html" role="menuitem">VS Code</a>
+
+        </div>
+    </div>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/pxt-arcade-app/docs/hardware.html">Hardware</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-arcade-app/docs/hardware/errors.html" role="menuitem">Errors</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/hardware/adding.html" role="menuitem">Adding New Board</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/hardware/raspberry-pi.html" role="menuitem">Raspberry Pi</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/hardware/makey-makey.html" role="menuitem">Makey Makey</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/hardware/shoebox-controller.html" role="menuitem">Shoebox Controller</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/hardware/dev.html" role="menuitem">Dev</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/hardware/dbg.html" role="menuitem">Debug connector</a>
+
+        </div>
+    </div>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="">Developers</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-arcade-app/docs/cli.html" role="menuitem">Command Line Interface</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/code.html" role="menuitem">Visual Studio Code support</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/blocks-embed.html" role="menuitem">Blocks Embed</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/developer/images.html" role="menuitem">Art, images, colors</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/developer/sound.html" role="menuitem">Sounds</a>
+
+        </div>
+    </div>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/pxt-arcade-app/docs/lessons.html">Lessons</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-arcade-app/docs/lessons/cherry-pickr.html" role="menuitem">Cherry Pickr</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/lessons/barrel-dodger.html" role="menuitem">Barrel Dodger</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/lessons/dance-party.html" role="menuitem">Dance Party</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/lessons/block-out.html" role="menuitem">BlockOut</a>
+
+        </div>
+    </div>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/pxt-arcade-app/docs/courses.html">Courses</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-arcade-app/docs/courses/csintro1.html" role="menuitem">CS Intro 1</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/courses/csintro2.html" role="menuitem">CS Intro 2</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/courses/csintro3.html" role="menuitem">CS Intro 3</a>
+
+        </div>
+    </div>
+
+    </div>
+</div>
+<!-- end include tocheader.html -->
+
+
+	<div id="docs" class="pusher">
+
+		<div class="article" id="maincontent">
+			<div class="article-inner">
+
+				
+<!-- include header.html -->
+<div class="ui one column padded grid hideprint">
+    <div class="column ui container">
+        
+    </div>
+</div>
+<!-- end include header.html -->
+
+
+				<div class="main ui container fluid mainbody">
+					<button id="printbtn" class="circular ui icon right floated button hideprint hidemobile"
+						title="Print" aria-label="Print">
+						<i class="icon print"></i>
+					</button>
+					
+    <div class="ui text">
+        <h1 id="horse-race">Horse Race</h1><!-- hints --><h2 id="horse-race-intro-">Horse Race Intro </h2><p>In this tutorial, we’ll show you how to create your own Horse Race game.</p>
+<p><img class="ui image" src="/static/tutorials/horse/race.gif" alt="Play Horse Race" title="This is how you play Horse Race" loading="lazy"></p>
+<h2 id="2-blocks-in-the-workspace">2. Blocks in the Workspace</h2><p><strong>Reading the Workspace</strong></p>
+<p>The workspace has been pre-loaded with a function that will help set up your horses. It also has an array of horse images to pull from.</p>
+<p>You don’t need to know how <br />
+<code>||functions:set_up_for_players [num]||</code> <br />
+works…only that you call it using the number of players you want to add to the game.</p>
+<p>If you want see what’s inside, click the down arrow to open the function.</p>
+<p><img class="ui image" src="/static/tutorials/horse/expand.gif" alt="Look inside the function" loading="lazy"></p>
+<h2 id="3-your-first-block">3. Your First Block</h2><p><strong>Ready to start coding?</strong></p>
+<p>Set the scene with a background.</p>
+<ul>
+<li>:tree: Go to the <code>||scene: Scene||</code> category <strong>in the toolbox</strong> and grab
+<br /><code>||scene:set background image to [ ]||</code><br />
+then snap it into <strong>the end</strong> of the <br />
+<code>||loops(noclick): on start||</code> <br />
+container already in the workspace.</li>
+</ul>
+<ul>
+<li>:mouse pointer: Click the empty grey square and switch to the <strong>My Assets</strong> library.<br />
+<img class="ui image" src="/static/skillmap/assets/my-assets-three.png" alt="Switch to My Assets" title=" " loading="lazy">
+Choose the background called <strong>bg</strong>.
+<img class="ui image" src="/static/tutorials/horse/frame.png" alt="Choose the background" title=" " loading="lazy"></li>
+</ul>
+
+    <div class="ui hint message">
+        <div class="content">
+            <pre><code class="lang-blocks">let list: Image[] = []
+list = [
+assets.image`p1`,
+assets.image`p2`,
+assets.image`p4`,
+assets.image`p3`
+]
+//@highlight
+scene.setBackgroundImage(assets.image`bg`)</code></pre>
+<h2 id="4-set-players">4. Set players</h2><p><strong>Add the players</strong></p>
+<ul>
+<li>:function: Click <strong>Advanced</strong> to open the
+<code>||function:Function||</code> category and drag the<br />
+<code>||function:set_up_for_players [1]||</code> <br />
+block into <strong>the end</strong> of the <br />
+<code>||loops(noclick): on start||</code><br />
+container already in the workspace.</li>
+</ul>
+<ul>
+<li>:mouse pointer: Change the number to reflect the number of players you want for your game.</li>
+</ul>
+
+    <div class="ui hint message">
+        <div class="content">
+            <pre><code class="lang-blocks">let list: Image[] = []
+list = [
+assets.image`p1`,
+assets.image`p2`,
+assets.image`p4`,
+assets.image`p3`
+]
+scene.setBackgroundImage(assets.image`bg`)
+//@highlight
+set_up_for_players(2)
+
+//@hide
+function set_up_for_players (num: number) {
+}</code></pre>
+<h2 id="5-check-your-game-">5. Check Your Game!</h2><ul>
+<li>:binoculars: Look at your project in the game window to see what your code has done.</li>
+</ul>
+<p>You should see a background frame with your horses in front.</p>
+<p><img class="ui image" src="/static/skillmap/mole/game1.png" alt="Look for the game window in the lower right" title="Click the mini game window to pop open the bigger game window." loading="lazy"></p>
+<h2 id="6-move-the-horses">6. Move the Horses</h2><p><strong>Make the horses move when you press the A button.</strong></p>
+<ul>
+<li>:users: Open the <code>||mp:Multiplayer||</code> category and drag the <br />
+<code>||mp:on [A] button [pressed] for [player]||</code> <br />
+bundle into <strong>an empty</strong> area of the workspace. <br /></li>
+</ul>
+<p>Now, when any player presses their (A) button, their horse will move 1.5 pixels to the right.</p>
+
+    <div class="ui hint message">
+        <div class="content">
+            <pre><code class="lang-blocks">//@highlight
+mp.onButtonEvent(mp.MultiplayerButton.A, ControllerButtonEvent.Pressed, function (player) {
+    mp.getPlayerSprite(player).x += 1.5
+})</code></pre>
+<h2 id="7-play-game-">7. Play Game!</h2><ul>
+<li>:binoculars: Try playing in the game window.</li>
+</ul>
+<p>Your horses should move forward when you press the space bar.</p>
+<h2 id="8-add-the-finish-line">8. Add the Finish Line</h2><p><strong>Add a finish line!</strong></p>
+<ul>
+<li>:paper plane: Open the <code>||sprites:Sprites||</code> category and drag the<br />
+<code>||variables(sprites): set [finish] to sprite of kind [Finish]||</code>
+<br />block into <strong>the end</strong> of the<br />
+<code>||loops(noclick): on start||</code> <br />
+container already in the workspace.</li>
+</ul>
+<ul>
+<li>:mouse pointer: Click the empty grey square and switch to the <strong>My Assets</strong> library.<br />
+<img class="ui image" src="/static/skillmap/assets/my-assets-three.png" alt="Switch to My Assets" title=" " loading="lazy">
+Choose the image called <strong>finish</strong>.
+<img class="ui image" src="/static/tutorials/horse/finish.png" alt="Choose the background" title=" " loading="lazy"></li>
+</ul>
+
+    <div class="ui hint message">
+        <div class="content">
+            <pre><code class="lang-blocks">let list: Image[] = []
+list = [
+assets.image`p1`,
+assets.image`p2`,
+assets.image`p4`,
+assets.image`p3`
+]
+scene.setBackgroundImage(assets.image`bg`)
+set_up_for_players(2)
+//@highlight
+    let finish = sprites.create(assets.image`finish`, SpriteKind.Finish)
+
+//@hide
+function set_up_for_players (num: number) {
+}</code></pre>
+<h2 id="9-move-the-finish-line">9. Move the Finish Line</h2><p><strong>Move the finish line to the end.</strong></p>
+<ul>
+<li>:paper plane: Open the <code>||sprites:Sprites||</code> category and drag<br />
+<code>||sprites: set [finish] position to x [150] y [50]||</code>
+<br />into <strong>the end</strong> of the<br />
+<code>||loops(noclick): on start||</code> <br />
+container already in the workspace.</li>
+</ul>
+
+    <div class="ui hint message">
+        <div class="content">
+            <pre><code class="lang-blocks">//@hide
+function set_up_for_players (num: number) {
+}
+
+    let list: Image[] = []
+    list = [
+    assets.image`p1`,
+    assets.image`p2`,
+    assets.image`p4`,
+    assets.image`p3`
+    ]
+    scene.setBackgroundImage(assets.image`bg`)
+    set_up_for_players(2)
+    let finish = sprites.create(assets.image`finish`, SpriteKind.Finish)
+//@highlight
+    finish.setPosition(150, 50)</code></pre>
+<h2 id="10-check-your-game-">10. Check Your Game!</h2><ul>
+<li>:binoculars: Play your game.</li>
+</ul>
+<p>You should see the red horse move when you press the <strong>(A) button</strong>.</p>
+<p>You can make <strong>player 2</strong> move by pressing the <strong>U key</strong> on your keyboard, or your can click the multiplayer icons to test any player with the space bar.</p>
+<p><img class="ui image" src="/static/tutorials/assets/multi.png" alt="Play with the emulator buttons" title=" " loading="lazy"></p>
+<h2 id="11-overlap-finish-line">11. Overlap Finish Line</h2><p><strong>We need a winner when someone reaches the finish line.</strong></p>
+<ul>
+<li>:users: Open the <code>||sprites:Sprites||</code> category and drag the<br />
+<code>||sprites:on [sprite] of kind [Player] overlaps||</code>
+<br />bundle into <strong>an empty</strong> area of the workspace.</li>
+</ul>
+<p>This event will call a custom “game over” screen, passing through the information of the player that touched the line first.</p>
+
+    <div class="ui hint message">
+        <div class="content">
+            <pre><code class="lang-blocks">//@highlight
+sprites.onOverlap(SpriteKind.Player, SpriteKind.Finish, function (sprite, otherSprite) {
+    carnival.customGameOverExpanded(&quot;Player &quot; + mp.getPlayerProperty(mp.getPlayerBySprite(sprite), mp.PlayerProperty.Number) + &quot; Wins!&quot;, effects.confetti, music.powerUp, carnival.ScoreTypes.LTime)
+})</code></pre>
+<h2 id="12-play-again-">12. Play Again!</h2><ul>
+<li>:binoculars: Go for the win!</li>
+</ul>
+<p>Play your game against yourself using the <strong>space bar</strong> and <strong>U key</strong> on your keyboard.  You should win when you get to the finish line.</p>
+<h2 id="13-add-the-finishing-touches-">13. Add the finishing touches!</h2><p>Let’s add a screen that keeps the game from starting until everyone is ready.</p>
+<p>We can also add a label, and a tone to let everyone know when it’s time to play!</p>
+<ul>
+<li>:suitcase: Open the <code>||game:Game||</code> category and drag the <br />
+<code>||game:finishing touches||</code>
+<br />bundle into <strong>the end</strong> of the<br />
+<code>||loops(noclick): on start||</code> <br />
+container already in the workspace.</li>
+</ul>
+
+    <div class="ui hint message">
+        <div class="content">
+            <pre><code class="lang-blocks">//@hide
+function set_up_for_players (num: number) {
+}
+
+    let list: Image[] = []
+    list = [
+    assets.image`p1`,
+    assets.image`p2`,
+    assets.image`p4`,
+    assets.image`p3`
+    ]
+    scene.setBackgroundImage(assets.image`bg`)
+    set_up_for_players(2)
+    let finish = sprites.create(assets.image`finish`, SpriteKind.Finish)
+    finish.setPosition(150, 50)
+
+game.wrap(function () {
+//@highlight
+    carnival.addLabelTo(&quot;Horse Race&quot;, carnival.Areas.Bottom)
+//@highlight
+    game.showLongText(&quot;P1, press the A button to Start&quot;, DialogLayout.Bottom)
+//@highlight
+    music.bigCrash.playUntilDone()
+})</code></pre>
+<h2 id="14-play-game-">14. Play Game!</h2><ul>
+<li>:binoculars: Play your finished game!</li>
+</ul>
+<p>You can play against someone else on the same keyboard using the <strong>space bar</strong> for player 1 and <strong>U key</strong> for player 2.</p>
+<p><img class="ui image" src="/static/tutorials/arrows/key.png" alt="Play on the same keyboard" title=" " loading="lazy"></p>
+<h2 id="15-finale">15. Finale</h2><p><strong>🎉 Way to Go 🎉</strong></p>
+<p>You have finished your very own Horse Race!</p>
+<p>When you’re ready, sign-in and click <strong>Done</strong> to challenge a friend to a multiplayer race online!</p>
+<pre><code class="lang-blockconfig.global">scene.setBackgroundImage(img`.`)
+set_up_for_players(2)
+let finish = sprites.create(assets.image`finish`, SpriteKind.Finish)
+finish.setPosition(150, 50)
+let textSprite2 = textsprite.create(&quot;Horse Race&quot;)
+textSprite2.setPosition(80, 108)
+game.showLongText(&quot;Press the A button to Start&quot;, DialogLayout.Bottom)
+music.bigCrash.playUntilDone()
+carnival.startTimer()
+
+//@hide
+function set_up_for_players (num: number) {
+    sprites.destroyAllSpritesOfKind(SpriteKind.Player)
+    for (let index = 0; index &lt;= num - 1; index++) {
+        mp.setPlayerSprite(mp.getPlayerByIndex(index), sprites.create(list[index], SpriteKind.Player))
+        mp.getPlayerSprite(mp.getPlayerByIndex(index)).setPosition(20, 130 / (num + 1) + 20 * index)
+    }
+}
+
+mp.onButtonEvent(mp.MultiplayerButton.A, ControllerButtonEvent.Pressed, function (player) {
+    mp.getPlayerSprite(player).x += 1.5
+})
+
+sprites.onOverlap(SpriteKind.Player, SpriteKind.Finish, function (sprite, otherSprite) {
+    carnival.customGameOverExpanded(&quot;Player &quot; + mp.getPlayerProperty(mp.getPlayerBySprite(sprite), mp.PlayerProperty.Number) + &quot; Wins!&quot;, effects.confetti, music.powerUp, carnival.ScoreTypes.LTime)
+})
+
+game.wrap(function () {
+    carnival.addLabelTo(&quot;Horse Race&quot;, carnival.Areas.Bottom)
+    game.showLongText(&quot;P1, press the A button to Start&quot;, DialogLayout.Bottom)
+    music.bigCrash.playUntilDone()
+})
+</code></pre>
+<pre><code class="lang-template">let list: Image[] = []
+list = [
+assets.image`p1`,
+assets.image`p2`,
+assets.image`p4`,
+assets.image`p3`
+]
+
+//@collapsed
+function set_up_for_players (num: number) {
+    sprites.destroyAllSpritesOfKind(SpriteKind.Player)
+    for (let index = 0; index &lt;= num - 1; index++) {
+        mp.setPlayerSprite(mp.getPlayerByIndex(index), sprites.create(list[index], SpriteKind.Player))
+        mp.getPlayerSprite(mp.getPlayerByIndex(index)).setPosition(20, 130 / (num + 1) + 20 * index)
+    }
+}</code></pre>
+<pre><code class="lang-ghost">
+sprites.onOverlap(SpriteKind.Player, SpriteKind.Finish, function (sprite, otherSprite) {
+    carnival.customGameOverExpanded(&quot;Player &quot; + mp.getPlayerProperty(mp.getPlayerBySprite(sprite), mp.PlayerProperty.Number) + &quot; Wins!&quot;, effects.confetti, music.powerUp, carnival.ScoreTypes.LTime)
+})
+mp.onButtonEvent(mp.MultiplayerButton.A, ControllerButtonEvent.Pressed, function (player) {
+    mp.getPlayerSprite(player).x += 1.5
+})
+function set_up_for_players (num: number) {
+    sprites.destroyAllSpritesOfKind(SpriteKind.Player)
+    for (let index = 0; index &lt;= num - 1; index++) {
+        mp.setPlayerSprite(mp.getPlayerByIndex(index), sprites.create(list[index], SpriteKind.Player))
+        mp.getPlayerSprite(mp.getPlayerByIndex(index)).setPosition(20, 115 / (num + 1) + 20 * index)
+    }
+}
+mp.onControllerEvent(ControllerEvent.Connected, function (player2) {
+    set_up_for_players(mp.getPlayerProperty(player2, mp.PlayerProperty.Number))
+})
+let list: Image[] = []
+list = [
+assets.image`p1`,
+assets.image`p2`,
+assets.image`p4`,
+assets.image`p3`
+]
+scene.setBackgroundColor(1)
+
+scene.setBackgroundImage(img`.`)
+
+set_up_for_players(2)
+let finish = sprites.create(assets.image`finish`, SpriteKind.Finish)
+finish.setPosition(150, 50)
+let textSprite2 = textsprite.create(&quot;Horse Race&quot;)
+textSprite2.setPosition(80, 108)
+game.showLongText(&quot;Press the A button to Start&quot;, DialogLayout.Bottom)
+music.bigCrash.playUntilDone()
+carnival.startTimer()
+</code></pre>
+<pre><code class="lang-package">multiplayer
+arcade-carnival=github:microsoft/arcade-carnival#v0.0.7
+horserace-images=github:microsoft/arcade-tutorial-extensions/horserace-images#v0.0.8</code></pre>
+<pre><code class="lang-customts">namespace SpriteKind {
+    //% isKind
+    export const Finish = SpriteKind.create()
+}
+
+
+namespace game{
+    /**
+    * just run the code
+    */
+    //% block=&quot;finishing touches&quot;  weight=300
+    //% handlerStatement=1
+    export function wrap(handler: () =&gt; void) {
+        handler();
+    }
+
+}
+</code></pre>
+<pre><code class="lang-assetjson">{
+  &quot;README.md&quot;: &quot; &quot;,
+  &quot;assets.json&quot;: &quot;&quot;,
+  &quot;images.g.jres&quot;: &quot;{\n    \&quot;image1\&quot;: {\n        \&quot;data\&quot;: \&quot;hwSgAHgAAAAiIiIiIhIRiIiIiBERERERISIiIhIREREREYiIiIgREREREREiIiISERERERERiIiIiBERERERESIiIhIiIiIiIhIRgYiIiBgRERERESIiIiIREREREYGIiIgREREREREhIiIiERERERERgYiIiBERERERESEiIiIiIiIiIhIREYiIiBgRERERESEiIiISERERERGIiIgYEREREREhIiIiEREREREREYiIiBgRERERESEiIiIiIiIiIhIREYGIiIgYEREREREiIiIiERERERGBiIiIERERERERIiIiEhEREREREYGIiIgREREREREiIiIiIiIiIhIRERGIiIgYEREREREhIiIiEhERERGBiIiIERERERERISIiIhEREREREYGIiIgREREREREhIiIiIiIiIhIRERGBiIiIERERERERIiIiIhERERERiIiIGBERERERESIiIhERERERERGIiIgYERERERERIiIiIiIiIhIRERERiIiIGBERERERISIiIhERERERgYiIiBERERERESIiIhIRERERERGBiIiIERERERERIiIiIiIiIhIRERERiIiIiBERERERESIiIiIREREREYiIiBERERERESEiIiIRERERERERiIiIERERERERISIiIiIiIhIRERERgYiIiBgRERERESIiIiIREREREYiIiBgREREREREiIiIRERERERERiIiIGBERERERESIiIiIiIhIREREREYiIiBgREREREREiIiISEREREYGIiBgREREREREiIiISERERERERgYiIGBERERERESIiIiIiIhIREREREYGIiIgYEREREREiIiIiERERERGIiIgREREREREhIiISEREREREREYiIiBERERERESEiIiIiIhIRERERERGIiIgYEREREREhIiIiEhERERGIiIgYEREREREhIiIiEREREREREYiIiBgRERERESEiIiIiIgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAiIiIiIgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAiIiIiIgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAiIiIiIgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAiIiIiIgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAiIiIiIgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAiIiIiIgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAiIiIiIgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAiIiIiIgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAiIiIiIgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAiIiIiIgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAiIiIiIgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAiIiIiIgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAiIiIiIgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAiIiIiIgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAiIiIiIgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAiIiIiIgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAiIiIiIgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAiIiIiIgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAiIiIiIgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAiIiIiIgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAiIiIiIgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAiIiIiIgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAiIiIiIgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAiIiIiIgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAiIiIiIgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAiIiIiIgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAiIiIiIgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAiIiIiIgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAiIiIiIgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAiIiIiIgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAiIiIiIgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAiIiIiIgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAiIiIiIgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAiIiIiIgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAiIiIiIgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAiIiIiIgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAiIiIiIgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAiIiIiIgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAiIiIiIgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAiIiIiIgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAiIiIiIgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAiIiIiIgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAiIiIiIgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAiIiIiIgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAiIiIiIgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAiIiIiIgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAiIiIiIgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAiIiIiIgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAiIiIiIgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAiIiIiIgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAiIiIiIgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAiIiIiIgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAiIiIiIgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAiIiIiIgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAiIiIiIgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAiIiIiIgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAiIiIiIgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAiIiIiIgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAiIiIiIgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAiIiIiIgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAiIiIiIgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAiIiIiIgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAiIiIiIgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAiIiIiIgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAiIiIiIgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAiIiIiIgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAiIiIiIgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAiIiIiIgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAiIiIiIgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAiIiIiIgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAiIiIiIgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAiIiIiIgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAiIiIiIgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAiIiIiIgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAiIiIiIgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAiIiIiIgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAiIiIiIgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAiIiIiIgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAiIiIiIgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAiIiIiIgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAiIiIiIgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAiIiIiIgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAiIiIiIgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAiIiIiIgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAiIiIiIgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAiIiIiIgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAiIiIiIgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAiIiIiIgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAiIiIiIgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAiIiIiIgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAiIiIiIgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAiIiIiIgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAiIiIiIgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAiIiIiIgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAiIiIiIgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAiIiIiIgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAiIiIiIgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAiIiIiIgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAiIiIiIgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAiIiIiIgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAiIiIiIgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAiIiIiIgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAiIiIiIgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAiIiIiIgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAiIiIiIgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAiIiIiIgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAiIiIiIgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAiIiIiIgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAiIiIiIgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAiIiIiIgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAiIiIiIgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAiIiIiIgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAiIiIiIgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAiIiIiIgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAiIiIiIgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAiIiIiIgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAiIiIiIgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAiIiIiIgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAiIiIiIgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAiIiIiIgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAiIiIiIgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAiIiIiIgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAiIiIiIgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAiIiIiIgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAiIiIiIgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAiIiIiIgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAiIiIiIgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAiIiIiIgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAiIiIiIgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAiIiIiIgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAiIiIiIgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAiIiIiIgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAiIiIiIgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAiIiIiIgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAiIiIiIgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAiIiIiIgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAiIiIiIhIRiIiIiBERERERISIiIhIREREREYiIiIgREREREREiIiISERERERERiIiIiBERERERESIiIhIiIiIiIhIRgYiIiBgRERERESIiIiIREREREYGIiIgREREREREhIiIiERERERERgYiIiBERERERESEiIiIiIiIiIhIREYiIiBgRERERESEiIiISERERERGIiIgYEREREREhIiIiEREREREREYiIiBgRERERESEiIiIiIiIiIhIREYGIiIgYEREREREiIiIiERERERGBiIiIERERERERIiIiEhEREREREYGIiIgREREREREiIiIiIiIiIhIRERGIiIgYEREREREhIiIiEhERERGBiIiIERERERERISIiIhEREREREYGIiIgREREREREhIiIiIiIiIhIRERGBiIiIERERERERIiIiIhERERERiIiIGBERERERESIiIhERERERERGIiIgYERERERERIiIiIiIiIhIRERERiIiIGBERERERISIiIhERERERgYiIiBERERERESIiIhIRERERERGBiIiIERERERERIiIiIiIiIhIRERERiIiIiBERERERESIiIiIREREREYiIiBERERERESEiIiIRERERERERiIiIGBERERERISIiIiIiIhIRERERgYiIiBgRERERESIiIiIREREREYiIiBgREREREREiIiIRERERERERiIiIiBERERERESIiIiIiIhIREREREYiIiBgREREREREiIiISEREREYGIiBgREREREREiIiISERERERERgYiIiBgRERERESEiIiIiIhIREREREYGIiIgYEREREREiIiIiERERERGIiIgREREREREhIiISEREREREREYiIiBgRERERERE=\&quot;,\n        \&quot;mimeType\&quot;: \&quot;image/x-mkcd-f4\&quot;,\n        \&quot;displayName\&quot;: \&quot;bg1\&quot;\n    },\n    \&quot;image3\&quot;: {\n        \&quot;data\&quot;: \&quot;hwQEAFAAAABVIlJVVSJSVVUiUlVVIlJVVSJSVVUiUlVVIlJVVSJSVVUiUlVVIlJVVSUiVVUlIlVVJSJVVSUiVVUlIlVVJSJVVSUiVVUlIlVVJSJVVSUiVVVVIlJVVSJSVVUiUlVVIlJVVSJSVVUiUlVVIlJVVSJSVVUiUlVVIlJVVSUiVVUlIlVVJSJVVSUiVVUlIlVVJSJVVSUiVVUlIlVVJSJVVSUi\&quot;,\n        \&quot;mimeType\&quot;: \&quot;image/x-mkcd-f4\&quot;,\n        \&quot;displayName\&quot;: \&quot;finish\&quot;\n    },\n    \&quot;image4\&quot;: {\n        \&quot;data\&quot;: \&quot;hwQeABAAAAAAAAAAAgAAAAAAAAAiAAAAAAAAACIAAAAAAABAIgAAAAAAACACAAAAAAAAIgAAAAAAAABCAAAAAAAAQCIAAAAAAAAgIkIAAAAAACIiIgQAAAAAIiIiIiQEAAAiIiIiQgAAACIiIiIiBAAAIiIiACICAAAkIiIAACIAACAiIgIAIAAAICIiAgAAAAAgIiIiAAAAACAiIiIAQgAAIiIiIgIiACAiIiIiIgIAICIiIiIiAEAiIiIkIgAAICIiAgAiAAAkIiIAACAEACIiAgAAACIEICJCAAAAQAIAIiIEAAAABAAAIgQAAAAAAAAgAgAAAAA=\&quot;,\n        \&quot;mimeType\&quot;: \&quot;image/x-mkcd-f4\&quot;,\n        \&quot;displayName\&quot;: \&quot;p1\&quot;\n    },\n    \&quot;image5\&quot;: {\n        \&quot;data\&quot;: \&quot;hwQeABAAAAAAAAAACAAAAAAAAACIAAAAAAAAAIgAAAAAAABgiAAAAAAAAIAIAAAAAAAAiAAAAAAAAABoAAAAAAAAYIgAAAAAAACAiGgAAAAAAIiIiAYAAAAAiIiIiIYGAACIiIiIaAAAAIiIiIiIBgAAiIiIAIgIAACGiIgAAIgAAICIiAgAgAAAgIiICAAAAACAiIiIAAAAAICIiIgAaAAAiIiIiAiIAICIiIiIiAgAgIiIiIiIAGCIiIiGiAAAgIiICACIAACGiIgAAIAGAIiICAAAAIgGgIhoAAAAYAgAiIgGAAAABgAAiAYAAAAAAACACAAAAAA=\&quot;,\n        \&quot;mimeType\&quot;: \&quot;image/x-mkcd-f4\&quot;,\n        \&quot;displayName\&quot;: \&quot;p2\&quot;\n    },\n    \&quot;image7\&quot;: {\n        \&quot;data\&quot;: \&quot;hwQeABAAAAAAAAAABwAAAAAAAAB3AAAAAAAAAHcAAAAAAABgdwAAAAAAAHAHAAAAAAAAdwAAAAAAAABnAAAAAAAAYHcAAAAAAABwd2cAAAAAAHd3dwYAAAAAd3d3d3YGAAB3d3d3ZwAAAHd3d3d3BgAAd3d3AHcHAAB2d3cAAHcAAHB3dwcAcAAAcHd3BwAAAABwd3d3AAAAAHB3d3cAZwAAd3d3dwd3AHB3d3d3dwcAcHd3d3d3AGB3d3d2dwAAcHd3BwB3AAB2d3cAAHAGAHd3BwAAAHcGcHdnAAAAYAcAd3cGAAAABgAAdwYAAAAAAABwBwAAAAA=\&quot;,\n        \&quot;mimeType\&quot;: \&quot;image/x-mkcd-f4\&quot;,\n        \&quot;displayName\&quot;: \&quot;p4\&quot;\n    },\n    \&quot;image6\&quot;: {\n        \&quot;data\&quot;: \&quot;hwQeABAAAAAAAAAABAAAAAAAAABEAAAAAAAAAEQAAAAAAABQRAAAAAAAAEAEAAAAAAAARAAAAAAAAABUAAAAAAAAUEQAAAAAAABARFQAAAAAAERERAUAAAAAREREREUFAABEREREVAAAAEREREREBQAAREREAEQEAABFREQAAEQAAEBERAQAQAAAQEREBAAAAABAREREAAAAAEBEREQAVAAARERERAREAEBERERERAQAQEREREREAFBERERFRAAAQEREBABEAABFREQAAEAFAEREBAAAAEQFQERUAAAAUAQAREQFAAAABQAARAUAAAAAAABABAAAAAA=\&quot;,\n        \&quot;mimeType\&quot;: \&quot;image/x-mkcd-f4\&quot;,\n        \&quot;displayName\&quot;: \&quot;p3\&quot;\n    },\n    \&quot;image2\&quot;: {\n        \&quot;data\&quot;: \&quot;hwSgAHgAAAD//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////xERERERERERERERERERERERERERERERERERERERERERERERERERERERERER8f///////////////////xERERERERERERERERERERERERERERERERERERERERERERERERERERERERER8f///////////////////xERERERERERERERERERERERERERERERERERERERERERERERERERERERERER8f///////////////////xERERERERERERERERERERERERERERERERERERERERERERERERERERERERER8f///////////////////xERERERERERERERERERERERERERERERERERERERERERERERERERERERERER8f///////////////////xERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERER/////////////////xERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERER/////////////////xERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERER/////////////////xERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERER/////////////////xERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERER/////////////////xERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERER/////////////////xERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERER////////////////////HxERERERERERERERERERERERERERERERERERERERERERERERERERERERERER////////////////////HxERERERERERERERERERERERERERERERERERERERERERERERERERERERERER////////////////////HxERERERERERERERERERERERERERERERERERERERERERERERERERERERERER////////////////////HxERERERERERERERERERERERERERERERERERERERERERERERERERERERERER////////////////////HxERERERERERERERERERERERERERERERERERERERERERERERERERERERERER////////////////////HxERERERERERERERERERERERERERERERERERERERERERERERERERERERERER////////////////////HxERERERERERERERERERERERERERERERERERERERERERERERERERERERERER////////////////////HxERERERERERERERERERERERERERERERERERERERERERERERERERERERERER////////////////////HxERERERERERERERERERERERERERERERERERERERERERERERERERERERERER////////////////////HxERERERERERERERERERERERERERERERERERERERERERERERERERERERERER////////////////////HxERERERERERERERERERERERERERERERERERERERERERERERERERERERERER////////////////////HxERERERERERERERERERERERERERERERERERERERERERERERERERERERERER////////////////////HxERERERERERERERERERERERERERERERERERERERERERERERERERERERERER////////////////////HxERERERERERERERERERERERERERERERERERERERERERERERERERERERERER////////////////////////ERERERERERERERERERERERERERERERERERERERERERERERERERERERER////////////////////////ERERERERERERERERERERERERERERERERERERERERERERERERERERERER////////////////////////ERERERERERERERERERERERERERERERERERERERERERERERERERERERER////////////////////////ERERERERERERERERERERERERERERERERERERERERERERERERERERERER////////////////////////ERERERERERERERERERERERERERERERERERERERERERERERERERERERER////////////////////////ERERERERERERERERERERERERERERERERERERERERERERERERERERERER////////////////////////ERERERERERERERERERERERERERERERERERERERERERERERERERERERER////////////////////////ERERERERERERERERERERERERERERERERERERERERERERERERERERERER////////////////////////ERERERERERERERERERERERERERERERERERERERERERERERERERERERER////////////////////////ERERERERERERERERERERERERERERERERERERERERERERERERERERERER////////////////////////ERERERERERERERERERERERERERERERERERERERERERERERERERERERER////////////////////////ERERERERERERERERERERERERERERERERERERERERERERERERERERERER////////////////////////ERERERERERERERERERERERERERERERERERERERERERERERERERERERER////////////////////////ERERERERERERERERERERERERERERERERERERERERERERERERERERERER////////////////////////ERERERERERERERERERERERERERERERERERERERERERERERERERERERER////////////////////////ERERERERERERERERERERERERERERERERERERERERERERERERERERERER////////////////////////ERERERERERERERERERERERERERERERERERERERERERERERERERERERER////////////////////////ERERERERERERERERERERERERERERERERERERERERERERERERERERERER////////////////////////ERERERERERERERERERERERERERERERERERERERERERERERERERERERER////////////////////////ERERERERERERERERERERERERERERERERERERERERERERERERERERERER////////////////////////ERERERERERERERERERERERERERERERERERERERERERERERERERERERER////////////////////////ERERERERERERERERERERERERERERERERERERERERERERERERERERERER////////////////////////ERERERERERERERERERERERERERERERERERERERERERERERERERERERER////////////////////////ERERERERERERERERERERERERERERERERERERERERERERERERERERERER////////////////////////ERERERERERERERERERERERERERERERERERERERERERERERERERERERER////////////////////////ERERERERERERERERERERERERERERERERERERERERERERERERERERERER////////////////////////ERERERERERERERERERERERERERERERERERERERERERERERERERERERER////////////////////////ERERERERERERERERERERERERERERERERERERERERERERERERERERERER////////////////////////ERERERERERERERERERERERERERERERERERERERERERERERERERERERER////////////////////////ERERERERERERERERERERERERERERERERERERERERERERERERERERERER////////////////////////ERERERERERERERERERERERERERERERERERERERERERERERERERERERER////////////////////////ERERERERERERERERERERERERERERERERERERERERERERERERERERERER////////////////////////ERERERERERERERERERERERERERERERERERERERERERERERERERERERER////////////////////////ERERERERERERERERERERERERERERERERERERERERERERERERERERERER////////////////////////ERERERERERERERERERERERERERERERERERERERERERERERERERERERER////////////////////////ERERERERERERERERERERERERERERERERERERERERERERERERERERERER////////////////////////ERERERERERERERERERERERERERERERERERERERERERERERERERERERER////////////////////////ERERERERERERERERERERERERERERERERERERERERERERERERERERERER////////////////////////ERERERERERERERERERERERERERERERERERERERERERERERERERERERER////////////////////////ERERERERERERERERERERERERERERERERERERERERERERERERERERERER////////////////////////ERERERERERERERERERERERERERERERERERERERERERERERERERERERER////////////////////////ERERERERERERERERERERERERERERERERERERERERERERERERERERERER////////////////////////ERERERERERERERERERERERERERERERERERERERERERERERERERERERER////////////////////////ERERERERERERERERERERERERERERERERERERERERERERERERERERERER////////////////////////ERERERERERERERERERERERERERERERERERERERERERERERERERERERER////////////////////////ERERERERERERERERERERERERERERERERERERERERERERERERERERERER////////////////////////ERERERERERERERERERERERERERERERERERERERERERERERERERERERER////////////////////////ERERERERERERERERERERERERERERERERERERERERERERERERERERERER////////////////////////ERERERERERERERERERERERERERERERERERERERERERERERERERERERER////////////////////////ERERERERERERERERERERERERERERERERERERERERERERERERERERERER////////////////////////ERERERERERERERERERERERERERERERERERERERERERERERERERERERER////////////////////////ERERERERERERERERERERERERERERERERERERERERERERERERERERERER////////////////////////ERERERERERERERERERERERERERERERERERERERERERERERERERERERER////////////////////////ERERERERERERERERERERERERERERERERERERERERERERERERERERERER////////////////////////ERERERERERERERERERERERERERERERERERERERERERERERERERERERER////////////////////////ERERERERERERERERERERERERERERERERERERERERERERERERERERERER////////////////////////ERERERERERERERERERERERERERERERERERERERERERERERERERERERER////////////////////////ERERERERERERERERERERERERERERERERERERERERERERERERERERERER////////////////////////ERERERERERERERERERERERERERERERERERERERERERERERERERERERER////////////////////////ERERERERERERERERERERERERERERERERERERERERERERERERERERERER////////////////////////ERERERERERERERERERERERERERERERERERERERERERERERERERERERER////////////////////////ERERERERERERERERERERERERERERERERERERERERERERERERERERERER////////////////////////ERERERERERERERERERERERERERERERERERERERERERERERERERERERER////////////////////////ERERERERERERERERERERERERERERERERERERERERERERERERERERERER////////////////////////ERERERERERERERERERERERERERERERERERERERERERERERERERERERER////////////////////////ERERERERERERERERERERERERERERERERERERERERERERERERERERERER////////////////////////ERERERERERERERERERERERERERERERERERERERERERERERERERERERER////////////////////////ERERERERERERERERERERERERERERERERERERERERERERERERERERERER////////////////////////ERERERERERERERERERERERERERERERERERERERERERERERERERERERER////////////////////////ERERERERERERERERERERERERERERERERERERERERERERERERERERERER////////////////////////ERERERERERERERERERERERERERERERERERERERERERERERERERERERER////////////////////////ERERERERERERERERERERERERERERERERERERERERERERERERERERERER////////////////////////ERERERERERERERERERERERERERERERERERERERERERERERERERERERER////////////////////////ERERERERERERERERERERERERERERERERERERERERERERERERERERERER////////////////////////ERERERERERERERERERERERERERERERERERERERERERERERERERERERER////////////////////////ERERERERERERERERERERERERERERERERERERERERERERERERERERERER////////////////////////ERERERERERERERERERERERERERERERERERERERERERERERERERERERER////////////////////////ERERERERERERERERERERERERERERERERERERERERERERERERERERERER////////////////////////ERERERERERERERERERERERERERERERERERERERERERERERERERERERER////////////////////////ERERERERERERERERERERERERERERERERERERERERERERERERERERERER////////////////////////ERERERERERERERERERERERERERERERERERERERERERERERERERERERER////////////////////////ERERERERERERERERERERERERERERERERERERERERERERERERERERERER////////////////////////ERERERERERERERERERERERERERERERERERERERERERERERERERERERER////////////////////////ERERERERERERERERERERERERERERERERERERERERERERERERERERERER////////////////////////ERERERERERERERERERERERERERERERERERERERERERERERERERERERER////////////////////////ERERERERERERERERERERERERERERERERERERERERERERERERERERERER////////////////////////ERERERERERERERERERERERERERERERERERERERERERERERERERERERER////////////////////////ERERERERERERERERERERERERERERERERERERERERERERERERERERERER////////////////////////ERERERERERERERERERERERERERERERERERERERERERERERERERERERER////////////////////////ERERERERERERERERERERERERERERERERERERERERERERERERERERERER////////////////////////ERERERERERERERERERERERERERERERERERERERERERERERERERERERER////////////////////////ERERERERERERERERERERERERERERERERERERERERERERERERERERERER////////////////////////ERERERERERERERERERERERERERERERERERERERERERERERERERERERER////////////////////////ERERERERERERERERERERERERERERERERERERERERERERERERERERERER////////////////////////ERERERERERERERERERERERERERERERERERERERERERERERERERERERER////////////////////////ERERERERERERERERERERERERERERERERERERERERERERERERERERERER////////////////////////ERERERERERERERERERERERERERERERERERERERERERERERERERERERER////////////////////////ERERERERERERERERERERERERERERERERERERERERERERERERERERERER////////////////////////ERERERERERERERERERERERERERERERERERERERERERERERERERERERER////////////////////HxERERERERERERERERERERERERERERERERERERERERERERERERERERERERER////////////////////HxERERERERERERERERERERERERERERERERERERERERERERERERERERERERER////////////////////HxERERERERERERERERERERERERERERERERERERERERERERERERERERERERER////////////////////HxERERERERERERERERERERERERERERERERERERERERERERERERERERERERER////////////////////HxERERERERERERERERERERERERERERERERERERERERERERERERERERERERER////////////////////HxERERERERERERERERERERERERERERERERERERERERERERERERERERERERER////////////////////HxERERERERERERERERERERERERERERERERERERERERERERERERERERERERER////////////////////HxERERERERERERERERERERERERERERERERERERERERERERERERERERERERER////////////////////HxERERERERERERERERERERERERERERERERERERERERERERERERERERERERER////////////////////HxERERERERERERERERERERERERERERERERERERERERERERERERERERERERER////////////////////HxERERERERERERERERERERERERERERERERERERERERERERERERERERERERER////////////////////HxERERERERERERERERERERERERERERERERERERERERERERERERERERERERER////////////////////HxERERERERERERERERERERERERERERERERERERERERERERERERERERERERER/////////////////xERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERER/////////////////xERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERER/////////////////xERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERER/////////////////xERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERER/////////////////xERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERER/////////////////xERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERER/////////////////xERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERER/////////////////xERERERERERERERERERERERERERERERERERERERERERERERERERERERERER8f///////////////////xERERERERERERERERERERERERERERERERERERERERERERERERERERERERER8f///////////////////xERERERERERERERERERERERERERERERERERERERERERERERERERERERERER8f///////////////////xERERERERERERERERERERERERERERERERERERERERERERERERERERERERER8f///////////////////xERERERERERERERERERERERERERERERERERERERERERERERERERERERERER8f////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////8=\&quot;,\n        \&quot;mimeType\&quot;: \&quot;image/x-mkcd-f4\&quot;,\n        \&quot;displayName\&quot;: \&quot;bg\&quot;\n    },\n    \&quot;*\&quot;: {\n        \&quot;mimeType\&quot;: \&quot;image/x-mkcd-f4\&quot;,\n        \&quot;dataEncoding\&quot;: \&quot;base64\&quot;,\n        \&quot;namespace\&quot;: \&quot;myImages\&quot;\n    }\n}&quot;,
+  &quot;images.g.ts&quot;: &quot;// Auto-generated code. Do not edit.\nnamespace myImages {\n\n    helpers._registerFactory(\&quot;image\&quot;, function(name: string) {\n        switch(helpers.stringTrim(name)) {\n            case \&quot;image1\&quot;:\n            case \&quot;bg1\&quot;:return img`\n2222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222\n2222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222\n2222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222\n2222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222\n2222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222\n2222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222\n2222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222\n2222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222\n2222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222\n2222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222\n2222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222\n111111111111.........................................................................................................................................11111111111\n111111111111.........................................................................................................................................11111111111\n111111111111.........................................................................................................................................11111111111\n811111111111.........................................................................................................................................81111111111\n881111111111.........................................................................................................................................88111111111\n888111111111.........................................................................................................................................88811111111\n888811111111.........................................................................................................................................88881111111\n888881111111.........................................................................................................................................88888111111\n888888111111.........................................................................................................................................88888811111\n888888881111.........................................................................................................................................88888888111\n888888888111.........................................................................................................................................88888888811\n188888888811.........................................................................................................................................18888888881\n111888888881.........................................................................................................................................11188888888\n111888888888.........................................................................................................................................11188888888\n111118888888.........................................................................................................................................11111888888\n111111888888.........................................................................................................................................11111188888\n111111188888.........................................................................................................................................11111118888\n111111118888.........................................................................................................................................11111111888\n111111111188.........................................................................................................................................11111111118\n111111111188.........................................................................................................................................11111111118\n111111111111.........................................................................................................................................11111111111\n111111111111.........................................................................................................................................11111111111\n211111111111.........................................................................................................................................21111111111\n221111111111.........................................................................................................................................22111111111\n222111111111.........................................................................................................................................22211111111\n222211111111.........................................................................................................................................22221111111\n222221111111.........................................................................................................................................22222111111\n222222111111.........................................................................................................................................22222211111\n222222211111.........................................................................................................................................22222221111\n222222222111.........................................................................................................................................22222222211\n122222222111.........................................................................................................................................12222222211\n112222222221.........................................................................................................................................11222222222\n111222222222.........................................................................................................................................11122222222\n111122222222.........................................................................................................................................11112222222\n111112222222.........................................................................................................................................11111222222\n111111122222.........................................................................................................................................11111112222\n111111122222.........................................................................................................................................11111112222\n111111111222.........................................................................................................................................11111111122\n111111111122.........................................................................................................................................11111111112\n111111111112.........................................................................................................................................11111111111\n111111111111.........................................................................................................................................11111111111\n811111111111.........................................................................................................................................81111111111\n881111111111.........................................................................................................................................88111111111\n888111111111.........................................................................................................................................88811111111\n888881111111.........................................................................................................................................88888111111\n888888111111.........................................................................................................................................88888811111\n888888811111.........................................................................................................................................88888881111\n888888888111.........................................................................................................................................88888888811\n888888888811.........................................................................................................................................88888888881\n118888888888.........................................................................................................................................11888888888\n111888888888.........................................................................................................................................11188888888\n111118888888.........................................................................................................................................11111888888\n111111888888.........................................................................................................................................11111188888\n111111118888.........................................................................................................................................11111111888\n111111111188.........................................................................................................................................11111111118\n111111111118.........................................................................................................................................11111111111\n111111111111.........................................................................................................................................11111111111\n111111111111.........................................................................................................................................11111111111\n111111111111.........................................................................................................................................11111111111\n111111111111.........................................................................................................................................11111111111\n111111111111.........................................................................................................................................11111111111\n211111111111.........................................................................................................................................21111111111\n222111111111.........................................................................................................................................22211111111\n222211111111.........................................................................................................................................22221111111\n222221111111.........................................................................................................................................22222111111\n222222211111.........................................................................................................................................22222221111\n222222221111.........................................................................................................................................22222222111\n222222222211.........................................................................................................................................22222222221\n122222222222.........................................................................................................................................12222222222\n111222222222.........................................................................................................................................11122222222\n111122222222.........................................................................................................................................11112222222\n111111222222.........................................................................................................................................11111122222\n111111122222.........................................................................................................................................11111112222\n111111111222.........................................................................................................................................11111111122\n111111111112.........................................................................................................................................11111111111\n111111111111.........................................................................................................................................11111111111\n111111111111.........................................................................................................................................11111111111\n111111111111.........................................................................................................................................11111111111\n111111111111.........................................................................................................................................11111111111\n111111111111.........................................................................................................................................11111111111\n111111111111.........................................................................................................................................11111111111\n811111111111.........................................................................................................................................81111111111\n881111111111.........................................................................................................................................88111111111\n888111111111.........................................................................................................................................88811111111\n888881111111.........................................................................................................................................88888111111\n888888111111.........................................................................................................................................88888811111\n888888811111.........................................................................................................................................88888881111\n888888888111.........................................................................................................................................88888888811\n888888888811.........................................................................................................................................88888888881\n118888888888.........................................................................................................................................11888888888\n111888888888.........................................................................................................................................11188888888\n111118888888.........................................................................................................................................11111888888\n111111888888.........................................................................................................................................11111188888\n111111118888.........................................................................................................................................11111118888\n111111111188.........................................................................................................................................11111111888\n111111111118.........................................................................................................................................11111111188\n111111111111.........................................................................................................................................11111111111\n111111111111.........................................................................................................................................11111111111\n111111111111.........................................................................................................................................11111111111\n111111111111.........................................................................................................................................11111111111\n111111111111.........................................................................................................................................11111111111\n211111111111.........................................................................................................................................21111111111\n222111111111.........................................................................................................................................22211111111\n222211111111.........................................................................................................................................22221111111\n222221111111.........................................................................................................................................22222111111\n222222211111.........................................................................................................................................22222221111\n222222221111.........................................................................................................................................22222222111\n222222222211.........................................................................................................................................22222222211\n122222222222.........................................................................................................................................12222222221\n`;\n            case \&quot;image3\&quot;:\n            case \&quot;finish\&quot;:return img`\n5555\n5555\n2555\n2255\n2225\n5222\n5522\n5552\n5555\n5555\n2555\n2255\n2225\n5222\n5522\n5552\n5555\n5555\n2555\n2255\n2225\n5222\n5522\n5552\n5555\n5555\n2555\n2255\n2225\n5222\n5522\n5552\n5555\n5555\n2555\n2255\n2225\n5222\n5522\n5552\n5555\n5555\n2555\n2255\n2225\n5222\n5522\n5552\n5555\n5555\n2555\n2255\n2225\n5222\n5522\n5552\n5555\n5555\n2555\n2255\n2225\n5222\n5522\n5552\n5555\n5555\n2555\n2255\n2225\n5222\n5522\n5552\n5555\n5555\n2555\n2255\n2225\n5222\n5522\n5552\n`;\n            case \&quot;image4\&quot;:\n            case \&quot;p1\&quot;:return img`\n........................42....\n......................42222...\n......................222222..\n....................22222222..\n.........222224....2222222222.\n.......422222222222222222.4222\n.....2222222222222222222...442\n...42242222222222222222.......\n22222...222222222222224.......\n.222....422222222222222.......\n.........4222..222222222......\n..........222....22222222.....\n..........4222.....222..42....\n..........2422......22...24...\n..........4.422...222....424..\n..............22..42..........\n`;\n            case \&quot;image5\&quot;:\n            case \&quot;p2\&quot;:return img`\n........................68....\n......................68888...\n......................888888..\n....................88888888..\n.........888886....8888888888.\n.......688888888888888888.6888\n.....8888888888888888888...668\n...68868888888888888888.......\n88888...888888888888886.......\n.888....688888888888888.......\n.........6888..888888888......\n..........888....88888888.....\n..........6888.....888..68....\n..........8688......88...86...\n..........6.688...888....686..\n..............88..68..........\n`;\n            case \&quot;image7\&quot;:\n            case \&quot;p4\&quot;:return img`\n........................67....\n......................67777...\n......................777777..\n....................77777777..\n.........777776....7777777777.\n.......677777777777777777.6777\n.....7777777777777777777...667\n...67767777777777777777.......\n77777...777777777777776.......\n.777....677777777777777.......\n.........6777..777777777......\n..........777....77777777.....\n..........6777.....777..67....\n..........7677......77...76...\n..........6.677...777....676..\n..............77..67..........\n`;\n            case \&quot;image6\&quot;:\n            case \&quot;p3\&quot;:return img`\n........................54....\n......................54444...\n......................444444..\n....................44444444..\n.........444445....4444444444.\n.......544444444444444444.5444\n.....4444444444444444444...554\n...54454444444444444444.......\n44444...444444444444445.......\n.444....544444444444444.......\n.........5444..444444444......\n..........444....44444444.....\n..........5444.....444..54....\n..........4544......44...45...\n..........5.544...444....545..\n..............44..54..........\n`;\n            case \&quot;image2\&quot;:\n            case \&quot;bg\&quot;:return img`\nffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff\nffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff\nffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff\nffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff\nfffff111111111111ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff111111111111fffff\nfffff111111111111ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff111111111111fffff\nfffff111111111111ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff111111111111fffff\nfffff111111111111ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff111111111111fffff\nfffff111111111111ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff111111111111fffff\nfffff11111111111111111111111111fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1111111111111111111111111fffff\nfffff11111111111111111111111111fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1111111111111111111111111fffff\nfffff11111111111111111111111111fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1111111111111111111111111fffff\nfffff11111111111111111111111111fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1111111111111111111111111fffff\nfffff11111111111111111111111111fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1111111111111111111111111fffff\nfffff111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111fffff\nfffff111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111fffff\nfffff111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111fffff\nfffff111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111fffff\nfffff111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111fffff\nfffff111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111fffff\nfffff111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111fffff\nfffff111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111fffff\nfffff111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111fffff\nfffff111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111fffff\nfffff111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111fffff\nfffff111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111fffff\nfffff111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111fffff\nfffff111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111fffff\nfffff111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111fffff\nfffff111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111fffff\nfffff111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111fffff\nfffff111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111fffff\nfffff111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111fffff\nfffff111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111fffff\nfffff111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111fffff\nfffff111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111fffff\nfffff111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111fffff\nfffff111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111fffff\nfffff111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111fffff\nfffff111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111fffff\nfffff111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111fffff\nfffff111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111fffff\nfffff111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111fffff\nfffff111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111fffff\nfffff111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111fffff\nfffff111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111fffff\nfffff111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111fffff\nfffff111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111fffff\nfffff111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111fffff\nfffff111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111fffff\nfffff111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111fffff\nfffff111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111fffff\nfffff111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111fffff\nfffff111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111fffff\nfffff111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111fffff\nfffff111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111fffff\nfffff111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111fffff\nfffff111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111fffff\nfffff111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111fffff\nfffff111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111fffff\nfffff111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111fffff\nfffff111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111fffff\nfffff111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111fffff\nfffff111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111fffff\nfffff111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111fffff\nfffff111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111fffff\nfffff111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111fffff\nfffff111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111fffff\nfffff111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111fffff\nfffff111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111fffff\nfffff111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111fffff\nfffff111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111fffff\nfffff111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111fffff\nfffff111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111fffff\nfffff111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111fffff\nfffff111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111fffff\nfffff111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111fffff\nfffff111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111fffff\nfffff111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111fffff\nfffff111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111fffff\nfffff111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111fffff\nfffff111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111fffff\nfffff111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111fffff\nfffff111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111fffff\nfffff111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111fffff\nfffff111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111fffff\nfffff111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111fffff\nfffff111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111fffff\nfffff111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111fffff\nfffff111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111fffff\nfffff111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111fffff\nfffff111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111fffff\nfffff111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111fffff\nffffffffff11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111ffffffffff\nffffffffff11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111ffffffffff\nffffffffff11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111ffffffffff\nffffffffff11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111ffffffffff\nffffffffff11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111ffffffffff\nffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff\nffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff\nffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff\nffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff\nffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff\nffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff\nffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff\nffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff\nffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff\nffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff\nffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff\nffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff\nffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff\nffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff\nffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff\nffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff\nffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff\nffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff\nffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff\nffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff\nffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff\nffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff\n`;\n        }\n        return null;\n    })\n\n    helpers._registerFactory(\&quot;animation\&quot;, function(name: string) {\n        switch(helpers.stringTrim(name)) {\n\n        }\n        return null;\n    })\n\n    helpers._registerFactory(\&quot;song\&quot;, function(name: string) {\n        switch(helpers.stringTrim(name)) {\n\n        }\n        return null;\n    })\n\n}\n// Auto-generated code. Do not edit.\n&quot;,
+  &quot;main.blocks&quot;: &quot;&lt;xml xmlns=\&quot;https://developers.google.com/blockly/xml\&quot;&gt;&lt;variables&gt;&lt;variable type=\&quot;KIND_SpriteKind\&quot; id=\&quot;[qb-zQFfixAE4ckWODEd\&quot;&gt;Finish&lt;/variable&gt;&lt;variable type=\&quot;KIND_SpriteKind\&quot; id=\&quot;FeL6$3UG4?W3[y0S8O?j\&quot;&gt;Player&lt;/variable&gt;&lt;variable type=\&quot;KIND_SpriteKind\&quot; id=\&quot;1=d0MN[$z28j!1M30M-7\&quot;&gt;Projectile&lt;/variable&gt;&lt;variable type=\&quot;KIND_SpriteKind\&quot; id=\&quot;j`4!Khtge4DT|L/veUz`\&quot;&gt;Food&lt;/variable&gt;&lt;variable type=\&quot;KIND_SpriteKind\&quot; id=\&quot;V-;Ht3l@6;U2U`%TOr?Z\&quot;&gt;Enemy&lt;/variable&gt;&lt;variable type=\&quot;KIND_SpriteKind\&quot; id=\&quot;XD5r#j+_cD,hyr0g;cV}\&quot;&gt;Text&lt;/variable&gt;&lt;variable type=\&quot;KIND_SpriteKind\&quot; id=\&quot;u/a*)wpmj+f@2Ba[ai4+\&quot;&gt;StatusBar&lt;/variable&gt;&lt;variable type=\&quot;KIND_SpriteKind\&quot; id=\&quot;@KIdnoCqRN$6EqcyY!s[\&quot;&gt;Ball&lt;/variable&gt;&lt;variable type=\&quot;KIND_SpriteKind\&quot; id=\&quot;6M[r.E7zB3hl2?Br5$;E\&quot;&gt;Booth&lt;/variable&gt;&lt;variable type=\&quot;KIND_SpriteKind\&quot; id=\&quot;XR4`E[)Hz3.IP-M2mZtL\&quot;&gt;Mouse&lt;/variable&gt;&lt;variable type=\&quot;KIND_SpriteKind\&quot; id=\&quot;]kw=%^Bzz#D)[$j@C8J(\&quot;&gt;Crosshair&lt;/variable&gt;&lt;variable type=\&quot;KIND_SpriteKind\&quot; id=\&quot;,Enp4W5;=AyDUyY]70*n\&quot;&gt;Moon&lt;/variable&gt;&lt;variable id=\&quot;oEY;F0FKFA|lcn$#8ks{\&quot;&gt;index&lt;/variable&gt;&lt;variable id=\&quot;4cTnj1es#Q*_;%pj9Bz:\&quot;&gt;list&lt;/variable&gt;&lt;variable id=\&quot;8J;^^[FH*bbCle,,K_gD\&quot;&gt;player2&lt;/variable&gt;&lt;variable id=\&quot;))xf;50ST$B9j,#VRU7a\&quot;&gt;finish&lt;/variable&gt;&lt;variable id=\&quot;%BxSf_jSaCF}VU[+fgT}\&quot;&gt;textSprite2&lt;/variable&gt;&lt;/variables&gt;&lt;/xml&gt;&quot;,
+  &quot;main.ts&quot;: &quot;&quot;,
+  &quot;pxt.json&quot;: &quot;{\n    \&quot;name\&quot;: \&quot;horserace - assets\&quot;,\n    \&quot;description\&quot;: \&quot;\&quot;,\n    \&quot;dependencies\&quot;: {\n        \&quot;device\&quot;: \&quot;*\&quot;\n    },\n    \&quot;files\&quot;: [\n        \&quot;main.blocks\&quot;,\n        \&quot;main.ts\&quot;,\n        \&quot;README.md\&quot;,\n        \&quot;assets.json\&quot;,\n        \&quot;tilemap.g.jres\&quot;,\n        \&quot;tilemap.g.ts\&quot;,\n        \&quot;images.g.jres\&quot;,\n        \&quot;images.g.ts\&quot;\n    ],\n    \&quot;targetVersions\&quot;: {\n        \&quot;branch\&quot;: \&quot;v1.11.37\&quot;,\n        \&quot;tag\&quot;: \&quot;v1.11.37\&quot;,\n        \&quot;commits\&quot;: \&quot;https://github.com/microsoft/pxt-arcade/commits/bf992d35ca2baeaa26d773aac7caad5a152c45aa\&quot;,\n        \&quot;target\&quot;: \&quot;1.11.37\&quot;,\n        \&quot;pxt\&quot;: \&quot;8.4.30\&quot;\n    },\n    \&quot;preferredEditor\&quot;: \&quot;tsprj\&quot;\n}\n&quot;,
+  &quot;tilemap.g.jres&quot;: &quot;{\n    \&quot;transparency18\&quot;: {\n        \&quot;data\&quot;: \&quot;hwQQABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==\&quot;,\n        \&quot;mimeType\&quot;: \&quot;image/x-mkcd-f4\&quot;,\n        \&quot;tilemapTile\&quot;: true\n    },\n    \&quot;*\&quot;: {\n        \&quot;mimeType\&quot;: \&quot;image/x-mkcd-f4\&quot;,\n        \&quot;dataEncoding\&quot;: \&quot;base64\&quot;,\n        \&quot;namespace\&quot;: \&quot;myTiles\&quot;\n    }\n}&quot;,
+  &quot;tilemap.g.ts&quot;: &quot;// Auto-generated code. Do not edit.\nnamespace myTiles {\n    //% fixedInstance jres blockIdentity=images._tile\n    export const transparency18 = image.ofBuffer(hex``);\n\n    helpers._registerFactory(\&quot;tile\&quot;, function(name: string) {\n        switch(helpers.stringTrim(name)) {\n            case \&quot;transparency18\&quot;:return transparency18;\n        }\n        return null;\n    })\n\n}\n// Auto-generated code. Do not edit.\n&quot;
+}</code></pre>
+
+        </div>
+    </div>
+
+    </div>
+
+					<div class="hideprint"></div>
+				</div>
+
+			</div>
+
+			
+<!-- include footer.html -->
+<footer class="ui vertical footer segment hideprint docs inverted" aria-hidden="false">
+    <div class="ui center aligned container">
+        <div class="ui horizontal link list">
+            <a
+                class="item"
+                href="https://twitter.com/intent/follow?screen_name=MsMakeCode"
+                title="Follow us on Twitter"
+                target="_blank"
+                rel="noopener">
+                <i class="huge icon twitter"></i>
+            </a>
+            <a class="item" href="https://www.youtube.com/channel/UCye7YlvFUUQ1dSy0WZZ1T_Q" title="Subscribe to our YouTube channel"
+                target="_blank" rel="noopened">
+                <i class="huge icon youtube"></i>
+            </a>
+            <a class="item" href="mailto:makecode@microsoft.com" title="Send us an Email"
+                target="_blank" rel="noopened">
+                <i class="huge icon mail"></i>
+            </a>
+        </div>
+        <div class="ui section divider"></div>
+        <div class="ui container horizontal small divided link list">
+            <a id="langpicker" tabindex="0" class="ui item" rel="noopener">
+                <i class="icon xicon globe" aria-hidden="true" role="presentation"></i>Language
+            </a>
+            <a class="item" href="https://makecode.com/privacy" target="_blank" rel="noopener">Privacy &amp; Cookies</a>
+            <a class="item" href="https://makecode.com/termsofuse" target="_blank" rel="noopener">Terms Of Use</a>
+            <a class="item" href="https://makecode.com/trademarks" target="_blank" rel="noopener">Trademarks</a>
+            <span class="item">© 2022 Microsoft</span>
+        </div>
+        <div class="ui container horizontal small link list poweredBy">
+            <span class="item">Powered by</span>
+            <a class="middle aligned" href="https://makecode.com/" title="Microsoft MakeCode"
+                target="_blank" rel="noopener">
+                <img width="100" src="/static/logo/Microsoft-logo_rgb_c-gray.png" alt="Microsoft">
+            </a>
+        </div>
+    </div>
+</footer>
+
+<!-- end include footer.html -->
+
+
+		</div>
+
+	</div>
+
+    
+<!-- include langpicker.html -->
+<div id="langmodal" class="ui modal docs" role="dialog" aria-modal="true" aria-describedby="langmodalheader" tabindex="-1">
+    <h2 id="langmodalheader" class="header">Select Language</h2>
+    <div role="button" class="closeIcon" tabindex="0" aria-label="Close">
+        <i class="icon close remove circle" aria-hidden="true"></i>
+    </div>
+
+	<div class="content">
+	    <div class="group">
+            <div id="availablelocales" class="ui cards centered" role="listbox" aria-label="List of available locales"></div>
+        </div>
+        <div class="ui" id="langmodalfooter">
+            <a class="ui" href="/pxt-arcade-app/docs/translate.html" target="_blank" rel="noopener noreferrer">
+                How do I add a new language?
+            </a>
+
+            <a id="translatebtn" class="ui button" role="button" tabindex="0">
+                Translate this page
+            </a>
+        </div>
+    </div>
+</div>
+
+
+<!-- end include langpicker.html -->
+
+	
+<!-- include macros.html -->
+<!-- macro button -->
+
+<!-- macro vimeo -->
+
+<!-- macro youtube -->
+
+<!-- macro section -->
+
+<!-- macro hide -->
+
+<!-- macro avatar -->
+
+<!-- macro hint -->
+
+<!-- macro codecard -->
+
+<!-- macro tutorialhint -->
+
+<!-- macro reminder -->
+
+<!-- macro alert -->
+
+<!-- macro tip -->
+
+<!-- wrapped around ordinary content -->
+<!-- macro main-container -->
+
+<!-- used for 'column' box - they are collected and wrapped in 'column-container' -->
+<!-- macro column -->
+<!-- macro column-container -->
+
+
+<!-- Menu on the top of the page -->
+<!-- macro item -->
+
+<!-- macro divider -->
+
+<!-- TOC in the sidebar -->
+<!-- macro item -->
+
+<!-- macro divider -->
+
+<!-- macro toc-dropdown -->
+
+<!-- macro toc-dropdown-noLink -->
+
+<!-- macro toc-dropdown-noHeading -->
+
+<!-- TODO: duplicates of above for compatability with docsrender.ts;
+    remove with pxtlib/docsrender.ts TOC TODOs after cloud bump. -->
+<!-- macro top-dropdown -->
+
+<!-- macro top-dropdown-noHeading -->
+
+<!-- macro inner-dropdown -->
+
+<!-- macro nested-dropdown -->
+<!-- end include macros.html -->
+
+	
+<!-- include tracking.html -->
+<script type="text/javascript" src="/pxt-arcade-app/pxtweb.js"></script>
+<script type="text/javascript">
+    window.loadAppInsights = function (includeCookie) {
+        //Backend will patch / + doccdn + / with CDN url and the check that URL ends with the sha would pass
+        var isProduction = includeCookie && (/[0-9a-f]{40}\/ai\.2\.min\.js$/.test("/pxt-arcade-app/ai.2.min.js"));
+        !function(T,l,y){var S=T.location,k="script",D="connectionString",C="ingestionendpoint",I="disableExceptionTracking",E="ai.device.",b="toLowerCase",w="crossOrigin",N="POST",e="appInsightsSDK",t=y.name||"appInsights";(y.name||T[e])&&(T[e]=t);var n=T[t]||function(d){var g=!1,f=!1,m={initialize:!0,queue:[],sv:"5",version:2,config:d};function v(e,t){var n={},a="Browser";return n[E+"id"]=a[b](),n[E+"type"]=a,n["ai.operation.name"]=S&&S.pathname||"_unknown_",n["ai.internal.sdkVersion"]="javascript:snippet_"+(m.sv||m.version),{time:function(){var e=new Date;function t(e){var t=""+e;return 1===t.length&&(t="0"+t),t}return e.getUTCFullYear()+"-"+t(1+e.getUTCMonth())+"-"+t(e.getUTCDate())+"T"+t(e.getUTCHours())+":"+t(e.getUTCMinutes())+":"+t(e.getUTCSeconds())+"."+((e.getUTCMilliseconds()/1e3).toFixed(3)+"").slice(2,5)+"Z"}(),iKey:e,name:"Microsoft.ApplicationInsights."+e.replace(/-/g,"")+"."+t,sampleRate:100,tags:n,data:{baseData:{ver:2}}}}var h=d.url||y.src;if(h){function a(e){var t,n,a,i,r,o,s,c,u,p,l;g=!0,m.queue=[],f||(f=!0,t=h,s=function(){var e={},t=d.connectionString;if(t)for(var n=t.split(";"),a=0;a<n.length;a++){var i=n[a].split("=");2===i.length&&(e[i[0][b]()]=i[1])}if(!e[C]){var r=e.endpointsuffix,o=r?e.location:null;e[C]="https://"+(o?o+".":"")+"dc."+(r||"services.visualstudio.com")}return e}(),c=s[D]||d[D]||"",u=s[C],p=u?u+"/v2/track":d.endpointUrl,(l=[]).push((n="SDK LOAD Failure: Failed to load Application Insights SDK script (See stack for details)",a=t,i=p,(o=(r=v(c,"Exception")).data).baseType="ExceptionData",o.baseData.exceptions=[{typeName:"SDKLoadFailed",message:n.replace(/\./g,"-"),hasFullStack:!1,stack:n+"\nSnippet failed to load ["+a+"] -- Telemetry is disabled\nHelp Link: https://go.microsoft.com/fwlink/?linkid=2128109\nHost: "+(S&&S.pathname||"_unknown_")+"\nEndpoint: "+i,parsedStack:[]}],r)),l.push(function(e,t,n,a){var i=v(c,"Message"),r=i.data;r.baseType="MessageData";var o=r.baseData;return o.message='AI (Internal): 99 message:"'+("SDK LOAD Failure: Failed to load Application Insights SDK script (See stack for details) ("+n+")").replace(/\"/g,"")+'"',o.properties={endpoint:a},i}(0,0,t,p)),function(e,t){if(JSON){var n=T.fetch;if(n&&!y.useXhr)n(t,{method:N,body:JSON.stringify(e),mode:"cors"});else if(XMLHttpRequest){var a=new XMLHttpRequest;a.open(N,t),a.setRequestHeader("Content-type","application/json"),a.send(JSON.stringify(e))}}}(l,p))}function i(e,t){f||setTimeout(function(){!t&&m.core||a()},500)}var e=function(){var n=l.createElement(k);n.src=h;var e=y[w];return!e&&""!==e||"undefined"==n[w]||(n[w]=e),n.onload=i,n.onerror=a,n.onreadystatechange=function(e,t){"loaded"!==n.readyState&&"complete"!==n.readyState||i(0,t)},n}();y.ld<0?l.getElementsByTagName("head")[0].appendChild(e):setTimeout(function(){l.getElementsByTagName(k)[0].parentNode.appendChild(e)},y.ld||0)}try{m.cookie=l.cookie}catch(p){}function t(e){for(;e.length;)!function(t){m[t]=function(){var e=arguments;g||m.queue.push(function(){m[t].apply(m,e)})}}(e.pop())}var n="track",r="TrackPage",o="TrackEvent";t([n+"Event",n+"PageView",n+"Exception",n+"Trace",n+"DependencyData",n+"Metric",n+"PageViewPerformance","start"+r,"stop"+r,"start"+o,"stop"+o,"addTelemetryInitializer","setAuthenticatedUserContext","clearAuthenticatedUserContext","flush"]),m.SeverityLevel={Verbose:0,Information:1,Warning:2,Error:3,Critical:4};var s=(d.extensionConfig||{}).ApplicationInsightsAnalytics||{};if(!0!==d[I]&&!0!==s[I]){var c="onerror";t(["_"+c]);var u=T[c];T[c]=function(e,t,n,a,i){var r=u&&u(e,t,n,a,i);return!0!==r&&m["_"+c]({message:e,url:t,lineNumber:n,columnNumber:a,error:i}),r},d.autoExceptionInstrumented=!0}return m}(y.cfg);function a(){y.onInit&&y.onInit(n)}(T[t]=n).queue&&0===n.queue.length?(n.queue.push(a),n.trackPageView({})):a()}(window,document,{
+            src: "https://js.monitor.azure.com/scripts/b/ai.2.min.js", // The SDK URL Source
+            onInit: function (sdk) {
+                sdk.addTelemetryInitializer(function (envelope) {
+                    // App Insights automatically sends a page view event on setup, but we send our own later with additional properties.
+                    // This stops the automatic event from firing, so we don't end up with duplicate page view events.
+                    if (envelope.baseType == "PageviewData" && !envelope.baseData.properties) {
+                        return false;
+                    }
+
+                    if (envelope.baseType == "PageviewPerformanceData") {
+                        var pageName = envelope.baseData.name;
+                        envelope.baseData.name = window.location.origin;
+                        if (!envelope.baseData.properties) {
+                            envelope.baseData.properties = {};
+                        }
+                        envelope.baseData.properties.pageName = pageName;
+                        var scrubbedUrl = scrubUrl(envelope.baseData.uri);
+                        envelope.baseData.uri = scrubbedUrl;
+                        var toUrl = new URL(scrubbedUrl);
+                        envelope.baseData.properties.pathName = toUrl ? toUrl.pathname : "";
+                        if (envelope.ext && envelope.ext.trace) {
+                            envelope.ext.trace.name = toUrl ? toUrl.pathname : "";
+                        }
+                    }
+
+                    var telemetryItem = envelope.baseData;
+                    telemetryItem.properties = telemetryItem.properties || {};
+                    telemetryItem.properties["cookie"] = isProduction;
+                    if (typeof pxtConfig === "undefined" || !pxtConfig || !pxtConfig.targetId) {
+                        telemetryItem.properties["target"] = "arcade";
+                        return true;
+                    }
+                    telemetryItem.properties["target"] = pxtConfig.targetId;
+                    telemetryItem.properties["stage"] = (pxtConfig.relprefix || "/--").replace(/[^a-z]/ig, '')
+                    if (typeof Windows !== "undefined")
+                        telemetryItem.properties["WindowsApp"] = 1;
+                    var userAgent = navigator.userAgent.toLowerCase();
+                    var electronRegexResult = /\belectron\/(\d+\.\d+\.\d+.*?)(?: |$)/i.exec(userAgent); // Example navigator.userAgent: "Mozilla/5.0 Chrome/61.0.3163.100 Electron/2.0.0 Safari/537.36"
+                    if (electronRegexResult) {
+                        telemetryItem.properties["Electron"] = 1;
+                        telemetryItem.properties["ElectronVersion"] = electronRegexResult[1];
+                    }
+                    if (typeof pxtElectron !== "undefined") {
+                        telemetryItem.properties["PxtElectron"] = 1;
+                        telemetryItem.properties["ElectronVersion"] = pxtElectron.versions.electronVersion;
+                        telemetryItem.properties["ChromiumVersion"] = pxtElectron.versions.chromiumVersion;
+                        telemetryItem.properties["NodeVersion"] = pxtElectron.versions.nodeVersion;
+                        telemetryItem.properties["PxtElectronVersion"] = pxtElectron.versions.pxtElectronVersion;
+                        telemetryItem.properties["PxtCoreVersion"] = pxtElectron.versions.pxtCoreVersion;
+                        telemetryItem.properties["PxtTargetVersion"] = pxtElectron.versions.pxtTargetVersion;
+                        telemetryItem.properties["PxtElectronIsProd"] = pxtElectron.versions.isProd;
+                    }
+                    // Kiosk UWP info is appended to the user agent by the makecode-dotnet-apps/arcade-kiosk UWP app
+                    var kioskUwpRegexResult = /\((MakeCode Arcade Kiosk UWP)\/([\S]+)\/([\S]+)\)/i.exec(userAgent); // Example navigator.userAgent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36 Edg/117.0.2045.60 (MakeCode Arcade Kiosk UWP/0.1.41.0/Windows.Xbox)"
+                    if (kioskUwpRegexResult) {
+                        telemetryItem.properties["KioskUwp"] = 1;
+                        telemetryItem.properties["KioskUwpVersion"] = kioskUwpRegexResult[2];
+                        telemetryItem.properties["KioskUwpPlatform"] = kioskUwpRegexResult[3];
+                    }
+                    return true;
+                });
+            },
+            cfg: {
+                instrumentationKey:"9801ed01-c40f-46ec-aa40-2a1742a9e71c",
+                disableAjaxTracking: true,
+                overridePageViewDuration: false,
+                disableExceptionTracking: true,
+                disableCorrelationHeaders: true,
+                disableCookiesUsage: !isProduction,
+                isStorageUseDisabled: !isProduction,
+                url: "/pxt-arcade-app/ai.2.min.js"
+            }
+        });
+        window.appInsights=appInsights;
+        var location = window.location.toString();
+        appInsights.trackPageView({
+            name: window.location.hostname,
+            uri: window.location.origin,
+            properties: {
+                url: scrubUrl(location),
+                urlReferrer: scrubUrl(document.referrer.toString())
+            }
+        });
+
+        // Scrub potential PII from the URL.
+        function scrubUrl(url) {
+            if (!url) return url;
+
+            var scriptIdRegex = /(?:S?\d{5}-\d{5}-\d{5}-\d{5})|(?:_[0-9a-zA-Z]{12})/g;
+            var scrubbedUrl = new URL(url.toLocaleLowerCase().replace(scriptIdRegex, "xxxxx-xxxxx-xxxxx-xxxxx"));
+
+            // Just as a precaution, strip any suspicious query parameters.
+            var blockedParamKeywords = ["username", "password", "token", "pwd"];
+            var searchParams = Array.from(scrubbedUrl.searchParams.keys());
+            for (var param of searchParams) {
+                if (blockedParamKeywords.some(k => param.indexOf(k) != -1)) {
+                    scrubbedUrl.searchParams.delete(param);
+                }
+            }
+
+            return scrubbedUrl.toString();
+        }
+
+        return isProduction;
+    }
+    pxt.initAnalyticsAsync();
+</script>
+
+<!-- end include tracking.html -->
+
+
+</body>
+
+</html>

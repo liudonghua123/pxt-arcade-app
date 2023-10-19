@@ -1,0 +1,893 @@
+<!DOCTYPE html>
+<html lang="" xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#"
+	xmlns:fb="http://www.facebook.com/2008/fbml">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Microsoft MakeCode Arcade</title>
+	<meta name="Description" content="Develop your programming skills by quickly creating and modding retro arcade games with Blocks and JavaScript in the MakeCode editor" />
+
+	<!-- ifdef incontexttranslations endif -->
+	
+<!-- include meta.html -->
+<!-- This file is typically overriden by the target, with own Twitter
+     account etc. Most data is taken from the theme file though.  
+  -->
+
+<!-- include robotsmeta.html -->
+
+<!-- end include robotsmeta.html -->
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@msmakecode" />
+<meta name="twitter:title" content="Microsoft MakeCode Arcade" />
+<meta name="twitter:description" content="Develop your programming skills by quickly creating and modding retro arcade games with Blocks and JavaScript in the MakeCode editor" />
+<meta name="twitter:image" content="/static/vscode/add-extension.png" />
+
+<meta property="og:title" content="Microsoft MakeCode Arcade" />
+<meta property="og:site_name" content="Microsoft MakeCode" />
+<meta property="og:type" content="website" />
+<meta property="og:description" content="Develop your programming skills by quickly creating and modding retro arcade games with Blocks and JavaScript in the MakeCode editor" />
+<meta property="fb:app_id" content="" />
+<meta property="og:image" content="/static/vscode/add-extension.png" />
+
+<meta name="format-detection" content="telephone=no">
+<link rel="apple-touch-icon" href="docs/static/icons/favicon.ico">
+<link rel="icon" type="image/png" href="docs/static/icons/favicon.ico">
+<link rel="shortcut icon" href="docs/static/icons/favicon.ico">
+<meta name="theme-color" content="">
+
+<!-- end include meta.html -->
+
+	
+<!-- include head.html -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width,height=device-height,user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
+
+<link rel="stylesheet" data-rtl="/blb/rtlsemantic.css" href="/pxt-arcade-app/semantic.css" />
+<link id="blocklycss"  data-rtl="/blb/rtlblockly.css" rel="stylesheet" href="/pxt-arcade-app/blockly.css" />
+<link rel="stylesheet" href="/pxt-arcade-app/docfiles/style.css" />
+<link rel="stylesheet" href="/pxt-arcade-app/docfiles/vs.css" />
+<link rel="stylesheet" href="/pxt-arcade-app/docfiles/target.css" />
+
+<script src="/pxt-arcade-app/jquery.js" type="text/javascript"></script>
+<script src="/pxt-arcade-app/semantic.js" type="text/javascript"></script>
+<script src="/pxt-arcade-app/docfiles/target.js" type="text/javascript"></script>
+<script src="/pxt-arcade-app/embed.js" type="text/javascript"></script>
+<script src="/pxt-arcade-app/docfiles/docs.js" type="text/javascript"></script>
+
+<style>
+    
+</style>
+
+<!-- end include head.html -->
+
+
+</head>
+
+<body id='root' class='root'>
+	<div id="accessibleMenu" class="ui accessibleMenu borderless fixed menu docs" role="menubar">
+		
+            <a href="#maincontent" class="ui item link" tabindex="0" role="menuitem">Skip to main content</a>
+        
+	</div>
+
+	
+<!-- include tocheader.html -->
+<div id="top-bar" class="ui fixed accent borderless inverted main menu hideprint docs" role="menubar">
+    <div>
+        
+            <a id="togglesidebar" class="launch icon item" tabindex="0" title="Side menu" aria-label="Side menu" role="menuitem" aria-expanded="false">
+                <i class="content icon"></i>
+            </a>
+        
+        <div class="item" role="menuitem">
+            <div class="header-org-logo">
+                <img src="/static/logo/Microsoft_logo_rgb_W-white_D.png" alt="Microsoft">
+            </div>
+            <div class="header-org-logo-sm">
+                <img src="/static/logo/Microsoft_logo_rgb_W-white_D-square.png" alt="Microsoft">
+            </div>
+            <div class="header-title"><span>MakeCode</span></div>
+        </div>
+    </div>
+    <div>
+        <div class="item">
+            <form id="tocsearch1" class="search" role="form" method="get" action="https://www.bing.com/search">
+                <div class="ui fluid icon input">
+                    <input type="hidden" name="q1" value="site:https://arcade.makecode.com/" />
+                    
+                <input type="search" name="q" placeholder="Search..." aria-label="Search Documentation">
+                <i onclick="document.getElementById('tocsearch1').submit();" tabindex="0" class="search link icon" aria-label="Search" role="button"></i>
+            
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div id="side-menu" class="ui vertical accent inverted sidebar menu left hideprint docs" role="menubar">
+    <!-- TOC Menu (tocheader.html) -->
+    <div class="menuContainer" role="menu">
+        
+    <a class="item " href="/pxt-arcade-app/docs/about.html" role="menuitem">About</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/faq.html" role="menuitem">FAQ</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/projects.html" role="menuitem">Projects</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/github.html" role="menuitem">GitHub</a>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/pxt-arcade-app/docs/reference.html">Reference</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-arcade-app/docs/reference/sprites.html" role="menuitem">sprites</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/reference/controller.html" role="menuitem">controller</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/reference/game.html" role="menuitem">game</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/reference/music.html" role="menuitem">music</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/reference/scene.html" role="menuitem">scene</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/reference/info.html" role="menuitem">info</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/reference/images.html" role="menuitem">images</a>
+
+        </div>
+    </div>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/pxt-arcade-app/docs/blocks.html">Blocks</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-arcade-app/docs/blocks/on-start.html" role="menuitem">On Start</a>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/pxt-arcade-app/docs/blocks/loops.html">Loops</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-arcade-app/docs/blocks/loops/repeat.html" role="menuitem">repeat</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/blocks/loops/for.html" role="menuitem">for</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/blocks/loops/while.html" role="menuitem">while</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/blocks/loops/for-of.html" role="menuitem">for of</a>
+
+        </div>
+    </div>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/pxt-arcade-app/docs/blocks/logic.html">Logic</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-arcade-app/docs/blocks/logic/if.html" role="menuitem">if</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/blocks/logic/boolean.html" role="menuitem">Boolean</a>
+
+        </div>
+    </div>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/pxt-arcade-app/docs/blocks/variables.html">Variables</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-arcade-app/docs/blocks/variables/assign.html" role="menuitem">assign</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/blocks/variables/change.html" role="menuitem">change var</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/blocks/variables/var.html" role="menuitem">var</a>
+
+        </div>
+    </div>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/blocks/math.html" role="menuitem">Math</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/blocks/javascript-blocks.html" role="menuitem">JavaScript blocks</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/blocks/custom.html" role="menuitem">Custom blocks</a>
+
+        </div>
+    </div>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/pxt-arcade-app/docs/python.html">Python</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-arcade-app/docs/python/call.html" role="menuitem">Calling</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/python/sequence.html" role="menuitem">Sequencing</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/python/variables.html" role="menuitem">Variables</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/python/operators.html" role="menuitem">Operators</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/python/statements.html" role="menuitem">Statements</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/python/functions.html" role="menuitem">Functions</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/python/classes.html" role="menuitem">Classes</a>
+
+        </div>
+    </div>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/pxt-arcade-app/docs/javascript.html">JavaScript</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-arcade-app/docs/javascript/call.html" role="menuitem">Calling</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/javascript/sequence.html" role="menuitem">Sequencing</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/javascript/variables.html" role="menuitem">Variables</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/javascript/operators.html" role="menuitem">Operators</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/javascript/statements.html" role="menuitem">Statements</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/javascript/functions.html" role="menuitem">Functions</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/javascript/types.html" role="menuitem">Types</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/javascript/classes.html" role="menuitem">Classes</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/javascript/interfaces.html" role="menuitem">Interfaces</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/javascript/generics.html" role="menuitem">Generics</a>
+
+        </div>
+    </div>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/pxt-arcade-app/docs/types.html">Types</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-arcade-app/docs/types/number.html" role="menuitem">Number</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/types/string.html" role="menuitem">String</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/types/boolean.html" role="menuitem">Boolean</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/types/array.html" role="menuitem">Array</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/types/function.html" role="menuitem">Function</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/types/image.html" role="menuitem">Image</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/types/sprite.html" role="menuitem">Sprite</a>
+
+        </div>
+    </div>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/block-gallery.html" role="menuitem">Blocks Gallery</a>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="">Miscellaneous</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-arcade-app/docs/about.html" role="menuitem">About</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/support.html" role="menuitem">Support</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/translate.html" role="menuitem">Translate</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/share.html" role="menuitem">Sharing projects</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/multiplayer.html" role="menuitem">Multiplayer</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/offline.html" role="menuitem">Offline support</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/save.html" role="menuitem">Save</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/identity/sign-in.html" role="menuitem">Sign In</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/identity/cloud-sync.html" role="menuitem">Cloud Sync</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/vscode.html" role="menuitem">VS Code</a>
+
+        </div>
+    </div>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/pxt-arcade-app/docs/hardware.html">Hardware</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-arcade-app/docs/hardware/errors.html" role="menuitem">Errors</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/hardware/adding.html" role="menuitem">Adding New Board</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/hardware/raspberry-pi.html" role="menuitem">Raspberry Pi</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/hardware/makey-makey.html" role="menuitem">Makey Makey</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/hardware/shoebox-controller.html" role="menuitem">Shoebox Controller</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/hardware/dev.html" role="menuitem">Dev</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/hardware/dbg.html" role="menuitem">Debug connector</a>
+
+        </div>
+    </div>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="">Developers</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-arcade-app/docs/cli.html" role="menuitem">Command Line Interface</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/code.html" role="menuitem">Visual Studio Code support</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/blocks-embed.html" role="menuitem">Blocks Embed</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/developer/images.html" role="menuitem">Art, images, colors</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/developer/sound.html" role="menuitem">Sounds</a>
+
+        </div>
+    </div>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/pxt-arcade-app/docs/lessons.html">Lessons</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-arcade-app/docs/lessons/cherry-pickr.html" role="menuitem">Cherry Pickr</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/lessons/barrel-dodger.html" role="menuitem">Barrel Dodger</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/lessons/dance-party.html" role="menuitem">Dance Party</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/lessons/block-out.html" role="menuitem">BlockOut</a>
+
+        </div>
+    </div>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/pxt-arcade-app/docs/courses.html">Courses</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-arcade-app/docs/courses/csintro1.html" role="menuitem">CS Intro 1</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/courses/csintro2.html" role="menuitem">CS Intro 2</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/courses/csintro3.html" role="menuitem">CS Intro 3</a>
+
+        </div>
+    </div>
+
+    </div>
+</div>
+<!-- end include tocheader.html -->
+
+
+	<div id="docs" class="pusher">
+
+		<div class="article" id="maincontent">
+			<div class="article-inner">
+
+				
+<!-- include header.html -->
+<div class="ui one column padded grid hideprint">
+    <div class="column ui container">
+        
+    </div>
+</div>
+<!-- end include header.html -->
+
+
+				<div class="main ui container fluid mainbody">
+					<button id="printbtn" class="circular ui icon right floated button hideprint hidemobile"
+						title="Print" aria-label="Print">
+						<i class="icon print"></i>
+					</button>
+					
+    <div class="ui text">
+        <h1 id="microsoft-makecode-arcade-extension-for-visual-studio-code">Microsoft MakeCode Arcade extension for Visual Studio Code</h1><p>A VS Code extension for making retro-style video games with <a target="_blank" rel="nofollow noopener" href="https://arcade.makecode.com/">Microsoft MakeCode Arcade</a>. Code, create pixel art, design levels, and play your game in the <a target="_blank" rel="nofollow noopener" href="https://code.visualstudio.com/">VS Code</a> app or at <a target="_blank" rel="nofollow noopener" href="https://insiders.vscode.dev/makecode">vscode.dev</a>!</p>
+<h2 id="install-the-makecode-extension-in-vs-code">Install the MakeCode extension in VS Code</h2><p>If you’re using the VS Code app instead of vscode.dev, make sure the <strong>Microsoft MakeCode Arcade</strong> extension is installed. Check by going to the <strong>View</strong> menu and chose <strong>Extensions</strong> (View &gt; Extenstions). If you don’t see the extension in the installed list, search for it by typing “makecode” in the search box. When it appears in the results list, click the Install button.</p>
+<p><img class="ui image" src="/static/vscode/add-extension.png" alt="Screenshot of the VS code extensions search and selection for Microsoft MakeCode Arcade with install button" loading="lazy"></p>
+<h2 id="opening-the-makecode-asset-explorer">Opening the MakeCode Asset Explorer</h2><p>When the Microsoft MakeCode Arcade extension is enabled, You can access the MakeCode Asset Explorer by clicking on the MakeCode icon in the Visual Studio Code action bar.</p>
+<p><img class="ui image" src="/static/vscode/action-bar.png" alt="Screenshot of the VS code action bar with an arrow pointing to the MakeCode Arcade Asset Explorer" loading="lazy"></p>
+<h2 id="running-actions-in-the-makecode-asset-explorer">Running actions in the MakeCode Asset Explorer</h2><p>At the top of the asset explorer you’ll find a list of <strong>ACTIONS</strong> for managing MakeCode Arcade projects.</p>
+<p><img class="ui image" src="/static/vscode/command-list.png" alt="Screenshot of the MakeCode Asset Explorer with a red box around the command list" loading="lazy"></p>
+<h2 id="starting-a-new-project">Starting a new project</h2><p>To start a new MakeCode project in VS Code, you first need to open an empty folder (File &gt; Open Folder). If you don’t have an empty folder ready, go create one with your computer’s file manager.</p>
+
+    <div class="ui info message">
+        <div class="content">
+            <h4 id="file-menu-on-strong-vscode-dev-strong-">File menu on <strong>vscode.dev</strong></h4><p>In vscode.dev, the <strong>File</strong> menu is located in the hamburger button (☰) in the top-left corner of the page.</p>
+
+        </div>
+    </div>
+<p>Once you’ve opened a folder, you can create an empty project by clicking the “Create an empty project” command in the MakeCode Asset Explorer.</p>
+<h3 id="importing-an-existing-makecode-project">Importing an existing MakeCode project</h3><p>If you have a share link for a MakeCode Arcade project, you can also import it by clicking the “Import project from URL” command and pasting the URL in the input window that appears.</p>
+<h3 id="opening-an-existing-github-project">Opening an existing GitHub project</h3><p>If you have opened a GitHub repository that contains a MakeCode Arcade project, you’ll need to install your project’s dependencies for features like intellisense to work. Click the “Install project dependencies” command in the ACTIONS section of the MakeCode Asset Explorer to download and install them.</p>
+
+    <div class="ui info message">
+        <div class="content">
+            <h4 id="online-dependencies">Online dependencies</h4><p>You must be connected to the internet in order to download and install MakeCode extensions needed by your projects.</p>
+
+        </div>
+    </div>
+<h2 id="anatomy-of-a-makecode-project">Anatomy of a MakeCode project</h2><p>Inside your MakeCode project, you’ll see a folder structure that looks something like this:</p>
+<pre><code>project/
+├─ built/
+├─ main.ts
+└─ pxt.json
+   ...</code></pre><p>Don’t worry if you don’t see all of these files or if your project contains more than what’s listed here! We’re just going to go over the important ones first:</p>
+<ul>
+<li><code>built/</code> - contains all of the compiled code for your project. If you compile your project, the result will show up inside this directory.</li>
+<li><code>main.ts</code> - is the main code file for your project. This code will run when you run your game.</li>
+<li><code>pxt.json</code> - is the file that configures your project. More on that below!</li>
+</ul>
+<p>Some other files you might see in your project include:</p>
+<ul>
+<li><code>*.jres</code> and <code>*.g.jres</code> - these files contain the assets for your project like images, animations, songs, and tilemaps. See “Managing your project’s assets” below for more information on assets.</li>
+<li><code>*.g.ts</code> - these files are autogenerated when the assets for your project change. Don’t edit these by hand!</li>
+<li><code>README.md</code> - this is a markdown file where you can add documentation for your project that other people can read when they import it.</li>
+<li><code>main.blocks</code> - if you imported your project, it might have a blocks file inside. You can’t edit this file inside of VS code!</li>
+<li><code>tsconfig.json</code> - this file is required to make features like intellisense work in the editor. You probably don’t need to edit it!</li>
+<li><code>.github</code>, <code>mkc.json</code>, <code>.vscode</code>, <code>.gitignore</code>, <code>.prettierrc</code>, <code>assets.json</code> - These are all advanced configuration files. You can safely ignore them!</li>
+</ul>
+<h3 id="project-settings-pxt-json">Project settings - pxt.json</h3><p>The <code>pxt.json</code> file is very important and it’s required in all MakeCode projects. Be careful when editing this file! If contains invalid JSON or is missing required fields, your project might stop working. Always check for errors before saving it!</p>
+<p>Some of the more important fields in this file are:</p>
+<ul>
+<li><strong>name</strong> - name of the project. When you create a share link, this name is what people will see. Try to make it descriptive!</li>
+<li><strong>description</strong> - description of your project.</li>
+<li><strong>dependencies</strong> - this field contains all of the extensions used by your project. To add/remove an extension, see the sections below. By default, all arcade projects depend on the <code>device</code> extension; make sure not to remove it if you want your project to work with MakeCode Arcade!</li>
+<li><strong>files</strong> - a list of the files in your project. All <code>.ts</code>, <code>.jres</code>, <code>.g.ts</code>, <code>.g.jres</code>, and <code>.md</code> files should be listed here.</li>
+<li><strong>palette (optional)</strong> - this optional field can be used to change the 15 colors that MakeCode Arcade uses for its color palette. More information <a target="_blank" rel="nofollow noopener" href="https://arcade.makecode.com/developer/images">here</a>.</li>
+<li><strong>version (optional)</strong> - this optional field is used to set the version of your project. Versions should be in the from 0.0.0 (aka <a target="_blank" rel="nofollow noopener" href="https://semver.org/">semantic versioning</a>). This field is mostly just for extensions.</li>
+<li><strong>testFiles (optional)</strong> - this optional field lists files to include when building the project itself, but not include when the project is added to another project as an extension. It’s useful for testing out your code if you are authoring an extension.</li>
+</ul>
+<h3 id="adding-a-file-to-your-project">Adding a file to your project</h3><p>Whenever you create a new file that you want to be included in your project, you need to add it to the <strong>files</strong> entry inside <code>pxt.json</code>. If you aren’t seeing your changes when you run your game, make sure you didn’t leave a file out!</p>
+<h2 id="run-your-project-in-the-simulator">Run your project in the simulator</h2><p>Click the “Start MakeCode simulator” command in the MakeCode Asset Explorer to run your game inside of VS Code. A new view pane for the simulator will open after the project has finished compiling and will automatically reload whenever you save a file in the open workspace.</p>
+<p><img class="ui image" src="/static/vscode/simulator-pane.png" alt="Screenshot of VS Code with the MakeCode simulator open and the &quot;Start MakeCode simulator&quot; command highlighted" loading="lazy"></p>
+<p>To use your keyboard to control the simulator, make sure to click on the simulator pane first so that it has input focus.</p>
+<h3 id="viewing-the-simulator-console">Viewing the simulator console</h3><p>All serial messages and exceptions from the simulator are printed in VS Code’s output view pane. If the output view pane is hidden, you can open it from the View menu in the top bar (View &gt; Output).</p>
+
+    <div class="ui info message">
+        <div class="content">
+            <h4 id="view-menu-on-strong-vscode-dev-strong-">View menu on <strong>vscode.dev</strong></h4><p>In vscode.dev, the <strong>View</strong> menu is located in the hamburger button (☰) in the top-left corner of the page.</p>
+
+        </div>
+    </div>
+<p>Once the pane is visible you can view all MakeCode messages by selecting “MakeCode” from the dropdown in the top-right:</p>
+<p><img class="ui image" src="/static/vscode/output-pane.png" alt="Screenshot of VS Code with the output pane open and a red arrow pointing to a dropdown with MakeCode selected" loading="lazy"></p>
+<h2 id="managing-your-project-assets">Managing your project assets</h2><p>All of your projects images, tilemaps, animations, and songs will be listed inside the MakeCode Arcade Asset Explorer. Clicking on an asset from this list will open the asset editor. Any changes made to an asset inside of this editor will be automatically saved in your project.</p>
+<h3 id="creating-an-asset">Creating an asset</h3><p>To create a new asset, hover over the asset type in the MakeCode Asset Explorer and click the “Create File” icon that is shown:</p>
+<p><img class="ui image" src="/static/vscode/create-new-asset.png" alt="Screenshot of the MakeCode Asset Explorer with a red arrow pointing to the create icon in the images section" loading="lazy"></p>
+<h3 id="editing-assets">Editing assets</h3><p>To edit an existing asset, click on its name in the asset explorer to open it in the asset editor. To rename an asset, change its name in the text input that appears in the bottom of the asset editor. If you don’t see the text input, you may need to increase the width of the pane that the asset editor is in.</p>
+<p><img class="ui image" src="/static/vscode/asset-rename.png" alt="Screenshot of VS Code with the asset editor open to a cat sprite and a red box around the asset name." loading="lazy"></p>
+<h3 id="deleting-and-duplicating-assets">Deleting and duplicating assets</h3><p>When you hover over the name of an asset, two icons will appear next to it:</p>
+<p><img class="ui image" src="/static/vscode/duplicate-delete.png" alt="Screenshot of the MakeCode Asset Explorer with a red square around two icons next to the name of an image asset" loading="lazy"></p>
+<ul>
+<li>Clicking on the <strong>trash can</strong> icon will delete the asset from your project. Be careful, there is no undo for this operation!</li>
+<li>Clicking the <strong>copy</strong> icon will duplicate the asset and open the copy in the asset editor.</li>
+</ul>
+<h3 id="referencing-assets-inside-your-code">Referencing assets inside your code</h3><p>To reference an asset you’ve created inside your code, you can use the name you gave it with one of the tagged templates in the <code>assets</code> namespace:</p>
+<pre><code class="lang-typescript-ignore">let myImage = assets.image`imageName`;
+let myAnimation = assets.animation`animName`;
+let myTile = assets.tile`tileName`;
+let myTilemap = assets.tilemap`tilemapName`;
+let mySong = assets.song`songName`;</code></pre>
+<h2 id="adding-an-extension-to-your-project">Adding an extension to your project</h2><p>To add a MakeCode extension to your project, click the “Add an extension” command in the ACTIONS section of the MakeCode Asset Explorer. Then either select an extension from the list that appears or paste a GitHub URL for an extension repository in the text input and press Enter.</p>
+
+    <div class="ui info message">
+        <div class="content">
+            <h4 id="online-dependencies">Online dependencies</h4><p>You must be connected to the internet in order to download and install MakeCode extensions needed by your projects.</p>
+
+        </div>
+    </div>
+<p>After you add an extension to your project, an entry for it will automatically appear inside your <code>pxt.json</code> file.</p>
+<h3 id="removing-an-extension-from-a-project">Removing an extension from a project</h3><p>To remove an extension, run the “MakeCode: Remove an extension” command in the VS Code command palette and select the extension to remove.</p>
+<h3 id="reinstalling-project-extensions">Reinstalling project extensions</h3><p>If you manually edited your project’s <code>pxt.json</code> file and need to reinstall the project’s dependencies, click the “Install project dependencies” command in the ACTIONS section of the MakeCode Asset Explorer.</p>
+<h2 id="downloading-a-project-to-hardware">Downloading a project to hardware</h2><p>To compile your project and download it to hardware (e.g. a Meowbit), first run the “Compile project to uf2/hex” command in the ACTIONS section of the MakeCode Asset Explorer. Once the compile finishes, you can find the generated hex/uf2 file under the <code>built/</code> folder in your project workspace. Depending on what hardware you selected to compile for, the file may be under an additional subdirectory (e.g. <code>built/n3/binary.hex</code>). The file will be named either <code>binary.hex</code> or <code>binary.uf2</code>.</p>
+<h3 id="flashing-hardware-from-native-vs-code">Flashing hardware from native VS Code</h3><ol>
+<li><p>Right click on the uf2/hex file in your <code>built/</code> folder and select “Reveal in File Explorer” or “Reveal in Finder” to locate the downloaded file on your computer:</p>
+<p><img class="ui image" src="/static/vscode/reveal-in-file-explorer.png" alt="Screenshot of VS Code with the right-click context menu open over the file binary.uf2" loading="lazy"></p>
+</li>
+<li><p>Connect your hardware to the computer with a USB cable. It should appear as a USB drive in your computer’s file explorer. If you don’t see the USB drive, see “Troubleshooting hardware connections” below.</p>
+</li>
+<li>Drag the file you located into the USB drive for your hardware. It should automatically reset and load with your compiled game.</li>
+</ol>
+<h3 id="flashing-hardware-from-vscode-dev">Flashing hardware from vscode.dev</h3><ol>
+<li><p>Right click on the uf2/hex file in your <code>built/</code> folder and select “Download…” to download the uf2/hex file to your computer:</p>
+<p><img class="ui image" src="/static/vscode/download-hex.png" alt="Screenshot of VS Code with the right-click context menu open over the file binary.hex" loading="lazy"></p>
+</li>
+<li><p>Connect your hardware to the computer with a USB cable. It should appear as a USB drive in your computer’s file explorer. If you don’t see the USB drive, see “Troubleshooting hardware connections” below.</p>
+</li>
+<li>Drag the file you downloaded into the USB drive for your hardware. It should automatically reset and load with your compiled game.</li>
+</ol>
+<h3 id="troubleshooting-hardware-connections">Troubleshooting hardware connections</h3><p>If your hardware is failing to show up as a USB drive when you plug it in, try the following steps:</p>
+<ol>
+<li>Try a different USB cable (some USB cables are power-only and will not allow data transfer).</li>
+<li>Try updating the firmware for your device. Follow the manufacturer’s instructions for how to do this with your device.</li>
+<li>As a last resort, try a different computer. There may be a device policy in place that is restricting access to USB ports.</li>
+</ol>
+<h2 id="sharing-your-project">Sharing your project</h2><p>To create a share link for your project, click the “Create a share link” command in the MakeCode Asset Explorer. This will cause the output pane to open with a link that you can copy/paste. </p>
+<p>To change the name of your shared project, see the <a  rel="nofollow noopener" href="#project-settings-pxt-json">pxt.json</a> section above.</p>
+<h2 id="local-development">Local development</h2><p>See the <a target="_blank" rel="nofollow noopener" href="https://github.com/microsoft/vscode-makecode/blob/main/development.md">developer guide</a> for info on developing for <a target="_blank" rel="nofollow noopener" href="https://github.com/microsoft/vscode-makecode">vscode-makecode</a>.</p>
+
+    </div>
+
+					<div class="hideprint"></div>
+				</div>
+
+			</div>
+
+			
+<!-- include footer.html -->
+<footer class="ui vertical footer segment hideprint docs inverted" aria-hidden="false">
+    <div class="ui center aligned container">
+        <div class="ui horizontal link list">
+            <a
+                class="item"
+                href="https://twitter.com/intent/follow?screen_name=MsMakeCode"
+                title="Follow us on Twitter"
+                target="_blank"
+                rel="noopener">
+                <i class="huge icon twitter"></i>
+            </a>
+            <a class="item" href="https://www.youtube.com/channel/UCye7YlvFUUQ1dSy0WZZ1T_Q" title="Subscribe to our YouTube channel"
+                target="_blank" rel="noopened">
+                <i class="huge icon youtube"></i>
+            </a>
+            <a class="item" href="mailto:makecode@microsoft.com" title="Send us an Email"
+                target="_blank" rel="noopened">
+                <i class="huge icon mail"></i>
+            </a>
+        </div>
+        <div class="ui section divider"></div>
+        <div class="ui container horizontal small divided link list">
+            <a id="langpicker" tabindex="0" class="ui item" rel="noopener">
+                <i class="icon xicon globe" aria-hidden="true" role="presentation"></i>Language
+            </a>
+            <a class="item" href="https://makecode.com/privacy" target="_blank" rel="noopener">Privacy &amp; Cookies</a>
+            <a class="item" href="https://makecode.com/termsofuse" target="_blank" rel="noopener">Terms Of Use</a>
+            <a class="item" href="https://makecode.com/trademarks" target="_blank" rel="noopener">Trademarks</a>
+            <span class="item">© 2022 Microsoft</span>
+        </div>
+        <div class="ui container horizontal small link list poweredBy">
+            <span class="item">Powered by</span>
+            <a class="middle aligned" href="https://makecode.com/" title="Microsoft MakeCode"
+                target="_blank" rel="noopener">
+                <img width="100" src="/static/logo/Microsoft-logo_rgb_c-gray.png" alt="Microsoft">
+            </a>
+        </div>
+    </div>
+</footer>
+
+<!-- end include footer.html -->
+
+
+		</div>
+
+	</div>
+
+    
+<!-- include langpicker.html -->
+<div id="langmodal" class="ui modal docs" role="dialog" aria-modal="true" aria-describedby="langmodalheader" tabindex="-1">
+    <h2 id="langmodalheader" class="header">Select Language</h2>
+    <div role="button" class="closeIcon" tabindex="0" aria-label="Close">
+        <i class="icon close remove circle" aria-hidden="true"></i>
+    </div>
+
+	<div class="content">
+	    <div class="group">
+            <div id="availablelocales" class="ui cards centered" role="listbox" aria-label="List of available locales"></div>
+        </div>
+        <div class="ui" id="langmodalfooter">
+            <a class="ui" href="/pxt-arcade-app/docs/translate.html" target="_blank" rel="noopener noreferrer">
+                How do I add a new language?
+            </a>
+
+            <a id="translatebtn" class="ui button" role="button" tabindex="0">
+                Translate this page
+            </a>
+        </div>
+    </div>
+</div>
+
+
+<!-- end include langpicker.html -->
+
+	
+<!-- include macros.html -->
+<!-- macro button -->
+
+<!-- macro vimeo -->
+
+<!-- macro youtube -->
+
+<!-- macro section -->
+
+<!-- macro hide -->
+
+<!-- macro avatar -->
+
+<!-- macro hint -->
+
+<!-- macro codecard -->
+
+<!-- macro tutorialhint -->
+
+<!-- macro reminder -->
+
+<!-- macro alert -->
+
+<!-- macro tip -->
+
+<!-- wrapped around ordinary content -->
+<!-- macro main-container -->
+
+<!-- used for 'column' box - they are collected and wrapped in 'column-container' -->
+<!-- macro column -->
+<!-- macro column-container -->
+
+
+<!-- Menu on the top of the page -->
+<!-- macro item -->
+
+<!-- macro divider -->
+
+<!-- TOC in the sidebar -->
+<!-- macro item -->
+
+<!-- macro divider -->
+
+<!-- macro toc-dropdown -->
+
+<!-- macro toc-dropdown-noLink -->
+
+<!-- macro toc-dropdown-noHeading -->
+
+<!-- TODO: duplicates of above for compatability with docsrender.ts;
+    remove with pxtlib/docsrender.ts TOC TODOs after cloud bump. -->
+<!-- macro top-dropdown -->
+
+<!-- macro top-dropdown-noHeading -->
+
+<!-- macro inner-dropdown -->
+
+<!-- macro nested-dropdown -->
+<!-- end include macros.html -->
+
+	
+<!-- include tracking.html -->
+<script type="text/javascript" src="/pxt-arcade-app/pxtweb.js"></script>
+<script type="text/javascript">
+    window.loadAppInsights = function (includeCookie) {
+        //Backend will patch / + doccdn + / with CDN url and the check that URL ends with the sha would pass
+        var isProduction = includeCookie && (/[0-9a-f]{40}\/ai\.2\.min\.js$/.test("/pxt-arcade-app/ai.2.min.js"));
+        !function(T,l,y){var S=T.location,k="script",D="connectionString",C="ingestionendpoint",I="disableExceptionTracking",E="ai.device.",b="toLowerCase",w="crossOrigin",N="POST",e="appInsightsSDK",t=y.name||"appInsights";(y.name||T[e])&&(T[e]=t);var n=T[t]||function(d){var g=!1,f=!1,m={initialize:!0,queue:[],sv:"5",version:2,config:d};function v(e,t){var n={},a="Browser";return n[E+"id"]=a[b](),n[E+"type"]=a,n["ai.operation.name"]=S&&S.pathname||"_unknown_",n["ai.internal.sdkVersion"]="javascript:snippet_"+(m.sv||m.version),{time:function(){var e=new Date;function t(e){var t=""+e;return 1===t.length&&(t="0"+t),t}return e.getUTCFullYear()+"-"+t(1+e.getUTCMonth())+"-"+t(e.getUTCDate())+"T"+t(e.getUTCHours())+":"+t(e.getUTCMinutes())+":"+t(e.getUTCSeconds())+"."+((e.getUTCMilliseconds()/1e3).toFixed(3)+"").slice(2,5)+"Z"}(),iKey:e,name:"Microsoft.ApplicationInsights."+e.replace(/-/g,"")+"."+t,sampleRate:100,tags:n,data:{baseData:{ver:2}}}}var h=d.url||y.src;if(h){function a(e){var t,n,a,i,r,o,s,c,u,p,l;g=!0,m.queue=[],f||(f=!0,t=h,s=function(){var e={},t=d.connectionString;if(t)for(var n=t.split(";"),a=0;a<n.length;a++){var i=n[a].split("=");2===i.length&&(e[i[0][b]()]=i[1])}if(!e[C]){var r=e.endpointsuffix,o=r?e.location:null;e[C]="https://"+(o?o+".":"")+"dc."+(r||"services.visualstudio.com")}return e}(),c=s[D]||d[D]||"",u=s[C],p=u?u+"/v2/track":d.endpointUrl,(l=[]).push((n="SDK LOAD Failure: Failed to load Application Insights SDK script (See stack for details)",a=t,i=p,(o=(r=v(c,"Exception")).data).baseType="ExceptionData",o.baseData.exceptions=[{typeName:"SDKLoadFailed",message:n.replace(/\./g,"-"),hasFullStack:!1,stack:n+"\nSnippet failed to load ["+a+"] -- Telemetry is disabled\nHelp Link: https://go.microsoft.com/fwlink/?linkid=2128109\nHost: "+(S&&S.pathname||"_unknown_")+"\nEndpoint: "+i,parsedStack:[]}],r)),l.push(function(e,t,n,a){var i=v(c,"Message"),r=i.data;r.baseType="MessageData";var o=r.baseData;return o.message='AI (Internal): 99 message:"'+("SDK LOAD Failure: Failed to load Application Insights SDK script (See stack for details) ("+n+")").replace(/\"/g,"")+'"',o.properties={endpoint:a},i}(0,0,t,p)),function(e,t){if(JSON){var n=T.fetch;if(n&&!y.useXhr)n(t,{method:N,body:JSON.stringify(e),mode:"cors"});else if(XMLHttpRequest){var a=new XMLHttpRequest;a.open(N,t),a.setRequestHeader("Content-type","application/json"),a.send(JSON.stringify(e))}}}(l,p))}function i(e,t){f||setTimeout(function(){!t&&m.core||a()},500)}var e=function(){var n=l.createElement(k);n.src=h;var e=y[w];return!e&&""!==e||"undefined"==n[w]||(n[w]=e),n.onload=i,n.onerror=a,n.onreadystatechange=function(e,t){"loaded"!==n.readyState&&"complete"!==n.readyState||i(0,t)},n}();y.ld<0?l.getElementsByTagName("head")[0].appendChild(e):setTimeout(function(){l.getElementsByTagName(k)[0].parentNode.appendChild(e)},y.ld||0)}try{m.cookie=l.cookie}catch(p){}function t(e){for(;e.length;)!function(t){m[t]=function(){var e=arguments;g||m.queue.push(function(){m[t].apply(m,e)})}}(e.pop())}var n="track",r="TrackPage",o="TrackEvent";t([n+"Event",n+"PageView",n+"Exception",n+"Trace",n+"DependencyData",n+"Metric",n+"PageViewPerformance","start"+r,"stop"+r,"start"+o,"stop"+o,"addTelemetryInitializer","setAuthenticatedUserContext","clearAuthenticatedUserContext","flush"]),m.SeverityLevel={Verbose:0,Information:1,Warning:2,Error:3,Critical:4};var s=(d.extensionConfig||{}).ApplicationInsightsAnalytics||{};if(!0!==d[I]&&!0!==s[I]){var c="onerror";t(["_"+c]);var u=T[c];T[c]=function(e,t,n,a,i){var r=u&&u(e,t,n,a,i);return!0!==r&&m["_"+c]({message:e,url:t,lineNumber:n,columnNumber:a,error:i}),r},d.autoExceptionInstrumented=!0}return m}(y.cfg);function a(){y.onInit&&y.onInit(n)}(T[t]=n).queue&&0===n.queue.length?(n.queue.push(a),n.trackPageView({})):a()}(window,document,{
+            src: "https://js.monitor.azure.com/scripts/b/ai.2.min.js", // The SDK URL Source
+            onInit: function (sdk) {
+                sdk.addTelemetryInitializer(function (envelope) {
+                    // App Insights automatically sends a page view event on setup, but we send our own later with additional properties.
+                    // This stops the automatic event from firing, so we don't end up with duplicate page view events.
+                    if (envelope.baseType == "PageviewData" && !envelope.baseData.properties) {
+                        return false;
+                    }
+
+                    if (envelope.baseType == "PageviewPerformanceData") {
+                        var pageName = envelope.baseData.name;
+                        envelope.baseData.name = window.location.origin;
+                        if (!envelope.baseData.properties) {
+                            envelope.baseData.properties = {};
+                        }
+                        envelope.baseData.properties.pageName = pageName;
+                        var scrubbedUrl = scrubUrl(envelope.baseData.uri);
+                        envelope.baseData.uri = scrubbedUrl;
+                        var toUrl = new URL(scrubbedUrl);
+                        envelope.baseData.properties.pathName = toUrl ? toUrl.pathname : "";
+                        if (envelope.ext && envelope.ext.trace) {
+                            envelope.ext.trace.name = toUrl ? toUrl.pathname : "";
+                        }
+                    }
+
+                    var telemetryItem = envelope.baseData;
+                    telemetryItem.properties = telemetryItem.properties || {};
+                    telemetryItem.properties["cookie"] = isProduction;
+                    if (typeof pxtConfig === "undefined" || !pxtConfig || !pxtConfig.targetId) {
+                        telemetryItem.properties["target"] = "arcade";
+                        return true;
+                    }
+                    telemetryItem.properties["target"] = pxtConfig.targetId;
+                    telemetryItem.properties["stage"] = (pxtConfig.relprefix || "/--").replace(/[^a-z]/ig, '')
+                    if (typeof Windows !== "undefined")
+                        telemetryItem.properties["WindowsApp"] = 1;
+                    var userAgent = navigator.userAgent.toLowerCase();
+                    var electronRegexResult = /\belectron\/(\d+\.\d+\.\d+.*?)(?: |$)/i.exec(userAgent); // Example navigator.userAgent: "Mozilla/5.0 Chrome/61.0.3163.100 Electron/2.0.0 Safari/537.36"
+                    if (electronRegexResult) {
+                        telemetryItem.properties["Electron"] = 1;
+                        telemetryItem.properties["ElectronVersion"] = electronRegexResult[1];
+                    }
+                    if (typeof pxtElectron !== "undefined") {
+                        telemetryItem.properties["PxtElectron"] = 1;
+                        telemetryItem.properties["ElectronVersion"] = pxtElectron.versions.electronVersion;
+                        telemetryItem.properties["ChromiumVersion"] = pxtElectron.versions.chromiumVersion;
+                        telemetryItem.properties["NodeVersion"] = pxtElectron.versions.nodeVersion;
+                        telemetryItem.properties["PxtElectronVersion"] = pxtElectron.versions.pxtElectronVersion;
+                        telemetryItem.properties["PxtCoreVersion"] = pxtElectron.versions.pxtCoreVersion;
+                        telemetryItem.properties["PxtTargetVersion"] = pxtElectron.versions.pxtTargetVersion;
+                        telemetryItem.properties["PxtElectronIsProd"] = pxtElectron.versions.isProd;
+                    }
+                    // Kiosk UWP info is appended to the user agent by the makecode-dotnet-apps/arcade-kiosk UWP app
+                    var kioskUwpRegexResult = /\((MakeCode Arcade Kiosk UWP)\/([\S]+)\/([\S]+)\)/i.exec(userAgent); // Example navigator.userAgent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36 Edg/117.0.2045.60 (MakeCode Arcade Kiosk UWP/0.1.41.0/Windows.Xbox)"
+                    if (kioskUwpRegexResult) {
+                        telemetryItem.properties["KioskUwp"] = 1;
+                        telemetryItem.properties["KioskUwpVersion"] = kioskUwpRegexResult[2];
+                        telemetryItem.properties["KioskUwpPlatform"] = kioskUwpRegexResult[3];
+                    }
+                    return true;
+                });
+            },
+            cfg: {
+                instrumentationKey:"9801ed01-c40f-46ec-aa40-2a1742a9e71c",
+                disableAjaxTracking: true,
+                overridePageViewDuration: false,
+                disableExceptionTracking: true,
+                disableCorrelationHeaders: true,
+                disableCookiesUsage: !isProduction,
+                isStorageUseDisabled: !isProduction,
+                url: "/pxt-arcade-app/ai.2.min.js"
+            }
+        });
+        window.appInsights=appInsights;
+        var location = window.location.toString();
+        appInsights.trackPageView({
+            name: window.location.hostname,
+            uri: window.location.origin,
+            properties: {
+                url: scrubUrl(location),
+                urlReferrer: scrubUrl(document.referrer.toString())
+            }
+        });
+
+        // Scrub potential PII from the URL.
+        function scrubUrl(url) {
+            if (!url) return url;
+
+            var scriptIdRegex = /(?:S?\d{5}-\d{5}-\d{5}-\d{5})|(?:_[0-9a-zA-Z]{12})/g;
+            var scrubbedUrl = new URL(url.toLocaleLowerCase().replace(scriptIdRegex, "xxxxx-xxxxx-xxxxx-xxxxx"));
+
+            // Just as a precaution, strip any suspicious query parameters.
+            var blockedParamKeywords = ["username", "password", "token", "pwd"];
+            var searchParams = Array.from(scrubbedUrl.searchParams.keys());
+            for (var param of searchParams) {
+                if (blockedParamKeywords.some(k => param.indexOf(k) != -1)) {
+                    scrubbedUrl.searchParams.delete(param);
+                }
+            }
+
+            return scrubbedUrl.toString();
+        }
+
+        return isProduction;
+    }
+    pxt.initAnalyticsAsync();
+</script>
+
+<!-- end include tracking.html -->
+
+
+</body>
+
+</html>

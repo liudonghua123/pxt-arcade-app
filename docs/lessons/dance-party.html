@@ -1,0 +1,1186 @@
+<!DOCTYPE html>
+<html lang="" xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#"
+	xmlns:fb="http://www.facebook.com/2008/fbml">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Microsoft MakeCode Arcade</title>
+	<meta name="Description" content="Develop your programming skills by quickly creating and modding retro arcade games with Blocks and JavaScript in the MakeCode editor" />
+
+	<!-- ifdef incontexttranslations endif -->
+	
+<!-- include meta.html -->
+<!-- This file is typically overriden by the target, with own Twitter
+     account etc. Most data is taken from the theme file though.  
+  -->
+
+<!-- include robotsmeta.html -->
+
+<!-- end include robotsmeta.html -->
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@msmakecode" />
+<meta name="twitter:title" content="Microsoft MakeCode Arcade" />
+<meta name="twitter:description" content="Develop your programming skills by quickly creating and modding retro arcade games with Blocks and JavaScript in the MakeCode editor" />
+<meta name="twitter:image" content="/static/lessons/dance-party/working-game.gif" />
+
+<meta property="og:title" content="Microsoft MakeCode Arcade" />
+<meta property="og:site_name" content="Microsoft MakeCode" />
+<meta property="og:type" content="website" />
+<meta property="og:description" content="Develop your programming skills by quickly creating and modding retro arcade games with Blocks and JavaScript in the MakeCode editor" />
+<meta property="fb:app_id" content="" />
+<meta property="og:image" content="/static/lessons/dance-party/working-game.gif" />
+
+<meta name="format-detection" content="telephone=no">
+<link rel="apple-touch-icon" href="docs/static/icons/favicon.ico">
+<link rel="icon" type="image/png" href="docs/static/icons/favicon.ico">
+<link rel="shortcut icon" href="docs/static/icons/favicon.ico">
+<meta name="theme-color" content="">
+
+<!-- end include meta.html -->
+
+	
+<!-- include head.html -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width,height=device-height,user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
+
+<link rel="stylesheet" data-rtl="/blb/rtlsemantic.css" href="/pxt-arcade-app/semantic.css" />
+<link id="blocklycss"  data-rtl="/blb/rtlblockly.css" rel="stylesheet" href="/pxt-arcade-app/blockly.css" />
+<link rel="stylesheet" href="/pxt-arcade-app/docfiles/style.css" />
+<link rel="stylesheet" href="/pxt-arcade-app/docfiles/vs.css" />
+<link rel="stylesheet" href="/pxt-arcade-app/docfiles/target.css" />
+
+<script src="/pxt-arcade-app/jquery.js" type="text/javascript"></script>
+<script src="/pxt-arcade-app/semantic.js" type="text/javascript"></script>
+<script src="/pxt-arcade-app/docfiles/target.js" type="text/javascript"></script>
+<script src="/pxt-arcade-app/embed.js" type="text/javascript"></script>
+<script src="/pxt-arcade-app/docfiles/docs.js" type="text/javascript"></script>
+
+<style>
+    
+</style>
+
+<!-- end include head.html -->
+
+
+</head>
+
+<body id='root' class='root'>
+	<div id="accessibleMenu" class="ui accessibleMenu borderless fixed menu docs" role="menubar">
+		
+            <a href="#maincontent" class="ui item link" tabindex="0" role="menuitem">Skip to main content</a>
+        
+	</div>
+
+	
+<!-- include tocheader.html -->
+<div id="top-bar" class="ui fixed accent borderless inverted main menu hideprint docs" role="menubar">
+    <div>
+        
+            <a id="togglesidebar" class="launch icon item" tabindex="0" title="Side menu" aria-label="Side menu" role="menuitem" aria-expanded="false">
+                <i class="content icon"></i>
+            </a>
+        
+        <div class="item" role="menuitem">
+            <div class="header-org-logo">
+                <img src="/static/logo/Microsoft_logo_rgb_W-white_D.png" alt="Microsoft">
+            </div>
+            <div class="header-org-logo-sm">
+                <img src="/static/logo/Microsoft_logo_rgb_W-white_D-square.png" alt="Microsoft">
+            </div>
+            <div class="header-title"><span>MakeCode</span></div>
+        </div>
+    </div>
+    <div>
+        <div class="item">
+            <form id="tocsearch1" class="search" role="form" method="get" action="https://www.bing.com/search">
+                <div class="ui fluid icon input">
+                    <input type="hidden" name="q1" value="site:https://arcade.makecode.com/" />
+                    
+                <input type="search" name="q" placeholder="Search..." aria-label="Search Documentation">
+                <i onclick="document.getElementById('tocsearch1').submit();" tabindex="0" class="search link icon" aria-label="Search" role="button"></i>
+            
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div id="side-menu" class="ui vertical accent inverted sidebar menu left hideprint docs" role="menubar">
+    <!-- TOC Menu (tocheader.html) -->
+    <div class="menuContainer" role="menu">
+        
+    <a class="item " href="/pxt-arcade-app/docs/about.html" role="menuitem">About</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/faq.html" role="menuitem">FAQ</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/projects.html" role="menuitem">Projects</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/github.html" role="menuitem">GitHub</a>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/pxt-arcade-app/docs/reference.html">Reference</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-arcade-app/docs/reference/sprites.html" role="menuitem">sprites</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/reference/controller.html" role="menuitem">controller</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/reference/game.html" role="menuitem">game</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/reference/music.html" role="menuitem">music</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/reference/scene.html" role="menuitem">scene</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/reference/info.html" role="menuitem">info</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/reference/images.html" role="menuitem">images</a>
+
+        </div>
+    </div>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/pxt-arcade-app/docs/blocks.html">Blocks</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-arcade-app/docs/blocks/on-start.html" role="menuitem">On Start</a>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/pxt-arcade-app/docs/blocks/loops.html">Loops</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-arcade-app/docs/blocks/loops/repeat.html" role="menuitem">repeat</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/blocks/loops/for.html" role="menuitem">for</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/blocks/loops/while.html" role="menuitem">while</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/blocks/loops/for-of.html" role="menuitem">for of</a>
+
+        </div>
+    </div>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/pxt-arcade-app/docs/blocks/logic.html">Logic</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-arcade-app/docs/blocks/logic/if.html" role="menuitem">if</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/blocks/logic/boolean.html" role="menuitem">Boolean</a>
+
+        </div>
+    </div>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/pxt-arcade-app/docs/blocks/variables.html">Variables</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-arcade-app/docs/blocks/variables/assign.html" role="menuitem">assign</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/blocks/variables/change.html" role="menuitem">change var</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/blocks/variables/var.html" role="menuitem">var</a>
+
+        </div>
+    </div>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/blocks/math.html" role="menuitem">Math</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/blocks/javascript-blocks.html" role="menuitem">JavaScript blocks</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/blocks/custom.html" role="menuitem">Custom blocks</a>
+
+        </div>
+    </div>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/pxt-arcade-app/docs/python.html">Python</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-arcade-app/docs/python/call.html" role="menuitem">Calling</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/python/sequence.html" role="menuitem">Sequencing</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/python/variables.html" role="menuitem">Variables</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/python/operators.html" role="menuitem">Operators</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/python/statements.html" role="menuitem">Statements</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/python/functions.html" role="menuitem">Functions</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/python/classes.html" role="menuitem">Classes</a>
+
+        </div>
+    </div>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/pxt-arcade-app/docs/javascript.html">JavaScript</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-arcade-app/docs/javascript/call.html" role="menuitem">Calling</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/javascript/sequence.html" role="menuitem">Sequencing</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/javascript/variables.html" role="menuitem">Variables</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/javascript/operators.html" role="menuitem">Operators</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/javascript/statements.html" role="menuitem">Statements</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/javascript/functions.html" role="menuitem">Functions</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/javascript/types.html" role="menuitem">Types</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/javascript/classes.html" role="menuitem">Classes</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/javascript/interfaces.html" role="menuitem">Interfaces</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/javascript/generics.html" role="menuitem">Generics</a>
+
+        </div>
+    </div>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/pxt-arcade-app/docs/types.html">Types</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-arcade-app/docs/types/number.html" role="menuitem">Number</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/types/string.html" role="menuitem">String</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/types/boolean.html" role="menuitem">Boolean</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/types/array.html" role="menuitem">Array</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/types/function.html" role="menuitem">Function</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/types/image.html" role="menuitem">Image</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/types/sprite.html" role="menuitem">Sprite</a>
+
+        </div>
+    </div>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/block-gallery.html" role="menuitem">Blocks Gallery</a>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="">Miscellaneous</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-arcade-app/docs/about.html" role="menuitem">About</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/support.html" role="menuitem">Support</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/translate.html" role="menuitem">Translate</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/share.html" role="menuitem">Sharing projects</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/multiplayer.html" role="menuitem">Multiplayer</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/offline.html" role="menuitem">Offline support</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/save.html" role="menuitem">Save</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/identity/sign-in.html" role="menuitem">Sign In</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/identity/cloud-sync.html" role="menuitem">Cloud Sync</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/vscode.html" role="menuitem">VS Code</a>
+
+        </div>
+    </div>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/pxt-arcade-app/docs/hardware.html">Hardware</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-arcade-app/docs/hardware/errors.html" role="menuitem">Errors</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/hardware/adding.html" role="menuitem">Adding New Board</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/hardware/raspberry-pi.html" role="menuitem">Raspberry Pi</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/hardware/makey-makey.html" role="menuitem">Makey Makey</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/hardware/shoebox-controller.html" role="menuitem">Shoebox Controller</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/hardware/dev.html" role="menuitem">Dev</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/hardware/dbg.html" role="menuitem">Debug connector</a>
+
+        </div>
+    </div>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="">Developers</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-arcade-app/docs/cli.html" role="menuitem">Command Line Interface</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/code.html" role="menuitem">Visual Studio Code support</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/blocks-embed.html" role="menuitem">Blocks Embed</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/developer/images.html" role="menuitem">Art, images, colors</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/developer/sound.html" role="menuitem">Sounds</a>
+
+        </div>
+    </div>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/pxt-arcade-app/docs/lessons.html">Lessons</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-arcade-app/docs/lessons/cherry-pickr.html" role="menuitem">Cherry Pickr</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/lessons/barrel-dodger.html" role="menuitem">Barrel Dodger</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/lessons/dance-party.html" role="menuitem">Dance Party</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/lessons/block-out.html" role="menuitem">BlockOut</a>
+
+        </div>
+    </div>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/pxt-arcade-app/docs/courses.html">Courses</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-arcade-app/docs/courses/csintro1.html" role="menuitem">CS Intro 1</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/courses/csintro2.html" role="menuitem">CS Intro 2</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/courses/csintro3.html" role="menuitem">CS Intro 3</a>
+
+        </div>
+    </div>
+
+    </div>
+</div>
+<!-- end include tocheader.html -->
+
+
+	<div id="docs" class="pusher">
+
+		<div class="article" id="maincontent">
+			<div class="article-inner">
+
+				
+<!-- include header.html -->
+<div class="ui one column padded grid hideprint">
+    <div class="column ui container">
+        
+    </div>
+</div>
+<!-- end include header.html -->
+
+
+				<div class="main ui container fluid mainbody">
+					<button id="printbtn" class="circular ui icon right floated button hideprint hidemobile"
+						title="Print" aria-label="Print">
+						<i class="icon print"></i>
+					</button>
+					
+    <div class="ui text">
+        <h1 id="dance-party">Dance Party</h1><p>Press the arrow keys that match the ones appearing in blocks on the screen. When your player collides with an arrow block you will get points. Try to beat your high score and dance away!</p>
+<p><img class="ui image" src="/static/lessons/dance-party/working-game.gif" alt="Game view in simulator" loading="lazy"></p>
+<h2 id="learning-objectives">Learning Objectives</h2><p>Learn the basics for a collision based game!</p>
+<ul>
+<li>The concept of sprite</li>
+<li>How to set up a tilemap and scene</li>
+<li>Spawning and destroying projectiles</li>
+<li>Setting and moving a character</li>
+<li>Setting a score increment</li>
+<li>Creating particle effects</li>
+<li>Random generation</li>
+</ul>
+<h2 id="lesson-sections">Lesson Sections</h2><ul>
+<li><a  rel="nofollow noopener" href="#part-one-setting-the-scene">Part One: Setting the Scene</a></li>
+<li><a  rel="nofollow noopener" href="#part-two-creating-the-sprite">Part Two: Creating the Sprite</a></li>
+<li><a  rel="nofollow noopener" href="#part-three-move-the-player">Part Three: Move the Player</a></li>
+<li><a  rel="nofollow noopener" href="#part-four-setting-speed-variables">Part Four: Setting Speed Variables</a></li>
+<li><a  rel="nofollow noopener" href="#part-five-spawning-projectiles">Part Five: Spawning Projectiles</a></li>
+<li><a  rel="nofollow noopener" href="#part-six-setting-score-and-creating-collisions">Part Six: Setting Score and Creating Collisions</a></li>
+</ul>
+<h2 id="part-one-setting-the-scene">Part One: Setting the Scene</h2><p>Go to the <a target="_blank" rel="nofollow noopener" href="https://arcade.makecode.com/">MakeCode Arcade</a> editor and select <strong>New Project</strong> to create a new game.</p>
+<p>Once the editor loads, you will see a green <code>||loops:on start||</code> block already in the editor Workspace.</p>
+<p>To create a world for the game to exist in, we will use a tilemap.
+To do this, go into <code>||scene:scene||</code> and grab a <code>||scene:set tilemap to||</code> block and drag it into <code>||loops:on start||</code>.
+Open the tilemap editor by clicking on the gray box in that block.</p>
+<p>In the tilemap editor, we can create a level for the game.
+First, set the size of the world to 10x8 in the bottom left corner; this will make the map approximately the same size as the screen.
+Next, draw a line across the bottom with a tile that will be the bottom wall.
+Fill in the rest of the screen with a background of your choice.
+Finally, click on the <code>Draw Walls</code> button, and draw another line at the bottom of the screen;
+this will give those tiles a red tint,
+indicating that they will be <strong>walls</strong> that block sprites from moving past them.</p>
+<p>To make the background less plain you can add some scene effects.
+Get a <code>||scene:start screen effect||</code> block from <code>||scene:Scene||</code> to do this.
+Go to the drop down in the block and select star field to create an outer space theme.</p>
+<p><img class="ui image" src="/static/lessons/dance-party/drawing-tilemap.gif" alt="Animation showing the completion of the tilemap from this set" loading="lazy"></p>
+<pre><code class="lang-blocks">tiles.setTilemap(tilemap`level`)
+effects.starField.startScreenEffect()</code></pre>
+<p>Congratulations! You have now set the scene for your game.</p>
+<h2 id="part-two-creating-the-sprite">Part Two: Creating the Sprite</h2><p>To set the sprite grab a <code>||sprites:set mySprite to sprite of kind player||</code> from <code>||sprites:Sprites||</code> and drag it into <code>||loops:on start||</code>. Now right click on <code>mySprite</code> and select rename variable in the menu. Rename your sprite to whatever you would like to call your player. In the <code>||sprites:sprite of kind player||</code> block, select the grey square and draw an image of your player.</p>
+<p>Now we want to set our sprites starting position. To do this go into sprites and grab <code>||sprites:set mySprite position to x y||</code> and drag it under <code>||sprites:sprite of kind player||</code>. Set the <code>x</code> position to <strong>80</strong> and the <code>y</code> position to <strong>100</strong>.</p>
+<pre><code class="lang-blocks">let steve: Sprite = sprites.create(img`
+    . . . . . . . . . . . . . . . .
+    . . . . . . . . . . . . . . . .
+    . . . . . . . . . . . . . . . .
+    . . . . . . . . . . . . . . . .
+    . . . . . . . . . . . . . . . .
+    . . . . . . f f f . . . . . . .
+    . . . . . . f f f . . . . . . .
+    . . . . . . f f f . . . . . . .
+    . . . . . d 9 9 9 d . . . . . .
+    . . . . . d 9 9 9 d . . . . . .
+    . . . . . d 8 8 8 d . . . . . .
+    . . . . . d 8 8 8 d . . . . . .
+    . . . . . . 8 . 8 . . . . . . .
+    . . . . . . 8 . 8 . . . . . . .
+    . . . . . . c . c . . . . . . .
+    . . . . . . . . . . . . . . . .
+`, SpriteKind.Player)
+steve.setPosition(80, 100)</code></pre>
+<h2 id="part-three-move-the-player">Part Three: Move the Player</h2><p>Our next step is to create a player that can move strictly between four spots. To do this go to <code>||controller:Controller||</code> and grab <code>||controller:on button pressed||</code> and drag it into your workspace. Then in the first drop down list select <strong>right</strong>. Now grab a <code>||sprites:set mySprite position to x y||</code> and under the drop down select your sprite. For the <code>x</code> value type in <strong>130</strong> and then for the <code>y</code> value type in <strong>100</strong>.</p>
+<p>Select the <code>||controller:on button pressed||</code> that contains the <code>||sprites:set mySprite position to x y||</code> and duplicate it <strong>3</strong> times. For each of the new copies, set one to <code>up</code>, the other to <code>down</code>, and the third to <code>left</code>. Because we want the <code>y</code> variable to remain the same, only change the positions for <code>x</code>.</p>
+<ul>
+<li>Up:     x = 60</li>
+<li>Down:   x = 100</li>
+<li>Right:  x = 130</li>
+<li>Left:   x = 30</li>
+</ul>
+<p>Now you should have four <code>||controller:Controller||</code> blocks that look like this.</p>
+<pre><code class="lang-blocks">let steve: Sprite = null
+controller.left.onEvent(ControllerButtonEvent.Pressed, function () {
+    steve.setPosition(30, 100)
+})
+controller.up.onEvent(ControllerButtonEvent.Pressed, function () {
+    steve.setPosition(60, 100)
+})
+controller.down.onEvent(ControllerButtonEvent.Pressed, function () {
+    steve.setPosition(100, 100)
+})
+controller.right.onEvent(ControllerButtonEvent.Pressed, function () {
+    steve.setPosition(130, 100)
+})</code></pre>
+<p><img class="ui image" src="/static/lessons/dance-party/moving-player.gif" alt="Player moving on the screen" loading="lazy"></p>
+<h2 id="part-four-setting-speed-variables">Part Four: Setting Speed Variables</h2><p>To get started with our speed variables, drag a <code>||variables:set var to||</code> and drag it into <code>||loops:on start||</code>. Rename the variable to speed and set it to <code>40</code>.</p>
+<pre><code class="lang-blocks">let speed = 40</code></pre>
+
+    <div class="ui info message">
+        <div class="content">
+            <h4 id="changing-speed">Changing Speed</h4><p>We can increase the speed at which projectiles fall. To do this go to <code>||game: on game update every ms||</code> and drag it into workspace. Then change the number to <code>2000 ms</code>. Go to <code>||variables:Variables||</code> and select <code>||variables:change by||</code> and drag it into <code>||game:on game update||</code>. Select the drop down and choose the speed variable. Now every two seconds, the projectile speed will increment by 1.</p>
+<pre><code class="lang-blocks">let speed = 40
+game.onUpdateInterval(2000, function () {
+    speed += 1
+})</code></pre>
+
+        </div>
+    </div>
+<h2 id="part-five-spawning-projectiles">Part Five: Spawning Projectiles</h2><p>Every half a second we want the projectiles to spawn. So go into <code>||game:Game||</code> and grab <code>||game:on game update every ms||</code> and place it in your workspace. Set the interval time at <code>500 ms</code>. Next, we want to choose which “lane” to spawn our projectile in. We’ll need a lane variable for this. To create this variable, go into <code>||variables:Variables||</code> and click on <strong>Make a Variable</strong>. Set the name of the new variable as <code>lane</code>. Drag the <code>||set lane to||</code> block into <code>||game:on game update every ms||</code>. Grab a <code>||math:pick random||</code> from <code>||math:Math||</code> and place it after the <strong>to</strong> in our <code>||variables:set lane to||</code>. Set the first number to <code>1</code> and the second to <code>4</code> in <code>||math:pick random||</code>.</p>
+<p>Now we want to create the projectiles for each lane. Grab an <code>||logic: if then else if||</code> block from <code>||logic:Logic||</code> and place it under the <code>lane</code> variable. Then from <code>||logic:Logic||</code> take a <code>||Logic:_ = _||</code> block and place it in the first <code>||logic:if then||</code> statement. Now drag a <code>||variables:lane||</code> block and put it in the first section and type <code>1</code> in the second section. Duplicate this equal statement 3 times and set each second section to <code>2</code>, <code>3</code>, and <code>4</code> respectively. Click the <strong>(+)</strong> symbol twice in the <code>||logic:if else||</code> statement block and drag these equal statements into the <code>||logic:else||</code> statements.</p>
+<p>Now grab 4 <code>||sprites:set mySprite to sprite of kind||</code> and drag one into each of the 4 positions in the <code>||logic:if||</code> statement. Set each variable for each <code>||logic:if||</code> statement like this:</p>
+<ul>
+<li>For 1 the variable name is Left</li>
+<li>For 2 the variable name is Up</li>
+<li>For 3 the variable name is Down</li>
+<li>For 4 the variable name is Right</li>
+</ul>
+<p>According to the variable names, select the grey box and draw an arrow pointing the direction of the variable name. Set each kind to a projectile.</p>
+<p>Earlier we created a speed variable. This will now determine the speed that the projectiles spawn at. Grab a <code>||sprites:set mySprite velocity to||</code> and drag it into each of the 4 positions on the if statement. Match the <code>mySprite</code> to the variable of the if statement and then set <code>vx</code> to <code>0</code> and drag the speed variable from <code>||variables:Variables||</code> into the vy position. Repeat for all sections.</p>
+<p>From <code>||sprites:Sprites||</code> grab a <code>||sprites:set position to||</code> block for each of 4 sections of the <code>||logic:if||</code> statements. Put them at the end of each section. Switch the <code>mySprite</code> variable to match the direction variable for the <code>||logic:if||</code> statement and set <code>y</code> to <code>8</code>. Now set the <code>x</code> positions to these values:</p>
+<ul>
+<li>Left: 30</li>
+<li>Up: 60</li>
+<li>Down: 100</li>
+<li>Right: 130</li>
+</ul>
+<p>Congrats, now we can spawn projectiles!</p>
+<p><img class="ui image" src="/static/lessons/dance-party/spawning-projectiles.gif" alt="Spawning Projectiles" loading="lazy"></p>
+<pre><code class="lang-blocks">let speed = 40
+game.onUpdateInterval(500, function () {
+    let lane = randint(1, 4)
+    if (lane == 1) {
+        let left: Sprite = null
+        left = sprites.create(img`
+            . . . . . . . . . . . . . . . .
+            . . . . . . . . . . . . . . . .
+            . . 6 6 6 6 6 6 6 6 6 6 6 6 . .
+            . . 6 6 6 6 6 6 6 6 6 6 6 6 . .
+            . . 6 6 6 6 6 6 6 6 6 6 6 6 . .
+            . . 6 6 6 6 1 1 6 6 6 6 6 6 . .
+            . . 6 6 6 1 6 1 6 6 6 6 6 6 . .
+            . . 6 6 1 6 6 1 1 1 1 1 6 6 . .
+            . . 6 1 6 6 6 6 6 6 6 1 6 6 . .
+            . . 6 6 1 6 6 1 1 1 1 1 6 6 . .
+            . . 6 6 6 1 6 1 6 6 6 6 6 6 . .
+            . . 6 6 6 6 1 1 6 6 6 6 6 6 . .
+            . . 6 6 6 6 6 6 6 6 6 6 6 6 . .
+            . . 6 6 6 6 6 6 6 6 6 6 6 6 . .
+            . . . . . . . . . . . . . . . .
+            . . . . . . . . . . . . . . . .
+        `, SpriteKind.Projectile)
+        left.setVelocity(0, speed)
+        left.setPosition(30, 8)
+    } else if (lane == 2) {
+        let up: Sprite = null
+        up = sprites.create(img`
+            . . . . . . . . . . . . . . . .
+            . . . . . . . . . . . . . . . .
+            . . 6 6 6 6 6 6 6 6 6 6 6 6 . .
+            . . 6 6 6 6 6 6 1 6 6 6 6 6 . .
+            . . 6 6 6 6 6 1 6 1 6 6 6 6 . .
+            . . 6 6 6 6 1 6 6 6 1 6 6 6 . .
+            . . 6 6 6 1 6 6 6 6 6 1 6 6 . .
+            . . 6 6 6 1 1 1 6 1 1 1 6 6 . .
+            . . 6 6 6 6 6 1 6 1 6 6 6 6 . .
+            . . 6 6 6 6 6 1 6 1 6 6 6 6 . .
+            . . 6 6 6 6 6 1 6 1 6 6 6 6 . .
+            . . 6 6 6 6 6 1 1 1 6 6 6 6 . .
+            . . 6 6 6 6 6 6 6 6 6 6 6 6 . .
+            . . 6 6 6 6 6 6 6 6 6 6 6 6 . .
+            . . . . . . . . . . . . . . . .
+            . . . . . . . . . . . . . . . .
+        `, SpriteKind.Projectile)
+        up.setVelocity(0, speed)
+        up.setPosition(60, 8)
+    } else if (lane == 3) {
+        let down: Sprite = null
+        down = sprites.create(img`
+            . . . . . . . . . . . . . . . .
+            . . . . . . . . . . . . . . . .
+            . . 6 6 6 6 6 6 6 6 6 6 6 6 . .
+            . . 6 6 6 6 6 6 6 6 6 6 6 6 . .
+            . . 6 6 6 6 6 1 1 1 6 6 6 6 . .
+            . . 6 6 6 6 6 1 6 1 6 6 6 6 . .
+            . . 6 6 6 6 6 1 6 1 6 6 6 6 . .
+            . . 6 6 6 6 6 1 6 1 6 6 6 6 . .
+            . . 6 6 6 1 1 1 6 1 1 1 6 6 . .
+            . . 6 6 6 1 6 6 6 6 6 1 6 6 . .
+            . . 6 6 6 6 1 6 6 6 1 6 6 6 . .
+            . . 6 6 6 6 6 1 6 1 6 6 6 6 . .
+            . . 6 6 6 6 6 6 1 6 6 6 6 6 . .
+            . . 6 6 6 6 6 6 6 6 6 6 6 6 . .
+            . . . . . . . . . . . . . . . .
+            . . . . . . . . . . . . . . . .
+        `, SpriteKind.Projectile)
+        down.setVelocity(0, speed)
+        down.setPosition(100, 8)
+    } else {
+        let right: Sprite = null
+        right = sprites.create(img`
+            . . . . . . . . . . . . . . . .
+            . . . . . . . . . . . . . . . .
+            . . 6 6 6 6 6 6 6 6 6 6 6 6 . .
+            . . 6 6 6 6 6 6 6 6 6 6 6 6 . .
+            . . 6 6 6 6 6 6 6 6 6 6 6 6 . .
+            . . 6 6 6 6 6 6 1 1 6 6 6 6 . .
+            . . 6 6 6 6 6 6 1 6 1 6 6 6 . .
+            . . 6 6 1 1 1 1 1 6 6 1 6 6 . .
+            . . 6 6 1 6 6 6 6 6 6 6 1 6 . .
+            . . 6 6 1 1 1 1 1 6 6 1 6 6 . .
+            . . 6 6 6 6 6 6 1 6 1 6 6 6 . .
+            . . 6 6 6 6 6 6 1 1 6 6 6 6 . .
+            . . 6 6 6 6 6 6 6 6 6 6 6 6 . .
+            . . 6 6 6 6 6 6 6 6 6 6 6 6 . .
+            . . . . . . . . . . . . . . . .
+            . . . . . . . . . . . . . . . .
+        `, SpriteKind.Projectile)
+        right.setVelocity(0, speed)
+        right.setPosition(130, 8)
+    }
+})</code></pre>
+<h2 id="part-six-setting-score-and-creating-collisions">Part Six: Setting Score and Creating Collisions</h2><h3 id="setting-score-and-setting-lives">Setting Score and Setting Lives</h3><p>In our game we want the player to have a score for the number of projectiles they destroy and then we want the player to have multiple lives in case they miss blocks. To do this go into <code>||info:info||</code> and drag <code>||info:set score to||</code> into the <code>||loops: on start||</code> block. Then grab a <code>||info:set life to||</code> and drag it below the <code>||info:set score to||</code>. Now change the number in <code>||info:set life to||</code> to <strong>5</strong> so that the player can miss five projectiles before the game ends.</p>
+<pre><code class="lang-blocks">info.setScore(0)
+info.setLife(5)</code></pre>
+<p>When the player runs out of lives the game should end and the player’s score should be displayed. To do this, go to <code>||info:Info||</code>, grab <code>||info:on life zero||</code>, and drag it into your workspace. Then go to <code>||game:game||</code> and grab <code>||game:game over lose||</code>. Drag it into <code>||info:on life zero||</code>. Click on the <code>lose</code> button so it switches to <code>win</code> and then click the <strong>(+)</strong> symbol. When you click the <strong>(+)</strong> you should have the option to select an effect. Select the <code>confetti</code> effect.</p>
+<pre><code class="lang-blocks">info.onLifeZero(function () {
+    game.over(true, effects.confetti)
+})</code></pre>
+<p>You have now set up the basis of the scoring system!</p>
+<h3 id="handling-collisions">Handling Collisions</h3><p>When a projectile hits the bottom wall, we want that to be a collision and to have the player’s lives decrease by one. To add this feature, go into <code>||scene:Scene||</code> and select <code>||scene:on sprite of kind hits wall||</code> and drag it into your workspace. Now set the kind to be <code>projectile</code>.</p>
+<p>Now go into <code>||sprites:Sprite||</code>, select <code>||sprites:destroy mySprite||</code>, and drag it into <code>||scene:on sprite of kind hits wall||</code>. Drag the <code>||variables:sprite||</code> variable from the event block and replace <code>||variables:mySprite||</code> with it. Then, click the <strong>(+)</strong> symbol, select the <code>fire</code> effect, and set the time to <code>100 ms</code>. Drag out a <code>||info:change life by||</code> and put it under <code>||sprites:destroy sprite with effect||</code>. Set the number to <code>-1</code>. Now whenever a projectile collides with the bottom, it will be destroyed and the player’s remaining lives will go down.</p>
+<p><img class="ui image" src="/static/lessons/dance-party/missed-collision.gif" alt="Player moving on the screen" loading="lazy"></p>
+<pre><code class="lang-blocks">scene.onHitWall(SpriteKind.Projectile, function (sprite) {
+    sprite.destroy(effects.fire, 100)
+    info.changeLifeBy(-1)
+})</code></pre>
+<p>When the player collides with a projectile, their score should increase and the projectile should be destroyed. Go to <code>||sprites:Sprites||</code> and grab <code>||sprites:on sprite of kind player overlaps otherSprite of kind||</code> and drag it into your workspace. Change the field after <code>otherSprite</code> from <code>player</code> to <code>projectile</code>. Now go back into <code>||sprites:Sprites||</code> and drag <code>||sprites:destroy mySprite||</code> into it. Pull the <code>||variables:otherSprite||</code> variable from the event block over the <code>||variables:mySprite||</code> variable to replace it. Click the <strong>(+)</strong> symbol, set the effect to <code>disintegrate</code>, and and enter <code>100 ms</code>. Now go to <code>||info:Info|</code> and grab <code>||info:change score by||</code> and drag it under <code>||sprites:destroy otherSprite with effect||</code>.</p>
+<p><img class="ui image" src="/static/lessons/dance-party/collision-projectiles.gif" alt="Player moving on the screen" loading="lazy"></p>
+<pre><code class="lang-blocks">sprites.onOverlap(SpriteKind.Player, SpriteKind.Projectile, function (sprite, otherSprite) {
+    otherSprite.destroy(effects.disintegrate, 100)
+    info.changeScoreBy(1)
+})</code></pre>
+<p>And now we have a fully functioning game!</p>
+<h2 id="final-game">Final Game</h2><pre><code class="lang-blocks">sprites.onOverlap(SpriteKind.Player, SpriteKind.Projectile, function (sprite, otherSprite) {
+    otherSprite.destroy(effects.disintegrate, 100)
+    music.setVolume(10)
+    info.changeScoreBy(1)
+})
+scene.onHitWall(SpriteKind.Projectile, function (sprite) {
+    sprite.destroy(effects.fire, 100)
+    info.changeLifeBy(-1)
+})
+controller.left.onEvent(ControllerButtonEvent.Pressed, function () {
+    steve.setPosition(30, 100)
+})
+info.onLifeZero(function () {
+    game.over(true, effects.confetti)
+})
+controller.right.onEvent(ControllerButtonEvent.Pressed, function () {
+    steve.setPosition(130, 100)
+})
+controller.up.onEvent(ControllerButtonEvent.Pressed, function () {
+    steve.setPosition(60, 100)
+})
+controller.down.onEvent(ControllerButtonEvent.Pressed, function () {
+    steve.setPosition(100, 100)
+})
+let right: Sprite = null
+let down: Sprite = null
+let up: Sprite = null
+let left: Sprite = null
+let lane = 0
+let steve: Sprite = null
+scene.setBackgroundColor(11)
+
+effects.starField.startScreenEffect()
+tiles.setTilemap(tilemap`level`)
+
+steve = sprites.create(img`
+    . . . . . . . . . . . . . . . .
+    . . . . . . . . . . . . . . . .
+    . . . . . . . . . . . . . . . .
+    . . . . . . . . . . . . . . . .
+    . . . . . . . . . . . . . . . .
+    . . . . . . f f f . . . . . . .
+    . . . . . . f f f . . . . . . .
+    . . . . . . f f f . . . . . . .
+    . . . . . d 9 9 9 d . . . . . .
+    . . . . . d 9 9 9 d . . . . . .
+    . . . . . d 8 8 8 d . . . . . .
+    . . . . . d 8 8 8 d . . . . . .
+    . . . . . . 8 . 8 . . . . . . .
+    . . . . . . 8 . 8 . . . . . . .
+    . . . . . . c . c . . . . . . .
+    . . . . . . . . . . . . . . . .
+`, SpriteKind.Player)
+steve.setPosition(80, 100)
+info.setScore(0)
+info.setLife(5)
+let speed = 40
+game.onUpdateInterval(500, function () {
+    lane = randint(1, 4)
+    if (lane == 1) {
+        left = sprites.create(img`
+            . . . . . . . . . . . . . . . .
+            . . . . . . . . . . . . . . . .
+            . . 6 6 6 6 6 6 6 6 6 6 6 6 . .
+            . . 6 6 6 6 6 6 6 6 6 6 6 6 . .
+            . . 6 6 6 6 6 6 6 6 6 6 6 6 . .
+            . . 6 6 6 6 1 1 6 6 6 6 6 6 . .
+            . . 6 6 6 1 6 1 6 6 6 6 6 6 . .
+            . . 6 6 1 6 6 1 1 1 1 1 6 6 . .
+            . . 6 1 6 6 6 6 6 6 6 1 6 6 . .
+            . . 6 6 1 6 6 1 1 1 1 1 6 6 . .
+            . . 6 6 6 1 6 1 6 6 6 6 6 6 . .
+            . . 6 6 6 6 1 1 6 6 6 6 6 6 . .
+            . . 6 6 6 6 6 6 6 6 6 6 6 6 . .
+            . . 6 6 6 6 6 6 6 6 6 6 6 6 . .
+            . . . . . . . . . . . . . . . .
+            . . . . . . . . . . . . . . . .
+        `, SpriteKind.Projectile)
+        left.setVelocity(0, speed)
+        left.setPosition(30, 8)
+    } else if (lane == 2) {
+        up = sprites.create(img`
+            . . . . . . . . . . . . . . . .
+            . . . . . . . . . . . . . . . .
+            . . 6 6 6 6 6 6 6 6 6 6 6 6 . .
+            . . 6 6 6 6 6 6 1 6 6 6 6 6 . .
+            . . 6 6 6 6 6 1 6 1 6 6 6 6 . .
+            . . 6 6 6 6 1 6 6 6 1 6 6 6 . .
+            . . 6 6 6 1 6 6 6 6 6 1 6 6 . .
+            . . 6 6 6 1 1 1 6 1 1 1 6 6 . .
+            . . 6 6 6 6 6 1 6 1 6 6 6 6 . .
+            . . 6 6 6 6 6 1 6 1 6 6 6 6 . .
+            . . 6 6 6 6 6 1 6 1 6 6 6 6 . .
+            . . 6 6 6 6 6 1 1 1 6 6 6 6 . .
+            . . 6 6 6 6 6 6 6 6 6 6 6 6 . .
+            . . 6 6 6 6 6 6 6 6 6 6 6 6 . .
+            . . . . . . . . . . . . . . . .
+            . . . . . . . . . . . . . . . .
+        `, SpriteKind.Projectile)
+        up.setVelocity(0, speed)
+        up.setPosition(60, 8)
+    } else if (lane == 3) {
+        down = sprites.create(img`
+            . . . . . . . . . . . . . . . .
+            . . . . . . . . . . . . . . . .
+            . . 6 6 6 6 6 6 6 6 6 6 6 6 . .
+            . . 6 6 6 6 6 6 6 6 6 6 6 6 . .
+            . . 6 6 6 6 6 1 1 1 6 6 6 6 . .
+            . . 6 6 6 6 6 1 6 1 6 6 6 6 . .
+            . . 6 6 6 6 6 1 6 1 6 6 6 6 . .
+            . . 6 6 6 6 6 1 6 1 6 6 6 6 . .
+            . . 6 6 6 1 1 1 6 1 1 1 6 6 . .
+            . . 6 6 6 1 6 6 6 6 6 1 6 6 . .
+            . . 6 6 6 6 1 6 6 6 1 6 6 6 . .
+            . . 6 6 6 6 6 1 6 1 6 6 6 6 . .
+            . . 6 6 6 6 6 6 1 6 6 6 6 6 . .
+            . . 6 6 6 6 6 6 6 6 6 6 6 6 . .
+            . . . . . . . . . . . . . . . .
+            . . . . . . . . . . . . . . . .
+        `, SpriteKind.Projectile)
+        down.setVelocity(0, speed)
+        down.setPosition(100, 8)
+    } else {
+        right = sprites.create(img`
+            . . . . . . . . . . . . . . . .
+            . . . . . . . . . . . . . . . .
+            . . 6 6 6 6 6 6 6 6 6 6 6 6 . .
+            . . 6 6 6 6 6 6 6 6 6 6 6 6 . .
+            . . 6 6 6 6 6 6 6 6 6 6 6 6 . .
+            . . 6 6 6 6 6 6 1 1 6 6 6 6 . .
+            . . 6 6 6 6 6 6 1 6 1 6 6 6 . .
+            . . 6 6 1 1 1 1 1 6 6 1 6 6 . .
+            . . 6 6 1 6 6 6 6 6 6 6 1 6 . .
+            . . 6 6 1 1 1 1 1 6 6 1 6 6 . .
+            . . 6 6 6 6 6 6 1 6 1 6 6 6 . .
+            . . 6 6 6 6 6 6 1 1 6 6 6 6 . .
+            . . 6 6 6 6 6 6 6 6 6 6 6 6 . .
+            . . 6 6 6 6 6 6 6 6 6 6 6 6 . .
+            . . . . . . . . . . . . . . . .
+            . . . . . . . . . . . . . . . .
+        `, SpriteKind.Projectile)
+        right.setVelocity(0, speed)
+        right.setPosition(130, 8)
+    }
+})
+game.onUpdateInterval(2000, function () {
+    speed += 1
+})</code></pre>
+<p><img class="ui image" src="/static/lessons/dance-party/working-game.gif" alt="Working Game" loading="lazy"></p>
+<pre><code class="lang-jres">{
+    &quot;transparency16&quot;: {
+        &quot;data&quot;: &quot;hwQQABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==&quot;,
+        &quot;mimeType&quot;: &quot;image/x-mkcd-f4&quot;,
+        &quot;tilemapTile&quot;: true
+    },
+    &quot;tile0&quot;: {
+        &quot;data&quot;: &quot;hwQQABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==&quot;,
+        &quot;mimeType&quot;: &quot;image/x-mkcd-f4&quot;,
+        &quot;tilemapTile&quot;: true
+    },
+    &quot;tile1&quot;: {
+        &quot;data&quot;: &quot;hwQQABAAAAAREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREQ==&quot;,
+        &quot;mimeType&quot;: &quot;image/x-mkcd-f4&quot;,
+        &quot;tilemapTile&quot;: true
+    },
+    &quot;tile2&quot;: {
+        &quot;data&quot;: &quot;hwQQABAAAAC7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7uw==&quot;,
+        &quot;mimeType&quot;: &quot;image/x-mkcd-f4&quot;,
+        &quot;tilemapTile&quot;: true
+    },
+    &quot;level&quot;: {
+        &quot;id&quot;: &quot;level&quot;,
+        &quot;mimeType&quot;: &quot;application/mkcd-tilemap&quot;,
+        &quot;data&quot;: &quot;MTAwYTAwMDgwMDAyMDIwMjAyMDIwMjAyMDIwMjAyMDIwMjAyMDIwMjAyMDIwMjAyMDIwMjAyMDIwMjAyMDIwMjAyMDIwMjAyMDIwMjAyMDIwMjAyMDIwMjAyMDIwMjAyMDIwMjAyMDIwMjAyMDIwMjAyMDIwMjAyMDIwMjAyMDIwMjAyMDIwMjAyMDIwMjAyMDIwMjAyMDEwMTAxMDEwMTAxMDEwMTAxMDEwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMA==&quot;,
+        &quot;tileset&quot;: [
+            &quot;myTiles.tile0&quot;,
+            &quot;myTiles.tile1&quot;,
+            &quot;myTiles.tile2&quot;
+        ]
+    },
+    &quot;*&quot;: {
+        &quot;mimeType&quot;: &quot;image/x-mkcd-f4&quot;,
+        &quot;dataEncoding&quot;: &quot;base64&quot;,
+        &quot;namespace&quot;: &quot;myTiles&quot;
+    }
+}</code></pre>
+
+    </div>
+
+					<div class="hideprint"></div>
+				</div>
+
+			</div>
+
+			
+<!-- include footer.html -->
+<footer class="ui vertical footer segment hideprint docs inverted" aria-hidden="false">
+    <div class="ui center aligned container">
+        <div class="ui horizontal link list">
+            <a
+                class="item"
+                href="https://twitter.com/intent/follow?screen_name=MsMakeCode"
+                title="Follow us on Twitter"
+                target="_blank"
+                rel="noopener">
+                <i class="huge icon twitter"></i>
+            </a>
+            <a class="item" href="https://www.youtube.com/channel/UCye7YlvFUUQ1dSy0WZZ1T_Q" title="Subscribe to our YouTube channel"
+                target="_blank" rel="noopened">
+                <i class="huge icon youtube"></i>
+            </a>
+            <a class="item" href="mailto:makecode@microsoft.com" title="Send us an Email"
+                target="_blank" rel="noopened">
+                <i class="huge icon mail"></i>
+            </a>
+        </div>
+        <div class="ui section divider"></div>
+        <div class="ui container horizontal small divided link list">
+            <a id="langpicker" tabindex="0" class="ui item" rel="noopener">
+                <i class="icon xicon globe" aria-hidden="true" role="presentation"></i>Language
+            </a>
+            <a class="item" href="https://makecode.com/privacy" target="_blank" rel="noopener">Privacy &amp; Cookies</a>
+            <a class="item" href="https://makecode.com/termsofuse" target="_blank" rel="noopener">Terms Of Use</a>
+            <a class="item" href="https://makecode.com/trademarks" target="_blank" rel="noopener">Trademarks</a>
+            <span class="item">© 2022 Microsoft</span>
+        </div>
+        <div class="ui container horizontal small link list poweredBy">
+            <span class="item">Powered by</span>
+            <a class="middle aligned" href="https://makecode.com/" title="Microsoft MakeCode"
+                target="_blank" rel="noopener">
+                <img width="100" src="/static/logo/Microsoft-logo_rgb_c-gray.png" alt="Microsoft">
+            </a>
+        </div>
+    </div>
+</footer>
+
+<!-- end include footer.html -->
+
+
+		</div>
+
+	</div>
+
+    
+<!-- include langpicker.html -->
+<div id="langmodal" class="ui modal docs" role="dialog" aria-modal="true" aria-describedby="langmodalheader" tabindex="-1">
+    <h2 id="langmodalheader" class="header">Select Language</h2>
+    <div role="button" class="closeIcon" tabindex="0" aria-label="Close">
+        <i class="icon close remove circle" aria-hidden="true"></i>
+    </div>
+
+	<div class="content">
+	    <div class="group">
+            <div id="availablelocales" class="ui cards centered" role="listbox" aria-label="List of available locales"></div>
+        </div>
+        <div class="ui" id="langmodalfooter">
+            <a class="ui" href="/pxt-arcade-app/docs/translate.html" target="_blank" rel="noopener noreferrer">
+                How do I add a new language?
+            </a>
+
+            <a id="translatebtn" class="ui button" role="button" tabindex="0">
+                Translate this page
+            </a>
+        </div>
+    </div>
+</div>
+
+
+<!-- end include langpicker.html -->
+
+	
+<!-- include macros.html -->
+<!-- macro button -->
+
+<!-- macro vimeo -->
+
+<!-- macro youtube -->
+
+<!-- macro section -->
+
+<!-- macro hide -->
+
+<!-- macro avatar -->
+
+<!-- macro hint -->
+
+<!-- macro codecard -->
+
+<!-- macro tutorialhint -->
+
+<!-- macro reminder -->
+
+<!-- macro alert -->
+
+<!-- macro tip -->
+
+<!-- wrapped around ordinary content -->
+<!-- macro main-container -->
+
+<!-- used for 'column' box - they are collected and wrapped in 'column-container' -->
+<!-- macro column -->
+<!-- macro column-container -->
+
+
+<!-- Menu on the top of the page -->
+<!-- macro item -->
+
+<!-- macro divider -->
+
+<!-- TOC in the sidebar -->
+<!-- macro item -->
+
+<!-- macro divider -->
+
+<!-- macro toc-dropdown -->
+
+<!-- macro toc-dropdown-noLink -->
+
+<!-- macro toc-dropdown-noHeading -->
+
+<!-- TODO: duplicates of above for compatability with docsrender.ts;
+    remove with pxtlib/docsrender.ts TOC TODOs after cloud bump. -->
+<!-- macro top-dropdown -->
+
+<!-- macro top-dropdown-noHeading -->
+
+<!-- macro inner-dropdown -->
+
+<!-- macro nested-dropdown -->
+<!-- end include macros.html -->
+
+	
+<!-- include tracking.html -->
+<script type="text/javascript" src="/pxt-arcade-app/pxtweb.js"></script>
+<script type="text/javascript">
+    window.loadAppInsights = function (includeCookie) {
+        //Backend will patch / + doccdn + / with CDN url and the check that URL ends with the sha would pass
+        var isProduction = includeCookie && (/[0-9a-f]{40}\/ai\.2\.min\.js$/.test("/pxt-arcade-app/ai.2.min.js"));
+        !function(T,l,y){var S=T.location,k="script",D="connectionString",C="ingestionendpoint",I="disableExceptionTracking",E="ai.device.",b="toLowerCase",w="crossOrigin",N="POST",e="appInsightsSDK",t=y.name||"appInsights";(y.name||T[e])&&(T[e]=t);var n=T[t]||function(d){var g=!1,f=!1,m={initialize:!0,queue:[],sv:"5",version:2,config:d};function v(e,t){var n={},a="Browser";return n[E+"id"]=a[b](),n[E+"type"]=a,n["ai.operation.name"]=S&&S.pathname||"_unknown_",n["ai.internal.sdkVersion"]="javascript:snippet_"+(m.sv||m.version),{time:function(){var e=new Date;function t(e){var t=""+e;return 1===t.length&&(t="0"+t),t}return e.getUTCFullYear()+"-"+t(1+e.getUTCMonth())+"-"+t(e.getUTCDate())+"T"+t(e.getUTCHours())+":"+t(e.getUTCMinutes())+":"+t(e.getUTCSeconds())+"."+((e.getUTCMilliseconds()/1e3).toFixed(3)+"").slice(2,5)+"Z"}(),iKey:e,name:"Microsoft.ApplicationInsights."+e.replace(/-/g,"")+"."+t,sampleRate:100,tags:n,data:{baseData:{ver:2}}}}var h=d.url||y.src;if(h){function a(e){var t,n,a,i,r,o,s,c,u,p,l;g=!0,m.queue=[],f||(f=!0,t=h,s=function(){var e={},t=d.connectionString;if(t)for(var n=t.split(";"),a=0;a<n.length;a++){var i=n[a].split("=");2===i.length&&(e[i[0][b]()]=i[1])}if(!e[C]){var r=e.endpointsuffix,o=r?e.location:null;e[C]="https://"+(o?o+".":"")+"dc."+(r||"services.visualstudio.com")}return e}(),c=s[D]||d[D]||"",u=s[C],p=u?u+"/v2/track":d.endpointUrl,(l=[]).push((n="SDK LOAD Failure: Failed to load Application Insights SDK script (See stack for details)",a=t,i=p,(o=(r=v(c,"Exception")).data).baseType="ExceptionData",o.baseData.exceptions=[{typeName:"SDKLoadFailed",message:n.replace(/\./g,"-"),hasFullStack:!1,stack:n+"\nSnippet failed to load ["+a+"] -- Telemetry is disabled\nHelp Link: https://go.microsoft.com/fwlink/?linkid=2128109\nHost: "+(S&&S.pathname||"_unknown_")+"\nEndpoint: "+i,parsedStack:[]}],r)),l.push(function(e,t,n,a){var i=v(c,"Message"),r=i.data;r.baseType="MessageData";var o=r.baseData;return o.message='AI (Internal): 99 message:"'+("SDK LOAD Failure: Failed to load Application Insights SDK script (See stack for details) ("+n+")").replace(/\"/g,"")+'"',o.properties={endpoint:a},i}(0,0,t,p)),function(e,t){if(JSON){var n=T.fetch;if(n&&!y.useXhr)n(t,{method:N,body:JSON.stringify(e),mode:"cors"});else if(XMLHttpRequest){var a=new XMLHttpRequest;a.open(N,t),a.setRequestHeader("Content-type","application/json"),a.send(JSON.stringify(e))}}}(l,p))}function i(e,t){f||setTimeout(function(){!t&&m.core||a()},500)}var e=function(){var n=l.createElement(k);n.src=h;var e=y[w];return!e&&""!==e||"undefined"==n[w]||(n[w]=e),n.onload=i,n.onerror=a,n.onreadystatechange=function(e,t){"loaded"!==n.readyState&&"complete"!==n.readyState||i(0,t)},n}();y.ld<0?l.getElementsByTagName("head")[0].appendChild(e):setTimeout(function(){l.getElementsByTagName(k)[0].parentNode.appendChild(e)},y.ld||0)}try{m.cookie=l.cookie}catch(p){}function t(e){for(;e.length;)!function(t){m[t]=function(){var e=arguments;g||m.queue.push(function(){m[t].apply(m,e)})}}(e.pop())}var n="track",r="TrackPage",o="TrackEvent";t([n+"Event",n+"PageView",n+"Exception",n+"Trace",n+"DependencyData",n+"Metric",n+"PageViewPerformance","start"+r,"stop"+r,"start"+o,"stop"+o,"addTelemetryInitializer","setAuthenticatedUserContext","clearAuthenticatedUserContext","flush"]),m.SeverityLevel={Verbose:0,Information:1,Warning:2,Error:3,Critical:4};var s=(d.extensionConfig||{}).ApplicationInsightsAnalytics||{};if(!0!==d[I]&&!0!==s[I]){var c="onerror";t(["_"+c]);var u=T[c];T[c]=function(e,t,n,a,i){var r=u&&u(e,t,n,a,i);return!0!==r&&m["_"+c]({message:e,url:t,lineNumber:n,columnNumber:a,error:i}),r},d.autoExceptionInstrumented=!0}return m}(y.cfg);function a(){y.onInit&&y.onInit(n)}(T[t]=n).queue&&0===n.queue.length?(n.queue.push(a),n.trackPageView({})):a()}(window,document,{
+            src: "https://js.monitor.azure.com/scripts/b/ai.2.min.js", // The SDK URL Source
+            onInit: function (sdk) {
+                sdk.addTelemetryInitializer(function (envelope) {
+                    // App Insights automatically sends a page view event on setup, but we send our own later with additional properties.
+                    // This stops the automatic event from firing, so we don't end up with duplicate page view events.
+                    if (envelope.baseType == "PageviewData" && !envelope.baseData.properties) {
+                        return false;
+                    }
+
+                    if (envelope.baseType == "PageviewPerformanceData") {
+                        var pageName = envelope.baseData.name;
+                        envelope.baseData.name = window.location.origin;
+                        if (!envelope.baseData.properties) {
+                            envelope.baseData.properties = {};
+                        }
+                        envelope.baseData.properties.pageName = pageName;
+                        var scrubbedUrl = scrubUrl(envelope.baseData.uri);
+                        envelope.baseData.uri = scrubbedUrl;
+                        var toUrl = new URL(scrubbedUrl);
+                        envelope.baseData.properties.pathName = toUrl ? toUrl.pathname : "";
+                        if (envelope.ext && envelope.ext.trace) {
+                            envelope.ext.trace.name = toUrl ? toUrl.pathname : "";
+                        }
+                    }
+
+                    var telemetryItem = envelope.baseData;
+                    telemetryItem.properties = telemetryItem.properties || {};
+                    telemetryItem.properties["cookie"] = isProduction;
+                    if (typeof pxtConfig === "undefined" || !pxtConfig || !pxtConfig.targetId) {
+                        telemetryItem.properties["target"] = "arcade";
+                        return true;
+                    }
+                    telemetryItem.properties["target"] = pxtConfig.targetId;
+                    telemetryItem.properties["stage"] = (pxtConfig.relprefix || "/--").replace(/[^a-z]/ig, '')
+                    if (typeof Windows !== "undefined")
+                        telemetryItem.properties["WindowsApp"] = 1;
+                    var userAgent = navigator.userAgent.toLowerCase();
+                    var electronRegexResult = /\belectron\/(\d+\.\d+\.\d+.*?)(?: |$)/i.exec(userAgent); // Example navigator.userAgent: "Mozilla/5.0 Chrome/61.0.3163.100 Electron/2.0.0 Safari/537.36"
+                    if (electronRegexResult) {
+                        telemetryItem.properties["Electron"] = 1;
+                        telemetryItem.properties["ElectronVersion"] = electronRegexResult[1];
+                    }
+                    if (typeof pxtElectron !== "undefined") {
+                        telemetryItem.properties["PxtElectron"] = 1;
+                        telemetryItem.properties["ElectronVersion"] = pxtElectron.versions.electronVersion;
+                        telemetryItem.properties["ChromiumVersion"] = pxtElectron.versions.chromiumVersion;
+                        telemetryItem.properties["NodeVersion"] = pxtElectron.versions.nodeVersion;
+                        telemetryItem.properties["PxtElectronVersion"] = pxtElectron.versions.pxtElectronVersion;
+                        telemetryItem.properties["PxtCoreVersion"] = pxtElectron.versions.pxtCoreVersion;
+                        telemetryItem.properties["PxtTargetVersion"] = pxtElectron.versions.pxtTargetVersion;
+                        telemetryItem.properties["PxtElectronIsProd"] = pxtElectron.versions.isProd;
+                    }
+                    // Kiosk UWP info is appended to the user agent by the makecode-dotnet-apps/arcade-kiosk UWP app
+                    var kioskUwpRegexResult = /\((MakeCode Arcade Kiosk UWP)\/([\S]+)\/([\S]+)\)/i.exec(userAgent); // Example navigator.userAgent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36 Edg/117.0.2045.60 (MakeCode Arcade Kiosk UWP/0.1.41.0/Windows.Xbox)"
+                    if (kioskUwpRegexResult) {
+                        telemetryItem.properties["KioskUwp"] = 1;
+                        telemetryItem.properties["KioskUwpVersion"] = kioskUwpRegexResult[2];
+                        telemetryItem.properties["KioskUwpPlatform"] = kioskUwpRegexResult[3];
+                    }
+                    return true;
+                });
+            },
+            cfg: {
+                instrumentationKey:"9801ed01-c40f-46ec-aa40-2a1742a9e71c",
+                disableAjaxTracking: true,
+                overridePageViewDuration: false,
+                disableExceptionTracking: true,
+                disableCorrelationHeaders: true,
+                disableCookiesUsage: !isProduction,
+                isStorageUseDisabled: !isProduction,
+                url: "/pxt-arcade-app/ai.2.min.js"
+            }
+        });
+        window.appInsights=appInsights;
+        var location = window.location.toString();
+        appInsights.trackPageView({
+            name: window.location.hostname,
+            uri: window.location.origin,
+            properties: {
+                url: scrubUrl(location),
+                urlReferrer: scrubUrl(document.referrer.toString())
+            }
+        });
+
+        // Scrub potential PII from the URL.
+        function scrubUrl(url) {
+            if (!url) return url;
+
+            var scriptIdRegex = /(?:S?\d{5}-\d{5}-\d{5}-\d{5})|(?:_[0-9a-zA-Z]{12})/g;
+            var scrubbedUrl = new URL(url.toLocaleLowerCase().replace(scriptIdRegex, "xxxxx-xxxxx-xxxxx-xxxxx"));
+
+            // Just as a precaution, strip any suspicious query parameters.
+            var blockedParamKeywords = ["username", "password", "token", "pwd"];
+            var searchParams = Array.from(scrubbedUrl.searchParams.keys());
+            for (var param of searchParams) {
+                if (blockedParamKeywords.some(k => param.indexOf(k) != -1)) {
+                    scrubbedUrl.searchParams.delete(param);
+                }
+            }
+
+            return scrubbedUrl.toString();
+        }
+
+        return isProduction;
+    }
+    pxt.initAnalyticsAsync();
+</script>
+
+<!-- end include tracking.html -->
+
+
+</body>
+
+</html>

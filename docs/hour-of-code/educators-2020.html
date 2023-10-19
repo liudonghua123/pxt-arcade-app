@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html
+    lang="en-US"
+    xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:og="http://ogp.me/ns#"
+    xmlns:fb="http://www.facebook.com/2008/fbml"
+>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Microsoft MakeCode Arcade Hour of Code 2020</title>
+        <meta
+            name="Description"
+            content="Join us in celebrating this year's Computer Science Education Week by playing, designing and coding your very own retro arcade games!"
+        />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0, user-scalable=yes"
+        />
+
+        <link rel="manifest" href="/blb/sim.webmanifest">
+
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-title" content="Microsoft MakeCode Arcade Hour of Code 2020">
+        <meta name="apple-mobile-web-app-status-bar-style" content="translucent-black">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="application-name" content="Microsoft MakeCode Arcade Hour of Code 2020">
+
+        <meta name="msapplication-TileColor" content="#ff7b22">
+        <meta name="msapplication-TileImage" content="/static/hour-of-code/2020/card.png">
+        <meta name="msapplication-config" content="none"/>
+        <meta name="theme-color" content="#ff7b22">
+
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:site" content="MSMakeCode" />
+        <meta name="twitter:title" content="Microsoft MakeCode Arcade Hour of Code 2020" />
+        <meta name="twitter:description" content="Join us in celebrating this year's Computer Science Education Week by playing, designing and coding your very own retro arcade games!" />
+        <meta name="twitter:image" content="/static/hour-of-code/2020/card.png" />
+
+        <meta property="og:title" content="Microsoft MakeCode Arcade Hour of Code 2020" />
+        <meta property="og:site_name" content="Microsoft MakeCode Arcade Hour of Code 2020" />
+        <meta property="og:description" content="Join us in celebrating this year's Computer Science Education Week by playing, designing and coding your very own retro arcade games!" />
+        <meta property="og:image" content="/static/hour-of-code/2020/card.png" />
+
+        <link rel="apple-touch-icon" href="/static/hour-of-code/2020/card.png">
+        <link rel="icon" type="image/png" href="/static/hour-of-code/2020/card.png">
+        <link rel="shortcut icon" href="/static/hour-of-code/2020/card.png">
+
+        
+<!-- include scripthead.html -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width,height=device-height,user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
+
+<link rel="stylesheet" data-rtl="/blb/rtlsemantic.css" href="/doccdn/semantic.css" />
+<link id="blocklycss"  data-rtl="/blb/rtlblockly.css" rel="stylesheet" href="/doccdn/blockly.css" />
+<link rel="stylesheet" href="/docfiles/style.css" />
+<link rel="stylesheet" href="/docfiles/vs.css" />
+<link rel="stylesheet" href="/docfiles/target.css" />
+<link rel="stylesheet" href="./static/script-page.css" />
+
+<script src="/doccdn/jquery.js"></script>
+<script src="/doccdn/semantic.js"></script>
+
+<style>
+    
+</style>
+
+<!-- end include scripthead.html -->
+
+        <link rel="stylesheet" href="/static/hour-of-code/2020/styles.css" />
+        <style>
+            body {
+                background-image: url('/static/hour-of-code/2020/pixel-background-secondary.png');
+            }
+
+            #main .action-button {
+                border-image-source: url('/static/hour-of-code/2020/shadowed-button-frame.png');
+            }
+
+            #main .panel-primary {
+                border-image-source: url('/static/hour-of-code/2020/shadowed-primary-frame.png');
+            }
+
+            #main .panel-secondary {
+                border-image-source: url('/static/hour-of-code/2020/shadowed-aside-frame.png');
+            }
+
+            #main header {
+                background-image: url('/static/hour-of-code/2020/pixel-background-primary.png');
+            }
+        </style>
+
+        <script>
+            function handleOnLoad() {
+                document
+                    .querySelector('#openhome')
+                    .addEventListener('click', function () {
+                        window.pxtTickEvent('hourofcode2020.home', { src: "educators" });
+                    });
+
+                var langPicker = document.querySelector('#langpicker');
+                if (langPicker) {
+                    langPicker.remove();
+                }
+            }
+        </script>
+    </head>
+
+    <body id="root" class="root background-color-secondary" onload="handleOnLoad()">
+        <div id="main" role="presentation">
+            <nav>
+                <div class="arcade-logo">
+                    <a href="/pxt-arcade-app/docs/.html" id="openhome">
+                        <img src="/static/legacy-logo.svg" alt="MakeCode Arcade" />
+                    </a>
+                </div>
+
+                <div class="microsoft-logo">
+                    <a
+                        href="https://www.microsoft.com/en-us/makecode"
+                        target="_blank"
+                    >
+                        <img src="/static/Micorsoft_logo_rgb_W-white_D.png" alt="Microsoft" />
+                    </a>
+                </div>
+            </nav>
+
+            <header class='background-color-primary'>
+                <div class="container">
+                    <div class="left-content-block">
+                        <h3 class='body-font'>Microsoft MakeCode Arcade</h3>
+                        <h1 class="display-font"><span class='first-line'>Hour</span><span class='small-heading'>of</span><span class='last-line'>Code<em class='trademark'>™</em></span></h1>
+                        <h4 class="display-font">2020</h4>
+                        <h5>Educator Information</h5>
+                    </div>
+
+                    <div class="right-content-block">
+                        <img src="/static/hour-of-code/2020/simulator.gif" alt="MakeCode Arcade Simulator" />
+                    </div>
+                </div>
+            </header>
+
+            <section class='about container'>
+                <div class="content-block">
+                    <h2 class='display-font'>About MakeCode Arcade</h2>
+                    <div class="text-content-block">
+                        Microsoft MakeCode Arcade is a free, open source retro 2D
+                        game development environment. Students anywhere from 9 to 18
+                        can use MakeCode Arcade to design and create their own games
+                        online that they can then share with friends and family or
+                        download to hand-held game devices. Learn more about Microsoft
+                        MakeCode at <a href='http://aka.ms/makecode' target='_blank'>http://aka.ms/makecode</a>.
+                    </div>
+                </div>
+            </section>
+
+            <section class='container'>
+                <div class="content-block">
+                    <h2 class='display-font'>Activity Requirements</h2>
+                    <div class="text-content-block">
+                        The MakeCode Arcade Hour of Code™ activities require students to
+                        have a computer with internet access. All activities run in the
+                        browser – no download or installation required.
+                    </div>
+                </div>
+            </section>
+
+            <section class='container'>
+                <div class="content-block">
+                    <h2 class='display-font'>Learning Outcomes</h2>
+                    <div class="text-content-block">
+                        <ol>
+                            <li><p>Asphodel Follows Directions game</p>
+                                <span>
+                                <p>In this multi-level game, students are challenged to pick up
+                                and move directional arrows through a maze to guide Asphodel through
+                                to reach her trophy. Students learn algorithmic thinking and problem
+                                decomposition by tracing the path Asphodel must follow, and then
+                                placing arrows in the appropriate places in sequence to map out her
+                                path.</p>
+                                <p>How to play:</p>
+                                </p><ul>
+                                    <li>Move the purple cursor with the joystick or the arrow keys on
+                                    the keyboard</li>
+                                    <li>Press the A button or the space bar on the keyboard to pick up
+                                    and put down the purple directional arrows</li>
+                                    <li>When you have completed placing all the purple arrows along
+                                    Asphodel’s path, press the B button or the enter key on the keyboard
+                                    to make Asphodel move up and follow the arrows</li>
+                                </ul></p>
+                                <p>There are 11 levels in the game that progress in difficulty.</p>
+                                <p>Levels 1-3 focus on sequencing and trial and error tactics to
+                                navigate Asphodel through progressively more complex mazes.</p>
+                                <p><img src="/static/hour-of-code/2020/educators/asphodel-level1.png" alt="Level 1 of Asphodel Game" style="width:auto; height:auto"></p>
+                                <p>Levels 4-5 introduce a key object that Asphodel must pick up to unlock
+                                a gate blocking her path.</p>
+                                <p><img src="/static/hour-of-code/2020/educators/asphodel-level4.png" alt="Level 4 of Asphodel Game" style="width:auto; height:auto"></p>
+                                <p>Level 6 more explicitly introduces the concept of <a href="https://en.wikipedia.org/wiki/Conditional_(computer_programming)">Conditional</a>
+                                statements. There are gates blocking Asphodel’s path that can only be
+                                opened if Asphodel’s hat is a certain color. Luckily, there are paint
+                                cans along the way that she can use to change the color of her hat!</p>
+                                <p><img src="/static/hour-of-code/2020/educators/asphodel-level6.png" alt="Level 6 of Asphodel Game" style="width:auto; height:auto"></p>
+                                <p>Level 7 combines the key and the color gates! Challenge students
+                                to think about deconstructing the problem into separate discrete
+                                steps to solve:</p>
+                                <p><ul>
+                                    <li>Change hat to blue</li>
+                                    <li>Pick up key</li>
+                                    <li>Change hat to red</li>
+                                </ul></p>
+                                <p><img src="/static/hour-of-code/2020/educators/asphodel-level7.png" alt="Level 7 of Asphodel Game" style="width:auto; height:auto"></p>
+                                <p>Level 9 introduces the concept of color gate switches. When
+                                Asphodel moves over a Color Switch, either the Red or Pink gates
+                                will open. You can think of these color switches as <a href="https://en.wikipedia.org/wiki/Boolean_data_type">Boolean</a> values
+                                and logic where either Red = true and Pink = false, or Red = false
+                                and Pink = true.</p>
+                                <p><img src="/static/hour-of-code/2020/educators/asphodel-level9.png" alt="Level 9 of Asphodel Game" style="width:auto; height:auto"></p>
+                                <br/></span></li>
+                            <li><p>Design the Clovers game</p>
+                                <span>
+                                <p>In this tutorial, students will take an existing game, Collect
+                                the Clovers, and express their creativity and artistic talent by
+                                making the game their own. Prompt students to think about a story
+                                for their game:</p>
+                                <p><ul>
+                                    <li>Scene – what is the setting?</li>
+                                    <li>Characters – hero? enemy?</li>
+                                    <li>Object – what is the object to collect?</li>
+                                </ul></p>
+                                <p>Students will design and draw the characters and the background
+                                for their game. They will also select visual effects and sounds for
+                                their game. Students learn that games are a great way to combine code
+                                and art, music and storytelling to create a unique digital artifact
+                                that others can play.</p>
+                                <p><img src="/static/hour-of-code/2020/educators/clover-design.gif" alt="Clover game design in simulator" style="width:auto; height:auto"></p>
+                                <br/></span>
+                            </li>
+                            <li><p>Shark Attack tutorial</p>
+                                <span>
+                                <p>Following a step-by-step tutorial, students will code their own game.
+                                Students will learn computer science concepts such as variables, events,
+                                random functions, and objects. In addition, students will learn game development
+                                concepts such as sprites, projectiles, position and velocity, and game loop.</p>
+                                <p><img src="/static/hour-of-code/2020/educators/shark-attack-tutorial.png" alt="Shark Attack Tutorial screen" style="width:auto; height:auto"></p>
+                                </span>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </section>
+
+            <section class='container'>
+                <div class="content-block">
+                    <h2 class='display-font'>Tips for Facilitation</h2>
+                    <div class="text-content-block">
+                        These MakeCode Arcade activities are meant to be self-guided.
+                        However, you can encourage students to do the following:
+                        <ul>
+                            <li>Help each other if they get stuck
+                            </li>
+                            <li>Click on the "Hint" button in any tutorial</li>
+                            <li>Share the games they create with others to play. Note that this generates a URL link that can be copied</li>
+                            <li>If they finish early, try some of the suggested additional activities</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section class='container'>
+                <div class="content-block">
+                    <h2 class='display-font'>Additional Resources for Educators</h2>
+                    <div class="text-content-block">
+                        <ul>
+                            <li><a href="https://arcade.makecode.com/courses" target="_blank">MakeCode Arcade curriculum</a></li>
+                            <li><a href="https://arcade.makecode.com/hardware" target="_blank">MakeCode Arcade gaming devices</a></li>
+                            <li><a href="https://arcade.makecode.com/docs" target="_blank">MakeCode Arcade reference documentation</a></li>
+                            <li><a href="https://arcade.makecode.com/github" target="_blank">MakeCode Arcade with GitHub</a></li>
+                            <li><a href="https://makecode.microbit.org/online-learning" target="_blank">Using MakeCode with LMS</a></li>
+                            <li><a href="https://forum.makecode.com/" target="_blank">MakeCode forum</a></li>
+                            <li><a href="https://twitter.com/MSMakeCode" target="_blank">MakeCode on Twitter</a></li>
+                            <li><a href="https://www.youtube.com/microsoftmakecode" target="_blank">MakeCode on YouTube</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+    </div>
+        
+<!-- include footer.html -->
+<footer class="ui vertical footer segment hideprint docs inverted" aria-hidden="false">
+    <div class="ui center aligned container">
+        <div class="ui horizontal link list">
+            <a
+                class="item"
+                href="https://twitter.com/intent/follow?screen_name=MsMakeCode"
+                title="Follow us on Twitter"
+                target="_blank"
+                rel="noopener">
+                <i class="huge icon twitter"></i>
+            </a>
+            <a class="item" href="https://www.youtube.com/channel/UCye7YlvFUUQ1dSy0WZZ1T_Q" title="Subscribe to our YouTube channel"
+                target="_blank" rel="noopened">
+                <i class="huge icon youtube"></i>
+            </a>
+            <a class="item" href="mailto:makecode@microsoft.com" title="Send us an Email"
+                target="_blank" rel="noopened">
+                <i class="huge icon mail"></i>
+            </a>
+        </div>
+        <div class="ui section divider"></div>
+        <div class="ui container horizontal small divided link list">
+            <a id="langpicker" tabindex="0" class="ui item" rel="noopener">
+                <i class="icon xicon globe" aria-hidden="true" role="presentation"></i>Language
+            </a>
+            <a class="item" href="https://makecode.com/privacy" target="_blank" rel="noopener">Privacy &amp; Cookies</a>
+            <a class="item" href="https://makecode.com/termsofuse" target="_blank" rel="noopener">Terms Of Use</a>
+            <a class="item" href="https://makecode.com/trademarks" target="_blank" rel="noopener">Trademarks</a>
+            <span class="item">© 2022 Microsoft</span>
+        </div>
+        <div class="ui container horizontal small link list poweredBy">
+            <span class="item">Powered by</span>
+            <a class="middle aligned" href="https://makecode.com/" title="Microsoft MakeCode"
+                target="_blank" rel="noopener">
+                <img width="100" src="/static/logo/Microsoft-logo_rgb_c-gray.png" alt="Microsoft">
+            </a>
+        </div>
+    </div>
+</footer>
+
+<!-- end include footer.html -->
+
+        
+<!-- include tracking.html -->
+<script type="text/javascript" src="/doccdn/pxtweb.js"></script>
+<script type="text/javascript">
+    window.loadAppInsights = function (includeCookie) {
+        //Backend will patch / + doccdn + / with CDN url and the check that URL ends with the sha would pass
+        var isProduction = includeCookie && (/[0-9a-f]{40}\/ai\.2\.min\.js$/.test("/doccdn/ai.2.min.js"));
+        !function(T,l,y){var S=T.location,k="script",D="connectionString",C="ingestionendpoint",I="disableExceptionTracking",E="ai.device.",b="toLowerCase",w="crossOrigin",N="POST",e="appInsightsSDK",t=y.name||"appInsights";(y.name||T[e])&&(T[e]=t);var n=T[t]||function(d){var g=!1,f=!1,m={initialize:!0,queue:[],sv:"5",version:2,config:d};function v(e,t){var n={},a="Browser";return n[E+"id"]=a[b](),n[E+"type"]=a,n["ai.operation.name"]=S&&S.pathname||"_unknown_",n["ai.internal.sdkVersion"]="javascript:snippet_"+(m.sv||m.version),{time:function(){var e=new Date;function t(e){var t=""+e;return 1===t.length&&(t="0"+t),t}return e.getUTCFullYear()+"-"+t(1+e.getUTCMonth())+"-"+t(e.getUTCDate())+"T"+t(e.getUTCHours())+":"+t(e.getUTCMinutes())+":"+t(e.getUTCSeconds())+"."+((e.getUTCMilliseconds()/1e3).toFixed(3)+"").slice(2,5)+"Z"}(),iKey:e,name:"Microsoft.ApplicationInsights."+e.replace(/-/g,"")+"."+t,sampleRate:100,tags:n,data:{baseData:{ver:2}}}}var h=d.url||y.src;if(h){function a(e){var t,n,a,i,r,o,s,c,u,p,l;g=!0,m.queue=[],f||(f=!0,t=h,s=function(){var e={},t=d.connectionString;if(t)for(var n=t.split(";"),a=0;a<n.length;a++){var i=n[a].split("=");2===i.length&&(e[i[0][b]()]=i[1])}if(!e[C]){var r=e.endpointsuffix,o=r?e.location:null;e[C]="https://"+(o?o+".":"")+"dc."+(r||"services.visualstudio.com")}return e}(),c=s[D]||d[D]||"",u=s[C],p=u?u+"/v2/track":d.endpointUrl,(l=[]).push((n="SDK LOAD Failure: Failed to load Application Insights SDK script (See stack for details)",a=t,i=p,(o=(r=v(c,"Exception")).data).baseType="ExceptionData",o.baseData.exceptions=[{typeName:"SDKLoadFailed",message:n.replace(/\./g,"-"),hasFullStack:!1,stack:n+"\nSnippet failed to load ["+a+"] -- Telemetry is disabled\nHelp Link: https://go.microsoft.com/fwlink/?linkid=2128109\nHost: "+(S&&S.pathname||"_unknown_")+"\nEndpoint: "+i,parsedStack:[]}],r)),l.push(function(e,t,n,a){var i=v(c,"Message"),r=i.data;r.baseType="MessageData";var o=r.baseData;return o.message='AI (Internal): 99 message:"'+("SDK LOAD Failure: Failed to load Application Insights SDK script (See stack for details) ("+n+")").replace(/\"/g,"")+'"',o.properties={endpoint:a},i}(0,0,t,p)),function(e,t){if(JSON){var n=T.fetch;if(n&&!y.useXhr)n(t,{method:N,body:JSON.stringify(e),mode:"cors"});else if(XMLHttpRequest){var a=new XMLHttpRequest;a.open(N,t),a.setRequestHeader("Content-type","application/json"),a.send(JSON.stringify(e))}}}(l,p))}function i(e,t){f||setTimeout(function(){!t&&m.core||a()},500)}var e=function(){var n=l.createElement(k);n.src=h;var e=y[w];return!e&&""!==e||"undefined"==n[w]||(n[w]=e),n.onload=i,n.onerror=a,n.onreadystatechange=function(e,t){"loaded"!==n.readyState&&"complete"!==n.readyState||i(0,t)},n}();y.ld<0?l.getElementsByTagName("head")[0].appendChild(e):setTimeout(function(){l.getElementsByTagName(k)[0].parentNode.appendChild(e)},y.ld||0)}try{m.cookie=l.cookie}catch(p){}function t(e){for(;e.length;)!function(t){m[t]=function(){var e=arguments;g||m.queue.push(function(){m[t].apply(m,e)})}}(e.pop())}var n="track",r="TrackPage",o="TrackEvent";t([n+"Event",n+"PageView",n+"Exception",n+"Trace",n+"DependencyData",n+"Metric",n+"PageViewPerformance","start"+r,"stop"+r,"start"+o,"stop"+o,"addTelemetryInitializer","setAuthenticatedUserContext","clearAuthenticatedUserContext","flush"]),m.SeverityLevel={Verbose:0,Information:1,Warning:2,Error:3,Critical:4};var s=(d.extensionConfig||{}).ApplicationInsightsAnalytics||{};if(!0!==d[I]&&!0!==s[I]){var c="onerror";t(["_"+c]);var u=T[c];T[c]=function(e,t,n,a,i){var r=u&&u(e,t,n,a,i);return!0!==r&&m["_"+c]({message:e,url:t,lineNumber:n,columnNumber:a,error:i}),r},d.autoExceptionInstrumented=!0}return m}(y.cfg);function a(){y.onInit&&y.onInit(n)}(T[t]=n).queue&&0===n.queue.length?(n.queue.push(a),n.trackPageView({})):a()}(window,document,{
+            src: "https://js.monitor.azure.com/scripts/b/ai.2.min.js", // The SDK URL Source
+            onInit: function (sdk) {
+                sdk.addTelemetryInitializer(function (envelope) {
+                    // App Insights automatically sends a page view event on setup, but we send our own later with additional properties.
+                    // This stops the automatic event from firing, so we don't end up with duplicate page view events.
+                    if (envelope.baseType == "PageviewData" && !envelope.baseData.properties) {
+                        return false;
+                    }
+
+                    if (envelope.baseType == "PageviewPerformanceData") {
+                        var pageName = envelope.baseData.name;
+                        envelope.baseData.name = window.location.origin;
+                        if (!envelope.baseData.properties) {
+                            envelope.baseData.properties = {};
+                        }
+                        envelope.baseData.properties.pageName = pageName;
+                        var scrubbedUrl = scrubUrl(envelope.baseData.uri);
+                        envelope.baseData.uri = scrubbedUrl;
+                        var toUrl = new URL(scrubbedUrl);
+                        envelope.baseData.properties.pathName = toUrl ? toUrl.pathname : "";
+                        if (envelope.ext && envelope.ext.trace) {
+                            envelope.ext.trace.name = toUrl ? toUrl.pathname : "";
+                        }
+                    }
+
+                    var telemetryItem = envelope.baseData;
+                    telemetryItem.properties = telemetryItem.properties || {};
+                    telemetryItem.properties["cookie"] = isProduction;
+                    if (typeof pxtConfig === "undefined" || !pxtConfig || !pxtConfig.targetId) {
+                        telemetryItem.properties["target"] = "arcade";
+                        return true;
+                    }
+                    telemetryItem.properties["target"] = pxtConfig.targetId;
+                    telemetryItem.properties["stage"] = (pxtConfig.relprefix || "/--").replace(/[^a-z]/ig, '')
+                    if (typeof Windows !== "undefined")
+                        telemetryItem.properties["WindowsApp"] = 1;
+                    var userAgent = navigator.userAgent.toLowerCase();
+                    var electronRegexResult = /\belectron\/(\d+\.\d+\.\d+.*?)(?: |$)/i.exec(userAgent); // Example navigator.userAgent: "Mozilla/5.0 Chrome/61.0.3163.100 Electron/2.0.0 Safari/537.36"
+                    if (electronRegexResult) {
+                        telemetryItem.properties["Electron"] = 1;
+                        telemetryItem.properties["ElectronVersion"] = electronRegexResult[1];
+                    }
+                    if (typeof pxtElectron !== "undefined") {
+                        telemetryItem.properties["PxtElectron"] = 1;
+                        telemetryItem.properties["ElectronVersion"] = pxtElectron.versions.electronVersion;
+                        telemetryItem.properties["ChromiumVersion"] = pxtElectron.versions.chromiumVersion;
+                        telemetryItem.properties["NodeVersion"] = pxtElectron.versions.nodeVersion;
+                        telemetryItem.properties["PxtElectronVersion"] = pxtElectron.versions.pxtElectronVersion;
+                        telemetryItem.properties["PxtCoreVersion"] = pxtElectron.versions.pxtCoreVersion;
+                        telemetryItem.properties["PxtTargetVersion"] = pxtElectron.versions.pxtTargetVersion;
+                        telemetryItem.properties["PxtElectronIsProd"] = pxtElectron.versions.isProd;
+                    }
+                    // Kiosk UWP info is appended to the user agent by the makecode-dotnet-apps/arcade-kiosk UWP app
+                    var kioskUwpRegexResult = /\((MakeCode Arcade Kiosk UWP)\/([\S]+)\/([\S]+)\)/i.exec(userAgent); // Example navigator.userAgent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36 Edg/117.0.2045.60 (MakeCode Arcade Kiosk UWP/0.1.41.0/Windows.Xbox)"
+                    if (kioskUwpRegexResult) {
+                        telemetryItem.properties["KioskUwp"] = 1;
+                        telemetryItem.properties["KioskUwpVersion"] = kioskUwpRegexResult[2];
+                        telemetryItem.properties["KioskUwpPlatform"] = kioskUwpRegexResult[3];
+                    }
+                    return true;
+                });
+            },
+            cfg: {
+                instrumentationKey:"9801ed01-c40f-46ec-aa40-2a1742a9e71c",
+                disableAjaxTracking: true,
+                overridePageViewDuration: false,
+                disableExceptionTracking: true,
+                disableCorrelationHeaders: true,
+                disableCookiesUsage: !isProduction,
+                isStorageUseDisabled: !isProduction,
+                url: "/doccdn/ai.2.min.js"
+            }
+        });
+        window.appInsights=appInsights;
+        var location = window.location.toString();
+        appInsights.trackPageView({
+            name: window.location.hostname,
+            uri: window.location.origin,
+            properties: {
+                url: scrubUrl(location),
+                urlReferrer: scrubUrl(document.referrer.toString())
+            }
+        });
+
+        // Scrub potential PII from the URL.
+        function scrubUrl(url) {
+            if (!url) return url;
+
+            var scriptIdRegex = /(?:S?\d{5}-\d{5}-\d{5}-\d{5})|(?:_[0-9a-zA-Z]{12})/g;
+            var scrubbedUrl = new URL(url.toLocaleLowerCase().replace(scriptIdRegex, "xxxxx-xxxxx-xxxxx-xxxxx"));
+
+            // Just as a precaution, strip any suspicious query parameters.
+            var blockedParamKeywords = ["username", "password", "token", "pwd"];
+            var searchParams = Array.from(scrubbedUrl.searchParams.keys());
+            for (var param of searchParams) {
+                if (blockedParamKeywords.some(k => param.indexOf(k) != -1)) {
+                    scrubbedUrl.searchParams.delete(param);
+                }
+            }
+
+            return scrubbedUrl.toString();
+        }
+
+        return isProduction;
+    }
+    pxt.initAnalyticsAsync();
+</script>
+
+<!-- end include tracking.html -->
+
+        
+<!-- include tickevent.html -->
+<script type="text/javascript">
+    if (!window.pxtTickEvent) {
+        let queuedTicks;
+        window.pxtTickEvent = function(id, data) {
+            if (window.appInsights && window.appInsights.trackEvent) {
+                sendTick(id, data);
+            } else {
+                if (!queuedTicks) {
+                    queuedTicks = [];
+                    var interval = window.setInterval(function() {
+                        if (window.appInsights && window.appInsights.trackEvent) {
+                            window.clearInterval(interval);
+                            for (var i = 0; i < queuedTicks.length; i++) {
+                                queuedTicks[i]();
+                            }
+                            queuedTicks = undefined;
+                        }
+                    }, 1000);
+                }
+
+                if (queuedTicks.length >= 100) {
+                    queuedTicks.shift();
+                }
+
+                queuedTicks.push(function () {
+                    sendTick(id, data);
+                });
+            }
+
+            function sendTick(id, data) {
+                const props = {};
+                const measures = {};
+                if (data) {
+                    Object.keys(data).forEach(k => {
+                        if (typeof data[k] == "string") props[k] = data[k];
+                        else if (typeof data[k] == "number") measures[k] = data[k];
+                        else props[k] = JSON.stringify(data[k] || '');
+                    });
+                } else {
+                    data = {};
+                }
+                window.appInsights.trackEvent({name: id, properties: data, measurements: measures});
+            }
+        }
+    }
+</script>
+<!-- end include tickevent.html -->
+
+    </body>
+</html>

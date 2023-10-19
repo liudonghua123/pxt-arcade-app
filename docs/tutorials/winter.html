@@ -1,0 +1,991 @@
+<!DOCTYPE html>
+<html lang="" xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#"
+	xmlns:fb="http://www.facebook.com/2008/fbml">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Microsoft MakeCode Arcade</title>
+	<meta name="Description" content="Develop your programming skills by quickly creating and modding retro arcade games with Blocks and JavaScript in the MakeCode editor" />
+
+	<!-- ifdef incontexttranslations endif -->
+	
+<!-- include meta.html -->
+<!-- This file is typically overriden by the target, with own Twitter
+     account etc. Most data is taken from the theme file though.  
+  -->
+
+<!-- include robotsmeta.html -->
+
+<!-- end include robotsmeta.html -->
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@msmakecode" />
+<meta name="twitter:title" content="Microsoft MakeCode Arcade" />
+<meta name="twitter:description" content="Develop your programming skills by quickly creating and modding retro arcade games with Blocks and JavaScript in the MakeCode editor" />
+<meta name="twitter:image" content="/static/tutorials/winter/winter.gif" />
+
+<meta property="og:title" content="Microsoft MakeCode Arcade" />
+<meta property="og:site_name" content="Microsoft MakeCode" />
+<meta property="og:type" content="website" />
+<meta property="og:description" content="Develop your programming skills by quickly creating and modding retro arcade games with Blocks and JavaScript in the MakeCode editor" />
+<meta property="fb:app_id" content="" />
+<meta property="og:image" content="/static/tutorials/winter/winter.gif" />
+
+<meta name="format-detection" content="telephone=no">
+<link rel="apple-touch-icon" href="docs/static/icons/favicon.ico">
+<link rel="icon" type="image/png" href="docs/static/icons/favicon.ico">
+<link rel="shortcut icon" href="docs/static/icons/favicon.ico">
+<meta name="theme-color" content="">
+
+<!-- end include meta.html -->
+
+	
+<!-- include head.html -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width,height=device-height,user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
+
+<link rel="stylesheet" data-rtl="/blb/rtlsemantic.css" href="/pxt-arcade-app/semantic.css" />
+<link id="blocklycss"  data-rtl="/blb/rtlblockly.css" rel="stylesheet" href="/pxt-arcade-app/blockly.css" />
+<link rel="stylesheet" href="/pxt-arcade-app/docfiles/style.css" />
+<link rel="stylesheet" href="/pxt-arcade-app/docfiles/vs.css" />
+<link rel="stylesheet" href="/pxt-arcade-app/docfiles/target.css" />
+
+<script src="/pxt-arcade-app/jquery.js" type="text/javascript"></script>
+<script src="/pxt-arcade-app/semantic.js" type="text/javascript"></script>
+<script src="/pxt-arcade-app/docfiles/target.js" type="text/javascript"></script>
+<script src="/pxt-arcade-app/embed.js" type="text/javascript"></script>
+<script src="/pxt-arcade-app/docfiles/docs.js" type="text/javascript"></script>
+
+<style>
+    
+</style>
+
+<!-- end include head.html -->
+
+
+</head>
+
+<body id='root' class='root'>
+	<div id="accessibleMenu" class="ui accessibleMenu borderless fixed menu docs" role="menubar">
+		
+            <a href="#maincontent" class="ui item link" tabindex="0" role="menuitem">Skip to main content</a>
+        
+	</div>
+
+	
+<!-- include tocheader.html -->
+<div id="top-bar" class="ui fixed accent borderless inverted main menu hideprint docs" role="menubar">
+    <div>
+        
+            <a id="togglesidebar" class="launch icon item" tabindex="0" title="Side menu" aria-label="Side menu" role="menuitem" aria-expanded="false">
+                <i class="content icon"></i>
+            </a>
+        
+        <div class="item" role="menuitem">
+            <div class="header-org-logo">
+                <img src="/static/logo/Microsoft_logo_rgb_W-white_D.png" alt="Microsoft">
+            </div>
+            <div class="header-org-logo-sm">
+                <img src="/static/logo/Microsoft_logo_rgb_W-white_D-square.png" alt="Microsoft">
+            </div>
+            <div class="header-title"><span>MakeCode</span></div>
+        </div>
+    </div>
+    <div>
+        <div class="item">
+            <form id="tocsearch1" class="search" role="form" method="get" action="https://www.bing.com/search">
+                <div class="ui fluid icon input">
+                    <input type="hidden" name="q1" value="site:https://arcade.makecode.com/" />
+                    
+                <input type="search" name="q" placeholder="Search..." aria-label="Search Documentation">
+                <i onclick="document.getElementById('tocsearch1').submit();" tabindex="0" class="search link icon" aria-label="Search" role="button"></i>
+            
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div id="side-menu" class="ui vertical accent inverted sidebar menu left hideprint docs" role="menubar">
+    <!-- TOC Menu (tocheader.html) -->
+    <div class="menuContainer" role="menu">
+        
+    <a class="item " href="/pxt-arcade-app/docs/about.html" role="menuitem">About</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/faq.html" role="menuitem">FAQ</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/projects.html" role="menuitem">Projects</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/github.html" role="menuitem">GitHub</a>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/pxt-arcade-app/docs/reference.html">Reference</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-arcade-app/docs/reference/sprites.html" role="menuitem">sprites</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/reference/controller.html" role="menuitem">controller</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/reference/game.html" role="menuitem">game</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/reference/music.html" role="menuitem">music</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/reference/scene.html" role="menuitem">scene</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/reference/info.html" role="menuitem">info</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/reference/images.html" role="menuitem">images</a>
+
+        </div>
+    </div>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/pxt-arcade-app/docs/blocks.html">Blocks</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-arcade-app/docs/blocks/on-start.html" role="menuitem">On Start</a>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/pxt-arcade-app/docs/blocks/loops.html">Loops</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-arcade-app/docs/blocks/loops/repeat.html" role="menuitem">repeat</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/blocks/loops/for.html" role="menuitem">for</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/blocks/loops/while.html" role="menuitem">while</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/blocks/loops/for-of.html" role="menuitem">for of</a>
+
+        </div>
+    </div>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/pxt-arcade-app/docs/blocks/logic.html">Logic</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-arcade-app/docs/blocks/logic/if.html" role="menuitem">if</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/blocks/logic/boolean.html" role="menuitem">Boolean</a>
+
+        </div>
+    </div>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/pxt-arcade-app/docs/blocks/variables.html">Variables</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-arcade-app/docs/blocks/variables/assign.html" role="menuitem">assign</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/blocks/variables/change.html" role="menuitem">change var</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/blocks/variables/var.html" role="menuitem">var</a>
+
+        </div>
+    </div>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/blocks/math.html" role="menuitem">Math</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/blocks/javascript-blocks.html" role="menuitem">JavaScript blocks</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/blocks/custom.html" role="menuitem">Custom blocks</a>
+
+        </div>
+    </div>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/pxt-arcade-app/docs/python.html">Python</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-arcade-app/docs/python/call.html" role="menuitem">Calling</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/python/sequence.html" role="menuitem">Sequencing</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/python/variables.html" role="menuitem">Variables</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/python/operators.html" role="menuitem">Operators</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/python/statements.html" role="menuitem">Statements</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/python/functions.html" role="menuitem">Functions</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/python/classes.html" role="menuitem">Classes</a>
+
+        </div>
+    </div>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/pxt-arcade-app/docs/javascript.html">JavaScript</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-arcade-app/docs/javascript/call.html" role="menuitem">Calling</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/javascript/sequence.html" role="menuitem">Sequencing</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/javascript/variables.html" role="menuitem">Variables</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/javascript/operators.html" role="menuitem">Operators</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/javascript/statements.html" role="menuitem">Statements</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/javascript/functions.html" role="menuitem">Functions</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/javascript/types.html" role="menuitem">Types</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/javascript/classes.html" role="menuitem">Classes</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/javascript/interfaces.html" role="menuitem">Interfaces</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/javascript/generics.html" role="menuitem">Generics</a>
+
+        </div>
+    </div>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/pxt-arcade-app/docs/types.html">Types</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-arcade-app/docs/types/number.html" role="menuitem">Number</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/types/string.html" role="menuitem">String</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/types/boolean.html" role="menuitem">Boolean</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/types/array.html" role="menuitem">Array</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/types/function.html" role="menuitem">Function</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/types/image.html" role="menuitem">Image</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/types/sprite.html" role="menuitem">Sprite</a>
+
+        </div>
+    </div>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/block-gallery.html" role="menuitem">Blocks Gallery</a>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="">Miscellaneous</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-arcade-app/docs/about.html" role="menuitem">About</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/support.html" role="menuitem">Support</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/translate.html" role="menuitem">Translate</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/share.html" role="menuitem">Sharing projects</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/multiplayer.html" role="menuitem">Multiplayer</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/offline.html" role="menuitem">Offline support</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/save.html" role="menuitem">Save</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/identity/sign-in.html" role="menuitem">Sign In</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/identity/cloud-sync.html" role="menuitem">Cloud Sync</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/vscode.html" role="menuitem">VS Code</a>
+
+        </div>
+    </div>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/pxt-arcade-app/docs/hardware.html">Hardware</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-arcade-app/docs/hardware/errors.html" role="menuitem">Errors</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/hardware/adding.html" role="menuitem">Adding New Board</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/hardware/raspberry-pi.html" role="menuitem">Raspberry Pi</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/hardware/makey-makey.html" role="menuitem">Makey Makey</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/hardware/shoebox-controller.html" role="menuitem">Shoebox Controller</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/hardware/dev.html" role="menuitem">Dev</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/hardware/dbg.html" role="menuitem">Debug connector</a>
+
+        </div>
+    </div>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="">Developers</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-arcade-app/docs/cli.html" role="menuitem">Command Line Interface</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/code.html" role="menuitem">Visual Studio Code support</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/blocks-embed.html" role="menuitem">Blocks Embed</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/developer/images.html" role="menuitem">Art, images, colors</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/developer/sound.html" role="menuitem">Sounds</a>
+
+        </div>
+    </div>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/pxt-arcade-app/docs/lessons.html">Lessons</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-arcade-app/docs/lessons/cherry-pickr.html" role="menuitem">Cherry Pickr</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/lessons/barrel-dodger.html" role="menuitem">Barrel Dodger</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/lessons/dance-party.html" role="menuitem">Dance Party</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/lessons/block-out.html" role="menuitem">BlockOut</a>
+
+        </div>
+    </div>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/pxt-arcade-app/docs/courses.html">Courses</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-arcade-app/docs/courses/csintro1.html" role="menuitem">CS Intro 1</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/courses/csintro2.html" role="menuitem">CS Intro 2</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/courses/csintro3.html" role="menuitem">CS Intro 3</a>
+
+        </div>
+    </div>
+
+    </div>
+</div>
+<!-- end include tocheader.html -->
+
+
+	<div id="docs" class="pusher">
+
+		<div class="article" id="maincontent">
+			<div class="article-inner">
+
+				
+<!-- include header.html -->
+<div class="ui one column padded grid hideprint">
+    <div class="column ui container">
+        
+    </div>
+</div>
+<!-- end include header.html -->
+
+
+				<div class="main ui container fluid mainbody">
+					<button id="printbtn" class="circular ui icon right floated button hideprint hidemobile"
+						title="Print" aria-label="Print">
+						<i class="icon print"></i>
+					</button>
+					
+    <div class="ui text">
+        <h1 id="winter-wonderland">Winter Wonderland</h1><h2 id="intro">Intro</h2><p>Help Leftie and Rightie catch snowflakes in their winter wonderland!</p>
+<p><img class="ui image" src="/static/tutorials/winter/winter.gif" alt="Let it snow!" title="This is what we&#39;ll be making today!" loading="lazy"></p>
+<h2 id="step-2">Step 2</h2><p>First things first, start by clicking on your game console to figure out what happens when you press the (A) button.  When you’re done, click the <strong>instructions</strong> icon to come back and learn what to do next.</p>
+<p><img class="ui image" src="/static/tutorials/winter/inst-toggle.gif" alt="Here&#39;s how to get back to instructions" title="Toggle to go from console to instructions." loading="lazy"></p>
+<h2 id="step-3">Step 3</h2><p>The snow people are trying to catch snowflakes as they jump, but there’s not a flurry in sight.</p>
+<p><strong>Let’s make a snowstorm!</strong></p>
+<hr>
+<ul>
+<li>:paper plane : From <code>||sprites: Sprites||</code>, drag <br />
+<code>||variables(sprites):set [projectile] to projectile [ ] from side with vx [50] vy [50]||</code> <br />
+into the empty <br />
+<code>||game:on game update every [300] ms||</code> container. <br /></li>
+</ul>
+<ul>
+<li>:paint brush: Click the empty grey box and toggle to <strong>My Assets</strong> to add a snowflake.</li>
+</ul>
+<p><img class="ui image" src="/static/tutorials/winter/choose-snow.gif" alt="Like this" title="Here&#39;s how to do this step." loading="lazy"></p>
+<pre><code class="lang-blocks">game.onUpdateInterval(300, function () {
+    let snowflake = sprites.createProjectileFromSide(assets.image`snowflake1`, 50,50)
+})</code></pre>
+<hr>
+<p><img class="ui image" src="/static/tutorials/winter/choose-snow.gif" alt="Like this" title="Here&#39;s how to do this step." loading="lazy"></p>
+<h2 id="step-4">Step 4</h2><p><strong>Try your game in the Game Window (Bottom Right)</strong><br><img class="ui image" src="/static/skillmap/assets/game-win-tab.png" alt="Go to the Game Window in the editor." title="Don&#39;t forget to look at your game!" loading="lazy"></p>
+<hr>
+<p>Now we have a game!<br />
+But…the snowflakes never reach Rightie. Let’s fix that.</p>
+<h2 id="step-5">Step 5</h2><p>Let’s send all of the snow in from the side of the screen.</p>
+<hr>
+<ul>
+<li>:mouse pointer: Find <br />
+<code>||variables(sprites):set [projectile] to projectile [❄️] from side with vx [50] vy [50]||</code> <br />
+already in the workspace, and change <strong>vy</strong> to <strong>0</strong>.</li>
+</ul>
+<ul>
+<li><p>:calculator: From the <code>||math:Math||</code> category, <br />
+drag the <code>||math: pick random [0] to [10]||</code> <br />
+block over to replace the <strong>vx</strong> value.</p>
+</li>
+<li><p>:mouse pointer: Change the random min and max to <strong>-125</strong> and <strong>125</strong>.</p>
+</li>
+</ul>
+<p><img class="ui image" src="/static/tutorials/winter/random.gif" alt="Drag the random block from the math category into the vx" title="Here&#39;s how to add a random number." loading="lazy"></p>
+<pre><code class="lang-blocks">game.onUpdateInterval(300, function () {
+    let snowflake = sprites.createProjectileFromSide(assets.image`snowflake1`, randint(-125, 125), 0)
+})</code></pre>
+<hr>
+<p><img class="ui image" src="/static/tutorials/winter/random.gif" alt="Drag the random block from the math category into the vx" title="Here&#39;s how to add a random number." loading="lazy"></p>
+<h2 id="step-6">Step 6</h2><p>Well, now the snowflakes only fly across the very top of the screen.  Let’s place each snowflake at a random height.</p>
+<hr>
+<ul>
+<li>:paper plane: From <code>||sprites:Sprites||</code>, drag <br />
+<code>||sprites:set [mySprite] [x] to [0]||</code> <br />
+into the <strong>on game update</strong> container.</li>
+</ul>
+<ul>
+<li><p>:mouse pointer: To make sure this block is working on the snowflake, click
+<code>||variables(noclick):mySprite||</code> and change it to <code>||variables(noclick):projectile||</code> using the dropdown menu.</p>
+</li>
+<li><p>:mouse pointer: To change the up and down position on the screen, click <code>||sprites:x||</code> and change it to <code>||sprites:y||</code> using the dropdown menu</p>
+</li>
+</ul>
+<pre><code class="lang-blocks">game.onUpdateInterval(300, function () {
+    let snowflake = sprites.createProjectileFromSide(assets.image`snowflake1`, randint(-125, 125), 0)
+    snowflake.y = 0
+})</code></pre>
+<h2 id="step-7">Step 7</h2><ul>
+<li>:calculator: To send the snowflakes in from a random height, drag <br />
+<code>||math:pick random [0] to [10]||</code> <br />
+in to replace <strong>0</strong> in the<br />
+<code>||sprites:set [projectile] [y] to [0]||</code><br />
+block.</li>
+</ul>
+<ul>
+<li>:mouse pointer: To make sure the snowflakes only fly between the top of the seesaw and the bottom of the branch, change the random numbers to pick from <strong>30</strong> to <strong>80</strong>.</li>
+</ul>
+<p><img class="ui image" src="/static/tutorials/winter/change-height.gif" alt="Drag the random block from the math category into the y value" title="Here&#39;s how to add a random number." loading="lazy"></p>
+<pre><code class="lang-blocks">game.onUpdateInterval(300, function () {
+    let snowflake = sprites.createProjectileFromSide(assets.image`snowflake1`, randint(-125, 125), 0)
+    snowflake.y = randint(30, 80)
+})</code></pre>
+<h2 id="step-8">Step 8</h2><p>To make your game even more special, you can add some snowflakes of your own!</p>
+<hr>
+<ul>
+<li><p>:bolt: To add more snowflakes to the game, click the <strong>Simplified</strong> category and drag <br />
+<code>||simplified: choose one of [ ] [ ] +||</code> <br />
+to replace the snowflake in your red <strong>set projectile</strong> block.</p>
+</li>
+<li><p>:mouse pointer: Click each empty grey box and choose (<em>or draw</em>) a new snowflake.<br />
+<em>💡 You can click the plus sign at the right of the <br />
+<code>||simplified: choose one of [ ] [ ] +||</code> <br />
+block to add more empty boxes.</em></p>
+</li>
+</ul>
+<p><img class="ui image" src="/static/tutorials/winter/random-img.gif" alt="Add more snowflakes" title="Here&#39;s how to add a random image selector." loading="lazy"></p>
+<pre><code class="lang-blocks">game.onUpdateInterval(300, function () {
+    let snowflake = sprites.createProjectileFromSide(simplified.chooseRandomImage(assets.image`snowflake1`, img`
+. d . . d . d . . d . .
+d 1 d . d 1 d 9 d 1 d .
+. d . d d . d 9 . d . .
+. d 9 1 d 1 . 1 d . . .
+1 . 1 . 1 . 1 9 d d d .
+. d 9 d . 1 . 1 . 1 . 1
+. . . 9 1 . 1 d d 9 d .
+. . d . d 1 d . 9 . . .
+. d 1 d 9 . d d 1 d . .
+d . d . 9 1 d . d . d .
+. d . . d . d . . d . .
+. . . . . 1 . . . . . .
+`, img`
+. . . 9 . 9 . 9
+9 . . . 1 . 1 .
+. 1 . 1 . 1 . .
+9 . 1 . 1 . . .
+. 1 . 1 . 1 . 9
+9 . 1 . 9 . 1 .
+. 1 . . 1 . . 9
+. . 9 . . 9 1 .
+`), randint(-125, 125), 0)
+    snowflake.y = randint(30, 80)
+})</code></pre>
+<h2 id="finale">Finale</h2><p><strong>❄️ There you have it ❄️</strong></p>
+<hr>
+<p>Now try it on the game screen! Do you see all of your snowflakes?</p>
+<p>How many can you catch before time runs out?</p>
+<p>When you’re finished playing, click <strong>Done</strong> and share your final game with family and friends!</p>
+<pre><code class="lang-template">game.onUpdateInterval(300, function () {
+
+})</code></pre>
+<pre><code class="lang-ghost">let leftie: Sprite = null
+game.onUpdateInterval(300, function () {
+    let snowflake = sprites.createProjectileFromSide(assets.image`snowflake1`, randint(-125, 125), 0)
+    snowflake.y = randint(30, 80)
+})
+scene.setBackgroundColor(10)
+controller.B.onEvent(ControllerButtonEvent.Pressed, function () {
+    leftie.setImage(img`
+        ........................
+        ........................
+        ........................
+        ...........ccc..........
+        ...........cccc.........
+        .......ccc..ccccccc.....
+        .......cccccc555555cc...
+        ........ccb5555555555c..
+        .....cc..b555555555555c.
+        .....cccb55555bcc555555c
+        ......cb555555555c55d55c
+        ......b5555555555555555c
+        ...cc.b555dd5555bb1bbbc.
+        ....ccd55ddddd5bbbb335c.
+        ...ccbdddddddd5bbbb335c.
+        .ccccddddddddd55bbb335c.
+        cdcccdddddb55bb5bb3335c.
+        cddbddddddb555bb5b3335c.
+        cddddddddddb5555b53335c.
+        ccddddddbd55bb55c5555c..
+        .ccddddbbbdd55cccbccc...
+        ...ccbbbcbddddccdddc....
+        .....ccccdd555dccccc....
+        ........cccccccc........
+        `)
+})</code></pre>
+<pre><code class="lang-customts">namespace SpriteKind {
+    export const Snowperson = SpriteKind.create()
+    export const Active = SpriteKind.create()
+}
+controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
+    if (active.bottom &lt; 33) {
+        active.vy = 250
+    }
+})
+sprites.onOverlap(SpriteKind.Active, SpriteKind.Projectile, function (sprite, otherSprite) {
+    otherSprite.destroy()
+    info.changeScoreBy(1)
+})
+info.onCountdownEnd(function () {
+    game.over(true)
+})
+scene.onHitWall(SpriteKind.Active, function (sprite, location) {
+    sprite.vy = 0
+    if (tiles.tileAtLocationEquals(location, assets.tile`platform1`)) {
+        active = rightie
+        sprite.setKind(SpriteKind.Snowperson)
+        seesaw.setImage(assets.image`tiltLeft`)
+    } else if (tiles.tileAtLocationEquals(location, assets.tile`platform2`)) {
+        active = leftie
+        sprite.setKind(SpriteKind.Snowperson)
+        seesaw.setImage(assets.image`lessTilt`)
+    }
+    active.vy = -250
+    active.setKind(SpriteKind.Active)
+})
+let snowflake: Sprite = null
+let seesaw: Sprite = null
+let active: Sprite = null
+let rightie: Sprite = null
+let leftie: Sprite = null
+scene.setBackgroundColor(8)
+tiles.setTilemap(tilemap`level1`)
+leftie = sprites.create(assets.image`leftie`, SpriteKind.Active)
+leftie.setPosition(20, 7)
+rightie = sprites.create(assets.image`rightie`, SpriteKind.Snowperson)
+rightie.setPosition(140, 104)
+active = leftie
+seesaw = sprites.create(assets.image`tiltRight`, SpriteKind.Player)
+seesaw.bottom = 120
+game.splash(&quot;Press the (A) button to&quot;, &quot;jump and catch snowflakes!&quot;)
+info.startCountdown(15)
+
+</code></pre>
+<pre><code class="lang-package">simple-blocks=github:microsoft/arcade-tutorial-extensions/simple-blocks/</code></pre>
+<pre><code class="lang-assetjson">{
+  &quot;README.md&quot;: &quot; &quot;,
+  &quot;assets.json&quot;: &quot;&quot;,
+  &quot;images.g.jres&quot;: &quot;{\n    \&quot;image1\&quot;: {\n        \&quot;data\&quot;: \&quot;hwQIAAgAAAAAEBAAEAABAAAQABABAQEBEBAQEAEAAQAAEAABAAEBAA==\&quot;,\n        \&quot;mimeType\&quot;: \&quot;image/x-mkcd-f4\&quot;,\n        \&quot;displayName\&quot;: \&quot;snowflake1\&quot;\n    },\n    \&quot;]7PQ2-*{{~]py=iF[~r#\&quot;: {\n        \&quot;data\&quot;: \&quot;hwSgACAAAAAOAAAAAAAAAAAAAAAAAAAADgAAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAAAAAADgAAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAAAAAAAOAAAAAAAAAAAAAAAAAAAADgAAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAAAAAAAAAOAAAAAAAAAAAAAAAAAAAADgAAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAAAAAAAOAAAAAAAAAAAAAAAAAAAADgAAAAAAAAAAAAAAAAAAAOAAAAAAAAAAAAAAAAAAAADgAAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAAAAAAAOAAAAAAAAAAAAAAAAAAAADgAAAAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAAAAAAAOAAAAAAAAAAAAAAAAAAAADgAAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAAAAAAAOAAAAAAAAAAAAAAAAAAAADgAAAAAAAAAAAAAAAAAAAOAAAAAAAAAAAAAAAAAAAADgAAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAAAAAAAOAAAAAAAAAAAAAAAAAAAADgAAAAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAAAAAAAOAAAAAAAAAAAAAAAAAAAADgAAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAAAAAAAOAAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAAAAAAAOAAAAAAAAAAAAAAAAAAAADgAAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAAAAAAAOAAAAAAAAAAAAAAAAAAAAAADgAAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAAAAAAAOAAAAAAAAAAAAAAAAAAAADgAAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAAAAAADgAAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAAAAAAAOAAAAAAAAAAAAAAAAAAAADgAAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAAAAAAAAAOAAAAAAAAAAAAAAAAAAAADgAAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAAAAAAAOAAAAAAAAAAAAAAAAAAAADgAAAAAAAAAAAAAAAAAAAOAAAAAAAAAAAAAAAAAAAADgAAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAAAAAAAOAAAAAAAAAAAAAAAAAAAADgAAAAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAAAAAAAOAAAAAAAAAAAAAAAAAAAADgAAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAAAAAAAOAAAAAAAAAAAAAAAAAAAADgAAAAAAAAAAAAAAAAAAAOAAAAAAAAAAAAAAAAAAAADgAAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAAAAAAAOAAAAAAAAAAAAAAAAAAAAAADgAAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAAAAAAAOAAAAAAAAABEAAAAAAAAADgAAAAAAEBARAAAAAAAAAA4AAAAAABHRHQAAAAAAAADgAAAAABER0REAAAAAAAAA4AAAABEdEdERAAAAAAAAAOAAAAARHRHdEQAAAAAAAADgAAAQER0RHREAAAAAAAAAu7sAEdEdER0RAAAAAAAAALu7ERHdEdEdEQAAAAAAAAC7uxER3RHREREAAAAAAAAAu7sAEdER0RERAAAAAAAAAAAOABDREREdEQAAAAAAAAAADgAA0R0R0REAAAAAAAAAAA4AABEdEdERAAAAAAAAAADgAAAQERHdEQAAAAAAAAAA4AAAAAERHREAAAAAAAAAAOAAAAAAABERAAAAAAAAAADgAAAAAAAQEQAAAAAAAAAA4AAAAAAAABAAAAAAAAAAAAAOAAAAAAAAAAAAAAAAAAAADgAAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAAAAAAAOAAAAAAAAAAAAAAAAAAAADgAAAAAAAAAAAAAAAAAAAOAAAAAAAAAAAAAAAAAAAADgAAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAAAAAAAOAAAAAAAAAAAAAAAAAAAADgAAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAAAAAAAAAOAAAAAAAAAAAAAAAAAAAADgAAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAAAAAAAOAAAAAAAAAAAAAAAAAAAADgAAAAAAAAAAAAAAAAAAAOAAAAAAAAAAAAAAAAAAAADgAAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAAAAAAAOAAAAAAAAAAAAAAAAAAAADgAAAAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAAAAAAAOAAAAAAAAAAAAAAAAAAAADgAAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAAAAAAAOAAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAAAAAAAOAAAAAAAAAAAAAAAAAAAADgAAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAAAAAAAOAAAAAAAAAAAAAAAAAAAAAADgAAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAAAAAAAOAAAAAAAAAAAAAAAAAAAADgAAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAAAAAADgAAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAAAAAAAOAAAAAAAAAAAAAAAAAAAADgAAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAAAAAAAAAOAAAAAAAAAAAAAAAAAAAADgAAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAAAAAAAOAAAAAAAAAAAAAAAAAAAADgAAAAAAAAAAAAAAAAAAAOAAAAAAAAAAAAAAAAAAAADgAAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAAAAAAAOAAAAAAAAAAAAAAAAAAAADgAAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAAAAAAAAAOAAAAAAAAAAAAAAAAAAAADgAAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAAAAAAAOAAAAAAAAAAAAAAAAAAAADgAAAAAAAAAAAAAAAAAAAOAAAAAAAAAAAAAAAAAAAADgAAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAAAAAAAOAAAAAAAAAAAAAAAAAAAADgAAAAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAAAAAAAOAAAAAAAAAAAAAAAAAAAADgAAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAAAAAAAOAAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAAAAAAAOAAAAAAAAAAAAAAAAAAAADg\&quot;,\n        \&quot;mimeType\&quot;: \&quot;image/x-mkcd-f4\&quot;,\n        \&quot;displayName\&quot;: \&quot;tiltRight\&quot;\n    },\n    \&quot;7jH`2dH$3O%eu)}y/t7}\&quot;: {\n        \&quot;data\&quot;: \&quot;hwSgACAAAAAAAAAAAAAAAAAAAAAAAADgAAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAAAAAAAOAAAAAAAAAAAAAAAAAAAAAOAAAAAAAAAAAAAAAAAAAADgAAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAAAAAAAOAAAAAAAAAAAAAAAAAAAADgAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAAAAAAAOAAAAAAAAAAAAAAAAAAAADgAAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAAAAAAAOAAAAAAAAAAAAAAAAAAAAAOAAAAAAAAAAAAAAAAAAAADgAAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAAAAAAAOAAAAAAAAAAAAAAAAAAAADgAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAAAAAAAOAAAAAAAAAAAAAAAAAAAADgAAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAAAAAAAOAAAAAAAAAAAAAAAAAAAADgAAAAAAAAAAAAAAAAAAAADgAAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAAAAAAAOAAAAAAAAAAAAAAAAAAAADgAAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAAAAAOAAAAAAAAAAAAAAAAAAAADgAAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAAAAAAAOAAAAAAAAAAAAAAAAAAAADgAAAAAAAAAAAAAAAAAAAADgAAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAAAAAAAOAAAAAAAAAAAAAAAAAAAADgAAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAAAAAOAAAAAAAAAAAAAAAAAAAADgAAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAAAAAAAOAAAAAAAAAAAAAAAAAAAADgAAAAAAAAAAAAAAAAAAAADgAAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAAAAAAAOAAAAAAAAAAAAAAAAAAAADgAAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAAAAAOAAAAAAAAAAAAAAAAAAAADgAAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAAAAAAAOAAAAAAAAAAAAAAAAAAAADgAAAAAAAAAAAAAAAAAAAADgAAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAAAAAAAOAAAAAAAAAAAAAAAAAAAADgAAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAAAAAOAAAAAAAAAAAAAAAAAAAADgAAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAAAAAAAOAAAAAAAAAAAAAAAAAAAADgAAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAAAAAAAOAAAAAAAAAAAAAAAAAAAADgAAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAAAAAAAOAAAAAAAAAAAAAAAAAADgAAAAAAAAAAAAAAAAAAAA4AAAAAAAABEAAAAAAAAAAOAAAAAAEBARAAAAAAAAAADgAAAAABHRHQAAAAAAAAAA4AAAABER0REAAAAAAAAAAA4AABEdEdERAAAAAAAAAAAOAAARHRHdEQAAAAAAAAAADgAQER0RHREAAAAAAAAAu7sAEdEdER0RAAAAAAAAALu7ERHdEdEdEQAAAAAAAAC7uxER3RHREREAAAAAAAAAu7sAEdER0RERAAAAAAAAAOAAABDREREdEQAAAAAAAADgAAAA0R0R0REAAAAAAAAA4AAAABEdEdERAAAAAAAAAOAAAAAQERHdEQAAAAAAAAAOAAAAAAERHREAAAAAAAAADgAAAAAAABERAAAAAAAAAA4AAAAAAAAQEQAAAAAAAAAOAAAAAAAAABAAAAAAAAAADgAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAAAAAAAOAAAAAAAAAAAAAAAAAAAADgAAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAAAAAAAOAAAAAAAAAAAAAAAAAAAADgAAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAAAAAAAOAAAAAAAAAAAAAAAAAAAADgAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAAAAAAAOAAAAAAAAAAAAAAAAAAAADgAAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAAAAAAAOAAAAAAAAAAAAAAAAAAAAAOAAAAAAAAAAAAAAAAAAAADgAAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAAAAAAAOAAAAAAAAAAAAAAAAAAAADgAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAAAAAAAOAAAAAAAAAAAAAAAAAAAADgAAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAAAAAAAOAAAAAAAAAAAAAAAAAAAAAOAAAAAAAAAAAAAAAAAAAADgAAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAAAAAAAOAAAAAAAAAAAAAAAAAAAADgAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAAAAAAAOAAAAAAAAAAAAAAAAAAAADgAAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAAAAAAAOAAAAAAAAAAAAAAAAAAAAAOAAAAAAAAAAAAAAAAAAAADgAAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAAAAAAAOAAAAAAAAAAAAAAAAAAAADgAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAAAAAAAOAAAAAAAAAAAAAAAAAAAADgAAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAAAAAAAOAAAAAAAAAAAAAAAAAAAAAOAAAAAAAAAAAAAAAAAAAADgAAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAAAAAAAOAAAAAAAAAAAAAAAAAAAADgAAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAAAAAOAAAAAAAAAAAAAAAAAAAADgAAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAAAAAAAOAAAAAAAAAAAAAAAAAAAADgAAAAAAAAAAAAAAAAAAAADgAAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAAAAAAAOAAAAAAAAAAAAAAAAAAAADgAAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAAAAAOAAAAAAAAAAAAAAAAAAAADgAAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAAAAAAAOAAAAAAAAAAAAAAAAAAAADgAAAAAAAAAAAAAAAAAAAADgAAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAAAAAAAOAAAAAAAAAAAAAAAAAAAA\&quot;,\n        \&quot;mimeType\&quot;: \&quot;image/x-mkcd-f4\&quot;,\n        \&quot;displayName\&quot;: \&quot;tiltLeft\&quot;\n    },\n    \&quot;0Sl|Ag?-%VgN*Ar!yH]\&quot;: {\n        \&quot;data\&quot;: \&quot;hwSgACAAAAAOAAAAAAAAAAAAAAAAAAAADgAAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAAAAAADgAAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAAAAAAAOAAAAAAAAAAAAAAAAAAAADgAAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAAAAAAAAAOAAAAAAAAAAAAAAAAAAAADgAAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAAAAAAAOAAAAAAAAAAAAAAAAAAAADgAAAAAAAAAAAAAAAAAAAOAAAAAAAAAAAAAAAAAAAADgAAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAAAAAAAOAAAAAAAAAAAAAAAAAAAADgAAAAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAAAAAAAOAAAAAAAAAAAAAAAAAAAADgAAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAAAAAAAOAAAAAAAAAAAAAAAAAAAADgAAAAAAAAAAAAAAAAAAAOAAAAAAAAAAAAAAAAAAAADgAAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAAAAAAAOAAAAAAAAAAAAAAAAAAAADgAAAAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAAAAAAAOAAAAAAAAAAAAAAAAAAAADgAAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAAAAAAAOAAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAAAAAAAOAAAAAAAAAAAAAAAAAAAADgAAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAAAAAAAOAAAAAAAAAAAAAAAAAAAAAADgAAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAAAAAAAOAAAAAAAAAAAAAAAAAAAADgAAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAAAAAADgAAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAAAAAAAOAAAAAAAAAAAAAAAAAAAADgAAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAAAAAAAAAOAAAAAAAAAAAAAAAAAAAADgAAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAAAAAAAOAAAAAAAAAAAAAAAAAAAADgAAAAAAAAAAAAAAAAAAAOAAAAAAAAAAAAAAAAAAAADgAAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAAAAAAAOAAAAAAAAAAAAAAAAAAAADgAAAAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAAAAAAAOAAAAAAAAAAAAAAAAAAAADgAAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAAAAAAAOAAAAAAAAAAAAAAAAAAAADgAAAAAAAAAAAAAAAAAAAOAAAAAAAAAAAAAAAAAAAADgAAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAAAAAAAOAAAAAAAAAAAAAAAAAAAAAADgAAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAAAAAAAOAAAAAAAAABEAAAAAAAAADgAAAAAAEBARAAAAAAAAAA4AAAAAABHRHQAAAAAAAADgAAAAABER0REAAAAAAAAA4AAAABEdEdERAAAAAAAAAOAAAAARHRHdEQAAAAAAAADgAAAQER0RHREAAAAAAAAAu7sAEdEdER0RAAAAAAAAALu7ERHdEdEdEQAAAAAAAAC7uxER3RHREREAAAAAAAAAu7sAEdER0RERAAAAAAAAAAAOABDREREdEQAAAAAAAAAADgAA0R0R0REAAAAAAAAAAA4AABEdEdERAAAAAAAAAADgAAAQERHdEQAAAAAAAAAA4AAAAAERHREAAAAAAAAAAOAAAAAAABERAAAAAAAAAADgAAAAAAAQEQAAAAAAAAAA4AAAAAAAABAAAAAAAAAAAAAOAAAAAAAAAAAAAAAAAAAADgAAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAAAAAAAOAAAAAAAAAAAAAAAAAAAADgAAAAAAAAAAAAAAAAAAAOAAAAAAAAAAAAAAAAAAAADgAAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAAAAAAAOAAAAAAAAAAAAAAAAAAAADgAAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAAAAAAAAAOAAAAAAAAAAAAAAAAAAAADgAAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAAAAAAAOAAAAAAAAAAAAAAAAAAAADgAAAAAAAAAAAAAAAAAAAOAAAAAAAAAAAAAAAAAAAADgAAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAAAAAAAOAAAAAAAAAAAAAAAAAAAADgAAAAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAAAAAAAOAAAAAAAAAAAAAAAAAAAADgAAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAAAAAAAOAAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAAAAAAAOAAAAAAAAAAAAAAAAAAAADgAAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAAAAAAAOAAAAAAAAAAAAAAAAAAAAAADgAAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAAAAAAAOAAAAAAAAAAAAAAAAAAAADgAAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAAAAAADgAAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAAAAAAAOAAAAAAAAAAAAAAAAAAAADgAAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAAAAAAAAAOAAAAAAAAAAAAAAAAAAAADgAAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAAAAAAAOAAAAAAAAAAAAAAAAAAAADgAAAAAAAAAAAAAAAAAAAOAAAAAAAAAAAAAAAAAAAADgAAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAAAAAAAOAAAAAAAAAAAAAAAAAAAADgAAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAAAAAAAAAOAAAAAAAAAAAAAAAAAAAADgAAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAAAAAAAOAAAAAAAAAAAAAAAAAAAADgAAAAAAAAAAAAAAAAAAAOAAAAAAAAAAAAAAAAAAAADgAAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAAAAAAAOAAAAAAAAAAAAAAAAAAAADgAAAAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAAAAAAAOAAAAAAAAAAAAAAAAAAAADgAAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAAAAAAAOAAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAAAAAAAOAAAAAAAAAAAAAAAAAAAADg\&quot;,\n        \&quot;mimeType\&quot;: \&quot;image/x-mkcd-f4\&quot;,\n        \&quot;displayName\&quot;: \&quot;lessTilt\&quot;\n    },\n    \&quot;tw)YMb%W\&quot;: {\n        \&quot;data\&quot;: \&quot;hwQYABgAAAAAAAAAAAAAAAAAAAAAAAAADwAAAAAAAAAAAAAA8PAAAAAAAAAAAAAAAP8AALC7AAAAAAAAAPAPsNvduwAAAAAAAAD/293d3QsAAAK7uwv7HdHR3b0AACId3SsdERER3b0AICcSES3SERER0b0gchIR8dEiERIR3b0AIhEfEd8i0SIR0b0AIBFBFN9yLRIR3b0AsBFPFN8nIhER0b0AsBER9NFy0hER0b0AsBERFCHSIh0R0b0AALsRESEdIdIR0b0AAAC7uwv7ESIREb0AAAAAAAD/GxIREQsAAAAAAAAPsBsRuwAAAAAAAPAPALC7AAAAAAAAAAAPAAAAAAAAAAAAAAAPAAAAAAAAAAAAAPAPAAAAAAAAAAAAAPDwAAAAAAA=\&quot;,\n        \&quot;mimeType\&quot;: \&quot;image/x-mkcd-f4\&quot;,\n        \&quot;displayName\&quot;: \&quot;leftie\&quot;\n    },\n    \&quot;r|f$7wl#Q\&quot;: {\n        \&quot;data\&quot;: \&quot;hwQYABgAAAAAAAAAAPAAAAAAAAAAAAAAAAAPAAAAAAAAAAAAAAAPAAAAAAAAAAAAAAD/AAAAAAAAAAAAAPAPAMDMAAAAAAAAAAAPwNzdzAAAAAAAAADP3NLd3QwAAADMzAz83SLd3c0AAMwdES3dLRLR3c0AwB0RESHSIhER3c0AwBER9BFy0hER3c0AwBFPFB8nIh0R3c0AwBFBER9yIdIR3c3wzxEfER8iESIR3c0A/xER8REiERIR0c3w/x8RESESERER0c3w//cRESEREREREc3/f//PzAz8HREREc3//wAPAAD/HBEREQz/DwAAAPAPwBwRzAAAAAAA8A8AAMDMAAAAAAAA//AAAAAAAAAAAAAADwAAAAAAAAAAAAAAAAAAAAAAAAA=\&quot;,\n        \&quot;mimeType\&quot;: \&quot;image/x-mkcd-f4\&quot;,\n        \&quot;displayName\&quot;: \&quot;rightie\&quot;\n    },\n    \&quot;*\&quot;: {\n        \&quot;mimeType\&quot;: \&quot;image/x-mkcd-f4\&quot;,\n        \&quot;dataEncoding\&quot;: \&quot;base64\&quot;,\n        \&quot;namespace\&quot;: \&quot;myImages\&quot;\n    }\n}&quot;,
+  &quot;images.g.ts&quot;: &quot;// Auto-generated code. Do not edit.\nnamespace myImages {\n\n    helpers._registerFactory(\&quot;image\&quot;, function(name: string) {\n        switch(helpers.stringTrim(name)) {\n            case \&quot;image1\&quot;:\n            case \&quot;snowflake1\&quot;:return img`\n. . . 1 . 1 . . \n. 1 . . 1 . . . \n. . . 1 . . . 1 \n1 . 1 . 1 . 1 . \n. 1 . 1 . 1 . 1 \n1 . . . 1 . . . \n. . . 1 . . 1 . \n. . 1 . 1 . . . \n`;\n            case \&quot;]7PQ2-*{{~]py=iF[~r#\&quot;:\n            case \&quot;tiltRight\&quot;:return img`\neee.............................................................................................................................................................\n...eeeee........................................................................................................................................................\n........eeeee...................................................................................................................................................\n.............eeeee..............................................................................................................................................\n..................eeeeee........................................................................................................................................\n........................eeeee...................................................................................................................................\n.............................eeeee..............................................................................................................................\n..................................eeeee.........................................................................................................................\n.......................................eeeee....................................................................................................................\n............................................eeeee...............................................................................................................\n.................................................eeeee..........................................................................................................\n......................................................eeeee.....................................................................................................\n...........................................................eeeeee...............................................................................................\n.................................................................eeee...........................................................................................\n.....................................................................eeeee....bbbb..............................................................................\n..........................................................................eeeebbbb..............................................................................\n..............................................................................bbbbeee...........................................................................\n..............................................................................bbbb...eeeee......................................................................\n...............................................................................11.........eeeee.................................................................\n...............................................................................11..............eeeeee...........................................................\n..............................................................................1111...................eeeee......................................................\n.............................................................................111111.......................eeeee.................................................\n...........................................................................1111dd1111..........................eeeee............................................\n...........................................................................111dddddd11..............................eeeee.......................................\n..........................................................................1dddd1111dd11..................................eeeee..................................\n..........................................................................111111111111........................................eeeee.............................\n.........................................................................11111111111111............................................eeeee........................\n........................................................................1111111ddd11111.................................................eeeeee..................\n.........................................................................111dddd11d11dd1......................................................eeeee.............\n........................................................................1dddd111111ddd111..........................................................eeeee........\n.......................................................................11d111111111111111...............................................................eeeee...\n.......................................................................1111111111111111111...................................................................eee\n`;\n            case \&quot;7jH`2dH$3O%eu)}y/t7}\&quot;:\n            case \&quot;tiltLeft\&quot;:return img`\n.............................................................................................................................................................eee\n........................................................................................................................................................eeeee...\n...................................................................................................................................................eeeee........\n..............................................................................................................................................eeeee.............\n........................................................................................................................................eeeeee..................\n...................................................................................................................................eeeee........................\n..............................................................................................................................eeeee.............................\n.........................................................................................................................eeeee..................................\n....................................................................................................................eeeee.......................................\n...............................................................................................................eeeee............................................\n..........................................................................................................eeeee.................................................\n.....................................................................................................eeeee......................................................\n...............................................................................................eeeeee...........................................................\n...........................................................................................eeee.................................................................\n..............................................................................bbbb....eeeee.....................................................................\n..............................................................................bbbbeeee..........................................................................\n...........................................................................eeebbbb..............................................................................\n......................................................................eeeee...bbbb..............................................................................\n.................................................................eeeee.........11...............................................................................\n...........................................................eeeeee..............11...............................................................................\n......................................................eeeee...................1111..............................................................................\n.................................................eeeee.......................111111.............................................................................\n............................................eeeee..........................1111dd1111...........................................................................\n.......................................eeeee...............................111dddddd11..........................................................................\n..................................eeeee...................................1dddd1111dd11.........................................................................\n.............................eeeee........................................111111111111..........................................................................\n........................eeeee............................................11111111111111.........................................................................\n..................eeeeee................................................1111111ddd11111.........................................................................\n.............eeeee.......................................................111dddd11d11dd1........................................................................\n........eeeee...........................................................1dddd111111ddd111.......................................................................\n...eeeee...............................................................11d111111111111111.......................................................................\neee....................................................................1111111111111111111......................................................................\n`;\n            case \&quot;0Sl|Ag?-%VgN*Ar!yH]\&quot;:\n            case \&quot;lessTilt\&quot;:return img`\neee.............................................................................................................................................................\n...eeeee........................................................................................................................................................\n........eeeee...................................................................................................................................................\n.............eeeee..............................................................................................................................................\n..................eeeeee........................................................................................................................................\n........................eeeee...................................................................................................................................\n.............................eeeee..............................................................................................................................\n..................................eeeee.........................................................................................................................\n.......................................eeeee....................................................................................................................\n............................................eeeee...............................................................................................................\n.................................................eeeee..........................................................................................................\n......................................................eeeee.....................................................................................................\n...........................................................eeeeee...............................................................................................\n.................................................................eeee...........................................................................................\n.....................................................................eeeee....bbbb..............................................................................\n..........................................................................eeeebbbb..............................................................................\n..............................................................................bbbbeee...........................................................................\n..............................................................................bbbb...eeeee......................................................................\n...............................................................................11.........eeeee.................................................................\n...............................................................................11..............eeeeee...........................................................\n..............................................................................1111...................eeeee......................................................\n.............................................................................111111.......................eeeee.................................................\n...........................................................................1111dd1111..........................eeeee............................................\n...........................................................................111dddddd11..............................eeeee.......................................\n..........................................................................1dddd1111dd11..................................eeeee..................................\n..........................................................................111111111111........................................eeeee.............................\n.........................................................................11111111111111............................................eeeee........................\n........................................................................1111111ddd11111.................................................eeeeee..................\n.........................................................................111dddd11d11dd1......................................................eeeee.............\n........................................................................1dddd111111ddd111..........................................................eeeee........\n.......................................................................11d111111111111111...............................................................eeeee...\n.......................................................................1111111111111111111...................................................................eee\n`;\n            case \&quot;tw)YMb%W\&quot;:\n            case \&quot;leftie\&quot;:return img`\n........................\n.........2..............\n.........22.............\n........2722bbb.........\n......227211111b........\n.......22111111b........\n......bd21f1f111b.......\n......b111144111b.......\n.f....bd11144441b.......\n..f...bd1f111f11b.......\n...f..bbd1fff111b.......\n..fff..22ddddd22...f..ff\n....ffbd2222722dbffffff.\n.....ff1d22727d1ff.....f\n.....bd1111d22211b......\n....bd1111d22d2211b.....\n....bd11122211d222b.....\n...bddd11121111d211b....\n...bdd1111111111111b....\n...bddd111111111111b....\n....bddd1d1d111111b.....\n....bddddddddddd11b.....\n.....bdddddddddddb......\n......bbbbbbbbbbb.......\n`;\n            case \&quot;r|f$7wl#Q\&quot;:\n            case \&quot;rightie\&quot;:return img`\n.................fff....\n.............f.fffff....\n.............fffffff....\n.........cccccfff7f.....\n........cd11111f7f......\n........c1111111ff......\n.......cd11f1f111ff.....\n.......c111441111c......\n.......c114411111c...ff.\n.......c11f111f11c..ff..\n.......cd11fff111c..f...\nf...f...221111122..f.f..\n.ffffffcd22722221cff....\n...f..cfdd7272211ff.....\n......cdd22211111dc.....\n.....cdd22d22111111c....\n.....c22211d2221111c....\n....cdd21111d2111111c...\n....cddd111111111111c...\n....cdddd11111111111c...\n.....cdddddddd11111c....\n.....cdddddddddd111c....\n......cdddddddddddc.....\n.......ccccccccccc......\n`;\n        }\n        return null;\n    })\n\n    helpers._registerFactory(\&quot;animation\&quot;, function(name: string) {\n        switch(helpers.stringTrim(name)) {\n\n        }\n        return null;\n    })\n\n}\n// Auto-generated code. Do not edit.\n&quot;,
+  &quot;main.blocks&quot;: &quot;&lt;xml xmlns=\&quot;https://developers.google.com/blockly/xml\&quot;&gt;&lt;variables&gt;&lt;variable id=\&quot;z3GzZoJYWC$znobE{d#2\&quot;&gt;active&lt;/variable&gt;&lt;variable id=\&quot;B}Uc1PVr3sG^G?F;woVT\&quot;&gt;rightie&lt;/variable&gt;&lt;variable id=\&quot;%V5/g^O8_vA0A@X!b7yl\&quot;&gt;seesaw&lt;/variable&gt;&lt;variable id=\&quot;K8=RKkOs?3^dnULxjSxC\&quot;&gt;leftie&lt;/variable&gt;&lt;variable id=\&quot;5rp3u|]FGhglL!+kG8P;\&quot;&gt;snowflake&lt;/variable&gt;&lt;variable type=\&quot;KIND_SpriteKind\&quot; id=\&quot;Hd[5v~wyE9I^eZkF-?|^\&quot;&gt;Snowperson&lt;/variable&gt;&lt;variable type=\&quot;KIND_SpriteKind\&quot; id=\&quot;a%7G$4R*v{$_meg[u_[V\&quot;&gt;Active&lt;/variable&gt;&lt;variable type=\&quot;KIND_SpriteKind\&quot; id=\&quot;lo@:U,fw=W,4LBgqdiG~\&quot;&gt;Player&lt;/variable&gt;&lt;variable type=\&quot;KIND_SpriteKind\&quot; id=\&quot;~WQH-s#.5?Mxch2@*U=p\&quot;&gt;Projectile&lt;/variable&gt;&lt;variable type=\&quot;KIND_SpriteKind\&quot; id=\&quot;GmpfmztvLoUV`gJbqTXY\&quot;&gt;Food&lt;/variable&gt;&lt;variable type=\&quot;KIND_SpriteKind\&quot; id=\&quot;)I2gy2IAqQEK.zyg.-f4\&quot;&gt;Enemy&lt;/variable&gt;&lt;/variables&gt;&lt;block type=\&quot;pxt-on-start\&quot; x=\&quot;0\&quot; y=\&quot;0\&quot;&gt;&lt;statement name=\&quot;HANDLER\&quot;&gt;&lt;block type=\&quot;gamesetbackgroundcolor\&quot;&gt;&lt;value name=\&quot;color\&quot;&gt;&lt;shadow type=\&quot;colorindexpicker\&quot;&gt;&lt;field name=\&quot;index\&quot;&gt;9&lt;/field&gt;&lt;/shadow&gt;&lt;/value&gt;&lt;next&gt;&lt;block type=\&quot;tilemap_editor\&quot;&gt;&lt;field name=\&quot;tilemap\&quot;&gt;tilemap`level1`&lt;/field&gt;&lt;data&gt;{\&quot;commentRefs\&quot;:[],\&quot;fieldData\&quot;:{\&quot;tilemap\&quot;:\&quot;level1\&quot;}}&lt;/data&gt;&lt;next&gt;&lt;block type=\&quot;variables_set\&quot;&gt;&lt;field name=\&quot;VAR\&quot; id=\&quot;K8=RKkOs?3^dnULxjSxC\&quot;&gt;leftie&lt;/field&gt;&lt;value name=\&quot;VALUE\&quot;&gt;&lt;shadow type=\&quot;math_number\&quot;&gt;&lt;field name=\&quot;NUM\&quot;&gt;0&lt;/field&gt;&lt;/shadow&gt;&lt;block type=\&quot;spritescreate\&quot;&gt;&lt;value name=\&quot;img\&quot;&gt;&lt;shadow type=\&quot;screen_image_picker\&quot;&gt;&lt;field name=\&quot;img\&quot;&gt;assets.image`leftie`&lt;/field&gt;&lt;data&gt;{\&quot;commentRefs\&quot;:[],\&quot;fieldData\&quot;:{\&quot;img\&quot;:\&quot;myImages.tw)YMb%W\&quot;}}&lt;/data&gt;&lt;/shadow&gt;&lt;/value&gt;&lt;value name=\&quot;kind\&quot;&gt;&lt;shadow type=\&quot;spritekind\&quot;&gt;&lt;field name=\&quot;MEMBER\&quot;&gt;Active&lt;/field&gt;&lt;/shadow&gt;&lt;/value&gt;&lt;/block&gt;&lt;/value&gt;&lt;next&gt;&lt;block type=\&quot;spritesetpos\&quot;&gt;&lt;value name=\&quot;sprite\&quot;&gt;&lt;block type=\&quot;variables_get\&quot;&gt;&lt;field name=\&quot;VAR\&quot; id=\&quot;K8=RKkOs?3^dnULxjSxC\&quot;&gt;leftie&lt;/field&gt;&lt;/block&gt;&lt;/value&gt;&lt;value name=\&quot;x\&quot;&gt;&lt;shadow type=\&quot;positionPicker\&quot;&gt;&lt;field name=\&quot;index\&quot;&gt;15&lt;/field&gt;&lt;/shadow&gt;&lt;/value&gt;&lt;value name=\&quot;y\&quot;&gt;&lt;shadow type=\&quot;positionPicker\&quot;&gt;&lt;field name=\&quot;index\&quot;&gt;7&lt;/field&gt;&lt;/shadow&gt;&lt;/value&gt;&lt;next&gt;&lt;block type=\&quot;variables_set\&quot;&gt;&lt;field name=\&quot;VAR\&quot; id=\&quot;B}Uc1PVr3sG^G?F;woVT\&quot;&gt;rightie&lt;/field&gt;&lt;value name=\&quot;VALUE\&quot;&gt;&lt;shadow type=\&quot;math_number\&quot;&gt;&lt;field name=\&quot;NUM\&quot;&gt;0&lt;/field&gt;&lt;/shadow&gt;&lt;block type=\&quot;spritescreate\&quot;&gt;&lt;value name=\&quot;img\&quot;&gt;&lt;shadow type=\&quot;screen_image_picker\&quot;&gt;&lt;field name=\&quot;img\&quot;&gt;assets.image`rightie`&lt;/field&gt;&lt;data&gt;{\&quot;commentRefs\&quot;:[],\&quot;fieldData\&quot;:{\&quot;img\&quot;:\&quot;myImages.r|f$7wl#Q\&quot;}}&lt;/data&gt;&lt;/shadow&gt;&lt;/value&gt;&lt;value name=\&quot;kind\&quot;&gt;&lt;shadow type=\&quot;spritekind\&quot;&gt;&lt;field name=\&quot;MEMBER\&quot;&gt;Snowperson&lt;/field&gt;&lt;/shadow&gt;&lt;/value&gt;&lt;/block&gt;&lt;/value&gt;&lt;next&gt;&lt;block type=\&quot;spritesetpos\&quot;&gt;&lt;value name=\&quot;sprite\&quot;&gt;&lt;block type=\&quot;variables_get\&quot;&gt;&lt;field name=\&quot;VAR\&quot; id=\&quot;B}Uc1PVr3sG^G?F;woVT\&quot;&gt;rightie&lt;/field&gt;&lt;/block&gt;&lt;/value&gt;&lt;value name=\&quot;x\&quot;&gt;&lt;shadow type=\&quot;positionPicker\&quot;&gt;&lt;field name=\&quot;index\&quot;&gt;140&lt;/field&gt;&lt;/shadow&gt;&lt;/value&gt;&lt;value name=\&quot;y\&quot;&gt;&lt;shadow type=\&quot;positionPicker\&quot;&gt;&lt;field name=\&quot;index\&quot;&gt;104&lt;/field&gt;&lt;/shadow&gt;&lt;/value&gt;&lt;next&gt;&lt;block type=\&quot;variables_set\&quot;&gt;&lt;field name=\&quot;VAR\&quot; id=\&quot;z3GzZoJYWC$znobE{d#2\&quot;&gt;active&lt;/field&gt;&lt;value name=\&quot;VALUE\&quot;&gt;&lt;shadow type=\&quot;math_number\&quot;&gt;&lt;field name=\&quot;NUM\&quot;&gt;0&lt;/field&gt;&lt;/shadow&gt;&lt;block type=\&quot;variables_get\&quot;&gt;&lt;field name=\&quot;VAR\&quot; id=\&quot;K8=RKkOs?3^dnULxjSxC\&quot;&gt;leftie&lt;/field&gt;&lt;/block&gt;&lt;/value&gt;&lt;next&gt;&lt;block type=\&quot;variables_set\&quot;&gt;&lt;field name=\&quot;VAR\&quot; id=\&quot;%V5/g^O8_vA0A@X!b7yl\&quot;&gt;seesaw&lt;/field&gt;&lt;value name=\&quot;VALUE\&quot;&gt;&lt;shadow type=\&quot;math_number\&quot;&gt;&lt;field name=\&quot;NUM\&quot;&gt;0&lt;/field&gt;&lt;/shadow&gt;&lt;block type=\&quot;spritescreate\&quot;&gt;&lt;value name=\&quot;img\&quot;&gt;&lt;shadow type=\&quot;screen_image_picker\&quot;&gt;&lt;field name=\&quot;img\&quot;&gt;assets.image`tiltRight`&lt;/field&gt;&lt;data&gt;{\&quot;commentRefs\&quot;:[],\&quot;fieldData\&quot;:{\&quot;img\&quot;:\&quot;myImages.]7PQ2-*{{~]py=iF[~r#\&quot;}}&lt;/data&gt;&lt;/shadow&gt;&lt;/value&gt;&lt;value name=\&quot;kind\&quot;&gt;&lt;shadow type=\&quot;spritekind\&quot;&gt;&lt;field name=\&quot;MEMBER\&quot;&gt;Player&lt;/field&gt;&lt;/shadow&gt;&lt;/value&gt;&lt;/block&gt;&lt;/value&gt;&lt;next&gt;&lt;block type=\&quot;Sprite_blockCombine_set\&quot;&gt;&lt;field name=\&quot;property\&quot;&gt;Sprite.bottom@set&lt;/field&gt;&lt;value name=\&quot;mySprite\&quot;&gt;&lt;block type=\&quot;variables_get\&quot;&gt;&lt;field name=\&quot;VAR\&quot; id=\&quot;%V5/g^O8_vA0A@X!b7yl\&quot;&gt;seesaw&lt;/field&gt;&lt;/block&gt;&lt;/value&gt;&lt;value name=\&quot;value\&quot;&gt;&lt;shadow type=\&quot;math_number\&quot;&gt;&lt;field name=\&quot;NUM\&quot;&gt;120&lt;/field&gt;&lt;/shadow&gt;&lt;/value&gt;&lt;next&gt;&lt;block type=\&quot;gamecountdown\&quot;&gt;&lt;value name=\&quot;duration\&quot;&gt;&lt;shadow type=\&quot;math_number\&quot;&gt;&lt;field name=\&quot;NUM\&quot;&gt;30&lt;/field&gt;&lt;/shadow&gt;&lt;/value&gt;&lt;/block&gt;&lt;/next&gt;&lt;/block&gt;&lt;/next&gt;&lt;/block&gt;&lt;/next&gt;&lt;/block&gt;&lt;/next&gt;&lt;/block&gt;&lt;/next&gt;&lt;/block&gt;&lt;/next&gt;&lt;/block&gt;&lt;/next&gt;&lt;/block&gt;&lt;/next&gt;&lt;/block&gt;&lt;/next&gt;&lt;/block&gt;&lt;/statement&gt;&lt;/block&gt;&lt;block type=\&quot;gameinterval\&quot; x=\&quot;686\&quot; y=\&quot;0\&quot;&gt;&lt;value name=\&quot;period\&quot;&gt;&lt;shadow type=\&quot;timePicker\&quot;&gt;&lt;field name=\&quot;ms\&quot;&gt;300&lt;/field&gt;&lt;/shadow&gt;&lt;/value&gt;&lt;statement name=\&quot;HANDLER\&quot;&gt;&lt;block type=\&quot;variables_set\&quot;&gt;&lt;field name=\&quot;VAR\&quot; id=\&quot;5rp3u|]FGhglL!+kG8P;\&quot;&gt;snowflake&lt;/field&gt;&lt;value name=\&quot;VALUE\&quot;&gt;&lt;shadow type=\&quot;math_number\&quot;&gt;&lt;field name=\&quot;NUM\&quot;&gt;0&lt;/field&gt;&lt;/shadow&gt;&lt;block type=\&quot;spritescreateprojectilefromside\&quot;&gt;&lt;value name=\&quot;img\&quot;&gt;&lt;shadow type=\&quot;screen_image_picker\&quot;&gt;&lt;field name=\&quot;img\&quot;&gt;assets.image`snowflake1`&lt;/field&gt;&lt;data&gt;{\&quot;commentRefs\&quot;:[],\&quot;fieldData\&quot;:{\&quot;img\&quot;:\&quot;myImages.image1\&quot;}}&lt;/data&gt;&lt;/shadow&gt;&lt;/value&gt;&lt;value name=\&quot;vx\&quot;&gt;&lt;shadow type=\&quot;spriteSpeedPicker\&quot;/&gt;&lt;block type=\&quot;device_random\&quot;&gt;&lt;value name=\&quot;min\&quot;&gt;&lt;shadow type=\&quot;math_number\&quot;&gt;&lt;field name=\&quot;NUM\&quot;&gt;-125&lt;/field&gt;&lt;/shadow&gt;&lt;/value&gt;&lt;value name=\&quot;limit\&quot;&gt;&lt;shadow type=\&quot;math_number\&quot;&gt;&lt;field name=\&quot;NUM\&quot;&gt;125&lt;/field&gt;&lt;/shadow&gt;&lt;/value&gt;&lt;/block&gt;&lt;/value&gt;&lt;value name=\&quot;vy\&quot;&gt;&lt;shadow type=\&quot;spriteSpeedPicker\&quot;&gt;&lt;field name=\&quot;speed\&quot;&gt;0&lt;/field&gt;&lt;/shadow&gt;&lt;/value&gt;&lt;/block&gt;&lt;/value&gt;&lt;next&gt;&lt;block type=\&quot;Sprite_blockCombine_set\&quot;&gt;&lt;field name=\&quot;property\&quot;&gt;Sprite.y@set&lt;/field&gt;&lt;value name=\&quot;mySprite\&quot;&gt;&lt;block type=\&quot;variables_get\&quot;&gt;&lt;field name=\&quot;VAR\&quot; id=\&quot;5rp3u|]FGhglL!+kG8P;\&quot;&gt;snowflake&lt;/field&gt;&lt;/block&gt;&lt;/value&gt;&lt;value name=\&quot;value\&quot;&gt;&lt;block type=\&quot;device_random\&quot;&gt;&lt;value name=\&quot;min\&quot;&gt;&lt;shadow type=\&quot;math_number\&quot;&gt;&lt;field name=\&quot;NUM\&quot;&gt;30&lt;/field&gt;&lt;/shadow&gt;&lt;/value&gt;&lt;value name=\&quot;limit\&quot;&gt;&lt;shadow type=\&quot;math_number\&quot;&gt;&lt;field name=\&quot;NUM\&quot;&gt;80&lt;/field&gt;&lt;/shadow&gt;&lt;/value&gt;&lt;/block&gt;&lt;/value&gt;&lt;/block&gt;&lt;/next&gt;&lt;/block&gt;&lt;/statement&gt;&lt;/block&gt;&lt;block type=\&quot;keyonevent\&quot; x=\&quot;1747\&quot; y=\&quot;0\&quot;&gt;&lt;field name=\&quot;button\&quot;&gt;controller.A&lt;/field&gt;&lt;field name=\&quot;event\&quot;&gt;ControllerButtonEvent.Pressed&lt;/field&gt;&lt;statement name=\&quot;HANDLER\&quot;&gt;&lt;block type=\&quot;controls_if\&quot;&gt;&lt;value name=\&quot;IF0\&quot;&gt;&lt;shadow type=\&quot;logic_boolean\&quot;&gt;&lt;field name=\&quot;BOOL\&quot;&gt;TRUE&lt;/field&gt;&lt;/shadow&gt;&lt;block type=\&quot;logic_compare\&quot;&gt;&lt;field name=\&quot;OP\&quot;&gt;LT&lt;/field&gt;&lt;value name=\&quot;A\&quot;&gt;&lt;shadow type=\&quot;math_number\&quot;&gt;&lt;field name=\&quot;NUM\&quot;&gt;0&lt;/field&gt;&lt;/shadow&gt;&lt;block type=\&quot;Sprite_blockCombine_get\&quot;&gt;&lt;field name=\&quot;property\&quot;&gt;Sprite.bottom&lt;/field&gt;&lt;value name=\&quot;mySprite\&quot;&gt;&lt;block type=\&quot;variables_get\&quot;&gt;&lt;field name=\&quot;VAR\&quot; id=\&quot;z3GzZoJYWC$znobE{d#2\&quot;&gt;active&lt;/field&gt;&lt;/block&gt;&lt;/value&gt;&lt;/block&gt;&lt;/value&gt;&lt;value name=\&quot;B\&quot;&gt;&lt;shadow type=\&quot;math_number\&quot;&gt;&lt;field name=\&quot;NUM\&quot;&gt;33&lt;/field&gt;&lt;/shadow&gt;&lt;/value&gt;&lt;/block&gt;&lt;/value&gt;&lt;statement name=\&quot;DO0\&quot;&gt;&lt;block type=\&quot;Sprite_blockCombine_set\&quot;&gt;&lt;field name=\&quot;property\&quot;&gt;Sprite.vy@set&lt;/field&gt;&lt;value name=\&quot;mySprite\&quot;&gt;&lt;block type=\&quot;variables_get\&quot;&gt;&lt;field name=\&quot;VAR\&quot; id=\&quot;z3GzZoJYWC$znobE{d#2\&quot;&gt;active&lt;/field&gt;&lt;/block&gt;&lt;/value&gt;&lt;value name=\&quot;value\&quot;&gt;&lt;shadow type=\&quot;math_number\&quot;&gt;&lt;field name=\&quot;NUM\&quot;&gt;250&lt;/field&gt;&lt;/shadow&gt;&lt;/value&gt;&lt;/block&gt;&lt;/statement&gt;&lt;/block&gt;&lt;/statement&gt;&lt;/block&gt;&lt;block type=\&quot;spriteshitwall\&quot; x=\&quot;0\&quot; y=\&quot;669\&quot;&gt;&lt;value name=\&quot;HANDLER_DRAG_PARAM_sprite\&quot;&gt;&lt;shadow type=\&quot;argument_reporter_custom\&quot;&gt;&lt;mutation typename=\&quot;Sprite\&quot;/&gt;&lt;field name=\&quot;VALUE\&quot;&gt;sprite&lt;/field&gt;&lt;/shadow&gt;&lt;/value&gt;&lt;value name=\&quot;kind\&quot;&gt;&lt;shadow type=\&quot;spritekind\&quot;&gt;&lt;field name=\&quot;MEMBER\&quot;&gt;Active&lt;/field&gt;&lt;/shadow&gt;&lt;/value&gt;&lt;value name=\&quot;HANDLER_DRAG_PARAM_location\&quot;&gt;&lt;shadow type=\&quot;argument_reporter_custom\&quot;&gt;&lt;mutation typename=\&quot;tiles.Location\&quot;/&gt;&lt;field name=\&quot;VALUE\&quot;&gt;location&lt;/field&gt;&lt;/shadow&gt;&lt;/value&gt;&lt;statement name=\&quot;HANDLER\&quot;&gt;&lt;block type=\&quot;Sprite_blockCombine_set\&quot;&gt;&lt;field name=\&quot;property\&quot;&gt;Sprite.vy@set&lt;/field&gt;&lt;value name=\&quot;mySprite\&quot;&gt;&lt;block type=\&quot;argument_reporter_custom\&quot;&gt;&lt;mutation typename=\&quot;Sprite\&quot;/&gt;&lt;field name=\&quot;VALUE\&quot;&gt;sprite&lt;/field&gt;&lt;/block&gt;&lt;/value&gt;&lt;value name=\&quot;value\&quot;&gt;&lt;shadow type=\&quot;math_number\&quot;&gt;&lt;field name=\&quot;NUM\&quot;&gt;0&lt;/field&gt;&lt;/shadow&gt;&lt;/value&gt;&lt;next&gt;&lt;block type=\&quot;controls_if\&quot;&gt;&lt;mutation elseif=\&quot;1\&quot;/&gt;&lt;value name=\&quot;IF0\&quot;&gt;&lt;shadow type=\&quot;logic_boolean\&quot;&gt;&lt;field name=\&quot;BOOL\&quot;&gt;TRUE&lt;/field&gt;&lt;/shadow&gt;&lt;block type=\&quot;maplocationistile\&quot;&gt;&lt;value name=\&quot;location\&quot;&gt;&lt;shadow type=\&quot;mapgettile\&quot;/&gt;&lt;block type=\&quot;argument_reporter_custom\&quot;&gt;&lt;mutation typename=\&quot;tiles.Location\&quot;/&gt;&lt;field name=\&quot;VALUE\&quot;&gt;location&lt;/field&gt;&lt;/block&gt;&lt;/value&gt;&lt;value name=\&quot;tile\&quot;&gt;&lt;shadow type=\&quot;tileset_tile_picker\&quot;&gt;&lt;field name=\&quot;tile\&quot;&gt;assets.tile`platform1`&lt;/field&gt;&lt;/shadow&gt;&lt;/value&gt;&lt;/block&gt;&lt;/value&gt;&lt;statement name=\&quot;DO0\&quot;&gt;&lt;block type=\&quot;variables_set\&quot;&gt;&lt;field name=\&quot;VAR\&quot; id=\&quot;z3GzZoJYWC$znobE{d#2\&quot;&gt;active&lt;/field&gt;&lt;value name=\&quot;VALUE\&quot;&gt;&lt;shadow type=\&quot;math_number\&quot;&gt;&lt;field name=\&quot;NUM\&quot;&gt;0&lt;/field&gt;&lt;/shadow&gt;&lt;block type=\&quot;variables_get\&quot;&gt;&lt;field name=\&quot;VAR\&quot; id=\&quot;B}Uc1PVr3sG^G?F;woVT\&quot;&gt;rightie&lt;/field&gt;&lt;/block&gt;&lt;/value&gt;&lt;next&gt;&lt;block type=\&quot;spritesetkind\&quot;&gt;&lt;value name=\&quot;sprite\&quot;&gt;&lt;block type=\&quot;argument_reporter_custom\&quot;&gt;&lt;mutation typename=\&quot;Sprite\&quot;/&gt;&lt;field name=\&quot;VALUE\&quot;&gt;sprite&lt;/field&gt;&lt;/block&gt;&lt;/value&gt;&lt;value name=\&quot;kind\&quot;&gt;&lt;shadow type=\&quot;spritekind\&quot;&gt;&lt;field name=\&quot;MEMBER\&quot;&gt;Snowperson&lt;/field&gt;&lt;/shadow&gt;&lt;/value&gt;&lt;next&gt;&lt;block type=\&quot;spritesetimage\&quot;&gt;&lt;value name=\&quot;sprite\&quot;&gt;&lt;block type=\&quot;variables_get\&quot;&gt;&lt;field name=\&quot;VAR\&quot; id=\&quot;%V5/g^O8_vA0A@X!b7yl\&quot;&gt;seesaw&lt;/field&gt;&lt;/block&gt;&lt;/value&gt;&lt;value name=\&quot;img\&quot;&gt;&lt;shadow type=\&quot;screen_image_picker\&quot;&gt;&lt;field name=\&quot;img\&quot;&gt;assets.image`tiltLeft`&lt;/field&gt;&lt;data&gt;{\&quot;commentRefs\&quot;:[],\&quot;fieldData\&quot;:{\&quot;img\&quot;:\&quot;myImages.7jH`2dH$3O%eu)}y/t7}\&quot;}}&lt;/data&gt;&lt;/shadow&gt;&lt;/value&gt;&lt;/block&gt;&lt;/next&gt;&lt;/block&gt;&lt;/next&gt;&lt;/block&gt;&lt;/statement&gt;&lt;value name=\&quot;IF1\&quot;&gt;&lt;shadow type=\&quot;logic_boolean\&quot;&gt;&lt;field name=\&quot;BOOL\&quot;&gt;TRUE&lt;/field&gt;&lt;/shadow&gt;&lt;block type=\&quot;maplocationistile\&quot;&gt;&lt;value name=\&quot;location\&quot;&gt;&lt;shadow type=\&quot;mapgettile\&quot;/&gt;&lt;block type=\&quot;argument_reporter_custom\&quot;&gt;&lt;mutation typename=\&quot;tiles.Location\&quot;/&gt;&lt;field name=\&quot;VALUE\&quot;&gt;location&lt;/field&gt;&lt;/block&gt;&lt;/value&gt;&lt;value name=\&quot;tile\&quot;&gt;&lt;shadow type=\&quot;tileset_tile_picker\&quot;&gt;&lt;field name=\&quot;tile\&quot;&gt;assets.tile`platform2`&lt;/field&gt;&lt;/shadow&gt;&lt;/value&gt;&lt;/block&gt;&lt;/value&gt;&lt;statement name=\&quot;DO1\&quot;&gt;&lt;block type=\&quot;variables_set\&quot;&gt;&lt;field name=\&quot;VAR\&quot; id=\&quot;z3GzZoJYWC$znobE{d#2\&quot;&gt;active&lt;/field&gt;&lt;value name=\&quot;VALUE\&quot;&gt;&lt;shadow type=\&quot;math_number\&quot;&gt;&lt;field name=\&quot;NUM\&quot;&gt;0&lt;/field&gt;&lt;/shadow&gt;&lt;block type=\&quot;variables_get\&quot;&gt;&lt;field name=\&quot;VAR\&quot; id=\&quot;K8=RKkOs?3^dnULxjSxC\&quot;&gt;leftie&lt;/field&gt;&lt;/block&gt;&lt;/value&gt;&lt;next&gt;&lt;block type=\&quot;spritesetkind\&quot;&gt;&lt;value name=\&quot;sprite\&quot;&gt;&lt;block type=\&quot;argument_reporter_custom\&quot;&gt;&lt;mutation typename=\&quot;Sprite\&quot;/&gt;&lt;field name=\&quot;VALUE\&quot;&gt;sprite&lt;/field&gt;&lt;/block&gt;&lt;/value&gt;&lt;value name=\&quot;kind\&quot;&gt;&lt;shadow type=\&quot;spritekind\&quot;&gt;&lt;field name=\&quot;MEMBER\&quot;&gt;Snowperson&lt;/field&gt;&lt;/shadow&gt;&lt;/value&gt;&lt;next&gt;&lt;block type=\&quot;spritesetimage\&quot;&gt;&lt;value name=\&quot;sprite\&quot;&gt;&lt;block type=\&quot;variables_get\&quot;&gt;&lt;field name=\&quot;VAR\&quot; id=\&quot;%V5/g^O8_vA0A@X!b7yl\&quot;&gt;seesaw&lt;/field&gt;&lt;/block&gt;&lt;/value&gt;&lt;value name=\&quot;img\&quot;&gt;&lt;shadow type=\&quot;screen_image_picker\&quot;&gt;&lt;field name=\&quot;img\&quot;&gt;assets.image`lessTilt`&lt;/field&gt;&lt;data&gt;{\&quot;commentRefs\&quot;:[],\&quot;fieldData\&quot;:{\&quot;img\&quot;:\&quot;myImages.0Sl|Ag?-%VgN*Ar!yH]\&quot;}}&lt;/data&gt;&lt;/shadow&gt;&lt;/value&gt;&lt;/block&gt;&lt;/next&gt;&lt;/block&gt;&lt;/next&gt;&lt;/block&gt;&lt;/statement&gt;&lt;next&gt;&lt;block type=\&quot;Sprite_blockCombine_set\&quot;&gt;&lt;field name=\&quot;property\&quot;&gt;Sprite.vy@set&lt;/field&gt;&lt;value name=\&quot;mySprite\&quot;&gt;&lt;block type=\&quot;variables_get\&quot;&gt;&lt;field name=\&quot;VAR\&quot; id=\&quot;z3GzZoJYWC$znobE{d#2\&quot;&gt;active&lt;/field&gt;&lt;/block&gt;&lt;/value&gt;&lt;value name=\&quot;value\&quot;&gt;&lt;shadow type=\&quot;math_number\&quot;&gt;&lt;field name=\&quot;NUM\&quot;&gt;-250&lt;/field&gt;&lt;/shadow&gt;&lt;/value&gt;&lt;next&gt;&lt;block type=\&quot;spritesetkind\&quot;&gt;&lt;value name=\&quot;sprite\&quot;&gt;&lt;block type=\&quot;variables_get\&quot;&gt;&lt;field name=\&quot;VAR\&quot; id=\&quot;z3GzZoJYWC$znobE{d#2\&quot;&gt;active&lt;/field&gt;&lt;/block&gt;&lt;/value&gt;&lt;value name=\&quot;kind\&quot;&gt;&lt;shadow type=\&quot;spritekind\&quot;&gt;&lt;field name=\&quot;MEMBER\&quot;&gt;Active&lt;/field&gt;&lt;/shadow&gt;&lt;/value&gt;&lt;/block&gt;&lt;/next&gt;&lt;/block&gt;&lt;/next&gt;&lt;/block&gt;&lt;/next&gt;&lt;/block&gt;&lt;/statement&gt;&lt;/block&gt;&lt;block type=\&quot;spritesoverlap\&quot; x=\&quot;659\&quot; y=\&quot;669\&quot;&gt;&lt;value name=\&quot;HANDLER_DRAG_PARAM_sprite\&quot;&gt;&lt;shadow type=\&quot;argument_reporter_custom\&quot;&gt;&lt;mutation typename=\&quot;Sprite\&quot;/&gt;&lt;field name=\&quot;VALUE\&quot;&gt;sprite&lt;/field&gt;&lt;/shadow&gt;&lt;/value&gt;&lt;value name=\&quot;kind\&quot;&gt;&lt;shadow type=\&quot;spritekind\&quot;&gt;&lt;field name=\&quot;MEMBER\&quot;&gt;Active&lt;/field&gt;&lt;/shadow&gt;&lt;/value&gt;&lt;value name=\&quot;HANDLER_DRAG_PARAM_otherSprite\&quot;&gt;&lt;shadow type=\&quot;argument_reporter_custom\&quot;&gt;&lt;mutation typename=\&quot;Sprite\&quot;/&gt;&lt;field name=\&quot;VALUE\&quot;&gt;otherSprite&lt;/field&gt;&lt;/shadow&gt;&lt;/value&gt;&lt;value name=\&quot;otherKind\&quot;&gt;&lt;shadow type=\&quot;spritekind\&quot;&gt;&lt;field name=\&quot;MEMBER\&quot;&gt;Projectile&lt;/field&gt;&lt;/shadow&gt;&lt;/value&gt;&lt;statement name=\&quot;HANDLER\&quot;&gt;&lt;block type=\&quot;spritedestroy\&quot;&gt;&lt;mutation xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot; _expanded=\&quot;0\&quot; _input_init=\&quot;false\&quot;&gt;&lt;/mutation&gt;&lt;value name=\&quot;sprite\&quot;&gt;&lt;block type=\&quot;argument_reporter_custom\&quot;&gt;&lt;mutation typename=\&quot;Sprite\&quot;/&gt;&lt;field name=\&quot;VALUE\&quot;&gt;otherSprite&lt;/field&gt;&lt;/block&gt;&lt;/value&gt;&lt;next&gt;&lt;block type=\&quot;hudChangeScoreBy\&quot;&gt;&lt;value name=\&quot;value\&quot;&gt;&lt;shadow type=\&quot;math_number\&quot;&gt;&lt;field name=\&quot;NUM\&quot;&gt;1&lt;/field&gt;&lt;/shadow&gt;&lt;/value&gt;&lt;/block&gt;&lt;/next&gt;&lt;/block&gt;&lt;/statement&gt;&lt;/block&gt;&lt;block type=\&quot;gamecountdownevent\&quot; x=\&quot;590\&quot; y=\&quot;890\&quot;&gt;&lt;statement name=\&quot;HANDLER\&quot;&gt;&lt;block type=\&quot;gameOver\&quot;&gt;&lt;mutation xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot; _expanded=\&quot;0\&quot; _input_init=\&quot;false\&quot;&gt;&lt;/mutation&gt;&lt;value name=\&quot;win\&quot;&gt;&lt;shadow type=\&quot;toggleWinLose\&quot;&gt;&lt;field name=\&quot;win\&quot;&gt;true&lt;/field&gt;&lt;/shadow&gt;&lt;/value&gt;&lt;/block&gt;&lt;/statement&gt;&lt;/block&gt;&lt;/xml&gt;&quot;,
+  &quot;main.ts&quot;: &quot;&quot;,
+  &quot;pxt.json&quot;: &quot;{\n    \&quot;name\&quot;: \&quot;winter - Assets Only\&quot;,\n    \&quot;description\&quot;: \&quot;\&quot;,\n    \&quot;dependencies\&quot;: {\n        \&quot;device\&quot;: \&quot;*\&quot;,\n        \&quot;arcade-character-animations\&quot;: \&quot;github:microsoft/arcade-character-animations#v0.0.2\&quot;\n    },\n    \&quot;files\&quot;: [\n        \&quot;main.blocks\&quot;,\n        \&quot;main.ts\&quot;,\n        \&quot;README.md\&quot;,\n        \&quot;assets.json\&quot;,\n        \&quot;tilemap.g.jres\&quot;,\n        \&quot;tilemap.g.ts\&quot;,\n        \&quot;images.g.jres\&quot;,\n        \&quot;images.g.ts\&quot;\n    ],\n    \&quot;targetVersions\&quot;: {\n        \&quot;branch\&quot;: \&quot;v1.5.28\&quot;,\n        \&quot;tag\&quot;: \&quot;v1.5.28\&quot;,\n        \&quot;commits\&quot;: \&quot;https://github.com/microsoft/pxt-arcade/commits/67a784863907175d7e4ec434adfb6ef40b5b2f95\&quot;,\n        \&quot;target\&quot;: \&quot;1.5.28\&quot;,\n        \&quot;pxt\&quot;: \&quot;7.1.5\&quot;\n    },\n    \&quot;preferredEditor\&quot;: \&quot;tsprj\&quot;\n}\n&quot;,
+  &quot;tilemap.g.jres&quot;: &quot;{\n    \&quot;transparency16\&quot;: {\n        \&quot;data\&quot;: \&quot;hwQQABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==\&quot;,\n        \&quot;mimeType\&quot;: \&quot;image/x-mkcd-f4\&quot;,\n        \&quot;tilemapTile\&quot;: true\n    },\n    \&quot;tile2\&quot;: {\n        \&quot;data\&quot;: \&quot;hwQQABAAAAAAEBERHREdEQAREdEdER0RANERER0RHREQHREREREdERAdERERER0REdEREdERHRHR0RER3REdEdHREdEdER0R3dER0RERHRHd0RHREREdEdHREdERER0R0NEd0R3RHREQ0RERHdEREQDREREd0RERANERER3REREAERERHREREQ==\&quot;,\n        \&quot;mimeType\&quot;: \&quot;image/x-mkcd-f4\&quot;,\n        \&quot;tilemapTile\&quot;: true,\n        \&quot;displayName\&quot;: \&quot;platform1\&quot;\n    },\n    \&quot;tile3\&quot;: {\n        \&quot;data\&quot;: \&quot;hwQQABAAAAAAERER0REREQARERHRERERABEdEd0REREQER0RHREREdEdHREdERER0RERER0RERERER0RHRERERERHREdEREREBEdEdERERHQHd0R0REREdAR0RHRERER0B3REREdEREQHdERER0RERAd0RHREREREB3REdEREREQHdER0REREQ==\&quot;,\n        \&quot;mimeType\&quot;: \&quot;image/x-mkcd-f4\&quot;,\n        \&quot;tilemapTile\&quot;: true,\n        \&quot;displayName\&quot;: \&quot;platform2\&quot;\n    },\n    \&quot;tile5\&quot;: {\n        \&quot;data\&quot;: \&quot;hwQQABAAAAAAAABABAAAAAAAAEAEAAAAAAAAQAQAAAAAAABABAAAAAAAAEAEAAAAAAAAQAQAAAAAAABABAAAAAAAAEAEAAAAAAAAQAQAAAAAAABABAAAAAAAAEAEAAAAAAAAQAQAAAAAAABABAAAAAAAAEAEAAAAAAAAQAQAAAAAAABABAAAAA==\&quot;,\n        \&quot;mimeType\&quot;: \&quot;image/x-mkcd-f4\&quot;,\n        \&quot;tilemapTile\&quot;: true,\n        \&quot;displayName\&quot;: \&quot;branch tile\&quot;\n    },\n    \&quot;tile1\&quot;: {\n        \&quot;data\&quot;: \&quot;hwQQABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==\&quot;,\n        \&quot;mimeType\&quot;: \&quot;image/x-mkcd-f4\&quot;,\n        \&quot;tilemapTile\&quot;: true,\n        \&quot;displayName\&quot;: \&quot;myTile\&quot;\n    },\n    \&quot;tile4\&quot;: {\n        \&quot;data\&quot;: \&quot;hwQQABAAAADMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzA==\&quot;,\n        \&quot;mimeType\&quot;: \&quot;image/x-mkcd-f4\&quot;,\n        \&quot;tilemapTile\&quot;: true,\n        \&quot;displayName\&quot;: \&quot;myTile2\&quot;\n    },\n    \&quot;level1\&quot;: {\n        \&quot;id\&quot;: \&quot;level1\&quot;,\n        \&quot;mimeType\&quot;: \&quot;application/mkcd-tilemap\&quot;,\n        \&quot;data\&quot;: \&quot;MTAwYTAwMDgwMDA0MDQwNDA0MDQwNDA0MDQwNDA0MDUwNTA1MDEwMTAxMDEwNTA1MDUwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMjAxMDEwMTAxMDEwMTAzMDEwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMjIyMjIyMjIyMg==\&quot;,\n        \&quot;tileset\&quot;: [\n            \&quot;myTiles.transparency16\&quot;,\n            \&quot;myTiles.tile1\&quot;,\n            \&quot;myTiles.tile2\&quot;,\n            \&quot;myTiles.tile3\&quot;,\n            \&quot;myTiles.tile4\&quot;,\n            \&quot;myTiles.tile5\&quot;\n        ],\n        \&quot;displayName\&quot;: \&quot;level1\&quot;\n    },\n    \&quot;*\&quot;: {\n        \&quot;mimeType\&quot;: \&quot;image/x-mkcd-f4\&quot;,\n        \&quot;dataEncoding\&quot;: \&quot;base64\&quot;,\n        \&quot;namespace\&quot;: \&quot;myTiles\&quot;\n    }\n}&quot;,
+  &quot;tilemap.g.ts&quot;: &quot;// Auto-generated code. Do not edit.\nnamespace myTiles {\n    //% fixedInstance jres blockIdentity=images._tile\n    export const transparency16 = image.ofBuffer(hex``);\n    //% fixedInstance jres blockIdentity=images._tile\n    export const tile2 = image.ofBuffer(hex``);\n    //% fixedInstance jres blockIdentity=images._tile\n    export const tile3 = image.ofBuffer(hex``);\n    //% fixedInstance jres blockIdentity=images._tile\n    export const tile5 = image.ofBuffer(hex``);\n    //% fixedInstance jres blockIdentity=images._tile\n    export const tile1 = image.ofBuffer(hex``);\n    //% fixedInstance jres blockIdentity=images._tile\n    export const tile4 = image.ofBuffer(hex``);\n\n    helpers._registerFactory(\&quot;tilemap\&quot;, function(name: string) {\n        switch(helpers.stringTrim(name)) {\n            case \&quot;level1\&quot;:\n            case \&quot;level1\&quot;:return tiles.createTilemap(hex`0a0008000404040404040404040405050501010101050505010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101020101010101010301`, img`\n. . . . . . . . . . \n. . . . . . . . . . \n. . . . . . . . . . \n. . . . . . . . . . \n. . . . . . . . . . \n. . . . . . . . . . \n. . . . . . . . . . \n2 2 2 2 2 2 2 2 2 2 \n`, [myTiles.transparency16,myTiles.tile1,myTiles.tile2,myTiles.tile3,myTiles.tile4,myTiles.tile5], TileScale.Sixteen);\n        }\n        return null;\n    })\n\n    helpers._registerFactory(\&quot;tile\&quot;, function(name: string) {\n        switch(helpers.stringTrim(name)) {\n            case \&quot;transparency16\&quot;:return transparency16;\n            case \&quot;platform1\&quot;:\n            case \&quot;tile2\&quot;:return tile2;\n            case \&quot;platform2\&quot;:\n            case \&quot;tile3\&quot;:return tile3;\n            case \&quot;branch tile\&quot;:\n            case \&quot;tile5\&quot;:return tile5;\n            case \&quot;myTile\&quot;:\n            case \&quot;tile1\&quot;:return tile1;\n            case \&quot;myTile2\&quot;:\n            case \&quot;tile4\&quot;:return tile4;\n        }\n        return null;\n    })\n\n}\n// Auto-generated code. Do not edit.\n&quot;
+}</code></pre>
+
+    </div>
+
+					<div class="hideprint"></div>
+				</div>
+
+			</div>
+
+			
+<!-- include footer.html -->
+<footer class="ui vertical footer segment hideprint docs inverted" aria-hidden="false">
+    <div class="ui center aligned container">
+        <div class="ui horizontal link list">
+            <a
+                class="item"
+                href="https://twitter.com/intent/follow?screen_name=MsMakeCode"
+                title="Follow us on Twitter"
+                target="_blank"
+                rel="noopener">
+                <i class="huge icon twitter"></i>
+            </a>
+            <a class="item" href="https://www.youtube.com/channel/UCye7YlvFUUQ1dSy0WZZ1T_Q" title="Subscribe to our YouTube channel"
+                target="_blank" rel="noopened">
+                <i class="huge icon youtube"></i>
+            </a>
+            <a class="item" href="mailto:makecode@microsoft.com" title="Send us an Email"
+                target="_blank" rel="noopened">
+                <i class="huge icon mail"></i>
+            </a>
+        </div>
+        <div class="ui section divider"></div>
+        <div class="ui container horizontal small divided link list">
+            <a id="langpicker" tabindex="0" class="ui item" rel="noopener">
+                <i class="icon xicon globe" aria-hidden="true" role="presentation"></i>Language
+            </a>
+            <a class="item" href="https://makecode.com/privacy" target="_blank" rel="noopener">Privacy &amp; Cookies</a>
+            <a class="item" href="https://makecode.com/termsofuse" target="_blank" rel="noopener">Terms Of Use</a>
+            <a class="item" href="https://makecode.com/trademarks" target="_blank" rel="noopener">Trademarks</a>
+            <span class="item">© 2022 Microsoft</span>
+        </div>
+        <div class="ui container horizontal small link list poweredBy">
+            <span class="item">Powered by</span>
+            <a class="middle aligned" href="https://makecode.com/" title="Microsoft MakeCode"
+                target="_blank" rel="noopener">
+                <img width="100" src="/static/logo/Microsoft-logo_rgb_c-gray.png" alt="Microsoft">
+            </a>
+        </div>
+    </div>
+</footer>
+
+<!-- end include footer.html -->
+
+
+		</div>
+
+	</div>
+
+    
+<!-- include langpicker.html -->
+<div id="langmodal" class="ui modal docs" role="dialog" aria-modal="true" aria-describedby="langmodalheader" tabindex="-1">
+    <h2 id="langmodalheader" class="header">Select Language</h2>
+    <div role="button" class="closeIcon" tabindex="0" aria-label="Close">
+        <i class="icon close remove circle" aria-hidden="true"></i>
+    </div>
+
+	<div class="content">
+	    <div class="group">
+            <div id="availablelocales" class="ui cards centered" role="listbox" aria-label="List of available locales"></div>
+        </div>
+        <div class="ui" id="langmodalfooter">
+            <a class="ui" href="/pxt-arcade-app/docs/translate.html" target="_blank" rel="noopener noreferrer">
+                How do I add a new language?
+            </a>
+
+            <a id="translatebtn" class="ui button" role="button" tabindex="0">
+                Translate this page
+            </a>
+        </div>
+    </div>
+</div>
+
+
+<!-- end include langpicker.html -->
+
+	
+<!-- include macros.html -->
+<!-- macro button -->
+
+<!-- macro vimeo -->
+
+<!-- macro youtube -->
+
+<!-- macro section -->
+
+<!-- macro hide -->
+
+<!-- macro avatar -->
+
+<!-- macro hint -->
+
+<!-- macro codecard -->
+
+<!-- macro tutorialhint -->
+
+<!-- macro reminder -->
+
+<!-- macro alert -->
+
+<!-- macro tip -->
+
+<!-- wrapped around ordinary content -->
+<!-- macro main-container -->
+
+<!-- used for 'column' box - they are collected and wrapped in 'column-container' -->
+<!-- macro column -->
+<!-- macro column-container -->
+
+
+<!-- Menu on the top of the page -->
+<!-- macro item -->
+
+<!-- macro divider -->
+
+<!-- TOC in the sidebar -->
+<!-- macro item -->
+
+<!-- macro divider -->
+
+<!-- macro toc-dropdown -->
+
+<!-- macro toc-dropdown-noLink -->
+
+<!-- macro toc-dropdown-noHeading -->
+
+<!-- TODO: duplicates of above for compatability with docsrender.ts;
+    remove with pxtlib/docsrender.ts TOC TODOs after cloud bump. -->
+<!-- macro top-dropdown -->
+
+<!-- macro top-dropdown-noHeading -->
+
+<!-- macro inner-dropdown -->
+
+<!-- macro nested-dropdown -->
+<!-- end include macros.html -->
+
+	
+<!-- include tracking.html -->
+<script type="text/javascript" src="/pxt-arcade-app/pxtweb.js"></script>
+<script type="text/javascript">
+    window.loadAppInsights = function (includeCookie) {
+        //Backend will patch / + doccdn + / with CDN url and the check that URL ends with the sha would pass
+        var isProduction = includeCookie && (/[0-9a-f]{40}\/ai\.2\.min\.js$/.test("/pxt-arcade-app/ai.2.min.js"));
+        !function(T,l,y){var S=T.location,k="script",D="connectionString",C="ingestionendpoint",I="disableExceptionTracking",E="ai.device.",b="toLowerCase",w="crossOrigin",N="POST",e="appInsightsSDK",t=y.name||"appInsights";(y.name||T[e])&&(T[e]=t);var n=T[t]||function(d){var g=!1,f=!1,m={initialize:!0,queue:[],sv:"5",version:2,config:d};function v(e,t){var n={},a="Browser";return n[E+"id"]=a[b](),n[E+"type"]=a,n["ai.operation.name"]=S&&S.pathname||"_unknown_",n["ai.internal.sdkVersion"]="javascript:snippet_"+(m.sv||m.version),{time:function(){var e=new Date;function t(e){var t=""+e;return 1===t.length&&(t="0"+t),t}return e.getUTCFullYear()+"-"+t(1+e.getUTCMonth())+"-"+t(e.getUTCDate())+"T"+t(e.getUTCHours())+":"+t(e.getUTCMinutes())+":"+t(e.getUTCSeconds())+"."+((e.getUTCMilliseconds()/1e3).toFixed(3)+"").slice(2,5)+"Z"}(),iKey:e,name:"Microsoft.ApplicationInsights."+e.replace(/-/g,"")+"."+t,sampleRate:100,tags:n,data:{baseData:{ver:2}}}}var h=d.url||y.src;if(h){function a(e){var t,n,a,i,r,o,s,c,u,p,l;g=!0,m.queue=[],f||(f=!0,t=h,s=function(){var e={},t=d.connectionString;if(t)for(var n=t.split(";"),a=0;a<n.length;a++){var i=n[a].split("=");2===i.length&&(e[i[0][b]()]=i[1])}if(!e[C]){var r=e.endpointsuffix,o=r?e.location:null;e[C]="https://"+(o?o+".":"")+"dc."+(r||"services.visualstudio.com")}return e}(),c=s[D]||d[D]||"",u=s[C],p=u?u+"/v2/track":d.endpointUrl,(l=[]).push((n="SDK LOAD Failure: Failed to load Application Insights SDK script (See stack for details)",a=t,i=p,(o=(r=v(c,"Exception")).data).baseType="ExceptionData",o.baseData.exceptions=[{typeName:"SDKLoadFailed",message:n.replace(/\./g,"-"),hasFullStack:!1,stack:n+"\nSnippet failed to load ["+a+"] -- Telemetry is disabled\nHelp Link: https://go.microsoft.com/fwlink/?linkid=2128109\nHost: "+(S&&S.pathname||"_unknown_")+"\nEndpoint: "+i,parsedStack:[]}],r)),l.push(function(e,t,n,a){var i=v(c,"Message"),r=i.data;r.baseType="MessageData";var o=r.baseData;return o.message='AI (Internal): 99 message:"'+("SDK LOAD Failure: Failed to load Application Insights SDK script (See stack for details) ("+n+")").replace(/\"/g,"")+'"',o.properties={endpoint:a},i}(0,0,t,p)),function(e,t){if(JSON){var n=T.fetch;if(n&&!y.useXhr)n(t,{method:N,body:JSON.stringify(e),mode:"cors"});else if(XMLHttpRequest){var a=new XMLHttpRequest;a.open(N,t),a.setRequestHeader("Content-type","application/json"),a.send(JSON.stringify(e))}}}(l,p))}function i(e,t){f||setTimeout(function(){!t&&m.core||a()},500)}var e=function(){var n=l.createElement(k);n.src=h;var e=y[w];return!e&&""!==e||"undefined"==n[w]||(n[w]=e),n.onload=i,n.onerror=a,n.onreadystatechange=function(e,t){"loaded"!==n.readyState&&"complete"!==n.readyState||i(0,t)},n}();y.ld<0?l.getElementsByTagName("head")[0].appendChild(e):setTimeout(function(){l.getElementsByTagName(k)[0].parentNode.appendChild(e)},y.ld||0)}try{m.cookie=l.cookie}catch(p){}function t(e){for(;e.length;)!function(t){m[t]=function(){var e=arguments;g||m.queue.push(function(){m[t].apply(m,e)})}}(e.pop())}var n="track",r="TrackPage",o="TrackEvent";t([n+"Event",n+"PageView",n+"Exception",n+"Trace",n+"DependencyData",n+"Metric",n+"PageViewPerformance","start"+r,"stop"+r,"start"+o,"stop"+o,"addTelemetryInitializer","setAuthenticatedUserContext","clearAuthenticatedUserContext","flush"]),m.SeverityLevel={Verbose:0,Information:1,Warning:2,Error:3,Critical:4};var s=(d.extensionConfig||{}).ApplicationInsightsAnalytics||{};if(!0!==d[I]&&!0!==s[I]){var c="onerror";t(["_"+c]);var u=T[c];T[c]=function(e,t,n,a,i){var r=u&&u(e,t,n,a,i);return!0!==r&&m["_"+c]({message:e,url:t,lineNumber:n,columnNumber:a,error:i}),r},d.autoExceptionInstrumented=!0}return m}(y.cfg);function a(){y.onInit&&y.onInit(n)}(T[t]=n).queue&&0===n.queue.length?(n.queue.push(a),n.trackPageView({})):a()}(window,document,{
+            src: "https://js.monitor.azure.com/scripts/b/ai.2.min.js", // The SDK URL Source
+            onInit: function (sdk) {
+                sdk.addTelemetryInitializer(function (envelope) {
+                    // App Insights automatically sends a page view event on setup, but we send our own later with additional properties.
+                    // This stops the automatic event from firing, so we don't end up with duplicate page view events.
+                    if (envelope.baseType == "PageviewData" && !envelope.baseData.properties) {
+                        return false;
+                    }
+
+                    if (envelope.baseType == "PageviewPerformanceData") {
+                        var pageName = envelope.baseData.name;
+                        envelope.baseData.name = window.location.origin;
+                        if (!envelope.baseData.properties) {
+                            envelope.baseData.properties = {};
+                        }
+                        envelope.baseData.properties.pageName = pageName;
+                        var scrubbedUrl = scrubUrl(envelope.baseData.uri);
+                        envelope.baseData.uri = scrubbedUrl;
+                        var toUrl = new URL(scrubbedUrl);
+                        envelope.baseData.properties.pathName = toUrl ? toUrl.pathname : "";
+                        if (envelope.ext && envelope.ext.trace) {
+                            envelope.ext.trace.name = toUrl ? toUrl.pathname : "";
+                        }
+                    }
+
+                    var telemetryItem = envelope.baseData;
+                    telemetryItem.properties = telemetryItem.properties || {};
+                    telemetryItem.properties["cookie"] = isProduction;
+                    if (typeof pxtConfig === "undefined" || !pxtConfig || !pxtConfig.targetId) {
+                        telemetryItem.properties["target"] = "arcade";
+                        return true;
+                    }
+                    telemetryItem.properties["target"] = pxtConfig.targetId;
+                    telemetryItem.properties["stage"] = (pxtConfig.relprefix || "/--").replace(/[^a-z]/ig, '')
+                    if (typeof Windows !== "undefined")
+                        telemetryItem.properties["WindowsApp"] = 1;
+                    var userAgent = navigator.userAgent.toLowerCase();
+                    var electronRegexResult = /\belectron\/(\d+\.\d+\.\d+.*?)(?: |$)/i.exec(userAgent); // Example navigator.userAgent: "Mozilla/5.0 Chrome/61.0.3163.100 Electron/2.0.0 Safari/537.36"
+                    if (electronRegexResult) {
+                        telemetryItem.properties["Electron"] = 1;
+                        telemetryItem.properties["ElectronVersion"] = electronRegexResult[1];
+                    }
+                    if (typeof pxtElectron !== "undefined") {
+                        telemetryItem.properties["PxtElectron"] = 1;
+                        telemetryItem.properties["ElectronVersion"] = pxtElectron.versions.electronVersion;
+                        telemetryItem.properties["ChromiumVersion"] = pxtElectron.versions.chromiumVersion;
+                        telemetryItem.properties["NodeVersion"] = pxtElectron.versions.nodeVersion;
+                        telemetryItem.properties["PxtElectronVersion"] = pxtElectron.versions.pxtElectronVersion;
+                        telemetryItem.properties["PxtCoreVersion"] = pxtElectron.versions.pxtCoreVersion;
+                        telemetryItem.properties["PxtTargetVersion"] = pxtElectron.versions.pxtTargetVersion;
+                        telemetryItem.properties["PxtElectronIsProd"] = pxtElectron.versions.isProd;
+                    }
+                    // Kiosk UWP info is appended to the user agent by the makecode-dotnet-apps/arcade-kiosk UWP app
+                    var kioskUwpRegexResult = /\((MakeCode Arcade Kiosk UWP)\/([\S]+)\/([\S]+)\)/i.exec(userAgent); // Example navigator.userAgent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36 Edg/117.0.2045.60 (MakeCode Arcade Kiosk UWP/0.1.41.0/Windows.Xbox)"
+                    if (kioskUwpRegexResult) {
+                        telemetryItem.properties["KioskUwp"] = 1;
+                        telemetryItem.properties["KioskUwpVersion"] = kioskUwpRegexResult[2];
+                        telemetryItem.properties["KioskUwpPlatform"] = kioskUwpRegexResult[3];
+                    }
+                    return true;
+                });
+            },
+            cfg: {
+                instrumentationKey:"9801ed01-c40f-46ec-aa40-2a1742a9e71c",
+                disableAjaxTracking: true,
+                overridePageViewDuration: false,
+                disableExceptionTracking: true,
+                disableCorrelationHeaders: true,
+                disableCookiesUsage: !isProduction,
+                isStorageUseDisabled: !isProduction,
+                url: "/pxt-arcade-app/ai.2.min.js"
+            }
+        });
+        window.appInsights=appInsights;
+        var location = window.location.toString();
+        appInsights.trackPageView({
+            name: window.location.hostname,
+            uri: window.location.origin,
+            properties: {
+                url: scrubUrl(location),
+                urlReferrer: scrubUrl(document.referrer.toString())
+            }
+        });
+
+        // Scrub potential PII from the URL.
+        function scrubUrl(url) {
+            if (!url) return url;
+
+            var scriptIdRegex = /(?:S?\d{5}-\d{5}-\d{5}-\d{5})|(?:_[0-9a-zA-Z]{12})/g;
+            var scrubbedUrl = new URL(url.toLocaleLowerCase().replace(scriptIdRegex, "xxxxx-xxxxx-xxxxx-xxxxx"));
+
+            // Just as a precaution, strip any suspicious query parameters.
+            var blockedParamKeywords = ["username", "password", "token", "pwd"];
+            var searchParams = Array.from(scrubbedUrl.searchParams.keys());
+            for (var param of searchParams) {
+                if (blockedParamKeywords.some(k => param.indexOf(k) != -1)) {
+                    scrubbedUrl.searchParams.delete(param);
+                }
+            }
+
+            return scrubbedUrl.toString();
+        }
+
+        return isProduction;
+    }
+    pxt.initAnalyticsAsync();
+</script>
+
+<!-- end include tracking.html -->
+
+
+</body>
+
+</html>

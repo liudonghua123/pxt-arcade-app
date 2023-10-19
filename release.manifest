@@ -1,0 +1,92 @@
+CACHE MANIFEST
+
+CACHE:
+/pxt-arcade-app/semantic.js
+/pxt-arcade-app/main.js
+/pxt-arcade-app/pxtapp.js
+/pxt-arcade-app/typescript.js
+/pxt-arcade-app/marked/marked.min.js
+/pxt-arcade-app/highlight.js/highlight.pack.js
+/pxt-arcade-app/jquery.js
+/pxt-arcade-app/pxtlib.js
+/pxt-arcade-app/pxtcompiler.js
+/pxt-arcade-app/pxtpy.js
+/pxt-arcade-app/pxtblockly.js
+/pxt-arcade-app/pxteditor.js
+/pxt-arcade-app/pxtsim.js
+/pxt-arcade-app/pxtembed.js
+/pxt-arcade-app/pxtworker.js
+/pxt-arcade-app/pxtweb.js
+/pxt-arcade-app/blockly.css
+/pxt-arcade-app/semantic.css
+/pxt-arcade-app/rtlsemantic.css
+
+
+/pxt-arcade-app/editor.js
+
+
+# blockly
+/pxt-arcade-app/blockly/media/sprites.png
+/pxt-arcade-app/blockly/media/click.mp3
+/pxt-arcade-app/blockly/media/disconnect.wav
+/pxt-arcade-app/blockly/media/delete.mp3
+
+# monaco; keep in sync with webapp/public/index.html
+/pxt-arcade-app/vs/loader.js
+/pxt-arcade-app/vs/base/worker/workerMain.js
+/pxt-arcade-app/vs/basic-languages/bat/bat.js
+/pxt-arcade-app/vs/basic-languages/cpp/cpp.js
+/pxt-arcade-app/vs/basic-languages/python/python.js
+/pxt-arcade-app/vs/basic-languages/typescript/typescript.js
+/pxt-arcade-app/vs/basic-languages/markdown/markdown.js
+/pxt-arcade-app/vs/editor/editor.main.css
+/pxt-arcade-app/vs/editor/editor.main.js
+/pxt-arcade-app/vs/editor/editor.main.nls.js
+/pxt-arcade-app/vs/language/json/jsonMode.js
+/pxt-arcade-app/vs/language/json/jsonWorker.js
+/pxt-arcade-app/vs/language/typescript/tsMode.js
+/pxt-arcade-app/vs/language/typescript/tsWorker.js
+
+# charts
+/pxt-arcade-app/smoothie/smoothie_compressed.js
+/pxt-arcade-app/images/Bars_black.gif
+
+# gifjs
+/pxt-arcade-app/gifjs/gif.js
+
+# ai
+/pxt-arcade-app/ai.0.js
+
+/pxt-arcade-app/worker.js
+/pxt-arcade-app/monacoworker.js
+
+# ver Thu Oct 19 2023 15:45:31 GMT+0000 (Coordinated Universal Time)
+
+# target
+/pxt-arcade-app/docs/static/providers/github-mark.png
+/pxt-arcade-app/docs/static/providers/microsoft-logo.svg
+/pxt-arcade-app/docs/static/providers/google-logo.svg
+/pxt-arcade-app/docs/static/providers/clever-logo.png
+/pxt-arcade-app/docs/static/logo.svg
+/pxt-arcade-app/docs/static/logo.png
+/pxt-arcade-app/docs/static/icons/favicon.ico
+/pxt-arcade-app/docs/static/Micorsoft_logo_rgb_W-white_D-square.png
+/pxt-arcade-app/docs/static/Micorsoft_logo_rgb_W-white_D.png
+/pxt-arcade-app/docs/static/hero-gallery/multiplayer-banner.png
+/pxt-arcade-app/docs/static/badges/badge-forest.png
+/pxt-arcade-app/docs/static/badges/badge-forest-locked.png
+/pxt-arcade-app/docs/static/badges/badge-zoo.png
+/pxt-arcade-app/docs/static/badges/badge-zoo-locked.png
+/pxt-arcade-app/docs/static/badges/badge-rockstar.png
+/pxt-arcade-app/docs/static/badges/badge-rockstar-locked.png
+/pxt-arcade-app/docs/static/badges/badge-jungle.png
+/pxt-arcade-app/docs/static/badges/badge-jungle-locked.png
+/pxt-arcade-app/docs/static/badges/badge-space.png
+/pxt-arcade-app/docs/static/badges/badge-space-locked.png
+/pxt-arcade-app/docs/static/badges/badge-shark.png
+/pxt-arcade-app/docs/static/badges/badge-shark-locked.png
+
+/pxt-arcade-app/target.js
+
+NETWORK:
+*

@@ -1,0 +1,987 @@
+<!DOCTYPE html>
+<html lang="" xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#"
+	xmlns:fb="http://www.facebook.com/2008/fbml">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Microsoft MakeCode Arcade</title>
+	<meta name="Description" content="Develop your programming skills by quickly creating and modding retro arcade games with Blocks and JavaScript in the MakeCode editor" />
+
+	<!-- ifdef incontexttranslations endif -->
+	
+<!-- include meta.html -->
+<!-- This file is typically overriden by the target, with own Twitter
+     account etc. Most data is taken from the theme file though.  
+  -->
+
+<!-- include robotsmeta.html -->
+
+<!-- end include robotsmeta.html -->
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@msmakecode" />
+<meta name="twitter:title" content="Microsoft MakeCode Arcade" />
+<meta name="twitter:description" content="Develop your programming skills by quickly creating and modding retro arcade games with Blocks and JavaScript in the MakeCode editor" />
+<meta name="twitter:image" content="/static/skillmap/collector/collectort1.gif" />
+
+<meta property="og:title" content="Microsoft MakeCode Arcade" />
+<meta property="og:site_name" content="Microsoft MakeCode" />
+<meta property="og:type" content="website" />
+<meta property="og:description" content="Develop your programming skills by quickly creating and modding retro arcade games with Blocks and JavaScript in the MakeCode editor" />
+<meta property="fb:app_id" content="" />
+<meta property="og:image" content="/static/skillmap/collector/collectort1.gif" />
+
+<meta name="format-detection" content="telephone=no">
+<link rel="apple-touch-icon" href="docs/static/icons/favicon.ico">
+<link rel="icon" type="image/png" href="docs/static/icons/favicon.ico">
+<link rel="shortcut icon" href="docs/static/icons/favicon.ico">
+<meta name="theme-color" content="">
+
+<!-- end include meta.html -->
+
+	
+<!-- include head.html -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width,height=device-height,user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
+
+<link rel="stylesheet" data-rtl="/blb/rtlsemantic.css" href="/pxt-arcade-app/semantic.css" />
+<link id="blocklycss"  data-rtl="/blb/rtlblockly.css" rel="stylesheet" href="/pxt-arcade-app/blockly.css" />
+<link rel="stylesheet" href="/pxt-arcade-app/docfiles/style.css" />
+<link rel="stylesheet" href="/pxt-arcade-app/docfiles/vs.css" />
+<link rel="stylesheet" href="/pxt-arcade-app/docfiles/target.css" />
+
+<script src="/pxt-arcade-app/jquery.js" type="text/javascript"></script>
+<script src="/pxt-arcade-app/semantic.js" type="text/javascript"></script>
+<script src="/pxt-arcade-app/docfiles/target.js" type="text/javascript"></script>
+<script src="/pxt-arcade-app/embed.js" type="text/javascript"></script>
+<script src="/pxt-arcade-app/docfiles/docs.js" type="text/javascript"></script>
+
+<style>
+    
+</style>
+
+<!-- end include head.html -->
+
+
+</head>
+
+<body id='root' class='root'>
+	<div id="accessibleMenu" class="ui accessibleMenu borderless fixed menu docs" role="menubar">
+		
+            <a href="#maincontent" class="ui item link" tabindex="0" role="menuitem">Skip to main content</a>
+        
+	</div>
+
+	
+<!-- include tocheader.html -->
+<div id="top-bar" class="ui fixed accent borderless inverted main menu hideprint docs" role="menubar">
+    <div>
+        
+            <a id="togglesidebar" class="launch icon item" tabindex="0" title="Side menu" aria-label="Side menu" role="menuitem" aria-expanded="false">
+                <i class="content icon"></i>
+            </a>
+        
+        <div class="item" role="menuitem">
+            <div class="header-org-logo">
+                <img src="/static/logo/Microsoft_logo_rgb_W-white_D.png" alt="Microsoft">
+            </div>
+            <div class="header-org-logo-sm">
+                <img src="/static/logo/Microsoft_logo_rgb_W-white_D-square.png" alt="Microsoft">
+            </div>
+            <div class="header-title"><span>MakeCode</span></div>
+        </div>
+    </div>
+    <div>
+        <div class="item">
+            <form id="tocsearch1" class="search" role="form" method="get" action="https://www.bing.com/search">
+                <div class="ui fluid icon input">
+                    <input type="hidden" name="q1" value="site:https://arcade.makecode.com/" />
+                    
+                <input type="search" name="q" placeholder="Search..." aria-label="Search Documentation">
+                <i onclick="document.getElementById('tocsearch1').submit();" tabindex="0" class="search link icon" aria-label="Search" role="button"></i>
+            
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div id="side-menu" class="ui vertical accent inverted sidebar menu left hideprint docs" role="menubar">
+    <!-- TOC Menu (tocheader.html) -->
+    <div class="menuContainer" role="menu">
+        
+    <a class="item " href="/pxt-arcade-app/docs/about.html" role="menuitem">About</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/faq.html" role="menuitem">FAQ</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/projects.html" role="menuitem">Projects</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/github.html" role="menuitem">GitHub</a>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/pxt-arcade-app/docs/reference.html">Reference</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-arcade-app/docs/reference/sprites.html" role="menuitem">sprites</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/reference/controller.html" role="menuitem">controller</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/reference/game.html" role="menuitem">game</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/reference/music.html" role="menuitem">music</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/reference/scene.html" role="menuitem">scene</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/reference/info.html" role="menuitem">info</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/reference/images.html" role="menuitem">images</a>
+
+        </div>
+    </div>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/pxt-arcade-app/docs/blocks.html">Blocks</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-arcade-app/docs/blocks/on-start.html" role="menuitem">On Start</a>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/pxt-arcade-app/docs/blocks/loops.html">Loops</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-arcade-app/docs/blocks/loops/repeat.html" role="menuitem">repeat</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/blocks/loops/for.html" role="menuitem">for</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/blocks/loops/while.html" role="menuitem">while</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/blocks/loops/for-of.html" role="menuitem">for of</a>
+
+        </div>
+    </div>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/pxt-arcade-app/docs/blocks/logic.html">Logic</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-arcade-app/docs/blocks/logic/if.html" role="menuitem">if</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/blocks/logic/boolean.html" role="menuitem">Boolean</a>
+
+        </div>
+    </div>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/pxt-arcade-app/docs/blocks/variables.html">Variables</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-arcade-app/docs/blocks/variables/assign.html" role="menuitem">assign</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/blocks/variables/change.html" role="menuitem">change var</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/blocks/variables/var.html" role="menuitem">var</a>
+
+        </div>
+    </div>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/blocks/math.html" role="menuitem">Math</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/blocks/javascript-blocks.html" role="menuitem">JavaScript blocks</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/blocks/custom.html" role="menuitem">Custom blocks</a>
+
+        </div>
+    </div>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/pxt-arcade-app/docs/python.html">Python</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-arcade-app/docs/python/call.html" role="menuitem">Calling</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/python/sequence.html" role="menuitem">Sequencing</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/python/variables.html" role="menuitem">Variables</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/python/operators.html" role="menuitem">Operators</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/python/statements.html" role="menuitem">Statements</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/python/functions.html" role="menuitem">Functions</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/python/classes.html" role="menuitem">Classes</a>
+
+        </div>
+    </div>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/pxt-arcade-app/docs/javascript.html">JavaScript</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-arcade-app/docs/javascript/call.html" role="menuitem">Calling</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/javascript/sequence.html" role="menuitem">Sequencing</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/javascript/variables.html" role="menuitem">Variables</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/javascript/operators.html" role="menuitem">Operators</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/javascript/statements.html" role="menuitem">Statements</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/javascript/functions.html" role="menuitem">Functions</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/javascript/types.html" role="menuitem">Types</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/javascript/classes.html" role="menuitem">Classes</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/javascript/interfaces.html" role="menuitem">Interfaces</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/javascript/generics.html" role="menuitem">Generics</a>
+
+        </div>
+    </div>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/pxt-arcade-app/docs/types.html">Types</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-arcade-app/docs/types/number.html" role="menuitem">Number</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/types/string.html" role="menuitem">String</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/types/boolean.html" role="menuitem">Boolean</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/types/array.html" role="menuitem">Array</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/types/function.html" role="menuitem">Function</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/types/image.html" role="menuitem">Image</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/types/sprite.html" role="menuitem">Sprite</a>
+
+        </div>
+    </div>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/block-gallery.html" role="menuitem">Blocks Gallery</a>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="">Miscellaneous</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-arcade-app/docs/about.html" role="menuitem">About</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/support.html" role="menuitem">Support</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/translate.html" role="menuitem">Translate</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/share.html" role="menuitem">Sharing projects</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/multiplayer.html" role="menuitem">Multiplayer</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/offline.html" role="menuitem">Offline support</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/save.html" role="menuitem">Save</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/identity/sign-in.html" role="menuitem">Sign In</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/identity/cloud-sync.html" role="menuitem">Cloud Sync</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/vscode.html" role="menuitem">VS Code</a>
+
+        </div>
+    </div>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/pxt-arcade-app/docs/hardware.html">Hardware</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-arcade-app/docs/hardware/errors.html" role="menuitem">Errors</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/hardware/adding.html" role="menuitem">Adding New Board</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/hardware/raspberry-pi.html" role="menuitem">Raspberry Pi</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/hardware/makey-makey.html" role="menuitem">Makey Makey</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/hardware/shoebox-controller.html" role="menuitem">Shoebox Controller</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/hardware/dev.html" role="menuitem">Dev</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/hardware/dbg.html" role="menuitem">Debug connector</a>
+
+        </div>
+    </div>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="">Developers</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-arcade-app/docs/cli.html" role="menuitem">Command Line Interface</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/code.html" role="menuitem">Visual Studio Code support</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/blocks-embed.html" role="menuitem">Blocks Embed</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/developer/images.html" role="menuitem">Art, images, colors</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/developer/sound.html" role="menuitem">Sounds</a>
+
+        </div>
+    </div>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/pxt-arcade-app/docs/lessons.html">Lessons</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-arcade-app/docs/lessons/cherry-pickr.html" role="menuitem">Cherry Pickr</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/lessons/barrel-dodger.html" role="menuitem">Barrel Dodger</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/lessons/dance-party.html" role="menuitem">Dance Party</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/lessons/block-out.html" role="menuitem">BlockOut</a>
+
+        </div>
+    </div>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/pxt-arcade-app/docs/courses.html">Courses</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-arcade-app/docs/courses/csintro1.html" role="menuitem">CS Intro 1</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/courses/csintro2.html" role="menuitem">CS Intro 2</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/courses/csintro3.html" role="menuitem">CS Intro 3</a>
+
+        </div>
+    </div>
+
+    </div>
+</div>
+<!-- end include tocheader.html -->
+
+
+	<div id="docs" class="pusher">
+
+		<div class="article" id="maincontent">
+			<div class="article-inner">
+
+				
+<!-- include header.html -->
+<div class="ui one column padded grid hideprint">
+    <div class="column ui container">
+        
+    </div>
+</div>
+<!-- end include header.html -->
+
+
+				<div class="main ui container fluid mainbody">
+					<button id="printbtn" class="circular ui icon right floated button hideprint hidemobile"
+						title="Print" aria-label="Print">
+						<i class="icon print"></i>
+					</button>
+					
+    <div class="ui text">
+        <h1 id="dino-hoard">Dino Hoard</h1><h2 id="intro">Intro</h2><p>Ready to test your agility?</p>
+<p>Let’s create a game where Mama Dino needs to get to her hoard of babies!</p>
+<p><img class="ui image" src="/static/skillmap/collector/collectort1.gif" alt="Code a Collector Game" title="Grab the baby before it runs away!" loading="lazy"></p>
+<h2 id="step-2">Step 2</h2><p><strong>🦖 This game needs a</strong> <a  rel="nofollow noopener" href="#sprote" title="a dynamic 2-D image"><strong><em>sprite</em></strong></a> 🦖</p>
+<p>We’re going to start with Mama Dino.</p>
+<hr>
+<ul>
+<li><p>:paper plane:  From the <code>||sprites:Sprites||</code> category, grab
+<code>||variables(sprites):set [mySprite] to sprite [ ] of kind [Player]||</code>
+and drag it into the empty
+<code>||loops:on start||</code> container in the workspace.</p>
+</li>
+<li><p>:paint brush:  Click the empty grey square and toggle to <strong>My Assets</strong>
+to select <strong>Mama</strong>.</p>
+</li>
+</ul>
+<pre><code class="lang-blocks">//@highlight
+let mySprite = sprites.create(assets.image`Mama`, SpriteKind.Player)</code></pre>
+<hr>
+<p><img class="ui image" src="/static/skillmap/assets/gallery-toggle.gif" alt="Toggle to a new window" title="Choose the image editor, gallery, or my assets." loading="lazy"></p>
+<h2 id="step-3">Step 3</h2><p><strong>🤩 Fabulous 🤩</strong></p>
+<p>Let’s get our sprite moving up and down with the controller.</p>
+<hr>
+<ul>
+<li><p>:game:  From the <code>||contoller:Controller||</code> category, grab a
+<code>||controller:move [mySprite] with buttons ⊕||</code>
+block and snap it into <strong>the bottom</strong> of the
+<code>||loops:on start||</code> container.</p>
+</li>
+<li><p>:mouse pointer:  Click the <strong>⊕</strong> button on the new block to show extra
+value fields.</p>
+</li>
+<li><p>:mouse pointer:  To keep the sprite from moving side-to-side, change
+<a  rel="nofollow noopener" href="#whatVX" title="horizontal velocity"><strong><em>vx</em></strong></a> (horizontal speed) to <strong>0</strong>.</p>
+</li>
+</ul>
+<pre><code class="lang-blocks">let mySprite = sprites.create(assets.image`Mama`, SpriteKind.Player)
+//@highlight
+controller.moveSprite(mySprite, 0, 100)
+</code></pre>
+<h2 id="step-4">Step 4</h2><p><strong>🎮  Try your project using the game screen</strong></p>
+<p>Make sure your <code>||sprites:Player||</code> moves up and down with the joypad,
+arrow keys, or <strong>W</strong> and <strong>S</strong> keys.</p>
+<h2 id="step-5">Step 5</h2><p><strong>Did you notice your sprite can disappear?</strong></p>
+<p>If things get out of control, your sprite can leave the screen! Let’s fix that.</p>
+<hr>
+<ul>
+<li>:paper plane:  From <code>||sprites:Sprites||</code>, grab
+<code>||sprites:set [mySprite] stay in screen &lt;on&gt;||</code>
+and snap it into <strong>the bottom</strong>
+of the <code>||loops:on start||</code> container.</li>
+</ul>
+<pre><code class="lang-blocks">let mySprite = sprites.create(assets.image`Mama`, SpriteKind.Player)
+controller.moveSprite(mySprite, 0, 100)
+//@highlight
+mySprite.setStayInScreen(true)
+</code></pre>
+<h2 id="step-6">Step 6</h2><p><strong>Let’s set the scene</strong>
+🖼️ 🖼️ 🖼️</p>
+<hr>
+<ul>
+<li><p>:tree:  From <code>||scene:Scene||</code>, grab
+<code>||scene:set background image to [ ]||</code>
+and snap it into <strong>the top</strong>
+of the <code>||loops:on start||</code> container.</p>
+</li>
+<li><p>:paint brush:  Click the <strong>grey square</strong> in the new block and toggle to <strong>My Assets</strong> to choose the <strong>Freeway</strong> background.</p>
+</li>
+</ul>
+<pre><code class="lang-blocks">//@highlight
+scene.setBackgroundImage(assets.image`Freeway`)
+let mySprite = sprites.create(assets.image`Mama`, SpriteKind.Player)
+controller.moveSprite(mySprite, 0, 100)
+mySprite.setStayInScreen(true)
+</code></pre>
+<h2 id="step-7">Step 7</h2><p><strong>Add movement to the scene</strong></p>
+<hr>
+<ul>
+<li><p>:arrows alternate:  To make it look like the dino is walking along the road,
+go to <code>||scroller:Scroller||</code> and drag
+<code>||scroller:scroll background with vx [-50] vy [-50]||</code>
+into <strong>the end</strong>
+of the <code>||loops:on start||</code> container.</p>
+</li>
+<li><p>:mouse pointer:  Stop the background from scrolling vertically by changing the value of <strong>vy</strong> to <strong>0</strong>.</p>
+</li>
+</ul>
+<pre><code class="lang-blocks">scene.setBackgroundImage(assets.image`Freeway`)
+let mySprite = sprites.create(assets.image`Mama`, SpriteKind.Player)
+controller.moveSprite(mySprite, 0, 100)
+mySprite.setStayInScreen(true)
+//@highlight
+scroller.scrollBackgroundWithSpeed(-50, 0)</code></pre>
+<h2 id="step-8">Step 8</h2><p><strong>🎮  Take a look at the game screen 🎮</strong></p>
+<p>Your background should move right-to-left across the screen on its own,
+and you should be able to move your dino up and down with the joypad or arrow keys.</p>
+<h2 id="step-9">Step 9</h2><p><strong>The sprite needs something to collect!</strong>
+Let’s add some baby dinos for the momma dinosaur to rescue 💚</p>
+<hr>
+<ul>
+<li><p>:redo:  From <code>||loops:Loops||</code>, grab a
+<code>||loops:forever||</code>
+loop container and drag it into
+an empty spot on the workspace.</p>
+</li>
+<li><p>:paper plane:  From <code>||sprites:Sprites||</code>, grab
+<code>||variables(sprites):set [projectile] to projectile [ ] from side with vx [50] vy [50]||</code>
+and snap it into the empty
+<code>||loops:forever||</code> container.</p>
+</li>
+<li><p>:paint brush:  Click the <strong>grey square</strong> in the new block and toggle to <strong>My Assets</strong> to choose the <strong>Baby</strong> sprite.</p>
+</li>
+</ul>
+<pre><code class="lang-blocks">forever(function () {
+    let projectile = sprites.createProjectileFromSide(assets.image`Baby`, 50, 50)
+})
+</code></pre>
+<h2 id="step-10">Step 10</h2><ul>
+<li><p>:mouse pointer:  To make the babies look like they’re walking along the road, change
+<a  rel="nofollow noopener" href="#whatVX" title="horizontal velocity"><strong><em>vx</em></strong></a> (or horizontal speed) to <strong>-90</strong>.</p>
+</li>
+<li><p>:mouse pointer:  Change <a  rel="nofollow noopener" href="#whatVY" title="vertical velocity"><strong><em>vy</em></strong></a> (or vertical speed) to <strong>0</strong> so they don’t float up or down.</p>
+</li>
+</ul>
+<pre><code class="lang-blocks">forever(function () {
+    let projectile = sprites.createProjectileFromSide(assets.image`Baby`, -90, 0)
+})
+</code></pre>
+<h2 id="step-11">Step 11</h2><p><strong>😲 They’re flying 😲</strong></p>
+<p>If we leave them like this, we won’t be able to see them properly.  Let’s
+send the babies in from a random height each time.</p>
+<hr>
+<ul>
+<li><p>:paper plane:  From  <code>||sprites:Sprites||</code>, grab a
+<code>||sprites:set [mySprite] [x] to [0]||</code>
+block and snap it into <strong>the end</strong> of the
+<code>||loops:forever||</code> loop container.</p>
+</li>
+<li><p>:mouse pointer:  Change <strong>mySprite</strong> to <strong>projectile</strong> using the first dropdown menu.</p>
+</li>
+<li><p>:mouse pointer:  To change their vertical starting point, change <strong>x</strong> to <strong>y</strong> using the other dropdown menu.</p>
+</li>
+</ul>
+<pre><code class="lang-blocks">forever(function () {
+    let projectile = sprites.createProjectileFromSide(assets.image`Baby`, -90, 0)
+    //@highlight
+    projectile.y = 0
+})
+</code></pre>
+<h2 id="step-12">Step 12</h2><p><strong>This is looking great, but they still hover around the top.</strong></p>
+<hr>
+<ul>
+<li><p>:calculator:  In
+<code>||sprites:set [mySprite] [y] to [0]||</code>,
+replace <strong>0</strong> with
+<code>||math:pick random [0] to [10]||</code>.
+(From the <code>||math:Math||</code> category)</p>
+</li>
+<li><p>:mouse pointer:  Help the babies spread out along the road by changing the smallest random number from <strong>0</strong> to <strong>15</strong> and the largest random number from
+<strong>10</strong> to <strong>115</strong>.</p>
+</li>
+</ul>
+<pre><code class="lang-blocks">forever(function () {
+    let projectile = sprites.createProjectileFromSide(assets.image`Baby`, -90, 0)
+    projectile.y = randint(15, 115)
+})</code></pre>
+<h2 id="step-13">Step 13</h2><ul>
+<li><p>:redo:  Keep the babies from running out at the speed of light by
+adding a
+<code>||loops:pause [100] ms||</code>
+block (from the  <code>||loops:Loops||</code>
+category) to <strong>the end</strong> of the
+<code>||loops:forever||</code> loop.</p>
+</li>
+<li><p>:mouse pointer:  Change the pause time to <strong>1000 ms</strong> by clicking in the textbox and typing
+<strong>1000</strong> (or click the dropdown and select <strong>1 second</strong>.)</p>
+</li>
+</ul>
+<pre><code class="lang-blocks">forever(function () {
+    let projectile = sprites.createProjectileFromSide(assets.image`Baby`, -90, 0)
+    projectile.y = randint(15, 115)
+    pause(1000)
+})</code></pre>
+<h2 id="step-11">Step 11</h2><p><strong>🎆 Congrats 🎆</strong></p>
+<hr>
+<p>You’ve built the foundation for a great game. Give it a try on the game screen!</p>
+<p>When you’re done playing, click <strong>Done</strong> to return to the main page and continue the next tutorial where we’ll add points and a game timer!</p>
+<pre><code class="lang-package">arcade-background-scroll=github:microsoft/arcade-background-scroll/</code></pre>
+<pre><code class="lang-ghost">
+let projectile: Sprite = null
+
+scene.setBackgroundImage(assets.image`Freeway`)
+scroller.scrollBackgroundWithSpeed(-50, 0)
+let mySprite = sprites.create(assets.image`Mama`, SpriteKind.Player)
+controller.moveSprite(mySprite, 0, 100)
+mySprite.setStayInScreen(true)
+animation.runImageAnimation(
+mySprite,
+assets.animation`Mama Moving`,
+100,
+true
+)
+
+forever(function () {
+    projectile = sprites.createProjectileFromSide(assets.image`Baby`, -90, 0)
+    projectile.y = randint(0, 120)
+    pause(randint(1000, 2000))
+})
+</code></pre>
+<pre><code class="lang-assetjson">{
+  &quot;README.md&quot;: &quot; &quot;,
+  &quot;assets.json&quot;: &quot;&quot;,
+  &quot;images.g.jres&quot;: &quot;{\n    \&quot;HSB#hx_+P`azBCey0vH4\&quot;: {\n        \&quot;data\&quot;: \&quot;hwQYABgAAAAAAAAAAAAAAMDMAAAAAAAAAAAAAMC9DAAAAAAAAAAAzMDdDAAAAAAAAMAMzMzdywAAAAAAAADMzLzdzQAAAADAzAC83d3dzQAAAADAzLvd3d3dvQwAAMwAvFXV3d3duwwAAMwMW1XV3d3du8wAAMC8VVXd3d3dvdsAAMBbVdXdu91V3d0AzMBVVVXdVdtV1V0AzMxVVVXdVcVdVV0AwFxVVVXdW7XbVVsAwFxVVVXVvVW8y9wAAFxVX1XVvVW8y8wAAFxV/7Vbvcy73AwAAFxV8bVbvbvL3QwAAFxVVRWzxczM2wwAAMBVVTUzxc0AvAwAAMBV1bUzxQwAzAwAAABcVbVVxQAAAAAAAADAVcXMDAAAAAAAAAAAzAwAAAAAAAA=\&quot;,\n        \&quot;mimeType\&quot;: \&quot;image/x-mkcd-f4\&quot;,\n        \&quot;displayName\&quot;: \&quot;Mama\&quot;\n    },\n    \&quot;X4JB-Z#5z{GHg)(9D5!a\&quot;: {\n        \&quot;data\&quot;: \&quot;hwSgAHgAAACZmZmZ0d3dHBGxuxuxu7u7u7u7u7u7G7G7u7u7u7u7u7u7G70bsbu7y8u7u7u7u7u7u7u7u7vLvbu7u7uZmZmZEd3RHBGxuxuxu7u7u7u7u7u7G7G7u7u7u7u7u7u7G7Ebsbu7y8y7u7u7u7u7u7u7u7vLu7u7u7uZmZmZEd3RHMy8uxu9u7u7u7u7u7u7G7G7u7u7u7u7u7u7G7Ebvbu7zMy7u7u7u7u7u7u7u7u7vLu7u7uZmZmZ0d3dHNy9u9u9u7u7u7u7u7u7G7G7u7u7u7u7u7u7G7HbvbvLvMu7u7u7u7u7u7u7u7u7u7u7u7uZmZmZ0dHRHNy9uxu9u7u7u7u7u7u7G7G7u7u7u7u7u7u7G7EbvbvLu7u8u7u7u7u7u7u7u7u7u7u7u7uZmZmZ0d3dHNy9uxuxu7u7u7u7u7u7G7G7u7u7u7u7u7u7G7EbsbvLu7u8u7u7u7u7u7u7u7u7u7u7u7uZmZkR0d3dHNy9uxuxu7u7u7u7u7u7G7G7u7u7u7u7u7u7G7Ebsbu7vLu7u7u7u7u7u7u7u7u7u7u7u7uZmZnR3d3dHNy9uxuxu7u7u7u7u7u727G7u7u7u7u7u7u7G7Ebsbu7u7u7u7u7u7u7u7u7u7u7u7u7u7uZmZnR3d3dHNy9u9uxu7u7u7u7u7u727G7u7u7u7u7u7u7G7Hbsbu7u7u7u7u7u7u7u7u7u7u7u7u7u7uZmZkRERERHNy9uxuxu7u7u7u7u7u72727u7u7u7u7u7u7G7Ebsbu7u7u7u7u7u7u7u7u7u7u7u7u7u7uZmZmZmRndHNy9uxuxu7u7u7u7u7u727G7u7u7u7u7u7u727Ebsbu7u7u7u7u7u7u7u7u7u7u7u7u7u7uZmZmZERHdHNy9uxu9u7u7u7u7u7u7G727u7u7u7u7u7u727Ebvbu7u7u7u7u7u7u7u7u7u7u7u7u7u7uZmZmZ0d3dHMy8u9u9u8u7u7u7u7u7G7G7u7u7u7u7u7u7273bvbu7u7u7u7u7u7u7u7u7u7u7u7u7u7uZmZmZEd3dHBGxu9u9u7y7u7u7u7u7G7G7u7u7u7u7u7u727Hbvbu7u7u7u7u7u7u7u7u7u7u7u7u7u7uZmZmZ0R3dHBGxuxu9u9y7u7u7u7u7G7G7u7u7u7u7u7u7G70bvbu7u7u7u7u7u7u7u7u7u7u7u7u7u7uZmZmZ0d3dHMy8uxuxu9y7u7u7u7u7G7G7u7u7u7u7u7u7G7Ebsbu7u7u7u7u7u7u7u7u7u7u7u7u7u7uZmZmZERHdHNy9u9uxu7y7u7u7u7u727G7u7u7u7u7u7u7G7Hbsbu7u7u7u7u7u7vbu7u7u7u7u7u7u7uZmZmZmRkRHNy9u9u9u8u7u7u7u7u72727u7u7u7u7u7u7G7Hbvbu7u7u7u7u7u7vbvbu7u7u7u7u7u7uZmZmZmRndHNy9uxu9u7u7u7u7u7u7u727u7u7u7u7u7u7G7Ebvbu7u7u7u7u7u7sbvbu7u7u7u7u7u7uZmZmZERHdHNy9uxuxu7u7u7u7u7u7u7u7u7u7u7u7u7u7G7Ebsbu7u7u7u7u7u7sbsbu7u7u7u7u7u7uZmZmZ0dHRHNy9uxuxu7u7u7u7u7u7u7u7u7u7u7u7u7u7G7Ebsbu7u7u7u7u7u7sbsbu7u7u7u7u7u7uZmZmZ0d3dHNy9uxuxu7u7u7u7u7u7u7u7u7u7u7u7u7u7G7Ebsbu7u7u7u7u7u7sbsbu7u7u7u7u7u7uZmZmZ0dHRHNy9uxuxu7u7u7u7u7u7u7u7u7u7u7u7u7u7G7Ebsbu7u7u7u7u7u7sbsbu7u7u7u7u7u7uZmZmZ0d3dHNy9uxuxu7u7u7u7u7u7u7u7u7u7u7u7u7u7G7Ebsbu7u7u7u7u7u7sbsbu7u7u7u7u7u7uZmZmZ0d3dHNy9uxuxu7u7u7u7u7u7u7u7u7u7u7u7u7u7G70bsbu7u7u7u7u7u7sbsbu7u7u7u7u7u7uZmZmZ0dHdHNy9uxuxu7u7u7u7u7u7u7u7u7u7u7u7u7u7270bsbu7u7u7u7u7u7sbsbu7u7u7u7u7u7uZmZmZ0d3dHMy8uxuxu7u7u7u7u7u7u7u7u7u7u7u7u7u7G70bsbu7u7u7u7u7u7sbsbu7u7u7u7u7u7uZmZmZ0d3dHBGxuxuxu7u7u7u7u7u7u7u7u7u7u7u7u7u7G7Ebsbu7u7u7u7u7u7sbsbu7u7u7u7u7u7uZmRkR0d3dHBGxu9uxu7u7u7u7u7u7u7u7u7u7u7u7u7u7G7Hbsbu7u7u7u7u7u7vbsbu7u7u7u7u7u7uZmRHd3d3dHMy8u9uxu7u7u7u7u7u7u7u7u7u7u7u7u7u7G7Hbsbu7u7u7u7u7u7vbsbu7u7u7u7u8u7uZGdHd3d3dHNy9u9u9u7u7u7u7u7u7u7u7u7u7u7u7u7u727Hbvbu7u7u7u7u7u7vbvbu7u7u7u7u8u7uZGd3dHd3dHNy9u9uxu7u7u7u7u7u7u7u7u7u7u7u7u7u7G7Hbsbu7u7u7u7u7u7vbsbu7u7u7u7u7u7uZGd0d3d3dHNy9uxu9u7u7u7u7u7u7u7u7u7u7u7u7u7u7G7Ebvbu7u7u7u7u7u7sbvbu7u7u7u7vLu7uZGd3d3d3dHNy9uxuxu7u7u7u7u7u7u7u7u7u7u7u7u7u7G70bsbu7u7u7u7u7u7sbsbu7u7u7u7vLu7uZGdEd3d3dHNy9uxuxu7u7u7u7u7u7u7u7u7u7u7u7u7u7270bsbu7u7u7u7u7u7sbsbu7u7u7u7vLvLuZmREREdHdHNy9uxuxu7u7u7u7u7u727u7u7u7u7u7u7u7270bsbu7u7u7u7u7u7sbsbu7u7u7u7vLy7uZmZmZGRHRHNy9uxuxu7u7u7u7u7u72727u7u7u7u7u7u7G70bsbu7u7u7u7u7u7sbsbu7u7u7u7vLzLuZmZmZERHRHNy9uxuxu7u7u7u7u7u7G727u7u7u7u7u7u7G7Ebsbu7u7u7u7u7u7vbsbu7u7u7u7vLy7uZmZmZ0d0dHNy9uxuxu7u7u7u7u7u7G7G7u7u7u7u7u7u727Ebsbu7u7u7u7u7u7vbvbu7u7u7u7vLu7yZmZkR0d3dHMy8uxuxu7u7u7u7u7u7G7G7u7u7u7u7u7u7270bsbu7u7u7u7u7vLu7vbu7u7u7u7u8u7yZmZnR3d3dHBGxuxuxu7u7u7u7u7u7G7G7u7u7u7u7u7u7G70bsbu7u7u7u7vLu7u7u7u7u7u7u7u7u7uZmZkR0d3dHBGxuxuxu7u7u7u7u7u7G7G7u7u7u7u7u7u7G7Ebsbu7u7u7u7vLvbu7u7u7u7u7u7u7u7uZmZmZ0d3dHMy8uxu9u7u7u7u7u7u7G7G7u7u7u7u7u7u7G7Ebvbu7u7u7u7vLvbu7u7u7u7u7u7u7u7uZmZmZEdHdHNy9u9u9u7u7u7u7u7u7G7G7u7u7u7u7u7u7G7Hbvbu7u7u7u7vLu7u7u7u7u7u7u7u7u7uZmZmZGRHdHNy9uxu9u7u7u7u7u7u7G7G7u7u7u7u7u7u7G7Ebvbu7u7u7u7u7vLu7u7u7u7u7u7u7u7uZmZmZGRERHNy9uxuxu7u7u7u7u7u7G7G7u7u7u7u7u7u7G7Ebsbu7u7u7u7u7u7u7u7u7u7u7u7u7u7uZmZmZGd0dHNy9uxuxu7u7u7u7u7u7G7G7u7u7u7u7u7u7G7Ebsbu7u7u7u7u7u7u7u7u7u7u7u7u7u7uZmZmZGd3dHNy9uxuxu7u7u7u7u7u727G7u7u7u7u7u7u7G7Ebsbu7u7u7u7u7u7u7u7u7u7u7u7u7u7uZmZmZGdHdHNy9u9uxu7u7u7u7u7u727G7u7u7u7u7u7u7G7Hbsbu7u7u7u7u7u7u7u7u7u7u7u7u7u7uZmZmZGd3dHNy9uxuxu7u7u7u7u7u72727u7u7u7u7u7u7G7Ebsbu7u7u7u7u7u7u7u7u7u7u7u7u7u7uZmZmZGd3RHNy9uxuxu7u7u7u7u7u727G7u7u7u7u7u7u727Ebsbu7u7u7u7u7u7u7u7u7u7u7u7u7u7uZmZmZGdHRHNy9uxu9u7u7u7u7u7u7G727u7u7u7u7u7u727Ebvbu7u7u7u7u7u7u7u7u7u7u7u7u7u7sZEREREdHdHMy8u9u9u7u7u7u7u7u7G7G7u7u7u7u7u7u7273bvbu7u7u7u7u7u7u7u7u7u7u7u7u7u7sZ3d3d3d3dHBGxu9u9u7u7u7u7u7u7G7G7u7u7u7u7u7u727Hbvbu7u7u7u7u7u7u7u7u7u7u7u7u7u7sZ3dHd3d3dHBGxuxu9u7u7u7u7u7u7G7G7u7u7u7u7u7u7G70bvbu7u7u7u7u7u7u7u7u7u7u7u7u7u7sZ3dHd3d3dHMy8uxuxu7u7u7u7u7u7G7G7u7u7u7u7u7u7G7Ebsbu7u7u7u7u7u7u7u7u7u7u7u7u7u7sZ3d3d3d3dHNy9u9uxu7u7u7u7u7u727G7u7u7u7u7u7u7G7Hbsbu7u7u7u7u7u7vbu7u7u7u7u7u7u7sZ3d3d3d3dHNy9u9u9u7u7u7u7u7u72727u7u7u7u7u7u7G7Hbvbu7u7u7u7u7u7vbvbu7u7u7u7u7u7sZ3d3d3d3dHNy9uxu9u7u7u7u7u7u7u727u7u7u7u7u7u7G7Ebvbu7u7u7u7u7u7sbvbu7u7u7u7u7u7sZ3d3d3d3dHNy9uxuxu7u7u7u7u7u7u7u7u7u7u7u7u7u7G7Ebsbu7u7u7u7u7u7sbsbu7u7u7u7u7u7sZ3R3dEd3dHNy9uxuxu7u7u7u7u7u7u7u7u7u7u7u7u7u7G7Ebsbu7u7u7u7u7u7sbsbu7u7u7u7u7u7sZ3d3d3d3dHNy9uxuxu7u7u7u7u7u7u7u7u7u7u7u7u7u7G7Ebsbu7u7u7u7u7u7sbsbu7u7u7u7u7u7sZEREREdHdHNy9uxuxu7u7u7u7u7u7u7u7u7u7u7u7u7u7G7Ebsbu7u7u7u7u7u7sbsbu7u7u7u7u7u7uZmZmZERHdHNy9uxuxu7u7u7u7u7u7u7u7u7u7u7u7u7u7G7Ebsbu7u7u7u7u7u7sbsbu7u7u7u7u7u7uZmZmZ0d3dHNy9uxuxu7u7u7u7u7u7u7u7u7u7u7u7u7u7G70bsbu7u7u7u7u7u7sbsbu7u7u7u7u7u7uZmZmZEd3RHNy9uxuxu7u7u7u7u7u7u7u7u7u7u7u7u7u7270bsbu7u7u7u7u7u7sbsbu7u7u7u7u7u7uZmZmZEd3RHMy8uxuxu7u7u7u7u7u7u7u7u7u7u7u7u7u7G70bsbu7u7u7u7u7u7sbsbu7u7u7u7u7u7uZmZmZ0d3RHBGxuxuxu7u7u7u7u7u7u7u7u7u7u7u7u7u7G7Ebsbu7u7u7u7u7u7sbsbu7u7u7u7u7u7uZmZmZ0dHRHBGxu9uxu7u7u7u7u7u7u7u7u7u7u7u7u7u7G7Hbsbu7u7u7u7u7u7vbsbu7u7u7u7u7u7uZmZmZ0d3dHMy8u9uxu7u7u7u7u7u7u7u7u7u7u7u7u7u7G7Hbsbu7u7u7u7u7u7vbsbu7u7u7u7u7u7uZmZkREdHdHNy9u9u9u7u7u7u7u7u7u7u7u7u7u7u7u7u727Hbvbu7u7u7u7u7u7vbvbu7u7u7u7u7u7uZmRnR3d3dHNy9u9uxu7u7u7u7u7u7u7u7u7u7u7u7u7u7G7Hbsbu7u7u7u7u7u7vbsbu7u7u7u7u7u7uZmRnd3d3dHNy9uxu9u7u7u7u7u7u7u7u7u7u8u7u7u7u7G7Ebvbu7u7u7u7u7u7sbvbu7u7u7u7u7u7uZmRkRERHdHNy9uxuxu7u7u7u7u7u7u7u7u8u7u7u7u7u7G70bsbu7u7u7u7u7u7sbsbu7u7u7u7u7u7uZmZmZmRHdHNy9uxuxu7u7u7u7u7u7u7u7u8u7u7u7u7u7270bsbu7u7u7u7u7u7sbsbu7u7u7u7u7u7uZmZmZmdHdHNy9uxuxu7u7u7u7u7u727u7u8u8u7u7u7u7270bsbu7u7u7u7u7u7sbsbu7u7u7u7u7u7uZmZmZmRERHNy9uxuxu7u7u7u7u7u72727u7vLu7u7u7u7G70bsbu7u7u7u7u7u7sbsbu7u7u7u7u7u7uZmZmZmRHdHNy9uxuxu7u7u7u7u7u7G727u7vLvLu7u7u7G7Ebsbu7u7u7u7u7u7vbsbu7u7u7u7u7u7uZmZmZmdHdHNy9uxuxu7u7u7u7u7u7G7G7u7u8vLu7u7u727Ebsbu7u7u7u7u7u7vbvbu7u7u7u7u7u7uZmZmZmRHdHMy8uxuxu7u7u7u7u7u7G7G7u8vLvLu7u7u7270bsbu7u7u7u7u7u7u7vbu7u7u7u7u7u7uZmRkRERERHBGxuxuxu7u7u7u7u7u7G7G7u8u8vLu7u7u7G70bsbu7u7u7u7u7u7u7u7u7u7u7u7u7u7uZmRndHd3RHBGxuxuxu7u7u7u7u7u7G7G7u8u7vLu7u7u7G7Ebsbu7u7u7u7u7u7u7u7u7u7u7u7u7u7uZmRnd3d3dHMy8uxu9u7u7u7u7u7u7G7G7u8u7y7u7u7u7G7Ebvbu7u7u7u7u7u7u7u7u7u7u7u7u7u7uZmRnd3d3dHNy9u9u9u7u7u7u7u7u7G7G7u7y7u7u7u7u7G7Hbvbu7u7u7u7u7u7u7u7u7u7u7u7u7u7uZmRndHd3RHNy9uxu9u7u7u7u7u7u7G7G7u7u7u7u7u7u7G7Ebvbu7u7u7u7u7u7u7u7u7u7u7u7u7u7uZmRnd3d3dHNy9uxuxu7u7u7u7u7u7G7G7u7u7u7u7u7u7G7Ebsbu7u7u7u7u7u7u7u7u7u7u7u7u7u7uZmRkR0d3dHNy9uxuxu7u7u7u7u7u7G7G7u7u7u7u7u7u7G7Ebsbu7u7u7u7u7u7u7u7u7u7u7u7u7u7uZmZmZEdHdHNy9uxuxu7u7u7u7u7u727G7u7u7u7u7u7u7G7Ebsbu7u7u7u7u7u7u7u7u7u7u7u7u7u7uZmREREdHdHNy9u9uxu7u7u7u7u7u727G7u7u7u7u7u7u7G7Hbsbu7u7u7u7u7u7u7u7u7u7u7u7u7u7uZmdHd3d3dHNy9uxuxu7u7u7u7u7u72727u7u7u7u7u7u7G7Ebsbu7u7u7u7u7u7u7u7u7u7u7u7u7u7uZEdHd0d3dHNy9uxuxu7u7u7u7u7u727G7u7u7u7u7u7u727Ebsbu7u7u7u7u7u7u7u7u7u7u7u7u7u7uZ0d3d0dHdHNy9uxu9u7u7u7u7u7u7G727u7u7u7u7u7u727Ebvbu7u7u7u7u7u7u7u7u7u7u7u7u7u7uZ0d3d3d3dHMy8u9u9u7u7u7u7u7u7G7G7u7u7u7u7u7u7273bvbu7u7u7u7u7u7u7u7u7u7u7u7u7u7uZ0d3d3d3dHBGxu9u9u7u7u7u7u7u7G7G7u7u7u7u7u7u727Hbvbu7u7u7u7u7u7u7u7u7u7u7u7u7u7uZEdHd3d3dHBGxuxu9u7u7u7u7u7u7G7G7u7u7u7u7u7u7G70bvbu7u7u7u7u7u7u7u7u7u7u7u7u7u7uZmdHd3d3dHMy8uxuxu7u7u7u7u7u7G7G7u7u7u7u7u7u7G7Ebsbu7u7u7u7u7u7u7u7u7u7u7u7u7u7uZmRERERERHNy9u9uxu7u7u7u7u7u727G7u7u7u7u7u7u7G7Hbsbu7u7u7u7u7u7vbu7u7u7u7u7u7u7uZmZmZmZnRHNy9u9u9u7u7u7u7u7u72727u7u7u7u7u7u7G7Hbvbu7u7u7u7u7u7vbvbu7u7u7u7u7u7uZmZmZERERHNy9uxu9u7u7u7u7u7u7u727u7u7u7u7u7u7G7Ebvbu7u7u7u7u7u7sbvbu7u7u7u7u7u7uZmZmZ0d3dHNy9uxuxu7u7u7u7u7u7u7u7u7u7u7u7u7u7G7Ebsbu7u7u7u7u7u7sbsbu7u7u7u7u7u7uZmZkR0d3dHNy9uxuxu7u7u7u7u7u7u7u7u7u7u7u7u7u7G7Ebsbu7u7u7u7u7u7sbsbu7u7u7u7u7u7uZmRER3d3dHNy9uxuxu7u7u7u7u7u7u7u7u7u7u8u7u7u7G7Ebsbu7u7u7u7u7u7sbsbu7u7u7u7u7u7sZEdHd3d3dHNy9uxuxu7u7u7u7u7u7u7u7u7u7u7y7u7u7G7Ebsbu7u7u7u7u7u7sbsbu7u7u7u7u7u7sZ3d3d3d3dHNy9uxuxu7y7u7u7u7u7u7u7u7u7u9y7u7u7G7Ebsbu7u7u7u7u7u7sbsbu7u7u7u7u7u7sZ3d3d3d3dHNy9uxuxu7y7u7u7u7u7u7u7u7u7u9y7u7u7G70bsbu7u7u7u7u7u7sbsbu7u7u7u7u7u7sZ0d3d3d3dHNy9uxuxu7y7u7u7u7u7u7u7u7u7u7y7u7u7270bsbu7u7u7u7u7u7sbsbu7u7u7u7u7u7uZEdHd3d3dHMy8uxuxu7y7u7u7u7u7u7u7u7u7u8u7u7u7G70bsbu7u7u7u7u7u7sbsbu7u7u7u7u7u7uZmRER3d3dHBGxuxuxu8u7u7u7u7u7u7u7u7u7u7u7u7u7G7Ebsbu7u7u7u7u7u7sbsbu7u7u7u7u7u7uZmZkR0d3dHBGxu9uxu8y7u7u7u7u7u7u7u7u7u7u7u7u7G7Hbsbu7u7u7u7u7u7vbsbu7u7u7u7u7u7uZmZmZEd3dHMy8u9uxu7y8u7u7u7u7u7u7u7u7u7u7u7u7G7Hbsbu7u7u7u7u7u7vbsbu7u7u7u7u7u7uZmZmZ0R3dHNy9u9u9y7u7u7u7u7u7u7u7u7u7u7u7u7u727Hbvbu7u7u7u7u7u7vbvbu7u7u7u7u7u7uZmZmZ0d3dHNy9u9uxy7u7u7u7u7u7u7u7u7u7u7u7u7u7G7Hbsbu7u7u7u7u7u7vbsbu7u7u7u7u7u7uZmZmZERHdHNy9uxu9y7u7u7u7u7u7u7u7u7u7u7u7u7u7G7Ebvbu7u7u7u7u7u7sbvbu7u7u7u7u7u7uZmZmZmRndHNy9uxuxy7u7u7u7u7u7u7u7u7u7u7u7u7u7G70bsbu7u7u7u7u7u7sbsbu7u7u7u7u7u7uZmZmZmRkRHNy9uxuxu7u7u7u7u7u7u7u7u7u7u7u7u7u7270bsbu7u7u7u7u7u7sbsbu7u7u7u7u7u7uZmZmZERHdHNy9uxuxu7u7u7u7u7u727u7u7u7u7u7u7u7270bsbu7u7u7u7u7u7sbsbu7u7u7u7u7u7uZmZmZ0d3dHNy9uxuxu7u7u7u7u7u72727u7u7u7u7u7u7G70bsbu7u7u7u7u7u7sbsbu7u7u7u7u7u7uZmZmZ0d3dHNy9uxuxu7u7u7u7u7u7G727u7u7u7u7u7u7G7Ebsbu7u7u7u7u7u7vbsbu7u7u7u7u7u7uZmZmZ0dHRHNy9uxuxu7u7u7u7u7u7G7G7u7u7u7u7u7u727Ebsbu7u7u7u7u7u7vbvbu7u7u7u7u7u7uZmZmZ0d3dHMy8uxuxu7u7u7u7u7u7G7G7u7u7u7u7u7u7270bsbu7u7u7u7u7u7u7vbu7u7u7u7u7u7uZmZmZ0d3dHBGxuxuxu7u7u7u7u7u7G7G7u7u7u7u7u7u7G70bsbu7u7u7u7u7u7u7u7u7u7u7u7u7u7uZmZmZ0d3dHBGxuxuxu7u7u7u7u7u7G7G7u7u7u7u7u7u7G7Ebsbu7u7u7u7u7u7u7u7u7u7u7u7u7u7uZmZmZ0dHdHMy8uxu9u7u7u7u7u7u7G7G7u7u7u7u7u7u7G7Ebvbu7u7u7u7u7u7u7u7u7u7u7u7u7u7uZmZmZ0d3dHNy9u9u9u7u7u7u7u7u7G7G7u7u7u7u7u7u7G7Hbvbu7u7u7u7u7u7u7u7u7u7u7u7u7u7uZmRkR0d3dHNy9uxu9u7u7u7u7u7u7G7G7u7u7u7u7u7u7G7Ebvbu7u7u7u7u7u7u7u7u7u7u7u7u7u7uZmRnd3d3dHNy9uxuxu7u7u7u7u7u7G7G7u7u7u7u7u7u7G7Ebsbu7u7u7u7u7u7u7u7u7u7u7u7u7u7uZmRHd3d3dHNy9uxuxu7u7u7u7u7u7G7G7u7u7u7u7u7u7G7Ebsbu7u7u7u7u7u7u7u7u7u7u7u7u7u7uZGdHd3d3dHNy9uxuxu7u7u7u7u7u727G7u7u7u7u7u7u7G7Ebsbu7u7u7u7u7u7u7u7u7u7u7u7u7u7uZGd0d3d3dHNy9u9uxu7u7u7u7u7u727G7u7u7u7u7u7u7G7Hbsbu7u7u7u7u7u7u7u7u7u7u7u7u7u7uZGd3dHd3dHNy9uxuxu7u7u7u7u7u72727u7u7u7u7u7u7G7Ebsbu7u7u7u7u7u7u7u7u7u7u7u7u7u7uZGdEd3d3dHNy9uxuxu7u7u7u7u7u727G7u7u7u7u7u7u727Ebsbu7u7u7u7u7u7u7u7u7u7u7u7u7u7uZmREREdHdHNy9uxu9u7u7u7u7u7u7G727u7u7u7u7u7u727Ebvbu7u7u7u7u7u7u7u7u7u7u7u7u7u7uZmZmZGRHRHMy8u9u9u7u7u7u7u7u7G7G7u7u7u7u7u7u7273bvbu7u7u7u7u7u7u7u7u7u7u7u7u7u7uZmZmZGRHRHBGxu9u9u7u7u7u7u7u7G7G7u7u7u7u7u7u727Hbvbu7u7u7u7u7u7u7u7u7u7u7u7u7u7uZmZmZEdHdHBGxuxu9u7u7u7u7u7u7G7G7u7u7u7u7u7u7G70bvbu7u7u7u7u7u7u7u7u7u7u7u7u7u7uZmZkR0d3dHMy8uxuxu7u7u7u7u7u7G7G7u7u7u7u7u7u7G7Ebsbu7u7u7u7u7u7u7u7u7u7u7u7u7u7uZmZnR3d3dHNy9u9uxu7u7u7u7u7u727G7u7u7u7u7u7u7G7Hbsbu7u7u7u7u7u7vbu7u7u7u7u7u7u7uZmZnR3d3dHNy9u9u9u7u7u7u7u7u72727u7u7u7u7u7u7G7Hbvbu7u7u7u7u7u7vbvbu7u7u7u7u7u7uZmZkR0d3dHNy9uxu9u7u7u7u7u7u7u727u7u7u7u7u7u7G7Ebvbu7u7u7u7u7u7sbvbu7u7u7u7u7u7uZmZmZEdHdHNy9uxuxu7u7u7u7u7u7u7u7u7u7u7u7u7u7G7Ebsbu7u7u7u7u7u7sbsbu7u7u7u7u7u7uZmZmZGRHdHNy9uxuxu7u7u7u7u7u7u7u7u7u7u7u7u7u7G7Ebsbu7u7u7u7u7u7sbsbu7u7u7u7u7u7uZmZmZmRkRHNy9uxuxu7u7u7u7u7u7u7u7u7u7u7u7u7u727Ebsbu7u7u7u7u7u7sbsbu7u7u7u7u7u7uZmZmZGRHRHNy9uxuxu7u7u7u7u7u7u7u7u7u7u7u7u7u7G7Ebsbu7u7u7u7u7u7sbsbu7u7u7u7u7u7uZmZmZGd3RHNy9uxuxu7u7u7u7u7u7u7u7u7u7u7u7u7u7G7Ebsbu7u7u7u7u7u7sbsbu7u7u7u7u7u7uZmZmZGdHdHNy9uxuxu7u7u7u7u7u7u7u7u7u7u7u7u7u7G70bsbu7u7u7u7u7u7sbsbu7u7u7u7u7u7uZmZmZGdHRHNy9uxuxu7u7u7u7u7u7u7u7u7u7u7u7u7u7270bsbu7u7u7u7u7u7sbsbu7u7u7u7u7u7uZmZmZGd3RHMy8uxuxu7u7u7u7u7u7u7u7u7u7u7u7u7u7G70bsbu7u7u7u7u7u7sbsbu7u7u7u7u7u7uZmZmZGd3dHBGxuxuxu7u7u7u7u7u7u7u7u7u7u7u7u7u7G7Ebsbu7u7u7u7u7u7sbsbu7u7u7u7u7u7sZEREREdHdHBGxu9uxu7u7u7u7u7u7u7u7u7u7u7u7u7u7G7Hbsbu7u7u7u7u7u7vbsbu7u7u7u7u7u7sZ3d3d3d3dHMy8u9uxu7u7u7u7u7u7u7u7u7u7u7u7u7u7G7Hbsbu7u7u7u7u7u7vbsbu7u7u7u7u7u7sZ3d3d3d3dHNy9u9u9u7u7u7u7u7u7u7u7u7u7u7u7u7u727Hbvbu7u7u7u7u7u7vbvbu7u7u7u7u7u7sZ3dHd3d3dHNy9u9uxu7u7u7u7u7u7u7u7u7u7u7u7u7u7G7Hbsbu7u7u7u7u7u7vbsbu7u7u7u7u7u7sZ3d3d3d3dHNy9uxu9u7u7u7u7u7u7u7u7u7u7u7u7u7u7G7Ebvbu7u7u7u7u7u7sbvbu7u7u7u7u7u7sZ3dEd3d3dHNy9uxuxu7u7u7u7u7u7u7u7u7u7u7u7u7u7G70bsbu7u7u7u7u7u7sbsbu7u7u7u7u7u7sZ3d3d3d3dHNy9uxuxu7u7u7u7u7u7u7u7u7u7u7u7u7u7270bsbu7u8u7u7u7u7sbsbu7u7u7u7u7u7sZ3R3dHd3dHNy9uxuxu7u7u7u7u7u727u7u7u7u7u7u7u7270bsbu7u8u7u7u7u7sbsbu7u7u7u7u7u7sZ3R3dEd3dHNy9uxuxu7u7u7u7u7u72727u7u7u7u7u7u7G70bsbu7u7y7u7u7u7sbsbu7u7u7u7u7u7sZ3d3d3d3dHNy9uxuxu7u7u7u7u7u7G727u7u7u7u7u7u7G7Ebsbu7u7y7u7u7u7vbsbu7u7u7vLu7u7sZ3d3d3d3dHNy9uxuxu7u7u7u7u7u7G7G7u7u7u7u7u7u727Ebsbu7u7y7u7u7u7vbvbu7u7vLu7u7u7sZERER0d3dHMy8u9uxu7u7u7u7u7u7G7G7u7u7u7u7u7u7273bsbu7y7y7u7u7u7u7vbu7u7vLvbu7u7s=\&quot;,\n        \&quot;mimeType\&quot;: \&quot;image/x-mkcd-f4\&quot;,\n        \&quot;displayName\&quot;: \&quot;Freeway\&quot;\n    },\n    \&quot;:-%p!6dsfn@Cn4?(/f-u\&quot;: {\n        \&quot;data\&quot;: \&quot;hwQQABAAAAAAAACIiIiIAAAAgGZmOIgIAABoZoYziAgAAGhmhoOIDwCImZmJiPi7gJiZmYuI+LyAdneGuIb4/Ghmd4e7hogPaGZ2h7uGiAhoZmaHu4aICGhmZoeIiIgPaGZmh7uG+LuAdneGuIb4vAC4mZmLiPj8AICbmbmIiA8AAIiIiIiIAA==\&quot;,\n        \&quot;mimeType\&quot;: \&quot;image/x-mkcd-f4\&quot;,\n        \&quot;displayName\&quot;: \&quot;Tourist\&quot;\n    },\n    \&quot;IHAx{+JAVkkR7;45OS*f\&quot;: {\n        \&quot;data\&quot;: \&quot;hwQQABAAAAAAAMzMDAAAAADAVcW1wAwAAFxVtVO8DMwAXFW1U7vMvMBVVRVTy8y8wFVVtVVczLzAVfFVVVXMzMBV/1VVtd3bAFxVVVW7XVUAXFVVVd1dVQDAVVXd3b27AABcVd3d3cwAAMDc3d3dDAAAAMDMzN0MAAAAAADczQAAAAAAAMAMAA==\&quot;,\n        \&quot;mimeType\&quot;: \&quot;image/x-mkcd-f4\&quot;,\n        \&quot;displayName\&quot;: \&quot;Baby\&quot;\n    },\n    \&quot;Bx$o-u1n\&quot;: {\n        \&quot;data\&quot;: \&quot;hwQQABAAAAAAAAAAAAAAAAAAzMwMAAAAAMAiIsIAAAAAwCIiIgwAAADAIiIiwgAAAAAsIiLCAAAAACwiIiIMAAAAwCIiIsIAAAAsIiIiDAAAACwiIsIAAADAIiIiwgAAAMAiIiIMAAAAwCIiwgAAAAAAzMwMAAAAAAAAAAAAAAAAAAAAAAAAAA==\&quot;,\n        \&quot;mimeType\&quot;: \&quot;image/x-mkcd-f4\&quot;,\n        \&quot;displayName\&quot;: \&quot;Extra Life\&quot;\n    },\n    \&quot;;bp3BS6:4IVA7v,VAfR(\&quot;: {\n        \&quot;namespace\&quot;: \&quot;myImages.\&quot;,\n        \&quot;id\&quot;: \&quot;;bp3BS6:4IVA7v,VAfR(\&quot;,\n        \&quot;mimeType\&quot;: \&quot;application/mkcd-animation\&quot;,\n        \&quot;data\&quot;: \&quot;NjQwMDE4MDAxODAwMDYwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDBjMDBjMDAwMDAwMDAwMDAwMDAwMDAwMDBjMGNjMGMwMDAwMDAwMDAwMDAwMGMwMGMwMGNjY2NjYzBjMDAwMDAwMDAwMGMwY2NjYzVjNTU1NWM1MGMwMDAwMDAwMDAwY2M1YjU1NTU1NTU1YzUwMDAwMDBjMDBjYjA1NTU1NTU1NTU1NTUwYzAwMDBjMGNjNWI1NTU1ZjUxZjU1NTVjNTAwMDBjMGJjNTU1NTU1NTVmZjU1NWRjNTAwMDAwMDViNTU1NTU1NTU1NTU1NTVjNTAwYzAwMDViNTU1ZDU1NTViYjMxYmIwYzAwYzBjYzVkZDVkZGRkNTViYjMzNTMwYzAwMDBiY2RkZGRkZGRkZGQ1NTNiNTMwYzAwY2NkY2RkZGQ1YmI1ZGRkZDU1NTUwYzAwY2NkY2RkZGQ1YjU1YmJiYmNjY2MwMDAwYzBkY2RkZGRiZDU1NTViY2RjMGMwMGNjY2NkYmRkZGRkZGJjNTViY2NjMDAwMGRjZGRkZGRkZGQ1NWJkY2NiYjBjMDAwMGJjZGRkZGRkZGQ1NWQ1YmJjYjBjMDAwMGMwYmNkZGJkZGI1ZDU1YmJkY2NiMGMwMDAwYzBjY2JiYmJkZDU1Y2NkZGJkMGMwMDAwMDAwMGNjYmNkZGJkY2NjY2NjMGMwMDAwMDAwMDAwZGM1ZDU1Y2QwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDBjMGNjMDAwMDAwMDAwMDAwMDAwMDAwMDBjMGNjMGMwMDAwMDAwMDAwMDAwMGMwY2MwMGNjY2NjYzBjMDAwMDAwMDAwMGMwY2NjYzVjNTU1NWM1MGMwMDAwMDAwMDAwY2M1YjU1NTU1NTU1YzUwMDAwMDBjMDBjYjA1NTU1NTU1NTU1NTUwYzAwMDBjMGNjNWI1NTU1ZjUxZjU1NTVjNTAwMDAwMGJjNTU1NTU1NTVmZjU1NWRjNTAwMDAwMDViNTU1NTU1NTU1NTU1NTVjNTAwYzAwYzViNTVkZDU1NTViYjMxYmIwYzAwYzBjYzVkZDVkZGRkNTViNTMzNTMwYzAwMDBiMGRkZGRkZGRkZGQ1NTNiNTMwYzAwY2NkY2RkZGQ1YmI1ZGJkZDU1NTUwYzAwY2NkY2RkZGQ1YjU1YmJiYmNjY2MwMDAwYzBkY2RkZGRiZDU1NTViY2RjMGMwMGNjY2NkYmRkZGQ1ZGJjNTViY2NjMDAwMGRjZGRkZGRkZGQ1NTU1Y2NiYjBjMDAwMGMwZGRkZGRkZGI1ZDU1YmJjYjBjMDAwMDAwY2NkZGJkYmJkZDU1YmNkYzBjMDAwMDAwMDBjY2JiYmNkZGRkY2NkZGNkMGMwMDAwMDAwMGNjZGM1ZDU1Y2RjY2NjMGMwMDAwMDAwMDAwY2NjY2NjY2MwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMGNjMDAwMDAwMDAwMDAwMDAwMDAwMDAwMGNjMGMwMDAwMDAwMDAwMDAwMDAwY2MwY2NjY2NjYzBjMDAwMDAwMDAwMDAwY2NjYzVjNTU1NWM1MGMwMDAwMDAwMDAwY2M1YjU1NTU1NTU1YzUwMDAwMDBjMGNjYjA1NTU1ZjUxZjU1NTUwYzAwMDBjMGNjNWI1NTU1NTVmZjU1NTVjNTAwMDAwMGJjNTU1NTU1NTU1NTU1NWRjNTAwMDAwYzViNTU1NTU1NTViYjU1NTVjNTAwMDBjYzViNTVkZDVkNTViNTMxYmIwYzAwMDBjYzVkZDVkZGRkNTViNTMzNTMwYzAwMDBjMGRkZDVkZGRkZGQ1NTNiNTMwYzAwYzBiMGRkZGQ1YjU1YmJkYjU1YzUwMDAwYzBkY2RkZGRiYjU1NTViNWNjMGMwMDAwYzBkY2RkZGRkZGNjNTViNWNjMDAwMDAwYzBkY2RkZGRkZGJkY2NiY2NjY2MwMGMwYmNkZGRkZGQ1ZGQ1YmJiYjVjYzUwMGNjZGRkZGRkZGQ1ZDU1YmRjYjVjMGMwMGRjZGRkZGJkYmJkZDU1YjVjYmNjMDAwMGMwZGNkZGJkYmJkYjVkYjVjYzAwMDAwMDAwYzBjY2JiYmJkYmRkY2JkZGNjMDAwMDAwMDBjMGNjY2NkZDU1ZDVjY2NjMDAwMDAwMDAwMDAwMDBjY2NjY2MwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMGNjMDAwMDAwMDAwMDAwMDAwMDAwMDAwMGNjMGMwMDAwMDAwMDAwMDAwMDAwY2MwY2NjY2NjYzBjMDAwMDAwMDAwMDAwY2NjYzVjNTU1NWM1MGMwMDAwMDAwMDAwY2M1YjU1NTU1NTU1YzUwMDAwMDBjMGNjYjA1NTU1ZjUxZjU1NTUwYzAwMDBjMGNjNWI1NTU1NTVmZjU1NTVjNTAwMDAwMGJjNTU1NTU1NTU1NTU1NWRjNTAwMDAwYzViNTU1NTU1NTViYjU1NTVjNTAwMDBjYzViNTVkZDVkNTViNTMxYmIwYzAwMDBjYzVkZDVkZGRkNTViNTMzNTMwYzAwMDBjMGRkZDVkZGRkZGQ1NTNiNTMwYzAwYzBiMGRkZGQ1YjU1YmJkYjU1YzUwMDAwYzBkY2RkZGRiYjU1NTViNWNjMGMwMDAwYzBkY2RkZGRkZGNjNTViNWNjMDAwMGMwY2NkY2RkZGRkZGRkY2NiY2NjY2MwMGMwY2RkZGRkZGRkZDU1YmRiYjVjYzUwMGMwZGRkZGRkZGRkZDU1ZDVjYzVjMGMwMGMwZGJkZGJkYmJkYjVkNWQ1NWNjMDAwMDAwYmNkZGJkYmJiYmRkNTU1NTAwMDAwMDAwYzBjY2JiYmJiYjVkNTVjNTAwMDAwMDAwMDBjMGNjY2NjYzVjNTUwYzAwMDAwMDAwMDAwMDAwMDAwMGMwY2MwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMGNjMDAwMDAwMDAwMDAwMDAwMDAwMDAwMGNjMGMwMDAwMDAwMDAwMDAwMDAwY2MwY2NjY2NjYzBjMDAwMDAwMDAwMDAwY2NjYzVjNTU1NWM1MGMwMDAwMDAwMDAwY2M1YjU1NTU1NTU1YzUwMDAwMDBjMGNjYjA1NTU1ZjUxZjU1NTUwYzAwMDBjMGNjNWI1NTU1NTVmZjU1NTVjNTAwMDAwMGJjNTU1NTU1NTU1NTU1NWRjNTAwMDAwYzViNTU1NTU1NTViYjU1NTVjNTAwMDBjYzViNTVkZDVkNTViNTMxYmIwYzAwMDBjYzVkZDVkZGRkNTViNTMzNTMwYzAwMDBjMGRkZDVkZGRkZGQ1NTNiNTMwYzAwYzBiMGRkZGQ1YjU1YmJkYjU1YzUwMDAwYzBkY2RkZGQ1YjU1NTViNWNjMGMwMDAwY2NkY2RkZGRjZDVjNTViNWNjMDAwMGMwY2RkY2RkZGRkZGJkY2NiY2NjY2MwMGMwZGRkYmRkZGRkZGRkYmJiYjVjYzUwMGMwZGRkZGRkZGRkZDU1YmRiYjVjMGMwMGMwZGJkZGJkYmJkYjU1ZGRjYmNjMDAwMDAwYmNkZGJkYmJkYjU1ZDVjYzBjMDAwMDAwYzBjY2JiYmJiYmRkNWQ1NTBjMDAwMDAwMDBjMGNjY2NiYzVkNTU1NTBjMDAwMDAwMDAwMDAwMDBjMDVjNTVjNTAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMGNjMDAwMDAwMDAwMDAwMDAwMDAwMDAwMGNjMGMwMDAwMDAwMDAwMDAwMDAwY2MwMGNjY2NjYzBjMDAwMDAwMDAwMDAwY2NjYzVjNTU1NWM1MGMwMDAwMDAwMDAwY2M1YjU1NTU1NTU1YzUwMDAwMDBjMDBjYjA1NTU1NTU1NTU1NTUwYzAwMDBjMGNjNWI1NTU1ZjUxZjU1NTVjNTAwMDAwMGJjNTU1NTU1NTVmZjU1NWRjNTAwMDAwMDViNTU1NTU1NTU1NTU1NTVjNTAwYzAwYzViNTVkZDU1NTViYjMxYmIwYzAwYzBjYzVkZDVkZGRkNTViNTMzNTMwYzAwMDBjY2RkZDVkZGRkZGQ1NTNiNTMwYzAwMDBiMGRkZGQ1YmI1ZGRkZDU1NTUwYzAwY2NkY2RkZGQ1YmI1YmJiYmNjY2MwMGMwY2NkY2RkZGRiZDU1NTViY2NjY2MwMGMwY2RkY2RkZGRkZDVjNTViYzVjYzUwMGMwZGRkZGRkZGRkZGNkY2NiYjVjMGMwMGMwZGJkZGRkZGQ1NWJkYmJjYmNjMDAwMGMwYmNkZGRkZGQ1NWQ1YmJjYmNiMDAwMDAwY2NkY2JkYmI1ZDU1YmJjYzBjMDAwMDAwMDBjY2JiYmJkYjU1YzUwYzAwMDAwMDAwMDAwMGNjY2NkYmRkYmQwYzAwMDAwMDAwMDAwMDAwMDBkYzU1NTVjZDAwMDAwMA==\&quot;,\n        \&quot;displayName\&quot;: \&quot;Mama Moving\&quot;\n    },\n    \&quot;{$)z?}bfV-l)2pmioGXr\&quot;: {\n        \&quot;namespace\&quot;: \&quot;myImages.\&quot;,\n        \&quot;id\&quot;: \&quot;{$)z?}bfV-l)2pmioGXr\&quot;,\n        \&quot;mimeType\&quot;: \&quot;application/mkcd-animation\&quot;,\n        \&quot;data\&quot;: \&quot;NjQwMDEwMDAxMDAwMDQwMDAwMDAwMDgwODg4ODAwMDAwMDAwODA2ODY2NjYwODAwMDAwMDg4NjY2NjY2ODYwMDAwMDA5ODY3NjY2NmI3MDgwMDg4OTk3NzY2NjY5NzhiODA2Njk5Nzc2NzY2OTc4OTY4NjY5OTc2Nzc3Nzk2ODk2ODY2OTk4ODg4ODg5ODg5Njg2NmI5YjhiYmI4Yjg4OTY4ODg4OGJiYmJiODhiOGI4ODMzODg2NjY2Njg4Njg4Mzg4Mzg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ZmY4Zjg4ZjhmZjg4ODBmOGNiZmM4OGJmY2MwZjAwMDBiYjBmMDBiMGZiMDAwMDAwMDA4MDg4ODgwMDAwMDAwMDgwNjg2NjY2MDgwMDAwMDA4ODY2NjY2Njg2MDAwMDAwOTg3NzY3NjZiNzA4MDA4ODk5Nzc3NzY2OTc4YjgwNjY5OTc3Nzc2Nzk3ODk2ODY2OTk3Njc3Nzc5Njg5Njg2Njk5ODg4ODg4OTg4OTY4NjZiOWI4YmJiOGI4ODk2ODg4ODhiYmJiYjg4YjhiODgzMzg4NjY2NjY4ODY4ODM4ODM4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4OGZmOGY4OGY4ZmY4ODgwZjhmZmZiODhmZmJmMGYwMDAwYmMwYjAwYzBiYjAwMDAwMDAwODA4ODg4MDAwMDAwMDA4MDY4NjY2NjA4MDAwMDAwODg2NjY2NjY4NjAwMDAwMDk4Njc2Njc3YjcwODAwODg5OTY3NjY3Nzk3OGI4MDY2OTk3NzY2NzY5Nzg5Njg2Njk5NzY3Nzc3OTY4OTY4NjY5OTg4ODg4ODk4ODk2ODY2YjliOGJiYjhiODg5Njg4ODg4YmJiYmI4OGI4Yjg4MzM4ODY2NjY2ODg2ODgzODgzODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODhmZjhmODhmOGZmODg4MGY4YmNmYjg4Y2ZiYjBmMDAwMGZmMGYwMGYwZmYwMDAwMDAwMDgwODg4ODAwMDAwMDAwODA2ODY2NjYwODAwMDAwMDg4NjY2NjY2ODYwMDAwMDA5ODY3NjY2NmI3MDgwMDg4OTk2NzY2NjY5NzhiODA2Njk5Nzc2NjY2OTc4OTY4NjY5OTc2Nzc3Nzk2ODk2ODY2OTk4ODg4ODg5ODg5Njg2NmI5YjhiYmI4Yjg4OTY4ODg4OGJiYmJiODhiOGI4ODMzODg2NjY2Njg4Njg4Mzg4Mzg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ZmY4Zjg4ZjhmZjg4ODBmOGJiZmM4OGJmY2IwZjAwMDBmYzBmMDBjMGZmMDA=\&quot;,\n        \&quot;displayName\&quot;: \&quot;Animated Tourist\&quot;\n    },\n    \&quot;]/cI@:JS;!+E)%*%^wDC\&quot;: {\n        \&quot;namespace\&quot;: \&quot;myImages.\&quot;,\n        \&quot;id\&quot;: \&quot;]/cI@:JS;!+E)%*%^wDC\&quot;,\n        \&quot;mimeType\&quot;: \&quot;application/mkcd-animation\&quot;,\n        \&quot;data\&quot;: \&quot;NjQwMDEwMDAxMDAwMDUwMDAwMDAwMDAwMDAwMDAwMDAwMDAwY2NjYzAwMDAwMDAwMDBjYzU1NTVjYzAwMDAwMGMwNTU1NTU1NTUwYzAwMDA1YzU1NTVmMTU1YzUwMDAwNWM1NTU1ZmY1NTU1MGMwMDVjNTU1NTU1NTU1NTBjMDBjY2JiYjE1NTU1NTVjZDAwNWMzMzUzNTU1NWRkY2QwMGIwNTU1NTU1NTVkZGNkMDAwMGJjY2I1NWRiZGRjZDBjYzBiYjVjYjVkYmRkY2RjZGMwY2NjY2RjZGRkZGRkY2QwMGMwY2NkYzU1ZGJkZDBjMDBjY2NjYmM1NWNiY2MwMDAwYmNiYmRjNTVjYjAwMDAwMDAwY2NjYzBjMDAwMDAwMDBjYzU1NTVjNTAwMDAwMGMwNTU1NWYxNTUwYzAwMDA1YzU1NTVmZjU1YzUwMDAwNWM1NTU1NTU1NTU1MGMwMGNjYmJiMTU1NTU1NTBjMDA1YzMzNTM1NTU1NTVjZDAwNWMzMzUzNTU1NWRkY2QwMGMwNTU1NTViNTVkZGNkMDAwMGJjY2I1NWRiZGRjZDAwYzBiYjVjYjVkYmRkY2RjY2MwY2NjY2RjZGRkZGRkY2QwMDAwY2NiYzU1ZGJkZDBjMDAwMGMwNWRiNWNiY2MwMDAwMDBjY2NjY2MwYzAwMDAwMDAwYmNiYjBjMDAwMDAwMDAwMGNjY2MwYzAwMDAwMDAwY2M1NTU1YzUwMDAwMDBjMDU1NTVmMTU1MGMwMDAwNWM1NTU1ZmY1NWM1MDAwMDVjNTU1NTU1NTU1NTBjMDBjY2JiYjE1NTU1NTUwYzAwNWMzMzUzNTU1NTU1Y2QwMDVjNTU1NTU1NTVkZGNkMDBjMDU1NTU1YjU1ZGRjZDAwMDBiY2NiNTVkYmRkY2QwMGMwYmI1Y2I1ZGJkZGNkY2NjMGNjY2NkY2RkZGRkZGNkMDAwMGNjNWJiNWRkY2QwYzAwMDBkYzU1YmJjYzBjMDAwMDAwY2NjY2NjMGMwMDAwMDAwMGJjYmIwYzAwMDAwMDAwMDBjY2NjMGMwMDAwMDAwMGNjNTU1NWM1MDAwMDAwYzA1NTU1ZjE1NTBjMDAwMDVjNTU1NWZmNTVjNTAwMDA1YzU1NTU1NTU1NTUwYzAwY2NiYmIxNTU1NTU1MGMwMDVjMzM1MzU1NTU1NWNkMDA1YzU1NTU1NTU1ZGRjZDAwYzA1NTU1NWI1NWRkY2QwMDAwYmNjYjU1ZGJkZGNkMDBjMGJiNWNiNWRiZGRjZDBjYzBjY2NjYmJkZGRkZGRjYzAwYzA1Y2I1NTVkZGRkY2QwMDAwYmM1NWJiY2NjY2NjMDAwMGNjY2NjYzAwMDAwMDAwMDBjMGJiY2IwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMGNjY2MwMDAwMDAwMDAwY2M1NTU1Y2MwMDAwMDBjMDU1NTU1NTU1MGMwMDAwNWM1NTU1ZjE1NWM1MDAwMDVjNTU1NWZmNTU1NTBjMDBjY2JiYjE1NTU1NTUwYzAwY2MzM2JiNTU1NTU1Y2QwMDVjMzM1MzU1NTVkZGNkMDBiMDU1NTU1NTU1ZGRjZDAwMDBiY2NiNTVkYmRkY2QwMGMwYmI1Y2I1ZGJkZGNkY2NjMGNjY2NkY2RkZGRkZGNkMDBjMGNjZGM1NWRiZGRjYzAwYzBjYmJjNTVjYmNjMDAwMGMwY2M1ZGI1MGMwMDAw\&quot;,\n        \&quot;displayName\&quot;: \&quot;Animated Baby\&quot;\n    },\n    \&quot;*\&quot;: {\n        \&quot;mimeType\&quot;: \&quot;image/x-mkcd-f4\&quot;,\n        \&quot;dataEncoding\&quot;: \&quot;base64\&quot;,\n        \&quot;namespace\&quot;: \&quot;myImages\&quot;\n    }\n}&quot;,
+  &quot;images.g.ts&quot;: &quot;// Auto-generated code. Do not edit.\nnamespace myImages {\n\n    helpers._registerFactory(\&quot;image\&quot;, function(name: string) {\n        switch(helpers.stringTrim(name)) {\n            case \&quot;HSB#hx_+P`azBCey0vH4\&quot;:\n            case \&quot;Mama\&quot;:return img`\n........................\n........................\n...........cc...........\n...........cccc.........\n.......cc...ccccccc.....\n.......cccccc555555cc...\n........ccb5555555555c..\n.....cc..b555555555555c.\n.....cccb555555ff155555c\n.....ccb55555555ff55d55c\n......b5555555555555555c\n...c..b555d55555bb13bbc.\n...cccd55ddddd55bb3335c.\n....cbdddddddddd55b335c.\n..cccdddddb55bdddd5555c.\n..cccdddddb555bbbbcccc..\n...ccddddddb5555cbcdc...\nccccbdddddddcb55cbcc....\ncddddddddd55dbccbbc.....\ncbdddddddd555dbbbcc.....\n.ccbdddbbdd555bbcdbcc...\n...cccbbbbdd55ccdddbc...\n......cccbdddbccccccc...\n........cdd555dc........\n`;\n            case \&quot;X4JB-Z#5z{GHg)(9D5!a\&quot;:\n            case \&quot;Freeway\&quot;:return img`\n9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999\n9999999999999999999999999999999999999999999999999999111111111119999999999999999999999999999999999999991111999999999999999999999999999999999999999999111111111111\n99999999999999999999999999999999999999999999999999991ddddddddd19999999999999999999999999991111199999991dd11999999999999999999999999999999999999999991dddddddddd1\n99999999999999999999999999999911111999999999999999991ddddddddd19999999999999999999999999991ddd199999991ddd1999999999999999999991111999999999999999991dddddddddd1\n9999999999999999999999999999911ddd1199999999999999991d11dddddd19999999999999999999999999111ddd111999911ddd1199999999999999999911dd1199999999999999991dd1d1ddddd1\n999999999999999999999999999911ddddd199999999999999991ddddddd1d199999999111999999111111191ddddddd199991ddddd19999999999999999111dddd199999999999999991dddddd11dd1\n99999911119999999999999999991dddddd199911199999999991ddddddddd1999999911d19999991ddddd191ddddddd199911ddddd119999999999999991dddddd199911119999999991dddddddddd1\n9999991dd19999999999999999991ddd1d119991d199999999991ddddddddd199999991dd19999991ddddd191ddddddd199911ddddd119999999999999991ddd1d119991dd19999999991dddd1ddddd1\n1111111dd19111111991111111111dddddd19111d111999999991ddddddd1d111111111dd19999991ddddd111d11dddd19111ddddddd11111991111111111dddddd19911dd11999999991ddddddd1dd1\nd11dddddd191d1dd1991ddddddddddd1ddd111ddddd1111111111ddddddd1d11d11ddd1dd199999911dd1dd11ddddddd191dddddddddd1dd1991ddddddddddddd1d1111dddd1191111111dddddd11ddd\ndddd1dddd191dddd19911d1dd1ddddddddd111ddddd111dd1dd11ddddddddd11dddd1d1dd11111111dddddd11dd1dddd191ddddddddddddd1991dd1ddd1dddddddd1111dddd1191d11dd1ddddddddddd\nddddddddd111dd1d1111dddddddddddddddd11dddddd11ddddddddddddddddd1ddddddddd11d11d11ddddddddddddddd191ddddddddddd1d1111dddddddddddddddd11dddddd111ddddddddddddddddd\nd11d1dddd1ddddddd1dd1d1ddddddddddddd11ddddddd1dddd11ddddddddddddd1111ddddddd1ddd11dd1ddddddddddd111ddddddddddddddd1ddd1ddddddddddddd11ddddddd111d11ddddddddddddd\nddddddddd1ddddddd1dddddddddddddddddddd1dddddd11ddddddddddddddddddddddddddddd1ddd1ddddddddddddddd1d1ddddddddddddddd1dddddddddddddddddddddddddd1dddddddddddddddddd\ncccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc\n1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111\n11ccccccccccc11cccccccccccc11ccccccccccc11ccccccccccc11cccccccccccc11ccccccccccc11ccccccccccc11cccccccccccc11ccccccccccc11ccccccccccc11cccccccccccc11ccccccccccc\n11cdddddddddc11cddddddddddc11cdddddddddc11cdddddddddc11cddddddddddc11cdddddddddc11cdddddddddc11cddddddddddc11cdddddddddc11cdddddddddc11cddddddddddc11cdddddddddc\n11cdddddddddc11cddddddddddc11cdddddddddc11cdddddddddc11cddddddddddc11cdddddddddc11cdddddddddc11cddddddddddc11cdddddddddc11cdddddddddc11cddddddddddc11cdddddddddc\nbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb\nbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb\nbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb\nbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb\n111d1111d111dd11dd1111111111dddd11111111111d1111d111dd11dd1111111111dddd11111111111d1111d111dd11dd1111111111dddd11111111111d1111d111dd11dd1111111111dddd1111111d\n11ddd111111dddd11dd11111111111d1d111111111ddd111111dddd11dd11111111111d1d111111111ddd111111dddd11dd11111111111d1d111111111ddd111111dddd11dd11111111111d1d1111111\nbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb\nbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb\nbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbccccbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb\nbbbbbbbbbbbbbccccbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbccccbccbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb\nbbbbbbbbbbbbcbddbcbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbccbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb\nbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbcbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb\nbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb\nbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb\nbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb\nbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb\nbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb\nbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb\nbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb\nbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb\nbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb\nbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb\nbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb\nbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb\nbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb\nbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb\n1111111dddd11111ddbbbbbbbbbbbbbbbbbdd1111111111dddd11111ddbbbbbbbbbbbbbbbbbdd1111111111dddd11111ddbbbbbbbbbbbbbbbbbdd1111111111dddd11111ddbbbbbbbbbbbbbbbbbdd111\n111111111d1d11111ddbbbbbbbbbbbbbbbbbdd11111111111d1d11111ddbbbbbbbbbbbbbbbbbdd11111111111d1d11111ddbbbbbbbbbbbbbbbbbdd11111111111d1d11111ddbbbbbbbbbbbbbbbbbdd11\nbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb\nbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb\nbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb\nbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb\nbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb\nbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbcbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb\nbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbcccbbbccccbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb\nbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbcbbcbbcbcbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb\nbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbccbcbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb\nbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbcccccbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb\nbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbcbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb\nbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbccccbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb\nbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbcbddbcbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb\nbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb\nbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb\nbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb\nbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb\nbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb\nbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb\nbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb\nbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb\nbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb\n1111111111dddd11111111111d1111d111dd11dd1111111111dddd11111111111d1111d111dd11dd1111111111dddd11111111111d1111d111dd11dd1111111111dddd1111111d111d1111d111dd11dd\nd11111111111d1d111111111ddd111111dddd11dd11111111111d1d111111111ddd111111dddd11dd11111111111d1d111111111ddd111111dddd11dd11111111111d1d111111111ddd111111dddd11d\nbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb\nbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb\n111d1111d111dd11dd1111111111dddd11111111111d1111d111dd11dd1111111111dddd11111111111d1111d111dd11dd1111111111dddd11111111111d1111d111dd11dd1111111111dddd1111111d\n11ddd111111dddd11dd11111111111d1d111111111ddd111111dddd11dd11111111111d1d111111111ddd111111dddd11dd11111111111d1d111111111ddd111111dddd11dd11111111111d1d1111111\nbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb\nbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb\nbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb\nbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb\nbbbcccbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb\nbbccbbcbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb\ncccbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbc\nbccbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbcccc\nccccbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbccbbbb\nbbbbccbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb\nbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb\nbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb\nbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb\nbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb\nbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb\nbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb\nbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbccccbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb\nbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbcbddbcbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb\nbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb\nbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb\nbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb\nbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb\nbbbbbbbbbbbbbbbbdd1111111111dddd11111ddbbbbbbbbbbbbbbbbbdd1111111111dddd11111ddbbbbbbbbbbbbbbbbbdd1111111111dddd11111ddbbbbbbbbbbbbbbbbbdd1111111111dddd11111ddb\nbbbbbbbbbbbbbbbbbdd11111111111d1d11111ddbbbbbbbbbbbbbbbbbdd11111111111d1d11111ddbbbbbbbbbbbbbbbbbdd11111111111d1d11111ddbbbbbbbbbbbbbbbbbdd11111111111d1d11111dd\nbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb\nbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb\nbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb\nbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb\nbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb\nbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb\nbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb\nbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb\nbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb\nbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb\nccbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbcc\ndbcbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbcbd\nbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb\nbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb\nbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb\nbbbbbbbbbbbbbbbbbbbbbbbbbbbbbccbbbbbbbbcbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb\nbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbcccccccbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb\nbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbcbcbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb\nbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbcccbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb\nbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbccbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb\nbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb\n`;\n            case \&quot;:-%p!6dsfn@Cn4?(/f-u\&quot;:\n            case \&quot;Tourist\&quot;:return img`\n. . . . . . . 8 8 8 8 8 . . . . \n. . . . . 8 8 6 6 6 6 6 8 . . . \n. . . . 8 8 6 6 6 6 6 6 6 8 . . \n. . . . 8 9 7 6 6 6 6 6 7 b 8 . \n. . 8 8 9 9 7 7 6 6 6 6 7 9 b 8 \n. 8 6 6 9 9 7 7 7 6 6 6 7 9 9 8 \n8 6 6 6 9 9 6 7 7 7 7 7 6 9 9 8 \n8 6 6 6 9 9 8 8 8 8 8 8 8 9 9 8 \n8 6 6 6 9 b 8 b b b 8 b 8 b 9 8 \n8 6 8 8 8 8 b b b b 8 b b 8 b 8 \n8 8 3 3 8 8 6 6 6 6 8 6 6 8 8 8 \n8 3 3 8 8 8 8 8 8 8 8 8 8 8 8 8 \n8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 \n8 8 8 8 f f f 8 8 8 8 f f f 8 8 \n. 8 8 f b c c f 8 8 f b c c f . \n. . . . b b f . . . . b b f . . \n`;\n            case \&quot;IHAx{+JAVkkR7;45OS*f\&quot;:\n            case \&quot;Baby\&quot;:return img`\n. . . . . . . . . . . . . . . . \n. . . . c c c c . . . . . . . . \n. . c c 5 5 5 5 c c . . . . . . \n. c 5 5 5 5 5 5 5 5 c . . . . . \nc 5 5 5 5 5 1 f 5 5 5 c . . . . \nc 5 5 5 5 5 f f 5 5 5 5 c . . . \nc 5 5 5 5 5 5 5 5 5 5 5 c . . . \nc c b b 1 b 5 5 5 5 5 5 d c . . \nc 5 3 3 3 5 5 5 5 5 d d d c . . \n. b 5 5 5 5 5 5 5 5 d d d c . . \n. . c b b c 5 5 b d d d d c c . \n. c b b c 5 5 b b d d d d c d c \n. c c c c c c d d d d d d d d c \n. . . c c c c d 5 5 b d d d c . \n. . c c c c c b 5 5 b c c c . . \n. . c b b b c d 5 5 b c . . . . \n`;\n            case \&quot;Bx$o-u1n\&quot;:\n            case \&quot;Extra Life\&quot;:return img`\n. . . . . . . . . . . . . . . . \n. . . . . . . . . . . . . . . . \n. . . . . . . . . . . . . . . . \n. . c c c . . . . . c c c . . . \n. c 2 2 2 c c . c c 2 2 2 c . . \n. c 2 2 2 2 2 c 2 2 2 2 2 c . . \n. c 2 2 2 2 2 2 2 2 2 2 2 c . . \n. c 2 2 2 2 2 2 2 2 2 2 2 c . . \n. c 2 2 2 2 2 2 2 2 2 2 2 c . . \n. . c 2 2 2 2 2 2 2 2 2 c . . . \n. . . c 2 2 2 2 2 2 2 c . . . . \n. . . . c c 2 2 2 c c . . . . . \n. . . . . . c 2 c . . . . . . . \n. . . . . . . c . . . . . . . . \n. . . . . . . . . . . . . . . . \n. . . . . . . . . . . . . . . . \n`;\n        }\n        return null;\n    })\n\n    helpers._registerFactory(\&quot;animation\&quot;, function(name: string) {\n        switch(helpers.stringTrim(name)) {\n            case \&quot;Mama Moving\&quot;:\n            case \&quot;;bp3BS6:4IVA7v,VAfR(\&quot;:return [img`\n........................\n........................\n...........cc...........\n...........cccc.........\n.......cc...ccccccc.....\n.......cccccc555555cc...\n........ccb5555555555c..\n.....cc..b555555555555c.\n.....cccb555555ff155555c\n.....ccb55555555ff55d55c\n......b5555555555555555c\n...c..b555d55555bb13bbc.\n...cccd55ddddd55bb3335c.\n....cbdddddddddd55b335c.\n..cccdddddb55bdddd5555c.\n..cccdddddb555bbbbcccc..\n...ccddddddb5555cbcdc...\nccccbdddddddcb55cbcc....\ncddddddddd55dbccbbc.....\ncbdddddddd555dbbbcc.....\n.ccbdddbbdd555bbcdbcc...\n...cccbbbbdd55ccdddbc...\n......cccbdddbccccccc...\n........cdd555dc........\n`, img`\n........................\n........................\n...........ccc..........\n...........cccc.........\n.......ccc..ccccccc.....\n.......cccccc555555cc...\n........ccb5555555555c..\n.....cc..b555555555555c.\n.....cccb555555ff155555c\n......cb55555555ff55d55c\n......b5555555555555555c\n...cc.b555dd5555bb13bbc.\n...cccd55ddddd555b3335c.\n.....bdddddddddd55b335c.\n..cccdddddb55bbddd5555c.\n..cccdddddb555bbbbcccc..\n...ccddddddb5555cbcdc...\nccccbdddddd5cb55cbcc....\ncddddddddd5555ccbbc.....\n.cddddddbdd555bbbcc.....\n..ccdddbbbdd55cbcdc.....\n....ccbbcbddddccdddcc...\n......cccdd555dcccccc...\n........cccccccc........\n`, img`\n........................\n............cc..........\n............ccc.........\n........ccc.ccccccc.....\n........ccccc555555cc...\n........ccb5555555555c..\n.....ccc.b55555ff15555c.\n.....cccb5555555ff55555c\n......cb555555555555d55c\n....c.b555555555bb55555c\n....ccb555ddd5555b13bbc.\n....ccd55ddddd555b3335c.\n.....cdd5ddddddd55b335c.\n...c.bddddb555bbbd555c..\n...ccdddddbb55555bccc...\n...ccdddddddcc555bcc....\n...ccddddddddbcccbcccc..\n.ccbddddddd55dbbbbc55c..\nccddddddddd555dbbcc5c...\ncddddddbbbdd555bbccc....\n.ccddddbbbbdd55bcc......\n...cccbbbbbdddbcddcc....\n.....cccccdd555dcccc....\n..........cccccc........\n`, img`\n........................\n............cc..........\n............ccc.........\n........ccc.ccccccc.....\n........ccccc555555cc...\n........ccb5555555555c..\n.....ccc.b55555ff15555c.\n.....cccb5555555ff55555c\n......cb555555555555d55c\n....c.b555555555bb55555c\n....ccb555ddd5555b13bbc.\n....ccd55ddddd555b3335c.\n.....cdd5ddddddd55b335c.\n...c.bddddb555bbbd555c..\n...ccdddddbb55555bccc...\n...ccdddddddcc555bcc....\n.ccccdddddddddcccbcccc..\n.cdcdddddddd55dbbbc55c..\n.cdddddddddd555dccc5c...\n.cbddddbbbbdd5d555cc....\n..cbdddbbbbbdd5555......\n...cccbbbbbbd5555c......\n.....cccccccc555c.......\n.............ccc........\n`, img`\n........................\n............cc..........\n............ccc.........\n........ccc.ccccccc.....\n........ccccc555555cc...\n........ccb5555555555c..\n.....ccc.b55555ff15555c.\n.....cccb5555555ff55555c\n......cb555555555555d55c\n....c.b555555555bb55555c\n....ccb555ddd5555b13bbc.\n....ccd55ddddd555b3335c.\n.....cdd5ddddddd55b335c.\n...c.bddddb555bbbd555c..\n...ccdddddb555555bccc...\n..cccddddddcc5555bcc....\n.cdccddddddddbcccbcccc..\n.cddbdddddddddbbbbc55c..\n.cdddddddddd55dbbbc5c...\n.cbddddbbbbd55ddbccc....\n..cbdddbbbbd555dccc.....\n...cccbbbbbbddd555c.....\n.....ccccccbd55555c.....\n...........cc5555c......\n`, img`\n........................\n............cc..........\n............ccc.........\n........cc..ccccccc.....\n........ccccc555555cc...\n........ccb5555555555c..\n.....cc..b555555555555c.\n.....cccb555555ff155555c\n......cb55555555ff55d55c\n......b5555555555555555c\n...cc.b555dd5555bb13bbc.\n...cccd55ddddd555b3335c.\n....ccdd5ddddddd55b335c.\n.....bddddb55bdddd5555c.\n..cccdddddb55bbbbbcccc..\n.ccccddddddb5555cbcccc..\n.cdccdddddddc555cbc55c..\n.cdddddddddddcccbbc5c...\n.cbddddddd55dbbbbccc....\n.ccbdddddd555dbbbcbc....\n..cccddbbbd555bbccc.....\n....ccbbbbbd555cc.......\n......ccccbddddbc.......\n..........cd5555dc......\n`];\n            case \&quot;Animated Tourist\&quot;:\n            case \&quot;{$)z?}bfV-l)2pmioGXr\&quot;:return [img`\n. . . . . . . 8 8 8 8 8 . . . . \n. . . . . 8 8 6 6 6 6 6 8 . . . \n. . . . 8 8 6 6 6 6 6 6 6 8 . . \n. . . . 8 9 7 6 6 6 6 6 7 b 8 . \n. . 8 8 9 9 7 7 6 6 6 6 7 9 b 8 \n. 8 6 6 9 9 7 7 7 6 6 6 7 9 9 8 \n8 6 6 6 9 9 6 7 7 7 7 7 6 9 9 8 \n8 6 6 6 9 9 8 8 8 8 8 8 8 9 9 8 \n8 6 6 6 9 b 8 b b b 8 b 8 b 9 8 \n8 6 8 8 8 8 b b b b 8 b b 8 b 8 \n8 8 3 3 8 8 6 6 6 6 8 6 6 8 8 8 \n8 3 3 8 8 8 8 8 8 8 8 8 8 8 8 8 \n8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 \n8 8 8 8 f f f 8 8 8 8 f f f 8 8 \n. 8 8 f b c c f 8 8 f b c c f . \n. . . . b b f . . . . b b f . . \n`, img`\n. . . . . . . 8 8 8 8 8 . . . . \n. . . . . 8 8 6 6 6 6 6 8 . . . \n. . . . 8 8 6 6 6 6 6 6 6 8 . . \n. . . . 8 9 7 7 7 6 6 6 7 b 8 . \n. . 8 8 9 9 7 7 7 7 6 6 7 9 b 8 \n. 8 6 6 9 9 7 7 7 7 7 6 7 9 9 8 \n8 6 6 6 9 9 6 7 7 7 7 7 6 9 9 8 \n8 6 6 6 9 9 8 8 8 8 8 8 8 9 9 8 \n8 6 6 6 9 b 8 b b b 8 b 8 b 9 8 \n8 6 8 8 8 8 b b b b 8 b b 8 b 8 \n8 8 3 3 8 8 6 6 6 6 8 6 6 8 8 8 \n8 3 3 8 8 8 8 8 8 8 8 8 8 8 8 8 \n8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 \n8 8 8 8 f f f 8 8 8 8 f f f 8 8 \n. 8 8 f f f b f 8 8 f f f b f . \n. . . . c b b . . . . c b b . . \n`, img`\n. . . . . . . 8 8 8 8 8 . . . . \n. . . . . 8 8 6 6 6 6 6 8 . . . \n. . . . 8 8 6 6 6 6 6 6 6 8 . . \n. . . . 8 9 7 6 6 6 7 7 7 b 8 . \n. . 8 8 9 9 7 6 6 6 7 7 7 9 b 8 \n. 8 6 6 9 9 7 7 6 6 6 7 7 9 9 8 \n8 6 6 6 9 9 6 7 7 7 7 7 6 9 9 8 \n8 6 6 6 9 9 8 8 8 8 8 8 8 9 9 8 \n8 6 6 6 9 b 8 b b b 8 b 8 b 9 8 \n8 6 8 8 8 8 b b b b 8 b b 8 b 8 \n8 8 3 3 8 8 6 6 6 6 8 6 6 8 8 8 \n8 3 3 8 8 8 8 8 8 8 8 8 8 8 8 8 \n8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 \n8 8 8 8 f f f 8 8 8 8 f f f 8 8 \n. 8 8 f c b b f 8 8 f c b b f . \n. . . . f f f . . . . f f f . . \n`, img`\n. . . . . . . 8 8 8 8 8 . . . . \n. . . . . 8 8 6 6 6 6 6 8 . . . \n. . . . 8 8 6 6 6 6 6 6 6 8 . . \n. . . . 8 9 7 6 6 6 6 6 7 b 8 . \n. . 8 8 9 9 7 6 6 6 6 6 7 9 b 8 \n. 8 6 6 9 9 7 7 6 6 6 6 7 9 9 8 \n8 6 6 6 9 9 6 7 7 7 7 7 6 9 9 8 \n8 6 6 6 9 9 8 8 8 8 8 8 8 9 9 8 \n8 6 6 6 9 b 8 b b b 8 b 8 b 9 8 \n8 6 8 8 8 8 b b b b 8 b b 8 b 8 \n8 8 3 3 8 8 6 6 6 6 8 6 6 8 8 8 \n8 3 3 8 8 8 8 8 8 8 8 8 8 8 8 8 \n8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 \n8 8 8 8 f f f 8 8 8 8 f f f 8 8 \n. 8 8 f b b c f 8 8 f b b c f . \n. . . . c f f . . . . c f f . . \n`];\n            case \&quot;Animated Baby\&quot;:\n            case \&quot;]/cI@:JS;!+E)%*%^wDC\&quot;:return [img`\n. . . . . . . . . . . . . . . . \n. . . . c c c c . . . . . . . . \n. . c c 5 5 5 5 c c . . . . . . \n. c 5 5 5 5 5 5 5 5 c . . . . . \nc 5 5 5 5 5 1 f 5 5 5 c . . . . \nc 5 5 5 5 5 f f 5 5 5 5 c . . . \nc 5 5 5 5 5 5 5 5 5 5 5 c . . . \nc c b b 1 b 5 5 5 5 5 5 d c . . \nc 5 3 3 3 5 5 5 5 5 d d d c . . \n. b 5 5 5 5 5 5 5 5 d d d c . . \n. . c b b c 5 5 b d d d d c c . \n. c b b c 5 5 b b d d d d c d c \n. c c c c c c d d d d d d d d c \n. . . c c c c d 5 5 b d d d c . \n. . c c c c c b 5 5 b c c c . . \n. . c b b b c d 5 5 b c . . . . \n`, img`\n. . . . c c c c c . . . . . . . \n. . c c 5 5 5 5 5 c . . . . . . \n. c 5 5 5 5 1 f 5 5 c . . . . . \nc 5 5 5 5 5 f f 5 5 5 c . . . . \nc 5 5 5 5 5 5 5 5 5 5 5 c . . . \nc c b b 1 b 5 5 5 5 5 5 c . . . \nc 5 3 3 3 5 5 5 5 5 5 5 d c . . \nc 5 3 3 3 5 5 5 5 5 d d d c . . \n. c 5 5 5 5 b 5 5 5 d d d c . . \n. . c b b c 5 5 b d d d d c . . \n. c b b c 5 5 b b d d d d c c c \n. c c c c c c d d d d d d d d c \n. . . . c c c b 5 5 b d d d c . \n. . . . . c d 5 5 b b c c c . . \n. . . . c c c c c c c . . . . . \n. . . . c b b b c . . . . . . . \n`, img`\n. . . . c c c c c . . . . . . . \n. . c c 5 5 5 5 5 c . . . . . . \n. c 5 5 5 5 1 f 5 5 c . . . . . \nc 5 5 5 5 5 f f 5 5 5 c . . . . \nc 5 5 5 5 5 5 5 5 5 5 5 c . . . \nc c b b 1 b 5 5 5 5 5 5 c . . . \nc 5 3 3 3 5 5 5 5 5 5 5 d c . . \nc 5 5 5 5 5 5 5 5 5 d d d c . . \n. c 5 5 5 5 b 5 5 5 d d d c . . \n. . c b b c 5 5 b d d d d c . . \n. c b b c 5 5 b b d d d d c c c \n. c c c c c c d d d d d d d d c \n. . . . c c b 5 5 b d d d c c . \n. . . . c d 5 5 b b c c c . . . \n. . . . c c c c c c c . . . . . \n. . . . c b b b c . . . . . . . \n`, img`\n. . . . c c c c c . . . . . . . \n. . c c 5 5 5 5 5 c . . . . . . \n. c 5 5 5 5 1 f 5 5 c . . . . . \nc 5 5 5 5 5 f f 5 5 5 c . . . . \nc 5 5 5 5 5 5 5 5 5 5 5 c . . . \nc c b b 1 b 5 5 5 5 5 5 c . . . \nc 5 3 3 3 5 5 5 5 5 5 5 d c . . \nc 5 5 5 5 5 5 5 5 5 d d d c . . \n. c 5 5 5 5 b 5 5 5 d d d c . . \n. . c b b c 5 5 b d d d d c . . \n. c b b c 5 5 b b d d d d c c . \n. c c c c c b b d d d d d d c c \n. . . c c 5 5 b 5 5 d d d d d c \n. . . . c b 5 5 b b c c c c c c \n. . . . c c c c c c . . . . . . \n. . . . . c b b b c . . . . . . \n`, img`\n. . . . . . . . . . . . . . . . \n. . . . c c c c . . . . . . . . \n. . c c 5 5 5 5 c c . . . . . . \n. c 5 5 5 5 5 5 5 5 c . . . . . \nc 5 5 5 5 5 1 f 5 5 5 c . . . . \nc 5 5 5 5 5 f f 5 5 5 5 c . . . \nc c b b 1 b 5 5 5 5 5 5 c . . . \nc c 3 3 b b 5 5 5 5 5 5 d c . . \nc 5 3 3 3 5 5 5 5 5 d d d c . . \n. b 5 5 5 5 5 5 5 5 d d d c . . \n. . c b b c 5 5 b d d d d c . . \n. c b b c 5 5 b b d d d d c c c \n. c c c c c c d d d d d d d d c \n. . . c c c c d 5 5 b d d d c c \n. . . c b c c b 5 5 b c c c . . \n. . . c c c d 5 5 b c . . . . . \n`];\n        }\n        return null;\n    })\n\n}\n// Auto-generated code. Do not edit.\n&quot;,
+  &quot;main.blocks&quot;: &quot;&lt;xml xmlns=\&quot;https://developers.google.com/blockly/xml\&quot;&gt;&lt;variables&gt;&lt;variable type=\&quot;KIND_SpriteKind\&quot; id=\&quot;*BrE]slk{%p[|_,[Blfb\&quot;&gt;Player&lt;/variable&gt;&lt;variable type=\&quot;KIND_SpriteKind\&quot; id=\&quot;MlJWwPbtZMs?R3WH[4w,\&quot;&gt;Projectile&lt;/variable&gt;&lt;variable type=\&quot;KIND_SpriteKind\&quot; id=\&quot;Ig-0z}DUvXe9^HJt@9!B\&quot;&gt;Food&lt;/variable&gt;&lt;variable type=\&quot;KIND_SpriteKind\&quot; id=\&quot;Sd:$Fd0Yk%OhFz-WL~G$\&quot;&gt;Enemy&lt;/variable&gt;&lt;variable id=\&quot;i*xN?bKlVb*T^747`D6H\&quot;&gt;projectile2&lt;/variable&gt;&lt;variable id=\&quot;yZPDc$#}T):iDkIa-%I3\&quot;&gt;projectile&lt;/variable&gt;&lt;variable id=\&quot;BIvF;A%Av:nbCRJmLu8q\&quot;&gt;mySprite&lt;/variable&gt;&lt;/variables&gt;&lt;/xml&gt;&quot;,
+  &quot;main.ts&quot;: &quot;\n&quot;,
+  &quot;pxt.json&quot;: &quot;{\n    \&quot;name\&quot;: \&quot;dino - assets only\&quot;,\n    \&quot;description\&quot;: \&quot;\&quot;,\n    \&quot;dependencies\&quot;: {\n        \&quot;device\&quot;: \&quot;*\&quot;,\n        \&quot;core\&quot;: \&quot;*\&quot;,\n        \&quot;arcade-background-scroll\&quot;: \&quot;github:microsoft/arcade-background-scroll/\&quot;\n    },\n    \&quot;files\&quot;: [\n        \&quot;main.blocks\&quot;,\n        \&quot;main.ts\&quot;,\n        \&quot;README.md\&quot;,\n        \&quot;assets.json\&quot;,\n        \&quot;images.g.jres\&quot;,\n        \&quot;images.g.ts\&quot;\n    ],\n    \&quot;targetVersions\&quot;: {\n        \&quot;branch\&quot;: \&quot;v1.6.24\&quot;,\n        \&quot;tag\&quot;: \&quot;v1.6.24\&quot;,\n        \&quot;commits\&quot;: \&quot;https://github.com/microsoft/pxt-arcade/commits/5bea1575ea693e0648a647cbd86cda9776d58f48\&quot;,\n        \&quot;target\&quot;: \&quot;1.6.24\&quot;,\n        \&quot;pxt\&quot;: \&quot;7.2.25\&quot;\n    },\n    \&quot;preferredEditor\&quot;: \&quot;blocksprj\&quot;\n}\n&quot;
+}</code></pre>
+
+    </div>
+
+					<div class="hideprint"></div>
+				</div>
+
+			</div>
+
+			
+<!-- include footer.html -->
+<footer class="ui vertical footer segment hideprint docs inverted" aria-hidden="false">
+    <div class="ui center aligned container">
+        <div class="ui horizontal link list">
+            <a
+                class="item"
+                href="https://twitter.com/intent/follow?screen_name=MsMakeCode"
+                title="Follow us on Twitter"
+                target="_blank"
+                rel="noopener">
+                <i class="huge icon twitter"></i>
+            </a>
+            <a class="item" href="https://www.youtube.com/channel/UCye7YlvFUUQ1dSy0WZZ1T_Q" title="Subscribe to our YouTube channel"
+                target="_blank" rel="noopened">
+                <i class="huge icon youtube"></i>
+            </a>
+            <a class="item" href="mailto:makecode@microsoft.com" title="Send us an Email"
+                target="_blank" rel="noopened">
+                <i class="huge icon mail"></i>
+            </a>
+        </div>
+        <div class="ui section divider"></div>
+        <div class="ui container horizontal small divided link list">
+            <a id="langpicker" tabindex="0" class="ui item" rel="noopener">
+                <i class="icon xicon globe" aria-hidden="true" role="presentation"></i>Language
+            </a>
+            <a class="item" href="https://makecode.com/privacy" target="_blank" rel="noopener">Privacy &amp; Cookies</a>
+            <a class="item" href="https://makecode.com/termsofuse" target="_blank" rel="noopener">Terms Of Use</a>
+            <a class="item" href="https://makecode.com/trademarks" target="_blank" rel="noopener">Trademarks</a>
+            <span class="item">© 2022 Microsoft</span>
+        </div>
+        <div class="ui container horizontal small link list poweredBy">
+            <span class="item">Powered by</span>
+            <a class="middle aligned" href="https://makecode.com/" title="Microsoft MakeCode"
+                target="_blank" rel="noopener">
+                <img width="100" src="/static/logo/Microsoft-logo_rgb_c-gray.png" alt="Microsoft">
+            </a>
+        </div>
+    </div>
+</footer>
+
+<!-- end include footer.html -->
+
+
+		</div>
+
+	</div>
+
+    
+<!-- include langpicker.html -->
+<div id="langmodal" class="ui modal docs" role="dialog" aria-modal="true" aria-describedby="langmodalheader" tabindex="-1">
+    <h2 id="langmodalheader" class="header">Select Language</h2>
+    <div role="button" class="closeIcon" tabindex="0" aria-label="Close">
+        <i class="icon close remove circle" aria-hidden="true"></i>
+    </div>
+
+	<div class="content">
+	    <div class="group">
+            <div id="availablelocales" class="ui cards centered" role="listbox" aria-label="List of available locales"></div>
+        </div>
+        <div class="ui" id="langmodalfooter">
+            <a class="ui" href="/pxt-arcade-app/docs/translate.html" target="_blank" rel="noopener noreferrer">
+                How do I add a new language?
+            </a>
+
+            <a id="translatebtn" class="ui button" role="button" tabindex="0">
+                Translate this page
+            </a>
+        </div>
+    </div>
+</div>
+
+
+<!-- end include langpicker.html -->
+
+	
+<!-- include macros.html -->
+<!-- macro button -->
+
+<!-- macro vimeo -->
+
+<!-- macro youtube -->
+
+<!-- macro section -->
+
+<!-- macro hide -->
+
+<!-- macro avatar -->
+
+<!-- macro hint -->
+
+<!-- macro codecard -->
+
+<!-- macro tutorialhint -->
+
+<!-- macro reminder -->
+
+<!-- macro alert -->
+
+<!-- macro tip -->
+
+<!-- wrapped around ordinary content -->
+<!-- macro main-container -->
+
+<!-- used for 'column' box - they are collected and wrapped in 'column-container' -->
+<!-- macro column -->
+<!-- macro column-container -->
+
+
+<!-- Menu on the top of the page -->
+<!-- macro item -->
+
+<!-- macro divider -->
+
+<!-- TOC in the sidebar -->
+<!-- macro item -->
+
+<!-- macro divider -->
+
+<!-- macro toc-dropdown -->
+
+<!-- macro toc-dropdown-noLink -->
+
+<!-- macro toc-dropdown-noHeading -->
+
+<!-- TODO: duplicates of above for compatability with docsrender.ts;
+    remove with pxtlib/docsrender.ts TOC TODOs after cloud bump. -->
+<!-- macro top-dropdown -->
+
+<!-- macro top-dropdown-noHeading -->
+
+<!-- macro inner-dropdown -->
+
+<!-- macro nested-dropdown -->
+<!-- end include macros.html -->
+
+	
+<!-- include tracking.html -->
+<script type="text/javascript" src="/pxt-arcade-app/pxtweb.js"></script>
+<script type="text/javascript">
+    window.loadAppInsights = function (includeCookie) {
+        //Backend will patch / + doccdn + / with CDN url and the check that URL ends with the sha would pass
+        var isProduction = includeCookie && (/[0-9a-f]{40}\/ai\.2\.min\.js$/.test("/pxt-arcade-app/ai.2.min.js"));
+        !function(T,l,y){var S=T.location,k="script",D="connectionString",C="ingestionendpoint",I="disableExceptionTracking",E="ai.device.",b="toLowerCase",w="crossOrigin",N="POST",e="appInsightsSDK",t=y.name||"appInsights";(y.name||T[e])&&(T[e]=t);var n=T[t]||function(d){var g=!1,f=!1,m={initialize:!0,queue:[],sv:"5",version:2,config:d};function v(e,t){var n={},a="Browser";return n[E+"id"]=a[b](),n[E+"type"]=a,n["ai.operation.name"]=S&&S.pathname||"_unknown_",n["ai.internal.sdkVersion"]="javascript:snippet_"+(m.sv||m.version),{time:function(){var e=new Date;function t(e){var t=""+e;return 1===t.length&&(t="0"+t),t}return e.getUTCFullYear()+"-"+t(1+e.getUTCMonth())+"-"+t(e.getUTCDate())+"T"+t(e.getUTCHours())+":"+t(e.getUTCMinutes())+":"+t(e.getUTCSeconds())+"."+((e.getUTCMilliseconds()/1e3).toFixed(3)+"").slice(2,5)+"Z"}(),iKey:e,name:"Microsoft.ApplicationInsights."+e.replace(/-/g,"")+"."+t,sampleRate:100,tags:n,data:{baseData:{ver:2}}}}var h=d.url||y.src;if(h){function a(e){var t,n,a,i,r,o,s,c,u,p,l;g=!0,m.queue=[],f||(f=!0,t=h,s=function(){var e={},t=d.connectionString;if(t)for(var n=t.split(";"),a=0;a<n.length;a++){var i=n[a].split("=");2===i.length&&(e[i[0][b]()]=i[1])}if(!e[C]){var r=e.endpointsuffix,o=r?e.location:null;e[C]="https://"+(o?o+".":"")+"dc."+(r||"services.visualstudio.com")}return e}(),c=s[D]||d[D]||"",u=s[C],p=u?u+"/v2/track":d.endpointUrl,(l=[]).push((n="SDK LOAD Failure: Failed to load Application Insights SDK script (See stack for details)",a=t,i=p,(o=(r=v(c,"Exception")).data).baseType="ExceptionData",o.baseData.exceptions=[{typeName:"SDKLoadFailed",message:n.replace(/\./g,"-"),hasFullStack:!1,stack:n+"\nSnippet failed to load ["+a+"] -- Telemetry is disabled\nHelp Link: https://go.microsoft.com/fwlink/?linkid=2128109\nHost: "+(S&&S.pathname||"_unknown_")+"\nEndpoint: "+i,parsedStack:[]}],r)),l.push(function(e,t,n,a){var i=v(c,"Message"),r=i.data;r.baseType="MessageData";var o=r.baseData;return o.message='AI (Internal): 99 message:"'+("SDK LOAD Failure: Failed to load Application Insights SDK script (See stack for details) ("+n+")").replace(/\"/g,"")+'"',o.properties={endpoint:a},i}(0,0,t,p)),function(e,t){if(JSON){var n=T.fetch;if(n&&!y.useXhr)n(t,{method:N,body:JSON.stringify(e),mode:"cors"});else if(XMLHttpRequest){var a=new XMLHttpRequest;a.open(N,t),a.setRequestHeader("Content-type","application/json"),a.send(JSON.stringify(e))}}}(l,p))}function i(e,t){f||setTimeout(function(){!t&&m.core||a()},500)}var e=function(){var n=l.createElement(k);n.src=h;var e=y[w];return!e&&""!==e||"undefined"==n[w]||(n[w]=e),n.onload=i,n.onerror=a,n.onreadystatechange=function(e,t){"loaded"!==n.readyState&&"complete"!==n.readyState||i(0,t)},n}();y.ld<0?l.getElementsByTagName("head")[0].appendChild(e):setTimeout(function(){l.getElementsByTagName(k)[0].parentNode.appendChild(e)},y.ld||0)}try{m.cookie=l.cookie}catch(p){}function t(e){for(;e.length;)!function(t){m[t]=function(){var e=arguments;g||m.queue.push(function(){m[t].apply(m,e)})}}(e.pop())}var n="track",r="TrackPage",o="TrackEvent";t([n+"Event",n+"PageView",n+"Exception",n+"Trace",n+"DependencyData",n+"Metric",n+"PageViewPerformance","start"+r,"stop"+r,"start"+o,"stop"+o,"addTelemetryInitializer","setAuthenticatedUserContext","clearAuthenticatedUserContext","flush"]),m.SeverityLevel={Verbose:0,Information:1,Warning:2,Error:3,Critical:4};var s=(d.extensionConfig||{}).ApplicationInsightsAnalytics||{};if(!0!==d[I]&&!0!==s[I]){var c="onerror";t(["_"+c]);var u=T[c];T[c]=function(e,t,n,a,i){var r=u&&u(e,t,n,a,i);return!0!==r&&m["_"+c]({message:e,url:t,lineNumber:n,columnNumber:a,error:i}),r},d.autoExceptionInstrumented=!0}return m}(y.cfg);function a(){y.onInit&&y.onInit(n)}(T[t]=n).queue&&0===n.queue.length?(n.queue.push(a),n.trackPageView({})):a()}(window,document,{
+            src: "https://js.monitor.azure.com/scripts/b/ai.2.min.js", // The SDK URL Source
+            onInit: function (sdk) {
+                sdk.addTelemetryInitializer(function (envelope) {
+                    // App Insights automatically sends a page view event on setup, but we send our own later with additional properties.
+                    // This stops the automatic event from firing, so we don't end up with duplicate page view events.
+                    if (envelope.baseType == "PageviewData" && !envelope.baseData.properties) {
+                        return false;
+                    }
+
+                    if (envelope.baseType == "PageviewPerformanceData") {
+                        var pageName = envelope.baseData.name;
+                        envelope.baseData.name = window.location.origin;
+                        if (!envelope.baseData.properties) {
+                            envelope.baseData.properties = {};
+                        }
+                        envelope.baseData.properties.pageName = pageName;
+                        var scrubbedUrl = scrubUrl(envelope.baseData.uri);
+                        envelope.baseData.uri = scrubbedUrl;
+                        var toUrl = new URL(scrubbedUrl);
+                        envelope.baseData.properties.pathName = toUrl ? toUrl.pathname : "";
+                        if (envelope.ext && envelope.ext.trace) {
+                            envelope.ext.trace.name = toUrl ? toUrl.pathname : "";
+                        }
+                    }
+
+                    var telemetryItem = envelope.baseData;
+                    telemetryItem.properties = telemetryItem.properties || {};
+                    telemetryItem.properties["cookie"] = isProduction;
+                    if (typeof pxtConfig === "undefined" || !pxtConfig || !pxtConfig.targetId) {
+                        telemetryItem.properties["target"] = "arcade";
+                        return true;
+                    }
+                    telemetryItem.properties["target"] = pxtConfig.targetId;
+                    telemetryItem.properties["stage"] = (pxtConfig.relprefix || "/--").replace(/[^a-z]/ig, '')
+                    if (typeof Windows !== "undefined")
+                        telemetryItem.properties["WindowsApp"] = 1;
+                    var userAgent = navigator.userAgent.toLowerCase();
+                    var electronRegexResult = /\belectron\/(\d+\.\d+\.\d+.*?)(?: |$)/i.exec(userAgent); // Example navigator.userAgent: "Mozilla/5.0 Chrome/61.0.3163.100 Electron/2.0.0 Safari/537.36"
+                    if (electronRegexResult) {
+                        telemetryItem.properties["Electron"] = 1;
+                        telemetryItem.properties["ElectronVersion"] = electronRegexResult[1];
+                    }
+                    if (typeof pxtElectron !== "undefined") {
+                        telemetryItem.properties["PxtElectron"] = 1;
+                        telemetryItem.properties["ElectronVersion"] = pxtElectron.versions.electronVersion;
+                        telemetryItem.properties["ChromiumVersion"] = pxtElectron.versions.chromiumVersion;
+                        telemetryItem.properties["NodeVersion"] = pxtElectron.versions.nodeVersion;
+                        telemetryItem.properties["PxtElectronVersion"] = pxtElectron.versions.pxtElectronVersion;
+                        telemetryItem.properties["PxtCoreVersion"] = pxtElectron.versions.pxtCoreVersion;
+                        telemetryItem.properties["PxtTargetVersion"] = pxtElectron.versions.pxtTargetVersion;
+                        telemetryItem.properties["PxtElectronIsProd"] = pxtElectron.versions.isProd;
+                    }
+                    // Kiosk UWP info is appended to the user agent by the makecode-dotnet-apps/arcade-kiosk UWP app
+                    var kioskUwpRegexResult = /\((MakeCode Arcade Kiosk UWP)\/([\S]+)\/([\S]+)\)/i.exec(userAgent); // Example navigator.userAgent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36 Edg/117.0.2045.60 (MakeCode Arcade Kiosk UWP/0.1.41.0/Windows.Xbox)"
+                    if (kioskUwpRegexResult) {
+                        telemetryItem.properties["KioskUwp"] = 1;
+                        telemetryItem.properties["KioskUwpVersion"] = kioskUwpRegexResult[2];
+                        telemetryItem.properties["KioskUwpPlatform"] = kioskUwpRegexResult[3];
+                    }
+                    return true;
+                });
+            },
+            cfg: {
+                instrumentationKey:"9801ed01-c40f-46ec-aa40-2a1742a9e71c",
+                disableAjaxTracking: true,
+                overridePageViewDuration: false,
+                disableExceptionTracking: true,
+                disableCorrelationHeaders: true,
+                disableCookiesUsage: !isProduction,
+                isStorageUseDisabled: !isProduction,
+                url: "/pxt-arcade-app/ai.2.min.js"
+            }
+        });
+        window.appInsights=appInsights;
+        var location = window.location.toString();
+        appInsights.trackPageView({
+            name: window.location.hostname,
+            uri: window.location.origin,
+            properties: {
+                url: scrubUrl(location),
+                urlReferrer: scrubUrl(document.referrer.toString())
+            }
+        });
+
+        // Scrub potential PII from the URL.
+        function scrubUrl(url) {
+            if (!url) return url;
+
+            var scriptIdRegex = /(?:S?\d{5}-\d{5}-\d{5}-\d{5})|(?:_[0-9a-zA-Z]{12})/g;
+            var scrubbedUrl = new URL(url.toLocaleLowerCase().replace(scriptIdRegex, "xxxxx-xxxxx-xxxxx-xxxxx"));
+
+            // Just as a precaution, strip any suspicious query parameters.
+            var blockedParamKeywords = ["username", "password", "token", "pwd"];
+            var searchParams = Array.from(scrubbedUrl.searchParams.keys());
+            for (var param of searchParams) {
+                if (blockedParamKeywords.some(k => param.indexOf(k) != -1)) {
+                    scrubbedUrl.searchParams.delete(param);
+                }
+            }
+
+            return scrubbedUrl.toString();
+        }
+
+        return isProduction;
+    }
+    pxt.initAnalyticsAsync();
+</script>
+
+<!-- end include tracking.html -->
+
+
+</body>
+
+</html>

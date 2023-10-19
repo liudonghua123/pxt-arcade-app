@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html
+    lang="en-US"
+    xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:og="http://ogp.me/ns#"
+    xmlns:fb="http://www.facebook.com/2008/fbml"
+>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Microsoft MakeCode Arcade Hour of Code™ 2022</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta
+            name="Description"
+            content="Join us in celebrating this year's Computer Science Education Week by playing, designing and coding your very own retro arcade games!"
+        />
+
+        <link rel="manifest" href="/blb/sim.webmanifest" />
+
+        <meta name="mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta
+            name="apple-mobile-web-app-title"
+            content="Microsoft MakeCode Arcade Hour of Code™ 2022"
+        />
+        <meta
+            name="apple-mobile-web-app-status-bar-style"
+            content="translucent-black"
+        />
+        <meta name="format-detection" content="telephone=no" />
+        <meta
+            name="application-name"
+            content="Microsoft MakeCode Arcade Hour of Code™ 2022"
+        />
+
+        <meta name="msapplication-TileColor" content="#3DC1AA" />
+        <meta
+            name="msapplication-TileImage"
+            content="/static/hour-of-code/2022/hoc_square.png"
+        />
+        <meta name="msapplication-config" content="none" />
+        <meta name="theme-color" content="#3DC1AA" />
+
+
+        <meta name="description" content="Join us in celebrating this year's Computer Science Education Week by playing, designing and coding your very own retro arcade games!">
+
+        <!-- Facebook Meta Tags -->
+        <meta property="og:url" content="https://arcade.makecode.com/hour-of-code-2022">
+        <meta property="og:title" content="Microsoft MakeCode Arcade Hour of Code™ 2022">
+        <meta property="og:site_name" content="Microsoft MakeCode Arcade Hour of Code™ 2022"/>
+        <meta property="og:description" content="Join us in celebrating this year's Computer Science Education Week by playing, designing and coding your very own retro arcade games!">
+        <meta property="og:image" content="/static/hour-of-code/2022/hoc_opengraph_large.png">
+        
+        <!-- Twitter Meta Tags -->
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:site" content="Microsoft MakeCode Arcade" />
+        <meta property="twitter:domain" content="arcade.makecode.com">
+        <meta property="twitter:url" content="https://arcade.makecode.com/hour-of-code-2022">
+        <meta name="twitter:title" content="Microsoft MakeCode Arcade Hour of Code™ 2022">
+        <meta name="twitter:description" content="Join us in celebrating this year's Computer Science Education Week by playing, designing and coding your very own retro arcade games!">
+        <meta name="twitter:image" content="/static/hour-of-code/2022/hoc_opengraph_large.png">
+
+
+        <link
+            rel="apple-touch-icon"
+            href="/static/hour-of-code/2022/favicon.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            href="/static/hour-of-code/2022/favicon.png"
+        />
+        <link
+            rel="shortcut icon"
+            href="/static/hour-of-code/2022/favicon.png"
+        />
+
+       
+        <link rel="stylesheet" href="static/hour-of-code/2022/styles.css" />
+
+        <style>
+            @font-face {
+                font-family: 'InterBold';
+                src: url('static/hour-of-code/2022/Inter/static/Inter-Bold.ttf')
+                    format('truetype');
+            }
+
+
+            @font-face {
+                font-family: 'NunitoRegular';
+                src: url('static/hour-of-code/2022/Nunito/static/Nunito-Regular.ttf')
+                    format('truetype');
+            }
+
+            @font-face {
+                font-family: 'NunitoSemiBold';
+                src: url('static/hour-of-code/2022/Nunito/static/Nunito-SemiBold.ttf')
+                    format('truetype');
+            }
+
+            @font-face {
+                font-family: 'NunitoBold';
+                src: url('static/hour-of-code/2022/Nunito/static/Nunito-Bold.ttf')
+                    format('truetype');
+            }
+
+            @font-face {
+                font-family: 'NunitoExtraBold';
+                src: url('static/hour-of-code/2022/Nunito/static/Nunito-ExtraBold.ttf')
+                    format('truetype');
+            }
+            #hero{
+                background-image:  url("static/hour-of-code/2022/hoc202_heroImage_large.gif"), url("static/hour-of-code/2022/skyTile.png");
+            }
+        </style>
+
+
+        <script type="text/javascript">
+
+            function handleOnLoad() {
+                var langPicker = document.querySelector('#langpicker');
+                if (langPicker) {
+                    langPicker.remove();
+                }
+            }
+
+            function launchPage(url, tickEvent){
+                window.open(url, "_blank");
+                window.pxtTickEvent(tickEvent);
+            }
+
+            init();
+        </script>
+    </head>
+
+    <body id="root" class="root">
+        <img
+            class="tracking"
+            src="https://code.org/api/hour/begin_microsoft_carnival.png"
+            alt="tracking"
+        /> 
+        <main role="presentation">
+            <header>
+                <img src="static/hour-of-code/2022/microsoftMakeCodeLogo.svg" alt="MakeCode Logo">
+            </header>
+            <section id="hero">
+                <div>
+                    <img id="logo" src="static/hour-of-code/2022/HoC_logo.png" alt="Hour of Code 2022: Carnival">
+                    <div class="header-tag">
+                        <p>Code fun <span class="emphasis">multiplayer</span> carnival games in less than an hour!<br />Pick a game and step right up.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="featured-list">
+                <div class="container container-grid">
+                    <div class="card"
+                    onClick="launchPage('https://aka.ms/whack-the-mole', 'hourofcode2022.skillmap.open.whackEmAll')">
+
+                    <div id="start-here">
+                        <div id="twisted">
+                            New?<br/>
+                        Start here!<br/>
+                        </div>
+                        <img src="static/hour-of-code/2022/start-here-arrow.png" alt="">
+                    </div>
+                    
+                    
+                    <div class="card-cta btn">Whack-the-Mole</div>
+                        <img class="thumbnail" src="static/hour-of-code/2022/gameImg_whack_em_all.png" alt="Whack-the-Mole game screenshot">
+                        <div>Create a classic game where you can bop moles in holes</div>
+                        <div class="card-item-title">Difficulty: <img class="difficulty" src="static/hour-of-code/2022/chili-mole.png" alt="beginner level"> </div>
+                        <div class="caption">Supports multiplayer </div>
+                    </div>
+                    <div class="card"
+                    onClick="launchPage('https://aka.ms/balloon', 'hourofcode2022.skillmap.open.burstinBalloons')">
+                        <div class="card-cta btn">Burstin’ Balloons</div>
+                        <img class="thumbnail" src="static/hour-of-code/2022/gameImg_ballon2.png" alt="Burstin’ Balloons game screenshot">
+                        <div>Code a mouse that fills your balloon as quickly as possible</div>
+                        <div class="card-item-title">Difficulty: <img class="difficulty" src="static/hour-of-code/2022/chili-balloon.png" alt="intermediate level"></div>
+                        <div class="caption">Supports multiplayer </div>
+                    </div>
+
+                    <div class="card"
+                    onClick="launchPage('https://aka.ms/targets', 'hourofcode2022.skillmap.open.targetBlaster')">
+                        <div class="card-cta btn">Target Blaster</div>
+                        <img class="thumbnail" src="static/hour-of-code/2022/gameImg_target.png" alt="Target Blaster game screenshot">
+                        <div>Follow a video to learn how to launch a ball at moving targets</div>
+                        <div class="card-item-title">Difficulty: <img class="difficulty" src="static/hour-of-code/2022/chili-target.png" alt="advanced level"></div>
+                    </div>
+
+                </div>
+            </section>
+            <section>
+                <div class="container return-to-code">
+                    <div>
+                        <p>Done? Go back to <a href="https://code.org/api/hour/finish" target="_blank">Code.org</a> <!--→--> <br />or continue to <a href="#moregames">build more games</a> below.</p>
+                    
+                    </div>
+                    <!-- <button
+                    onClick="launchPage('https://code.org/api/hour/finish', 'hourofcode2022.open.codeOrg')">
+                    More games</button> -->
+                    
+                </div>
+    
+            </section>
+            <!-- <section style="background-color:#140083;">
+                <div class="container mini-col-1">
+                    <p>Want to keep creating?<br/>Here are some things you can do next…</p>
+                    <img src="static/hour-of-code/2022/carnivalSign.gif" alt="">
+
+                </div>
+
+            </section> -->
+            <section>
+                <div id="moregames">
+                    <div class="container">
+                        <h3>Build more games</h3>
+                        <div>Find similar MakeCode games and projects.</div>
+                        <div class="container-grid">
+                            <div class="card" onClick="launchPage('https://arcade.makecode.com/--skillmap#docs:skillmap/shark', 'hourofcode2022.skillmap.open.shark')">
+                                <img class="thumbnail" src="static/hour-of-code/2022/gameImg_shark.png" alt="Shark Attack Game Screenshot">
+                                <div>Create a shark attack game, then gobble up fish</div>
+                                <div class="card-item-title">Difficulty: <img class="difficulty" src="static/hour-of-code/2022/chili-balloon.png" alt="intermediate level"></div>                  
+                            </div>
+                            <div class="card" onClick="launchPage('https://arcade.makecode.com/--skillmap#docs:skillmap/racer', 'hourofcode2022.skillmap.open.racer')">
+                                <img class="thumbnail" src="static/hour-of-code/2022/gameImg_racer.png" alt="Monster Racer game screenshot">
+                                <div>Build a racing game with a creepy "monster" truck</div>
+                                <div class="card-item-title">Difficulty: <img class="difficulty" src="static/hour-of-code/2022/chili-balloon.png" alt="intermediate level"></div>
+                            </div>
+                            <div class="card" onClick="launchPage('https://arcade.makecode.com/--skillmap#docs:skillmap/forest', 'hourofcode2022.skillmap.open.forest')">
+                                <img class="thumbnail" src="static/hour-of-code/2022/gameImg_forest.png" alt="Forest Fire game screenshot">
+                                <div>Code a forest fire, then put it out with an airtanker</div>
+                                <div class="card-item-title">Difficulty: <img class="difficulty" src="static/hour-of-code/2022/chili-balloon.png" alt="intermediate level"></div>
+                            </div>
+                        </div>
+
+                    <!-- THIS IS PLACEHOLDER FOR WHEN WE HAVE OVERFLOW 
+                        
+                        <div class="container-grid overflow-games">
+
+                            <div class="card" onClick="launchPage('https://arcade.makecode.com/--skillmap#docs:skillmap/shark', 'hourofcode2022.skillmap.open.shark')">
+                                <img class="thumbnail" src="static/hour-of-code/2022/gameImg_shark.png" alt="Shark Attack Game Screenshot">
+                                <div class="card-item-title">Difficulty: <img class="difficulty" src="static/hour-of-code/2022/chili-balloon.png" alt="intermediate level"></div>
+                                <div>Create a shark attack game, then gobble up fish</div>
+                            </div>
+                            <div class="card" onClick="launchPage('https://arcade.makecode.com/--skillmap#docs:skillmap/racer', 'hourofcode2022.skillmap.open.racer')">
+                                <img class="thumbnail" src="static/hour-of-code/2022/gameImg_racer.png" alt="Monster Racer game screenshot">
+                                <div class="card-item-title">Difficulty: <img class="difficulty" src="static/hour-of-code/2022/chili-balloon.png" alt="intermediate level"></div>
+                                <div>Build a racing game with a creepy "monster" truck</div>
+                            </div>
+                            <div class="card" onClick="launchPage('https://arcade.makecode.com/--skillmap#docs:skillmap/forest', 'hourofcode2022.skillmap.open.forest')">
+                                <img class="thumbnail" src="static/hour-of-code/2022/gameImg_forest.png" alt="Forest Fire game screenshot">
+                                <div class="card-item-title">Difficulty: <img class="difficulty" src="static/hour-of-code/2022/chili-balloon.png" alt="intermediate level"></div>
+                                <div>Code a forest fire, then put it out with an airtanker</div>
+                            </div>
+                        </div>
+                    -->
+                    </div>
+                    <!-- THIS IS PLACEHOLDER FOR WHEN WE HAVE OVERFLOW
+                        <div class="container container-grid-btns"><button id="showMoreGames_btn">More games</button></div> -->
+                </div>
+            </section>
+            <section>
+                <div class="container col-2">
+                    <div>
+                        <h2>Calling all teachers</h2>
+                        <p>Bring Hour of Code™ into your classroom with games that make coding fun for you and your kids — no hardware or downloads required.</p>
+                        <p> Whether you’ve got an hour or a week, we’ll get you started with creative tutorials, and customizable lesson plans.</p>
+                        <button
+                        onClick="launchPage('https://aka.ms/HoC-22-Lesson', 'hourofcode2022.skillmap.educator')">
+                        Teacher resources 
+                        <!-- <img src="static/hour-of-code/2022/arrow.png" alt=""> -->
+                        </button>
+                    </div>
+                    <div>
+                        <img class="rowImg" src="static/hour-of-code/2022/boothAni.gif" alt="">
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="container">
+                    <h3>More from Microsoft</h3>
+                    <div class="container-grid">
+                        <div class="card"
+                        onClick="launchPage('http://makecode.microbit.org', 'hourofcode2022.footer.open.microbit')">
+                            <img class="thumbnail" src="static/hour-of-code/2022/microbitImage.png" alt="microbit image">
+                            <div class="card-item-title">micro:bit</div>
+                            <div>Program sounds, effects, and more onto a hand-held computer.</div>
+                        </div>
+                        <div class="card"
+                        onClick="launchPage('https://aka.ms/hourofcode', 'hourofcode2022.footer.open.minecraft')">
+                            <img class="thumbnail" src="static/hour-of-code/2022/minecraft-hoc.png" alt="minecraft image">
+                            <div class="card-item-title">Minecraft</div>
+                            <div>Subscribe to Education Edition for fun, immersive STEM learning.</div>
+                        </div>
+                        <div class="card"
+                        onClick="launchPage('https://arcade.makecode.com/hour-of-code', 'hourofcode2022.footer.open.arcade')">
+                            <img class="thumbnail" src="static/hour-of-code/2022/arcadeImage.png" alt="Arcade image">
+                            <div class="card-item-title">Arcade</div>
+                            <div>Build video games, create characters, and play with friends.</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- WAITING ON CODE NINJA ASSETS 
+                <section>
+                <div>
+                    <div class="container">
+                        <h3>Get help from CodeNinjas</h3>
+                        <div>Would you like to Code a Carnival at your school?</div>
+                        <div>
+                            CodeNinjas Banner / Blurb Here
+                        </div>
+                    </div>
+                    <div class="container container-grid-btns"><button>More games</button></div>
+                </div>
+            </section> -->
+
+            <footer id="footer">
+                <div>
+                    <img src="static/hour-of-code/2022/red-pixel-heart-vmx.png" alt="">
+                </div>
+                <div id="social">
+                    <img
+                        src="static/hour-of-code/2022/social/twitter.png"
+                        alt="twitter"
+                        onClick="launchPage('https://twitter.com/MSMakeCode', 'hourofcode2022.social.twitter')">
+                    <img
+                        src="static/hour-of-code/2022/social/youtube.png"
+                        alt="youtube"
+                        onClick="launchPage('https://www.youtube.com/c/MicrosoftMakeCode', 'hourofcode2022.social.youtube')">
+                    <img
+                        src="static/hour-of-code/2022/social/instagram.png"
+                        alt="instagram"
+                        onClick="launchPage('https://www.instagram.com/msmakecode', 'hourofcode2022.social.instagram')">
+                    <img
+                        src="static/hour-of-code/2022/social/twitch.png"
+                        alt="twitch"
+                        onClick="launchPage('https://www.twitch.tv/msmakecode', 'hourofcode2022.social.twitch')">
+                    <img
+                        src="static/hour-of-code/2022/social/tik_tok.png"
+                        alt="tik tok"
+                        onClick="launchPage('https://www.tiktok.com/@msmakecode', 'hourofcode2022.social.tiktok')">
+                </div>
+                <p class="container hoc-statement">
+                    The <a href="http://www.hourofcode.com" target="_blank">'Hour of Code™'</a> is a nationwide initiative by <a href="https://www.csedweek.org/"  target="_blank">Computer Science Education Week</a> and <a href="https://code.org/"  target="_blank">Code.org</a> to introduce millions of students to one hour of computer science and computer programming.
+                </p>
+                <div>
+                    <a href="http://www.makecode.com"  target="_blank">Microsoft MakeCode</a> | <a href="https://www.microsoft.com/legal/terms-of-use"  target="_blank">Terms of use</a> | <a href="https://privacy.microsoft.com/privacystatement"  target="_blank">Privacy</a>
+                </div>
+                <div class="caption">Languages: <a href="https://arcade.makecode.com/hour-of-code-2022">English</a> | <a href="https://arcade.makecode.com/hour-of-code-2022-es">Spanish</a> | <a href="https://arcade.makecode.com/hour-of-code-2022-pt">Portuguese</a></div>
+            </footer>
+        </main>
+
+
+        <script>
+            const showMoreGames_btn = document.querySelector("#showMoreGames_btn");
+            showMoreGames_btn.addEventListener('click', (event) => {
+                const overflow_games = document.querySelectorAll(".overflow-games");
+                for(var i=0; i< overflow_games.length; i++){
+                    overflow_games[i].classList.add("active");
+                }
+                showMoreGames_btn.style.display = "none";
+            });
+        </script>
+
+
+
+
+        
+<!-- include tracking.html -->
+<script type="text/javascript" src="/doccdn/pxtweb.js"></script>
+<script type="text/javascript">
+    window.loadAppInsights = function (includeCookie) {
+        //Backend will patch / + doccdn + / with CDN url and the check that URL ends with the sha would pass
+        var isProduction = includeCookie && (/[0-9a-f]{40}\/ai\.2\.min\.js$/.test("/doccdn/ai.2.min.js"));
+        !function(T,l,y){var S=T.location,k="script",D="connectionString",C="ingestionendpoint",I="disableExceptionTracking",E="ai.device.",b="toLowerCase",w="crossOrigin",N="POST",e="appInsightsSDK",t=y.name||"appInsights";(y.name||T[e])&&(T[e]=t);var n=T[t]||function(d){var g=!1,f=!1,m={initialize:!0,queue:[],sv:"5",version:2,config:d};function v(e,t){var n={},a="Browser";return n[E+"id"]=a[b](),n[E+"type"]=a,n["ai.operation.name"]=S&&S.pathname||"_unknown_",n["ai.internal.sdkVersion"]="javascript:snippet_"+(m.sv||m.version),{time:function(){var e=new Date;function t(e){var t=""+e;return 1===t.length&&(t="0"+t),t}return e.getUTCFullYear()+"-"+t(1+e.getUTCMonth())+"-"+t(e.getUTCDate())+"T"+t(e.getUTCHours())+":"+t(e.getUTCMinutes())+":"+t(e.getUTCSeconds())+"."+((e.getUTCMilliseconds()/1e3).toFixed(3)+"").slice(2,5)+"Z"}(),iKey:e,name:"Microsoft.ApplicationInsights."+e.replace(/-/g,"")+"."+t,sampleRate:100,tags:n,data:{baseData:{ver:2}}}}var h=d.url||y.src;if(h){function a(e){var t,n,a,i,r,o,s,c,u,p,l;g=!0,m.queue=[],f||(f=!0,t=h,s=function(){var e={},t=d.connectionString;if(t)for(var n=t.split(";"),a=0;a<n.length;a++){var i=n[a].split("=");2===i.length&&(e[i[0][b]()]=i[1])}if(!e[C]){var r=e.endpointsuffix,o=r?e.location:null;e[C]="https://"+(o?o+".":"")+"dc."+(r||"services.visualstudio.com")}return e}(),c=s[D]||d[D]||"",u=s[C],p=u?u+"/v2/track":d.endpointUrl,(l=[]).push((n="SDK LOAD Failure: Failed to load Application Insights SDK script (See stack for details)",a=t,i=p,(o=(r=v(c,"Exception")).data).baseType="ExceptionData",o.baseData.exceptions=[{typeName:"SDKLoadFailed",message:n.replace(/\./g,"-"),hasFullStack:!1,stack:n+"\nSnippet failed to load ["+a+"] -- Telemetry is disabled\nHelp Link: https://go.microsoft.com/fwlink/?linkid=2128109\nHost: "+(S&&S.pathname||"_unknown_")+"\nEndpoint: "+i,parsedStack:[]}],r)),l.push(function(e,t,n,a){var i=v(c,"Message"),r=i.data;r.baseType="MessageData";var o=r.baseData;return o.message='AI (Internal): 99 message:"'+("SDK LOAD Failure: Failed to load Application Insights SDK script (See stack for details) ("+n+")").replace(/\"/g,"")+'"',o.properties={endpoint:a},i}(0,0,t,p)),function(e,t){if(JSON){var n=T.fetch;if(n&&!y.useXhr)n(t,{method:N,body:JSON.stringify(e),mode:"cors"});else if(XMLHttpRequest){var a=new XMLHttpRequest;a.open(N,t),a.setRequestHeader("Content-type","application/json"),a.send(JSON.stringify(e))}}}(l,p))}function i(e,t){f||setTimeout(function(){!t&&m.core||a()},500)}var e=function(){var n=l.createElement(k);n.src=h;var e=y[w];return!e&&""!==e||"undefined"==n[w]||(n[w]=e),n.onload=i,n.onerror=a,n.onreadystatechange=function(e,t){"loaded"!==n.readyState&&"complete"!==n.readyState||i(0,t)},n}();y.ld<0?l.getElementsByTagName("head")[0].appendChild(e):setTimeout(function(){l.getElementsByTagName(k)[0].parentNode.appendChild(e)},y.ld||0)}try{m.cookie=l.cookie}catch(p){}function t(e){for(;e.length;)!function(t){m[t]=function(){var e=arguments;g||m.queue.push(function(){m[t].apply(m,e)})}}(e.pop())}var n="track",r="TrackPage",o="TrackEvent";t([n+"Event",n+"PageView",n+"Exception",n+"Trace",n+"DependencyData",n+"Metric",n+"PageViewPerformance","start"+r,"stop"+r,"start"+o,"stop"+o,"addTelemetryInitializer","setAuthenticatedUserContext","clearAuthenticatedUserContext","flush"]),m.SeverityLevel={Verbose:0,Information:1,Warning:2,Error:3,Critical:4};var s=(d.extensionConfig||{}).ApplicationInsightsAnalytics||{};if(!0!==d[I]&&!0!==s[I]){var c="onerror";t(["_"+c]);var u=T[c];T[c]=function(e,t,n,a,i){var r=u&&u(e,t,n,a,i);return!0!==r&&m["_"+c]({message:e,url:t,lineNumber:n,columnNumber:a,error:i}),r},d.autoExceptionInstrumented=!0}return m}(y.cfg);function a(){y.onInit&&y.onInit(n)}(T[t]=n).queue&&0===n.queue.length?(n.queue.push(a),n.trackPageView({})):a()}(window,document,{
+            src: "https://js.monitor.azure.com/scripts/b/ai.2.min.js", // The SDK URL Source
+            onInit: function (sdk) {
+                sdk.addTelemetryInitializer(function (envelope) {
+                    // App Insights automatically sends a page view event on setup, but we send our own later with additional properties.
+                    // This stops the automatic event from firing, so we don't end up with duplicate page view events.
+                    if (envelope.baseType == "PageviewData" && !envelope.baseData.properties) {
+                        return false;
+                    }
+
+                    if (envelope.baseType == "PageviewPerformanceData") {
+                        var pageName = envelope.baseData.name;
+                        envelope.baseData.name = window.location.origin;
+                        if (!envelope.baseData.properties) {
+                            envelope.baseData.properties = {};
+                        }
+                        envelope.baseData.properties.pageName = pageName;
+                        var scrubbedUrl = scrubUrl(envelope.baseData.uri);
+                        envelope.baseData.uri = scrubbedUrl;
+                        var toUrl = new URL(scrubbedUrl);
+                        envelope.baseData.properties.pathName = toUrl ? toUrl.pathname : "";
+                        if (envelope.ext && envelope.ext.trace) {
+                            envelope.ext.trace.name = toUrl ? toUrl.pathname : "";
+                        }
+                    }
+
+                    var telemetryItem = envelope.baseData;
+                    telemetryItem.properties = telemetryItem.properties || {};
+                    telemetryItem.properties["cookie"] = isProduction;
+                    if (typeof pxtConfig === "undefined" || !pxtConfig || !pxtConfig.targetId) {
+                        telemetryItem.properties["target"] = "arcade";
+                        return true;
+                    }
+                    telemetryItem.properties["target"] = pxtConfig.targetId;
+                    telemetryItem.properties["stage"] = (pxtConfig.relprefix || "/--").replace(/[^a-z]/ig, '')
+                    if (typeof Windows !== "undefined")
+                        telemetryItem.properties["WindowsApp"] = 1;
+                    var userAgent = navigator.userAgent.toLowerCase();
+                    var electronRegexResult = /\belectron\/(\d+\.\d+\.\d+.*?)(?: |$)/i.exec(userAgent); // Example navigator.userAgent: "Mozilla/5.0 Chrome/61.0.3163.100 Electron/2.0.0 Safari/537.36"
+                    if (electronRegexResult) {
+                        telemetryItem.properties["Electron"] = 1;
+                        telemetryItem.properties["ElectronVersion"] = electronRegexResult[1];
+                    }
+                    if (typeof pxtElectron !== "undefined") {
+                        telemetryItem.properties["PxtElectron"] = 1;
+                        telemetryItem.properties["ElectronVersion"] = pxtElectron.versions.electronVersion;
+                        telemetryItem.properties["ChromiumVersion"] = pxtElectron.versions.chromiumVersion;
+                        telemetryItem.properties["NodeVersion"] = pxtElectron.versions.nodeVersion;
+                        telemetryItem.properties["PxtElectronVersion"] = pxtElectron.versions.pxtElectronVersion;
+                        telemetryItem.properties["PxtCoreVersion"] = pxtElectron.versions.pxtCoreVersion;
+                        telemetryItem.properties["PxtTargetVersion"] = pxtElectron.versions.pxtTargetVersion;
+                        telemetryItem.properties["PxtElectronIsProd"] = pxtElectron.versions.isProd;
+                    }
+                    // Kiosk UWP info is appended to the user agent by the makecode-dotnet-apps/arcade-kiosk UWP app
+                    var kioskUwpRegexResult = /\((MakeCode Arcade Kiosk UWP)\/([\S]+)\/([\S]+)\)/i.exec(userAgent); // Example navigator.userAgent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36 Edg/117.0.2045.60 (MakeCode Arcade Kiosk UWP/0.1.41.0/Windows.Xbox)"
+                    if (kioskUwpRegexResult) {
+                        telemetryItem.properties["KioskUwp"] = 1;
+                        telemetryItem.properties["KioskUwpVersion"] = kioskUwpRegexResult[2];
+                        telemetryItem.properties["KioskUwpPlatform"] = kioskUwpRegexResult[3];
+                    }
+                    return true;
+                });
+            },
+            cfg: {
+                instrumentationKey:"9801ed01-c40f-46ec-aa40-2a1742a9e71c",
+                disableAjaxTracking: true,
+                overridePageViewDuration: false,
+                disableExceptionTracking: true,
+                disableCorrelationHeaders: true,
+                disableCookiesUsage: !isProduction,
+                isStorageUseDisabled: !isProduction,
+                url: "/doccdn/ai.2.min.js"
+            }
+        });
+        window.appInsights=appInsights;
+        var location = window.location.toString();
+        appInsights.trackPageView({
+            name: window.location.hostname,
+            uri: window.location.origin,
+            properties: {
+                url: scrubUrl(location),
+                urlReferrer: scrubUrl(document.referrer.toString())
+            }
+        });
+
+        // Scrub potential PII from the URL.
+        function scrubUrl(url) {
+            if (!url) return url;
+
+            var scriptIdRegex = /(?:S?\d{5}-\d{5}-\d{5}-\d{5})|(?:_[0-9a-zA-Z]{12})/g;
+            var scrubbedUrl = new URL(url.toLocaleLowerCase().replace(scriptIdRegex, "xxxxx-xxxxx-xxxxx-xxxxx"));
+
+            // Just as a precaution, strip any suspicious query parameters.
+            var blockedParamKeywords = ["username", "password", "token", "pwd"];
+            var searchParams = Array.from(scrubbedUrl.searchParams.keys());
+            for (var param of searchParams) {
+                if (blockedParamKeywords.some(k => param.indexOf(k) != -1)) {
+                    scrubbedUrl.searchParams.delete(param);
+                }
+            }
+
+            return scrubbedUrl.toString();
+        }
+
+        return isProduction;
+    }
+    pxt.initAnalyticsAsync();
+</script>
+
+<!-- end include tracking.html -->
+
+        
+<!-- include tickevent.html -->
+<script type="text/javascript">
+    if (!window.pxtTickEvent) {
+        let queuedTicks;
+        window.pxtTickEvent = function(id, data) {
+            if (window.appInsights && window.appInsights.trackEvent) {
+                sendTick(id, data);
+            } else {
+                if (!queuedTicks) {
+                    queuedTicks = [];
+                    var interval = window.setInterval(function() {
+                        if (window.appInsights && window.appInsights.trackEvent) {
+                            window.clearInterval(interval);
+                            for (var i = 0; i < queuedTicks.length; i++) {
+                                queuedTicks[i]();
+                            }
+                            queuedTicks = undefined;
+                        }
+                    }, 1000);
+                }
+
+                if (queuedTicks.length >= 100) {
+                    queuedTicks.shift();
+                }
+
+                queuedTicks.push(function () {
+                    sendTick(id, data);
+                });
+            }
+
+            function sendTick(id, data) {
+                const props = {};
+                const measures = {};
+                if (data) {
+                    Object.keys(data).forEach(k => {
+                        if (typeof data[k] == "string") props[k] = data[k];
+                        else if (typeof data[k] == "number") measures[k] = data[k];
+                        else props[k] = JSON.stringify(data[k] || '');
+                    });
+                } else {
+                    data = {};
+                }
+                window.appInsights.trackEvent({name: id, properties: data, measurements: measures});
+            }
+        }
+    }
+</script>
+<!-- end include tickevent.html -->
+
+
+        <!-- TODO: update usabilia for HoC 2022 -->
+        <!-- begin usabilla live embed code -->
+        <script type="text/javascript">
+            /*{literal}<![CDATA[*/ window.lightningjs ||
+                (function (c) {
+                    function g(b, d) {
+                        d && (d += (/\?/.test(d) ? '&' : '?') + 'lv=1');
+                        c[b] ||
+                            (function () {
+                                var i = window,
+                                    h = document,
+                                    j = b,
+                                    g = h.location.protocol,
+                                    l = 'load',
+                                    k = 0;
+                                (function () {
+                                    function b() {
+                                        a.P(l);
+                                        a.w = 1;
+                                        c[j]('_load');
+                                    }
+                                    c[j] = function () {
+                                        function m() {
+                                            m.id = e;
+                                            return c[j].apply(m, arguments);
+                                        }
+                                        var b,
+                                            e = ++k;
+                                        b =
+                                            this && this != i
+                                                ? this.id || 0
+                                                : 0;
+                                        (a.s = a.s || []).push([
+                                            e,
+                                            b,
+                                            arguments
+                                        ]);
+                                        m.then = function (b, c, h) {
+                                            var d = (a.fh[e] = a.fh[e] || []),
+                                                j = (a.eh[e] = a.eh[e] || []),
+                                                f = (a.ph[e] = a.ph[e] || []);
+                                            b && d.push(b);
+                                            c && j.push(c);
+                                            h && f.push(h);
+                                            return m;
+                                        };
+                                        return m;
+                                    };
+                                    var a = (c[j]._ = {});
+                                    a.fh = {};
+                                    a.eh = {};
+                                    a.ph = {};
+                                    a.l = d
+                                        ? d.replace(
+                                              /^\/\//,
+                                              (g == 'https:' ? g : 'http:') +
+                                                  '//'
+                                          )
+                                        : d;
+                                    a.p = { 0: +new Date() };
+                                    a.P = function (b) {
+                                        a.p[b] = new Date() - a.p[0];
+                                    };
+                                    a.w && b();
+                                    i.addEventListener
+                                        ? i.addEventListener(l, b, !1)
+                                        : i.attachEvent('on' + l, b);
+                                    var q = function () {
+                                        function b() {
+                                            return [
+                                                '<head></head><',
+                                                c,
+                                                ' onload="var d=',
+                                                n,
+                                                ";d.getElementsByTagName('head')[0].",
+                                                d,
+                                                '(d.',
+                                                g,
+                                                "('script')).",
+                                                i,
+                                                "='",
+                                                a.l,
+                                                '\'"></',
+                                                c,
+                                                '>'
+                                            ].join('');
+                                        }
+                                        var c = 'body',
+                                            e = h[c];
+                                        if (!e) return setTimeout(q, 100);
+                                        a.P(1);
+                                        var d = 'appendChild',
+                                            g = 'createElement',
+                                            i = 'src',
+                                            k = h[g]('div'),
+                                            l = k[d](h[g]('div')),
+                                            f = h[g]('iframe'),
+                                            n = 'document',
+                                            p;
+                                        k.style.display = 'none';
+                                        e.insertBefore(k, e.firstChild).id =
+                                            o + '-' + j;
+                                        f.frameBorder = '0';
+                                        f.id = o + '-frame-' + j;
+                                        /MSIE[ ]+6/.test(navigator.userAgent) &&
+                                            (f[i] = 'javascript:false');
+                                        f.allowTransparency = 'true';
+                                        l[d](f);
+                                        try {
+                                            f.contentWindow[n].open();
+                                        } catch (s) {
+                                            (a.domain = h.domain),
+                                                (p =
+                                                    'javascript:var d=' +
+                                                    n +
+                                                    ".open();d.domain='" +
+                                                    h.domain +
+                                                    "';"),
+                                                (f[i] = p + 'void(0);');
+                                        }
+                                        try {
+                                            var r = f.contentWindow[n];
+                                            r.write(b());
+                                            r.close();
+                                        } catch (t) {
+                                            f[i] =
+                                                p +
+                                                'd.write("' +
+                                                b().replace(
+                                                    /"/g,
+                                                    String.fromCharCode(92) +
+                                                        '"'
+                                                ) +
+                                                '");d.close();';
+                                        }
+                                        a.P(2);
+                                    };
+                                    a.l && setTimeout(q, 0);
+                                })();
+                            })();
+                        c[b].lv = '1';
+                        return c[b];
+                    }
+                    var o = 'lightningjs',
+                        k = (window[o] = g(o));
+                    k.require = g;
+                    k.modules = c;
+                })({});
+            window.usabilla_live = lightningjs.require(
+                'usabilla_live',
+                '//w.usabilla.com/04a02d64289a.js'
+            );
+            /*]]>{/literal}*/
+        </script>
+        <!-- end usabilla live embed code -->
+    </body>
+</html>

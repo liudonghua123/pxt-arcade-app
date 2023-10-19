@@ -1,0 +1,1056 @@
+<!DOCTYPE html>
+<html lang="" xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#"
+	xmlns:fb="http://www.facebook.com/2008/fbml">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Microsoft MakeCode Arcade</title>
+	<meta name="Description" content="Develop your programming skills by quickly creating and modding retro arcade games with Blocks and JavaScript in the MakeCode editor" />
+
+	<!-- ifdef incontexttranslations endif -->
+	
+<!-- include meta.html -->
+<!-- This file is typically overriden by the target, with own Twitter
+     account etc. Most data is taken from the theme file though.  
+  -->
+
+<!-- include robotsmeta.html -->
+
+<!-- end include robotsmeta.html -->
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@msmakecode" />
+<meta name="twitter:title" content="Microsoft MakeCode Arcade" />
+<meta name="twitter:description" content="Develop your programming skills by quickly creating and modding retro arcade games with Blocks and JavaScript in the MakeCode editor" />
+<meta name="twitter:image" content="/static/skillmap/forest/forest4.gif" />
+
+<meta property="og:title" content="Microsoft MakeCode Arcade" />
+<meta property="og:site_name" content="Microsoft MakeCode" />
+<meta property="og:type" content="website" />
+<meta property="og:description" content="Develop your programming skills by quickly creating and modding retro arcade games with Blocks and JavaScript in the MakeCode editor" />
+<meta property="fb:app_id" content="" />
+<meta property="og:image" content="/static/skillmap/forest/forest4.gif" />
+
+<meta name="format-detection" content="telephone=no">
+<link rel="apple-touch-icon" href="docs/static/icons/favicon.ico">
+<link rel="icon" type="image/png" href="docs/static/icons/favicon.ico">
+<link rel="shortcut icon" href="docs/static/icons/favicon.ico">
+<meta name="theme-color" content="">
+
+<!-- end include meta.html -->
+
+	
+<!-- include head.html -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width,height=device-height,user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
+
+<link rel="stylesheet" data-rtl="/blb/rtlsemantic.css" href="/pxt-arcade-app/semantic.css" />
+<link id="blocklycss"  data-rtl="/blb/rtlblockly.css" rel="stylesheet" href="/pxt-arcade-app/blockly.css" />
+<link rel="stylesheet" href="/pxt-arcade-app/docfiles/style.css" />
+<link rel="stylesheet" href="/pxt-arcade-app/docfiles/vs.css" />
+<link rel="stylesheet" href="/pxt-arcade-app/docfiles/target.css" />
+
+<script src="/pxt-arcade-app/jquery.js" type="text/javascript"></script>
+<script src="/pxt-arcade-app/semantic.js" type="text/javascript"></script>
+<script src="/pxt-arcade-app/docfiles/target.js" type="text/javascript"></script>
+<script src="/pxt-arcade-app/embed.js" type="text/javascript"></script>
+<script src="/pxt-arcade-app/docfiles/docs.js" type="text/javascript"></script>
+
+<style>
+    
+</style>
+
+<!-- end include head.html -->
+
+
+</head>
+
+<body id='root' class='root'>
+	<div id="accessibleMenu" class="ui accessibleMenu borderless fixed menu docs" role="menubar">
+		
+            <a href="#maincontent" class="ui item link" tabindex="0" role="menuitem">Skip to main content</a>
+        
+	</div>
+
+	
+<!-- include tocheader.html -->
+<div id="top-bar" class="ui fixed accent borderless inverted main menu hideprint docs" role="menubar">
+    <div>
+        
+            <a id="togglesidebar" class="launch icon item" tabindex="0" title="Side menu" aria-label="Side menu" role="menuitem" aria-expanded="false">
+                <i class="content icon"></i>
+            </a>
+        
+        <div class="item" role="menuitem">
+            <div class="header-org-logo">
+                <img src="/static/logo/Microsoft_logo_rgb_W-white_D.png" alt="Microsoft">
+            </div>
+            <div class="header-org-logo-sm">
+                <img src="/static/logo/Microsoft_logo_rgb_W-white_D-square.png" alt="Microsoft">
+            </div>
+            <div class="header-title"><span>MakeCode</span></div>
+        </div>
+    </div>
+    <div>
+        <div class="item">
+            <form id="tocsearch1" class="search" role="form" method="get" action="https://www.bing.com/search">
+                <div class="ui fluid icon input">
+                    <input type="hidden" name="q1" value="site:https://arcade.makecode.com/" />
+                    
+                <input type="search" name="q" placeholder="Search..." aria-label="Search Documentation">
+                <i onclick="document.getElementById('tocsearch1').submit();" tabindex="0" class="search link icon" aria-label="Search" role="button"></i>
+            
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div id="side-menu" class="ui vertical accent inverted sidebar menu left hideprint docs" role="menubar">
+    <!-- TOC Menu (tocheader.html) -->
+    <div class="menuContainer" role="menu">
+        
+    <a class="item " href="/pxt-arcade-app/docs/about.html" role="menuitem">About</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/faq.html" role="menuitem">FAQ</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/projects.html" role="menuitem">Projects</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/github.html" role="menuitem">GitHub</a>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/pxt-arcade-app/docs/reference.html">Reference</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-arcade-app/docs/reference/sprites.html" role="menuitem">sprites</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/reference/controller.html" role="menuitem">controller</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/reference/game.html" role="menuitem">game</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/reference/music.html" role="menuitem">music</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/reference/scene.html" role="menuitem">scene</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/reference/info.html" role="menuitem">info</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/reference/images.html" role="menuitem">images</a>
+
+        </div>
+    </div>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/pxt-arcade-app/docs/blocks.html">Blocks</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-arcade-app/docs/blocks/on-start.html" role="menuitem">On Start</a>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/pxt-arcade-app/docs/blocks/loops.html">Loops</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-arcade-app/docs/blocks/loops/repeat.html" role="menuitem">repeat</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/blocks/loops/for.html" role="menuitem">for</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/blocks/loops/while.html" role="menuitem">while</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/blocks/loops/for-of.html" role="menuitem">for of</a>
+
+        </div>
+    </div>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/pxt-arcade-app/docs/blocks/logic.html">Logic</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-arcade-app/docs/blocks/logic/if.html" role="menuitem">if</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/blocks/logic/boolean.html" role="menuitem">Boolean</a>
+
+        </div>
+    </div>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/pxt-arcade-app/docs/blocks/variables.html">Variables</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-arcade-app/docs/blocks/variables/assign.html" role="menuitem">assign</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/blocks/variables/change.html" role="menuitem">change var</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/blocks/variables/var.html" role="menuitem">var</a>
+
+        </div>
+    </div>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/blocks/math.html" role="menuitem">Math</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/blocks/javascript-blocks.html" role="menuitem">JavaScript blocks</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/blocks/custom.html" role="menuitem">Custom blocks</a>
+
+        </div>
+    </div>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/pxt-arcade-app/docs/python.html">Python</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-arcade-app/docs/python/call.html" role="menuitem">Calling</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/python/sequence.html" role="menuitem">Sequencing</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/python/variables.html" role="menuitem">Variables</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/python/operators.html" role="menuitem">Operators</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/python/statements.html" role="menuitem">Statements</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/python/functions.html" role="menuitem">Functions</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/python/classes.html" role="menuitem">Classes</a>
+
+        </div>
+    </div>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/pxt-arcade-app/docs/javascript.html">JavaScript</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-arcade-app/docs/javascript/call.html" role="menuitem">Calling</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/javascript/sequence.html" role="menuitem">Sequencing</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/javascript/variables.html" role="menuitem">Variables</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/javascript/operators.html" role="menuitem">Operators</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/javascript/statements.html" role="menuitem">Statements</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/javascript/functions.html" role="menuitem">Functions</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/javascript/types.html" role="menuitem">Types</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/javascript/classes.html" role="menuitem">Classes</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/javascript/interfaces.html" role="menuitem">Interfaces</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/javascript/generics.html" role="menuitem">Generics</a>
+
+        </div>
+    </div>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/pxt-arcade-app/docs/types.html">Types</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-arcade-app/docs/types/number.html" role="menuitem">Number</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/types/string.html" role="menuitem">String</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/types/boolean.html" role="menuitem">Boolean</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/types/array.html" role="menuitem">Array</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/types/function.html" role="menuitem">Function</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/types/image.html" role="menuitem">Image</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/types/sprite.html" role="menuitem">Sprite</a>
+
+        </div>
+    </div>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/block-gallery.html" role="menuitem">Blocks Gallery</a>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="">Miscellaneous</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-arcade-app/docs/about.html" role="menuitem">About</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/support.html" role="menuitem">Support</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/translate.html" role="menuitem">Translate</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/share.html" role="menuitem">Sharing projects</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/multiplayer.html" role="menuitem">Multiplayer</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/offline.html" role="menuitem">Offline support</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/save.html" role="menuitem">Save</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/identity/sign-in.html" role="menuitem">Sign In</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/identity/cloud-sync.html" role="menuitem">Cloud Sync</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/vscode.html" role="menuitem">VS Code</a>
+
+        </div>
+    </div>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/pxt-arcade-app/docs/hardware.html">Hardware</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-arcade-app/docs/hardware/errors.html" role="menuitem">Errors</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/hardware/adding.html" role="menuitem">Adding New Board</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/hardware/raspberry-pi.html" role="menuitem">Raspberry Pi</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/hardware/makey-makey.html" role="menuitem">Makey Makey</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/hardware/shoebox-controller.html" role="menuitem">Shoebox Controller</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/hardware/dev.html" role="menuitem">Dev</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/hardware/dbg.html" role="menuitem">Debug connector</a>
+
+        </div>
+    </div>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="">Developers</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-arcade-app/docs/cli.html" role="menuitem">Command Line Interface</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/code.html" role="menuitem">Visual Studio Code support</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/blocks-embed.html" role="menuitem">Blocks Embed</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/developer/images.html" role="menuitem">Art, images, colors</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/developer/sound.html" role="menuitem">Sounds</a>
+
+        </div>
+    </div>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/pxt-arcade-app/docs/lessons.html">Lessons</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-arcade-app/docs/lessons/cherry-pickr.html" role="menuitem">Cherry Pickr</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/lessons/barrel-dodger.html" role="menuitem">Barrel Dodger</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/lessons/dance-party.html" role="menuitem">Dance Party</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/lessons/block-out.html" role="menuitem">BlockOut</a>
+
+        </div>
+    </div>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/pxt-arcade-app/docs/courses.html">Courses</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-arcade-app/docs/courses/csintro1.html" role="menuitem">CS Intro 1</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/courses/csintro2.html" role="menuitem">CS Intro 2</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/courses/csintro3.html" role="menuitem">CS Intro 3</a>
+
+        </div>
+    </div>
+
+    </div>
+</div>
+<!-- end include tocheader.html -->
+
+
+	<div id="docs" class="pusher">
+
+		<div class="article" id="maincontent">
+			<div class="article-inner">
+
+				
+<!-- include header.html -->
+<div class="ui one column padded grid hideprint">
+    <div class="column ui container">
+        
+    </div>
+</div>
+<!-- end include header.html -->
+
+
+				<div class="main ui container fluid mainbody">
+					<button id="printbtn" class="circular ui icon right floated button hideprint hidemobile"
+						title="Print" aria-label="Print">
+						<i class="icon print"></i>
+					</button>
+					
+    <div class="ui text">
+        <h1 id="spreads-like-wildfire">Spreads Like Wildfire</h1><h2 id="welcome-">Welcome </h2><p>Conditions in the weather and environment such as drought, winds, vegetation density and dryness can cause fires to spread more quickly.  Let’s simulate these conditions in our game.</p>
+<p><img class="ui image" src="/static/skillmap/forest/forest4.gif" alt="Fires are spreading very quickly" title="Look what we&#39;re about to do!" loading="lazy"></p>
+<h2 id="2-remember">2. Remember</h2><p><strong>🎮 Try your game</strong></p>
+<hr>
+<p>Can you remember which lines of code create each action?</p>
+<h2 id="3-set-the-environment">3. Set the Environment</h2><p><strong>🌲 How does the land look?</strong></p>
+<p>Let’s add code to simulate different elements of the environment.</p>
+<hr>
+<ul>
+<li>:circle:  First, drag <br />
+<code>||game:set health of trees to [7]||</code> <br />
+into <strong>the top</strong> of the <br />
+<code>||loops: on start||</code> <br />
+container.</li>
+</ul>
+<pre><code class="lang-blocks">namespace SpriteKind {
+    export const Water = SpriteKind.create()
+    export const Fire = SpriteKind.create()
+    export const Burnt = SpriteKind.create()
+}
+
+//@highlight
+game.set_health_of_trees(7)
+tiles.setTilemap(tilemap`level1`)
+let mySprite = sprites.create(assets.image`Fire Plane Right`, SpriteKind.Player)
+controller.moveSprite(mySprite)
+scene.cameraFollowSprite(mySprite)
+
+for (let index = 0; index &lt; 4; index++) {
+    newFire = sprites.create(assets.image`fire`, SpriteKind.Fire)
+    tiles.placeOnRandomTile(newFire, assets.tile`trees`)
+}</code></pre>
+<h2 id="4-wind-and-grass">4. Wind and Grass</h2><ul>
+<li>:circle:  On your own, can you find the blocks that set the
+<strong>strength of the wind</strong> and the
+<strong>dryness of the grass</strong>
+and add them to <strong>the top</strong> of the <code>||loops: on start||</code> container?</li>
+</ul>
+<p><em>💡 The three variables you just added can all be changed to make your game easier or more difficult!</em></p>
+<pre><code class="lang-blocks">namespace SpriteKind {
+    export const Water = SpriteKind.create()
+    export const Fire = SpriteKind.create()
+    export const Burnt = SpriteKind.create()
+}
+
+game.set_health_of_trees(7)
+//@highlight
+game.set_strength_of_wind(3)
+game.set_dryness_of_grass(3)
+tiles.setTilemap(tilemap`level1`)
+let mySprite = sprites.create(assets.image`Fire Plane Right`, SpriteKind.Player)
+controller.moveSprite(mySprite)
+scene.cameraFollowSprite(mySprite)
+
+for (let index = 0; index &lt; 4; index++) {
+    newFire = sprites.create(assets.image`fire`, SpriteKind.Fire)
+    tiles.placeOnRandomTile(newFire, assets.tile`trees`)
+}</code></pre>
+<h2 id="5-fires-spreading">5. Fires Spreading</h2><p>Now that the environment is set, we can add code to make the fires spread.</p>
+<hr>
+<ul>
+<li><p>:circle:   Drop an <br />
+<code>||game:on game update||</code> <br />
+container into an empty area of your workspace to run
+code each time the game updates its status.</p>
+</li>
+<li><p>:mouse pointer:   From the <code>||sprites:Sprites||</code> category, grab <br />
+<code>||sprites: random spread [ ]||</code> <br />
+and add it to the <br />
+<code>||game:on game update||</code> container.</p>
+</li>
+<li><p>:paint brush:  Change the empty grey box to the <strong>fire</strong> sprite.</p>
+</li>
+</ul>
+<pre><code class="lang-blocks">game.onUpdate(function () {
+    sprites.random_spread(img`
+. . . . . . . . . . . . . . . .
+. . . . . . . 5 . . . . . . . .
+. . . . . . . . . . . . . . . .
+. . . . . . . . 4 d . . . . . .
+. . . . . . . . . 4 d . . . . .
+. . . . . . . . 5 4 4 . . . . .
+. . . . . . . 5 4 5 4 . . . . .
+. . . . . 2 5 d 5 5 4 . . . . .
+. . . . d 2 5 5 5 5 4 . . . . .
+. . . . 4 5 2 5 5 5 5 4 . . . .
+. . . . 4 2 5 5 4 2 5 4 . . . .
+. . . . 4 4 2 2 2 2 4 4 . . . .
+. . . . . 4 4 2 2 4 4 . . . . .
+. . . . . . 4 2 4 4 . . . . . .
+. . . . . . . 4 4 . . . . . . .
+. . . . . . . . . . . . . . . .
+`)
+})
+</code></pre>
+<h2 id="6-test">6. Test</h2><p><strong>🎮 Test your game</strong></p>
+<hr>
+<p>Do you notice that your fire is now spreading to other nearby parts of the forest?</p>
+<p>Does it get out of control too quickly?</p>
+<h2 id="7-no-fuel-no-fire">7. No Fuel, No Fire</h2><p>Right now, the fires don’t burn the trees
+so they can appear on the same tree over and over.
+When a flame burns out, we want to mark that spot in the forest with a special tile.</p>
+<hr>
+<ul>
+<li><p>:paper plane:   Drag an <br />
+<code>||sprites: on destroyed [sprite] of kind [Player]||</code> <br />
+container into an empty area of your workspace.</p>
+</li>
+<li><p>:mouse pointer:   Change <code>||sprites: [Player]||</code> to <code>||sprites: [Fire]||</code>.</p>
+</li>
+</ul>
+<pre><code class="lang-blocks">namespace SpriteKind {
+    export const Water = SpriteKind.create()
+    export const Fire = SpriteKind.create()
+    export const Burnt = SpriteKind.create()
+}
+
+sprites.onDestroyed(SpriteKind.Fire, function (sprite) {
+})
+</code></pre>
+<h2 id="8-burned-trees">8. Burned Trees</h2><p>Time to change the tile at the location where the sprite was when it burned out.</p>
+<hr>
+<ul>
+<li>:tree:   Inside the empty <br />
+<code>||sprites: on destroyed [sprite] of kind [Fire]||</code> <br />
+container, add a <br />
+<code>||scene:set [ ] at tilemap col [0] row [0]||</code> <br />
+block.</li>
+</ul>
+<ul>
+<li>:mouse pointer:   Click the checkered box to choose the <strong>burnt tree</strong> tile.</li>
+</ul>
+<pre><code class="lang-blocks">namespace SpriteKind {
+    export const Water = SpriteKind.create()
+    export const Fire = SpriteKind.create()
+    export const Burnt = SpriteKind.create()
+}
+
+sprites.onDestroyed(SpriteKind.Fire, function (sprite) {
+    tiles.setTileAt(tiles.getTileLocation(0, 0), assets.tile`burnt tree`)
+})
+</code></pre>
+<h2 id="9-sprite-location">9. Sprite Location</h2><ul>
+<li>:map:   To get the location of the place where the fire went out, replace <br />
+<code>||scene:tilemap col [0] row [0]||</code> <br />
+with <br />
+<code>||tiles:location of [mySprite]||</code>.</li>
+</ul>
+<ul>
+<li>:mouse pointer:   To get the location for the correct sprite, replace  <code>||variables:mySprite||</code> with the <code>||variables:sprite||</code>
+value from the outer <strong> on destroyed</strong> container.</li>
+</ul>
+<p><img class="ui image" src="/static/skillmap/assets/sprite-from-container.gif" alt="Grab the sprite value from the title bar of the outer container" title="This is how your block knows which sprite to use" loading="lazy"></p>
+<pre><code class="lang-blocks">namespace SpriteKind {
+    export const Water = SpriteKind.create()
+    export const Fire = SpriteKind.create()
+    export const Burnt = SpriteKind.create()
+}
+
+sprites.onDestroyed(SpriteKind.Fire, function (sprite) {
+    tiles.setTileAt(tiles.locationOfSprite(sprite), assets.tile`burnt tree`)
+})
+</code></pre>
+<hr>
+<p><img class="ui image" src="/static/skillmap/assets/sprite-from-container.gif" alt="Grab the sprite value from the title bar of the outer container" title="This is how your block knows which sprite to use" loading="lazy"></p>
+<h2 id="10-smoke-screen">10. Smoke Screen</h2><p>When the fire overlaps a burnt tree tile, the fire should be destroyed instantly.</p>
+<hr>
+<ul>
+<li><p>:tree:   Drag an <br />
+<code>||scene:on [sprite] of kind [Player] overlaps [ ] at [location]||</code> <br />
+container into an empty area of the workspace.</p>
+</li>
+<li><p>:mouse pointer:   Change the sprite kind to <code>||scene:Fire||</code> and change the empty tile to <strong>burnt tree</strong>.</p>
+</li>
+</ul>
+<pre><code class="lang-blocks">namespace SpriteKind {
+    export const Water = SpriteKind.create()
+    export const Fire = SpriteKind.create()
+    export const Burnt = SpriteKind.create()
+}
+scene.onOverlapTile(SpriteKind.Fire, assets.tile`burnt tree`, function (sprite, location) {
+})</code></pre>
+<h2 id="11-lights-out">11. Lights Out</h2><ul>
+<li><p>:paper plane:   Add a <br />
+<code>||sprites:destroy [mySprite]||</code> <br />
+block into the empty container.</p>
+</li>
+<li><p>:mouse pointer:   To destroy the correct sprite, replace <br />
+<code>||variables:mySprite||</code> with the <code>||variables:sprite||</code> <br />
+value from the outer container.</p>
+</li>
+</ul>
+<p><img class="ui image" src="/static/skillmap/assets/sprite-from-container.gif" alt="Grab the sprite value from the title bar of the outer container" title="This is how your block knows which sprite to use" loading="lazy"></p>
+<pre><code class="lang-blocks">namespace SpriteKind {
+    export const Water = SpriteKind.create()
+    export const Fire = SpriteKind.create()
+    export const Burnt = SpriteKind.create()
+}
+scene.onOverlapTile(SpriteKind.Fire, assets.tile`burnt tree`, function (sprite, location) {
+    sprite.destroy()
+})</code></pre>
+<hr>
+<p><img class="ui image" src="/static/skillmap/assets/sprite-from-container.gif" alt="Grab the sprite value from the title bar of the outer container" title="This is how your block knows which sprite to use" loading="lazy"></p>
+<h2 id="12-fire-eats-fire">12. Fire Eats Fire</h2><p>When the fire overlaps another flame, we can destroy one of the flames.</p>
+<hr>
+<ul>
+<li><p>:paper plane:   Drag the <br />
+<code>||sprites:on [sprite] of kind [Player] overlaps [otherSprite] of kind [Player]||</code> <br />
+container into an empty area of the workspace.</p>
+</li>
+<li><p>:mouse pointer:   Change both sprite kinds to <code>||sprites:Fire||</code>.</p>
+</li>
+</ul>
+<pre><code class="lang-blocks">namespace SpriteKind {
+    export const Water = SpriteKind.create()
+    export const Fire = SpriteKind.create()
+    export const Burnt = SpriteKind.create()
+}
+sprites.onOverlap(SpriteKind.Fire, SpriteKind.Fire, function (sprite, otherSprite) {
+
+})</code></pre>
+<h2 id="13-one-less-fire">13. One Less Fire</h2><ul>
+<li><p>:paper plane:   Add a <br />
+<code>||sprites:destroy [mySprite]||</code> <br />
+block into the empty container.</p>
+</li>
+<li><p>:mouse pointer:   To destroy the correct sprite, replace <br />
+<code>||variables:mySprite||</code> with the <code>||variables:sprite||</code> <br />
+value from the outer container.</p>
+</li>
+</ul>
+<p><img class="ui image" src="/static/skillmap/assets/sprite-from-container.gif" alt="Grab the sprite value from the title bar of the outer container" title="This is how your block knows which sprite to use" loading="lazy"></p>
+<pre><code class="lang-blocks">namespace SpriteKind {
+    export const Water = SpriteKind.create()
+    export const Fire = SpriteKind.create()
+    export const Burnt = SpriteKind.create()
+}
+sprites.onOverlap(SpriteKind.Fire, SpriteKind.Fire, function (sprite, otherSprite) {
+    sprite.destroy()
+})</code></pre>
+<hr>
+<p><img class="ui image" src="/static/skillmap/assets/sprite-from-container.gif" alt="Grab the sprite value from the title bar of the outer container" title="This is how your block knows which sprite to use" loading="lazy"></p>
+<h2 id="14-test-again">14. Test Again</h2><p><strong>🎮 Play Your Game</strong></p>
+<hr>
+<p>With some skill, you should be able to get to all of the fires and put them out before
+they spread too far.</p>
+<h2 id="finale">Finale</h2><p>👏 <strong>Excellent!</strong></p>
+<hr>
+<p>Once you’ve put out the fires, click <strong>Done</strong> to
+keep moving through the skillmap to find out how to add a heads-up display to your game.</p>
+<pre><code class="lang-package">pxt-forest-special=github:kiki-lee/forest-special/</code></pre>
+<pre><code class="lang-template">
+controller.A.onEvent(ControllerButtonEvent.Repeated, function () {
+    sprites.spray(mySprite, assets.image`water`)
+})
+
+tiles.setTilemap(tilemap`level1`)
+let mySprite = sprites.create(assets.image`Fire Plane Right`, SpriteKind.Player)
+controller.moveSprite(mySprite)
+scene.cameraFollowSprite(mySprite)
+
+for (let index = 0; index &lt; 4; index++) {
+    newFire = sprites.create(assets.image`fire`, SpriteKind.Fire)
+    tiles.placeOnRandomTile(newFire, assets.tile`trees`)
+}
+
+sprites.onCreated(SpriteKind.Fire, function (sprite) {
+    sprite.startEffect(effects.fire)
+    sprites.set_flame_strength(sprite, 10)
+})
+
+sprites.onOverlap(SpriteKind.Water, SpriteKind.Fire, function (sprite, otherSprite) {
+    sprite.destroy()
+    sprites.change_flame_strength_by(otherSprite, -1)
+})
+</code></pre>
+<pre><code class="lang-assetjson">{
+  &quot;README.md&quot;: &quot; &quot;,
+  &quot;assets.json&quot;: &quot;&quot;,
+  &quot;images.g.jres&quot;: &quot;{\n    \&quot;a5zAhGKtmEx`ww9FE(zZ\&quot;: {\n        \&quot;data\&quot;: \&quot;hwQEAAQAAACQCQAAmZkAAJmZAACQCQAA\&quot;,\n        \&quot;mimeType\&quot;: \&quot;image/x-mkcd-f4\&quot;,\n        \&quot;displayName\&quot;: \&quot;water\&quot;\n    },\n    \&quot;image2\&quot;: {\n        \&quot;data\&quot;: \&quot;hwQYAAwAAAAAAPAPAAAAAAAAgA8AAAAA8P+PDwAAAACAuIsPsPsAAACIiw+/+AAAAICI+7v4AAAAAIi7u/gAAAAAuLu7+AAAAAC4u4v5AAAA8Li7iA8AAADwuIv4AAAAAI+4i/8PAAAAj7u7+wwAAPCLu7v4AAAAv/u7ufgPAAC/+7u5+AwAAL/7u734AAAAv/+7vfgAAACfj7+9+AAAAP8AH7v4AAAAAAC/uw8AAAAAAL+LDwAAAAAA8PsAAAAAAADwDwAAAAA=\&quot;,\n        \&quot;mimeType\&quot;: \&quot;image/x-mkcd-f4\&quot;,\n        \&quot;displayName\&quot;: \&quot;Fire Plane Right\&quot;\n    },\n    \&quot;image7\&quot;: {\n        \&quot;data\&quot;: \&quot;hwQYAAwAAAAAAPAPAAAAAAAA8PsAAAAAAAC/iw8AAAAAAL+7DwAAAP8AH7v4AAAAn4+/vfgAAAC//7u9+AAAAL/7u734AAAAv/u7ufgMAAC/+7u5+A8AAPCLu7v4AAAAAI+7u/sMAAAAj7iL/w8AAADwuIv4AAAAAPC4u4gPAAAAALi7i/kAAAAAuLu7+AAAAACIu7v4AAAAgIj7u/gAAACIiw+/+AAAgLiLD7D7AADw/48PAAAAAAAAgA8AAAAAAADwDwAAAAA=\&quot;,\n        \&quot;mimeType\&quot;: \&quot;image/x-mkcd-f4\&quot;,\n        \&quot;displayName\&quot;: \&quot;Fire Plane Left\&quot;\n    },\n    \&quot;image1\&quot;: {\n        \&quot;data\&quot;: \&quot;hwQYABAAAAAAAAD/AAAAAAAAwPIAAAAA/P8s8gAAAABMIi/yzAwAAEwkIvwswgAAwEQizCzCAAAATCzMIsIAAADALMwixP8AAMAiLEL0/w8AwCIsQvz/DwAvIixE//8PAC8iwiT/Ig8ALyIiIszMD/AsIiIi8sIP8EyyKSLy/wDPTBIpIvIAAM9MEiEi8gAALy8bISLyAAAvz5khIvIAAP/PmSsi8gAA/wCcKyIPAAAAAMAiIg8AAAAAACzyAAAAAAAAwA8AAAA=\&quot;,\n        \&quot;mimeType\&quot;: \&quot;image/x-mkcd-f4\&quot;,\n        \&quot;displayName\&quot;: \&quot;Fire Plane 2 Right\&quot;\n    },\n    \&quot;image4\&quot;: {\n        \&quot;data\&quot;: \&quot;hwQYABAAAAAAAADADwAAAAAAACzyAAAAAADAIiIPAAD/AJwrIg8AAP/PmSsi8gAAL8+ZISLyAAAvLxshIvIAAM9MEiEi8gAAz0wSKSLyAADwTLIpIvL/APAsIiIi8sIPAC8iIiLMzA8ALyLCJP8iDwAvIixE//8PAMAiLEL8/w8AwCIsQvT/DwDALMwixP8AAEwszCLCAADARCLMLMIAAEwkIvwswgAATCIv8swMAAD8/yzyAAAAAAAAwPIAAAAAAAAA/wAAAAA=\&quot;,\n        \&quot;mimeType\&quot;: \&quot;image/x-mkcd-f4\&quot;,\n        \&quot;displayName\&quot;: \&quot;Fire Plane 2 Left\&quot;\n    },\n    \&quot;image3\&quot;: {\n        \&quot;data\&quot;: \&quot;hwQQABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABNRAAAAAAAIFJCBAAAAABQJSVEAFAAANVVJSIEAEBQVFUkQgQA0ERVVSJEAAAATURURQQAAAAAAEBEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==\&quot;,\n        \&quot;mimeType\&quot;: \&quot;image/x-mkcd-f4\&quot;,\n        \&quot;displayName\&quot;: \&quot;fire\&quot;\n    },\n    \&quot;image5\&quot;: {\n        \&quot;data\&quot;: \&quot;hwQkABQAAAAAAAAA//8PAAAAAAAAAAAA9v8PAAAAAAAAAAAAYP8PAAAAAAAAAAAAAPYPAAAAAAAAAAAAAPAPAAAAAAAAAAAAAPAPAAAAAAAAAAAAAPAPAAAAAAAADQAAAPAPAAAAAAAADQAAAPD/AAAAAAAQDQAAAP//AAAAAAAQDQAAAP//DwAAAAAQDQAA/4//DwAAAAAQDQDwZob4/wAPAAAQDQBvhoiI/wAPAAAQDfBmYYiB/wAPAAAQDW8YFoiI+AAPAAAQ8IZogYaI+P8PAAAQYGZmZoiB+AAPAAAQ8GZmZoaI+AAPAAAQYGZmhoiI+AAPAADd/Zaf//j/+AAPAAAd3ZmZiYb4+AAPAADQ8JmZmYj4+AAPAADQ0NmZmYaP+AAPAADQ8JmZmfiI+AAPAADQ8JadmYiI+P8PAADRAG+ZmWiI+AAPAADRAPCWaYiG//APAADRAABvhoiID/APAADRAADwZoj4APAPAADRAAAA//8PAAAAAADRAAAAAAAAAAAAAADRAAAAAAAAAAAAAAABAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=\&quot;,\n        \&quot;mimeType\&quot;: \&quot;image/x-mkcd-f4\&quot;,\n        \&quot;displayName\&quot;: \&quot;Fire Helicopter Right\&quot;\n    },\n    \&quot;image6\&quot;: {\n        \&quot;data\&quot;: \&quot;hwQkABQAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAABAAAAAAAAAAAAAADRAAAAAAAAAAAAAADRAAAAAAAAAAAAAADRAAAA//8PAAAAAADRAADwZoj4APAPAADRAABvhoiID/APAADRAPCWaYiG//APAADRAG+ZmWiI+AAPAADQ8JadmYiI+P8PAADQ8JmZmfiI+AAPAADQ0NmZmYaP+AAPAADQ8JmZmYj4+AAPAAAd3ZmZiYb4+AAPAADd/Zaf//j/+AAPAAAQYGZmhoiI+AAPAAAQ8GZmZoaI+AAPAAAQYGZmZoiB+AAPAAAQ8IZogYaI+P8PAAAQDW8YFoiI+AAPAAAQDfBmYYiB/wAPAAAQDQBvhoiI/wAPAAAQDQDwZob4/wAPAAAQDQAA/4//DwAAAAAQDQAAAP//DwAAAAAQDQAAAP//AAAAAAAADQAAAPD/AAAAAAAADQAAAPAPAAAAAAAAAAAAAPAPAAAAAAAAAAAAAPAPAAAAAAAAAAAAAPAPAAAAAAAAAAAAAPYPAAAAAAAAAAAAYP8PAAAAAAAAAAAA9v8PAAAAAAAAAAAA//8PAAAAAAA=\&quot;,\n        \&quot;mimeType\&quot;: \&quot;image/x-mkcd-f4\&quot;,\n        \&quot;displayName\&quot;: \&quot;Fire Helicopter Left\&quot;\n    },\n    \&quot;anim1\&quot;: {\n        \&quot;namespace\&quot;: \&quot;myAnimations\&quot;,\n        \&quot;id\&quot;: \&quot;anim1\&quot;,\n        \&quot;mimeType\&quot;: \&quot;application/mkcd-animation\&quot;,\n        \&quot;data\&quot;: \&quot;YmMwMjE4MDAxMDAwMDIwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDBmZmZmZmYwMDAwMDAwMDAwMDAwMDAwMDA5ZmJiYmIwZjAwMDAwMDAwZjgwMDAwMDBmMGJmYmJmYjBmMDAwMDgwZjgwMDAwMDA4MGZmZmY4OGY4MGYwMDg4ZmIwMDAwZmZmZmJiYmJiYjg4ODg4OGI4ZmIwMGZmYmJiMWJiYmJiYmJiYmI4Yjg4ODhmOGJmYmJkYmRkOTliYmJiYmJiYmZiZmZmZmYwYjhiYmJiYmJiYjg4YmJiYjBmMDAwMDAwZmY4ODg4ODhiODhmYjhiYmZiMDAwMDAwMDBmZmZmZmZmZmZmODhiYmJiMGIwMDAwMDAwMDAwZmNjMDBmOWY4ODg4MGIwMDAwMDAwMDAwMDAwMDAwZjBmZmZmMGYwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDBmZmZmZmYwMDAwMDAwMDAwZjgwMDAwMDA5ZmJiYmJmZjAwMDAwMDgwZjgwMDAwMDA4MGZmZmZmZjBmMDAwMDg4ZmIwMDAwZmZmZmJiYmJiYmZmODg4OGI4ZmIwMGZmYmJkYjk5OTliYmJiYmI4Yjg4ODhmOGJmYmJiYmJiYmJiYmJiYmJiYmZiZmZmZmYwYjhiYmJiYmJiYjg4YjhiYmZiMDAwMDAwZmY4ODg4ODhiODhmODhiYmJiMGIwMDAwMDBmZmZmZmZmZmZmOWY4ODg4MGIwMDAwMDAwMDAwZmNjMDBmZjBmZmZmMGYwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMA==\&quot;,\n        \&quot;displayName\&quot;: \&quot;Fire Plane Left Animation\&quot;\n    },\n    \&quot;anim2\&quot;: {\n        \&quot;namespace\&quot;: \&quot;myAnimations\&quot;,\n        \&quot;id\&quot;: \&quot;anim2\&quot;,\n        \&quot;mimeType\&quot;: \&quot;application/mkcd-animation\&quot;,\n        \&quot;data\&quot;: \&quot;YmMwMjE4MDAxMDAwMDIwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwZmZmZmZmMDAwMDAwOGYwMDAwMDAwMGYwYmJiYmY5MDAwMDAwOGYwODAwMDBmMGJmYmJmYjBmMDAwMDAwYmY4ODAwZjA4Zjg4ZmZmZjA4MDAwMDAwYmY4Yjg4ODg4OGJiYmJiYmZmZmYwMDhmODg4OGI4YmJiYmJiYmJiYjFiYmJmZmZmZmZiZmJiYmJiYmJiOTlkZGJkYmJmYjAwMDBmMGJiYmI4OGJiYmJiYmJiOGIwZjAwMDBiZmJiOGJmODhiODg4ODg4ZmYwMDAwYjBiYmJiODhmZmZmZmZmZmZmMDAwMDAwYjA4ODg4ZjlmMDBjY2YwMDAwMDAwMDAwZjBmZmZmMGYwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwOGYwMDAwMDAwMDAwZmZmZmZmMDAwMDAwOGYwODAwMDAwMGZmYmJiYmY5MDAwMDAwYmY4ODAwMDBmMGZmZmZmZjA4MDAwMDAwYmY4Yjg4ODhmZmJiYmJiYmZmZmYwMDhmODg4OGI4YmJiYmJiOTk5OWJkYmJmZmZmZmZiZmJiYmJiYmJiYmJiYmJiYmJmYjAwMDBiZmJiOGI4OGJiYmJiYmJiOGIwZjAwYjBiYmJiODhmODhiODg4ODg4ZmYwMDAwYjA4ODg4ZjlmZmZmZmZmZmZmMDAwMDAwZjBmZmZmMGZmMDBjY2YwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMA==\&quot;,\n        \&quot;displayName\&quot;: \&quot;Fire Plane Right Animation\&quot;\n    },\n    \&quot;anim4\&quot;: {\n        \&quot;namespace\&quot;: \&quot;myAnimations\&quot;,\n        \&quot;id\&quot;: \&quot;anim4\&quot;,\n        \&quot;mimeType\&quot;: \&quot;application/mkcd-animation\&quot;,\n        \&quot;data\&quot;: \&quot;YmMwMjE4MDAxMDAwMDIwMDAwMDBmZmZmZmYwMDAwMDAwMGMwY2MwMDAwMDBmZjIyY2MwZjAwMDAwMGNjZjQwMDAwMDBmMGNmY2NmY2ZmMDBjMDRjZjQwMDAwMDBjYzQyNDQyMjIyY2NjYzQ0ZjIwMDAwYzBiOTQ0MjIyMjIyMjJjYzI0ZjIwMDAwOWM5OTJiMjIyMjIyMjIyMjIyY2YwMGMwYjI5OTExYjEyMjIyMjIyMmMyMjIwYzJjMjIxYjExOTkyMjIyY2NjY2NjMmNmMjJmMjIyMjIyMjIyMmMyMjJjMmZjZmZmZmYwMjIyMjIyMjIyMjQ0MjIyMjBmMDAwMDAwZmYyMjIyMjJjMjRmMjQyMmYyMDAwMDAwMDBmZmZmZmZmZmZmNDQyMjIyMGMwMDAwMDAwMDAwZjBjMmZmY2YyMjIyMGMwMDAwMDAwMDAwZjBjY2YyZmZmZmZmMGYwMDAwMDAwMDAwMDBjZmYyZmYwZjAwMDAwMDAwMDAwMDAwMDBmMGZmZmYwMDAwMDAwMDAwZjBmZmZmMGYwMDAwMDAwMGMwY2MwMDAwZjAyZmMyZmMwZjAwMDAwMDRjZjQwMDAwMDBmZmNmY2NmY2ZmMDBjMDQ0ZjIwMDAwMDBjYzQyNDQyMjIyY2M0YzI0ZjIwMDAwYzA5OTJiMjIyMjIyMjJjYzIyY2YwMDAwOWM5OTExYjEyMjIyMjIyMjIyMjIwY2MwYjIxYjExOTkyMmMyY2NjY2NjMjJmMjJjMjIyMjIyMjIyMjJjMjJjY2ZjZmZmZjJmMjIyMjIyMjIyMjQ0MjIyMmNjMGMwMGYwMjIyMjIyMjIyMjQyNDQyMjIyMGMwMDAwZmYyMjIyMjJjMmZmNGMyNDIyMGMwMDAwMDBmZmZmZmZjZmZmZmZjY2NjMDAwMDAwMDAwMDAwZjBjMmYyZmYwZjAwMDAwMDAwMDAwMDAwZjBjY2YyZmYwZjAwMDAwMDAwMDAwMDAwMDBmZmZmZmYwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMA==\&quot;,\n        \&quot;displayName\&quot;: \&quot;Fire Plane 2 Left Animation\&quot;\n    },\n    \&quot;anim3\&quot;: {\n        \&quot;namespace\&quot;: \&quot;myAnimations\&quot;,\n        \&quot;id\&quot;: \&quot;anim3\&quot;,\n        \&quot;mimeType\&quot;: \&quot;application/mkcd-animation\&quot;,\n        \&quot;data\&quot;: \&quot;YmMwMjE4MDAxMDAwMDIwMDAwY2MwYzAwMDAwMDAwZmZmZmZmMDAwMDAwNGZjYzAwMDAwMGYwY2MyMmZmMDAwMDAwNGZjNDBjMDBmZmNmY2NmYzBmMDAwMDAwMmY0NGNjY2MyMjIyNDQyNGNjMDAwMDAwMmY0MmNjMjIyMjIyMjI0NDliMGMwMDAwZmMyMjIyMjIyMjIyMjJiMjk5YzkwMGMwMjIyYzIyMjIyMjIyMWIxMTk5MmIwYzJmYzJjY2NjY2MyMjIyOTkxMWIxMjJjMmZmZmZjZjJjMjIyYzIyMjIyMjIyMjJmMjAwMDBmMDIyMjI0NDIyMjIyMjIyMjIwZjAwMDAyZjIyNDJmNDJjMjIyMjIyZmYwMDAwYzAyMjIyNDRmZmZmZmZmZmZmMDAwMDAwYzAyMjIyZmNmZjJjMGYwMDAwMDAwMDAwZjBmZmZmZmYyZmNjMGYwMDAwMDAwMDAwMDAwMGYwZmYyZmZjMDAwMDAwMDAwMDAwMDAwMDAwZmZmZjBmMDAwMDAwMDAwMDAwY2MwYzAwMDAwMDAwZjBmZmZmMGYwMDAwNGZjNDAwMDAwMGYwY2YyY2YyMGYwMDAwMmY0NDBjMDBmZmNmY2NmY2ZmMDAwMDAwMmY0MmM0Y2MyMjIyNDQyNGNjMDAwMDAwZmMyMmNjMjIyMjIyMjJiMjk5MGMwMGMwMjIyMjIyMjIyMjIyMWIxMTk5YzkwMDJmMjJjY2NjY2MyYzIyOTkxMWIxMmIwY2ZmZmZjZmNjMjJjMjIyMjIyMjIyMjJjMjAwYzBjYzIyMjI0NDIyMjIyMjIyMjJmMjAwYzAyMjIyNDQyNDIyMjIyMjIyMjIwZjAwYzAyMjQyYzRmZjJjMjIyMjIyZmYwMDAwMDBjY2NjZmZmZmZjZmZmZmZmMDAwMDAwMDAwMGYwZmYyZjJjMGYwMDAwMDAwMDAwMDAwMGYwZmYyZmNjMGYwMDAwMDAwMDAwMDAwMDAwZmZmZmZmMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMA==\&quot;,\n        \&quot;displayName\&quot;: \&quot;Fire Plane 2 Right Animation\&quot;\n    },\n    \&quot;anim6\&quot;: {\n        \&quot;namespace\&quot;: \&quot;myAnimations\&quot;,\n        \&quot;id\&quot;: \&quot;anim6\&quot;,\n        \&quot;mimeType\&quot;: \&quot;application/mkcd-animation\&quot;,\n        \&quot;data\&quot;: \&quot;MzIwMDI0MDAxNDAwMDkwMDEwMTExMTExMTEwMDAwZGQwMDAwMDAwMDAwMDAwMDAwMDAwMDAwZDBkZGRkZGRkZGRkZDExMTExMTExMTExMDEwMDAwMDAwMDAwMDAwMDAwMDAwMDAwZGQwMDAwZGRkZGRkZGQwZDAwMDAwMDAwMDAwMDAwMDBmZmZkZmRmNmY2MDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwZjA5Njk5Njk2NjY2MGYwMDAwMDAwMDAwMDAwMDAwMDAwMDAwNmY5OTlkZjk2Njg2ZjYwMDAwMDAwMDAwMDAwMDAwMDAwMGYwOTY5ZDk5OTk2Njg2NjgwZjAwMDAwMDAwMDAwMDAwMDAwMDZmOTk5OTk5Zjk2NjY2NjFmNjAwMDAwMDAwMDAwMDAwMDBmMDY2OTk5OTk5Zjk2NjE2MTY2NjBmMDAwMDAwMDBmNjAwMDBmMDg2OTY5OTk5Zjg2ODg2NjE2ODBmMDAwMDAwNjBmZjAwMDBmMDg4ODg4ODg2ODY2ODY4ODg2OGZmMGYwMDAwZjZmZjAwMDBmMDg4NjhmODg4Zjg4ODg4ODg4OGY4ZmZmZmZmZmZmZjAwMDBmMDg4ODY4ODhmZjg4ODgxMTg4OGZmZmZmZmZmZmZmZjAwMDA4MDhmODg4OGY4ZmY4ODg4ODhmOGZmZmYwMDAwMDAwMDAwMDAwMGYwOGY4ODg4ODg4ODg4ZjhmZmZmMDAwMDAwMDAwMDAwMDAwMDAwZmZmZmZmZmZmZmZmZmZmZjAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwZjAwMDAwMGYwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMGZmMGYwZjAwMDAwMGYwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMGZmZmZmZmZmZmZmZmZmZmZmZjAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMTExMTExZGQwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwZDBkZGRkZDExMTExMTEwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwZGRkZGRkZGQwZDAwMDAwMDAwMDAwMDAwMDAwMDAwMDBmZmZkZmRmNmY2MDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwZjA5Njk5Njk2NjY2MGYwMDAwMDAwMDAwMDAwMDAwMDAwMDAwNmY5OTlkOTk2Njg2ZjYwMDAwMDAwMDAwMDAwMDAwMDAwMGYwOTY5ZDk5Zjk2Njg2NjgwZjAwMDAwMDAwMDAwMDAwMDAwMDZmOTk5OTk5OTk2NjY2NjFmNjAwMDAwMDAwMDAwMDAwMDBmMDY2OTk5OTk5Zjk2NjE2MTY2NjBmMDAwMDAwMDBmNjAwMDBmMDg2OTY5OTk5Zjg2ODg2NjE2ODBmMDAwMDAwNjBmZjAwMDBmMDg4ODg4ODg2ODY2ODY4ODg2OGZmMGYwMDAwZjZmZjAwMDBmMDg4NjhmODg4Zjg4ODg4ODg4OGY4ZmZmZmZmZmZmZjAwMDBmMDg4ODY4ODhmZjg4ODgxMTg4OGZmZmZmZmZmZmZmZjAwMDA4MDhmODg4OGY4ZmY4ODg4ODhmOGZmZmYwMDAwMDAwMDAwMDAwMGYwOGY4ODg4ODg4ODg4ZjhmZmZmMDAwMDAwMDAwMDAwMDAwMDAwZmZmZmZmZmZmZmZmZmZmZjAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwZjAwMDAwMGYwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMGZmMGYwZjAwMDAwMGYwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMGZmZmZmZmZmZmZmZmZmZmZmZjAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwZGQwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMGQwZDFkZDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMGRkZGQwZDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDBmZmY4ZjhmOGY2MDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwZjA5Njk5Njk2NjY2MGYwMDAwMDAwMDAwMDAwMDAwMDAwMDAwNmY5OTlkOTk2Njg2ZjYwMDAwMDAwMDAwMDAwMDAwMDAwMGYwOTY5ZDk5Zjk2Njg2NjgwZjAwMDAwMDAwMDAwMDAwMDAwMDZmOTk5OTk5OTk2NjY2NjFmNjAwMDAwMDAwMDAwMDAwMDBmMDY2OTk5OTk5Zjk2NjE2MTY2NjBmMDAwMDAwMDBmNjAwMDBmMDg2OTY5OTk5Zjg2ODg2NjE2ODBmMDAwMDAwNjBmZjAwMDBmMDg4ODg4ODg2ODY2ODY4ODg2OGZmMGYwMDAwZjZmZjAwMDBmMDg4NjhmODg4Zjg4ODg4ODg4OGY4ZmZmZmZmZmZmZjAwMDBmMDg4ODY4ODhmZjg4ODgxMTg4OGZmZmZmZmZmZmZmZjAwMDA4MDhmODg4OGY4ZmY4ODg4ODhmOGZmZmYwMDAwMDAwMDAwMDAwMGYwOGY4ODg4ODg4ODg4ZjhmZmZmMDAwMDAwMDAwMDAwMDAwMDAwZmZmZmZmZmZmZmZmZmZmZjAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwZjAwMDAwMGYwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMGZmMGYwZjAwMDAwMGYwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMGZmZmZmZmZmZmZmZmZmZmZmZjAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwZGQxMTExMTEwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMTExMTExZDFkZGRkMGQwMDAwMDAwMDAwMDAwMDAwMDAwMGQwZGRkZGRkZGQwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDBmZmZkZmRmNmY2MDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwZjA5Njk5Njk2NjY2MGYwMDAwMDAwMDAwMDAwMDAwMDAwMDAwNmY5OTlkOTk2Njg2ZjYwMDAwMDAwMDAwMDAwMDAwMDAwMGYwOTY5ZDk5Zjk2Njg2NjgwZjAwMDAwMDAwMDAwMDAwMDAwMDZmOTk5OTk5OTk2NjY2NjFmNjAwMDAwMDAwMDAwMDAwMDBmMDY2OTk5OTk5Zjk2NjE2MTY2NjBmMDAwMDAwMDBmNjAwMDBmMDg2OTY5OTk5Zjg2ODg2NjE2ODBmMDAwMDAwNjBmZjAwMDBmMDg4ODg4ODg2ODY2ODY4ODg2OGZmMGYwMDAwZjZmZjAwMDBmMDg4NjhmODg4Zjg4ODg4ODg4OGY4ZmZmZmZmZmZmZjAwMDBmMDg4ODY4ODhmZjg4ODgxMTg4OGZmZmZmZmZmZmZmZjAwMDA4MDhmODg4OGY4ZmY4ODg4ODhmOGZmZmYwMDAwMDAwMDAwMDAwMGYwOGY4ODg4ODg4ODg4ZjhmZmZmMDAwMDAwMDAwMDAwMDAwMDAwZmZmZmZmZmZmZmZmZmZmZjAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwZjAwMDAwMGYwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMGZmMGYwZjAwMDAwMGYwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMGZmZmZmZmZmZmZmZmZmZmZmZjAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwZGQwMDAwMTExMTExMTEwMTAwMDAwMDAwMTAxMTExMTExMTExZDFkZGRkZGRkZGRkMGQwMDAwMDAwMGQwZGRkZGRkZGQwMDAwZGQwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDBmZmZkZmRmNmY2MDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwZjA5Njk5Njk2NjY2MGYwMDAwMDAwMDAwMDAwMDAwMDAwMDAwNmY5OTlkOTk2Njg2ZjYwMDAwMDAwMDAwMDAwMDAwMDAwMGYwOTY5ZDk5Zjk2Njg2NjgwZjAwMDAwMDAwMDAwMDAwMDAwMDZmOTk5OTk5OTk2NjY2NjFmNjAwMDAwMDAwMDAwMDAwMDBmMDY2OTk5OTk5Zjk2NjE2MTY2NjBmMDAwMDAwMDBmNjAwMDBmMDg2OTY5OTk5Zjg2ODg2NjE2ODBmMDAwMDAwNjBmZjAwMDBmMDg4ODg4ODg2ODY2ODY4ODg2OGZmMGYwMDAwZjZmZjAwMDBmMDg4NjhmODg4Zjg4ODg4ODg4OGY4ZmZmZmZmZmZmZjAwMDBmMDg4ODY4ODhmZjg4ODgxMTg4OGZmZmZmZmZmZmZmZjAwMDA4MDhmODg4OGY4ZmY4ODg4ODhmOGZmZmYwMDAwMDAwMDAwMDAwMGYwOGY4ODg4ODg4ODg4ZjhmZmZmMDAwMDAwMDAwMDAwMDAwMDAwZmZmZmZmZmZmZmZmZmZmZjAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwZjAwMDAwMGYwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMGZmMGYwZjAwMDAwMGYwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMGZmZmZmZmZmZmZmZmZmZmZmZjAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwZGQxMTExMTEwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMTExMTExZDFkZGRkMGQwMDAwMDAwMDAwMDAwMDAwMDAwMGQwZGRkZGRkZGQwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDBmZmZkZmRmNmY2MDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwZjA5Njk5Njk2NjY2MGYwMDAwMDAwMDAwMDAwMDAwMDAwMDAwNmY5OTlkOTk2Njg2ZjYwMDAwMDAwMDAwMDAwMDAwMDAwMGYwOTY5ZDk5Zjk2Njg2NjgwZjAwMDAwMDAwMDAwMDAwMDAwMDZmOTk5OTk5OTk2NjY2NjFmNjAwMDAwMDAwMDAwMDAwMDBmMDY2OTk5OTk5Zjk2NjE2MTY2NjBmMDAwMDAwMDBmNjAwMDBmMDg2OTY5OTk5Zjg2ODg2NjE2ODBmMDAwMDAwNjBmZjAwMDBmMDg4ODg4ODg2ODY2ODY4ODg2OGZmMGYwMDAwZjZmZjAwMDBmMDg4NjhmODg4Zjg4ODg4ODg4OGY4ZmZmZmZmZmZmZjAwMDBmMDg4ODY4ODhmZjg4ODgxMTg4OGZmZmZmZmZmZmZmZjAwMDA4MDhmODg4OGY4ZmY4ODg4ODhmOGZmZmYwMDAwMDAwMDAwMDAwMGYwOGY4ODg4ODg4ODg4ZjhmZmZmMDAwMDAwMDAwMDAwMDAwMDAwZmZmZmZmZmZmZmZmZmZmZjAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwZjAwMDAwMGYwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMGZmMGYwZjAwMDAwMGYwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMGZmZmZmZmZmZmZmZmZmZmZmZjAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwZGQxMTExMTEwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMTExMTExZDFkZGRkMGQwMDAwMDAwMDAwMDAwMDAwMDAwMGQwZGRkZGRkZGQwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDBmZmZkZmRmNmY2MDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwZjA5Njk5Njk2NjY2MGYwMDAwMDAwMDAwMDAwMDAwMDAwMDAwNmY5OTlkOTk2Njg2ZjYwMDAwMDAwMDAwMDAwMDAwMDAwMGYwOTY5ZDk5Zjk2Njg2NjgwZjAwMDAwMDAwMDAwMDAwMDAwMDZmOTk5OTk5Zjk2NjY2NjFmNjAwMDAwMDAwMDAwMDAwMDBmMDY2OTk5OTk5Zjk2NjE2MTY2NjBmMDAwMDAwMDBmNjAwMDBmMDg2OTY5OTk5Zjg2ODg2NjE2ODBmMDAwMDAwNjBmZjAwMDBmMDg4ODg4ODg2ODY2ODY4ODg2OGZmMGYwMDAwZjZmZjAwMDBmMDg4NjhmODg4Zjg4ODg4ODg4OGY4ZmZmZmZmZmZmZjAwMDBmMDg4ODY4ODhmZjg4ODgxMTg4OGZmZmZmZmZmZmZmZjAwMDA4MDhmODg4OGY4ZmY4ODg4ODhmOGZmZmYwMDAwMDAwMDAwMDAwMGYwOGY4ODg4ODg4ODg4ZjhmZmZmMDAwMDAwMDAwMDAwMDAwMDAwZmZmZmZmZmZmZmZmZmZmZjAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwZjAwMDAwMGYwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMGZmMGYwZjAwMDAwMGYwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMGZmZmZmZmZmZmZmZmZmZmZmZjAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwZGQwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMGQwZDFkZDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMGRkZGQwZDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDBmZmY4ZjhmOGY2MDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwZjA5Njk5Njk2NjY2MGYwMDAwMDAwMDAwMDAwMDAwMDAwMDAwNmY5OTlkOTk2Njg2ZjYwMDAwMDAwMDAwMDAwMDAwMDAwMGYwOTY5ZDk5Zjk2Njg2NjgwZjAwMDAwMDAwMDAwMDAwMDAwMDZmOTk5OTk5OTk2NjY2NjFmNjAwMDAwMDAwMDAwMDAwMDBmMDY2OTk5OTk5Zjk2NjE2MTY2NjBmMDAwMDAwMDBmNjAwMDBmMDg2OTY5OTk5Zjg2ODg2NjE2ODBmMDAwMDAwNjBmZjAwMDBmMDg4ODg4ODg2ODY2ODY4ODg2OGZmMGYwMDAwZjZmZjAwMDBmMDg4NjhmODg4Zjg4ODg4ODg4OGY4ZmZmZmZmZmZmZjAwMDBmMDg4ODY4ODhmZjg4ODgxMTg4OGZmZmZmZmZmZmZmZjAwMDA4MDhmODg4OGY4ZmY4ODg4ODhmOGZmZmYwMDAwMDAwMDAwMDAwMGYwOGY4ODg4ODg4ODg4ZjhmZmZmMDAwMDAwMDAwMDAwMDAwMDAwZmZmZmZmZmZmZmZmZmZmZjAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwZjAwMDAwMGYwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMGZmMGYwZjAwMDAwMGYwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMGZmZmZmZmZmZmZmZmZmZmZmZjAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMTExMTExZGQwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwZDBkZGRkZDExMTExMTEwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwZGRkZGRkZGQwZDAwMDAwMDAwMDAwMDAwMDAwMDAwMDBmZmZkZmRmNmY2MDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwZjA5Njk5Njk2NjY2MGYwMDAwMDAwMDAwMDAwMDAwMDAwMDAwNmY5OTlkOTk2Njg2ZjYwMDAwMDAwMDAwMDAwMDAwMDAwMGYwOTY5ZDk5OTk2Njg2NjgwZjAwMDAwMDAwMDAwMDAwMDAwMDZmOTk5OTk5Zjk2NjY2NjFmNjAwMDAwMDAwMDAwMDAwMDBmMDY2OTk5OTk5Zjk2NjE2MTY2NjBmMDAwMDAwMDBmNjAwMDBmMDg2OTY5OTk5Zjg2ODg2NjE2ODBmMDAwMDAwNjBmZjAwMDBmMDg4ODg4ODg2ODY2ODY4ODg2OGZmMGYwMDAwZjZmZjAwMDBmMDg4NjhmODg4Zjg4ODg4ODg4OGY4ZmZmZmZmZmZmZjAwMDBmMDg4ODY4ODhmZjg4ODgxMTg4OGZmZmZmZmZmZmZmZjAwMDA4MDhmODg4OGY4ZmY4ODg4ODhmOGZmZmYwMDAwMDAwMDAwMDAwMGYwOGY4ODg4ODg4ODg4ZjhmZmZmMDAwMDAwMDAwMDAwMDAwMDAwZmZmZmZmZmZmZmZmZmZmZjAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwZjAwMDAwMGYwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMGZmMGYwZjAwMDAwMGYwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMGZmZmZmZmZmZmZmZmZmZmZmZjAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMA==\&quot;,\n        \&quot;displayName\&quot;: \&quot;Fire Helicopter Left Animation\&quot;\n    },\n    \&quot;anim5\&quot;: {\n        \&quot;namespace\&quot;: \&quot;myAnimations\&quot;,\n        \&quot;id\&quot;: \&quot;anim5\&quot;,\n        \&quot;mimeType\&quot;: \&quot;application/mkcd-animation\&quot;,\n        \&quot;data\&quot;: \&quot;MzIwMDI0MDAxNDAwMDgwMDAwMDAwMDAwMDAwMDAwMDAwMDAwZGQwMDAwMTExMTExMTEwMTAwMDAwMDAwMTAxMTExMTExMTExMWRkZGRkZGRkZGRkMGQwMDAwMDAwMGQwZGRkZGRkZGQwMDAwZGQwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDA2ZjZmZGZkZmZmMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwZjA2NjY2OTY5OTY5MGYwMDAwMDAwMDAwMDAwMDAwMDAwMDAwNmY2ODY2OTlkOTk5ZjYwMDAwMDAwMDAwMDAwMDAwMDAwMGYwODY2ODY2OTk5OWQ5NjkwZjAwMDAwMDAwMDAwMDAwMDAwMDZmMTY2NjY2OWY5OTk5OTlmNjAwMDAwMDZmMDAwMDAwMDBmMDY2NjE2MTY2OWY5OTk5OTk2NjBmMDAwMGZmMDYwMDAwMDBmMDg2MTY2ODg2OGY5OTk5Njk2ODBmMDAwMGZmNmYwMDAwZjBmZjg2ODg4Njg2Njg2ODg4ODg4ODBmMDAwMGZmZmZmZmZmZmY4Zjg4ODg4ODg4OGY4ODhmODY4ODBmMDAwMGZmZmZmZmZmZmZmZjg4ODExODg4OGZmODg4Njg4ODBmMDAwMDAwMDAwMDAwZmZmZjhmODg4ODg4ZmY4Zjg4ODhmODA4MDAwMDAwMDAwMDAwMDBmZmZmOGY4ODg4ODg4ODg4ZjgwZjAwMDAwMDAwMDAwMDAwMDAwMGZmZmZmZmZmZmZmZmZmZmYwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwZjAwMDAwMGYwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwZjAwMDAwMGYwZjBmZjAwMDAwMDAwMDAwMDAwMDAwMGZmZmZmZmZmZmZmZmZmZmZmZjAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwZGQxMTExMTEwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMTExMTExMWRkZGRkMGQwMDAwMDAwMDAwMDAwMDAwMDAwMGQwZGRkZGRkZGQwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDA2ZjZmZGZkZmZmMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwZjA2NjY2OTY5OTY5MGYwMDAwMDAwMDAwMDAwMDAwMDAwMDAwNmY2ODY2OTlkOTk5ZjYwMDAwMDAwMDAwMDAwMDAwMDAwMGYwODY2ODY2OWY5OWQ5NjkwZjAwMDAwMDAwMDAwMDAwMDAwMDZmMTY2NjY2OTk5OTk5OTlmNjAwMDAwMDZmMDAwMDAwMDBmMDY2NjE2MTY2OWY5OTk5OTk2NjBmMDAwMGZmMDYwMDAwMDBmMDg2MTY2ODg2OGY5OTk5Njk2ODBmMDAwMGZmNmYwMDAwZjBmZjg2ODg4Njg2Njg2ODg4ODg4ODBmMDAwMGZmZmZmZmZmZmY4Zjg4ODg4ODg4OGY4ODhmODY4ODBmMDAwMGZmZmZmZmZmZmZmZjg4ODExODg4OGZmODg4Njg4ODBmMDAwMDAwMDAwMDAwZmZmZjhmODg4ODg4ZmY4Zjg4ODhmODA4MDAwMDAwMDAwMDAwMDBmZmZmOGY4ODg4ODg4ODg4ZjgwZjAwMDAwMDAwMDAwMDAwMDAwMGZmZmZmZmZmZmZmZmZmZmYwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwZjAwMDAwMGYwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwZjAwMDAwMGYwZjBmZjAwMDAwMDAwMDAwMDAwMDAwMGZmZmZmZmZmZmZmZmZmZmZmZjAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwZGQwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMGRkMWQwZDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMGQwZGRkZDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDA2ZjhmOGY4ZmZmMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwZjA2NjY2OTY5OTY5MGYwMDAwMDAwMDAwMDAwMDAwMDAwMDAwNmY2ODY2OTlkOTk5ZjYwMDAwMDAwMDAwMDAwMDAwMDAwMGYwODY2ODY2OWY5OWQ5NjkwZjAwMDAwMDAwMDAwMDAwMDAwMDZmMTY2NjY2OTk5OTk5OTlmNjAwMDAwMDZmMDAwMDAwMDBmMDY2NjE2MTY2OWY5OTk5OTk2NjBmMDAwMGZmMDYwMDAwMDBmMDg2MTY2ODg2OGY5OTk5Njk2ODBmMDAwMGZmNmYwMDAwZjBmZjg2ODg4Njg2Njg2ODg4ODg4ODBmMDAwMGZmZmZmZmZmZmY4Zjg4ODg4ODg4OGY4ODhmODY4ODBmMDAwMGZmZmZmZmZmZmZmZjg4ODExODg4OGZmODg4Njg4ODBmMDAwMDAwMDAwMDAwZmZmZjhmODg4ODg4ZmY4Zjg4ODhmODA4MDAwMDAwMDAwMDAwMDBmZmZmOGY4ODg4ODg4ODg4ZjgwZjAwMDAwMDAwMDAwMDAwMDAwMGZmZmZmZmZmZmZmZmZmZmYwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwZjAwMDAwMGYwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwZjAwMDAwMGYwZjBmZjAwMDAwMDAwMDAwMDAwMDAwMGZmZmZmZmZmZmZmZmZmZmZmZjAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMTExMTExZGQwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwZDBkZGRkMWQxMTExMTEwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwZGRkZGRkZGQwZDAwMDAwMDAwMDAwMDAwMDAwMDAwMDA2ZjZmZGZkZmZmMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwZjA2NjY2OTY5OTY5MGYwMDAwMDAwMDAwMDAwMDAwMDAwMDAwNmY2ODY2OTlkOTk5ZjYwMDAwMDAwMDAwMDAwMDAwMDAwMGYwODY2ODY2OWY5OWQ5NjkwZjAwMDAwMDAwMDAwMDAwMDAwMDZmMTY2NjY2OWY5OTk5OTlmNjAwMDAwMDZmMDAwMDAwMDBmMDY2NjE2MTY2OTk5OTk5OTk2NjBmMDAwMGZmMDYwMDAwMDBmMDg2MTY2ODg2OGY5OTk5Njk2ODBmMDAwMGZmNmYwMDAwZjBmZjg2ODg4Njg2Njg2ODg4ODg4ODBmMDAwMGZmZmZmZmZmZmY4Zjg4ODg4ODg4OGY4ODhmODY4ODBmMDAwMGZmZmZmZmZmZmZmZjg4ODExODg4OGZmODg4Njg4ODBmMDAwMDAwMDAwMDAwZmZmZjhmODg4ODg4ZmY4Zjg4ODhmODA4MDAwMDAwMDAwMDAwMDBmZmZmOGY4ODg4ODg4ODg4ZjgwZjAwMDAwMDAwMDAwMDAwMDAwMGZmZmZmZmZmZmZmZmZmZmYwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwZjAwMDAwMGYwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwZjAwMDAwMGYwZjBmZjAwMDAwMDAwMDAwMDAwMDAwMGZmZmZmZmZmZmZmZmZmZmZmZjAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDEwMTExMTExMTEwMDAwZGQwMDAwMDAwMDAwMDAwMDAwMDAwMDAwZDBkZGRkZGRkZGRkMWQxMTExMTExMTExMDEwMDAwMDAwMDAwMDAwMDAwMDAwMDAwZGQwMDAwZGRkZGRkZGQwZDAwMDAwMDAwMDAwMDAwMDA2ZjZmZGZkZmZmMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwZjA2NjY2OTY5OTY5MGYwMDAwMDAwMDAwMDAwMDAwMDAwMDAwNmY2ODY2OTlkOTk5ZjYwMDAwMDAwMDAwMDAwMDAwMDAwMGYwODY2ODY2OTk5OWQ5NjkwZjAwMDAwMDAwMDAwMDAwMDAwMDZmMTY2NjY2OWY5OTk5OTlmNjAwMDAwMDZmMDAwMDAwMDBmMDY2NjE2MTY2OWY5OTk5OTk2NjBmMDAwMGZmMDYwMDAwMDBmMDg2MTY2ODg2OGY5OTk5Njk2ODBmMDAwMGZmNmYwMDAwZjBmZjg2ODg4Njg2Njg2ODg4ODg4ODBmMDAwMGZmZmZmZmZmZmY4Zjg4ODg4ODg4OGY4ODhmODY4ODBmMDAwMGZmZmZmZmZmZmZmZjg4ODExODg4OGZmODg4Njg4ODBmMDAwMDAwMDAwMDAwZmZmZjhmODg4ODg4ZmY4Zjg4ODhmODA4MDAwMDAwMDAwMDAwMDBmZmZmOGY4ODg4ODg4ODg4ZjgwZjAwMDAwMDAwMDAwMDAwMDAwMGZmZmZmZmZmZmZmZmZmZmYwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwZjAwMDAwMGYwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwZjAwMDAwMGYwZjBmZjAwMDAwMDAwMDAwMDAwMDAwMGZmZmZmZmZmZmZmZmZmZmZmZjAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMTExMTExZGQwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwZDBkZGRkMWQxMTExMTEwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwZGRkZGRkZGQwZDAwMDAwMDAwMDAwMDAwMDAwMDAwMDA2ZjZmZGZkZmZmMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwZjA2NjY2OTY5OTY5MGYwMDAwMDAwMDAwMDAwMDAwMDAwMDAwNmY2ODY2OTlkOTk5ZjYwMDAwMDAwMDAwMDAwMDAwMDAwMGYwODY2ODY2OWY5OWQ5NjkwZjAwMDAwMDAwMDAwMDAwMDAwMDZmMTY2NjY2OTk5OTk5OTlmNjAwMDAwMDZmMDAwMDAwMDBmMDY2NjE2MTY2OWY5OTk5OTk2NjBmMDAwMGZmMDYwMDAwMDBmMDg2MTY2ODg2OGY5OTk5Njk2ODBmMDAwMGZmNmYwMDAwZjBmZjg2ODg4Njg2Njg2ODg4ODg4ODBmMDAwMGZmZmZmZmZmZmY4Zjg4ODg4ODg4OGY4ODhmODY4ODBmMDAwMGZmZmZmZmZmZmZmZjg4ODExODg4OGZmODg4Njg4ODBmMDAwMDAwMDAwMDAwZmZmZjhmODg4ODg4ZmY4Zjg4ODhmODA4MDAwMDAwMDAwMDAwMDBmZmZmOGY4ODg4ODg4ODg4ZjgwZjAwMDAwMDAwMDAwMDAwMDAwMGZmZmZmZmZmZmZmZmZmZmYwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwZjAwMDAwMGYwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwZjAwMDAwMGYwZjBmZjAwMDAwMDAwMDAwMDAwMDAwMGZmZmZmZmZmZmZmZmZmZmZmZjAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwZGQwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMGRkMWQwZDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMGQwZGRkZDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDA2ZjhmOGY4ZmZmMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwZjA2NjY2OTY5OTY5MGYwMDAwMDAwMDAwMDAwMDAwMDAwMDAwNmY2ODY2OTlkOTk5ZjYwMDAwMDAwMDAwMDAwMDAwMDAwMGYwODY2ODY2OTk5OWQ5NjkwZjAwMDAwMDAwMDAwMDAwMDAwMDZmMTY2NjY2OWY5OTk5OTlmNjAwMDAwMDZmMDAwMDAwMDBmMDY2NjE2MTY2OWY5OTk5OTk2NjBmMDAwMGZmMDYwMDAwMDBmMDg2MTY2ODg2OGY5OTk5Njk2ODBmMDAwMGZmNmYwMDAwZjBmZjg2ODg4Njg2Njg2ODg4ODg4ODBmMDAwMGZmZmZmZmZmZmY4Zjg4ODg4ODg4OGY4ODhmODY4ODBmMDAwMGZmZmZmZmZmZmZmZjg4ODExODg4OGZmODg4Njg4ODBmMDAwMDAwMDAwMDAwZmZmZjhmODg4ODg4ZmY4Zjg4ODhmODA4MDAwMDAwMDAwMDAwMDBmZmZmOGY4ODg4ODg4ODg4ZjgwZjAwMDAwMDAwMDAwMDAwMDAwMGZmZmZmZmZmZmZmZmZmZmYwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwZjAwMDAwMGYwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwZjAwMDAwMGYwZjBmZjAwMDAwMDAwMDAwMDAwMDAwMGZmZmZmZmZmZmZmZmZmZmZmZjAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwZGQxMTExMTEwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMTExMTExMWRkZGRkMGQwMDAwMDAwMDAwMDAwMDAwMDAwMGQwZGRkZGRkZGQwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDA2ZjZmZGZkZmZmMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwZjA2NjY2OTY5OTY5MGYwMDAwMDAwMDAwMDAwMDAwMDAwMDAwNmY2ODY2OTlkOTk5ZjYwMDAwMDAwMDAwMDAwMDAwMDAwMGYwODY2ODY2OWY5OWQ5NjkwZjAwMDAwMDAwMDAwMDAwMDAwMDZmMTY2NjY2OTk5OTk5OTlmNjAwMDAwMDZmMDAwMDAwMDBmMDY2NjE2MTY2OWY5OTk5OTk2NjBmMDAwMGZmMDYwMDAwMDBmMDg2MTY2ODg2OGY5OTk5Njk2ODBmMDAwMGZmNmYwMDAwZjBmZjg2ODg4Njg2Njg2ODg4ODg4ODBmMDAwMGZmZmZmZmZmZmY4Zjg4ODg4ODg4OGY4ODhmODY4ODBmMDAwMGZmZmZmZmZmZmZmZjg4ODExODg4OGZmODg4Njg4ODBmMDAwMDAwMDAwMDAwZmZmZjhmODg4ODg4ZmY4Zjg4ODhmODA4MDAwMDAwMDAwMDAwMDBmZmZmOGY4ODg4ODg4ODg4ZjgwZjAwMDAwMDAwMDAwMDAwMDAwMGZmZmZmZmZmZmZmZmZmZmYwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwZjAwMDAwMGYwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwZjAwMDAwMGYwZjBmZjAwMDAwMDAwMDAwMDAwMDAwMGZmZmZmZmZmZmZmZmZmZmZmZjAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMA==\&quot;,\n        \&quot;displayName\&quot;: \&quot;Fire Helicopter Right Animation\&quot;\n    },\n    \&quot;*\&quot;: {\n        \&quot;mimeType\&quot;: \&quot;image/x-mkcd-f4\&quot;,\n        \&quot;dataEncoding\&quot;: \&quot;base64\&quot;,\n        \&quot;namespace\&quot;: \&quot;myImages\&quot;\n    }\n}&quot;,
+  &quot;images.g.ts&quot;: &quot;// Auto-generated code. Do not edit.\nnamespace myImages {\n\n    helpers._registerFactory(\&quot;image\&quot;, function(name: string) {\n        switch(helpers.stringTrim(name)) {\n            case \&quot;a5zAhGKtmEx`ww9FE(zZ\&quot;:\n            case \&quot;water\&quot;:return img`\n. 9 9 . \n9 9 9 9 \n9 9 9 9 \n. 9 9 . \n`;\n            case \&quot;image2\&quot;:\n            case \&quot;Fire Plane Right\&quot;:return img`\n. . . . . . . . . . . . . . f f f f f f . . . . \n. . f 8 . . . . . . . . . f b b b b 9 f . . . . \n. . f 8 8 . . . . . . f f b b b b f f . . . . . \n. . f b 8 8 . . . f f 8 8 8 f f f f 8 . . . . . \n. . f b b 8 8 8 8 8 8 8 b b b b b b f f f f . . \nf 8 8 8 8 8 8 b b b b b b b b b b b b 1 b b f f \nf f f f f b b b b b b b b b 9 9 d d d b b b b f \n. . . . . f b b b b 8 8 b b b b b b b b b 8 f . \n. . . . f b b b b 8 8 f b 8 8 8 8 8 8 8 f f . . \n. . . b b b b b 8 8 f f f f f f f f f f . . . . \n. . . b 8 8 8 8 9 f . f c . f c . . . . . . . . \n. . . f f f f f f . . . . . . . . . . . . . . . \n`;\n            case \&quot;image7\&quot;:\n            case \&quot;Fire Plane Left\&quot;:return img`\n. . . . f f f f f f . . . . . . . . . . . . . . \n. . . . f 9 b b b b f . . . . . . . . . 8 f . . \n. . . . . f f b b b b f f . . . . . . 8 8 f . . \n. . . . . 8 f f f f 8 8 8 f f . . . 8 8 b f . . \n. . f f f f b b b b b b 8 8 8 8 8 8 8 b b f . . \nf f b b 1 b b b b b b b b b b b b 8 8 8 8 8 8 f \nf b b b b d d d 9 9 b b b b b b b b b f f f f f \n. f 8 b b b b b b b b b 8 8 b b b b f . . . . . \n. . f f 8 8 8 8 8 8 8 b f 8 8 b b b b f . . . . \n. . . . f f f f f f f f f f 8 8 b b b b b . . . \n. . . . . . . . c f . c f . f 9 8 8 8 8 b . . . \n. . . . . . . . . . . . . . . f f f f f f . . . \n`;\n            case \&quot;image1\&quot;:\n            case \&quot;Fire Plane 2 Right\&quot;:return img`\n..ccc..........ffffff...\n..f44c.......ffcc22ff...\n..f244c...fffccccfff....\n..f2244ccc22224442cc....\n..cf22cc222222222b99c...\n.c222222222222b111999c..\nf222ccccccc22299111bb2c.\nfffffccc222c22222222222c\n...ccc22224422222222222f\n...c222244422222222222f.\n...c22244cffc2222222ff..\n....ccccffffcfffffff....\n.......ffff2c2f.........\n.......ffff2ccf.........\n........ffffff..........\n........................\n`;\n            case \&quot;image4\&quot;:\n            case \&quot;Fire Plane 2 Left\&quot;:return img`\n...ffffff..........ccc..\n...ff22ccff.......c44f..\n....fffccccfff...c442f..\n....cc24442222ccc4422f..\n...c99b222222222cc22fc..\n..c999111b222222222222c.\n.c2bb11199222ccccccc222f\nc22222222222c222cccfffff\nf22222222222442222ccc...\n.f222222222224442222c...\n..ff2222222cffc44222c...\n....fffffffcffffcccc....\n.........f2c2ffff.......\n.........fcc2ffff.......\n..........ffffff........\n........................\n`;\n            case \&quot;image3\&quot;:\n            case \&quot;fire\&quot;:return img`\n. . . . . . . . . . . . . . . . \n. . . . . . . 5 . . . . . . . . \n. . . . . . . . . . . . . . . . \n. . . . . . . . 4 d . . . . . . \n. . . . . . . . . 4 d . . . . . \n. . . . . . . . 5 4 4 . . . . . \n. . . . . . . 5 4 5 4 . . . . . \n. . . . . 2 5 d 5 5 4 . . . . . \n. . . . d 2 5 5 5 5 4 . . . . . \n. . . . 4 5 2 5 5 5 5 4 . . . . \n. . . . 4 2 5 5 4 2 5 4 . . . . \n. . . . 4 4 2 2 2 2 4 4 . . . . \n. . . . . 4 4 2 2 4 4 . . . . . \n. . . . . . 4 2 4 4 . . . . . . \n. . . . . . . 4 4 . . . . . . . \n. . . . . . . . . . . . . . . . \n`;\n            case \&quot;image5\&quot;:\n            case \&quot;Fire Helicopter Right\&quot;:return img`\n....................dd....111111111.\n.........11111111111d1ddddddddddd...\n.......ddddddddd....dd..............\n................f6f6fdfdff..........\n...............f6666699996f.........\n..............f68666999d996f........\n.............f688666f9999d96f.......\n............f6616666999999996f......\nf6.........f66161666f999999966f.....\nff6........f68618668f899999686f.....\nfff6.....fff688868688686888888f.....\nfffffffffff888888888f888f86888f.....\nffffffffffff88188188f88f888688f.....\n........fffff8888888fff888888f......\n..........fffff888888888888ff.......\n............ffffffffffffffff........\n................f........f..........\n................f........f.fff......\n............ffffffffffffffffff......\n....................................\n`;\n            case \&quot;image6\&quot;:\n            case \&quot;Fire Helicopter Left\&quot;:return img`\n.111111111....dd....................\n...ddddddddddd1d11111111111.........\n..............dd....ddddddddd.......\n..........ffdfdf6f6f................\n.........f6999966666f...............\n........f699d99966686f..............\n.......f69d9999f666886f.............\n......f6999999996666166f............\n.....f669999999f66616166f.........6f\n.....f686999998f86681686f........6ff\n.....f888888686886868886fff.....6fff\n.....f88868f888f888888888fffffffffff\n.....f886888f88f88188188ffffffffffff\n......f888888fff8888888fffff........\n.......ff888888888888fffff..........\n........ffffffffffffffff............\n..........f........f................\n......fff.f........f................\n......ffffffffffffffffff............\n....................................\n`;\n        }\n        return null;\n    })\n\n    helpers._registerFactory(\&quot;animation\&quot;, function(name: string) {\n        switch(helpers.stringTrim(name)) {\n            case \&quot;Fire Plane Left Animation\&quot;:\n            case \&quot;anim1\&quot;:return [img`\n........................\n........................\n....ffffff..............\n....f9bbbbf.........8f..\n.....ffbbbbff......88f..\n.....8ffff888ff...88bf..\n..ffffbbbbbb8888888bbf..\nffbb1bbbbbbbbbbbb888888f\nfbbbbddd99bbbbbbbbbfffff\n.f8bbbbbbbbb88bbbbf.....\n..ff8888888bf88bbbbf....\n....ffffffffff88bbbbb...\n........cf.cf.f98888b...\n...............ffffff...\n........................\n........................\n`, img`\n........................\n........................\n........................\n....ffffff..........8f..\n....f9bbbbff.......88f..\n.....8fffffff.....88bf..\n..ffffbbbbbbff88888bbf..\nffbbbd9999bbbbbbb888888f\nfbbbbbbbbbbbbbbbbbbfffff\n.f8bbbbbbbbb888bbbbf....\n..ff8888888bf888bbbbb...\n....fffffffffff98888b...\n........cf.cf..ffffff...\n........................\n........................\n........................\n`];\n            case \&quot;Fire Plane Right Animation\&quot;:\n            case \&quot;anim2\&quot;:return [img`\n........................\n........................\n..............ffffff....\n..f8.........fbbbb9f....\n..f88......ffbbbbff.....\n..fb88...ff888ffff8.....\n..fbb8888888bbbbbbffff..\nf888888bbbbbbbbbbbb1bbff\nfffffbbbbbbbbb99dddbbbbf\n.....fbbbb88bbbbbbbbb8f.\n....fbbbb88fb8888888ff..\n...bbbbb88ffffffffff....\n...b88889f.fc.fc........\n...ffffff...............\n........................\n........................\n`, img`\n........................\n........................\n........................\n..f8..........ffffff....\n..f88.......ffbbbb9f....\n..fb88.....fffffff8.....\n..fbb88888ffbbbbbbffff..\nf888888bbbbbbb9999dbbbff\nfffffbbbbbbbbbbbbbbbbbbf\n....fbbbb888bbbbbbbbb8f.\n...bbbbb888fb8888888ff..\n...b88889fffffffffff....\n...ffffff..fc.fc........\n........................\n........................\n........................\n`];\n            case \&quot;Fire Plane 2 Left Animation\&quot;:\n            case \&quot;anim4\&quot;:return [img`\n....ffffff.........ccc..\n....ff22ccf.......cc4f..\n.....ffccccfff...cc44f..\n....cc24442222cccc442f..\n...c9b4422222222cc422f..\n..c999b2222222222222fc..\n.c2b99111b222222222c22c.\nc222b111992222ccccccc22f\nf222222222222c222ccfffff\n.f2222222222442222f.....\n..ff2222222cf442222f....\n....ffffffffff442222c...\n.........f2cfffc2222c...\n.........fcc2ffffffff...\n..........fc2ffff.......\n...........fffff........\n`, img`\n...ffffff..........ccc..\n...ff22ccff.......c44f..\n....fffccccfff...c442f..\n....cc24442222ccc4422f..\n...c99b222222222cc22fc..\n..c999111b222222222222c.\n.c2bb11199222ccccccc222f\nc22222222222c222cccfffff\nf22222222222442222ccc...\n.f222222222224442222c...\n..ff2222222cffc44222c...\n....fffffffcffffcccc....\n.........f2c2ffff.......\n.........fcc2ffff.......\n..........ffffff........\n........................\n`];\n            case \&quot;Fire Plane 2 Right Animation\&quot;:\n            case \&quot;anim3\&quot;:return [img`\n..ccc.........ffffff....\n..f4cc.......fcc22ff....\n..f44cc...fffccccff.....\n..f244cccc22224442cc....\n..f224cc2222222244b9c...\n..cf2222222222222b999c..\n.c22c222222222b11199b2c.\nf22ccccccc222299111b222c\nfffffcc222c222222222222f\n.....f2222442222222222f.\n....f222244fc2222222ff..\n...c222244ffffffffff....\n...c2222cfffc2f.........\n...ffffffff2ccf.........\n.......ffff2cf..........\n........fffff...........\n`, img`\n..ccc..........ffffff...\n..f44c.......ffcc22ff...\n..f244c...fffccccfff....\n..f2244ccc22224442cc....\n..cf22cc222222222b99c...\n.c222222222222b111999c..\nf222ccccccc22299111bb2c.\nfffffccc222c22222222222c\n...ccc22224422222222222f\n...c222244422222222222f.\n...c22244cffc2222222ff..\n....ccccffffcfffffff....\n.......ffff2c2f.........\n.......ffff2ccf.........\n........ffffff..........\n........................\n`];\n            case \&quot;Fire Helicopter Left Animation\&quot;:\n            case \&quot;anim6\&quot;:return [img`\n.111111111....dd....................\n...ddddddddddd1d11111111111.........\n..............dd....ddddddddd.......\n..........ffdfdf6f6f................\n.........f6999966666f...............\n........f699d99f66686f..............\n.......f69d99999666886f.............\n......f69999999f6666166f............\n.....f669999999f66616166f.........6f\n.....f686999998f86681686f........6ff\n.....f888888686886868886fff.....6fff\n.....f88868f888f888888888fffffffffff\n.....f886888f88f88188188ffffffffffff\n.....8f888888fff8888888fffff........\n.......ff888888888888fffff..........\n........ffffffffffffffff............\n..........f........f................\n......fff.f........f................\n......ffffffffffffffffff............\n....................................\n`, img`\n........111111dd....................\n.........ddddd1d111111..............\n..............ddddddddd.............\n..........ffdfdf6f6f................\n.........f6999966666f...............\n........f699d99966686f..............\n.......f69d9999f666886f.............\n......f6999999996666166f............\n.....f669999999f66616166f.........6f\n.....f686999998f86681686f........6ff\n.....f888888686886868886fff.....6fff\n.....f88868f888f888888888fffffffffff\n.....f886888f88f88188188ffffffffffff\n.....8f888888fff8888888fffff........\n.......ff888888888888fffff..........\n........ffffffffffffffff............\n..........f........f................\n......fff.f........f................\n......ffffffffffffffffff............\n....................................\n`, img`\n..............dd....................\n.............d1ddd..................\n............ddddd...................\n..........ff8f8f8f6f................\n.........f6999966666f...............\n........f699d99966686f..............\n.......f69d9999f666886f.............\n......f6999999996666166f............\n.....f669999999f66616166f.........6f\n.....f686999998f86681686f........6ff\n.....f888888686886868886fff.....6fff\n.....f88868f888f888888888fffffffffff\n.....f886888f88f88188188ffffffffffff\n.....8f888888fff8888888fffff........\n.......ff888888888888fffff..........\n........ffffffffffffffff............\n..........f........f................\n......fff.f........f................\n......ffffffffffffffffff............\n....................................\n`, img`\n..............dd111111..............\n........1111111dddddd...............\n.......ddddddddd....................\n..........ffdfdf6f6f................\n.........f6999966666f...............\n........f699d99966686f..............\n.......f69d9999f666886f.............\n......f6999999996666166f............\n.....f669999999f66616166f.........6f\n.....f686999998f86681686f........6ff\n.....f888888686886868886fff.....6fff\n.....f88868f888f888888888fffffffffff\n.....f886888f88f88188188ffffffffffff\n.....8f888888fff8888888fffff........\n.......ff888888888888fffff..........\n........ffffffffffffffff............\n..........f........f................\n......fff.f........f................\n......ffffffffffffffffff............\n....................................\n`, img`\n..............dd....111111111.......\n...111111111111dddddddddddd.........\n.ddddddddd....dd....................\n..........ffdfdf6f6f................\n.........f6999966666f...............\n........f699d99966686f..............\n.......f69d9999f666886f.............\n......f6999999996666166f............\n.....f669999999f66616166f.........6f\n.....f686999998f86681686f........6ff\n.....f888888686886868886fff.....6fff\n.....f88868f888f888888888fffffffffff\n.....f886888f88f88188188ffffffffffff\n.....8f888888fff8888888fffff........\n.......ff888888888888fffff..........\n........ffffffffffffffff............\n..........f........f................\n......fff.f........f................\n......ffffffffffffffffff............\n....................................\n`, img`\n..............dd111111..............\n........1111111dddddd...............\n.......ddddddddd....................\n..........ffdfdf6f6f................\n.........f6999966666f...............\n........f699d99966686f..............\n.......f69d9999f666886f.............\n......f6999999996666166f............\n.....f669999999f66616166f.........6f\n.....f686999998f86681686f........6ff\n.....f888888686886868886fff.....6fff\n.....f88868f888f888888888fffffffffff\n.....f886888f88f88188188ffffffffffff\n.....8f888888fff8888888fffff........\n.......ff888888888888fffff..........\n........ffffffffffffffff............\n..........f........f................\n......fff.f........f................\n......ffffffffffffffffff............\n....................................\n`, img`\n..............dd111111..............\n........1111111dddddd...............\n.......ddddddddd....................\n..........ffdfdf6f6f................\n.........f6999966666f...............\n........f699d99966686f..............\n.......f69d9999f666886f.............\n......f69999999f6666166f............\n.....f669999999f66616166f.........6f\n.....f686999998f86681686f........6ff\n.....f888888686886868886fff.....6fff\n.....f88868f888f888888888fffffffffff\n.....f886888f88f88188188ffffffffffff\n.....8f888888fff8888888fffff........\n.......ff888888888888fffff..........\n........ffffffffffffffff............\n..........f........f................\n......fff.f........f................\n......ffffffffffffffffff............\n....................................\n`, img`\n..............dd....................\n.............d1ddd..................\n............ddddd...................\n..........ff8f8f8f6f................\n.........f6999966666f...............\n........f699d99966686f..............\n.......f69d9999f666886f.............\n......f6999999996666166f............\n.....f669999999f66616166f.........6f\n.....f686999998f86681686f........6ff\n.....f888888686886868886fff.....6fff\n.....f88868f888f888888888fffffffffff\n.....f886888f88f88188188ffffffffffff\n.....8f888888fff8888888fffff........\n.......ff888888888888fffff..........\n........ffffffffffffffff............\n..........f........f................\n......fff.f........f................\n......ffffffffffffffffff............\n....................................\n`, img`\n........111111dd....................\n.........ddddd1d111111..............\n..............ddddddddd.............\n..........ffdfdf6f6f................\n.........f6999966666f...............\n........f699d99966686f..............\n.......f69d99999666886f.............\n......f69999999f6666166f............\n.....f669999999f66616166f.........6f\n.....f686999998f86681686f........6ff\n.....f888888686886868886fff.....6fff\n.....f88868f888f888888888fffffffffff\n.....f886888f88f88188188ffffffffffff\n.....8f888888fff8888888fffff........\n.......ff888888888888fffff..........\n........ffffffffffffffff............\n..........f........f................\n......fff.f........f................\n......ffffffffffffffffff............\n....................................\n`];\n            case \&quot;Fire Helicopter Right Animation\&quot;:\n            case \&quot;anim5\&quot;:return [img`\n....................dd....111111111.\n.........11111111111d1ddddddddddd...\n.......ddddddddd....dd..............\n................f6f6fdfdff..........\n...............f6666699996f.........\n..............f68666999d996f........\n.............f68866699999d96f.......\n............f6616666f99999996f......\nf6.........f66161666f999999966f.....\nff6........f68618668f899999686f.....\nfff6.....fff688868688686888888f.....\nfffffffffff888888888f888f86888f.....\nffffffffffff88188188f88f888688f.....\n........fffff8888888fff888888f8.....\n..........fffff888888888888ff.......\n............ffffffffffffffff........\n................f........f..........\n................f........f.fff......\n............ffffffffffffffffff......\n....................................\n`, img`\n....................dd111111........\n..............111111d1ddddd.........\n.............ddddddddd..............\n................f6f6fdfdff..........\n...............f6666699996f.........\n..............f68666999d996f........\n.............f688666f9999d96f.......\n............f6616666999999996f......\nf6.........f66161666f999999966f.....\nff6........f68618668f899999686f.....\nfff6.....fff688868688686888888f.....\nfffffffffff888888888f888f86888f.....\nffffffffffff88188188f88f888688f.....\n........fffff8888888fff888888f8.....\n..........fffff888888888888ff.......\n............ffffffffffffffff........\n................f........f..........\n................f........f.fff......\n............ffffffffffffffffff......\n....................................\n`, img`\n....................dd..............\n..................ddd1d.............\n...................ddddd............\n................f6f8f8f8ff..........\n...............f6666699996f.........\n..............f68666999d996f........\n.............f688666f9999d96f.......\n............f6616666999999996f......\nf6.........f66161666f999999966f.....\nff6........f68618668f899999686f.....\nfff6.....fff688868688686888888f.....\nfffffffffff888888888f888f86888f.....\nffffffffffff88188188f88f888688f.....\n........fffff8888888fff888888f8.....\n..........fffff888888888888ff.......\n............ffffffffffffffff........\n................f........f..........\n................f........f.fff......\n............ffffffffffffffffff......\n....................................\n`, img`\n..............111111dd..............\n...............dddddd1111111........\n....................ddddddddd.......\n................f6f6fdfdff..........\n...............f6666699996f.........\n..............f68666999d996f........\n.............f688666f9999d96f.......\n............f6616666f99999996f......\nf6.........f661616669999999966f.....\nff6........f68618668f899999686f.....\nfff6.....fff688868688686888888f.....\nfffffffffff888888888f888f86888f.....\nffffffffffff88188188f88f888688f.....\n........fffff8888888fff888888f8.....\n..........fffff888888888888ff.......\n............ffffffffffffffff........\n................f........f..........\n................f........f.fff......\n............ffffffffffffffffff......\n....................................\n`, img`\n.......111111111....dd..............\n.........dddddddddddd111111111111...\n....................dd....ddddddddd.\n................f6f6fdfdff..........\n...............f6666699996f.........\n..............f68666999d996f........\n.............f68866699999d96f.......\n............f6616666f99999996f......\nf6.........f66161666f999999966f.....\nff6........f68618668f899999686f.....\nfff6.....fff688868688686888888f.....\nfffffffffff888888888f888f86888f.....\nffffffffffff88188188f88f888688f.....\n........fffff8888888fff888888f8.....\n..........fffff888888888888ff.......\n............ffffffffffffffff........\n................f........f..........\n................f........f.fff......\n............ffffffffffffffffff......\n....................................\n`, img`\n..............111111dd..............\n...............dddddd1111111........\n....................ddddddddd.......\n................f6f6fdfdff..........\n...............f6666699996f.........\n..............f68666999d996f........\n.............f688666f9999d96f.......\n............f6616666999999996f......\nf6.........f66161666f999999966f.....\nff6........f68618668f899999686f.....\nfff6.....fff688868688686888888f.....\nfffffffffff888888888f888f86888f.....\nffffffffffff88188188f88f888688f.....\n........fffff8888888fff888888f8.....\n..........fffff888888888888ff.......\n............ffffffffffffffff........\n................f........f..........\n................f........f.fff......\n............ffffffffffffffffff......\n....................................\n`, img`\n....................dd..............\n..................ddd1d.............\n...................ddddd............\n................f6f8f8f8ff..........\n...............f6666699996f.........\n..............f68666999d996f........\n.............f68866699999d96f.......\n............f6616666f99999996f......\nf6.........f66161666f999999966f.....\nff6........f68618668f899999686f.....\nfff6.....fff688868688686888888f.....\nfffffffffff888888888f888f86888f.....\nffffffffffff88188188f88f888688f.....\n........fffff8888888fff888888f8.....\n..........fffff888888888888ff.......\n............ffffffffffffffff........\n................f........f..........\n................f........f.fff......\n............ffffffffffffffffff......\n....................................\n`, img`\n....................dd111111........\n..............111111d1ddddd.........\n.............ddddddddd..............\n................f6f6fdfdff..........\n...............f6666699996f.........\n..............f68666999d996f........\n.............f688666f9999d96f.......\n............f6616666999999996f......\nf6.........f66161666f999999966f.....\nff6........f68618668f899999686f.....\nfff6.....fff688868688686888888f.....\nfffffffffff888888888f888f86888f.....\nffffffffffff88188188f88f888688f.....\n........fffff8888888fff888888f8.....\n..........fffff888888888888ff.......\n............ffffffffffffffff........\n................f........f..........\n................f........f.fff......\n............ffffffffffffffffff......\n....................................\n`];\n        }\n        return null;\n    })\n\n}\n// Auto-generated code. Do not edit.\n&quot;,
+  &quot;main.blocks&quot;: &quot;&lt;xml xmlns=\&quot;https://developers.google.com/blockly/xml\&quot;&gt;&lt;variables&gt;&lt;variable type=\&quot;KIND_SpriteKind\&quot; id=\&quot;~zp:h99l$t:puWt^7HpS\&quot;&gt;Fire&lt;/variable&gt;&lt;variable type=\&quot;KIND_SpriteKind\&quot; id=\&quot;b3qt}A6k{Y|Yr^LaRE6Y\&quot;&gt;Burnt&lt;/variable&gt;&lt;variable type=\&quot;KIND_SpriteKind\&quot; id=\&quot;$J.Bxo|M{mi1P+`[A1?4\&quot;&gt;Player&lt;/variable&gt;&lt;variable type=\&quot;KIND_SpriteKind\&quot; id=\&quot;uGq)5bGL26c-(,L_;6CB\&quot;&gt;Projectile&lt;/variable&gt;&lt;variable type=\&quot;KIND_SpriteKind\&quot; id=\&quot;Rvp^^=8OAqmCeIUNc?{b\&quot;&gt;Food&lt;/variable&gt;&lt;variable type=\&quot;KIND_SpriteKind\&quot; id=\&quot;@6hn/DkVnQ8`I`kv[x?{\&quot;&gt;Enemy&lt;/variable&gt;&lt;variable type=\&quot;KIND_SpriteKind\&quot; id=\&quot;|/YN~|~tVm4.!8L*HioT\&quot;&gt;Text&lt;/variable&gt;&lt;variable type=\&quot;KIND_SpriteKind\&quot; id=\&quot;]~dhh95wxb|OZ0;WHf|]\&quot;&gt;StatusBar&lt;/variable&gt;&lt;variable type=\&quot;KIND_StatusBarKind\&quot; id=\&quot;nTxOIz$-~=7EJc(t7T#_\&quot;&gt;Health&lt;/variable&gt;&lt;variable type=\&quot;KIND_StatusBarKind\&quot; id=\&quot;391Why~W9^9lqcoQQG0x\&quot;&gt;Energy&lt;/variable&gt;&lt;variable type=\&quot;KIND_StatusBarKind\&quot; id=\&quot;GBBC+=aw4b7x0!=58!!*\&quot;&gt;Magic&lt;/variable&gt;&lt;variable type=\&quot;KIND_StatusBarKind\&quot; id=\&quot;pJ,Vd?#{4|dO/(g(|A-H\&quot;&gt;EnemyHealth&lt;/variable&gt;&lt;variable id=\&quot;8rA}EiRM2wHj_s|13j}t\&quot;&gt;statusbar&lt;/variable&gt;&lt;variable id=\&quot;VLdeXP[_@1:J9GD!),Ia\&quot;&gt;tinder&lt;/variable&gt;&lt;variable id=\&quot;h][qwl3T*G1}(r7MV7oZ\&quot;&gt;mySprite&lt;/variable&gt;&lt;variable id=\&quot;jrX,vISS7PDA//D]zEB3\&quot;&gt;dryGrass&lt;/variable&gt;&lt;variable id=\&quot;0Ko[yse36[jD#J3@^=53\&quot;&gt;windSpeed&lt;/variable&gt;&lt;variable id=\&quot;fd9l0*ffabpTSLEUUfi:\&quot;&gt;value&lt;/variable&gt;&lt;variable id=\&quot;d%BcCARShMY%=*.GH1gF\&quot;&gt;list2&lt;/variable&gt;&lt;variable id=\&quot;aIS.OGw=J[wCQsP49qIZ\&quot;&gt;spreadTimeBase&lt;/variable&gt;&lt;variable id=\&quot;lyaL+*o.a~O]/aD[uDr9\&quot;&gt;newFire&lt;/variable&gt;&lt;variable id=\&quot;{V$QzFzwP$ImZ+nnTL^e\&quot;&gt;facing&lt;/variable&gt;&lt;variable id=\&quot;-D8I`o1aNA~es3(JYLMk\&quot;&gt;changeRate&lt;/variable&gt;&lt;variable id=\&quot;[?Yd11dvxugieayng`{_\&quot;&gt;hoseDirection&lt;/variable&gt;&lt;variable id=\&quot;X[$g5gKr|jHN.aimnfy9\&quot;&gt;projectile&lt;/variable&gt;&lt;variable id=\&quot;?SUf,tio_PwlgM:;5(A/\&quot;&gt;myImage&lt;/variable&gt;&lt;variable id=\&quot;/LO0y==XA-vfLCV*rx!@\&quot;&gt;mySprite2&lt;/variable&gt;&lt;variable id=\&quot;Yu@%}1H+Gs5NsuvWYM.y\&quot;&gt;textSprite&lt;/variable&gt;&lt;variable id=\&quot;OIoJ`*MPvT]$kbOt{U=N\&quot;&gt;textSprite2&lt;/variable&gt;&lt;/variables&gt;&lt;comment data=\&quot;0\&quot; x=\&quot;0\&quot; y=\&quot;0\&quot; h=\&quot;120\&quot; w=\&quot;480\&quot;&gt;Track the remaining forest using a statusbar. You could initialize this using magic or remove the \&quot;total tilemap rows/columns\&quot; by just telling them what value to enter for the max/value&lt;/comment&gt;&lt;block type=\&quot;pxt-on-start\&quot; x=\&quot;-350\&quot; y=\&quot;-490\&quot;&gt;&lt;statement name=\&quot;HANDLER\&quot;&gt;&lt;block type=\&quot;variables_set\&quot;&gt;&lt;field name=\&quot;VAR\&quot; id=\&quot;h][qwl3T*G1}(r7MV7oZ\&quot;&gt;mySprite&lt;/field&gt;&lt;value name=\&quot;VALUE\&quot;&gt;&lt;shadow xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot; type=\&quot;math_number\&quot;&gt;&lt;field name=\&quot;NUM\&quot;&gt;0&lt;/field&gt;&lt;/shadow&gt;&lt;block type=\&quot;spritescreate\&quot;&gt;&lt;value name=\&quot;img\&quot;&gt;&lt;shadow type=\&quot;screen_image_picker\&quot;&gt;&lt;field name=\&quot;img\&quot;&gt;assets.image`Fire Plane Left`&lt;/field&gt;&lt;data&gt;{\&quot;commentRefs\&quot;:[],\&quot;fieldData\&quot;:{\&quot;img\&quot;:\&quot;myImages.image7\&quot;}}&lt;/data&gt;&lt;/shadow&gt;&lt;/value&gt;&lt;value name=\&quot;kind\&quot;&gt;&lt;shadow type=\&quot;spritekind\&quot;&gt;&lt;field name=\&quot;MEMBER\&quot;&gt;Player&lt;/field&gt;&lt;/shadow&gt;&lt;/value&gt;&lt;/block&gt;&lt;/value&gt;&lt;/block&gt;&lt;/statement&gt;&lt;/block&gt;&lt;/xml&gt;&quot;,
+  &quot;main.ts&quot;: &quot;namespace SpriteKind {\n    export const Fire = SpriteKind.create()\n    export const Burnt = SpriteKind.create()\n}\n/**\n * Track the remaining forest using a statusbar. You could initialize this using magic or remove the \&quot;total tilemap rows/columns\&quot; by just telling them what value to enter for the max/value\n */\nlet mySprite = sprites.create(assets.image`Fire Plane Left`, SpriteKind.Player)\n&quot;,
+  &quot;pxt.json&quot;: &quot;{\n    \&quot;name\&quot;: \&quot;Save the Forest Assets Only\&quot;,\n    \&quot;description\&quot;: \&quot;\&quot;,\n    \&quot;dependencies\&quot;: {\n        \&quot;device\&quot;: \&quot;*\&quot;,\n        \&quot;tilemaps\&quot;: \&quot;github:microsoft/pxt-tilemaps#v1.11.0\&quot;,\n        \&quot;arcade-sprite-data\&quot;: \&quot;github:microsoft/arcade-sprite-data#v0.1.0\&quot;,\n        \&quot;arcade-sprite-util\&quot;: \&quot;github:jwunderl/arcade-sprite-util#v0.2.4\&quot;,\n        \&quot;arcade-story\&quot;: \&quot;github:microsoft/arcade-storytelling#v1.0.2\&quot;,\n        \&quot;arcade-minimap\&quot;: \&quot;github:microsoft/arcade-minimap#v0.6.1\&quot;,\n        \&quot;pxt-status-bar\&quot;: \&quot;github:jwunderl/pxt-status-bar#v0.4.1\&quot;,\n        \&quot;arcade-text\&quot;: \&quot;github:microsoft/arcade-text#v1.3.0\&quot;\n    },\n    \&quot;files\&quot;: [\n        \&quot;main.blocks\&quot;,\n        \&quot;main.ts\&quot;,\n        \&quot;README.md\&quot;,\n        \&quot;assets.json\&quot;,\n        \&quot;tilemap.g.jres\&quot;,\n        \&quot;tilemap.g.ts\&quot;,\n        \&quot;images.g.jres\&quot;,\n        \&quot;images.g.ts\&quot;\n    ],\n    \&quot;targetVersions\&quot;: {\n        \&quot;branch\&quot;: \&quot;v1.5.46\&quot;,\n        \&quot;tag\&quot;: \&quot;v1.5.46\&quot;,\n        \&quot;commits\&quot;: \&quot;https://github.com/microsoft/pxt-arcade/commits/4f3f29bef862bcab766a47e42db2d3ed6b0060b1\&quot;,\n        \&quot;target\&quot;: \&quot;1.5.46\&quot;,\n        \&quot;pxt\&quot;: \&quot;7.1.25\&quot;\n    },\n    \&quot;preferredEditor\&quot;: \&quot;blocksprj\&quot;\n}\n&quot;,
+  &quot;tilemap.g.jres&quot;: &quot;{\n    \&quot;transparency16\&quot;: {\n        \&quot;data\&quot;: \&quot;hwQQABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==\&quot;,\n        \&quot;mimeType\&quot;: \&quot;image/x-mkcd-f4\&quot;,\n        \&quot;tilemapTile\&quot;: true\n    },\n    \&quot;tile3\&quot;: {\n        \&quot;data\&quot;: \&quot;hwQQABAAAABmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZg==\&quot;,\n        \&quot;mimeType\&quot;: \&quot;image/x-mkcd-f4\&quot;,\n        \&quot;tilemapTile\&quot;: true,\n        \&quot;displayName\&quot;: \&quot;wall\&quot;\n    },\n    \&quot;tile2\&quot;: {\n        \&quot;data\&quot;: \&quot;hwQQABAAAABmZma8zGxmZmZmxsu7bGZmZma268zMbGZmZsXsxrtsZmZmzETCy2xmZmbL7sTMZmZmZcZOzrzMZmZmTOTkvMtmZma8VOTMzGZmZrwuzstsZmZmy07Cy2xmZmZL5MbMbGZmZsblvMxmZmZmxsu8zGZmZmZmzMtmZmZmZma8bGZmZg==\&quot;,\n        \&quot;mimeType\&quot;: \&quot;image/x-mkcd-f4\&quot;,\n        \&quot;tilemapTile\&quot;: true,\n        \&quot;displayName\&quot;: \&quot;firePit\&quot;\n    },\n    \&quot;tile1\&quot;: {\n        \&quot;data\&quot;: \&quot;hwQQABAAAABmZmZmZmZmZmZmZoaIZmZmZmaGeHdoZmZmZndmdmdmZmaGdndmZ2ZmZnhmd2d3Zmxmd2d2Z3fGbHZ3Z3Znd+5sZndndmd3xm5meGZ3Z3dmbGaGdndmZ2ZmZmZ4ZnZnZmZmZoZ4d2hmZmZmZoaIZmZmZmZmZmZmZmZmZmZmZmZmZg==\&quot;,\n        \&quot;mimeType\&quot;: \&quot;image/x-mkcd-f4\&quot;,\n        \&quot;tilemapTile\&quot;: true,\n        \&quot;displayName\&quot;: \&quot;trees\&quot;\n    },\n    \&quot;tile8\&quot;: {\n        \&quot;data\&quot;: \&quot;hwQQABAAAABm5mZmZmb+bmZmZmZm5u5uZmb/Zmb2u/72Zr9vZr67+2Zm9vtmvfv7Zv///2+8vO/2u+6+/P///mb//+u+7O6+9mZmv+7u7v9mZmb27/7//mbWZu/+/7vvZmb2/m++y/tmZvZvZv67+2ZvZsZm5rv+Zu5vZmbm7v5m5mZmZmbmbg==\&quot;,\n        \&quot;mimeType\&quot;: \&quot;image/x-mkcd-f4\&quot;,\n        \&quot;tilemapTile\&quot;: true,\n        \&quot;displayName\&quot;: \&quot;burnt tree\&quot;\n    },\n    \&quot;level1\&quot;: {\n        \&quot;id\&quot;: \&quot;level1\&quot;,\n        \&quot;mimeType\&quot;: \&quot;application/mkcd-tilemap\&quot;,\n        \&quot;data\&quot;: \&quot;MTAxMjAwMTIwMDAzMDMwMzAzMDMwMzAzMDMwMzAzMDMwMzAzMDMwMzAzMDMwMzAzMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMzAzMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMzAzMDEwMjAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMzAzMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMzAzMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMzAzMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMzAzMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMzAzMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMzAzMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMzAzMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMzAzMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMzAzMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMzAzMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMzAzMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMzAzMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMzAzMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMzAzMDMwMzAzMDMwMzAzMDMwMzAzMDMwMzAzMDMwMzAzMDMwMzAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMA==\&quot;,\n        \&quot;tileset\&quot;: [\n            \&quot;myTiles.transparency16\&quot;,\n            \&quot;myTiles.tile1\&quot;,\n            \&quot;myTiles.tile2\&quot;,\n            \&quot;myTiles.tile3\&quot;\n        ],\n        \&quot;displayName\&quot;: \&quot;level1\&quot;\n    },\n    \&quot;*\&quot;: {\n        \&quot;mimeType\&quot;: \&quot;image/x-mkcd-f4\&quot;,\n        \&quot;dataEncoding\&quot;: \&quot;base64\&quot;,\n        \&quot;namespace\&quot;: \&quot;myTiles\&quot;\n    }\n}&quot;,
+  &quot;tilemap.g.ts&quot;: &quot;// Auto-generated code. Do not edit.\nnamespace myTiles {\n    //% fixedInstance jres blockIdentity=images._tile\n    export const transparency16 = image.ofBuffer(hex``);\n    //% fixedInstance jres blockIdentity=images._tile\n    export const tile3 = image.ofBuffer(hex``);\n    //% fixedInstance jres blockIdentity=images._tile\n    export const tile2 = image.ofBuffer(hex``);\n    //% fixedInstance jres blockIdentity=images._tile\n    export const tile1 = image.ofBuffer(hex``);\n    //% fixedInstance jres blockIdentity=images._tile\n    export const tile8 = image.ofBuffer(hex``);\n\n    helpers._registerFactory(\&quot;tilemap\&quot;, function(name: string) {\n        switch(helpers.stringTrim(name)) {\n            case \&quot;level1\&quot;:\n            case \&quot;level1\&quot;:return tiles.createTilemap(hex`12001200030303030303030303030303030303030303030101010101010101010101010101010103030101010101010101010101010101010103030102010101010101010101010101010103030101010101010101010101010101010103030101010101010101010101010101010103030101010101010101010101010101010103030101010101010101010101010101010103030101010101010101010101010101010103030101010101010101010101010101010103030101010101010101010101010101010103030101010101010101010101010101010103030101010101010101010101010101010103030101010101010101010101010101010103030101010101010101010101010101010103030101010101010101010101010101010103030101010101010101010101010101010103030303030303030303030303030303030303`, img`\n..................\n..................\n..................\n..................\n..................\n..................\n..................\n..................\n..................\n..................\n..................\n..................\n..................\n..................\n..................\n..................\n..................\n..................\n`, [myTiles.transparency16,myTiles.tile1,myTiles.tile2,myTiles.tile3], TileScale.Sixteen);\n        }\n        return null;\n    })\n\n    helpers._registerFactory(\&quot;tile\&quot;, function(name: string) {\n        switch(helpers.stringTrim(name)) {\n            case \&quot;transparency16\&quot;:return transparency16;\n            case \&quot;wall\&quot;:\n            case \&quot;tile3\&quot;:return tile3;\n            case \&quot;firePit\&quot;:\n            case \&quot;tile2\&quot;:return tile2;\n            case \&quot;trees\&quot;:\n            case \&quot;tile1\&quot;:return tile1;\n            case \&quot;burnt tree\&quot;:\n            case \&quot;tile8\&quot;:return tile8;\n        }\n        return null;\n    })\n\n}\n// Auto-generated code. Do not edit.\n&quot;
+}</code></pre>
+
+    </div>
+
+					<div class="hideprint"></div>
+				</div>
+
+			</div>
+
+			
+<!-- include footer.html -->
+<footer class="ui vertical footer segment hideprint docs inverted" aria-hidden="false">
+    <div class="ui center aligned container">
+        <div class="ui horizontal link list">
+            <a
+                class="item"
+                href="https://twitter.com/intent/follow?screen_name=MsMakeCode"
+                title="Follow us on Twitter"
+                target="_blank"
+                rel="noopener">
+                <i class="huge icon twitter"></i>
+            </a>
+            <a class="item" href="https://www.youtube.com/channel/UCye7YlvFUUQ1dSy0WZZ1T_Q" title="Subscribe to our YouTube channel"
+                target="_blank" rel="noopened">
+                <i class="huge icon youtube"></i>
+            </a>
+            <a class="item" href="mailto:makecode@microsoft.com" title="Send us an Email"
+                target="_blank" rel="noopened">
+                <i class="huge icon mail"></i>
+            </a>
+        </div>
+        <div class="ui section divider"></div>
+        <div class="ui container horizontal small divided link list">
+            <a id="langpicker" tabindex="0" class="ui item" rel="noopener">
+                <i class="icon xicon globe" aria-hidden="true" role="presentation"></i>Language
+            </a>
+            <a class="item" href="https://makecode.com/privacy" target="_blank" rel="noopener">Privacy &amp; Cookies</a>
+            <a class="item" href="https://makecode.com/termsofuse" target="_blank" rel="noopener">Terms Of Use</a>
+            <a class="item" href="https://makecode.com/trademarks" target="_blank" rel="noopener">Trademarks</a>
+            <span class="item">© 2022 Microsoft</span>
+        </div>
+        <div class="ui container horizontal small link list poweredBy">
+            <span class="item">Powered by</span>
+            <a class="middle aligned" href="https://makecode.com/" title="Microsoft MakeCode"
+                target="_blank" rel="noopener">
+                <img width="100" src="/static/logo/Microsoft-logo_rgb_c-gray.png" alt="Microsoft">
+            </a>
+        </div>
+    </div>
+</footer>
+
+<!-- end include footer.html -->
+
+
+		</div>
+
+	</div>
+
+    
+<!-- include langpicker.html -->
+<div id="langmodal" class="ui modal docs" role="dialog" aria-modal="true" aria-describedby="langmodalheader" tabindex="-1">
+    <h2 id="langmodalheader" class="header">Select Language</h2>
+    <div role="button" class="closeIcon" tabindex="0" aria-label="Close">
+        <i class="icon close remove circle" aria-hidden="true"></i>
+    </div>
+
+	<div class="content">
+	    <div class="group">
+            <div id="availablelocales" class="ui cards centered" role="listbox" aria-label="List of available locales"></div>
+        </div>
+        <div class="ui" id="langmodalfooter">
+            <a class="ui" href="/pxt-arcade-app/docs/translate.html" target="_blank" rel="noopener noreferrer">
+                How do I add a new language?
+            </a>
+
+            <a id="translatebtn" class="ui button" role="button" tabindex="0">
+                Translate this page
+            </a>
+        </div>
+    </div>
+</div>
+
+
+<!-- end include langpicker.html -->
+
+	
+<!-- include macros.html -->
+<!-- macro button -->
+
+<!-- macro vimeo -->
+
+<!-- macro youtube -->
+
+<!-- macro section -->
+
+<!-- macro hide -->
+
+<!-- macro avatar -->
+
+<!-- macro hint -->
+
+<!-- macro codecard -->
+
+<!-- macro tutorialhint -->
+
+<!-- macro reminder -->
+
+<!-- macro alert -->
+
+<!-- macro tip -->
+
+<!-- wrapped around ordinary content -->
+<!-- macro main-container -->
+
+<!-- used for 'column' box - they are collected and wrapped in 'column-container' -->
+<!-- macro column -->
+<!-- macro column-container -->
+
+
+<!-- Menu on the top of the page -->
+<!-- macro item -->
+
+<!-- macro divider -->
+
+<!-- TOC in the sidebar -->
+<!-- macro item -->
+
+<!-- macro divider -->
+
+<!-- macro toc-dropdown -->
+
+<!-- macro toc-dropdown-noLink -->
+
+<!-- macro toc-dropdown-noHeading -->
+
+<!-- TODO: duplicates of above for compatability with docsrender.ts;
+    remove with pxtlib/docsrender.ts TOC TODOs after cloud bump. -->
+<!-- macro top-dropdown -->
+
+<!-- macro top-dropdown-noHeading -->
+
+<!-- macro inner-dropdown -->
+
+<!-- macro nested-dropdown -->
+<!-- end include macros.html -->
+
+	
+<!-- include tracking.html -->
+<script type="text/javascript" src="/pxt-arcade-app/pxtweb.js"></script>
+<script type="text/javascript">
+    window.loadAppInsights = function (includeCookie) {
+        //Backend will patch / + doccdn + / with CDN url and the check that URL ends with the sha would pass
+        var isProduction = includeCookie && (/[0-9a-f]{40}\/ai\.2\.min\.js$/.test("/pxt-arcade-app/ai.2.min.js"));
+        !function(T,l,y){var S=T.location,k="script",D="connectionString",C="ingestionendpoint",I="disableExceptionTracking",E="ai.device.",b="toLowerCase",w="crossOrigin",N="POST",e="appInsightsSDK",t=y.name||"appInsights";(y.name||T[e])&&(T[e]=t);var n=T[t]||function(d){var g=!1,f=!1,m={initialize:!0,queue:[],sv:"5",version:2,config:d};function v(e,t){var n={},a="Browser";return n[E+"id"]=a[b](),n[E+"type"]=a,n["ai.operation.name"]=S&&S.pathname||"_unknown_",n["ai.internal.sdkVersion"]="javascript:snippet_"+(m.sv||m.version),{time:function(){var e=new Date;function t(e){var t=""+e;return 1===t.length&&(t="0"+t),t}return e.getUTCFullYear()+"-"+t(1+e.getUTCMonth())+"-"+t(e.getUTCDate())+"T"+t(e.getUTCHours())+":"+t(e.getUTCMinutes())+":"+t(e.getUTCSeconds())+"."+((e.getUTCMilliseconds()/1e3).toFixed(3)+"").slice(2,5)+"Z"}(),iKey:e,name:"Microsoft.ApplicationInsights."+e.replace(/-/g,"")+"."+t,sampleRate:100,tags:n,data:{baseData:{ver:2}}}}var h=d.url||y.src;if(h){function a(e){var t,n,a,i,r,o,s,c,u,p,l;g=!0,m.queue=[],f||(f=!0,t=h,s=function(){var e={},t=d.connectionString;if(t)for(var n=t.split(";"),a=0;a<n.length;a++){var i=n[a].split("=");2===i.length&&(e[i[0][b]()]=i[1])}if(!e[C]){var r=e.endpointsuffix,o=r?e.location:null;e[C]="https://"+(o?o+".":"")+"dc."+(r||"services.visualstudio.com")}return e}(),c=s[D]||d[D]||"",u=s[C],p=u?u+"/v2/track":d.endpointUrl,(l=[]).push((n="SDK LOAD Failure: Failed to load Application Insights SDK script (See stack for details)",a=t,i=p,(o=(r=v(c,"Exception")).data).baseType="ExceptionData",o.baseData.exceptions=[{typeName:"SDKLoadFailed",message:n.replace(/\./g,"-"),hasFullStack:!1,stack:n+"\nSnippet failed to load ["+a+"] -- Telemetry is disabled\nHelp Link: https://go.microsoft.com/fwlink/?linkid=2128109\nHost: "+(S&&S.pathname||"_unknown_")+"\nEndpoint: "+i,parsedStack:[]}],r)),l.push(function(e,t,n,a){var i=v(c,"Message"),r=i.data;r.baseType="MessageData";var o=r.baseData;return o.message='AI (Internal): 99 message:"'+("SDK LOAD Failure: Failed to load Application Insights SDK script (See stack for details) ("+n+")").replace(/\"/g,"")+'"',o.properties={endpoint:a},i}(0,0,t,p)),function(e,t){if(JSON){var n=T.fetch;if(n&&!y.useXhr)n(t,{method:N,body:JSON.stringify(e),mode:"cors"});else if(XMLHttpRequest){var a=new XMLHttpRequest;a.open(N,t),a.setRequestHeader("Content-type","application/json"),a.send(JSON.stringify(e))}}}(l,p))}function i(e,t){f||setTimeout(function(){!t&&m.core||a()},500)}var e=function(){var n=l.createElement(k);n.src=h;var e=y[w];return!e&&""!==e||"undefined"==n[w]||(n[w]=e),n.onload=i,n.onerror=a,n.onreadystatechange=function(e,t){"loaded"!==n.readyState&&"complete"!==n.readyState||i(0,t)},n}();y.ld<0?l.getElementsByTagName("head")[0].appendChild(e):setTimeout(function(){l.getElementsByTagName(k)[0].parentNode.appendChild(e)},y.ld||0)}try{m.cookie=l.cookie}catch(p){}function t(e){for(;e.length;)!function(t){m[t]=function(){var e=arguments;g||m.queue.push(function(){m[t].apply(m,e)})}}(e.pop())}var n="track",r="TrackPage",o="TrackEvent";t([n+"Event",n+"PageView",n+"Exception",n+"Trace",n+"DependencyData",n+"Metric",n+"PageViewPerformance","start"+r,"stop"+r,"start"+o,"stop"+o,"addTelemetryInitializer","setAuthenticatedUserContext","clearAuthenticatedUserContext","flush"]),m.SeverityLevel={Verbose:0,Information:1,Warning:2,Error:3,Critical:4};var s=(d.extensionConfig||{}).ApplicationInsightsAnalytics||{};if(!0!==d[I]&&!0!==s[I]){var c="onerror";t(["_"+c]);var u=T[c];T[c]=function(e,t,n,a,i){var r=u&&u(e,t,n,a,i);return!0!==r&&m["_"+c]({message:e,url:t,lineNumber:n,columnNumber:a,error:i}),r},d.autoExceptionInstrumented=!0}return m}(y.cfg);function a(){y.onInit&&y.onInit(n)}(T[t]=n).queue&&0===n.queue.length?(n.queue.push(a),n.trackPageView({})):a()}(window,document,{
+            src: "https://js.monitor.azure.com/scripts/b/ai.2.min.js", // The SDK URL Source
+            onInit: function (sdk) {
+                sdk.addTelemetryInitializer(function (envelope) {
+                    // App Insights automatically sends a page view event on setup, but we send our own later with additional properties.
+                    // This stops the automatic event from firing, so we don't end up with duplicate page view events.
+                    if (envelope.baseType == "PageviewData" && !envelope.baseData.properties) {
+                        return false;
+                    }
+
+                    if (envelope.baseType == "PageviewPerformanceData") {
+                        var pageName = envelope.baseData.name;
+                        envelope.baseData.name = window.location.origin;
+                        if (!envelope.baseData.properties) {
+                            envelope.baseData.properties = {};
+                        }
+                        envelope.baseData.properties.pageName = pageName;
+                        var scrubbedUrl = scrubUrl(envelope.baseData.uri);
+                        envelope.baseData.uri = scrubbedUrl;
+                        var toUrl = new URL(scrubbedUrl);
+                        envelope.baseData.properties.pathName = toUrl ? toUrl.pathname : "";
+                        if (envelope.ext && envelope.ext.trace) {
+                            envelope.ext.trace.name = toUrl ? toUrl.pathname : "";
+                        }
+                    }
+
+                    var telemetryItem = envelope.baseData;
+                    telemetryItem.properties = telemetryItem.properties || {};
+                    telemetryItem.properties["cookie"] = isProduction;
+                    if (typeof pxtConfig === "undefined" || !pxtConfig || !pxtConfig.targetId) {
+                        telemetryItem.properties["target"] = "arcade";
+                        return true;
+                    }
+                    telemetryItem.properties["target"] = pxtConfig.targetId;
+                    telemetryItem.properties["stage"] = (pxtConfig.relprefix || "/--").replace(/[^a-z]/ig, '')
+                    if (typeof Windows !== "undefined")
+                        telemetryItem.properties["WindowsApp"] = 1;
+                    var userAgent = navigator.userAgent.toLowerCase();
+                    var electronRegexResult = /\belectron\/(\d+\.\d+\.\d+.*?)(?: |$)/i.exec(userAgent); // Example navigator.userAgent: "Mozilla/5.0 Chrome/61.0.3163.100 Electron/2.0.0 Safari/537.36"
+                    if (electronRegexResult) {
+                        telemetryItem.properties["Electron"] = 1;
+                        telemetryItem.properties["ElectronVersion"] = electronRegexResult[1];
+                    }
+                    if (typeof pxtElectron !== "undefined") {
+                        telemetryItem.properties["PxtElectron"] = 1;
+                        telemetryItem.properties["ElectronVersion"] = pxtElectron.versions.electronVersion;
+                        telemetryItem.properties["ChromiumVersion"] = pxtElectron.versions.chromiumVersion;
+                        telemetryItem.properties["NodeVersion"] = pxtElectron.versions.nodeVersion;
+                        telemetryItem.properties["PxtElectronVersion"] = pxtElectron.versions.pxtElectronVersion;
+                        telemetryItem.properties["PxtCoreVersion"] = pxtElectron.versions.pxtCoreVersion;
+                        telemetryItem.properties["PxtTargetVersion"] = pxtElectron.versions.pxtTargetVersion;
+                        telemetryItem.properties["PxtElectronIsProd"] = pxtElectron.versions.isProd;
+                    }
+                    // Kiosk UWP info is appended to the user agent by the makecode-dotnet-apps/arcade-kiosk UWP app
+                    var kioskUwpRegexResult = /\((MakeCode Arcade Kiosk UWP)\/([\S]+)\/([\S]+)\)/i.exec(userAgent); // Example navigator.userAgent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36 Edg/117.0.2045.60 (MakeCode Arcade Kiosk UWP/0.1.41.0/Windows.Xbox)"
+                    if (kioskUwpRegexResult) {
+                        telemetryItem.properties["KioskUwp"] = 1;
+                        telemetryItem.properties["KioskUwpVersion"] = kioskUwpRegexResult[2];
+                        telemetryItem.properties["KioskUwpPlatform"] = kioskUwpRegexResult[3];
+                    }
+                    return true;
+                });
+            },
+            cfg: {
+                instrumentationKey:"9801ed01-c40f-46ec-aa40-2a1742a9e71c",
+                disableAjaxTracking: true,
+                overridePageViewDuration: false,
+                disableExceptionTracking: true,
+                disableCorrelationHeaders: true,
+                disableCookiesUsage: !isProduction,
+                isStorageUseDisabled: !isProduction,
+                url: "/pxt-arcade-app/ai.2.min.js"
+            }
+        });
+        window.appInsights=appInsights;
+        var location = window.location.toString();
+        appInsights.trackPageView({
+            name: window.location.hostname,
+            uri: window.location.origin,
+            properties: {
+                url: scrubUrl(location),
+                urlReferrer: scrubUrl(document.referrer.toString())
+            }
+        });
+
+        // Scrub potential PII from the URL.
+        function scrubUrl(url) {
+            if (!url) return url;
+
+            var scriptIdRegex = /(?:S?\d{5}-\d{5}-\d{5}-\d{5})|(?:_[0-9a-zA-Z]{12})/g;
+            var scrubbedUrl = new URL(url.toLocaleLowerCase().replace(scriptIdRegex, "xxxxx-xxxxx-xxxxx-xxxxx"));
+
+            // Just as a precaution, strip any suspicious query parameters.
+            var blockedParamKeywords = ["username", "password", "token", "pwd"];
+            var searchParams = Array.from(scrubbedUrl.searchParams.keys());
+            for (var param of searchParams) {
+                if (blockedParamKeywords.some(k => param.indexOf(k) != -1)) {
+                    scrubbedUrl.searchParams.delete(param);
+                }
+            }
+
+            return scrubbedUrl.toString();
+        }
+
+        return isProduction;
+    }
+    pxt.initAnalyticsAsync();
+</script>
+
+<!-- end include tracking.html -->
+
+
+</body>
+
+</html>

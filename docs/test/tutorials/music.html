@@ -1,0 +1,1160 @@
+<!DOCTYPE html>
+<html lang="" xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#"
+	xmlns:fb="http://www.facebook.com/2008/fbml">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Microsoft MakeCode Arcade</title>
+	<meta name="Description" content="Develop your programming skills by quickly creating and modding retro arcade games with Blocks and JavaScript in the MakeCode editor" />
+
+	<!-- ifdef incontexttranslations endif -->
+	
+<!-- include meta.html -->
+<!-- This file is typically overriden by the target, with own Twitter
+     account etc. Most data is taken from the theme file though.  
+  -->
+
+<!-- include robotsmeta.html -->
+
+<!-- end include robotsmeta.html -->
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@msmakecode" />
+<meta name="twitter:title" content="Microsoft MakeCode Arcade" />
+<meta name="twitter:description" content="Develop your programming skills by quickly creating and modding retro arcade games with Blocks and JavaScript in the MakeCode editor" />
+<meta name="twitter:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Zune80and4.jpg/220px-Zune80and4.jpg" />
+
+<meta property="og:title" content="Microsoft MakeCode Arcade" />
+<meta property="og:site_name" content="Microsoft MakeCode" />
+<meta property="og:type" content="website" />
+<meta property="og:description" content="Develop your programming skills by quickly creating and modding retro arcade games with Blocks and JavaScript in the MakeCode editor" />
+<meta property="fb:app_id" content="" />
+<meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Zune80and4.jpg/220px-Zune80and4.jpg" />
+
+<meta name="format-detection" content="telephone=no">
+<link rel="apple-touch-icon" href="docs/static/icons/favicon.ico">
+<link rel="icon" type="image/png" href="docs/static/icons/favicon.ico">
+<link rel="shortcut icon" href="docs/static/icons/favicon.ico">
+<meta name="theme-color" content="">
+
+<!-- end include meta.html -->
+
+	
+<!-- include head.html -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width,height=device-height,user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
+
+<link rel="stylesheet" data-rtl="/blb/rtlsemantic.css" href="/pxt-arcade-app/semantic.css" />
+<link id="blocklycss"  data-rtl="/blb/rtlblockly.css" rel="stylesheet" href="/pxt-arcade-app/blockly.css" />
+<link rel="stylesheet" href="/pxt-arcade-app/docfiles/style.css" />
+<link rel="stylesheet" href="/pxt-arcade-app/docfiles/vs.css" />
+<link rel="stylesheet" href="/pxt-arcade-app/docfiles/target.css" />
+
+<script src="/pxt-arcade-app/jquery.js" type="text/javascript"></script>
+<script src="/pxt-arcade-app/semantic.js" type="text/javascript"></script>
+<script src="/pxt-arcade-app/docfiles/target.js" type="text/javascript"></script>
+<script src="/pxt-arcade-app/embed.js" type="text/javascript"></script>
+<script src="/pxt-arcade-app/docfiles/docs.js" type="text/javascript"></script>
+
+<style>
+    
+</style>
+
+<!-- end include head.html -->
+
+
+</head>
+
+<body id='root' class='root'>
+	<div id="accessibleMenu" class="ui accessibleMenu borderless fixed menu docs" role="menubar">
+		
+            <a href="#maincontent" class="ui item link" tabindex="0" role="menuitem">Skip to main content</a>
+        
+	</div>
+
+	
+<!-- include tocheader.html -->
+<div id="top-bar" class="ui fixed accent borderless inverted main menu hideprint docs" role="menubar">
+    <div>
+        
+            <a id="togglesidebar" class="launch icon item" tabindex="0" title="Side menu" aria-label="Side menu" role="menuitem" aria-expanded="false">
+                <i class="content icon"></i>
+            </a>
+        
+        <div class="item" role="menuitem">
+            <div class="header-org-logo">
+                <img src="/static/logo/Microsoft_logo_rgb_W-white_D.png" alt="Microsoft">
+            </div>
+            <div class="header-org-logo-sm">
+                <img src="/static/logo/Microsoft_logo_rgb_W-white_D-square.png" alt="Microsoft">
+            </div>
+            <div class="header-title"><span>MakeCode</span></div>
+        </div>
+    </div>
+    <div>
+        <div class="item">
+            <form id="tocsearch1" class="search" role="form" method="get" action="https://www.bing.com/search">
+                <div class="ui fluid icon input">
+                    <input type="hidden" name="q1" value="site:https://arcade.makecode.com/" />
+                    
+                <input type="search" name="q" placeholder="Search..." aria-label="Search Documentation">
+                <i onclick="document.getElementById('tocsearch1').submit();" tabindex="0" class="search link icon" aria-label="Search" role="button"></i>
+            
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div id="side-menu" class="ui vertical accent inverted sidebar menu left hideprint docs" role="menubar">
+    <!-- TOC Menu (tocheader.html) -->
+    <div class="menuContainer" role="menu">
+        
+    <a class="item " href="/pxt-arcade-app/docs/about.html" role="menuitem">About</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/faq.html" role="menuitem">FAQ</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/projects.html" role="menuitem">Projects</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/github.html" role="menuitem">GitHub</a>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/pxt-arcade-app/docs/reference.html">Reference</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-arcade-app/docs/reference/sprites.html" role="menuitem">sprites</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/reference/controller.html" role="menuitem">controller</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/reference/game.html" role="menuitem">game</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/reference/music.html" role="menuitem">music</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/reference/scene.html" role="menuitem">scene</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/reference/info.html" role="menuitem">info</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/reference/images.html" role="menuitem">images</a>
+
+        </div>
+    </div>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/pxt-arcade-app/docs/blocks.html">Blocks</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-arcade-app/docs/blocks/on-start.html" role="menuitem">On Start</a>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/pxt-arcade-app/docs/blocks/loops.html">Loops</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-arcade-app/docs/blocks/loops/repeat.html" role="menuitem">repeat</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/blocks/loops/for.html" role="menuitem">for</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/blocks/loops/while.html" role="menuitem">while</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/blocks/loops/for-of.html" role="menuitem">for of</a>
+
+        </div>
+    </div>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/pxt-arcade-app/docs/blocks/logic.html">Logic</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-arcade-app/docs/blocks/logic/if.html" role="menuitem">if</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/blocks/logic/boolean.html" role="menuitem">Boolean</a>
+
+        </div>
+    </div>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/pxt-arcade-app/docs/blocks/variables.html">Variables</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-arcade-app/docs/blocks/variables/assign.html" role="menuitem">assign</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/blocks/variables/change.html" role="menuitem">change var</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/blocks/variables/var.html" role="menuitem">var</a>
+
+        </div>
+    </div>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/blocks/math.html" role="menuitem">Math</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/blocks/javascript-blocks.html" role="menuitem">JavaScript blocks</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/blocks/custom.html" role="menuitem">Custom blocks</a>
+
+        </div>
+    </div>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/pxt-arcade-app/docs/python.html">Python</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-arcade-app/docs/python/call.html" role="menuitem">Calling</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/python/sequence.html" role="menuitem">Sequencing</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/python/variables.html" role="menuitem">Variables</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/python/operators.html" role="menuitem">Operators</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/python/statements.html" role="menuitem">Statements</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/python/functions.html" role="menuitem">Functions</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/python/classes.html" role="menuitem">Classes</a>
+
+        </div>
+    </div>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/pxt-arcade-app/docs/javascript.html">JavaScript</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-arcade-app/docs/javascript/call.html" role="menuitem">Calling</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/javascript/sequence.html" role="menuitem">Sequencing</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/javascript/variables.html" role="menuitem">Variables</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/javascript/operators.html" role="menuitem">Operators</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/javascript/statements.html" role="menuitem">Statements</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/javascript/functions.html" role="menuitem">Functions</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/javascript/types.html" role="menuitem">Types</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/javascript/classes.html" role="menuitem">Classes</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/javascript/interfaces.html" role="menuitem">Interfaces</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/javascript/generics.html" role="menuitem">Generics</a>
+
+        </div>
+    </div>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/pxt-arcade-app/docs/types.html">Types</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-arcade-app/docs/types/number.html" role="menuitem">Number</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/types/string.html" role="menuitem">String</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/types/boolean.html" role="menuitem">Boolean</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/types/array.html" role="menuitem">Array</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/types/function.html" role="menuitem">Function</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/types/image.html" role="menuitem">Image</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/types/sprite.html" role="menuitem">Sprite</a>
+
+        </div>
+    </div>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/block-gallery.html" role="menuitem">Blocks Gallery</a>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="">Miscellaneous</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-arcade-app/docs/about.html" role="menuitem">About</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/support.html" role="menuitem">Support</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/translate.html" role="menuitem">Translate</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/share.html" role="menuitem">Sharing projects</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/multiplayer.html" role="menuitem">Multiplayer</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/offline.html" role="menuitem">Offline support</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/save.html" role="menuitem">Save</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/identity/sign-in.html" role="menuitem">Sign In</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/identity/cloud-sync.html" role="menuitem">Cloud Sync</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/vscode.html" role="menuitem">VS Code</a>
+
+        </div>
+    </div>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/pxt-arcade-app/docs/hardware.html">Hardware</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-arcade-app/docs/hardware/errors.html" role="menuitem">Errors</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/hardware/adding.html" role="menuitem">Adding New Board</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/hardware/raspberry-pi.html" role="menuitem">Raspberry Pi</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/hardware/makey-makey.html" role="menuitem">Makey Makey</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/hardware/shoebox-controller.html" role="menuitem">Shoebox Controller</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/hardware/dev.html" role="menuitem">Dev</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/hardware/dbg.html" role="menuitem">Debug connector</a>
+
+        </div>
+    </div>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="">Developers</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-arcade-app/docs/cli.html" role="menuitem">Command Line Interface</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/code.html" role="menuitem">Visual Studio Code support</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/blocks-embed.html" role="menuitem">Blocks Embed</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/developer/images.html" role="menuitem">Art, images, colors</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/developer/sound.html" role="menuitem">Sounds</a>
+
+        </div>
+    </div>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/pxt-arcade-app/docs/lessons.html">Lessons</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-arcade-app/docs/lessons/cherry-pickr.html" role="menuitem">Cherry Pickr</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/lessons/barrel-dodger.html" role="menuitem">Barrel Dodger</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/lessons/dance-party.html" role="menuitem">Dance Party</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/lessons/block-out.html" role="menuitem">BlockOut</a>
+
+        </div>
+    </div>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/pxt-arcade-app/docs/courses.html">Courses</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-arcade-app/docs/courses/csintro1.html" role="menuitem">CS Intro 1</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/courses/csintro2.html" role="menuitem">CS Intro 2</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/courses/csintro3.html" role="menuitem">CS Intro 3</a>
+
+        </div>
+    </div>
+
+    </div>
+</div>
+<!-- end include tocheader.html -->
+
+
+	<div id="docs" class="pusher">
+
+		<div class="article" id="maincontent">
+			<div class="article-inner">
+
+				
+<!-- include header.html -->
+<div class="ui one column padded grid hideprint">
+    <div class="column ui container">
+        
+    </div>
+</div>
+<!-- end include header.html -->
+
+
+				<div class="main ui container fluid mainbody">
+					<button id="printbtn" class="circular ui icon right floated button hideprint hidemobile"
+						title="Print" aria-label="Print">
+						<i class="icon print"></i>
+					</button>
+					
+    <div class="ui text">
+        <h1 id="make-a-music-player">Make a Music Player</h1><!-- hints --><h2 id="introduction">Introduction</h2><p>Before technology hits the market, it goes through many changes.</p>
+<p>Today, you’ll see what it might have been like to be on the prototype team for Zune back in 2005.</p>
+<hr>
+<p>~hint What was a Zune? 💡</p>
+<p><br /></p>
+<p>The Zune was a Microsoft branded portable media player that released in 2006. You could
+store music, videos, and pictures on it. It also had a radio feature.</p>
+<p>Zune released three different versions between 2006 and 2011, and you can see
+the original version featured Guardians of the Galaxy Vol. 3.</p>
+<p><img class="ui image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Zune80and4.jpg/220px-Zune80and4.jpg" alt="Image of original Zunes" loading="lazy"></p>
+<p>hint~</p>
+<hr>
+<p>~hint What is a prototype? 💡</p>
+<p><br /></p>
+<p>A prototype is an early model of something that is about to be produced.</p>
+<p>Prototypes don’t always work like the final product, but they allow inventors to see how ideas will work in the real world.</p>
+<p>hint~</p>
+<hr>
+<p><img class="ui image" src="/static/tutorials/music/zune_outline.png" alt="Zune outline" title="This is what the original Zune looked like back in 2006" loading="lazy"></p>
+<p>
+</p>
+<h2 id="step-2">Step 2</h2><p><strong>Create your loading screen</strong></p>
+<ul>
+<li>:tree: Open the <code>||scene:Scene||</code> category and drag<br />
+<code>||scene:set background image to [ ]||</code><br />
+into the empty <br />
+<code>||loops(noclick):on start||</code><br />
+container that’s already in the workspace.</li>
+</ul>
+<ul>
+<li>:right arrow: When you’re ready, click <strong>Next</strong> to see the next step.</li>
+</ul>
+
+    <div class="ui hint message">
+        <div class="content">
+            <pre><code class="lang-blocks">//@highlight
+scene.setBackgroundImage(img`.`)</code></pre>
+<h2 id="step-3">Step 3</h2><p><strong>Choose your art</strong><br />
+🖼</p>
+<hr>
+<ul>
+<li>:paint brush: Click the empty box inside<br />
+<code>||scene(noclick):set background image to [ ]||</code><br />
+to open the image editor.</li>
+</ul>
+<ul>
+<li>:mouse pointer: Here, you can create your own artwork, or you can click the <strong>Gallery</strong> tab
+<img class="ui image" src="/static/skillmap/assets/gallery.png" alt="Gallery" title="Toggle to see the images for this activity" loading="lazy">
+to choose our <strong>Zune</strong> screen.
+<img class="ui image" src="/static/tutorials/music/splash.png" alt="Choose the Zune Background Screen to start" title=" " loading="lazy"></li>
+</ul>
+
+    <div class="ui hint message">
+        <div class="content">
+            <pre><code class="lang-blocks">//@highlight
+scene.setBackgroundImage(zuneassets.Zune)</code></pre>
+<h2 id="step-4">Step 4</h2><ul>
+<li>:binoculars: Take a look at the window of your music player.</li>
+</ul>
+<p>Do you see the screen you chose?</p>
+<p><img class="ui image" src="/static/tutorials/music/screen.png" alt="Look at your music player!" title=" " loading="lazy"></p>
+<h2 id="step-5">Step 5</h2><p><strong>Set a Song</strong><br />
+🎵 🎵 🎵</p>
+<p>Load a song when the up-arrow is pressed.</p>
+<ul>
+<li>:game: From <code>||controller: Controller||</code>, drag the<br />
+<code>||controller: on [up] button [pressed]||</code><br />
+bundle into <strong>an empty area</strong> of the workspace.</li>
+</ul>
+
+    <div class="ui hint message">
+        <div class="content">
+            <pre><code class="lang-blocks">//@highlight
+controller.up.onEvent(ControllerButtonEvent.Pressed, function () {
+    thisSong = music.createSong()
+    scene.setBackgroundImage(img`.`)
+})</code></pre>
+<h2 id="step-6">Step 6</h2><ul>
+<li>:mouse pointer: click the empty<br />
+<code>||music(noclick): song [ ]||</code><br />
+block to open the music editor.</li>
+</ul>
+<ul>
+<li>:mouse pointer: Create a song (or switch to <strong>My Assets</strong> to open one that we’ve created for you.)
+<img class="ui image" src="/static/skillmap/assets/my-assets.png" alt="My Assets" title="Toggle to get to the songs for this activity" loading="lazy"></li>
+</ul>
+<p><br /></p>
+<p><div class="tutorial-video-embed"><video class="ams-embed" controls src="https://makecodeprodmediaeastus-usea.streaming.media.azure.net/32b05e5a-f5ce-45fd-a21b-fff271701b2f/MusicEditorDemo.ism/manifest(format=mpd-time-csf).mpd" /></div></p>
+
+    <div class="ui hint message">
+        <div class="content">
+            <pre><code class="lang-blocks">controller.up.onEvent(ControllerButtonEvent.Pressed, function () {
+    //@highlight
+    thisSong = music.createSong(assets.song`curious-blob`)
+    scene.setBackgroundImage(img`.`)
+})</code></pre>
+<h2 id="step-7">Step 7</h2><p><strong>Add Album Art</strong><br />
+🧑🏽‍🎨</p>
+<hr>
+<ul>
+<li>:paint brush: Click the empty box inside<br />
+<code>||scene(noclick):set background image to [ ]||</code><br />
+to open the image editor.</li>
+</ul>
+<ul>
+<li>:mouse pointer: Create an album cover for your song
+(or click the <strong>Gallery</strong> tab
+<img class="ui image" src="/static/skillmap/assets/gallery.png" alt="Gallery" title="Toggle to see the images for this activity" loading="lazy">
+to choose pre-made album art.)</li>
+</ul>
+
+    <div class="ui hint message">
+        <div class="content">
+            <pre><code class="lang-blocks">controller.up.onEvent(ControllerButtonEvent.Pressed, function () {
+    thisSong = music.createSong(assets.song`curious-blob`)
+    //@highlight
+    scene.setBackgroundImage(zuneassets.curiousblobalbumart)
+})</code></pre>
+<h2 id="step-8">Step 8</h2><ul>
+<li>:binoculars: Look at your music player again.</li>
+</ul>
+<p>Does the screen change when you press the up arrow?</p>
+<p>~hint Why don’t I hear it 🤷🏽</p>
+<hr>
+<p>So far, we have only added the code to load the song. We will add the code to play it in the next step.</p>
+<p>hint~</p>
+<h2 id="step-9">Step 9</h2><p><strong>▶️ Press Play</strong></p>
+<p>Add code to play your song when you press the (A) button.</p>
+<ul>
+<li>:game: From <code>||controller: Controller||</code> drag the<br />
+<code>||controller: on [A] button [pressed]||</code><br />
+bundle into <strong>an empty</strong> of the workspace.</li>
+</ul>
+<p>Now when you press the (A) button, it will play whatever you have loaded into the <strong>thisSong</strong> variable.</p>
+<p>~hint I’m getting an error ⚠️</p>
+<hr>
+<p>If you try pressing play before you choose a song, you’ll get a “sim error.”
+This just means that it couldn’t find a song to play. <br />
+<strong>(We’ll fix this in step 11.)</strong></p>
+<p>You’ll need to reload the music player and try again,
+but this time, make sure to press the up-arrow before pressing the (A) button.</p>
+<p>hint~</p>
+<pre><code class="lang-blockconfig.local">let thisSong: music.Playable = null
+
+controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
+    music.play(thisSong, music.PlaybackMode.LoopingInBackground)
+})
+</code></pre>
+
+    <div class="ui hint message">
+        <div class="content">
+            <pre><code class="lang-blocks">let thisSong: music.Playable = null
+
+controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
+    music.play(thisSong, music.PlaybackMode.LoopingInBackground)
+})</code></pre>
+<h2 id="step-10">Step 10</h2><ul>
+<li>:binoculars: Look at your music player again.</li>
+</ul>
+<p>Press the up-arrow to load your song and then press the (A) button to play it!</p>
+<p>~hint I don’t hear anything 🔈</p>
+<hr>
+<p>There are a few reasons you might not be able to hear your song even if the code is correct.</p>
+<ul>
+<li>Make sure the music player is unmuted (🔊)</li>
+<li>Try turning up the volume on your computer</li>
+<li>Add a <code>||music:set volume [100]||</code> block to your <code>||loops(noclick):on start||</code> container.</li>
+</ul>
+<p>If you still can’t hear your song, go back and look at previous steps to make sure your code matches the instructions.</p>
+<p>hint~</p>
+<p>~hint I’m getting an error ⚠️</p>
+<hr>
+<p>If you try pressing play before you choose a song, you’ll get a “sim error.”
+This just means that it couldn’t find a song to play. <br />
+<strong>(We’ll fix this in the next step.)</strong></p>
+<p>You’ll need to reload the music player and try again,
+but this time, make sure to press the up-arrow before pressing the (A) button.</p>
+<p>hint~</p>
+<pre><code class="lang-blockconfig.local">let thisSong: music.Playable = null
+
+controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
+    music.play(thisSong, music.PlaybackMode.LoopingInBackground)
+})
+</code></pre>
+<h2 id="step-11">Step 11</h2><p><strong>Avoid Errors</strong></p>
+<p>Add code to make sure a song is loaded before you try to play it.</p>
+<hr>
+<ul>
+<li><p>:game: From <code>||logic: Logic||</code> drag <br />
+<code>||logic: if &lt;true&gt; then||</code><br />
+into <strong>the beginning</strong> of the <br />
+<code>||controller(noclick): on [A] button [pressed]||</code><br />
+container already in the workspace.</p>
+</li>
+<li><p>:mouse pointer: Move<br />
+<code>||music(noclick): play [thisSong] [looping in background]||</code><br />
+into the <br />
+<code>||logic(noclick): if &lt;true&gt; then||</code><br />
+container just added in the workspace.</p>
+</li>
+</ul>
+<pre><code class="lang-blockconfig.local">let thisSong: music.Playable = null
+
+controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
+        music.play(thisSong, music.PlaybackMode.LoopingInBackground)
+})
+</code></pre>
+
+    <div class="ui hint message">
+        <div class="content">
+            <pre><code class="lang-blocks">let thisSong: music.Playable = null
+
+controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
+//@highlight
+if (true) {
+        music.play(thisSong, music.PlaybackMode.LoopingInBackground)
+    }
+})</code></pre>
+<h2 id="step-12">Step 12</h2><ul>
+<li>:game: From <code>||variables: Variables||</code> drag <br />
+<code>||variables: thisSong||</code><br />
+into <strong>the top bar of</strong>  <br />
+<code>||logic(noclick): if &lt;true&gt; then||</code><br />
+to replace <strong><code>&lt;true</code>&gt;</strong>.</li>
+</ul>
+<p>Now, when you press the (A) button,
+the code will check to see if there is a value inside <strong>thisSong</strong>
+before playing,</p>
+<pre><code class="lang-blockconfig.local">let thisSong: music.Playable = null
+
+controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
+if (true) {
+        music.play(thisSong, music.PlaybackMode.LoopingInBackground)
+    }
+})
+</code></pre>
+
+    <div class="ui hint message">
+        <div class="content">
+            <pre><code class="lang-blocks">let thisSong: music.Playable = null
+
+controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
+//@highlight
+if (thisSong) {
+        music.play(thisSong, music.PlaybackMode.LoopingInBackground)
+    }
+})</code></pre>
+<h2 id="step-13">Step 13</h2><ul>
+<li>:game: You can add more songs by dragging out three more <br />
+<code>||controller: on [up] button [pressed]||</code><br />
+bundles and changing <code>||controller:up||</code> to <code>||controller:down||</code>, <code>||controller:left||</code>, and <code>||controller:right||</code>.</li>
+</ul>
+<ul>
+<li>:mouse pointer: Add a <strong>new song</strong> and <strong>new album art</strong> to each option.</li>
+</ul>
+
+    <div class="ui hint message">
+        <div class="content">
+            <pre><code class="lang-blocks">controller.up.onEvent(ControllerButtonEvent.Pressed, function () {
+    thisSong = music.createSong(assets.song`falling-blossoms`)
+    scene.setBackgroundImage(zuneassets.fallingblossomsalbumart)
+})
+
+//@highlight
+controller.down.onEvent(ControllerButtonEvent.Pressed, function () {
+    thisSong = music.createSong(assets.song`bow-the-mighty-oak`)
+    scene.setBackgroundImage(zuneassets.bowmightyoakalbumart)
+})
+
+//@highlight
+controller.left.onEvent(ControllerButtonEvent.Pressed, function () {
+    thisSong = music.createSong(assets.song`curious-blob`)
+    scene.setBackgroundImage(zuneassets.curiousblobalbumart)
+})
+
+//@highlight
+controller.right.onEvent(ControllerButtonEvent.Pressed, function () {
+    thisSong = music.createSong(assets.song`jolliest-of-rogers`)
+    scene.setBackgroundImage(zuneassets.jolliestrogersalbumart)
+})</code></pre>
+<h2 id="step-14">Step 14</h2><ul>
+<li>:binoculars: Test your songs on the music player.</li>
+</ul>
+<p>Press an arrow to load your song and then press the (A) button to play.</p>
+<p>Now try another arrow. Do you notice that the new song plays right over top of the old one? Let’s fix that.</p>
+<pre><code class="lang-blockconfig.local">let thisSong: music.Playable = null
+
+controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
+if (thisSong) {
+        music.play(thisSong, music.PlaybackMode.LoopingInBackground)
+    }
+})
+</code></pre>
+<h2 id="step-15">Step 15</h2><ul>
+<li>:headphones: From <code>||music:Music||</code>, drag<br />
+<code>||music: stop all sounds||</code><br />
+into <strong>the top</strong> of the <br />
+<code>||controller(noclick): on [A] button [pressed]||</code><br />
+container that’s already in the workspace.</li>
+</ul>
+<p>Now the code will stop the old song before playing the new one.</p>
+<pre><code class="lang-blockconfig.local">let thisSong: music.Playable = null
+
+controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
+if (thisSong) {
+        music.play(thisSong, music.PlaybackMode.LoopingInBackground)
+    }
+})
+</code></pre>
+
+    <div class="ui hint message">
+        <div class="content">
+            <pre><code class="lang-blocks">controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
+    //@highlight
+    music.stopAllSounds()
+    if (thisSong) {
+        music.play(thisSong, music.PlaybackMode.LoopingInBackground)
+    }
+})</code></pre>
+<h2 id="step-16">Step 16</h2><p><strong>⏹️ Stop the Music</strong></p>
+<p>What if you want to stop your song without starting a new one?</p>
+<p>Let’s make the (B) button stop all sounds.</p>
+<ul>
+<li>:game: From <code>||controller: Controller||</code> drag the<br />
+<code>||controller: on [B] button [pressed]||</code><br />
+bundle into <strong>an empty</strong> of the workspace.</li>
+</ul>
+<pre><code class="lang-blockconfig.local">
+controller.B.onEvent(ControllerButtonEvent.Pressed, function () {
+    music.stopAllSounds()
+})
+</code></pre>
+
+    <div class="ui hint message">
+        <div class="content">
+            <pre><code class="lang-blocks">controller.B.onEvent(ControllerButtonEvent.Pressed, function () {
+    music.stopAllSounds()
+})</code></pre>
+<h2 id="step-17">Step 17</h2><ul>
+<li>:binoculars: Test your final music player.</li>
+</ul>
+<ul>
+<li>The arrows should load a song</li>
+<li>The (A) button should play the loaded song</li>
+<li>The (B) button should stop all songs</li>
+</ul>
+<pre><code class="lang-blockconfig.local">controller.B.onEvent(ControllerButtonEvent.Pressed, function () {
+    music.stopAllSounds()
+})
+</code></pre>
+<h2 id="finale">Finale</h2><p><strong>🎉 Way to Go 🎉</strong></p>
+<p>You have made your own prototype Zune!</p>
+<p>This doesn’t work quite like the original, but when you click <strong>Done</strong>, your code will open in our project editor and you can play around to make your creation work more like the first Zune did.</p>
+<p>Don’t forget to share your music with your friends and family!</p>
+<pre><code class="lang-blockconfig.global">let thisSong: music.Playable = null
+
+controller.up.onEvent(ControllerButtonEvent.Pressed, function () {
+    thisSong = music.createSong()
+    scene.setBackgroundImage(img`.`)
+})
+
+controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
+    music.play(thisSong, music.PlaybackMode.LoopingInBackground)
+})
+    music.play(thisSong, music.PlaybackMode.LoopingInBackground)
+    music.setVolume(100)
+
+    if (thisSong) {
+        music.play(thisSong, music.PlaybackMode.LoopingInBackground)
+    }
+
+</code></pre>
+<pre><code class="lang-simtheme">{
+    &quot;theme&quot;: &quot;zune&quot;
+}</code></pre>
+<pre><code class="lang-package">zune-assets=github:kiki-lee/zune-assets#v0.0.13</code></pre>
+<pre><code class="lang-customts">music.setVolume(20)
+</code></pre>
+<pre><code class="lang-assetjson">{
+  &quot;README.md&quot;: &quot; &quot;,
+  &quot;assets.json&quot;: &quot;&quot;,
+  &quot;images.g.jres&quot;: &quot;{\n    \&quot;song6\&quot;: {\n        \&quot;data\&quot;: \&quot;00a0000408060206001c00010a006400f401640000040000000000000000000000000000000002f50000000100030d192701000400012906000800012a0a000c00012910001200012a1600180001291e001f0001252200240001222400260001253000310003111d2731003400012936003800012a3a003c00012940004200012a46004700012a47004900012c4e005000012a5400560001295a005c00012a5e005f0002121e60006100031420296a006c00012570007200012272007600012588008a0001228a008c0001258e009000012790009100035561279100920001689600980001279c009e000125a200a4000127a600a700021863a700a8000125ac00ae000161b200b300011eb300b4000120b800ba00011ebe00c000020d2209010e02026400000403780000040a000301000000640001c80000040100000000640001640000040100000000fa0004af00000401c80000040a00019600000414000501006400140005010000002c0104dc00000401fa0000040a0001c8000004140005d0076400140005d0070000c800029001f40105c201f4010a0005900114001400039001000005c201f4010500058403050032000584030000fa00049001000005c201f4010500058403c80032000584030500640005840300009001049001000005c201f4010500058403c80064000584030500c8000584030000f40105ac0d000404a00f00000a0004ac0d2003010004a00f0000280004ac0d9001010004a00f0000280002d00700040408070f0064000408070000c80003c800c8000e7d00c80019000e64000f0032000e78000000fa00032c01c8000ee100c80019000ec8000f0032000edc000000fa0003f401c8000ea901c80019000e90010f0032000ea4010000fa0001c8000004014b000000c800012c01000401c8000000c8000190010004012c010000c80002c800000404c8000f0064000496000000c80002c2010004045e010f006400042c010000640002c409000404c4096400960004f6090000f40102b80b000404b80b64002c0104f40b0000f401022003000004200300040a000420030000ea01029001000004900100040a000490010000900102d007000410d0076400960010d0070000c8007f01000001000201080400050001060600070001050a000b0001060c000d00020509120013000105160017000201061800190001051c001d000201061e001f000105240025000205092800290001052a002b0001062e002f0002010530003100030106073400350001063600370001053a003b0001063c003d000205094200430001054600470001064800490001054c004d0001064e004f000201055400550001095800590001015e005f0002010760006100030105086400650001066600670001056a006b0001066c006d000205097000710001057200730001067600770001067800790001057c007d0001057e007f0001068200830002010684008500020509880089000201058a008b0001068e008f000106900091000201059400950001069600970001059a009b0001069c009d00020609a000a1000106a200a3000106a600a700020105a800a900020106ac00ad00020105ae00af00020106b200b3000105b400b50003010609b800b900020105ba00bb00020106be00bf0003010508\&quot;,\n        \&quot;mimeType\&quot;: \&quot;application/mkcd-song\&quot;,\n        \&quot;displayName\&quot;: \&quot;falling-blossoms\&quot;,\n        \&quot;namespace\&quot;: \&quot;mySongs.\&quot;\n    },\n    \&quot;song11\&quot;: {\n        \&quot;data\&quot;: \&quot;006e000408040400001c00010a006400f401640000040000000000000000000000000005000004ae0000000100010a06000700010a0e000f00010f0f001000011110001100011214001500011118001900010f1c001d00010a20002100014b26002700014b30003100011232003300011433003400011234003500011138003900010f3c003d00014b40004100010a46004700010a5c005e00010a60006200014b66006800014b7000710001167200730001577300740001167400750001147600780001167800790001127a007b0001147c007d00011105001c000f0a006400f4010a0000040000000000000000000000000000000002900000000200010a06000700010a0e000f00010f0f001000011110001200011214001600011118001a00010f1c001d00010a20002200014b26002700014b30003100011232003300011433003400011234003600011138003a00010f3c003e00014b40004200010a46004800010a5c005e00010a60006200014b66006800014b70007200010a76007700014b7c007d00014b06001c00010a006400f401640000040000000000000000000000000000000002600000000200010a06000800010a1c001d00010a20002200014b26002800014b30003200010a36003800010a3c003e00014b40004200010a46004800010a5c005e00010a60006200014b66006800014b70007200010a76007700014b7c007d00014b09010e02026400000403780000040a000301000000640001c80000040100000000640001640000040100000000fa0004af00000401c80000040a00019600000414000501006400140005010000002c0104dc00000401fa0000040a0001c8000004140005d0076400140005d0070000c800029001f40105c201f4010a0005900114001400039001000005c201f4010500058403050032000584030000fa00049001000005c201f4010500058403c80032000584030500640005840300009001049001000005c201f4010500058403c80064000584030500c8000584030000f40105ac0d000404a00f00000a0004ac0d2003010004a00f0000280004ac0d9001010004a00f0000280002d00700040408070f0064000408070000c80003c800c8000e7d00c80019000e64000f0032000e78000000fa00032c01c8000ee100c80019000ec8000f0032000edc000000fa0003f401c8000ea901c80019000e90010f0032000ea4010000fa0001c8000004014b000000c800012c01000401c8000000c8000190010004012c010000c80002c800000404c8000f0064000496000000c80002c2010004045e010f006400042c010000640002c409000404c4096400960004f6090000f40102b80b000404b80b64002c0104f40b0000f401022003000004200300040a000420030000ea01029001000004900100040a000490010000900102d007000410d0076400960010d0070000c800450100000100020e050600070001050800090002050a0c000d000202050e000f000106120013000105140015000202061800190002120a1c001d00030e02051e001f00010620002100020e0524002500010526002700010528002900010a2a002b0001052c002d0001022e002f00010530003100020e053200330001063400350001003600370001003800390005120105080a3a003b0001063c003d0001003e003f0002000540004100020e054600470001054800490002050a4c004d000202054e004f0001065200530001055400550002020658005900010a5c005d00030e02055e005f00010660006100020e0564006500010566006700010568006900010a6a006b0001056c006d0001026e006f00010570007100020e05720073000106740075000100760077000100780079000301050a7a007b0001067c007d0001007e007f00020005\&quot;,\n        \&quot;mimeType\&quot;: \&quot;application/mkcd-song\&quot;,\n        \&quot;displayName\&quot;: \&quot;curious-blob\&quot;,\n        \&quot;namespace\&quot;: \&quot;mySongs.\&quot;\n    },\n    \&quot;song10\&quot;: {\n        \&quot;data\&quot;: \&quot;00b4000408060400001c00010a006400f401640000040000000000000000000000000005000004780018001900015019001c00011222002300010d48004900011249004c0001144e004f00015552005300011472007300010d78007900011179007d00011282008300010d8e008f0001128f00920001149600970001559c009d000114a200a3000112a800a9000150b400b5000155b500b8000157be00bf00011405001c000f0a006400f4010a000004000000000000000000000000000000000290000600080001500c000e00010f12001400014e18001a00010d2e00300001503400360001503600380001503c003e00010f42004400014e48004a00010d6000620001506600680001506c006e00010f72007400014e78007a00010d8e00900001149600980001939c009e000112a200a4000150a800aa00010dae00b000010ab400b6000149ba00bc000108be00c000015006001c00010a006400f401640000040000000000000000000000000000000002b0000700080001500d000e00010f13001400014e18001900020d5c19001a00011e2e00300001503400360001503600380001503c003e00010f42004400014e48004900030d1b6149004b00025c634e004f00021e2552005300025c636000620001506600680001506c006e00010f72007400014e78007a00010d8e008f0001149600980001939c009e000112a200a4000150a800aa00010dae00b000010ab400b60002491bba00bc000108be00c00002502009010e02026400000403780000040a000301000000640001c80000040100000000640001640000040100000000fa0004af00000401c80000040a00019600000414000501006400140005010000002c0104dc00000401fa0000040a0001c8000004140005d0076400140005d0070000c800029001f40105c201f4010a0005900114001400039001000005c201f4010500058403050032000584030000fa00049001000005c201f4010500058403c80032000584030500640005840300009001049001000005c201f4010500058403c80064000584030500c8000584030000f40105ac0d000404a00f00000a0004ac0d2003010004a00f0000280004ac0d9001010004a00f0000280002d00700040408070f0064000408070000c80003c800c8000e7d00c80019000e64000f0032000e78000000fa00032c01c8000ee100c80019000ec8000f0032000edc000000fa0003f401c8000ea901c80019000e90010f0032000ea4010000fa0001c8000004014b000000c800012c01000401c8000000c8000190010004012c010000c80002c800000404c8000f0064000496000000c80002c2010004045e010f006400042c010000640002c409000404c4096400960004f6090000f40102b80b000404b80b64002c0104f40b0000f401022003000004200300040a000420030000ea01029001000004900100040a000490010000900102d007000410d0076400960010d0070000c8008401000001000201080400050001060600070001050a000b0001060c000d00031205091200130001051600170001061800190001051c001d0001061e001f00010524002500031205092800290001052a002b0001062e002f0002010530003100030106073400350001063600370001053a003b0001063c003d00031205094200430001054600470001064800490001054c004d0001064e004f00010554005500031201095800590001015e005f00010760006100030105086400650001066600670001056a006b0001066c006d00031205097000710001057200730001067600770001067800790001057c007d0001057e007f000106820083000201068400850003120509880089000201058a008b0001068e008f000106900091000201059400950001069600970001059a009b0001069c009d0003120609a000a100020106a200a3000106a600a700020105a800a9000106ac00ad000105ae00af000106b200b300020105b400b50003120609b800b90003120509ba00bb000106be00bf00051201050809\&quot;,\n        \&quot;mimeType\&quot;: \&quot;application/mkcd-song\&quot;,\n        \&quot;displayName\&quot;: \&quot;bow-the-mighty-oak\&quot;,\n        \&quot;namespace\&quot;: \&quot;mySongs.\&quot;\n    },\n    \&quot;song7\&quot;: {\n        \&quot;data\&quot;: \&quot;007c000408040400001c00010a006400f401640000040000000000000000000000000005000004ae000200040001570400050001160800090001140c000e0001161000120001571400160001161600180001141a001c00010d2c002e00014b2e003000014b30003100010f32003300010f34003600014b36003700010d3c003e0001084200430001574400450001164800490001144c004d00011650005100015756005700011b5c005d0001196c006d00014b6e006f00014b70007100010f72007300010f74007500014b7600770001117c007d00010d05001c000f0a006400f4010a000004000000000000000000000000000000000272000c000d00010d14001500010d1a001b00010d20002100010d2e002f00010c30003100010f32003300010f36003700010d3c003d0001084c004d00010d54005500010d5a005b00010d60006100010d6c006d00014b6e006f00014b70007100010f72007300010f7600770001117c007d00010d06001c00010a006400f4016400000400000000000000000000000000000000025a0000000100020d190c000e00020d1914001600020d191a001c00020d1920002200020d192c002e00020d193c003e00010840004100020d194c004d00020d1954005500020d195a005b00020d1960006100020d196c006e00020d1909010e02026400000403780000040a000301000000640001c80000040100000000640001640000040100000000fa0004af00000401c80000040a00019600000414000501006400140005010000002c0104dc00000401fa0000040a0001c8000004140005d0076400140005d0070000c800029001f40105c201f4010a0005900114001400039001000005c201f4010500058403050032000584030000fa00049001000005c201f4010500058403c80032000584030500640005840300009001049001000005c201f4010500058403c80064000584030500c8000584030000f40105ac0d000404a00f00000a0004ac0d2003010004a00f0000280004ac0d9001010004a00f0000280002d00700040408070f0064000408070000c80003c800c8000e7d00c80019000e64000f0032000e78000000fa00032c01c8000ee100c80019000ec8000f0032000edc000000fa0003f401c8000ea901c80019000e90010f0032000ea4010000fa0001c8000004014b000000c800012c01000401c8000000c8000190010004012c010000c80002c800000404c8000f0064000496000000c80002c2010004045e010f006400042c010000640002c409000404c4096400960004f6090000f40102b80b000404b80b64002c0104f40b0000f401022003000004200300040a000420030000ea01029001000004900100040a000490010000900102d007000410d0076400960010d0070000c8009c0100000100020e050200030001050400050001050600070001050800090002050a0a000b0001050c000d000202050e000f000106100011000105120013000105140015000202061600170001061800190002050a1a001b0001051c001d0001071e001f000107200021000202052200230001052400250001052600270001052800290002050a2a002b0001052c002d000202052e002f00010530003100010632003300010734003500020106360037000201073800390002050a3a003b000201053c003d000201063e003f0002010740004100020e054200430001054400450001054600470001054800490002050a4a004b0001054c004d000202054e004f000105500051000105520053000105540055000202055600570001055800590002050a5a005b0001055c005d0001055e005f000105600061000202056200630001056400650001056600670001056800690002050a6a006b0001056c006d000202056e006f0001057000710002010672007300010774007500020106760077000201077800790001077a007b000201057c007d000201077e007f00020107\&quot;,\n        \&quot;mimeType\&quot;: \&quot;application/mkcd-song\&quot;,\n        \&quot;displayName\&quot;: \&quot;jolliest-of-rogers\&quot;,\n        \&quot;namespace\&quot;: \&quot;mySongs.\&quot;\n    },\n    \&quot;*\&quot;: {\n        \&quot;mimeType\&quot;: \&quot;image/x-mkcd-f4\&quot;,\n        \&quot;dataEncoding\&quot;: \&quot;base64\&quot;,\n        \&quot;namespace\&quot;: \&quot;myImages\&quot;\n    }\n}&quot;,
+  &quot;images.g.ts&quot;: &quot;// Auto-generated code. Do not edit.\nnamespace myImages {\n\n    helpers._registerFactory(\&quot;image\&quot;, function(name: string) {\n        switch(helpers.stringTrim(name)) {\n\n        }\n        return null;\n    })\n\n    helpers._registerFactory(\&quot;animation\&quot;, function(name: string) {\n        switch(helpers.stringTrim(name)) {\n\n        }\n        return null;\n    })\n\n    helpers._registerFactory(\&quot;song\&quot;, function(name: string) {\n        switch(helpers.stringTrim(name)) {\n            case \&quot;song11\&quot;:\n            case \&quot;curious-blob\&quot;:return hex`006e000408040400001c00010a006400f401640000040000000000000000000000000005000004ae0000000100010a06000700010a0e000f00010f0f001000011110001100011214001500011118001900010f1c001d00010a20002100014b26002700014b30003100011232003300011433003400011234003500011138003900010f3c003d00014b40004100010a46004700010a5c005e00010a60006200014b66006800014b7000710001167200730001577300740001167400750001147600780001167800790001127a007b0001147c007d00011105001c000f0a006400f4010a0000040000000000000000000000000000000002900000000200010a06000700010a0e000f00010f0f001000011110001200011214001600011118001a00010f1c001d00010a20002200014b26002700014b30003100011232003300011433003400011234003600011138003a00010f3c003e00014b40004200010a46004800010a5c005e00010a60006200014b66006800014b70007200010a76007700014b7c007d00014b06001c00010a006400f401640000040000000000000000000000000000000002600000000200010a06000800010a1c001d00010a20002200014b26002800014b30003200010a36003800010a3c003e00014b40004200010a46004800010a5c005e00010a60006200014b66006800014b70007200010a76007700014b7c007d00014b09010e02026400000403780000040a000301000000640001c80000040100000000640001640000040100000000fa0004af00000401c80000040a00019600000414000501006400140005010000002c0104dc00000401fa0000040a0001c8000004140005d0076400140005d0070000c800029001f40105c201f4010a0005900114001400039001000005c201f4010500058403050032000584030000fa00049001000005c201f4010500058403c80032000584030500640005840300009001049001000005c201f4010500058403c80064000584030500c8000584030000f40105ac0d000404a00f00000a0004ac0d2003010004a00f0000280004ac0d9001010004a00f0000280002d00700040408070f0064000408070000c80003c800c8000e7d00c80019000e64000f0032000e78000000fa00032c01c8000ee100c80019000ec8000f0032000edc000000fa0003f401c8000ea901c80019000e90010f0032000ea4010000fa0001c8000004014b000000c800012c01000401c8000000c8000190010004012c010000c80002c800000404c8000f0064000496000000c80002c2010004045e010f006400042c010000640002c409000404c4096400960004f6090000f40102b80b000404b80b64002c0104f40b0000f401022003000004200300040a000420030000ea01029001000004900100040a000490010000900102d007000410d0076400960010d0070000c800450100000100020e050600070001050800090002050a0c000d000202050e000f000106120013000105140015000202061800190002120a1c001d00030e02051e001f00010620002100020e0524002500010526002700010528002900010a2a002b0001052c002d0001022e002f00010530003100020e053200330001063400350001003600370001003800390005120105080a3a003b0001063c003d0001003e003f0002000540004100020e054600470001054800490002050a4c004d000202054e004f0001065200530001055400550002020658005900010a5c005d00030e02055e005f00010660006100020e0564006500010566006700010568006900010a6a006b0001056c006d0001026e006f00010570007100020e05720073000106740075000100760077000100780079000301050a7a007b0001067c007d0001007e007f00020005`;\n            case \&quot;song10\&quot;:\n            case \&quot;bow-the-mighty-oak\&quot;:return hex`00b4000408060400001c00010a006400f401640000040000000000000000000000000005000004780018001900015019001c00011222002300010d48004900011249004c0001144e004f00015552005300011472007300010d78007900011179007d00011282008300010d8e008f0001128f00920001149600970001559c009d000114a200a3000112a800a9000150b400b5000155b500b8000157be00bf00011405001c000f0a006400f4010a000004000000000000000000000000000000000290000600080001500c000e00010f12001400014e18001a00010d2e00300001503400360001503600380001503c003e00010f42004400014e48004a00010d6000620001506600680001506c006e00010f72007400014e78007a00010d8e00900001149600980001939c009e000112a200a4000150a800aa00010dae00b000010ab400b6000149ba00bc000108be00c000015006001c00010a006400f401640000040000000000000000000000000000000002b0000700080001500d000e00010f13001400014e18001900020d5c19001a00011e2e00300001503400360001503600380001503c003e00010f42004400014e48004900030d1b6149004b00025c634e004f00021e2552005300025c636000620001506600680001506c006e00010f72007400014e78007a00010d8e008f0001149600980001939c009e000112a200a4000150a800aa00010dae00b000010ab400b60002491bba00bc000108be00c00002502009010e02026400000403780000040a000301000000640001c80000040100000000640001640000040100000000fa0004af00000401c80000040a00019600000414000501006400140005010000002c0104dc00000401fa0000040a0001c8000004140005d0076400140005d0070000c800029001f40105c201f4010a0005900114001400039001000005c201f4010500058403050032000584030000fa00049001000005c201f4010500058403c80032000584030500640005840300009001049001000005c201f4010500058403c80064000584030500c8000584030000f40105ac0d000404a00f00000a0004ac0d2003010004a00f0000280004ac0d9001010004a00f0000280002d00700040408070f0064000408070000c80003c800c8000e7d00c80019000e64000f0032000e78000000fa00032c01c8000ee100c80019000ec8000f0032000edc000000fa0003f401c8000ea901c80019000e90010f0032000ea4010000fa0001c8000004014b000000c800012c01000401c8000000c8000190010004012c010000c80002c800000404c8000f0064000496000000c80002c2010004045e010f006400042c010000640002c409000404c4096400960004f6090000f40102b80b000404b80b64002c0104f40b0000f401022003000004200300040a000420030000ea01029001000004900100040a000490010000900102d007000410d0076400960010d0070000c8008401000001000201080400050001060600070001050a000b0001060c000d00031205091200130001051600170001061800190001051c001d0001061e001f00010524002500031205092800290001052a002b0001062e002f0002010530003100030106073400350001063600370001053a003b0001063c003d00031205094200430001054600470001064800490001054c004d0001064e004f00010554005500031201095800590001015e005f00010760006100030105086400650001066600670001056a006b0001066c006d00031205097000710001057200730001067600770001067800790001057c007d0001057e007f000106820083000201068400850003120509880089000201058a008b0001068e008f000106900091000201059400950001069600970001059a009b0001069c009d0003120609a000a100020106a200a3000106a600a700020105a800a9000106ac00ad000105ae00af000106b200b300020105b400b50003120609b800b90003120509ba00bb000106be00bf00051201050809`;\n            case \&quot;song6\&quot;:\n            case \&quot;falling-blossoms\&quot;:return hex`00a0000408060206001c00010a006400f401640000040000000000000000000000000000000002f50000000100030d192701000400012906000800012a0a000c00012910001200012a1600180001291e001f0001252200240001222400260001253000310003111d2731003400012936003800012a3a003c00012940004200012a46004700012a47004900012c4e005000012a5400560001295a005c00012a5e005f0002121e60006100031420296a006c00012570007200012272007600012588008a0001228a008c0001258e009000012790009100035561279100920001689600980001279c009e000125a200a4000127a600a700021863a700a8000125ac00ae000161b200b300011eb300b4000120b800ba00011ebe00c000020d2209010e02026400000403780000040a000301000000640001c80000040100000000640001640000040100000000fa0004af00000401c80000040a00019600000414000501006400140005010000002c0104dc00000401fa0000040a0001c8000004140005d0076400140005d0070000c800029001f40105c201f4010a0005900114001400039001000005c201f4010500058403050032000584030000fa00049001000005c201f4010500058403c80032000584030500640005840300009001049001000005c201f4010500058403c80064000584030500c8000584030000f40105ac0d000404a00f00000a0004ac0d2003010004a00f0000280004ac0d9001010004a00f0000280002d00700040408070f0064000408070000c80003c800c8000e7d00c80019000e64000f0032000e78000000fa00032c01c8000ee100c80019000ec8000f0032000edc000000fa0003f401c8000ea901c80019000e90010f0032000ea4010000fa0001c8000004014b000000c800012c01000401c8000000c8000190010004012c010000c80002c800000404c8000f0064000496000000c80002c2010004045e010f006400042c010000640002c409000404c4096400960004f6090000f40102b80b000404b80b64002c0104f40b0000f401022003000004200300040a000420030000ea01029001000004900100040a000490010000900102d007000410d0076400960010d0070000c8007f01000001000201080400050001060600070001050a000b0001060c000d00020509120013000105160017000201061800190001051c001d000201061e001f000105240025000205092800290001052a002b0001062e002f0002010530003100030106073400350001063600370001053a003b0001063c003d000205094200430001054600470001064800490001054c004d0001064e004f000201055400550001095800590001015e005f0002010760006100030105086400650001066600670001056a006b0001066c006d000205097000710001057200730001067600770001067800790001057c007d0001057e007f0001068200830002010684008500020509880089000201058a008b0001068e008f000106900091000201059400950001069600970001059a009b0001069c009d00020609a000a1000106a200a3000106a600a700020105a800a900020106ac00ad00020105ae00af00020106b200b3000105b400b50003010609b800b900020105ba00bb00020106be00bf0003010508`;\n            case \&quot;song7\&quot;:\n            case \&quot;jolliest-of-rogers\&quot;:return hex`007c000408040400001c00010a006400f401640000040000000000000000000000000005000004ae000200040001570400050001160800090001140c000e0001161000120001571400160001161600180001141a001c00010d2c002e00014b2e003000014b30003100010f32003300010f34003600014b36003700010d3c003e0001084200430001574400450001164800490001144c004d00011650005100015756005700011b5c005d0001196c006d00014b6e006f00014b70007100010f72007300010f74007500014b7600770001117c007d00010d05001c000f0a006400f4010a000004000000000000000000000000000000000272000c000d00010d14001500010d1a001b00010d20002100010d2e002f00010c30003100010f32003300010f36003700010d3c003d0001084c004d00010d54005500010d5a005b00010d60006100010d6c006d00014b6e006f00014b70007100010f72007300010f7600770001117c007d00010d06001c00010a006400f4016400000400000000000000000000000000000000025a0000000100020d190c000e00020d1914001600020d191a001c00020d1920002200020d192c002e00020d193c003e00010840004100020d194c004d00020d1954005500020d195a005b00020d1960006100020d196c006e00020d1909010e02026400000403780000040a000301000000640001c80000040100000000640001640000040100000000fa0004af00000401c80000040a00019600000414000501006400140005010000002c0104dc00000401fa0000040a0001c8000004140005d0076400140005d0070000c800029001f40105c201f4010a0005900114001400039001000005c201f4010500058403050032000584030000fa00049001000005c201f4010500058403c80032000584030500640005840300009001049001000005c201f4010500058403c80064000584030500c8000584030000f40105ac0d000404a00f00000a0004ac0d2003010004a00f0000280004ac0d9001010004a00f0000280002d00700040408070f0064000408070000c80003c800c8000e7d00c80019000e64000f0032000e78000000fa00032c01c8000ee100c80019000ec8000f0032000edc000000fa0003f401c8000ea901c80019000e90010f0032000ea4010000fa0001c8000004014b000000c800012c01000401c8000000c8000190010004012c010000c80002c800000404c8000f0064000496000000c80002c2010004045e010f006400042c010000640002c409000404c4096400960004f6090000f40102b80b000404b80b64002c0104f40b0000f401022003000004200300040a000420030000ea01029001000004900100040a000490010000900102d007000410d0076400960010d0070000c8009c0100000100020e050200030001050400050001050600070001050800090002050a0a000b0001050c000d000202050e000f000106100011000105120013000105140015000202061600170001061800190002050a1a001b0001051c001d0001071e001f000107200021000202052200230001052400250001052600270001052800290002050a2a002b0001052c002d000202052e002f00010530003100010632003300010734003500020106360037000201073800390002050a3a003b000201053c003d000201063e003f0002010740004100020e054200430001054400450001054600470001054800490002050a4a004b0001054c004d000202054e004f000105500051000105520053000105540055000202055600570001055800590002050a5a005b0001055c005d0001055e005f000105600061000202056200630001056400650001056600670001056800690002050a6a006b0001056c006d000202056e006f0001057000710002010672007300010774007500020106760077000201077800790001077a007b000201057c007d000201077e007f00020107`;\n        }\n        return null;\n    })\n\n}\n// Auto-generated code. Do not edit.\n&quot;,
+  &quot;main.blocks&quot;: &quot;&lt;xml xmlns=\&quot;https://developers.google.com/blockly/xml\&quot;&gt;&lt;block type=\&quot;keyonevent\&quot; x=\&quot;0\&quot; y=\&quot;0\&quot;&gt;&lt;field name=\&quot;button\&quot;&gt;controller.up&lt;/field&gt;&lt;field name=\&quot;event\&quot;&gt;ControllerButtonEvent.Pressed&lt;/field&gt;&lt;statement name=\&quot;HANDLER\&quot;&gt;&lt;block type=\&quot;music_playable_play\&quot;&gt;&lt;field name=\&quot;playbackMode\&quot;&gt;music.PlaybackMode.UntilDone&lt;/field&gt;&lt;value name=\&quot;toPlay\&quot;&gt;&lt;shadow type=\&quot;music_song_field_editor\&quot;&gt;&lt;field name=\&quot;song\&quot;&gt;assets.song`falling-blossoms`&lt;/field&gt;&lt;data&gt;{\&quot;commentRefs\&quot;:[],\&quot;fieldData\&quot;:{\&quot;song\&quot;:\&quot;mySongs.song6\&quot;}}&lt;/data&gt;&lt;/shadow&gt;&lt;/value&gt;&lt;/block&gt;&lt;/statement&gt;&lt;/block&gt;&lt;block type=\&quot;keyonevent\&quot; x=\&quot;0\&quot; y=\&quot;180\&quot;&gt;&lt;field name=\&quot;button\&quot;&gt;controller.down&lt;/field&gt;&lt;field name=\&quot;event\&quot;&gt;ControllerButtonEvent.Pressed&lt;/field&gt;&lt;statement name=\&quot;HANDLER\&quot;&gt;&lt;block type=\&quot;music_playable_play\&quot;&gt;&lt;field name=\&quot;playbackMode\&quot;&gt;music.PlaybackMode.UntilDone&lt;/field&gt;&lt;value name=\&quot;toPlay\&quot;&gt;&lt;shadow type=\&quot;music_song_field_editor\&quot;&gt;&lt;field name=\&quot;song\&quot;&gt;assets.song`jolliest-of-rogers`&lt;/field&gt;&lt;data&gt;{\&quot;commentRefs\&quot;:[],\&quot;fieldData\&quot;:{\&quot;song\&quot;:\&quot;mySongs.song7\&quot;}}&lt;/data&gt;&lt;/shadow&gt;&lt;/value&gt;&lt;/block&gt;&lt;/statement&gt;&lt;/block&gt;&lt;block type=\&quot;keyonevent\&quot; x=\&quot;0\&quot; y=\&quot;360\&quot;&gt;&lt;field name=\&quot;button\&quot;&gt;controller.left&lt;/field&gt;&lt;field name=\&quot;event\&quot;&gt;ControllerButtonEvent.Pressed&lt;/field&gt;&lt;statement name=\&quot;HANDLER\&quot;&gt;&lt;block type=\&quot;music_playable_play\&quot;&gt;&lt;field name=\&quot;playbackMode\&quot;&gt;music.PlaybackMode.UntilDone&lt;/field&gt;&lt;value name=\&quot;toPlay\&quot;&gt;&lt;shadow type=\&quot;music_song_field_editor\&quot;&gt;&lt;field name=\&quot;song\&quot;&gt;assets.song`bow-the-mighty-oak`&lt;/field&gt;&lt;data&gt;{\&quot;commentRefs\&quot;:[],\&quot;fieldData\&quot;:{\&quot;song\&quot;:\&quot;mySongs.song10\&quot;}}&lt;/data&gt;&lt;/shadow&gt;&lt;/value&gt;&lt;/block&gt;&lt;/statement&gt;&lt;/block&gt;&lt;block type=\&quot;keyonevent\&quot; x=\&quot;0\&quot; y=\&quot;520\&quot;&gt;&lt;field name=\&quot;button\&quot;&gt;controller.right&lt;/field&gt;&lt;field name=\&quot;event\&quot;&gt;ControllerButtonEvent.Pressed&lt;/field&gt;&lt;statement name=\&quot;HANDLER\&quot;&gt;&lt;block type=\&quot;music_playable_play\&quot;&gt;&lt;field name=\&quot;playbackMode\&quot;&gt;music.PlaybackMode.UntilDone&lt;/field&gt;&lt;value name=\&quot;toPlay\&quot;&gt;&lt;shadow type=\&quot;music_song_field_editor\&quot;&gt;&lt;field name=\&quot;song\&quot;&gt;assets.song`curious-blob`&lt;/field&gt;&lt;data&gt;{\&quot;commentRefs\&quot;:[],\&quot;fieldData\&quot;:{\&quot;song\&quot;:\&quot;mySongs.song11\&quot;}}&lt;/data&gt;&lt;/shadow&gt;&lt;/value&gt;&lt;/block&gt;&lt;/statement&gt;&lt;/block&gt;&lt;/xml&gt;&quot;,
+  &quot;main.ts&quot;: &quot;controller.up.onEvent(ControllerButtonEvent.Pressed, function () {\n    music.play(music.createSong(assets.song`falling-blossoms`), music.PlaybackMode.UntilDone)\n})\ncontroller.left.onEvent(ControllerButtonEvent.Pressed, function () {\n    music.play(music.createSong(assets.song`bow-the-mighty-oak`), music.PlaybackMode.UntilDone)\n})\ncontroller.right.onEvent(ControllerButtonEvent.Pressed, function () {\n    music.play(music.createSong(assets.song`curious-blob`), music.PlaybackMode.UntilDone)\n})\ncontroller.down.onEvent(ControllerButtonEvent.Pressed, function () {\n    music.play(music.createSong(assets.song`jolliest-of-rogers`), music.PlaybackMode.UntilDone)\n})\n&quot;,
+  &quot;pxt.json&quot;: &quot;{\n    \&quot;name\&quot;: \&quot;galaxy-songs\&quot;,\n    \&quot;description\&quot;: \&quot;\&quot;,\n    \&quot;dependencies\&quot;: {\n        \&quot;device\&quot;: \&quot;*\&quot;\n    },\n    \&quot;files\&quot;: [\n        \&quot;main.blocks\&quot;,\n        \&quot;main.ts\&quot;,\n        \&quot;README.md\&quot;,\n        \&quot;assets.json\&quot;,\n        \&quot;images.g.jres\&quot;,\n        \&quot;images.g.ts\&quot;,\n        \&quot;tutorial.custom.ts\&quot;\n    ],\n    \&quot;targetVersions\&quot;: {\n        \&quot;branch\&quot;: \&quot;v1.12.30\&quot;,\n        \&quot;tag\&quot;: \&quot;v1.12.30\&quot;,\n        \&quot;commits\&quot;: \&quot;https://github.com/microsoft/pxt-arcade/commits/33228b1cc7e1bea3f728c26a6047bdef35fd2c09\&quot;,\n        \&quot;target\&quot;: \&quot;1.12.30\&quot;,\n        \&quot;pxt\&quot;: \&quot;8.5.41\&quot;\n    },\n    \&quot;preferredEditor\&quot;: \&quot;tsprj\&quot;,\n    \&quot;theme\&quot;: \&quot;zune\&quot;\n}\n&quot;,
+  &quot;tutorial.custom.ts&quot;: &quot;music.setVolume(20)&quot;
+}</code></pre>
+
+        </div>
+    </div>
+
+    </div>
+
+					<div class="hideprint"></div>
+				</div>
+
+			</div>
+
+			
+<!-- include footer.html -->
+<footer class="ui vertical footer segment hideprint docs inverted" aria-hidden="false">
+    <div class="ui center aligned container">
+        <div class="ui horizontal link list">
+            <a
+                class="item"
+                href="https://twitter.com/intent/follow?screen_name=MsMakeCode"
+                title="Follow us on Twitter"
+                target="_blank"
+                rel="noopener">
+                <i class="huge icon twitter"></i>
+            </a>
+            <a class="item" href="https://www.youtube.com/channel/UCye7YlvFUUQ1dSy0WZZ1T_Q" title="Subscribe to our YouTube channel"
+                target="_blank" rel="noopened">
+                <i class="huge icon youtube"></i>
+            </a>
+            <a class="item" href="mailto:makecode@microsoft.com" title="Send us an Email"
+                target="_blank" rel="noopened">
+                <i class="huge icon mail"></i>
+            </a>
+        </div>
+        <div class="ui section divider"></div>
+        <div class="ui container horizontal small divided link list">
+            <a id="langpicker" tabindex="0" class="ui item" rel="noopener">
+                <i class="icon xicon globe" aria-hidden="true" role="presentation"></i>Language
+            </a>
+            <a class="item" href="https://makecode.com/privacy" target="_blank" rel="noopener">Privacy &amp; Cookies</a>
+            <a class="item" href="https://makecode.com/termsofuse" target="_blank" rel="noopener">Terms Of Use</a>
+            <a class="item" href="https://makecode.com/trademarks" target="_blank" rel="noopener">Trademarks</a>
+            <span class="item">© 2022 Microsoft</span>
+        </div>
+        <div class="ui container horizontal small link list poweredBy">
+            <span class="item">Powered by</span>
+            <a class="middle aligned" href="https://makecode.com/" title="Microsoft MakeCode"
+                target="_blank" rel="noopener">
+                <img width="100" src="/static/logo/Microsoft-logo_rgb_c-gray.png" alt="Microsoft">
+            </a>
+        </div>
+    </div>
+</footer>
+
+<!-- end include footer.html -->
+
+
+		</div>
+
+	</div>
+
+    
+<!-- include langpicker.html -->
+<div id="langmodal" class="ui modal docs" role="dialog" aria-modal="true" aria-describedby="langmodalheader" tabindex="-1">
+    <h2 id="langmodalheader" class="header">Select Language</h2>
+    <div role="button" class="closeIcon" tabindex="0" aria-label="Close">
+        <i class="icon close remove circle" aria-hidden="true"></i>
+    </div>
+
+	<div class="content">
+	    <div class="group">
+            <div id="availablelocales" class="ui cards centered" role="listbox" aria-label="List of available locales"></div>
+        </div>
+        <div class="ui" id="langmodalfooter">
+            <a class="ui" href="/pxt-arcade-app/docs/translate.html" target="_blank" rel="noopener noreferrer">
+                How do I add a new language?
+            </a>
+
+            <a id="translatebtn" class="ui button" role="button" tabindex="0">
+                Translate this page
+            </a>
+        </div>
+    </div>
+</div>
+
+
+<!-- end include langpicker.html -->
+
+	
+<!-- include macros.html -->
+<!-- macro button -->
+
+<!-- macro vimeo -->
+
+<!-- macro youtube -->
+
+<!-- macro section -->
+
+<!-- macro hide -->
+
+<!-- macro avatar -->
+
+<!-- macro hint -->
+
+<!-- macro codecard -->
+
+<!-- macro tutorialhint -->
+
+<!-- macro reminder -->
+
+<!-- macro alert -->
+
+<!-- macro tip -->
+
+<!-- wrapped around ordinary content -->
+<!-- macro main-container -->
+
+<!-- used for 'column' box - they are collected and wrapped in 'column-container' -->
+<!-- macro column -->
+<!-- macro column-container -->
+
+
+<!-- Menu on the top of the page -->
+<!-- macro item -->
+
+<!-- macro divider -->
+
+<!-- TOC in the sidebar -->
+<!-- macro item -->
+
+<!-- macro divider -->
+
+<!-- macro toc-dropdown -->
+
+<!-- macro toc-dropdown-noLink -->
+
+<!-- macro toc-dropdown-noHeading -->
+
+<!-- TODO: duplicates of above for compatability with docsrender.ts;
+    remove with pxtlib/docsrender.ts TOC TODOs after cloud bump. -->
+<!-- macro top-dropdown -->
+
+<!-- macro top-dropdown-noHeading -->
+
+<!-- macro inner-dropdown -->
+
+<!-- macro nested-dropdown -->
+<!-- end include macros.html -->
+
+	
+<!-- include tracking.html -->
+<script type="text/javascript" src="/pxt-arcade-app/pxtweb.js"></script>
+<script type="text/javascript">
+    window.loadAppInsights = function (includeCookie) {
+        //Backend will patch / + doccdn + / with CDN url and the check that URL ends with the sha would pass
+        var isProduction = includeCookie && (/[0-9a-f]{40}\/ai\.2\.min\.js$/.test("/pxt-arcade-app/ai.2.min.js"));
+        !function(T,l,y){var S=T.location,k="script",D="connectionString",C="ingestionendpoint",I="disableExceptionTracking",E="ai.device.",b="toLowerCase",w="crossOrigin",N="POST",e="appInsightsSDK",t=y.name||"appInsights";(y.name||T[e])&&(T[e]=t);var n=T[t]||function(d){var g=!1,f=!1,m={initialize:!0,queue:[],sv:"5",version:2,config:d};function v(e,t){var n={},a="Browser";return n[E+"id"]=a[b](),n[E+"type"]=a,n["ai.operation.name"]=S&&S.pathname||"_unknown_",n["ai.internal.sdkVersion"]="javascript:snippet_"+(m.sv||m.version),{time:function(){var e=new Date;function t(e){var t=""+e;return 1===t.length&&(t="0"+t),t}return e.getUTCFullYear()+"-"+t(1+e.getUTCMonth())+"-"+t(e.getUTCDate())+"T"+t(e.getUTCHours())+":"+t(e.getUTCMinutes())+":"+t(e.getUTCSeconds())+"."+((e.getUTCMilliseconds()/1e3).toFixed(3)+"").slice(2,5)+"Z"}(),iKey:e,name:"Microsoft.ApplicationInsights."+e.replace(/-/g,"")+"."+t,sampleRate:100,tags:n,data:{baseData:{ver:2}}}}var h=d.url||y.src;if(h){function a(e){var t,n,a,i,r,o,s,c,u,p,l;g=!0,m.queue=[],f||(f=!0,t=h,s=function(){var e={},t=d.connectionString;if(t)for(var n=t.split(";"),a=0;a<n.length;a++){var i=n[a].split("=");2===i.length&&(e[i[0][b]()]=i[1])}if(!e[C]){var r=e.endpointsuffix,o=r?e.location:null;e[C]="https://"+(o?o+".":"")+"dc."+(r||"services.visualstudio.com")}return e}(),c=s[D]||d[D]||"",u=s[C],p=u?u+"/v2/track":d.endpointUrl,(l=[]).push((n="SDK LOAD Failure: Failed to load Application Insights SDK script (See stack for details)",a=t,i=p,(o=(r=v(c,"Exception")).data).baseType="ExceptionData",o.baseData.exceptions=[{typeName:"SDKLoadFailed",message:n.replace(/\./g,"-"),hasFullStack:!1,stack:n+"\nSnippet failed to load ["+a+"] -- Telemetry is disabled\nHelp Link: https://go.microsoft.com/fwlink/?linkid=2128109\nHost: "+(S&&S.pathname||"_unknown_")+"\nEndpoint: "+i,parsedStack:[]}],r)),l.push(function(e,t,n,a){var i=v(c,"Message"),r=i.data;r.baseType="MessageData";var o=r.baseData;return o.message='AI (Internal): 99 message:"'+("SDK LOAD Failure: Failed to load Application Insights SDK script (See stack for details) ("+n+")").replace(/\"/g,"")+'"',o.properties={endpoint:a},i}(0,0,t,p)),function(e,t){if(JSON){var n=T.fetch;if(n&&!y.useXhr)n(t,{method:N,body:JSON.stringify(e),mode:"cors"});else if(XMLHttpRequest){var a=new XMLHttpRequest;a.open(N,t),a.setRequestHeader("Content-type","application/json"),a.send(JSON.stringify(e))}}}(l,p))}function i(e,t){f||setTimeout(function(){!t&&m.core||a()},500)}var e=function(){var n=l.createElement(k);n.src=h;var e=y[w];return!e&&""!==e||"undefined"==n[w]||(n[w]=e),n.onload=i,n.onerror=a,n.onreadystatechange=function(e,t){"loaded"!==n.readyState&&"complete"!==n.readyState||i(0,t)},n}();y.ld<0?l.getElementsByTagName("head")[0].appendChild(e):setTimeout(function(){l.getElementsByTagName(k)[0].parentNode.appendChild(e)},y.ld||0)}try{m.cookie=l.cookie}catch(p){}function t(e){for(;e.length;)!function(t){m[t]=function(){var e=arguments;g||m.queue.push(function(){m[t].apply(m,e)})}}(e.pop())}var n="track",r="TrackPage",o="TrackEvent";t([n+"Event",n+"PageView",n+"Exception",n+"Trace",n+"DependencyData",n+"Metric",n+"PageViewPerformance","start"+r,"stop"+r,"start"+o,"stop"+o,"addTelemetryInitializer","setAuthenticatedUserContext","clearAuthenticatedUserContext","flush"]),m.SeverityLevel={Verbose:0,Information:1,Warning:2,Error:3,Critical:4};var s=(d.extensionConfig||{}).ApplicationInsightsAnalytics||{};if(!0!==d[I]&&!0!==s[I]){var c="onerror";t(["_"+c]);var u=T[c];T[c]=function(e,t,n,a,i){var r=u&&u(e,t,n,a,i);return!0!==r&&m["_"+c]({message:e,url:t,lineNumber:n,columnNumber:a,error:i}),r},d.autoExceptionInstrumented=!0}return m}(y.cfg);function a(){y.onInit&&y.onInit(n)}(T[t]=n).queue&&0===n.queue.length?(n.queue.push(a),n.trackPageView({})):a()}(window,document,{
+            src: "https://js.monitor.azure.com/scripts/b/ai.2.min.js", // The SDK URL Source
+            onInit: function (sdk) {
+                sdk.addTelemetryInitializer(function (envelope) {
+                    // App Insights automatically sends a page view event on setup, but we send our own later with additional properties.
+                    // This stops the automatic event from firing, so we don't end up with duplicate page view events.
+                    if (envelope.baseType == "PageviewData" && !envelope.baseData.properties) {
+                        return false;
+                    }
+
+                    if (envelope.baseType == "PageviewPerformanceData") {
+                        var pageName = envelope.baseData.name;
+                        envelope.baseData.name = window.location.origin;
+                        if (!envelope.baseData.properties) {
+                            envelope.baseData.properties = {};
+                        }
+                        envelope.baseData.properties.pageName = pageName;
+                        var scrubbedUrl = scrubUrl(envelope.baseData.uri);
+                        envelope.baseData.uri = scrubbedUrl;
+                        var toUrl = new URL(scrubbedUrl);
+                        envelope.baseData.properties.pathName = toUrl ? toUrl.pathname : "";
+                        if (envelope.ext && envelope.ext.trace) {
+                            envelope.ext.trace.name = toUrl ? toUrl.pathname : "";
+                        }
+                    }
+
+                    var telemetryItem = envelope.baseData;
+                    telemetryItem.properties = telemetryItem.properties || {};
+                    telemetryItem.properties["cookie"] = isProduction;
+                    if (typeof pxtConfig === "undefined" || !pxtConfig || !pxtConfig.targetId) {
+                        telemetryItem.properties["target"] = "arcade";
+                        return true;
+                    }
+                    telemetryItem.properties["target"] = pxtConfig.targetId;
+                    telemetryItem.properties["stage"] = (pxtConfig.relprefix || "/--").replace(/[^a-z]/ig, '')
+                    if (typeof Windows !== "undefined")
+                        telemetryItem.properties["WindowsApp"] = 1;
+                    var userAgent = navigator.userAgent.toLowerCase();
+                    var electronRegexResult = /\belectron\/(\d+\.\d+\.\d+.*?)(?: |$)/i.exec(userAgent); // Example navigator.userAgent: "Mozilla/5.0 Chrome/61.0.3163.100 Electron/2.0.0 Safari/537.36"
+                    if (electronRegexResult) {
+                        telemetryItem.properties["Electron"] = 1;
+                        telemetryItem.properties["ElectronVersion"] = electronRegexResult[1];
+                    }
+                    if (typeof pxtElectron !== "undefined") {
+                        telemetryItem.properties["PxtElectron"] = 1;
+                        telemetryItem.properties["ElectronVersion"] = pxtElectron.versions.electronVersion;
+                        telemetryItem.properties["ChromiumVersion"] = pxtElectron.versions.chromiumVersion;
+                        telemetryItem.properties["NodeVersion"] = pxtElectron.versions.nodeVersion;
+                        telemetryItem.properties["PxtElectronVersion"] = pxtElectron.versions.pxtElectronVersion;
+                        telemetryItem.properties["PxtCoreVersion"] = pxtElectron.versions.pxtCoreVersion;
+                        telemetryItem.properties["PxtTargetVersion"] = pxtElectron.versions.pxtTargetVersion;
+                        telemetryItem.properties["PxtElectronIsProd"] = pxtElectron.versions.isProd;
+                    }
+                    // Kiosk UWP info is appended to the user agent by the makecode-dotnet-apps/arcade-kiosk UWP app
+                    var kioskUwpRegexResult = /\((MakeCode Arcade Kiosk UWP)\/([\S]+)\/([\S]+)\)/i.exec(userAgent); // Example navigator.userAgent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36 Edg/117.0.2045.60 (MakeCode Arcade Kiosk UWP/0.1.41.0/Windows.Xbox)"
+                    if (kioskUwpRegexResult) {
+                        telemetryItem.properties["KioskUwp"] = 1;
+                        telemetryItem.properties["KioskUwpVersion"] = kioskUwpRegexResult[2];
+                        telemetryItem.properties["KioskUwpPlatform"] = kioskUwpRegexResult[3];
+                    }
+                    return true;
+                });
+            },
+            cfg: {
+                instrumentationKey:"9801ed01-c40f-46ec-aa40-2a1742a9e71c",
+                disableAjaxTracking: true,
+                overridePageViewDuration: false,
+                disableExceptionTracking: true,
+                disableCorrelationHeaders: true,
+                disableCookiesUsage: !isProduction,
+                isStorageUseDisabled: !isProduction,
+                url: "/pxt-arcade-app/ai.2.min.js"
+            }
+        });
+        window.appInsights=appInsights;
+        var location = window.location.toString();
+        appInsights.trackPageView({
+            name: window.location.hostname,
+            uri: window.location.origin,
+            properties: {
+                url: scrubUrl(location),
+                urlReferrer: scrubUrl(document.referrer.toString())
+            }
+        });
+
+        // Scrub potential PII from the URL.
+        function scrubUrl(url) {
+            if (!url) return url;
+
+            var scriptIdRegex = /(?:S?\d{5}-\d{5}-\d{5}-\d{5})|(?:_[0-9a-zA-Z]{12})/g;
+            var scrubbedUrl = new URL(url.toLocaleLowerCase().replace(scriptIdRegex, "xxxxx-xxxxx-xxxxx-xxxxx"));
+
+            // Just as a precaution, strip any suspicious query parameters.
+            var blockedParamKeywords = ["username", "password", "token", "pwd"];
+            var searchParams = Array.from(scrubbedUrl.searchParams.keys());
+            for (var param of searchParams) {
+                if (blockedParamKeywords.some(k => param.indexOf(k) != -1)) {
+                    scrubbedUrl.searchParams.delete(param);
+                }
+            }
+
+            return scrubbedUrl.toString();
+        }
+
+        return isProduction;
+    }
+    pxt.initAnalyticsAsync();
+</script>
+
+<!-- end include tracking.html -->
+
+
+</body>
+
+</html>

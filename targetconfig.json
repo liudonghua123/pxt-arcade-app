@@ -1,0 +1,372 @@
+{
+    "packages": {
+        "approvedRepos": [
+            "adafruit/Circuit-Playground-Character-Icons",
+            "adafruit/pxt-seesaw",
+            "jwunderl/pxt-button-combos",
+            "jwunderl/pxt-color",
+            "jwunderl/pxt-status-bar",
+            "microsoft/pxt-settings-blocks",
+            "microsoft/arcade-sprite-data",
+            "microsoft/arcade-grid",
+            "microsoft/arcade-minimap",
+            "microsoft/arcade-timers",
+            "microsoft/arcade-text",
+            "microsoft/pxt-tick-event",
+            "microsoft/pxt-tilemaps",
+            "microsoft/pxt-skillmap-sample",
+            "microsoft/pxt-jacdac",
+            "mr-coxall/turtle-logo",
+            "microsoft/arcade-storytelling",
+            "microsoft/arcade-background-scroll",
+            "microsoft/arcade-character-animations",
+            "microsoft/arcade-tile-util",
+            "aqeeaqee/pxt-raycasting",
+            "joylabz/makeymakey-makecode-arcade-extension"
+        ],
+        "preferredRepos": [
+            "adafruit/Circuit-Playground-Character-Icons",
+            "adafruit/pxt-seesaw",
+            "jwunderl/pxt-button-combos",
+            "jwunderl/pxt-color",
+            "jwunderl/pxt-status-bar",
+            "microsoft/pxt-settings-blocks",
+            "microsoft/arcade-sprite-data",
+            "microsoft/arcade-grid",
+            "microsoft/arcade-minimap",
+            "microsoft/arcade-timers",
+            "microsoft/arcade-text",
+            "microsoft/arcade-tile-util",
+            "microsoft/arcade-storytelling",
+            "microsoft/arcade-background-scroll",
+            "microsoft/arcade-character-animations",
+            "aqeeaqee/pxt-raycasting",
+            "joylabz/makeymakey-makecode-arcade-extension"
+        ],
+        "approvedRepoLib": {
+            "adafruit/circuit-playground-character-icons": {
+                "preferred": true,
+                "tags": [ "Sprite Pack" ]
+            },
+            "adafruit/pxt-seesaw": {
+                "preferred": true,
+                "tags": [ "Hardware" ]
+            },
+            "jwunderl/pxt-button-combos": {
+                "preferred": true,
+                "tags": [ "Controller" ]
+            },
+            "jwunderl/pxt-color": {
+                "preferred": true,
+                "tags": [ "Visual Effects"]
+            },
+            "jwunderl/pxt-status-bar": {
+                "preferred": true,
+                "tags": [ "Sprites" ]
+            },
+            "microsoft/pxt-settings-blocks": {
+                "preferred": true,
+                "tags": [ "Utility" ]
+            },
+            "microsoft/arcade-sprite-data": {
+                "preferred": true,
+                "tags": [ "Utility" ],
+                "upgrades": "min:v0.0.6"
+            },
+            "microsoft/arcade-grid": {
+                "preferred": true,
+                "tags": [ "Sprites" ]
+            },
+            "microsoft/arcade-minimap": {
+                "preferred": true,
+                "tags": [ "Sprites", "Visual Effects" ]
+            },
+            "microsoft/arcade-timers": {
+                "preferred": true,
+                "tags": [ "Utility" ]
+            },
+            "microsoft/arcade-text": {
+                "preferred": true,
+                "tags": [ "Sprites" ]
+            },
+            "microsoft/pxt-tick-event": {},
+            "microsoft/pxt-tilemaps": {
+                "upgrades": [ "min:v1.8.1" ]
+            },
+            "microsoft/pxt-skillmap-sample": {},
+            "microsoft/pxt-jacdac": {
+                "tags": [ "Hardware" ]
+            },
+            "microsoft/arcade-storytelling": {
+                "preferred": true,
+                "tags": [ "Utility" ]
+            },
+            "microsoft/arcade-background-scroll": {
+                "preferred": true,
+                "tags": [ "Visual Effects" ]
+            },
+            "microsoft/arcade-character-animations": {
+                "preferred": true,
+                "tags": [ "Visual Effects", "Utility", "Sprites" ]
+            },
+            "microsoft/arcade-tile-util": {
+                "preferred": true,
+                "tags": [ "Utility" ]
+            },
+            "mr-coxall/turtle-logo": {},
+            "aqeeaqee/pxt-raycasting": {
+                "preferred": true,
+                "tags": [ "Visual Effects" ]
+            },
+            "joylabz/makeymakey-makecode-arcade-extension": {
+                "preferred": true,
+                "tags": [ "Hardware" ]
+            },
+            "code-ninjas-home-office/game-building-session-tutorials": {},
+            "microsoft/arcade-carnival": {}
+        },
+        "builtinExtensionsLib": {
+            "controller": {
+                "preferred": true,
+                "tags": [ "Utility", "Controller" ]
+            },
+            "animation": {
+                "preferred": true,
+                "tags": [ "Sprites", "Visual Effects" ]
+            },
+            "multiplayer": {
+                "preferred": true,
+                "tags": [ "Utility", "Controller", "Sprites" ]
+            },
+            "sprite-scaling": {
+                "preferred": true,
+                "tags": [ "Sprites", "Visual Effects" ]
+            },
+            "corgio": {
+                "preferred": true,
+                "tags": [ "Sprites" ]
+            },
+            "darts": {
+                "preferred": true,
+                "tags": [ "Sprites" ]
+            },
+            "edge-connector": {
+                "preferred": true,
+                "tags": [ "Hardware" ]
+            },
+            "light": {
+                "preferred": true,
+                "tags": [ "Hardware" ]
+            },
+            "radio-broadcast": {
+                "preferred": true,
+                "tags": [ "Utility"]
+            },
+            "servo": {
+                "preferred": true,
+                "tags": [ "Hardware" ]
+            },
+            "sevenseg": {
+                "preferred": true,
+                "tags": [ "Utility" ]
+            },
+            "feather": {
+                "preferred": true,
+                "tags": [ "Hardware", "Controller" ]
+            }
+        },
+        "upgrades": {
+            "microsoft/pxt-tilemaps": "min:v1.8.1",
+            "microsoft/arcade-sprite-data": "min:v0.0.6"
+        },
+        "approvedEditorExtensionUrls": [
+            "https://microsoft.github.io/jacdac-docs/tools/makecode-editor-extension"
+        ]
+    },
+    "shareLinks": {
+        "approved": [
+            "53897-77132-13809-57062",
+            "07573-63879-62644-28924",
+            "S07439-34681-01269-56955",
+            "S83499-96784-35479-44416",
+            "S20979-80747-10645-55772",
+            "S42791-93051-00250-80367",
+            "_1DogpPTpb8fK",
+            "_bz3CCuWFiepH",
+            "_C71PmfFaYDm2",
+            "_dCP7f8c3q5PJ",
+            "_cvxPm1WesYyi",
+            "_FdYfDwixRTAw"
+        ]
+    },
+    "skillMap": {
+        "defaultPath": "docs:/skillmap/intermediate-skillmap",
+        "pathAliases": {
+            "beginner": "docs:/skillmap/beginner-skillmap",
+            "zoo": "docs:/skillmap/zoo",
+            "space": "docs:/skillmap/space",
+            "platformer": "docs:/skillmap/platformer",
+            "sc": "docs:/skillmap/sc",
+            "shark": "docs:/skillmap/shark",
+            "jungle": "docs:/skillmap/jungle",
+            "racer": "docs:/skillmap/racer",
+            "rockstar": "docs:/skillmap/rockstar",
+            "forest": "docs:/skillmap/forest",
+            "turkey": "docs:/skillmap/turkey",
+            "star": "docs:/skillmap/star",
+            "mole": "docs:/skillmap/mole",
+            "balloon": "docs:/skillmap/balloon",
+            "adventure": "docs:/skillmap/adventure",
+            "story": "docs:/skillmap/story",
+            "dino": "docs:/skillmap/dino",
+            "galaxy": "docs:/skillmap/galaxy",
+            "sparks": "docs:/skillmap/sparks"
+        }
+    },
+    "multiplayer": {
+        "games": [
+            {
+                "shareId": "_bz3CCuWFiepH",
+                "title": "Perfect Fit",
+                "subtitle": "4 player",
+                "image": "/static/multiplayer/perfect-fit.png"
+            },
+            {
+                "shareId": "_C71PmfFaYDm2",
+                "title": "Galga",
+                "subtitle": "4 player",
+                "image": "/static/multiplayer/galga.png"
+            },
+            {
+                "shareId": "_FdYfDwixRTAw",
+                "title": "Painting Together",
+                "subtitle": "1-4 player",
+                "image": "/static/multiplayer/painting.png"
+            },
+            {
+                "shareId": "_1DogpPTpb8fK",
+                "title": "Horse Race",
+                "subtitle": "4 player",
+                "image": "/static/multiplayer/horse-race.png"
+            }
+        ]
+    },
+    "hardwareOptions": [
+        {
+            "name": "Meowbit",
+            "description": "A retro game console for STEM education from Kittenbot team",
+            "imageUrl": "/static/hardware/meowbit.png",
+            "url": "https://www.kittenbot.cc/collections/frontpage/products/meowbit-codable-console-for-microsoft-makecode-arcade",
+            "variant": "hw---stm32f401"
+        },
+        {
+            "name": "Retro Arcade for Education",
+            "description": "The Retro has a big screen, colorful protective case, d-pad and vibration motor",
+            "imageUrl": "/static/hardware/elecfreaksarcade.jpg",
+            "url": "https://shop.elecfreaks.com/products/elecfreaks-retro-makecode-arcade-for-education",
+            "variant": "hw---stm32f401"
+        },
+        {
+            "name": "TinkerGen GameGo",
+            "description": "A fun-sized console to play the games you code.",
+            "imageUrl": "/static/hardware/gamego.jpg",
+            "url": "https://www.tinkergen.com/gamego",
+            "variant": "hw---stm32f401"
+        },
+        {
+            "name": "Kitronik ARCADE",
+            "description": "ARCADE is a programmable gamepad for use with MakeCode Arcade.",
+            "imageUrl": "/static/hardware/kitronik.jpg",
+            "url": "https://www.kitronik.co.uk/arcade",
+            "variant": "hw---samd51"
+        },
+        {
+            "name": "Adafruit PyBadge",
+            "description": "It's a badge, it's an arcade, it's a PyBadge",
+            "imageUrl": "/static/hardware/pybadge.jpg",
+            "url": "https://www.adafruit.com/product/4200",
+            "variant": "hw---samd51"
+        },
+        {
+            "name": "BrainPad Arcade",
+            "description": "Learn how BrainPad Arcade lets you run games on a small handheld console.",
+            "imageUrl": "/static/hardware/ghiarcade.jpg",
+            "url": "https://brainpad.com/arcade",
+            "variant": "hw---stm32f401"
+        },
+        {
+            "name": "Adafruit PyGamer",
+            "description": "The upgraded PyBadge",
+            "imageUrl": "/static/hardware/pygamer.jpg",
+            "url": "https://www.adafruit.com/product/4242",
+            "variant": "hw---samd51"
+        },
+        {
+            "name": "Ovobot Xtron Pro",
+            "description": "A programmable modular console to create games, design wearables and make creative projects.",
+            "imageUrl": "/static/hardware/xtronpro.png",
+            "url": "https://www.ovobot.cc/en/product/detail/xtron-pro/",
+            "variant": "hw---stm32f401"
+        },
+        {
+            "name": "Adafruit EdgeBadge",
+            "description": "It's the PyBadge with a zest of Machine learning",
+            "imageUrl": "/static/hardware/edgebadge.jpg",
+            "url": "https://www.adafruit.com/product/4400",
+            "variant": "hw---samd51"
+        },
+        {
+            "name": "Adafruit M4",
+            "description": "Learn how to run your games on micro-controllers from Adafruit",
+            "imageUrl": "/static/hardware/adafruitm4.jpg",
+            "url": "https://learn.adafruit.com/makecode-arcade-m4",
+            "variant": "hw---samd51"
+        },
+        {
+            "name": "micro:bit Newbit Shield",
+            "description": "Use the micro:bit with an expansion board from Kittenbot",
+            "imageUrl": "/static/hardware/newbit.png",
+            "url": "https://www.kittenbot.cc/products/newbit-arcade-shield",
+            "variant": "hw---n3"
+        },
+        {
+            "name": "micro:bit Retro Shield",
+            "description": "Use the micro:bit with an expansion board from Elecfreaks",
+            "imageUrl": "/static/hardware/retro-shield.jpg",
+            "url": "https://shop.elecfreaks.com/products/micro-bit-retro-programming-arcade",
+            "variant": "hw---n3"
+        },
+        {
+            "name": "micro:bit Game:Bit Shield",
+            "description": "Use the micro:bit with an expansion board from iCShop",
+            "imageUrl": "/static/hardware/bit-shield.png",
+            "url": "https://www.icshop.com.tw/products/368112100137",
+            "variant": "hw---n3"
+        }
+    ],
+    "galleries": {
+        "Beginner Skillmaps": "beginner-maps",
+        "Next Level Skillmaps": "inter-maps",
+        "Tutorials": "tutorials",
+        "Multiplayer Tutorials": "multiplayer-tutorials",
+        "Multiplayer Games": "multiplayer-games",
+        "Live Coding": "live-coding",
+        "Blocks Games": "blocks-games",
+        "JavaScript Games": "javascript-games",
+        "Game Jam": "game-jam",
+        "Advanced Livestream": "advanced-stream",
+        "Community Games": "community",
+        "Game Design Concepts": "concepts",
+        "Graphics and Math": "graphics-math",
+        "Arts and Crafts": "arts-and-crafts",
+        "Lessons": "lessons",
+        "Courses": "courses",
+        "Arcade Compatible Devices": "arcade-devices",
+        "DIY Hardware": "diy-hardware",
+        "How to Make a Game Videos": "how-to-make-a-game",
+        "John Park's Workshop": "john-parks-workshop"
+    },
+    "electronManifest": {
+        "latest": "v1.12.35"
+    }
+}

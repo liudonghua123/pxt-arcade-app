@@ -1,0 +1,624 @@
+{
+    "logoUrl": "https://makecode.com/org",
+    "logo": "docs/static/logo.svg",
+    "docsLogo": "docs/static/logo.svg",
+    "cardLogo": "docs/static/logo.png",
+    "appLogo": "docs/static/icons/favicon.ico",
+    "portraitLogo": "docs/static/logo.svg",
+    "footerLogo": "docs/static/logo.svg",
+    "organization": "Microsoft MakeCode",
+    "organizationText": "MakeCode Arcade",
+    "organizationShortText": "MakeCode",
+    "organizationUrl": "https://makecode.com/org",
+    "organizationLogo": "docs/static/Micorsoft_logo_rgb_W-white_D-square.png",
+    "organizationWideLogo": "docs/static/Micorsoft_logo_rgb_W-white_D.png",
+    "homeUrl": "https://arcade.makecode.com/",
+    "embedUrl": "https://arcade.makecode.com/",
+    "privacyUrl": "https://go.microsoft.com/fwlink/?LinkId=521839",
+    "termsOfUseUrl": "https://go.microsoft.com/fwlink/?LinkID=206977",
+    "githubUrl": "https://github.com/microsoft/pxt-arcade",
+    "boardName": "Arcade",
+    "addNewTypeScriptFile": true,
+    "docMenu": [
+        {
+            "name": "Docs",
+            "path": "/docs",
+            "popout": true
+        },
+        {
+            "name": "Hardware",
+            "path": "/hardware",
+            "popout": true
+        },
+        {
+            "name": "Forum",
+            "path": "https://forum.makecode.com"
+        }
+    ],
+    "coloredToolbox": true,
+    "monacoToolbox": true,
+    "selectLanguage": true,
+    "availableLocales": [
+        "en",
+        "ar",
+        "zh-CN",
+        "zh-TW",
+        "de",
+        "fr",
+        "ja",
+        "ko",
+        "es-ES",
+        "es-MX"
+    ],
+    "invertedMenu": true,
+    "showHomeScreen": true,
+    "useTextLogo": true,
+    "highContrast": true,
+    "greenScreen": true,
+    "print": true,
+    "hasAudio": true,
+    "allowPackageExtensions": true,
+    "homeScreenHero": {
+        "imageUrl": "docs/static/hero-gallery/multiplayer-banner.png",
+        "name": "Multiplayer Games!",
+        "url": "/--multiplayer",
+        "buttonLabel": "Try Now",
+        "description": "Multiplayer Games!",
+        "cardType": "link"
+    },
+    "homeScreenHeroGallery": "/hero-banner",
+    "socialOptions": {
+        "orgTwitterHandle": "MSMakeCode",
+        "hashtags": "MakeCode",
+        "discourse": "https://forum.makecode.com/",
+        "discourseCategory": "Arcade"
+    },
+    "blocklyOptions": {
+        "grid": {
+            "spacing": 20,
+            "length": 100,
+            "colour": "rgba(107, 79, 118, 0.10)",
+            "snap": true
+        }
+    },
+    "blockColors": {
+        "loops": "#20BF6B",
+        "logic": "#45AAF2",
+        "math": "#A55EEA",
+        "variables": "#EC3B59",
+        "text": "#F5D547",
+        "arrays": "#FF8F08",
+        "functions": "#1446A0"
+    },
+    "simAnimationEnter": "fly right in",
+    "simAnimationExit": "fly right out",
+    "crowdinProject": "makecode",
+    "monacoColors": {
+        "editor.background": "#FEF3E0"
+    },
+    "monacoFieldEditors": [
+        "image-editor",
+        "tilemap-editor",
+        "soundeffect-editor",
+        "music-editor"
+    ],
+    "scriptManager": true,
+    "saveInMenu": false,
+    "debugger": true,
+    "importExtensionFiles": true,
+    "experiments": [
+        "debugExtensionCode",
+        "snippetBuilder",
+        "experimentalHw",
+        "recipes",
+        "tutorialBlocksDiff",
+        "blocksErrorList",
+        "identity",
+        "accessibleBlocks",
+        "palettePicker"
+    ],
+    "blocksCollapsing": true,
+    "errorList": true,
+    "workspaceSearch": true,
+    "extendEditor": true,
+    "simScreenshot": true,
+    "simScreenshotKey": "P",
+    "simScreenshotMaxUriLength": 300000,
+    "simGif": true,
+    "simGifKey": "R",
+    "qrCode": true,
+    "shareFinishedTutorials": true,
+    "nameProjectFirst": true,
+    "githubEditor": true,
+    "githubCompiledJs": true,
+    "chooseLanguageRestrictionOnNewProject": true,
+    "openProjectNewTab": true,
+    "hasReferenceDocs": true,
+    "python": true,
+    "assetEditor": true,
+    "immersiveReader": true,
+    "tutorialCodeValidation": true,
+    "multiplayer": true,
+    "songEditor": true,
+    "shareToKiosk": true,
+    "tours": {
+        "editor": "/tours/editor-tour"
+    },
+    "showOpenInVscode": true,
+    "hideReplaceMyCode": true,
+    "TOC": [
+        {
+            "name": "About",
+            "path": "/about",
+            "subitems": []
+        },
+        {
+            "name": "FAQ",
+            "path": "/faq",
+            "subitems": []
+        },
+        {
+            "name": "Projects",
+            "path": "/projects",
+            "subitems": []
+        },
+        {
+            "name": "GitHub",
+            "path": "/github",
+            "subitems": []
+        },
+        {
+            "name": "Reference",
+            "path": "/reference",
+            "subitems": [
+                {
+                    "name": "sprites",
+                    "path": "/reference/sprites",
+                    "subitems": []
+                },
+                {
+                    "name": "controller",
+                    "path": "/reference/controller",
+                    "subitems": []
+                },
+                {
+                    "name": "game",
+                    "path": "/reference/game",
+                    "subitems": []
+                },
+                {
+                    "name": "music",
+                    "path": "/reference/music",
+                    "subitems": []
+                },
+                {
+                    "name": "scene",
+                    "path": "/reference/scene",
+                    "subitems": []
+                },
+                {
+                    "name": "info",
+                    "path": "/reference/info",
+                    "subitems": []
+                },
+                {
+                    "name": "images",
+                    "path": "/reference/images",
+                    "subitems": []
+                }
+            ]
+        },
+        {
+            "name": "Blocks",
+            "path": "/blocks",
+            "subitems": [
+                {
+                    "name": "On Start",
+                    "path": "/blocks/on-start",
+                    "subitems": []
+                },
+                {
+                    "name": "Loops",
+                    "path": "/blocks/loops",
+                    "subitems": [
+                        {
+                            "name": "repeat",
+                            "path": "/blocks/loops/repeat",
+                            "subitems": []
+                        },
+                        {
+                            "name": "for",
+                            "path": "/blocks/loops/for",
+                            "subitems": []
+                        },
+                        {
+                            "name": "while",
+                            "path": "/blocks/loops/while",
+                            "subitems": []
+                        },
+                        {
+                            "name": "for of",
+                            "path": "/blocks/loops/for-of",
+                            "subitems": []
+                        }
+                    ]
+                },
+                {
+                    "name": "Logic",
+                    "path": "/blocks/logic",
+                    "subitems": [
+                        {
+                            "name": "if",
+                            "path": "/blocks/logic/if",
+                            "subitems": []
+                        },
+                        {
+                            "name": "Boolean",
+                            "path": "/blocks/logic/boolean",
+                            "subitems": []
+                        }
+                    ]
+                },
+                {
+                    "name": "Variables",
+                    "path": "/blocks/variables",
+                    "subitems": [
+                        {
+                            "name": "assign",
+                            "path": "/blocks/variables/assign",
+                            "subitems": []
+                        },
+                        {
+                            "name": "change var",
+                            "path": "/blocks/variables/change",
+                            "subitems": []
+                        },
+                        {
+                            "name": "var",
+                            "path": "/blocks/variables/var",
+                            "subitems": []
+                        }
+                    ]
+                },
+                {
+                    "name": "Math",
+                    "path": "/blocks/math",
+                    "subitems": []
+                },
+                {
+                    "name": "JavaScript blocks",
+                    "path": "/blocks/javascript-blocks",
+                    "subitems": []
+                },
+                {
+                    "name": "Custom blocks",
+                    "path": "/blocks/custom",
+                    "subitems": []
+                }
+            ]
+        },
+        {
+            "name": "Python",
+            "path": "/python",
+            "subitems": [
+                {
+                    "name": "Calling",
+                    "path": "/python/call",
+                    "subitems": []
+                },
+                {
+                    "name": "Sequencing",
+                    "path": "/python/sequence",
+                    "subitems": []
+                },
+                {
+                    "name": "Variables",
+                    "path": "/python/variables",
+                    "subitems": []
+                },
+                {
+                    "name": "Operators",
+                    "path": "/python/operators",
+                    "subitems": []
+                },
+                {
+                    "name": "Statements",
+                    "path": "/python/statements",
+                    "subitems": []
+                },
+                {
+                    "name": "Functions",
+                    "path": "/python/functions",
+                    "subitems": []
+                },
+                {
+                    "name": "Classes",
+                    "path": "/python/classes",
+                    "subitems": []
+                }
+            ]
+        },
+        {
+            "name": "JavaScript",
+            "path": "/javascript",
+            "subitems": [
+                {
+                    "name": "Calling",
+                    "path": "/javascript/call",
+                    "subitems": []
+                },
+                {
+                    "name": "Sequencing",
+                    "path": "/javascript/sequence",
+                    "subitems": []
+                },
+                {
+                    "name": "Variables",
+                    "path": "/javascript/variables",
+                    "subitems": []
+                },
+                {
+                    "name": "Operators",
+                    "path": "/javascript/operators",
+                    "subitems": []
+                },
+                {
+                    "name": "Statements",
+                    "path": "/javascript/statements",
+                    "subitems": []
+                },
+                {
+                    "name": "Functions",
+                    "path": "/javascript/functions",
+                    "subitems": []
+                },
+                {
+                    "name": "Types",
+                    "path": "/javascript/types",
+                    "subitems": []
+                },
+                {
+                    "name": "Classes",
+                    "path": "/javascript/classes",
+                    "subitems": []
+                },
+                {
+                    "name": "Interfaces",
+                    "path": "/javascript/interfaces",
+                    "subitems": []
+                },
+                {
+                    "name": "Generics",
+                    "path": "/javascript/generics",
+                    "subitems": []
+                }
+            ]
+        },
+        {
+            "name": "Types",
+            "path": "/types",
+            "subitems": [
+                {
+                    "name": "Number",
+                    "path": "/types/number",
+                    "subitems": []
+                },
+                {
+                    "name": "String",
+                    "path": "/types/string",
+                    "subitems": []
+                },
+                {
+                    "name": "Boolean",
+                    "path": "/types/boolean",
+                    "subitems": []
+                },
+                {
+                    "name": "Array",
+                    "path": "/types/array",
+                    "subitems": []
+                },
+                {
+                    "name": "Function",
+                    "path": "/types/function",
+                    "subitems": []
+                },
+                {
+                    "name": "Image",
+                    "path": "/types/image",
+                    "subitems": []
+                },
+                {
+                    "name": "Sprite",
+                    "path": "/types/sprite",
+                    "subitems": []
+                }
+            ]
+        },
+        {
+            "name": "Blocks Gallery",
+            "path": "/block-gallery",
+            "subitems": []
+        },
+        {
+            "name": "Miscellaneous",
+            "path": "",
+            "subitems": [
+                {
+                    "name": "About",
+                    "path": "/about",
+                    "subitems": []
+                },
+                {
+                    "name": "Support",
+                    "path": "/support",
+                    "subitems": []
+                },
+                {
+                    "name": "Translate",
+                    "path": "/translate",
+                    "subitems": []
+                },
+                {
+                    "name": "Sharing projects",
+                    "path": "/share",
+                    "subitems": []
+                },
+                {
+                    "name": "Multiplayer",
+                    "path": "/multiplayer",
+                    "subitems": []
+                },
+                {
+                    "name": "Offline support",
+                    "path": "/offline",
+                    "subitems": []
+                },
+                {
+                    "name": "Save",
+                    "path": "/save",
+                    "subitems": []
+                },
+                {
+                    "name": "Sign In",
+                    "path": "/identity/sign-in",
+                    "subitems": []
+                },
+                {
+                    "name": "Cloud Sync",
+                    "path": "/identity/cloud-sync",
+                    "subitems": []
+                },
+                {
+                    "name": "VS Code",
+                    "path": "/vscode",
+                    "subitems": []
+                }
+            ]
+        },
+        {
+            "name": "Hardware",
+            "path": "/hardware",
+            "subitems": [
+                {
+                    "name": "Errors",
+                    "path": "/hardware/errors",
+                    "subitems": []
+                },
+                {
+                    "name": "Adding New Board",
+                    "path": "/hardware/adding",
+                    "subitems": []
+                },
+                {
+                    "name": "Raspberry Pi",
+                    "path": "/hardware/raspberry-pi",
+                    "subitems": []
+                },
+                {
+                    "name": "Makey Makey",
+                    "path": "/hardware/makey-makey",
+                    "subitems": []
+                },
+                {
+                    "name": "Shoebox Controller",
+                    "path": "/hardware/shoebox-controller",
+                    "subitems": []
+                },
+                {
+                    "name": "Dev",
+                    "path": "/hardware/dev",
+                    "subitems": []
+                },
+                {
+                    "name": "Debug connector",
+                    "path": "/hardware/dbg",
+                    "subitems": []
+                }
+            ]
+        },
+        {
+            "name": "Developers",
+            "path": "",
+            "subitems": [
+                {
+                    "name": "Command Line Interface",
+                    "path": "/cli",
+                    "subitems": []
+                },
+                {
+                    "name": "Visual Studio Code support",
+                    "path": "/code",
+                    "subitems": []
+                },
+                {
+                    "name": "Blocks Embed",
+                    "path": "/blocks-embed",
+                    "subitems": []
+                },
+                {
+                    "name": "Art, images, colors",
+                    "path": "/developer/images",
+                    "subitems": []
+                },
+                {
+                    "name": "Sounds",
+                    "path": "/developer/sound",
+                    "subitems": []
+                }
+            ]
+        },
+        {
+            "name": "Lessons",
+            "path": "/lessons",
+            "subitems": [
+                {
+                    "name": "Cherry Pickr",
+                    "path": "/lessons/cherry-pickr",
+                    "subitems": []
+                },
+                {
+                    "name": "Barrel Dodger",
+                    "path": "/lessons/barrel-dodger",
+                    "subitems": []
+                },
+                {
+                    "name": "Dance Party",
+                    "path": "/lessons/dance-party",
+                    "subitems": []
+                },
+                {
+                    "name": "BlockOut",
+                    "path": "/lessons/block-out",
+                    "subitems": []
+                }
+            ]
+        },
+        {
+            "name": "Courses",
+            "path": "/courses",
+            "subitems": [
+                {
+                    "name": "CS Intro 1",
+                    "path": "/courses/csintro1",
+                    "subitems": []
+                },
+                {
+                    "name": "CS Intro 2",
+                    "path": "/courses/csintro2",
+                    "subitems": []
+                },
+                {
+                    "name": "CS Intro 3",
+                    "path": "/courses/csintro3",
+                    "subitems": []
+                }
+            ]
+        }
+    ],
+    "id": "arcade",
+    "title": "Microsoft MakeCode Arcade",
+    "name": "arcade",
+    "description": "Develop your programming skills by quickly creating and modding retro arcade games with Blocks and JavaScript in the MakeCode editor",
+    "htmlDocIncludes": {}
+}

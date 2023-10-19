@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en"  manifest="/pxt-arcade-app/release.manifest" data-framework="typescript">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <link rel="stylesheet" data-rtl="/pxt-arcade-app/rtlsemantic.css" href="/pxt-arcade-app/semantic.css" type="text/css">
+    <title>MakeCode Asset Editor</title>
+    <style>
+        #asset-editor-field-div {
+            height: 100%;
+        }
+        .image-editor-wrapper {
+            border-radius: 0;
+        }
+        .image-editor-confirm {
+            background-color: darkgreen;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        // This line gets patched up by the cloud
+        var pxtConfig = {
+    "relprefix": "/pxt-arcade-app/",
+    "verprefix": "",
+    "workerjs": "/pxt-arcade-app/worker.js",
+    "monacoworkerjs": "/pxt-arcade-app/monacoworker.js",
+    "gifworkerjs": "/pxt-arcade-app/gifjs/gif.worker.js",
+    "serviceworkerjs": "/pxt-arcade-app/serviceworker.js",
+    "typeScriptWorkerJs": "/pxt-arcade-app/tsworker.js",
+    "pxtVersion": "9.1.19",
+    "pxtRelId": "localDirRelId",
+    "pxtCdnUrl": "/pxt-arcade-app/",
+    "commitCdnUrl": "/pxt-arcade-app/",
+    "blobCdnUrl": "/pxt-arcade-app/",
+    "cdnUrl": "/pxt-arcade-app/",
+    "targetVersion": "0.0.0",
+    "targetRelId": "",
+    "targetUrl": "",
+    "targetId": "arcade",
+    "simUrl": "/pxt-arcade-app/simulator.html",
+    "simserviceworkerUrl": "/pxt-arcade-app/simulatorserviceworker.js",
+    "simworkerconfigUrl": "/pxt-arcade-app/workerConfig.js",
+    "partsUrl": "/pxt-arcade-app/siminstructions.html",
+    "runUrl": "/pxt-arcade-app/run.html",
+    "docsUrl": "/pxt-arcade-app/docs.html",
+    "multiUrl": "/pxt-arcade-app/multi.html",
+    "asseteditorUrl": "/pxt-arcade-app/asseteditor.html",
+    "skillmapUrl": "/pxt-arcade-app/skillmap.html",
+    "authcodeUrl": "/pxt-arcade-app/authcode.html",
+    "multiplayerUrl": "/pxt-arcade-app/multiplayer.html",
+    "kioskUrl": "/pxt-arcade-app/kiosk.html",
+    "isStatic": true
+};
+    </script>
+    <script type="text/javascript" src="/pxt-arcade-app/target.js"></script>
+    <!-- <script type="text/javascript" src="https://pxt.azureedge.net/blob/ec765d3ba50a09c8c8819ec80390b6ffa72e945a/target.js"></script> -->
+    <script type="text/javascript" src="/pxt-arcade-app/pxtapp.js"></script>
+    <script>
+        pxt.setAppTarget(pxtTargetBundle);
+        // This can be overridden via the messages sent to the page
+        pxt.appTarget.runtime.palette = ["#000000","#ffffff","#ff2121","#ff93c4","#ff8135","#fff609","#249ca3","#78dc52","#003fad","#87f2ff","#8e2ec4","#a4839f","#5c406c","#e5cdc4","#91463d","#000000"];
+
+        // this get rewritten to blob URLs with SHAs while uploading to the cloud
+        // keep in sync with index.html
+        window.MonacoPaths = {
+            "vs/loader": "/pxt-arcade-app/vs/loader.js",
+            "vs/base/worker/workerMain": "/pxt-arcade-app/vs/base/worker/workerMain.js",
+            "vs/basic-languages/bat/bat": "/pxt-arcade-app/vs/basic-languages/bat/bat.js",
+            "vs/basic-languages/cpp/cpp": "/pxt-arcade-app/vs/basic-languages/cpp/cpp.js",
+            "vs/basic-languages/markdown/markdown": "/pxt-arcade-app/vs/basic-languages/markdown/markdown.js",
+            "vs/basic-languages/python/python": "/pxt-arcade-app/vs/basic-languages/python/python.js",
+            "vs/basic-languages/typescript/typescript": "/pxt-arcade-app/vs/basic-languages/typescript/typescript.js",
+            "vs/editor/editor.main.css": "/pxt-arcade-app/vs/editor/editor.main.css",
+            "vs/editor/editor.main": "/pxt-arcade-app/vs/editor/editor.main.js",
+            "vs/editor/editor.main.nls": "/pxt-arcade-app/vs/editor/editor.main.nls.js",
+            "vs/language/json/jsonMode": "/pxt-arcade-app/vs/language/json/jsonMode.js",
+            "vs/language/json/jsonWorker": "/pxt-arcade-app/vs/language/json/jsonWorker.js",
+            "vs/language/typescript/tsMode": "/pxt-arcade-app/vs/language/typescript/tsMode.js",
+            "vs/language/typescript/tsWorker": "/pxt-arcade-app/vs/language/typescript/tsWorker.js",
+            "lzma/lzma_worker-min.js": "/pxt-arcade-app/lzma/lzma_worker-min.js",
+            "smoothie/smoothie_compressed.js": "/pxt-arcade-app/smoothie/smoothie_compressed.js",
+            "pxtblockly.js": "/pxt-arcade-app/pxtblockly.js",
+            "blockly.css": "/pxt-arcade-app/blockly.css",
+            "rtlblockly.css": "/pxt-arcade-app/rtlblockly.css",
+            "gifjs/gif.js": "/pxt-arcade-app/gifjs/gif.js",
+            "qrcode/qrcode.min.js": "/pxt-arcade-app/qrcode/qrcode.min.js",
+            "zip.js/zip.min.js": "/pxt-arcade-app/zip.js/zip.min.js",
+            "pdf-lib/pdf-lib.min.js": "/pxt-arcade-app/pdf-lib/pdf-lib.min.js",
+            "music-editor/apple.png": "/pxt-arcade-app/music-editor/apple.png",
+            "music-editor/burger.png": "/pxt-arcade-app/music-editor/burger.png",
+            "music-editor/cake.png": "/pxt-arcade-app/music-editor/cake.png",
+            "music-editor/car.png": "/pxt-arcade-app/music-editor/car.png",
+            "music-editor/cat.png": "/pxt-arcade-app/music-editor/cat.png",
+            "music-editor/cherry.png": "/pxt-arcade-app/music-editor/cherry.png",
+            "music-editor/clam.png": "/pxt-arcade-app/music-editor/clam.png",
+            "music-editor/computer.png": "/pxt-arcade-app/music-editor/computer.png",
+            "music-editor/crab.png": "/pxt-arcade-app/music-editor/crab.png",
+            "music-editor/dog.png": "/pxt-arcade-app/music-editor/dog.png",
+            "music-editor/duck.png": "/pxt-arcade-app/music-editor/duck.png",
+            "music-editor/egg.png": "/pxt-arcade-app/music-editor/egg.png",
+            "music-editor/explosion.png": "/pxt-arcade-app/music-editor/explosion.png",
+            "music-editor/fish.png": "/pxt-arcade-app/music-editor/fish.png",
+            "music-editor/ice-cream.png": "/pxt-arcade-app/music-editor/ice-cream.png",
+            "music-editor/lemon.png": "/pxt-arcade-app/music-editor/lemon.png",
+            "music-editor/snake.png": "/pxt-arcade-app/music-editor/snake.png",
+            "music-editor/star.png": "/pxt-arcade-app/music-editor/star.png",
+            "music-editor/strawberry.png": "/pxt-arcade-app/music-editor/strawberry.png",
+            "music-editor/taco.png": "/pxt-arcade-app/music-editor/taco.png",
+            "music-editor/bass-clef.svg": "/pxt-arcade-app/music-editor/bass-clef.svg",
+            "music-editor/treble-clef.svg": "/pxt-arcade-app/music-editor/treble-clef.svg",
+        }
+    </script>
+    <script type="text/javascript" src="/pxt-arcade-app/pxtasseteditor.js"></script>
+    <div id="asset-editor-field-div">
+    </div>
+</body>
+
+</html>

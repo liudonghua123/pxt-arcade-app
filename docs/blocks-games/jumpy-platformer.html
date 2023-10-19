@@ -1,0 +1,2021 @@
+<!DOCTYPE html>
+<html lang="" xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#"
+	xmlns:fb="http://www.facebook.com/2008/fbml">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Microsoft MakeCode Arcade</title>
+	<meta name="Description" content="Develop your programming skills by quickly creating and modding retro arcade games with Blocks and JavaScript in the MakeCode editor" />
+
+	<!-- ifdef incontexttranslations endif -->
+	
+<!-- include meta.html -->
+<!-- This file is typically overriden by the target, with own Twitter
+     account etc. Most data is taken from the theme file though.  
+  -->
+
+<!-- include robotsmeta.html -->
+
+<!-- end include robotsmeta.html -->
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@msmakecode" />
+<meta name="twitter:title" content="Microsoft MakeCode Arcade" />
+<meta name="twitter:description" content="Develop your programming skills by quickly creating and modding retro arcade games with Blocks and JavaScript in the MakeCode editor" />
+<meta name="twitter:image" content="docs/static/logo.png" />
+
+<meta property="og:title" content="Microsoft MakeCode Arcade" />
+<meta property="og:site_name" content="Microsoft MakeCode" />
+<meta property="og:type" content="website" />
+<meta property="og:description" content="Develop your programming skills by quickly creating and modding retro arcade games with Blocks and JavaScript in the MakeCode editor" />
+<meta property="fb:app_id" content="" />
+<meta property="og:image" content="docs/static/logo.png" />
+
+<meta name="format-detection" content="telephone=no">
+<link rel="apple-touch-icon" href="docs/static/icons/favicon.ico">
+<link rel="icon" type="image/png" href="docs/static/icons/favicon.ico">
+<link rel="shortcut icon" href="docs/static/icons/favicon.ico">
+<meta name="theme-color" content="">
+
+<!-- end include meta.html -->
+
+	
+<!-- include head.html -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width,height=device-height,user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
+
+<link rel="stylesheet" data-rtl="/blb/rtlsemantic.css" href="/pxt-arcade-app/semantic.css" />
+<link id="blocklycss"  data-rtl="/blb/rtlblockly.css" rel="stylesheet" href="/pxt-arcade-app/blockly.css" />
+<link rel="stylesheet" href="/pxt-arcade-app/docfiles/style.css" />
+<link rel="stylesheet" href="/pxt-arcade-app/docfiles/vs.css" />
+<link rel="stylesheet" href="/pxt-arcade-app/docfiles/target.css" />
+
+<script src="/pxt-arcade-app/jquery.js" type="text/javascript"></script>
+<script src="/pxt-arcade-app/semantic.js" type="text/javascript"></script>
+<script src="/pxt-arcade-app/docfiles/target.js" type="text/javascript"></script>
+<script src="/pxt-arcade-app/embed.js" type="text/javascript"></script>
+<script src="/pxt-arcade-app/docfiles/docs.js" type="text/javascript"></script>
+
+<style>
+    
+</style>
+
+<!-- end include head.html -->
+
+
+</head>
+
+<body id='root' class='root'>
+	<div id="accessibleMenu" class="ui accessibleMenu borderless fixed menu docs" role="menubar">
+		
+            <a href="#maincontent" class="ui item link" tabindex="0" role="menuitem">Skip to main content</a>
+        
+	</div>
+
+	
+<!-- include tocheader.html -->
+<div id="top-bar" class="ui fixed accent borderless inverted main menu hideprint docs" role="menubar">
+    <div>
+        
+            <a id="togglesidebar" class="launch icon item" tabindex="0" title="Side menu" aria-label="Side menu" role="menuitem" aria-expanded="false">
+                <i class="content icon"></i>
+            </a>
+        
+        <div class="item" role="menuitem">
+            <div class="header-org-logo">
+                <img src="/static/logo/Microsoft_logo_rgb_W-white_D.png" alt="Microsoft">
+            </div>
+            <div class="header-org-logo-sm">
+                <img src="/static/logo/Microsoft_logo_rgb_W-white_D-square.png" alt="Microsoft">
+            </div>
+            <div class="header-title"><span>MakeCode</span></div>
+        </div>
+    </div>
+    <div>
+        <div class="item">
+            <form id="tocsearch1" class="search" role="form" method="get" action="https://www.bing.com/search">
+                <div class="ui fluid icon input">
+                    <input type="hidden" name="q1" value="site:https://arcade.makecode.com/" />
+                    
+                <input type="search" name="q" placeholder="Search..." aria-label="Search Documentation">
+                <i onclick="document.getElementById('tocsearch1').submit();" tabindex="0" class="search link icon" aria-label="Search" role="button"></i>
+            
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div id="side-menu" class="ui vertical accent inverted sidebar menu left hideprint docs" role="menubar">
+    <!-- TOC Menu (tocheader.html) -->
+    <div class="menuContainer" role="menu">
+        
+    <a class="item " href="/pxt-arcade-app/docs/about.html" role="menuitem">About</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/faq.html" role="menuitem">FAQ</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/projects.html" role="menuitem">Projects</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/github.html" role="menuitem">GitHub</a>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/pxt-arcade-app/docs/reference.html">Reference</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-arcade-app/docs/reference/sprites.html" role="menuitem">sprites</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/reference/controller.html" role="menuitem">controller</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/reference/game.html" role="menuitem">game</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/reference/music.html" role="menuitem">music</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/reference/scene.html" role="menuitem">scene</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/reference/info.html" role="menuitem">info</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/reference/images.html" role="menuitem">images</a>
+
+        </div>
+    </div>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/pxt-arcade-app/docs/blocks.html">Blocks</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-arcade-app/docs/blocks/on-start.html" role="menuitem">On Start</a>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/pxt-arcade-app/docs/blocks/loops.html">Loops</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-arcade-app/docs/blocks/loops/repeat.html" role="menuitem">repeat</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/blocks/loops/for.html" role="menuitem">for</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/blocks/loops/while.html" role="menuitem">while</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/blocks/loops/for-of.html" role="menuitem">for of</a>
+
+        </div>
+    </div>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/pxt-arcade-app/docs/blocks/logic.html">Logic</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-arcade-app/docs/blocks/logic/if.html" role="menuitem">if</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/blocks/logic/boolean.html" role="menuitem">Boolean</a>
+
+        </div>
+    </div>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/pxt-arcade-app/docs/blocks/variables.html">Variables</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-arcade-app/docs/blocks/variables/assign.html" role="menuitem">assign</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/blocks/variables/change.html" role="menuitem">change var</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/blocks/variables/var.html" role="menuitem">var</a>
+
+        </div>
+    </div>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/blocks/math.html" role="menuitem">Math</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/blocks/javascript-blocks.html" role="menuitem">JavaScript blocks</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/blocks/custom.html" role="menuitem">Custom blocks</a>
+
+        </div>
+    </div>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/pxt-arcade-app/docs/python.html">Python</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-arcade-app/docs/python/call.html" role="menuitem">Calling</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/python/sequence.html" role="menuitem">Sequencing</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/python/variables.html" role="menuitem">Variables</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/python/operators.html" role="menuitem">Operators</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/python/statements.html" role="menuitem">Statements</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/python/functions.html" role="menuitem">Functions</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/python/classes.html" role="menuitem">Classes</a>
+
+        </div>
+    </div>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/pxt-arcade-app/docs/javascript.html">JavaScript</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-arcade-app/docs/javascript/call.html" role="menuitem">Calling</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/javascript/sequence.html" role="menuitem">Sequencing</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/javascript/variables.html" role="menuitem">Variables</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/javascript/operators.html" role="menuitem">Operators</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/javascript/statements.html" role="menuitem">Statements</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/javascript/functions.html" role="menuitem">Functions</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/javascript/types.html" role="menuitem">Types</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/javascript/classes.html" role="menuitem">Classes</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/javascript/interfaces.html" role="menuitem">Interfaces</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/javascript/generics.html" role="menuitem">Generics</a>
+
+        </div>
+    </div>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/pxt-arcade-app/docs/types.html">Types</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-arcade-app/docs/types/number.html" role="menuitem">Number</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/types/string.html" role="menuitem">String</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/types/boolean.html" role="menuitem">Boolean</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/types/array.html" role="menuitem">Array</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/types/function.html" role="menuitem">Function</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/types/image.html" role="menuitem">Image</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/types/sprite.html" role="menuitem">Sprite</a>
+
+        </div>
+    </div>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/block-gallery.html" role="menuitem">Blocks Gallery</a>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="">Miscellaneous</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-arcade-app/docs/about.html" role="menuitem">About</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/support.html" role="menuitem">Support</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/translate.html" role="menuitem">Translate</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/share.html" role="menuitem">Sharing projects</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/multiplayer.html" role="menuitem">Multiplayer</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/offline.html" role="menuitem">Offline support</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/save.html" role="menuitem">Save</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/identity/sign-in.html" role="menuitem">Sign In</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/identity/cloud-sync.html" role="menuitem">Cloud Sync</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/vscode.html" role="menuitem">VS Code</a>
+
+        </div>
+    </div>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/pxt-arcade-app/docs/hardware.html">Hardware</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-arcade-app/docs/hardware/errors.html" role="menuitem">Errors</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/hardware/adding.html" role="menuitem">Adding New Board</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/hardware/raspberry-pi.html" role="menuitem">Raspberry Pi</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/hardware/makey-makey.html" role="menuitem">Makey Makey</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/hardware/shoebox-controller.html" role="menuitem">Shoebox Controller</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/hardware/dev.html" role="menuitem">Dev</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/hardware/dbg.html" role="menuitem">Debug connector</a>
+
+        </div>
+    </div>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="">Developers</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-arcade-app/docs/cli.html" role="menuitem">Command Line Interface</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/code.html" role="menuitem">Visual Studio Code support</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/blocks-embed.html" role="menuitem">Blocks Embed</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/developer/images.html" role="menuitem">Art, images, colors</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/developer/sound.html" role="menuitem">Sounds</a>
+
+        </div>
+    </div>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/pxt-arcade-app/docs/lessons.html">Lessons</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-arcade-app/docs/lessons/cherry-pickr.html" role="menuitem">Cherry Pickr</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/lessons/barrel-dodger.html" role="menuitem">Barrel Dodger</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/lessons/dance-party.html" role="menuitem">Dance Party</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/lessons/block-out.html" role="menuitem">BlockOut</a>
+
+        </div>
+    </div>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/pxt-arcade-app/docs/courses.html">Courses</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-arcade-app/docs/courses/csintro1.html" role="menuitem">CS Intro 1</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/courses/csintro2.html" role="menuitem">CS Intro 2</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/courses/csintro3.html" role="menuitem">CS Intro 3</a>
+
+        </div>
+    </div>
+
+    </div>
+</div>
+<!-- end include tocheader.html -->
+
+
+	<div id="docs" class="pusher">
+
+		<div class="article" id="maincontent">
+			<div class="article-inner">
+
+				
+<!-- include header.html -->
+<div class="ui one column padded grid hideprint">
+    <div class="column ui container">
+        
+    </div>
+</div>
+<!-- end include header.html -->
+
+
+				<div class="main ui container fluid mainbody">
+					<button id="printbtn" class="circular ui icon right floated button hideprint hidemobile"
+						title="Print" aria-label="Print">
+						<i class="icon print"></i>
+					</button>
+					
+    <div class="ui text">
+        <h1 id="jumpy-platformer">Jumpy Platformer</h1><pre><code class="lang-blocks">enum ActionKind {
+    RunningLeft,
+    RunningRight,
+    Idle,
+    IdleLeft,
+    IdleRight,
+    JumpingLeft,
+    JumpingRight,
+    CrouchLeft,
+    CrouchRight,
+    Flying,
+    Walking,
+    Jumping
+}
+namespace SpriteKind {
+    export const Bumper = SpriteKind.create()
+    export const Goal = SpriteKind.create()
+    export const Coin = SpriteKind.create()
+    export const Flier = SpriteKind.create()
+}
+sprites.onOverlap(SpriteKind.Player, SpriteKind.Bumper, function (sprite, otherSprite) {
+    if (sprite.vy &gt; 0 &amp;&amp; !(sprite.isHittingTile(CollisionDirection.Bottom)) || sprite.y &lt; otherSprite.top) {
+        otherSprite.destroy(effects.ashes, 250)
+        otherSprite.vy = -50
+        sprite.vy = -2 * pixelsToMeters
+        info.changeScoreBy(1)
+        music.powerUp.play()
+    } else {
+        info.changeLifeBy(-1)
+        sprite.say(&quot;Ow!&quot;, invincibilityPeriod)
+        music.powerDown.play()
+    }
+    pause(invincibilityPeriod)
+})
+function initializeAnimations () {
+    initializeHeroAnimations()
+    initializeCoinAnimation()
+    initializeFlierAnimations()
+}
+function giveIntroduction () {
+    game.setDialogFrame(img`
+        . 2 2 2 2 2 2 2 2 2 2 2 2 2 . .
+        2 2 1 1 1 1 1 1 1 1 1 1 1 2 2 .
+        2 1 1 2 2 2 2 2 2 2 2 2 1 1 2 .
+        2 1 2 2 1 1 1 1 1 1 1 2 2 1 2 .
+        2 1 2 1 1 1 1 1 1 1 1 1 2 1 2 .
+        2 1 2 1 1 1 1 1 1 1 1 1 2 1 2 .
+        2 1 2 1 1 1 1 1 1 1 1 1 2 1 2 .
+        2 1 2 1 1 1 1 1 1 1 1 1 2 1 2 .
+        2 1 2 1 1 1 1 1 1 1 1 1 2 1 2 .
+        2 1 2 1 1 1 1 1 1 1 1 1 2 1 2 .
+        2 1 2 1 1 1 1 1 1 1 1 1 2 1 2 .
+        2 1 2 2 1 1 1 1 1 1 1 2 2 1 2 .
+        2 1 1 2 2 2 2 2 2 2 2 2 1 1 2 .
+        2 2 1 1 1 1 1 1 1 1 1 1 1 2 2 .
+        . 2 2 2 2 2 2 2 2 2 2 2 2 2 . .
+        . . . . . . . . . . . . . . . .
+        `)
+    game.setDialogCursor(img`
+        . . . . . . . . . . . . . . . .
+        . . . . . . . . . . . . . . . .
+        . . . . . . . . . . . . . . . .
+        . . . . . . f f f f . . . . . .
+        . . . . f f 5 5 5 5 f f . . . .
+        . . . . f 5 5 5 5 5 5 f . . . .
+        . . . f 5 5 5 4 4 5 5 5 f . . .
+        . . . f 5 5 5 4 4 5 5 5 f . . .
+        . . . f 5 5 5 4 4 5 5 5 f . . .
+        . . . f 5 5 5 4 4 5 5 5 f . . .
+        . . . . f 5 5 5 5 5 5 f . . . .
+        . . . . f f 5 5 5 5 f f . . . .
+        . . . . . . f f f f . . . . . .
+        . . . . . . . . . . . . . . . .
+        . . . . . . . . . . . . . . . .
+        . . . . . . . . . . . . . . . .
+        `)
+    showInstruction(&quot;Move with the left and right buttons.&quot;)
+    showInstruction(&quot;Jump with the up or A button.&quot;)
+    showInstruction(&quot;Double jump by pressing jump again.&quot;)
+}
+controller.up.onEvent(ControllerButtonEvent.Pressed, function () {
+    attemptJump()
+})
+function initializeCoinAnimation () {
+    coinAnimation = animation.createAnimation(ActionKind.Idle, 200)
+    coinAnimation.addAnimationFrame(img`
+        . . . . . . . . . . . . . . . .
+        . . . . . . . . . . . . . . . .
+        . . . . . . . . . . . . . . . .
+        . . . . . . f f f f . . . . . .
+        . . . . f f 5 5 5 5 f f . . . .
+        . . . . f 5 5 5 5 5 5 f . . . .
+        . . . f 5 5 5 4 4 5 5 5 f . . .
+        . . . f 5 5 5 4 4 5 5 5 f . . .
+        . . . f 5 5 5 4 4 5 5 5 f . . .
+        . . . f 5 5 5 4 4 5 5 5 f . . .
+        . . . . f 5 5 5 5 5 5 f . . . .
+        . . . . f f 5 5 5 5 f f . . . .
+        . . . . . . f f f f . . . . . .
+        . . . . . . . . . . . . . . . .
+        . . . . . . . . . . . . . . . .
+        . . . . . . . . . . . . . . . .
+        `)
+    coinAnimation.addAnimationFrame(img`
+        . . . . . . . . . . . . . . . .
+        . . . . . . . . . . . . . . . .
+        . . . . . . . . . . . . . . . .
+        . . . . f f f f f f . . . . . .
+        . . . f f 5 f 5 5 5 f . . . . .
+        . . . f 5 f 5 5 5 5 5 f . . . .
+        . . f 5 f 5 5 5 4 5 5 f . . . .
+        . . f 5 f 5 5 5 4 4 5 5 f . . .
+        . . f 5 f 5 5 5 4 4 5 5 f . . .
+        . . f 5 f 5 5 5 4 5 5 f . . . .
+        . . . f 5 f 5 5 5 5 5 f . . . .
+        . . . . f 5 f 5 5 5 f . . . . .
+        . . . . f f f f f f . . . . . .
+        . . . . . . . . . . . . . . . .
+        . . . . . . . . . . . . . . . .
+        . . . . . . . . . . . . . . . .
+        `)
+    coinAnimation.addAnimationFrame(img`
+        . . . . . . . . . . . . . . . .
+        . . . . . . . . . . . . . . . .
+        . . . . . . . . . . . . . . . .
+        . . . . . f f f f f . . . . . .
+        . . . . f f 5 f 5 f f . . . . .
+        . . . f f 5 f 5 5 5 f . . . . .
+        . . . f 5 f 5 5 5 5 f f . . . .
+        . . . f 5 f 5 5 4 5 5 f . . . .
+        . . . f 5 f 5 5 4 5 5 f . . . .
+        . . . f 5 f 5 5 5 5 f f . . . .
+        . . . f f 5 f 5 5 5 f . . . . .
+        . . . . f f 5 f 5 f f . . . . .
+        . . . . . f f f f f . . . . . .
+        . . . . . . . . . . . . . . . .
+        . . . . . . . . . . . . . . . .
+        . . . . . . . . . . . . . . . .
+        `)
+    coinAnimation.addAnimationFrame(img`
+        . . . . . . . . . . . . . . . .
+        . . . . . . . . . . . . . . . .
+        . . . . . . . . . . . . . . . .
+        . . . . . . f f f f . . . . . .
+        . . . . . f f f f f . . . . . .
+        . . . . . f 5 f 5 f f . . . . .
+        . . . . . f 5 f 5 5 f . . . . .
+        . . . . . f 5 f 5 5 f . . . . .
+        . . . . . f 5 f 5 5 f . . . . .
+        . . . . . f 5 f 5 5 f . . . . .
+        . . . . . f 5 f 5 f f . . . . .
+        . . . . . f f f f f . . . . . .
+        . . . . . . f f f f . . . . . .
+        . . . . . . . . . . . . . . . .
+        . . . . . . . . . . . . . . . .
+        . . . . . . . . . . . . . . . .
+        `)
+    coinAnimation.addAnimationFrame(img`
+        . . . . . . . . . . . . . . . .
+        . . . . . . . . . . . . . . . .
+        . . . . . . . . . . . . . . . .
+        . . . . . . f f f f . . . . . .
+        . . . . . . f f f f f . . . . .
+        . . . . . f f 5 f 5 f . . . . .
+        . . . . . f 5 5 f 5 f . . . . .
+        . . . . . f 5 5 f 5 f . . . . .
+        . . . . . f 5 5 f 5 f . . . . .
+        . . . . . f 5 5 f 5 f . . . . .
+        . . . . . f f 5 f 5 f . . . . .
+        . . . . . . f f f f f . . . . .
+        . . . . . . f f f f . . . . . .
+        . . . . . . . . . . . . . . . .
+        . . . . . . . . . . . . . . . .
+        . . . . . . . . . . . . . . . .
+        `)
+    coinAnimation.addAnimationFrame(img`
+        . . . . . . . . . . . . . . . .
+        . . . . . . . . . . . . . . . .
+        . . . . . . . . . . . . . . . .
+        . . . . . . f f f f f . . . . .
+        . . . . . f f 5 f 5 f f . . . .
+        . . . . . f 5 5 5 f 5 f f . . .
+        . . . . f f 5 5 5 5 f 5 f . . .
+        . . . . f 5 5 4 5 5 f 5 f . . .
+        . . . . f 5 5 4 5 5 f 5 f . . .
+        . . . . f f 5 5 5 5 f 5 f . . .
+        . . . . . f 5 5 5 f 5 f f . . .
+        . . . . . f f 5 f 5 f f . . . .
+        . . . . . . f f f f f . . . . .
+        . . . . . . . . . . . . . . . .
+        . . . . . . . . . . . . . . . .
+        . . . . . . . . . . . . . . . .
+        `)
+    coinAnimation.addAnimationFrame(img`
+        . . . . . . . . . . . . . . . .
+        . . . . . . . . . . . . . . . .
+        . . . . . . . . . . . . . . . .
+        . . . . . . f f f f f f . . . .
+        . . . . . f 5 5 5 f 5 f f . . .
+        . . . . f 5 5 5 5 5 f 5 f . . .
+        . . . . f 5 5 4 5 5 5 f 5 f . .
+        . . . f 5 5 4 4 5 5 5 f 5 f . .
+        . . . f 5 5 4 4 5 5 5 f 5 f . .
+        . . . . f 5 5 4 5 5 5 f 5 f . .
+        . . . . f 5 5 5 5 5 f 5 f . . .
+        . . . . . f 5 5 5 f 5 f . . . .
+        . . . . . . f f f f f f . . . .
+        . . . . . . . . . . . . . . . .
+        . . . . . . . . . . . . . . . .
+        . . . . . . . . . . . . . . . .
+        `)
+}
+sprites.onOverlap(SpriteKind.Player, SpriteKind.Coin, function (sprite, otherSprite) {
+    otherSprite.destroy(effects.trail, 250)
+    otherSprite.y += -3
+    info.changeScoreBy(3)
+    music.baDing.play()
+})
+function attemptJump () {
+    // else if: either fell off a ledge, or double jumping
+    if (hero.isHittingTile(CollisionDirection.Bottom)) {
+        hero.vy = -4 * pixelsToMeters
+    } else if (canDoubleJump) {
+        doubleJumpSpeed = -3 * pixelsToMeters
+        // Good double jump
+        if (hero.vy &gt;= -40) {
+            doubleJumpSpeed = -4.5 * pixelsToMeters
+            hero.startEffect(effects.trail, 500)
+            scene.cameraShake(2, 250)
+        }
+        hero.vy = doubleJumpSpeed
+        canDoubleJump = false
+    }
+}
+function animateIdle () {
+    mainIdleLeft = animation.createAnimation(ActionKind.IdleLeft, 100)
+    animation.attachAnimation(hero, mainIdleLeft)
+    mainIdleLeft.addAnimationFrame(img`
+        . . . . . . . . . . . . . . . .
+        . . . f f f f f f f f f f . . .
+        . . f e e e e e e e e e e f . .
+        . f e e e e e e e e e e e e f .
+        . f d d d d d d d d d e e d f .
+        . f d d f d d d d f d d e d f .
+        . f d d f d d d d f d d d e f .
+        . f d d f d d d d f d d d f . .
+        . f d d d d d d d d d d d f . .
+        . f a c c c c c c c c a b f . .
+        . f d d c c c c c c d d d f . .
+        . f d f f f b b f f f d d f . .
+        . . f a a a a a a a a a b f . .
+        . . . f a a b f f a a b f . . .
+        . . . f a a b f f a a b f . . .
+        . . . . f f f . . f f f . . . .
+        `)
+    mainIdleRight = animation.createAnimation(ActionKind.IdleRight, 100)
+    animation.attachAnimation(hero, mainIdleRight)
+    mainIdleRight.addAnimationFrame(img`
+        . . . . . . . . . . . . . . . .
+        . . . f f f f f f f f f f . . .
+        . . f e e e e e e e e e e f . .
+        . f e e e e e e e e e e e e f .
+        . f d e e d d d d d d d d d f .
+        . f d e d d f d d d d f d d f .
+        . f e d d d f d d d d f d d f .
+        . . f d d d f d d d d f d d f .
+        . . f d d d d d d d d d d d f .
+        . . f b a c c c c c c c c a f .
+        . . f d d d c c c c c c d d f .
+        . . f d d f f f b b f f f d f .
+        . . f b a a a a a a a a a f . .
+        . . . f b a a f f b a a f . . .
+        . . . f b a a f f b a a f . . .
+        . . . . f f f . . f f f . . . .
+        `)
+}
+function setLevelTileMap (level: number) {
+    clearGame()
+    if (level == 0) {
+        tiles.setTilemap(tilemap`level`)
+    } else if (level == 1) {
+        tiles.setTilemap(tilemap`level_0`)
+    } else if (level == 2) {
+        tiles.setTilemap(tilemap`level_1`)
+    } else if (level == 3) {
+        tiles.setTilemap(tilemap`level_2`)
+    } else if (level == 4) {
+        tiles.setTilemap(tilemap`level_3`)
+    } else if (level == 5) {
+        tiles.setTilemap(tilemap`level_4`)
+    } else if (level == 6) {
+        tiles.setTilemap(tilemap`level_5`)
+    } else if (level == 7) {
+        tiles.setTilemap(tilemap`level_6`)
+    }
+    initializeLevel(level)
+}
+function initializeFlierAnimations () {
+    flierFlying = animation.createAnimation(ActionKind.Flying, 100)
+    flierFlying.addAnimationFrame(img`
+        . . . . . . . . . . . . . . . .
+        . . . . . . . . . . . . . . . .
+        . . . . . . . . . . . . . . . .
+        . . . . . f f f f f f f . . . .
+        . . . . f 4 4 4 4 4 4 4 f . . .
+        . . . f 4 5 5 4 4 4 5 5 4 f . .
+        . f . f 4 4 4 5 4 5 4 4 4 f . f
+        . f f 4 4 4 4 4 4 4 4 4 4 4 f f
+        . f 4 4 4 4 4 5 4 5 4 4 4 4 4 f
+        . f 4 4 4 4 4 5 4 5 4 4 4 4 4 f
+        . f f 4 4 4 4 4 4 4 4 4 4 4 f f
+        . . . f 4 4 5 5 5 5 5 4 4 f . .
+        . . . . f 4 5 4 4 4 5 4 f . . .
+        . . . . . f f f f f f f . . . .
+        . . . . . . . . . . . . . . . .
+        . . . . . . . . . . . . . . . .
+        `)
+    flierFlying.addAnimationFrame(img`
+        . . . . . . . . . . . . . . . .
+        . . . . . . . . . . . . . . . .
+        . . . . . . . . . . . . . . . .
+        . . . . . f f f f f f f . . . .
+        . . . . f 4 4 4 4 4 4 4 f . . .
+        . . . f 4 5 5 4 4 4 5 5 4 f . .
+        . . . f 4 4 4 5 4 5 4 4 4 f . .
+        . . f 4 4 4 4 4 4 4 4 4 4 4 f .
+        . . f 4 4 4 4 5 4 5 4 4 4 4 f .
+        . f 4 4 4 4 4 5 4 5 4 4 4 4 4 f
+        . f 4 4 4 4 4 4 4 4 4 4 4 4 4 f
+        . f 4 f 4 4 5 5 5 5 5 4 4 f 4 f
+        . f f . f 4 5 4 4 4 5 4 f . f f
+        . f . . . f f f f f f f . . . f
+        . . . . . . . . . . . . . . . .
+        . . . . . . . . . . . . . . . .
+        `)
+    flierFlying.addAnimationFrame(img`
+        . . . . . . . . . . . . . . . .
+        . . . . . . . . . . . . . . . .
+        . . . . . . . . . . . . . . . .
+        . . . . . f f f f f f f . . . .
+        . . . . f 4 4 4 4 4 4 4 f . . .
+        . . . f 4 5 5 4 4 4 5 5 4 f . .
+        . f . f 4 4 4 5 4 5 4 4 4 f . f
+        . f f 4 4 4 4 4 4 4 4 4 4 4 f f
+        . f 4 4 4 4 4 5 4 5 4 4 4 4 4 f
+        . f 4 4 4 4 4 5 4 5 4 4 4 4 4 f
+        . f f 4 4 4 4 4 4 4 4 4 4 4 f f
+        . . . f 4 4 5 5 5 5 5 4 4 f . .
+        . . . . f 4 5 4 4 4 5 4 f . . .
+        . . . . . f f f f f f f . . . .
+        . . . . . . . . . . . . . . . .
+        . . . . . . . . . . . . . . . .
+        `)
+    flierIdle = animation.createAnimation(ActionKind.Idle, 100)
+    flierIdle.addAnimationFrame(img`
+        . . . . . . . . . . . . . . . .
+        . . . . . . . . . . . . . . . .
+        . . . . . . . . . . . . . . . .
+        . . . . . f f f f f f f . . . .
+        . . . . f 4 4 4 4 4 4 4 f . . .
+        . . . f 4 5 5 4 4 4 5 5 4 f . .
+        . f . f 4 4 4 5 4 5 4 4 4 f . f
+        . f f 4 4 4 4 4 4 4 4 4 4 4 f f
+        . f 4 4 4 4 4 5 4 5 4 4 4 4 4 f
+        . f 4 4 4 4 4 5 4 5 4 4 4 4 4 f
+        . f f 4 4 4 4 4 4 4 4 4 4 4 f f
+        . . . f 4 4 5 5 5 5 5 4 4 f . .
+        . . . . f 4 5 4 4 4 5 4 f . . .
+        . . . . . f f f f f f f . . . .
+        . . . . . . . . . . . . . . . .
+        . . . . . . . . . . . . . . . .
+        `)
+}
+controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
+    attemptJump()
+})
+function animateRun () {
+    mainRunLeft = animation.createAnimation(ActionKind.RunningLeft, 100)
+    animation.attachAnimation(hero, mainRunLeft)
+    mainRunLeft.addAnimationFrame(img`
+        . . . . . . . . . . . . . . . .
+        . . . f f f f f f f . . . . . .
+        . . f e e e e e e e f . . . . .
+        . f e e e e e e e e e f . . . .
+        . f d d d d e d d e e f . . . .
+        . f d d f d d e d e e f . . . .
+        . f d d f d d d e e e f . . . .
+        . f d d f d d d d d d f . . . .
+        . f d d d d d d d d d f . . . .
+        . . f c c c a a c c b f . . . .
+        . . f c c d d d c c b f . . . .
+        . . f b f f d d f f f f . . . .
+        . . f a a a a a a a b f . . . .
+        . . . f a a a a b f f . . . . .
+        . . . f a a a a b f . . . . . .
+        . . . . f f f f f . . . . . . .
+        `)
+    mainRunLeft.addAnimationFrame(img`
+        . . . . . . . . . . . . . . . .
+        . . . . . . . . . . . . . . . .
+        . . . f f f f f f f . . . . . .
+        . . f e e e e e e e f . . . . .
+        . f e e e e e e e e e f . . . .
+        . f d d d d e d d e e f . . . .
+        . f d d f d d e d e e f . . . .
+        . f d d f d d d e e e f . . . .
+        . f d d f d d d d d d f . . . .
+        . f d d d d d d d d d f . . . .
+        . . f c c c c a a c b f . . . .
+        . . f c c c c d d c b f . . . .
+        . . f b f f d d d f f f f . . .
+        . . f a a a a a a a a b f f . .
+        . . . f a a b f f a a a f f . .
+        . . . . f f f . f f f f f . . .
+        `)
+    mainRunLeft.addAnimationFrame(img`
+        . . . . . . . . . . . . . . . .
+        . . . f f f f f f f . . . . . .
+        . . f e e e e e e e f . . . . .
+        . f e e e e e e e e e f . . . .
+        . f d d d d e d d e e f . . . .
+        . f d d f d d e d e e f . . . .
+        . f d d f d d d e e e f . . . .
+        . f d d f d d d d d d f . . . .
+        . f d d d d d d d d d f . . . .
+        . . f c c c a a c c b f . . . .
+        . . f c c d d d c c b f . . . .
+        . . f b f f d d f f f f . . . .
+        . . f a a a a a a a b f . . . .
+        . . . f a a a a b f f . . . . .
+        . . . f a a a a b f . . . . . .
+        . . . . f f f f f . . . . . . .
+        `)
+    mainRunLeft.addAnimationFrame(img`
+        . . . . . . . . . . . . . . . .
+        . . . . . . . . . . . . . . . .
+        . . . f f f f f f f . . . . . .
+        . . f e e e e e e e f . . . . .
+        . f e e e e e e e e e f . . . .
+        . f d d d d e d d e e f . . . .
+        . f d d f d d e d e e f . . . .
+        . f d d f d d d e e e f . . . .
+        . f d d f d d d d d d f . . . .
+        . f d d d d d d d d d f . . . .
+        . . f c a a c c c c b f . . . .
+        . f d d d b c c c c b f . . . .
+        f f f d d f f f f f f f . . . .
+        f f f a a a a a a a b f . . . .
+        . f a a b f a a b f f . . . . .
+        . f f f f . f f f . . . . . . .
+        `)
+    mainRunRight = animation.createAnimation(ActionKind.RunningRight, 100)
+    animation.attachAnimation(hero, mainRunRight)
+    mainRunRight.addAnimationFrame(img`
+        . . . . . . . . . . . . . . . .
+        . . . . . . f f f f f f f . . .
+        . . . . . f e e e e e e e f . .
+        . . . . f e e e e e e e e e f .
+        . . . . f e e d d e d d d d f .
+        . . . . f e e d e d d f d d f .
+        . . . . f e e e d d d f d d f .
+        . . . . f d d d d d d f d d f .
+        . . . . f d d d d d d d d d f .
+        . . . . f b c c a a c c c f . .
+        . . . . f b c c d d d c c f . .
+        . . . . f f f f d d f f b f . .
+        . . . . f b a a a a a a a f . .
+        . . . . . f f b a a a a f . . .
+        . . . . . . f b a a a a f . . .
+        . . . . . . . f f f f f . . . .
+        `)
+    mainRunRight.addAnimationFrame(img`
+        . . . . . . . . . . . . . . . .
+        . . . . . . . . . . . . . . . .
+        . . . . . . f f f f f f f . . .
+        . . . . . f e e e e e e e f . .
+        . . . . f e e e e e e e e e f .
+        . . . . f e e d d e d d d d f .
+        . . . . f e e d e d d f d d f .
+        . . . . f e e e d d d f d d f .
+        . . . . f d d d d d d f d d f .
+        . . . . f d d d d d d d d d f .
+        . . . . f b c a a c c c c f . .
+        . . . . f b c d d c c c c f . .
+        . . . f f f f d d d f f b f . .
+        . . f f b a a a a a a a a f . .
+        . . f f a a a f f b a a f . . .
+        . . . f f f f . . f f f . . . .
+        `)
+    mainRunRight.addAnimationFrame(img`
+        . . . . . . . . . . . . . . . .
+        . . . . . . f f f f f f f . . .
+        . . . . . f e e e e e e e f . .
+        . . . . f e e e e e e e e e f .
+        . . . . f e e d d e d d d d f .
+        . . . . f e e d e d d f d d f .
+        . . . . f e e e d d d f d d f .
+        . . . . f d d d d d d f d d f .
+        . . . . f d d d d d d d d d f .
+        . . . . f b c c a a c c c f . .
+        . . . . f b c c d d d c c f . .
+        . . . . f f f f d d f f b f . .
+        . . . . f b a a a a a a a f . .
+        . . . . . f f b a a a a f . . .
+        . . . . . . f b a a a a f . . .
+        . . . . . . . f f f f f . . . .
+        `)
+    mainRunRight.addAnimationFrame(img`
+        . . . . . . . . . . . . . . . .
+        . . . . . . . . . . . . . . . .
+        . . . . . . f f f f f f f . . .
+        . . . . . f e e e e e e e f . .
+        . . . . f e e e e e e e e e f .
+        . . . . f e e d d e d d d d f .
+        . . . . f e e d e d d f d d f .
+        . . . . f e e e d d d f d d f .
+        . . . . f d d d d d d f d d f .
+        . . . . f d d d d d d d d d f .
+        . . . . f b c c c c a a c f . .
+        . . . . f b c c c c b d d d f .
+        . . . . f f f f f f f d d f f f
+        . . . . f b a a a a a a a f f f
+        . . . . . f f b a a f b a a f .
+        . . . . . . . f f f . f f f . .
+        `)
+}
+function animateJumps () {
+    // Because there isn&#39;t currently an easy way to say &quot;play this animation a single time
+    // and stop at the end&quot;, this just adds a bunch of the same frame at the end to accomplish
+    // the same behavior
+    mainJumpLeft = animation.createAnimation(ActionKind.JumpingLeft, 100)
+    animation.attachAnimation(hero, mainJumpLeft)
+    mainJumpLeft.addAnimationFrame(img`
+        . . . . . . . . . . . . . . . .
+        . . . f f f f f f f f f f . . .
+        . . f e e e e e e e e e e f . .
+        . f e e e e e e e e e e e e f .
+        . f d d d d d d d d d e e d f .
+        . f d d f d d d d f d d e d f .
+        . f d d f d d d d f d d d e f .
+        . f d d f d d d d f d d d f . .
+        . f d d d d d d d d d d d f . .
+        . f a c c c c c c c c a b f . .
+        . f d d c c c c c c d d d f . .
+        . f d f f f b b f f f d d f . .
+        . . f a a a a a a a a a b f . .
+        . . . f a a b f f a a b f . . .
+        . . . f a a b f f a a b f . . .
+        . . . . f f f . . f f f . . . .
+        `)
+    mainJumpLeft.addAnimationFrame(img`
+        . . . . . . . . . . . . . . . .
+        . . . f f f f f f f f f f . . .
+        . . f e e e e e e e e e e f . .
+        . f e e e e e e e e e e e e f .
+        . f d d d d d d d d d e e d f .
+        . f d d f d d d d f d d e d f .
+        . f d d f d d d d f d d d e f .
+        . f d d f d d d d f d d d f . .
+        . f d d d d d d d d d d d f . .
+        . f a c c c c c c c c a b f . .
+        . f d d c c c c c c d d d f . .
+        . f d f f f b b f f f d d f . .
+        . . f a a a a a a a a a b f . .
+        . . . f a a b f f a a b f . . .
+        . . . . f f f . . f f f . . . .
+        . . . . . . . . . . . . . . . .
+        `)
+    for (let index = 0; index &lt; 30; index++) {
+        mainJumpLeft.addAnimationFrame(img`
+            . . . . . . . . . . . . . . . .
+            . . . f f f f f f f f f f . . .
+            . . f e e e e e e e e e e f . .
+            . f e e e e e e e e e e e e f .
+            . f d d d d d d d d d e e d f .
+            . f d d f d d d d f d d e d f .
+            . f d d f d d d d f d d d e f .
+            . f d d f d d d d f d d d f . .
+            . f d d d d d d d d d d d f f .
+            . d a b c c c c c c c c b a d .
+            . d a c c c c c c c c c c a d .
+            . f f f f f b b f f f f f f f .
+            . . f a a a a a a a a a b f . .
+            . . . f a a b f f a a b f . . .
+            . . . . f f f . . f f f . . . .
+            . . . . . . . . . . . . . . . .
+            `)
+    }
+    mainJumpRight = animation.createAnimation(ActionKind.JumpingRight, 100)
+    animation.attachAnimation(hero, mainJumpRight)
+    mainJumpRight.addAnimationFrame(img`
+        . . . . . . . . . . . . . . . .
+        . . . f f f f f f f f f f . . .
+        . . f e e e e e e e e e e f . .
+        . f e e e e e e e e e e e e f .
+        . f d e e d d d d d d d d d f .
+        . f d e d d f d d d d f d d f .
+        . f e d d d f d d d d f d d f .
+        . . f d d d f d d d d f d d f .
+        . . f d d d d d d d d d d d f .
+        . . f b a c c c c c c c c a f .
+        . . f d d d c c c c c c d d f .
+        . . f d d f f f b b f f f d f .
+        . . f b a a a a a a a a a f . .
+        . . . f b a a f f b a a f . . .
+        . . . f b a a f f b a a f . . .
+        . . . . f f f . . f f f . . . .
+        `)
+    mainJumpRight.addAnimationFrame(img`
+        . . . . . . . . . . . . . . . .
+        . . . f f f f f f f f f f . . .
+        . . f e e e e e e e e e e f . .
+        . f e e e e e e e e e e e e f .
+        . f d e e d d d d d d d d d f .
+        . f d e d d f d d d d f d d f .
+        . f e d d d f d d d d f d d f .
+        . . f d d d f d d d d f d d f .
+        . . f d d d d d d d d d d d f .
+        . . f b a c c c c c c c c a f .
+        . . f d d d c c c c c c d d f .
+        . . f d d f f f b b f f f d f .
+        . . f b a a a a a a a a a f . .
+        . . . f b a a f f b a a f . . .
+        . . . . f f f . . f f f . . . .
+        . . . . . . . . . . . . . . . .
+        `)
+    for (let index = 0; index &lt; 30; index++) {
+        mainJumpRight.addAnimationFrame(img`
+            . . . . . . . . . . . . . . . .
+            . . . f f f f f f f f f f . . .
+            . . f e e e e e e e e e e f . .
+            . f e e e e e e e e e e e e f .
+            . f d e e d d d d d d d d d f .
+            . f d e d d f d d d d f d d f .
+            . f e d d d f d d d d f d d f .
+            . . f d d d f d d d d f d d f .
+            . f f d d d d d d d d d d d f .
+            . d a b c c c c c c c c b a d .
+            . d a c c c c c c c c c c a d .
+            . f f f f f f f b b f f f f f .
+            . . f b a a a a a a a a a f . .
+            . . . f b a a f f b a a f . . .
+            . . . . f f f . . f f f . . . .
+            . . . . . . . . . . . . . . . .
+            `)
+    }
+}
+function animateCrouch () {
+    mainCrouchLeft = animation.createAnimation(ActionKind.CrouchLeft, 100)
+    animation.attachAnimation(hero, mainCrouchLeft)
+    mainCrouchLeft.addAnimationFrame(img`
+        . . . . . . . . . . . . . . . .
+        . . . . . . . . . . . . . . . .
+        . . . . . . . . . . . . . . . .
+        . . . f f f f f f f f f f . . .
+        . . f e e e e e e e e e e f . .
+        . f e e e e e e e e e e e e f .
+        . f d d d d d d d d d e e d f .
+        . f d d f d d d d f d d e d f .
+        . f d d f d d d d f d d d e f .
+        . f d d f d d d d f d d d f . .
+        . f d d d d d d d d d d d f . .
+        . f a c c c c c c c c a b f . .
+        . f d c c c c c c c c c d d f .
+        f d d f f f b b f f f f d d f .
+        . f f a a a a a a a a a b f . .
+        . . . f f f f . f f f f f . . .
+        `)
+    mainCrouchRight = animation.createAnimation(ActionKind.CrouchRight, 100)
+    animation.attachAnimation(hero, mainCrouchRight)
+    mainCrouchRight.addAnimationFrame(img`
+        . . . . . . . . . . . . . . . .
+        . . . . . . . . . . . . . . . .
+        . . . . . . . . . . . . . . . .
+        . . . f f f f f f f f f f . . .
+        . . f e e e e e e e e e e f . .
+        . f e e e e e e e e e e e e f .
+        . f d e e d d d d d d d d d f .
+        . f d e d d f d d d d f d d f .
+        . f e d d d f d d d d f d d f .
+        . . f d d d f d d d d f d d f .
+        . . f d d d d d d d d d d d f .
+        . . f b a c c c c c c c c a f .
+        . f d d c c c c c c c c c d f .
+        . f d d f f f f b b f f f d d f
+        . . f b a a a a a a a a a f f .
+        . . . f f f f f . f f f f . . .
+        `)
+}
+function clearGame () {
+    for (let value of sprites.allOfKind(SpriteKind.Bumper)) {
+        value.destroy()
+    }
+    for (let value2 of sprites.allOfKind(SpriteKind.Coin)) {
+        value2.destroy()
+    }
+    for (let value3 of sprites.allOfKind(SpriteKind.Goal)) {
+        value3.destroy()
+    }
+    for (let value4 of sprites.allOfKind(SpriteKind.Flier)) {
+        value4.destroy()
+    }
+}
+sprites.onOverlap(SpriteKind.Player, SpriteKind.Flier, function (sprite, otherSprite) {
+    info.changeLifeBy(-1)
+    sprite.say(&quot;Ow!&quot;, invincibilityPeriod * 1.5)
+    music.powerDown.play()
+    pause(invincibilityPeriod * 1.5)
+})
+function createEnemies () {
+    // enemy that moves back and forth
+    for (let value5 of tiles.getTilesByType(myTiles.tile4)) {
+        bumper = sprites.create(img`
+            . . . . . . . . . . . . . . . .
+            . . . . . . . . . . . . . . . .
+            . . . . f f f f f f . . . . . .
+            . . . f 7 2 7 7 7 2 f . . . . .
+            . . f 7 7 7 2 7 2 7 7 f . . . .
+            . . f 7 7 7 7 7 7 7 7 7 f . . .
+            . f 7 7 7 2 7 7 7 2 7 7 f . . .
+            . f 7 7 7 2 7 7 7 2 7 7 7 f . .
+            . f 7 7 7 7 7 7 7 7 7 7 7 7 f .
+            . f 7 7 7 7 2 2 2 7 7 7 7 7 f .
+            . . f 7 7 2 2 7 2 2 7 7 7 7 f .
+            . . f 7 7 2 7 7 7 2 2 7 7 7 f .
+            . . . f 7 7 7 7 7 7 7 7 7 7 f .
+            . . . . f f 7 7 7 7 7 7 7 f . .
+            . . . . . . f f f f f f f . . .
+            . . . . . . . . . . . . . . . .
+            `, SpriteKind.Bumper)
+        tiles.placeOnTile(bumper, value5)
+        tiles.setTileAt(value5, myTiles.tile0)
+        bumper.ay = gravity
+        if (Math.percentChance(50)) {
+            bumper.vx = Math.randomRange(30, 60)
+        } else {
+            bumper.vx = Math.randomRange(-60, -30)
+        }
+    }
+    // enemy that flies at player
+    for (let value6 of tiles.getTilesByType(myTiles.tile7)) {
+        flier = sprites.create(img`
+            . . . . . . . . . . . . . . . .
+            . . . . . . . . . . . . . . . .
+            . . . . . . . . . . . . . . . .
+            . . . . . f f f f f f f . . . .
+            . . . . f 4 4 4 4 4 4 4 f . . .
+            . . . f 4 5 5 4 4 4 5 5 4 f . .
+            . f . f 4 4 4 5 4 5 4 4 4 f . f
+            . f f 4 4 4 4 4 4 4 4 4 4 4 f f
+            . f 4 4 4 4 4 5 4 5 4 4 4 4 4 f
+            . f 4 4 4 4 4 5 4 5 4 4 4 4 4 f
+            . f f 4 4 4 4 4 4 4 4 4 4 4 f f
+            . . . f 4 4 5 5 5 5 5 4 4 f . .
+            . . . . f 4 5 4 4 4 5 4 f . . .
+            . . . . . f f f f f f f . . . .
+            . . . . . . . . . . . . . . . .
+            . . . . . . . . . . . . . . . .
+            `, SpriteKind.Flier)
+        tiles.placeOnTile(flier, value6)
+        tiles.setTileAt(value6, myTiles.tile0)
+        animation.attachAnimation(flier, flierFlying)
+        animation.attachAnimation(flier, flierIdle)
+    }
+}
+controller.down.onEvent(ControllerButtonEvent.Pressed, function () {
+    if (!(hero.isHittingTile(CollisionDirection.Bottom))) {
+        hero.vy += 80
+    }
+})
+function showInstruction (text: string) {
+    game.showLongText(text, DialogLayout.Bottom)
+    music.baDing.play()
+    info.changeScoreBy(1)
+}
+function initializeHeroAnimations () {
+    animateRun()
+    animateIdle()
+    animateCrouch()
+    animateJumps()
+}
+function createPlayer (player2: Sprite) {
+    player2.ay = gravity
+    scene.cameraFollowSprite(player2)
+    controller.moveSprite(player2, 100, 0)
+    player2.z = 5
+    info.setLife(3)
+    info.setScore(0)
+}
+function initializeLevel (level: number) {
+    effects.clouds.startScreenEffect()
+    playerStartLocation = tiles.getTilesByType(myTiles.tile6)[0]
+    tiles.placeOnTile(hero, playerStartLocation)
+    tiles.setTileAt(playerStartLocation, myTiles.tile0)
+    createEnemies()
+    spawnGoals()
+}
+scene.onOverlapTile(SpriteKind.Player, myTiles.tile1, function (sprite, location) {
+    info.changeLifeBy(1)
+    currentLevel += 1
+    if (hasNextLevel()) {
+        game.splash(&quot;Next level unlocked!&quot;)
+        setLevelTileMap(currentLevel)
+    } else {
+        game.over(true, effects.confetti)
+    }
+})
+function hasNextLevel () {
+    return currentLevel != levelCount
+}
+function spawnGoals () {
+    for (let value7 of tiles.getTilesByType(myTiles.tile5)) {
+        coin = sprites.create(img`
+            . . . . . . . . . . . . . . . .
+            . . . . . . . . . . . . . . . .
+            . . . . . . . . . . . . . . . .
+            . . . . . . f f f f . . . . . .
+            . . . . f f 5 5 5 5 f f . . . .
+            . . . . f 5 5 5 5 5 5 f . . . .
+            . . . f 5 5 5 4 4 5 5 5 f . . .
+            . . . f 5 5 5 4 4 5 5 5 f . . .
+            . . . f 5 5 5 4 4 5 5 5 f . . .
+            . . . f 5 5 5 4 4 5 5 5 f . . .
+            . . . . f 5 5 5 5 5 5 f . . . .
+            . . . . f f 5 5 5 5 f f . . . .
+            . . . . . . f f f f . . . . . .
+            . . . . . . . . . . . . . . . .
+            . . . . . . . . . . . . . . . .
+            . . . . . . . . . . . . . . . .
+            `, SpriteKind.Coin)
+        tiles.placeOnTile(coin, value7)
+        animation.attachAnimation(coin, coinAnimation)
+        animation.setAction(coin, ActionKind.Idle)
+        tiles.setTileAt(value7, myTiles.tile0)
+    }
+}
+let heroFacingLeft = false
+let coin: Sprite = null
+let playerStartLocation: tiles.Location = null
+let flier: Sprite = null
+let bumper: Sprite = null
+let mainCrouchRight: animation.Animation = null
+let mainCrouchLeft: animation.Animation = null
+let mainJumpRight: animation.Animation = null
+let mainJumpLeft: animation.Animation = null
+let mainRunRight: animation.Animation = null
+let mainRunLeft: animation.Animation = null
+let flierIdle: animation.Animation = null
+let flierFlying: animation.Animation = null
+let mainIdleRight: animation.Animation = null
+let mainIdleLeft: animation.Animation = null
+let doubleJumpSpeed = 0
+let canDoubleJump = false
+let coinAnimation: animation.Animation = null
+let currentLevel = 0
+let levelCount = 0
+let gravity = 0
+let pixelsToMeters = 0
+let invincibilityPeriod = 0
+let hero: Sprite = null
+hero = sprites.create(img`
+    . . . . . . . . . . . . . . . .
+    . . . f f f f f f f f f f . . .
+    . . f e e e e e e e e e e f . .
+    . f e e e e e e e e e e e e f .
+    . f d e e d d d d d d d d d f .
+    . f d e d d f d d d d f d d f .
+    . f e d d d f d d d d f d d f .
+    . . f d d d f d d d d f d d f .
+    . . f d d d d d d d d d d d f .
+    . . f b a c c c c c c c c a f .
+    . . f d d d c c c c c c d d f .
+    . . f d d f f f b b f f f d f .
+    . . f b a a a a a a a a a f . .
+    . . . f b a a f f b a a f . . .
+    . . . f b a a f f b a a f . . .
+    . . . . f f f . . f f f . . . .
+    `, SpriteKind.Player)
+// how long to pause between each contact with a
+// single enemy
+invincibilityPeriod = 600
+pixelsToMeters = 30
+gravity = 9.81 * pixelsToMeters
+scene.setBackgroundImage(img`
+    9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999
+    9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999
+    9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999
+    9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999
+    9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999
+    9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999
+    9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999
+    9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999
+    9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999
+    9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999
+    9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999
+    9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999
+    9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999
+    9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999
+    9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999
+    9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999
+    9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999
+    9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999
+    9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999
+    9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999
+    9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999
+    9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999
+    9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999
+    9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999
+    9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999
+    9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999
+    9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999
+    9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999
+    9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999
+    9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999
+    9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999
+    9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999
+    9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999
+    9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999
+    9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999
+    9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999
+    9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999
+    9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999
+    9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999
+    9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999
+    9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999
+    9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999
+    9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999
+    9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999
+    9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999
+    9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999
+    9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999
+    9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999
+    9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999
+    9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999
+    9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999
+    9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999
+    9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999
+    9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999
+    9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999
+    9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999
+    9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999
+    9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999
+    9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999
+    9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999
+    8999999989999999899999998999999989999999899999998999999989999999899999998999999989999999899999998999999989999999899999998999999989999999899999998999999989999999
+    9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999
+    9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999
+    9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999
+    9999899999998999999989999999899999998999999989999999899999998999999989999999899999998999999989999999899999998999999989999999899999998999999989999999899999998999
+    9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999
+    9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999
+    9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999
+    8999899989998999899989998999899989998999899989998999899989998999899989998999899989998999899989998999899989998999899989998999899989998999899989998999899989998999
+    9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999
+    9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999
+    9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999
+    8999899989998999899989998999899989998999899989998999899989998999899989998999899989998999899989998999899989998999899989998999899989998999899989998999899989998999
+    9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999
+    9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999
+    9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999
+    8999899989998999899989998999899989998999899989998999899989998999899989998999899989998999899989998999899989998999899989998999899989998999899989998999899989998999
+    9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999
+    9989999999899999998999999989999999899999998999999989999999899999998999999989999999899999998999999989999999899999998999999989999999899999998999999989999999899999
+    9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999
+    8999899989998999899989998999899989998999899989998999899989998999899989998999899989998999899989998999899989998999899989998999899989998999899989998999899989998999
+    9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999
+    9989998999899989999999899999998999999989999999899999998999999989999999899999998999999989999999899999998999999989999999899999998999999989999999899999998999999989
+    9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999
+    8999899989998999899989998999899989998999899989998999899989998999899989998999899989998999899989998999899989998999899989998999899989998999899989998999899989998999
+    9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999
+    9989998999899989998999899989998999899989998999899989998999899989998999899989998999899989998999899989998999899989998999899989998999899989998999899989998999899989
+    9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999
+    8999899989998999899989998999899989998999899989998999899989998999899989998999899989998999899989998999899989998999899989998999899989998999899989998999899989998999
+    9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999
+    9989998999899989998999899989998999899989998999899989998999899989998999899989998999899989998999899989998999899989998999899989998999899989998999899989998999899989
+    9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999
+    8989899989898999898989998989899989898999898989998989899989898999898989998989899989898999898989998989899989898999898989998989899989898999898989998989899989898999
+    9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999
+    9989998999899989998999899989998999899989998999899989998999899989998999899989998999899989998999899989998999899989998999899989998999899989998999899989998999899989
+    9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999
+    8999898989998989899989898999898989998989899989898999898989998989899989898999898989998989899989898999898989998989899989898999898989998989899989898999898989998989
+    9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999
+    9989998999899989998999899989998999899989998999899989998999899989998999899989998999899989998999899989998999899989998999899989998999899989998999899989998999899989
+    9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999
+    8989898989898989898989898989898989898989898989898989898989898989898989898989898989898989898989898989898989898989898989898989898989898989898989898989898989898989
+    9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999
+    8989998989899989898999898989998989899989898999898989998989899989898999898989998989899989898999898989998989899989898999898989998999899989998999899989998999899989
+    9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999
+    8989898989898989898989898989898989898989898989898989898989898989898989898989898989898989898989898989898989898989898989898989898989898989898989898989898989898989
+    9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999
+    9989898999898989998989899989898999898989998989899989898999898989998989899989898999898989998989899989898999898989998989899989898999898989998989899989998999899989
+    9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999
+    8989898989898989898989898989898989898989898989898989898989898989898989898989898989898989898989898989898989898989898989898989898989898989898989898989898989898989
+    9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999
+    8989898989898989898989898989898989898989898989898989898989898989898989898989898989898989898989898989898989898989898989898989898989898989898989898989898989898989
+    9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999
+    8989898989898989898989898989898989898989898989898989898989898989898989898989898989898989898989898989898989898989898989898989898989898989898989898989898989898989
+    9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999
+    8989898989898989898989898989898989898989898989898989898989898989898989898989898989898989898989898989898989898989898989898989898989898989898989898989898989898989
+    9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999
+    8989898989898989898989898989898989898989898989898989898989898989898989898989898989898989898989898989898989898989898989898989898989898989898989898989898989898989
+    9899999998999999989999999899999998999999989999999899999998999999989999999899999998999999989999999899999998999999989999999899999998999999999999999999999999999999
+    8989898989898989898989898989898989898989898989898989898989898989898989898989898989898989898989898989898989898989898989898989898989898989898989898989898989898989
+    9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999
+    `)
+initializeAnimations()
+createPlayer(hero)
+levelCount = 8
+currentLevel = 0
+setLevelTileMap(currentLevel)
+giveIntroduction()
+// set up hero animations
+game.onUpdate(function () {
+    if (hero.vx &lt; 0) {
+        heroFacingLeft = true
+    } else if (hero.vx &gt; 0) {
+        heroFacingLeft = false
+    }
+    if (hero.isHittingTile(CollisionDirection.Top)) {
+        hero.vy = 0
+    }
+    if (controller.down.isPressed()) {
+        if (heroFacingLeft) {
+            animation.setAction(hero, ActionKind.CrouchLeft)
+        } else {
+            animation.setAction(hero, ActionKind.CrouchRight)
+        }
+    } else if (hero.vy &lt; 20 &amp;&amp; !(hero.isHittingTile(CollisionDirection.Bottom))) {
+        if (heroFacingLeft) {
+            animation.setAction(hero, ActionKind.JumpingLeft)
+        } else {
+            animation.setAction(hero, ActionKind.JumpingRight)
+        }
+    } else if (hero.vx &lt; 0) {
+        animation.setAction(hero, ActionKind.RunningLeft)
+    } else if (hero.vx &gt; 0) {
+        animation.setAction(hero, ActionKind.RunningRight)
+    } else {
+        if (heroFacingLeft) {
+            animation.setAction(hero, ActionKind.IdleLeft)
+        } else {
+            animation.setAction(hero, ActionKind.IdleRight)
+        }
+    }
+})
+// Flier movement
+game.onUpdate(function () {
+    for (let value8 of sprites.allOfKind(SpriteKind.Flier)) {
+        if (Math.abs(value8.x - hero.x) &lt; 60) {
+            if (value8.x - hero.x &lt; -5) {
+                value8.vx = 25
+            } else if (value8.x - hero.x &gt; 5) {
+                value8.vx = -25
+            }
+            if (value8.y - hero.y &lt; -5) {
+                value8.vy = 25
+            } else if (value8.y - hero.y &gt; 5) {
+                value8.vy = -25
+            }
+            animation.setAction(value8, ActionKind.Flying)
+        } else {
+            value8.vy = -20
+            value8.vx = 0
+            animation.setAction(value8, ActionKind.Idle)
+        }
+    }
+})
+// Reset double jump when standing on wall
+game.onUpdate(function () {
+    if (hero.isHittingTile(CollisionDirection.Bottom)) {
+        canDoubleJump = true
+    }
+})
+// bumper movement
+game.onUpdate(function () {
+    for (let value9 of sprites.allOfKind(SpriteKind.Bumper)) {
+        if (value9.isHittingTile(CollisionDirection.Left)) {
+            value9.vx = Math.randomRange(30, 60)
+        } else if (value9.isHittingTile(CollisionDirection.Right)) {
+            value9.vx = Math.randomRange(-60, -30)
+        }
+    }
+})</code></pre>
+<pre><code class="lang-jres">{
+    &quot;transparency16&quot;: {
+        &quot;data&quot;: &quot;hwQQABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==&quot;,
+        &quot;mimeType&quot;: &quot;image/x-mkcd-f4&quot;,
+        &quot;tilemapTile&quot;: true
+    },
+    &quot;tile0&quot;: {
+        &quot;data&quot;: &quot;hwQQABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==&quot;,
+        &quot;mimeType&quot;: &quot;image/x-mkcd-f4&quot;,
+        &quot;tilemapTile&quot;: true
+    },
+    &quot;tile1&quot;: {
+        &quot;data&quot;: &quot;hwQQABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8AAAAAAAAAD/AAAAAAAA8P8A//////////AiMrK7u/3/8DIj0t3d/f/wMiLy//////AiIvIAAPD/AC8iDwAAAP8ALyIPAAAA8ADw8gAAAAAAAAAPAAAAAAAAAAAAAAAAAA==&quot;,
+        &quot;mimeType&quot;: &quot;image/x-mkcd-f4&quot;,
+        &quot;tilemapTile&quot;: true
+    },
+    &quot;tile2&quot;: {
+        &quot;data&quot;: &quot;hwQQABAAAABvd2fm7u7u7n93Zu7u7u7ef2fm7u7e7u5/Zu7u7u7u7n9m3u7u7u7uP2fu3u7u7u5fY+bu7u7u7j93Zu7u7u7uf2bm7u7e7u5vZ+be7u7u3n9yZu7u7u7uLyRm7u7u7u5/Yubu7u7u7m9n5u7u7u7uf3dm7u3u7u5/d2fm7u7e7g==&quot;,
+        &quot;mimeType&quot;: &quot;image/x-mkcd-f4&quot;,
+        &quot;tilemapTile&quot;: true
+    },
+    &quot;tile3&quot;: {
+        &quot;data&quot;: &quot;hwQQABAAAAD///////////8i8iIiLyL/LyLyIiIvIvIvIvIiIi9C8i8i8iIiLyTyLyLy//8vIvIvIvIiIi8i8i8i8iIiLyLyLyLyIiIvIvL///8iJP///y8i8kIkLyLyLyLyQiIvIvIvIvIiIi8i8i8i8iIiLyLy/yLyIiIvIv///////////w==&quot;,
+        &quot;mimeType&quot;: &quot;image/x-mkcd-f4&quot;,
+        &quot;tilemapTile&quot;: true
+    },
+    &quot;tile4&quot;: {
+        &quot;data&quot;: &quot;hwQQABAAAAAAAAAAAAAAAAAAAP//AAAAAAD/d3f/AAAA8Hd3d3cPAAB/d3d3d/cAAC93Inci9wAAf3J3J3J3DwB/d3cnd3cPAH9ydydydw8AL3cidyJ3DwDwd3d3J3cPAAB/d3d3dw8AAPB/d3d3DwAAAPB3d/cAAAAAAP//DwAAAAAAAAAAAA==&quot;,
+        &quot;mimeType&quot;: &quot;image/x-mkcd-f4&quot;,
+        &quot;tilemapTile&quot;: true
+    },
+    &quot;tile5&quot;: {
+        &quot;data&quot;: &quot;hwQQABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD//wAAAAAA/1VV/wAAAABfVVX1AAAA8FVVVVUPAADwVUREVQ8AAPBVRERVDwAA8FVVVVUPAAAAX1VV9QAAAAD/VVX/AAAAAAD//wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==&quot;,
+        &quot;mimeType&quot;: &quot;image/x-mkcd-f4&quot;,
+        &quot;tilemapTile&quot;: true
+    },
+    &quot;tile6&quot;: {
+        &quot;data&quot;: &quot;hwQQABAAAAAAAAAAAAAAAADw/w8AAAAAAO/d/v//DwDw7u7dvd37D/Du3t2t3br78O7d3c39qvrw7v3/zfyq+vDu3d3N/PoP8O7d3c28+g/w7t3dzby6+/Du3d3N/Kr68O79/838qvrw7t3dzf36DwDv3d2t3Q8AAPD/////AAAAAAAAAAAAAA==&quot;,
+        &quot;mimeType&quot;: &quot;image/x-mkcd-f4&quot;,
+        &quot;tilemapTile&quot;: true
+    },
+    &quot;tile7&quot;: {
+        &quot;data&quot;: &quot;hwQQABAAAAAAAAAAAAAAAAAAAP//DwAAAAAA8EQPAAAAAPBPRPQAAAAAT0RERA8AAPBURERE9AAA8FRERFT1AADwREVVVPQAAPBERERU9AAA8ERFVVT0AADwVEREVPUAAPBURERE9AAAAE9EREQPAAAA8E9E9AAAAAAA8EQPAAAAAAD//w8AAA==&quot;,
+        &quot;mimeType&quot;: &quot;image/x-mkcd-f4&quot;,
+        &quot;tilemapTile&quot;: true
+    },
+    &quot;level&quot;: {
+        &quot;id&quot;: &quot;level&quot;,
+        &quot;mimeType&quot;: &quot;application/mkcd-tilemap&quot;,
+        &quot;data&quot;: &quot;MTAyMDAwMDgwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDA1MDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDUwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDA2MDAwMDAwMDAwMDAwMDAwMDAwMDUwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAzMDAwMDA1MDAwMzAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMzAwMDAwMDAwMDMwMDAwMDAwMzAwMDQwMDAwMDMwMDAwMDQwMDAzMDAwNDAwMDAwNDAwMDMwMDAxMDAwMDAwMDMwMjAyMDIwMjAzMDIwMjAyMDMwMjAyMDIwMjAzMDIwMjAyMDIwMzAyMDIwMjAyMDIwMjAzMDIwMjAyMDIwMjAzMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDIwMDIwMDAwMDAwMDAwMDAwMDAwMDIwMDAwMDAyMDAwMjAwMjAwMDAwMDIwMDAwMjAwMDAwMjAyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMg==&quot;,
+        &quot;tileset&quot;: [
+            &quot;myTiles.tile0&quot;,
+            &quot;myTiles.tile1&quot;,
+            &quot;myTiles.tile2&quot;,
+            &quot;myTiles.tile3&quot;,
+            &quot;myTiles.tile4&quot;,
+            &quot;myTiles.tile5&quot;,
+            &quot;myTiles.tile6&quot;
+        ]
+    },
+    &quot;level_0&quot;: {
+        &quot;id&quot;: &quot;level_0&quot;,
+        &quot;mimeType&quot;: &quot;application/mkcd-tilemap&quot;,
+        &quot;data&quot;: &quot;MTAyMDAwMDgwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMzAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMzA1MDMwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDMwMzAwMDMwMDAwMDAwMDAwMDAwMzAwMDMwNTAzMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMzAzMDMwMDAzMDAwMDAwMDAwMzAwMDMwMDAzMDUwMzAwMDAwMDAwMDAwMDAwMDAwMDAwMDMwMDAwMDAwMDAzMDMwMzAzMDAwMzAwMDAwMzAwMDMwNTAzMDUwMzA1MDMwMDA1MDUwNTA1MDUwNTA1MDUwNTAzMDYwMDAwMDAwMDAwMDAwNDAwMDMwMDAwMDMwMDA0MDAwMDAwMDQwNTAzMDAwMDAwMDAwMDAwMDAwMDAxMDAwMzAyMDIwMjAyMDIwMjAyMDIwMjAzMDIwMjAzMDIwMjAyMDIwMjAyMDIwMzAyMDIwMjAyMDIwMjAyMDIwMjAyMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDIwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDIwMjAwMDAwMDAwMDAwMDAwMDAwMjAwMjAyMDAwMDIwMjAyMDAwMDAwMDAwMDAwMDAwMDAyMjAyMDIwMDIwMjAyMDIwMDAwMDAwMDAwMDAyMDAyMDIyMDIwMjIwMjAyMDIwMjAwMDAwMDAwMDAwMDIwMDAwMDAwMDAyMjAwMDAwMDAyMDAwMDAwMDAwMDAyMjIyMjIyMjIyMDIyMDIyMjIyMjIyMjIyMjIyMjIyMg==&quot;,
+        &quot;tileset&quot;: [
+            &quot;myTiles.tile0&quot;,
+            &quot;myTiles.tile1&quot;,
+            &quot;myTiles.tile2&quot;,
+            &quot;myTiles.tile3&quot;,
+            &quot;myTiles.tile4&quot;,
+            &quot;myTiles.tile5&quot;,
+            &quot;myTiles.tile6&quot;
+        ]
+    },
+    &quot;level_1&quot;: {
+        &quot;id&quot;: &quot;level_1&quot;,
+        &quot;mimeType&quot;: &quot;application/mkcd-tilemap&quot;,
+        &quot;data&quot;: &quot;MTAyMDAwMDgwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDYwMDAwMDAwMDAwMDAwMDAwMDYwNjA2MDYwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDIwMjAyMDIwMjAyMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDIwMDAyMDYwMzAzMDMwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDMwMzAzMDAwMDAwMDAwMDAyMDAwMDAyMDAwMjAwMDMwMzAzMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAzMDMwMzAwMDQwMDAyMDAwMjAwMDAwMDAwMDIwMDAzMDMwMzAwMDAwMDAwMDAwMDAwMDAwMDA1MDAwMDAwMDAwMzAzMDMwMTAxMDEwMjAxMDIwMTAxMDEwMTAyMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDIyMjIyMjAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAyMDIwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAyMDAwMDIwMjAwMDAwMDAwMDAwMDAwMDAwMDAwMDAyMDIwMDAwMDAyMDAwMDAwMDAwMDAwMDAwMDAwMDAyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMg==&quot;,
+        &quot;tileset&quot;: [
+            &quot;myTiles.tile0&quot;,
+            &quot;myTiles.tile2&quot;,
+            &quot;myTiles.tile3&quot;,
+            &quot;myTiles.tile5&quot;,
+            &quot;myTiles.tile6&quot;,
+            &quot;myTiles.tile1&quot;,
+            &quot;myTiles.tile7&quot;
+        ]
+    },
+    &quot;level_2&quot;: {
+        &quot;id&quot;: &quot;level_2&quot;,
+        &quot;mimeType&quot;: &quot;application/mkcd-tilemap&quot;,
+        &quot;data&quot;: &quot;MTAyMDAwMDgwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMzAwMDAwMDA3MDAwMDAwMDcwMDAwMDcwMDA3MDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDMwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMzAwMDAwMDAzMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMzAwMDMwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMzAzMDMwMzAzMDMwMzAzMDMwMzAzMDMwMzAzMDMwMzAzMDMwMzAzMDMwMzAzMDMwMzAzMDMwMzAwMDAwMDAwMDMwMDAwMDUwMDAwMDUwMDA1MDAwMDA1MDAwNTAwMDAwNTAwMDUwMDAwMDAwNTAwMDAwMDA1MDAwMDAwMDYwMzAzMDEwMDAwMDQwMDA0MDAwMDAwMDQwMDAwMDAwMDAwMDQwMDAwMDAwNDAwMDAwMDA0MDAwMDAwMDMwMjAyMDIwMzAyMDIwMjAyMDIwMjAyMDIwMjAyMDIwMjAyMDIwMjAyMDIwMjAyMDIwMjAyMDIwMjAyMDIwMjAzMDAwMDAwMDAwMDIwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMjAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDIwMDAyMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDIwMjAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDIwMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIwMjAwMjAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAyMjAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMjAyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMg==&quot;,
+        &quot;tileset&quot;: [
+            &quot;myTiles.tile0&quot;,
+            &quot;myTiles.tile1&quot;,
+            &quot;myTiles.tile2&quot;,
+            &quot;myTiles.tile3&quot;,
+            &quot;myTiles.tile4&quot;,
+            &quot;myTiles.tile5&quot;,
+            &quot;myTiles.tile6&quot;,
+            &quot;myTiles.tile7&quot;
+        ]
+    },
+    &quot;level_3&quot;: {
+        &quot;id&quot;: &quot;level_3&quot;,
+        &quot;mimeType&quot;: &quot;application/mkcd-tilemap&quot;,
+        &quot;data&quot;: &quot;MTAyMDAwMDgwMDAwMDcwNzAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDA1MDUwNTAwMDAwMDAwMDAwMDAwMDAwMDAwMDUwMDA1MDAwMDAwMDAwMDA1MDUwMDAwMDMwMzAzMDMwMDAzMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDUwNTA1MDAwMDAwMDUwMzA1MDUwNTA1MDAwMzAwMDAwMDAwMDAwMDAwMDAwMDAwMDYwMDAzMDQwNDA0MDQwNDA0MDMwNDA0MDQwNDA0MDMwNDA0MDQwNDA0MDMwMDAwMDAwMDAwMDAwMTAwMDAwMjAyMDIwMzAyMDIwMjAyMDIwMjAzMDIwMjAyMDIwMjAzMDIwMjAyMDIwMjAzMDIwMjAyMDIwMjAyMDIwMjAyMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMjAyMjAyMDIwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMjAwMDAwMjAwMDAwMDAwMDAyMDAwMDAwMDAyMDAwMDAyMDAwMDAyMDAwMDAwMDAyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMg==&quot;,
+        &quot;tileset&quot;: [
+            &quot;myTiles.tile0&quot;,
+            &quot;myTiles.tile1&quot;,
+            &quot;myTiles.tile2&quot;,
+            &quot;myTiles.tile3&quot;,
+            &quot;myTiles.tile4&quot;,
+            &quot;myTiles.tile5&quot;,
+            &quot;myTiles.tile6&quot;,
+            &quot;myTiles.tile7&quot;
+        ]
+    },
+    &quot;level_4&quot;: {
+        &quot;id&quot;: &quot;level_4&quot;,
+        &quot;mimeType&quot;: &quot;application/mkcd-tilemap&quot;,
+        &quot;data&quot;: &quot;MTAyMDAwMDgwMDAwMDcwNzAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwNzA3MDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwNTA1MDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDUwMzAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDA1MDUwMDAzMDMwMDAwMDAwMDAwMDAwMDAwMDUwNTA1MDUwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDUwMDA1MDAwMzAzMDAwMDA1MDUwMDAwMDMwMzAzMDMwMDAwMDAwMDAwMDAwMDAwMDAwMDAzMDMwMDAwMDAwMDAzMDAwMzAwMDUwNTA1MDAwMDAwMDUwMzAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMzAzMDYwMDAzMDAwMzA1MDMwNDAwMDMwNDAwMDAwMDAzMDMwMDA0MDAwMDA0MDAwMDA0MDAwMDAwMDAwMTAwMDMwMzAyMDIwMzAyMDMwMjAzMDIwMjAzMDIwMjAyMDIwMzAzMDIwMjAyMDIwMjAyMDIwMjAyMDIwMjAyMDIwMjAzMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDIwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMjIwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDIwMDIwMDAwMjAyMjAyMDAwMDAwMDAyMDAyMDAyMDIwMDAwMDAwMDAwMjAwMDAwMDAwMDAwMDIwMDIyMDIwMjAwMDAyMDAyMDAyMDAwMDAwMDAwMDAwMjAyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMg==&quot;,
+        &quot;tileset&quot;: [
+            &quot;myTiles.tile0&quot;,
+            &quot;myTiles.tile1&quot;,
+            &quot;myTiles.tile2&quot;,
+            &quot;myTiles.tile3&quot;,
+            &quot;myTiles.tile4&quot;,
+            &quot;myTiles.tile5&quot;,
+            &quot;myTiles.tile6&quot;,
+            &quot;myTiles.tile7&quot;
+        ]
+    },
+    &quot;level_5&quot;: {
+        &quot;id&quot;: &quot;level_5&quot;,
+        &quot;mimeType&quot;: &quot;application/mkcd-tilemap&quot;,
+        &quot;data&quot;: &quot;MTAyNzAwMDgwMDAwMDAwMDAwMDYwNjA2MDYwNjA2MDYwNjA2MDYwNjA2MDYwNjA2MDYwNjA2MDYwNjA2MDYwNjA2MDYwNjA2MDYwNjAwMDAwMzAwMDAwMDAwMDAwMzAzMDMwMzAzMDMwMzAzMDMwMzAzMDMwMzAzMDMwMzAzMDMwMzAzMDMwMzAzMDMwMzAzMDMwMzAzMDMwMzAwMDAwMzAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMzAwMDAwMDAwMDAwMDAwMDAwNjA2MDYwNjAzMDQwMDAwMDAwMDAwMDQwMDAwMDAwNDAwMDAwNDAwMDAwNDAwMDAwNDAwMDAwMDAwMDAwMzAwMDAwMDAwMDAwMDAwMDAwMzAzMDMwMzAzMDMwMzAzMDMwMzAzMDMwMzAzMDMwMzAzMDMwMzAzMDMwMzAzMDMwMzAzMDMwMzAzMDMwMzAwMDAwMDAzMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAzMDUwMDAwMDAwNDA0MDAwMDAwMDAwMDAwMDQwNjA2MDYwNjA2MDYwNDAwMDYwNjA2MDYwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDEwMDAzMDIwMjAyMDIwMjAyMDIwMjAyMDIwMjAyMDIwMjAyMDIwMjAyMDIwMjAyMDIwMjAyMDIwMjAyMDIwMjAyMDIwMjAyMDIwMjAyMDIwMjAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAyMDAwMDAyMDIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjAwMDIwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAyMDAwMDAwMDAwMDAwMDAyMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDIwMDAwMDAyMDIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjAwMjAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAyMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMjAyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMg==&quot;,
+        &quot;tileset&quot;: [
+            &quot;myTiles.tile0&quot;,
+            &quot;myTiles.tile1&quot;,
+            &quot;myTiles.tile2&quot;,
+            &quot;myTiles.tile3&quot;,
+            &quot;myTiles.tile4&quot;,
+            &quot;myTiles.tile6&quot;,
+            &quot;myTiles.tile5&quot;
+        ]
+    },
+    &quot;level_6&quot;: {
+        &quot;id&quot;: &quot;level_6&quot;,
+        &quot;mimeType&quot;: &quot;application/mkcd-tilemap&quot;,
+        &quot;data&quot;: &quot;MTAyNTAwMDgwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwNTA1MDUwNTA1MDUwNTAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDA3MDAwMDAwMDAwMDAwMDAwMDAwMDMwMzAwMDAwMDA3MDAwMDA1MDUwNTA1MDUwNTA1MDAwMDAwMDAwMDAwMDAwMDAwMDAwMzAzMDAwMDAwMDAwMDAzMDMwMzAwMDAwMzAzMDAwMDAwMDAwMDAwMDMwMzAzMDMwMzAzMDMwMDAwMDAwMDAwMDAwMDAwMDAwMzAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMzAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDMwMzAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMzAzMDQwMDAwMDAwMDAwMDYwMDAwMDAwMDAwMDYwMDAwMDAwMDA2MDAwMDAwMDAwMDAwMDAwNjAwMDAwMDAwMDAwMDAwMDEwMDAzMDMwMjAyMDIwMjAyMDIwMjAyMDIwMjAyMDIwMjAyMDIwMjAyMDIwMjAyMDIwMjAyMDIwMjAyMDIwMjAyMDIwMjAyMDIwMjAyMDIwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAyMDAyMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDIyMDAwMDIwMjIwMDIyMDAwMDAwMjIyMjIyMDIwMDAwMDAwMDAyMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAyMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMjAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMjAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAyMDIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMg==&quot;,
+        &quot;tileset&quot;: [
+            &quot;myTiles.tile0&quot;,
+            &quot;myTiles.tile1&quot;,
+            &quot;myTiles.tile2&quot;,
+            &quot;myTiles.tile3&quot;,
+            &quot;myTiles.tile6&quot;,
+            &quot;myTiles.tile5&quot;,
+            &quot;myTiles.tile4&quot;,
+            &quot;myTiles.tile7&quot;
+        ]
+    },
+    &quot;*&quot;: {
+        &quot;mimeType&quot;: &quot;image/x-mkcd-f4&quot;,
+        &quot;dataEncoding&quot;: &quot;base64&quot;,
+        &quot;namespace&quot;: &quot;myTiles&quot;
+    }
+}</code></pre>
+<pre><code class="lang-package">animation</code></pre>
+
+    </div>
+
+					<div class="hideprint"></div>
+				</div>
+
+			</div>
+
+			
+<!-- include footer.html -->
+<footer class="ui vertical footer segment hideprint docs inverted" aria-hidden="false">
+    <div class="ui center aligned container">
+        <div class="ui horizontal link list">
+            <a
+                class="item"
+                href="https://twitter.com/intent/follow?screen_name=MsMakeCode"
+                title="Follow us on Twitter"
+                target="_blank"
+                rel="noopener">
+                <i class="huge icon twitter"></i>
+            </a>
+            <a class="item" href="https://www.youtube.com/channel/UCye7YlvFUUQ1dSy0WZZ1T_Q" title="Subscribe to our YouTube channel"
+                target="_blank" rel="noopened">
+                <i class="huge icon youtube"></i>
+            </a>
+            <a class="item" href="mailto:makecode@microsoft.com" title="Send us an Email"
+                target="_blank" rel="noopened">
+                <i class="huge icon mail"></i>
+            </a>
+        </div>
+        <div class="ui section divider"></div>
+        <div class="ui container horizontal small divided link list">
+            <a id="langpicker" tabindex="0" class="ui item" rel="noopener">
+                <i class="icon xicon globe" aria-hidden="true" role="presentation"></i>Language
+            </a>
+            <a class="item" href="https://makecode.com/privacy" target="_blank" rel="noopener">Privacy &amp; Cookies</a>
+            <a class="item" href="https://makecode.com/termsofuse" target="_blank" rel="noopener">Terms Of Use</a>
+            <a class="item" href="https://makecode.com/trademarks" target="_blank" rel="noopener">Trademarks</a>
+            <span class="item">© 2022 Microsoft</span>
+        </div>
+        <div class="ui container horizontal small link list poweredBy">
+            <span class="item">Powered by</span>
+            <a class="middle aligned" href="https://makecode.com/" title="Microsoft MakeCode"
+                target="_blank" rel="noopener">
+                <img width="100" src="/static/logo/Microsoft-logo_rgb_c-gray.png" alt="Microsoft">
+            </a>
+        </div>
+    </div>
+</footer>
+
+<!-- end include footer.html -->
+
+
+		</div>
+
+	</div>
+
+    
+<!-- include langpicker.html -->
+<div id="langmodal" class="ui modal docs" role="dialog" aria-modal="true" aria-describedby="langmodalheader" tabindex="-1">
+    <h2 id="langmodalheader" class="header">Select Language</h2>
+    <div role="button" class="closeIcon" tabindex="0" aria-label="Close">
+        <i class="icon close remove circle" aria-hidden="true"></i>
+    </div>
+
+	<div class="content">
+	    <div class="group">
+            <div id="availablelocales" class="ui cards centered" role="listbox" aria-label="List of available locales"></div>
+        </div>
+        <div class="ui" id="langmodalfooter">
+            <a class="ui" href="/pxt-arcade-app/docs/translate.html" target="_blank" rel="noopener noreferrer">
+                How do I add a new language?
+            </a>
+
+            <a id="translatebtn" class="ui button" role="button" tabindex="0">
+                Translate this page
+            </a>
+        </div>
+    </div>
+</div>
+
+
+<!-- end include langpicker.html -->
+
+	
+<!-- include macros.html -->
+<!-- macro button -->
+
+<!-- macro vimeo -->
+
+<!-- macro youtube -->
+
+<!-- macro section -->
+
+<!-- macro hide -->
+
+<!-- macro avatar -->
+
+<!-- macro hint -->
+
+<!-- macro codecard -->
+
+<!-- macro tutorialhint -->
+
+<!-- macro reminder -->
+
+<!-- macro alert -->
+
+<!-- macro tip -->
+
+<!-- wrapped around ordinary content -->
+<!-- macro main-container -->
+
+<!-- used for 'column' box - they are collected and wrapped in 'column-container' -->
+<!-- macro column -->
+<!-- macro column-container -->
+
+
+<!-- Menu on the top of the page -->
+<!-- macro item -->
+
+<!-- macro divider -->
+
+<!-- TOC in the sidebar -->
+<!-- macro item -->
+
+<!-- macro divider -->
+
+<!-- macro toc-dropdown -->
+
+<!-- macro toc-dropdown-noLink -->
+
+<!-- macro toc-dropdown-noHeading -->
+
+<!-- TODO: duplicates of above for compatability with docsrender.ts;
+    remove with pxtlib/docsrender.ts TOC TODOs after cloud bump. -->
+<!-- macro top-dropdown -->
+
+<!-- macro top-dropdown-noHeading -->
+
+<!-- macro inner-dropdown -->
+
+<!-- macro nested-dropdown -->
+<!-- end include macros.html -->
+
+	
+<!-- include tracking.html -->
+<script type="text/javascript" src="/pxt-arcade-app/pxtweb.js"></script>
+<script type="text/javascript">
+    window.loadAppInsights = function (includeCookie) {
+        //Backend will patch / + doccdn + / with CDN url and the check that URL ends with the sha would pass
+        var isProduction = includeCookie && (/[0-9a-f]{40}\/ai\.2\.min\.js$/.test("/pxt-arcade-app/ai.2.min.js"));
+        !function(T,l,y){var S=T.location,k="script",D="connectionString",C="ingestionendpoint",I="disableExceptionTracking",E="ai.device.",b="toLowerCase",w="crossOrigin",N="POST",e="appInsightsSDK",t=y.name||"appInsights";(y.name||T[e])&&(T[e]=t);var n=T[t]||function(d){var g=!1,f=!1,m={initialize:!0,queue:[],sv:"5",version:2,config:d};function v(e,t){var n={},a="Browser";return n[E+"id"]=a[b](),n[E+"type"]=a,n["ai.operation.name"]=S&&S.pathname||"_unknown_",n["ai.internal.sdkVersion"]="javascript:snippet_"+(m.sv||m.version),{time:function(){var e=new Date;function t(e){var t=""+e;return 1===t.length&&(t="0"+t),t}return e.getUTCFullYear()+"-"+t(1+e.getUTCMonth())+"-"+t(e.getUTCDate())+"T"+t(e.getUTCHours())+":"+t(e.getUTCMinutes())+":"+t(e.getUTCSeconds())+"."+((e.getUTCMilliseconds()/1e3).toFixed(3)+"").slice(2,5)+"Z"}(),iKey:e,name:"Microsoft.ApplicationInsights."+e.replace(/-/g,"")+"."+t,sampleRate:100,tags:n,data:{baseData:{ver:2}}}}var h=d.url||y.src;if(h){function a(e){var t,n,a,i,r,o,s,c,u,p,l;g=!0,m.queue=[],f||(f=!0,t=h,s=function(){var e={},t=d.connectionString;if(t)for(var n=t.split(";"),a=0;a<n.length;a++){var i=n[a].split("=");2===i.length&&(e[i[0][b]()]=i[1])}if(!e[C]){var r=e.endpointsuffix,o=r?e.location:null;e[C]="https://"+(o?o+".":"")+"dc."+(r||"services.visualstudio.com")}return e}(),c=s[D]||d[D]||"",u=s[C],p=u?u+"/v2/track":d.endpointUrl,(l=[]).push((n="SDK LOAD Failure: Failed to load Application Insights SDK script (See stack for details)",a=t,i=p,(o=(r=v(c,"Exception")).data).baseType="ExceptionData",o.baseData.exceptions=[{typeName:"SDKLoadFailed",message:n.replace(/\./g,"-"),hasFullStack:!1,stack:n+"\nSnippet failed to load ["+a+"] -- Telemetry is disabled\nHelp Link: https://go.microsoft.com/fwlink/?linkid=2128109\nHost: "+(S&&S.pathname||"_unknown_")+"\nEndpoint: "+i,parsedStack:[]}],r)),l.push(function(e,t,n,a){var i=v(c,"Message"),r=i.data;r.baseType="MessageData";var o=r.baseData;return o.message='AI (Internal): 99 message:"'+("SDK LOAD Failure: Failed to load Application Insights SDK script (See stack for details) ("+n+")").replace(/\"/g,"")+'"',o.properties={endpoint:a},i}(0,0,t,p)),function(e,t){if(JSON){var n=T.fetch;if(n&&!y.useXhr)n(t,{method:N,body:JSON.stringify(e),mode:"cors"});else if(XMLHttpRequest){var a=new XMLHttpRequest;a.open(N,t),a.setRequestHeader("Content-type","application/json"),a.send(JSON.stringify(e))}}}(l,p))}function i(e,t){f||setTimeout(function(){!t&&m.core||a()},500)}var e=function(){var n=l.createElement(k);n.src=h;var e=y[w];return!e&&""!==e||"undefined"==n[w]||(n[w]=e),n.onload=i,n.onerror=a,n.onreadystatechange=function(e,t){"loaded"!==n.readyState&&"complete"!==n.readyState||i(0,t)},n}();y.ld<0?l.getElementsByTagName("head")[0].appendChild(e):setTimeout(function(){l.getElementsByTagName(k)[0].parentNode.appendChild(e)},y.ld||0)}try{m.cookie=l.cookie}catch(p){}function t(e){for(;e.length;)!function(t){m[t]=function(){var e=arguments;g||m.queue.push(function(){m[t].apply(m,e)})}}(e.pop())}var n="track",r="TrackPage",o="TrackEvent";t([n+"Event",n+"PageView",n+"Exception",n+"Trace",n+"DependencyData",n+"Metric",n+"PageViewPerformance","start"+r,"stop"+r,"start"+o,"stop"+o,"addTelemetryInitializer","setAuthenticatedUserContext","clearAuthenticatedUserContext","flush"]),m.SeverityLevel={Verbose:0,Information:1,Warning:2,Error:3,Critical:4};var s=(d.extensionConfig||{}).ApplicationInsightsAnalytics||{};if(!0!==d[I]&&!0!==s[I]){var c="onerror";t(["_"+c]);var u=T[c];T[c]=function(e,t,n,a,i){var r=u&&u(e,t,n,a,i);return!0!==r&&m["_"+c]({message:e,url:t,lineNumber:n,columnNumber:a,error:i}),r},d.autoExceptionInstrumented=!0}return m}(y.cfg);function a(){y.onInit&&y.onInit(n)}(T[t]=n).queue&&0===n.queue.length?(n.queue.push(a),n.trackPageView({})):a()}(window,document,{
+            src: "https://js.monitor.azure.com/scripts/b/ai.2.min.js", // The SDK URL Source
+            onInit: function (sdk) {
+                sdk.addTelemetryInitializer(function (envelope) {
+                    // App Insights automatically sends a page view event on setup, but we send our own later with additional properties.
+                    // This stops the automatic event from firing, so we don't end up with duplicate page view events.
+                    if (envelope.baseType == "PageviewData" && !envelope.baseData.properties) {
+                        return false;
+                    }
+
+                    if (envelope.baseType == "PageviewPerformanceData") {
+                        var pageName = envelope.baseData.name;
+                        envelope.baseData.name = window.location.origin;
+                        if (!envelope.baseData.properties) {
+                            envelope.baseData.properties = {};
+                        }
+                        envelope.baseData.properties.pageName = pageName;
+                        var scrubbedUrl = scrubUrl(envelope.baseData.uri);
+                        envelope.baseData.uri = scrubbedUrl;
+                        var toUrl = new URL(scrubbedUrl);
+                        envelope.baseData.properties.pathName = toUrl ? toUrl.pathname : "";
+                        if (envelope.ext && envelope.ext.trace) {
+                            envelope.ext.trace.name = toUrl ? toUrl.pathname : "";
+                        }
+                    }
+
+                    var telemetryItem = envelope.baseData;
+                    telemetryItem.properties = telemetryItem.properties || {};
+                    telemetryItem.properties["cookie"] = isProduction;
+                    if (typeof pxtConfig === "undefined" || !pxtConfig || !pxtConfig.targetId) {
+                        telemetryItem.properties["target"] = "arcade";
+                        return true;
+                    }
+                    telemetryItem.properties["target"] = pxtConfig.targetId;
+                    telemetryItem.properties["stage"] = (pxtConfig.relprefix || "/--").replace(/[^a-z]/ig, '')
+                    if (typeof Windows !== "undefined")
+                        telemetryItem.properties["WindowsApp"] = 1;
+                    var userAgent = navigator.userAgent.toLowerCase();
+                    var electronRegexResult = /\belectron\/(\d+\.\d+\.\d+.*?)(?: |$)/i.exec(userAgent); // Example navigator.userAgent: "Mozilla/5.0 Chrome/61.0.3163.100 Electron/2.0.0 Safari/537.36"
+                    if (electronRegexResult) {
+                        telemetryItem.properties["Electron"] = 1;
+                        telemetryItem.properties["ElectronVersion"] = electronRegexResult[1];
+                    }
+                    if (typeof pxtElectron !== "undefined") {
+                        telemetryItem.properties["PxtElectron"] = 1;
+                        telemetryItem.properties["ElectronVersion"] = pxtElectron.versions.electronVersion;
+                        telemetryItem.properties["ChromiumVersion"] = pxtElectron.versions.chromiumVersion;
+                        telemetryItem.properties["NodeVersion"] = pxtElectron.versions.nodeVersion;
+                        telemetryItem.properties["PxtElectronVersion"] = pxtElectron.versions.pxtElectronVersion;
+                        telemetryItem.properties["PxtCoreVersion"] = pxtElectron.versions.pxtCoreVersion;
+                        telemetryItem.properties["PxtTargetVersion"] = pxtElectron.versions.pxtTargetVersion;
+                        telemetryItem.properties["PxtElectronIsProd"] = pxtElectron.versions.isProd;
+                    }
+                    // Kiosk UWP info is appended to the user agent by the makecode-dotnet-apps/arcade-kiosk UWP app
+                    var kioskUwpRegexResult = /\((MakeCode Arcade Kiosk UWP)\/([\S]+)\/([\S]+)\)/i.exec(userAgent); // Example navigator.userAgent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36 Edg/117.0.2045.60 (MakeCode Arcade Kiosk UWP/0.1.41.0/Windows.Xbox)"
+                    if (kioskUwpRegexResult) {
+                        telemetryItem.properties["KioskUwp"] = 1;
+                        telemetryItem.properties["KioskUwpVersion"] = kioskUwpRegexResult[2];
+                        telemetryItem.properties["KioskUwpPlatform"] = kioskUwpRegexResult[3];
+                    }
+                    return true;
+                });
+            },
+            cfg: {
+                instrumentationKey:"9801ed01-c40f-46ec-aa40-2a1742a9e71c",
+                disableAjaxTracking: true,
+                overridePageViewDuration: false,
+                disableExceptionTracking: true,
+                disableCorrelationHeaders: true,
+                disableCookiesUsage: !isProduction,
+                isStorageUseDisabled: !isProduction,
+                url: "/pxt-arcade-app/ai.2.min.js"
+            }
+        });
+        window.appInsights=appInsights;
+        var location = window.location.toString();
+        appInsights.trackPageView({
+            name: window.location.hostname,
+            uri: window.location.origin,
+            properties: {
+                url: scrubUrl(location),
+                urlReferrer: scrubUrl(document.referrer.toString())
+            }
+        });
+
+        // Scrub potential PII from the URL.
+        function scrubUrl(url) {
+            if (!url) return url;
+
+            var scriptIdRegex = /(?:S?\d{5}-\d{5}-\d{5}-\d{5})|(?:_[0-9a-zA-Z]{12})/g;
+            var scrubbedUrl = new URL(url.toLocaleLowerCase().replace(scriptIdRegex, "xxxxx-xxxxx-xxxxx-xxxxx"));
+
+            // Just as a precaution, strip any suspicious query parameters.
+            var blockedParamKeywords = ["username", "password", "token", "pwd"];
+            var searchParams = Array.from(scrubbedUrl.searchParams.keys());
+            for (var param of searchParams) {
+                if (blockedParamKeywords.some(k => param.indexOf(k) != -1)) {
+                    scrubbedUrl.searchParams.delete(param);
+                }
+            }
+
+            return scrubbedUrl.toString();
+        }
+
+        return isProduction;
+    }
+    pxt.initAnalyticsAsync();
+</script>
+
+<!-- end include tracking.html -->
+
+
+</body>
+
+</html>
