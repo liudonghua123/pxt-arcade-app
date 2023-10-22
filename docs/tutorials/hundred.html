@@ -500,37 +500,73 @@
 					</button>
 					
     <div class="ui text">
-        <h1 id="100-day-challenge">100 Day Challenge</h1><!-- hints --><h2 id="intro">Intro</h2><p>It’s been 100 days!</p>
+        <p>
+</p>
+<p>
+</p>
+<h1 id="100-day-challenge">100 Day Challenge</h1><!-- hints --><p>
+</p>
+<p>
+</p>
+<h2 id="intro">Intro</h2><p>
+</p>
+<p>It’s been 100 days!</p>
 <p>Let’s celebrate by creating a project with 100 of our favorite things!</p>
-<p><img class="ui image" src="/static/tutorials/aliens/alien.gif" alt="It&#39;s an alien invasion!" title="Try not to get in their way!" loading="lazy"></p>
-<h2 id="step-2">Step 2</h2><p><strong>Ready to start coding?</strong></p>
+<p>
+</p>
+<p><img class="ui image" src="/static/tutorials/aliens/alien.gif" alt="It&#39;s an alien invasion!" title="Try not to get in their way!" loading="lazy">
+</p>
+<p>
+</p>
+<h2 id="step-2">Step 2</h2><p>
+</p>
+<p><strong>Ready to start coding?</strong></p>
 <p>We need a background for our project.</p>
+<p>
+</p>
 <ul>
-<li>:tree: Go to the <code>||scene: Scene||</code> category <strong>in the toolbox</strong> and grab <br /></li>
-</ul>
-<pre><code class="lang-block">scene.setBackgroundImage(img`.`)</code></pre>
-<p>then snap it inside the empty <br />
+<li>:tree: Go to the <code>||scene: Scene||</code> category <strong>in the toolbox</strong> and grab<pre><code class="lang-block">scene.setBackgroundImage(img`.`)</code></pre>
+then snap it inside the empty <br />
 <code>||loops(noclick): on start||</code> <br />
-block already in the workspace.</p>
+block already in the workspace.</li>
+</ul>
+<p>
+</p>
+<p>
+</p>
+<p>
+</p>
 <p>~hint Click here to see how 🕵🏽</p>
+<p>
+</p>
+<hr>
 <ul>
 <li>:lightbulb: The panel with the colorful category names is called the
 <strong>toolbox</strong>. <br />
 Click <code>||scene: Scene||</code> to find the block you need.</li>
 </ul>
 <p><img class="ui image" src="/static/skillmap/mole/add-bg-block.gif" alt="Look under Scene for the block you need" title="Drag out the background block to fill later." loading="lazy"></p>
-<p>hint~</p>
+<p>hint~
+
+
+</p>
+<p>
+</p>
 
     <div class="ui hint message">
         <div class="content">
             <pre><code class="lang-blocks">//@highlight
 scene.setBackgroundImage(img`.`)</code></pre>
+<p>
+</p>
 <h2 id="step-3">Step 3</h2><ul>
 <li>:paint brush: Click the empty <strong>grey square</strong> to open the image editor and choose a background from the <strong>Gallery</strong>.</li>
 </ul>
 <pre><code class="lang-blocks">//@highlight
 scene.setBackgroundImage(assets.image`Planet`)</code></pre>
 <p><em>💡 If you don’t find a background you like, you can make one of your own!</em></p>
+<p>
+</p>
 <h2 id="step-4">Step 4</h2><p><strong>Let’s add movement to the scene</strong></p>
 <ul>
 <li>:arrows alternate: To make it look like the camera is moving, go to <code>||scroller: Scroller||</code> and drag<pre><code class="lang-block">scroller.scrollBackgroundWithSpeed(-50, 0)</code></pre>
@@ -543,10 +579,14 @@ into <strong>the end</strong> of the <br />
             <pre><code class="lang-blocks">scene.setBackgroundImage(assets.image`Planet`)
 //@highlight
 scroller.scrollBackgroundWithSpeed(-50, 0)</code></pre>
+<p>
+</p>
 <h2 id="step-5">Step 5</h2><ul>
 <li>:binoculars: Look at your project in the game window to see what your code has done!</li>
 </ul>
 <p>You should see a background that’s scrolling from right to left.</p>
+<p>
+</p>
 <h2 id="step-6">Step 6</h2><p><strong>Unleash the beasts!</strong></p>
 <ul>
 <li>:redo: From the <code>||loops:Loops||</code> category, grab<pre><code class="lang-block">for (let index = 0; index &lt; 4; index++) {
@@ -567,8 +607,11 @@ scroller.scrollBackgroundWithSpeed(-50, 0)
 for (let index = 0; index &lt; 100; index++) {
 }
 </code></pre>
+<p>
+</p>
 <h2 id="step-7">Step 7</h2><p><strong>Choose your Sprite!</strong></p>
 <p>~hint What’s a sprite? 💡</p>
+<hr>
 <p>In Arcade, each character or image that does something is called a <strong>SPRITE</strong>.</p>
 <p>Sprites have properties that you can use and change — things like scale, position, and lifespan are all properties of sprites.</p>
 <p>hint~</p>
@@ -588,13 +631,17 @@ for (let index = 0; index &lt; 100; index++) {
 //@highlight
     let projectile = sprites.createProjectileFromSide(assets.image`Alien`, -90, 0)
 }</code></pre>
+<p>
+</p>
 <h2 id="step-8">Step 8</h2><ul>
 <li>:binoculars: Take a look at the game window to see your project!<br />
-(You may need to reload your project to catch the action.)
+(You may need to click the reload button on the game console to catch the action.)
 <img class="ui image" src="/static/tutorials/aliens/reload.png" alt="Press reload to see your project run" title=" " loading="lazy"></li>
 </ul>
 <p>Does it look like you have a single sprite floating across the sky?</p>
 <p>We’ll fix that over the next couple of steps.</p>
+<p>
+</p>
 <h2 id="step-9">Step 9</h2><p>If we leave the sprites like this, you won’t be able to see them all! Let’s spread them out.</p>
 <ul>
 <li>:paper plane: From the <code>||sprites:Sprites||</code> category, grab<pre><code class="lang-block">let projectile: Sprite = null
@@ -613,6 +660,8 @@ for (let index = 0; index &lt; 100; index++) {
     projectile.y = randint(40, 100)
 })
 </code></pre>
+<p>
+</p>
 <h2 id="step-10">Step 10</h2><p><strong>Add some space.</strong></p>
 <p>Our loop spits out all the sprites at the same time. If we add a small pause, we can give them room to run!</p>
 <ul>
@@ -631,6 +680,8 @@ for (let index = 0; index &lt; 100; index++) {
     //@highlight
     pause(100)
 })</code></pre>
+<p>
+</p>
 <h2 id="step-11">Step 11</h2><p>Let’s animate!</p>
 <hr>
 <ul>
@@ -670,6 +721,8 @@ projectile,
 true
 )
 })</code></pre>
+<p>
+</p>
 <h2 id="step-12">Step 12</h2><p><strong>🎥 Let’s get animating 🎥</strong></p>
 <hr>
 <ul>
@@ -703,10 +756,18 @@ assets.animation`Animated Alien`,
 true
 )
 })</code></pre>
-<h2 id="step-13">Step 13</h2><p><strong>💯 There you have it 💯</strong></p>
+<p>
+</p>
+<p>
+</p>
+<h2 id="finale">Finale</h2><p><strong>💯 There you have it 💯</strong></p>
 <hr>
 <p>Now you have a hundred things to celebrate 100 days!</p>
 <p>Take a final look at your project in the game window. When you’re finished, click <strong>Done</strong>, then share it with family and friends!</p>
+<p>
+</p>
+<p>
+</p>
 <pre><code class="lang-blockconfig.global">let projectile = sprites.createProjectileFromSide(img`.`, -90, 0)
 scroller.scrollBackgroundWithSpeed(-50, 0)
 projectile.y = randint(40, 100)
@@ -720,7 +781,11 @@ true
 )
 })
 </code></pre>
+<p>
+</p>
 <pre><code class="lang-package">arcade-background-scroll=github:microsoft/arcade-background-scroll</code></pre>
+<p>
+</p>
 <pre><code class="lang-ghost">sprites.onOverlap(SpriteKind.Player, SpriteKind.Projectile, function (sprite, otherSprite) {
     otherSprite.destroy(effects.rings, 200)
     info.changeScoreBy(1)
@@ -749,8 +814,9 @@ scene.setBackgroundImage(img`
 pause(2000)
 scroller.scrollBackgroundWithSpeed(0, 0)
 game.splash(&quot;Happy 100 Days!&quot;)
-
 </code></pre>
+<p>
+</p>
 <pre><code class="lang-assetjson">{
   &quot;README.md&quot;: &quot; &quot;,
   &quot;assets.json&quot;: &quot;&quot;,

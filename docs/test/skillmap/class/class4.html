@@ -1,0 +1,1155 @@
+<!DOCTYPE html>
+<html lang="" xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#"
+	xmlns:fb="http://www.facebook.com/2008/fbml">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Microsoft MakeCode Arcade</title>
+	<meta name="Description" content="Develop your programming skills by quickly creating and modding retro arcade games with Blocks and JavaScript in the MakeCode editor" />
+
+	<!-- ifdef incontexttranslations endif -->
+	
+<!-- include meta.html -->
+<!-- This file is typically overriden by the target, with own Twitter
+     account etc. Most data is taken from the theme file though.  
+  -->
+
+<!-- include robotsmeta.html -->
+
+<!-- end include robotsmeta.html -->
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@msmakecode" />
+<meta name="twitter:title" content="Microsoft MakeCode Arcade" />
+<meta name="twitter:description" content="Develop your programming skills by quickly creating and modding retro arcade games with Blocks and JavaScript in the MakeCode editor" />
+<meta name="twitter:image" content="/static/skillmap/class/class4.gif" />
+
+<meta property="og:title" content="Microsoft MakeCode Arcade" />
+<meta property="og:site_name" content="Microsoft MakeCode" />
+<meta property="og:type" content="website" />
+<meta property="og:description" content="Develop your programming skills by quickly creating and modding retro arcade games with Blocks and JavaScript in the MakeCode editor" />
+<meta property="fb:app_id" content="" />
+<meta property="og:image" content="/static/skillmap/class/class4.gif" />
+
+<meta name="format-detection" content="telephone=no">
+<link rel="apple-touch-icon" href="docs/static/icons/favicon.ico">
+<link rel="icon" type="image/png" href="docs/static/icons/favicon.ico">
+<link rel="shortcut icon" href="docs/static/icons/favicon.ico">
+<meta name="theme-color" content="">
+
+<!-- end include meta.html -->
+
+	
+<!-- include head.html -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width,height=device-height,user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
+
+<link rel="stylesheet" data-rtl="/blb/rtlsemantic.css" href="/pxt-arcade-app/semantic.css" />
+<link id="blocklycss"  data-rtl="/blb/rtlblockly.css" rel="stylesheet" href="/pxt-arcade-app/blockly.css" />
+<link rel="stylesheet" href="/pxt-arcade-app/docfiles/style.css" />
+<link rel="stylesheet" href="/pxt-arcade-app/docfiles/vs.css" />
+<link rel="stylesheet" href="/pxt-arcade-app/docfiles/target.css" />
+
+<script src="/pxt-arcade-app/jquery.js" type="text/javascript"></script>
+<script src="/pxt-arcade-app/semantic.js" type="text/javascript"></script>
+<script src="/pxt-arcade-app/docfiles/target.js" type="text/javascript"></script>
+<script src="/pxt-arcade-app/embed.js" type="text/javascript"></script>
+<script src="/pxt-arcade-app/docfiles/docs.js" type="text/javascript"></script>
+
+<style>
+    
+</style>
+
+<!-- end include head.html -->
+
+
+</head>
+
+<body id='root' class='root'>
+	<div id="accessibleMenu" class="ui accessibleMenu borderless fixed menu docs" role="menubar">
+		
+            <a href="#maincontent" class="ui item link" tabindex="0" role="menuitem">Skip to main content</a>
+        
+	</div>
+
+	
+<!-- include tocheader.html -->
+<div id="top-bar" class="ui fixed accent borderless inverted main menu hideprint docs" role="menubar">
+    <div>
+        
+            <a id="togglesidebar" class="launch icon item" tabindex="0" title="Side menu" aria-label="Side menu" role="menuitem" aria-expanded="false">
+                <i class="content icon"></i>
+            </a>
+        
+        <div class="item" role="menuitem">
+            <div class="header-org-logo">
+                <img src="/static/logo/Microsoft_logo_rgb_W-white_D.png" alt="Microsoft">
+            </div>
+            <div class="header-org-logo-sm">
+                <img src="/static/logo/Microsoft_logo_rgb_W-white_D-square.png" alt="Microsoft">
+            </div>
+            <div class="header-title"><span>MakeCode</span></div>
+        </div>
+    </div>
+    <div>
+        <div class="item">
+            <form id="tocsearch1" class="search" role="form" method="get" action="https://www.bing.com/search">
+                <div class="ui fluid icon input">
+                    <input type="hidden" name="q1" value="site:https://arcade.makecode.com/" />
+                    
+                <input type="search" name="q" placeholder="Search..." aria-label="Search Documentation">
+                <i onclick="document.getElementById('tocsearch1').submit();" tabindex="0" class="search link icon" aria-label="Search" role="button"></i>
+            
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div id="side-menu" class="ui vertical accent inverted sidebar menu left hideprint docs" role="menubar">
+    <!-- TOC Menu (tocheader.html) -->
+    <div class="menuContainer" role="menu">
+        
+    <a class="item " href="/pxt-arcade-app/docs/about.html" role="menuitem">About</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/faq.html" role="menuitem">FAQ</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/projects.html" role="menuitem">Projects</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/github.html" role="menuitem">GitHub</a>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/pxt-arcade-app/docs/reference.html">Reference</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-arcade-app/docs/reference/sprites.html" role="menuitem">sprites</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/reference/controller.html" role="menuitem">controller</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/reference/game.html" role="menuitem">game</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/reference/music.html" role="menuitem">music</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/reference/scene.html" role="menuitem">scene</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/reference/info.html" role="menuitem">info</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/reference/images.html" role="menuitem">images</a>
+
+        </div>
+    </div>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/pxt-arcade-app/docs/blocks.html">Blocks</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-arcade-app/docs/blocks/on-start.html" role="menuitem">On Start</a>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/pxt-arcade-app/docs/blocks/loops.html">Loops</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-arcade-app/docs/blocks/loops/repeat.html" role="menuitem">repeat</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/blocks/loops/for.html" role="menuitem">for</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/blocks/loops/while.html" role="menuitem">while</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/blocks/loops/for-of.html" role="menuitem">for of</a>
+
+        </div>
+    </div>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/pxt-arcade-app/docs/blocks/logic.html">Logic</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-arcade-app/docs/blocks/logic/if.html" role="menuitem">if</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/blocks/logic/boolean.html" role="menuitem">Boolean</a>
+
+        </div>
+    </div>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/pxt-arcade-app/docs/blocks/variables.html">Variables</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-arcade-app/docs/blocks/variables/assign.html" role="menuitem">assign</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/blocks/variables/change.html" role="menuitem">change var</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/blocks/variables/var.html" role="menuitem">var</a>
+
+        </div>
+    </div>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/blocks/math.html" role="menuitem">Math</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/blocks/javascript-blocks.html" role="menuitem">JavaScript blocks</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/blocks/custom.html" role="menuitem">Custom blocks</a>
+
+        </div>
+    </div>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/pxt-arcade-app/docs/python.html">Python</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-arcade-app/docs/python/call.html" role="menuitem">Calling</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/python/sequence.html" role="menuitem">Sequencing</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/python/variables.html" role="menuitem">Variables</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/python/operators.html" role="menuitem">Operators</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/python/statements.html" role="menuitem">Statements</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/python/functions.html" role="menuitem">Functions</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/python/classes.html" role="menuitem">Classes</a>
+
+        </div>
+    </div>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/pxt-arcade-app/docs/javascript.html">JavaScript</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-arcade-app/docs/javascript/call.html" role="menuitem">Calling</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/javascript/sequence.html" role="menuitem">Sequencing</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/javascript/variables.html" role="menuitem">Variables</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/javascript/operators.html" role="menuitem">Operators</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/javascript/statements.html" role="menuitem">Statements</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/javascript/functions.html" role="menuitem">Functions</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/javascript/types.html" role="menuitem">Types</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/javascript/classes.html" role="menuitem">Classes</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/javascript/interfaces.html" role="menuitem">Interfaces</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/javascript/generics.html" role="menuitem">Generics</a>
+
+        </div>
+    </div>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/pxt-arcade-app/docs/types.html">Types</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-arcade-app/docs/types/number.html" role="menuitem">Number</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/types/string.html" role="menuitem">String</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/types/boolean.html" role="menuitem">Boolean</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/types/array.html" role="menuitem">Array</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/types/function.html" role="menuitem">Function</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/types/image.html" role="menuitem">Image</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/types/sprite.html" role="menuitem">Sprite</a>
+
+        </div>
+    </div>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/block-gallery.html" role="menuitem">Blocks Gallery</a>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="">Miscellaneous</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-arcade-app/docs/about.html" role="menuitem">About</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/support.html" role="menuitem">Support</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/translate.html" role="menuitem">Translate</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/share.html" role="menuitem">Sharing projects</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/multiplayer.html" role="menuitem">Multiplayer</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/offline.html" role="menuitem">Offline support</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/save.html" role="menuitem">Save</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/identity/sign-in.html" role="menuitem">Sign In</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/identity/cloud-sync.html" role="menuitem">Cloud Sync</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/vscode.html" role="menuitem">VS Code</a>
+
+        </div>
+    </div>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/pxt-arcade-app/docs/hardware.html">Hardware</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-arcade-app/docs/hardware/errors.html" role="menuitem">Errors</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/hardware/adding.html" role="menuitem">Adding New Board</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/hardware/raspberry-pi.html" role="menuitem">Raspberry Pi</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/hardware/makey-makey.html" role="menuitem">Makey Makey</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/hardware/shoebox-controller.html" role="menuitem">Shoebox Controller</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/hardware/dev.html" role="menuitem">Dev</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/hardware/dbg.html" role="menuitem">Debug connector</a>
+
+        </div>
+    </div>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="">Developers</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-arcade-app/docs/cli.html" role="menuitem">Command Line Interface</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/code.html" role="menuitem">Visual Studio Code support</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/blocks-embed.html" role="menuitem">Blocks Embed</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/developer/images.html" role="menuitem">Art, images, colors</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/developer/sound.html" role="menuitem">Sounds</a>
+
+        </div>
+    </div>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/pxt-arcade-app/docs/lessons.html">Lessons</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-arcade-app/docs/lessons/cherry-pickr.html" role="menuitem">Cherry Pickr</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/lessons/barrel-dodger.html" role="menuitem">Barrel Dodger</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/lessons/dance-party.html" role="menuitem">Dance Party</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/lessons/block-out.html" role="menuitem">BlockOut</a>
+
+        </div>
+    </div>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/pxt-arcade-app/docs/courses.html">Courses</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-arcade-app/docs/courses/csintro1.html" role="menuitem">CS Intro 1</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/courses/csintro2.html" role="menuitem">CS Intro 2</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/courses/csintro3.html" role="menuitem">CS Intro 3</a>
+
+        </div>
+    </div>
+
+    </div>
+</div>
+<!-- end include tocheader.html -->
+
+
+	<div id="docs" class="pusher">
+
+		<div class="article" id="maincontent">
+			<div class="article-inner">
+
+				
+<!-- include header.html -->
+<div class="ui one column padded grid hideprint">
+    <div class="column ui container">
+        
+    </div>
+</div>
+<!-- end include header.html -->
+
+
+				<div class="main ui container fluid mainbody">
+					<button id="printbtn" class="circular ui icon right floated button hideprint hidemobile"
+						title="Print" aria-label="Print">
+						<i class="icon print"></i>
+					</button>
+					
+    <div class="ui text">
+        <p>
+</p>
+<h1 id="get-animated">Get Animated</h1><!-- hints --><p>
+</p>
+<h2 id="getting-animated-">Getting Animated </h2><p>
+</p>
+<p>Let’s add some extra movement!</p>
+<p>
+</p>
+<p><img class="ui image" src="/static/skillmap/class/class4.gif" alt="A moving image showing an animated student" title="This is what your final game should look like." loading="lazy"></p>
+<p>
+</p>
+<h2 id="step-2">Step 2</h2><p><strong>Try what you have so far.</strong></p>
+<hr>
+<ul>
+<li>:binoculars: Test the project that’s in your workspace.</li>
+</ul>
+<p>~hint My game doesn’t work ⚠️</p>
+<hr>
+<p>
+</p>
+<p>If your code isn’t working and you can’t figure out why, click
+
+<br /><a  rel="nofollow noopener" href="#">Replace my code</a><br />
+to replace the blocks in your workspace with new starter code.</p>
+<p>hint~</p>
+<p>
+</p>
+<h2 id="step-3">Step 3</h2><p><strong>Up, Down, Left, and Right</strong></p>
+<p>Let’s animate our student as they walk through the maze. </p>
+<hr>
+<ul>
+<li><p>:video: From the <code>||characterAnimations:Character||</code> category, drag the big<br />
+<code>||characterAnimations:[mySprite] loop frames [ ]...||</code><br />
+block into <strong>the end</strong> of the<br />
+<code>||loops(noclick):on start||</code> container already in the workspace.</p>
+</li>
+<li><p>:mouse pointer: To choose an animation for moving right, click on <br />
+<code>||characterAnimations:moving||</code><br />
+and choose<br />
+<code>||characterAnimations:moving right||</code><br />
+from the dropdown.</p>
+</li>
+</ul>
+
+    <div class="ui hint message">
+        <div class="content">
+            <pre><code class="lang-blocks">scene.setBackgroundColor(13)
+let mySprite = sprites.create(class_img.stand, SpriteKind.Player)
+tiles.placeOnRandomTile(mySprite, assets.tile`stairs`)
+controller.moveSprite(mySprite)
+scene.cameraFollowSprite(mySprite)
+stopwatch.startTimer(stopwatch.TimerType.Tens)
+loops.wrap1(function () {
+    for (let value of tiles.getTilesByType(assets.tile`paper`)) {
+        info.changeScoreBy(1)
+    }
+})
+//@highlight
+characterAnimations.loopFrames(
+mySprite,
+assets.animation`right`,
+100,
+characterAnimations.rule(Predicate.MovingRight)
+)
+</code></pre>
+<p>
+</p>
+<h2 id="step-4">Step 4</h2><p>Next, you can either choose an animation from the gallery, 
+or create your own by adding frames in the <strong>Animation Editor</strong>.</p>
+<hr>
+<ul>
+<li><p>:mouse pointer: Click the grey square inside of <br />
+<code>||characterAnimations:[mySprite] loop frames [ ]...||</code><br />
+to open the <strong>Animation Editor</strong>.  </p>
+</li>
+<li><p>:mouse pointer: Select <strong>Gallery</strong> to choose the animation of a character walking to the right, like this one:
+<img class="ui image" src="/static/skillmap/class/student-right.png" alt="The image of a student facing right with a camera in the lower left corner" title="Choose the animation of the student walking to the right." loading="lazy"></p>
+</li>
+</ul>
+<p>Then click <strong>Done</strong>.</p>
+
+    <div class="ui hint message">
+        <div class="content">
+            <pre><code class="lang-blocks">scene.setBackgroundColor(13)
+let mySprite = sprites.create(class_img.stand, SpriteKind.Player)
+tiles.placeOnRandomTile(mySprite, assets.tile`stairs`)
+controller.moveSprite(mySprite)
+scene.cameraFollowSprite(mySprite)
+stopwatch.startTimer(stopwatch.TimerType.Tens)
+loops.wrap1(function () {
+    for (let value of tiles.getTilesByType(assets.tile`paper`)) {
+        info.changeScoreBy(1)
+    }
+})
+//@highlight
+characterAnimations.loopFrames(
+mySprite,
+class_img.right,
+100,
+characterAnimations.rule(Predicate.MovingRight)
+)
+</code></pre>
+<p>
+</p>
+<h2 id="step-5">Step 5</h2><p><strong>Try your game.</strong></p>
+<hr>
+<ul>
+<li>:binoculars: Move your student through the maze. What happens when you move to the right?
+What happens when you move in any other direction?</li>
+</ul>
+<p>
+</p>
+<h2 id="step-6">Step 6</h2><p>Now we can add animations for all of the other directions.</p>
+<hr>
+<ul>
+<li><p>:video: Snap three more<br />
+<code>||characterAnimations:[mySprite] loop frames [ ]...||</code><br />
+block into <strong>the end</strong> of the<br />
+<code>||loops(noclick):on start||</code> container already in the workspace.</p>
+</li>
+<li><p>:mouse pointer: Set the <strong>when</strong> actions for the blocks to <br />
+<code>||characterAnimations:moving left||</code><br />
+<code>||characterAnimations:moving up||</code><br />
+<code>||characterAnimations:moving down||</code><br /></p>
+</li>
+</ul>
+
+    <div class="ui hint message">
+        <div class="content">
+            <pre><code class="lang-blocks">scene.setBackgroundColor(13)
+let mySprite = sprites.create(class_img.stand, SpriteKind.Player)
+tiles.placeOnRandomTile(mySprite, assets.tile`stairs`)
+controller.moveSprite(mySprite)
+scene.cameraFollowSprite(mySprite)
+stopwatch.startTimer(stopwatch.TimerType.Tens)
+loops.wrap1(function () {
+    for (let value of tiles.getTilesByType(assets.tile`paper`)) {
+        info.changeScoreBy(1)
+    }
+})
+characterAnimations.loopFrames(
+mySprite,
+img.right,
+100,
+characterAnimations.rule(Predicate.MovingRight)
+)
+//@highlight
+characterAnimations.loopFrames(
+mySprite,
+assets.animation`left`,
+100,
+characterAnimations.rule(Predicate.MovingLeft)
+)
+//@highlight
+characterAnimations.loopFrames(
+mySprite,
+assets.animation`up`,
+100,
+characterAnimations.rule(Predicate.MovingUp)
+)
+//@highlight
+characterAnimations.loopFrames(
+mySprite,
+assets.animation`down`,
+100,
+characterAnimations.rule(Predicate.MovingDown)
+)</code></pre>
+<p>
+</p>
+<h2 id="step-7">Step 7</h2><p><strong>Add animations to each of your new character blocks.</strong></p>
+
+    <div class="ui hint message">
+        <div class="content">
+            <pre><code class="lang-blocks">scene.setBackgroundColor(13)
+let mySprite = sprites.create(class_img.stand, SpriteKind.Player)
+tiles.placeOnRandomTile(mySprite, assets.tile`stairs`)
+controller.moveSprite(mySprite)
+scene.cameraFollowSprite(mySprite)
+stopwatch.startTimer(stopwatch.TimerType.Tens)
+loops.wrap1(function () {
+    for (let value of tiles.getTilesByType(assets.tile`paper`)) {
+        info.changeScoreBy(1)
+    }
+})
+characterAnimations.loopFrames(
+mySprite,
+class_img.right,
+100,
+characterAnimations.rule(Predicate.MovingRight)
+)
+//@highlight
+characterAnimations.loopFrames(
+mySprite,
+class_img.left,
+100,
+characterAnimations.rule(Predicate.MovingLeft)
+)
+//@highlight
+characterAnimations.loopFrames(
+mySprite,
+class_img.up,
+100,
+characterAnimations.rule(Predicate.MovingUp)
+)
+//@highlight
+characterAnimations.loopFrames(
+mySprite,
+class_img.down,
+100,
+characterAnimations.rule(Predicate.MovingDown)
+)</code></pre>
+<p>
+</p>
+<h2 id="step-8">Step 8</h2><p><strong>🕹️ Try your finished game!</strong></p>
+<hr>
+<p>Watch your student walk through the maze with animations!</p>
+<p>Can you escape with a time less than 390?</p>
+<p>
+</p>
+<h2 id="finale">Finale</h2><p>💯 <strong>You did great!</strong> 💯</p>
+<hr>
+<p>When you’re finished playing your game, click <strong>Done</strong> to head back to the skillmap where you
+can share your game or keep customizing it!</p>
+<p>~hint How do I share my game?💡</p>
+<hr>
+<p><strong>Want to share your game?</strong></p>
+<p>Click “Done” to get back out to the skillmap, then look in the lower-right corner
+for the share button.</p>
+<p><img class="ui image" src="/static/skillmap/class/share.gif" alt="Share your card" loading="lazy"></p>
+<p>hint~</p>
+<p>
+</p>
+<p>
+</p>
+<pre><code class="lang-blockconfig.global">    stopwatch.startTimer(stopwatch.TimerType.Tens)
+    game.setGameOverMessage(true, &quot;Way to go!&quot;)
+    tiles.setTileAt(location, assets.tile`transparency16`)
+    stopwatch.changeTimerBy(5000)
+
+    loops.wrap1(function () {
+        for (let value of tiles.getTilesByType(assets.tile`paper`)) {
+            info.changeScoreBy(1)
+        }
+    })
+
+    info.changeScoreBy(-1)
+    info.onScore(0, function () { })
+    info.setScore(stopwatch.getTimerValue(stopwatch.TimerGran.Tenths))
+    game.setGameOverScoringType(game.ScoringType.LowScore)
+
+    characterAnimations.loopFrames(
+    mySprite,
+    class_img.left,
+    100,
+    characterAnimations.rule(Predicate.Moving)
+    )</code></pre>
+<p>
+</p>
+<pre><code class="lang-package">//These are extensions for some of the blocks we want to use
+pxt-tilemaps=github:microsoft/pxt-tilemaps
+arcade-character-animations=github:microsoft/arcade-character-animations
+stopwatch=github:kiki-lee/stopwatch#v0.0.5
+
+//This is the image pack for this tutorial
+class_img=github:kiki-lee/class_img</code></pre>
+<p>
+</p>
+<pre><code class="lang-template">
+scene.onOverlapTile(SpriteKind.Player, assets.tile`teacher`, function (sprite, location) {
+    tiles.setTileAt(location, assets.tile`transparency16`)
+    stopwatch.changeTimerBy(5000)
+})
+
+scene.onOverlapTile(SpriteKind.Player, assets.tile`door`, function (sprite, location) {
+    game.setGameOverMessage(false, &quot;You left too early!&quot;)
+    game.over(false)
+})
+
+scene.onOverlapTile(SpriteKind.Player, assets.tile`paper`, function (sprite, location) {
+    tiles.setTileAt(location, assets.tile`transparency16`)
+    info.changeScoreBy(-1)
+})
+
+scene.setBackgroundColor(13)
+let mySprite = sprites.create(class_img.stand, SpriteKind.Player)
+tiles.placeOnRandomTile(mySprite, assets.tile`stairs`)
+controller.moveSprite(mySprite)
+scene.cameraFollowSprite(mySprite)
+stopwatch.startTimer(stopwatch.TimerType.Tens)
+loops.wrap1(function () {
+    for (let value of tiles.getTilesByType(assets.tile`paper`)) {
+        info.changeScoreBy(1)
+    }
+})
+
+info.onScore(0, function () {
+    info.setScore(stopwatch.getTimerValue(stopwatch.TimerGran.Tenths))
+    game.setGameOverScoringType(game.ScoringType.LowScore)
+    game.gameOver(true)
+})</code></pre>
+<p>
+</p>
+<pre><code class="lang-ghost">scene.onOverlapTile(SpriteKind.Player, assets.tile`paper`, function (sprite, location) {
+    tiles.setTileAt(location, assets.tile`transparency16`)
+    info.changeScoreBy(-1)
+})
+scene.onOverlapTile(SpriteKind.Player, assets.tile`teacher`, function (sprite, location) {
+    tiles.setTileAt(location, assets.tile`transparency16`)
+    stopwatch.changeTimerBy(5000)
+})
+info.onScore(0, function () {
+    info.setScore(stopwatch.getTimerValue(stopwatch.TimerGran.Tenths))
+    game.setGameOverScoringType(game.ScoringType.LowScore)
+    game.gameOver(true)
+})
+scene.onOverlapTile(SpriteKind.Player, assets.tile`door`, function (sprite, location) {
+    game.setGameOverMessage(false, &quot;You left too early!&quot;)
+    game.over(false)
+})
+scene.setBackgroundColor(13)
+tiles.setTilemap(tilemap`level1`)
+let mySprite = sprites.create(assets.image`stand`, SpriteKind.Player)
+controller.moveSprite(mySprite)
+tiles.placeOnRandomTile(mySprite, sprites.dungeon.stairLarge)
+scene.cameraFollowSprite(mySprite)
+characterAnimations.loopFrames(
+mySprite,
+assets.animation`right`,
+100,
+characterAnimations.rule(Predicate.MovingRight)
+)
+characterAnimations.loopFrames(
+mySprite,
+assets.animation`left`,
+100,
+characterAnimations.rule(Predicate.MovingLeft)
+)
+characterAnimations.loopFrames(
+mySprite,
+assets.animation`bwd`,
+100,
+characterAnimations.rule(Predicate.MovingUp)
+)
+characterAnimations.loopFrames(
+mySprite,
+assets.animation`fwd`,
+100,
+characterAnimations.rule(Predicate.MovingDown)
+)
+loops.wrap1(function () {
+    for (let value of tiles.getTilesByType(assets.tile`paper`)) {
+        info.changeScoreBy(1)
+    }
+})
+stopwatch.startTimer(stopwatch.TimerType.Tens)</code></pre>
+<p>
+</p>
+<pre><code class="lang-customts">tiles.setTilemap(tilemap`school_1`)
+
+namespace loops{
+    /**
+    * A wrapper to bundle complex instructions together
+    */
+    //% block=&quot;count assignments&quot;  weight=300
+    //% handlerStatement=1
+    export function wrap1(handler: () =&gt; void) {
+        handler();
+    }
+}</code></pre>
+<p>
+</p>
+<pre><code class="lang-assetjson">{
+  &quot;README.md&quot;: &quot; &quot;,
+  &quot;assets.json&quot;: &quot;&quot;,
+  &quot;images.g.jres&quot;: &quot;{\n    \&quot;*\&quot;: {\n        \&quot;mimeType\&quot;: \&quot;image/x-mkcd-f4\&quot;,\n        \&quot;dataEncoding\&quot;: \&quot;base64\&quot;,\n        \&quot;namespace\&quot;: \&quot;myImages\&quot;\n    }\n}&quot;,
+  &quot;images.g.ts&quot;: &quot;// Auto-generated code. Do not edit.\nnamespace myImages {\n\n    helpers._registerFactory(\&quot;image\&quot;, function(name: string) {\n        switch(helpers.stringTrim(name)) {\n\n        }\n        return null;\n    })\n\n    helpers._registerFactory(\&quot;animation\&quot;, function(name: string) {\n        switch(helpers.stringTrim(name)) {\n\n        }\n        return null;\n    })\n\n    helpers._registerFactory(\&quot;song\&quot;, function(name: string) {\n        switch(helpers.stringTrim(name)) {\n\n        }\n        return null;\n    })\n\n}\n// Auto-generated code. Do not edit.\n&quot;,
+  &quot;main.blocks&quot;: &quot;&quot;,
+  &quot;main.ts&quot;: &quot;&quot;,
+  &quot;pxt.json&quot;: &quot;{\n    \&quot;name\&quot;: \&quot;class_tiles\&quot;,\n    \&quot;description\&quot;: \&quot;\&quot;,\n    \&quot;dependencies\&quot;: {\n        \&quot;device\&quot;: \&quot;*\&quot;\n    },\n    \&quot;files\&quot;: [\n        \&quot;main.blocks\&quot;,\n        \&quot;main.ts\&quot;,\n        \&quot;README.md\&quot;,\n        \&quot;assets.json\&quot;,\n        \&quot;tilemap.g.jres\&quot;,\n        \&quot;tilemap.g.ts\&quot;,\n        \&quot;images.g.jres\&quot;,\n        \&quot;images.g.ts\&quot;\n    ],\n    \&quot;targetVersions\&quot;: {\n        \&quot;branch\&quot;: \&quot;v1.6.7\&quot;,\n        \&quot;tag\&quot;: \&quot;v1.6.7\&quot;,\n        \&quot;commits\&quot;: \&quot;https://github.com/microsoft/pxt-arcade/commits/df8cbfd31829508563fa67096db8a6fe6e1d06ec\&quot;,\n        \&quot;target\&quot;: \&quot;1.6.7\&quot;,\n        \&quot;pxt\&quot;: \&quot;7.2.12\&quot;\n    },\n    \&quot;preferredEditor\&quot;: \&quot;tsprj\&quot;,\n    \&quot;assetPack\&quot;: true\n}\n&quot;,
+  &quot;tilemap.g.jres&quot;: &quot;{\n    \&quot;transparency16\&quot;: {\n        \&quot;data\&quot;: \&quot;hwQQABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==\&quot;,\n        \&quot;mimeType\&quot;: \&quot;image/x-mkcd-f4\&quot;,\n        \&quot;tilemapTile\&quot;: true\n    },\n    \&quot;tile1\&quot;: {\n        \&quot;data\&quot;: \&quot;hwQQABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQERERERERADk7u7u7u7uQO7u7uTu7u7g7u7u7u7u7uTu7u7u7u7u7+7u7u7u7u7g7u7u7u7u7vDu7u7u7u7uAO/u7u7u7u4A8P///////wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==\&quot;,\n        \&quot;mimeType\&quot;: \&quot;image/x-mkcd-f4\&quot;,\n        \&quot;tilemapTile\&quot;: true,\n        \&quot;displayName\&quot;: \&quot;door\&quot;\n    },\n    \&quot;tile9\&quot;: {\n        \&quot;data\&quot;: \&quot;hwQQABAAAAAAAAAAywwAAAAAALDbCwAAAAAAaxELAAAAALBrG70AAAAA220WsQAAALBr27bRCwAAa93RZhELALBr27ZhFrEMsG3WZhEWvQCw3bZhFrELAADbZhEWvQAAANthHbELAAAAsBEdvQAAAACwHbELAAAAAAAbvQAAAAAAALsLAAAAAA==\&quot;,\n        \&quot;mimeType\&quot;: \&quot;image/x-mkcd-f4\&quot;,\n        \&quot;tilemapTile\&quot;: true,\n        \&quot;displayName\&quot;: \&quot;paper\&quot;\n    },\n    \&quot;tile6\&quot;: {\n        \&quot;data\&quot;: \&quot;hwQQABAAAAAAwIERGAwAAADAGBEYDAAAAMARgREMAAAAwIERGAwAAADAEREYDAAAAAD/RMwMAAAA8P9EwQAAAAD//7wRDADA8L9PRBvLDM/Av0/u7hGM/8C8S+EuEWb/8MxL4SIRhgDw/PtEtMxm/8D8+/S/RIj/AP+7/89EDM8A////D8wAwA==\&quot;,\n        \&quot;mimeType\&quot;: \&quot;image/x-mkcd-f4\&quot;,\n        \&quot;tilemapTile\&quot;: true,\n        \&quot;displayName\&quot;: \&quot;teacher\&quot;\n    },\n    \&quot;tile2\&quot;: {\n        \&quot;data\&quot;: \&quot;hwQQABAAAAC7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7uw==\&quot;,\n        \&quot;mimeType\&quot;: \&quot;image/x-mkcd-f4\&quot;,\n        \&quot;tilemapTile\&quot;: true,\n        \&quot;displayName\&quot;: \&quot;brick\&quot;\n    },\n    \&quot;tile3\&quot;: {\n        \&quot;data\&quot;: \&quot;hwQQABAAAADMzMzMzMzMzMzMzMy7u7u9zMzMzLu7u73MzMzMu7u7vczMzMy7u7u9zMzMzMzMvLvMzLu7u9u7u8zMu7u727u7zMy7u7vbu7vMzLu7u9u7u8zMzMzMu7u7vLu7u9u7u7u8u7u727u7u7y7u7vbu7u7vLu7u9u7u7vMzMzMzMzMzA==\&quot;,\n        \&quot;mimeType\&quot;: \&quot;image/x-mkcd-f4\&quot;,\n        \&quot;tilemapTile\&quot;: true,\n        \&quot;displayName\&quot;: \&quot;stairs\&quot;\n    },\n    \&quot;tile4\&quot;: {\n        \&quot;data\&quot;: \&quot;hwQQABAAAAB1d3d3d3d3d3d30XZ3F3Z3dTcRY3dxcVd3EXbRdxd2d3cRdtF3d3d3dzcRY3d3d3d3d9F2F3Z3d3d3d3dxcXd3d3d3dxd2d3d3V2V3d3d3d3d3d1d1F213d3d3VXYTMXZ3YXdnF2EXfRcXd3cXYRd9d2F3d3cTMXZ3d3d3dxdtdw==\&quot;,\n        \&quot;mimeType\&quot;: \&quot;image/x-mkcd-f4\&quot;,\n        \&quot;tilemapTile\&quot;: true,\n        \&quot;displayName\&quot;: \&quot;outdoors\&quot;\n    },\n    \&quot;level1\&quot;: {\n        \&quot;id\&quot;: \&quot;level1\&quot;,\n        \&quot;mimeType\&quot;: \&quot;application/mkcd-tilemap\&quot;,\n        \&quot;data\&quot;: \&quot;MTAxMDAwMTAwMDA0MDQwNDA0MDQwNDA0MDQwNDA0MDQwNDA0MDQwNDA0MDQwMDAwMDAwMDAwMDAwNDAwMDAwMDAwMDAwMDAwMDQwNTAwMDQwNDAwMDQwMjA0MDAwNDAwMDQwMDA0MDAwNDA0MDAwNDA0MDMwNDA0MDQwMDA0MDAwNDAwMDQwMDA0MDQwMDAwMDAwNDA0MDMwNDAwMDQwMDA0MDAwNDAwMDQwNDAwMDQwNDA0MDQwMDA0MDAwNDAwMDAwMDA0MDAwNDA0MDAwMDAwMDAwMDAwMDAwMDA0MDMwNDAwMDQwMDA0MDQwMDAzMDQwNDA0MDQwNDAwMDQwNDA0MDAwNDAwMDQwNDAwMDAwMDA0MDAwMzAwMDAwNDAzMDQwMDA0MDAwNDA0MDAwNDA0MDQwMDA0MDQwNDA0MDAwNDAwMDQwMDA0MDQwMDAwMDAwMDAwMDQwMzAwMDAwMDAwMDAwNDAwMDQwNDAwMDQwNDA0MDQwNDA0MDQwNDA0MDQwMjA0MDAwNDA0MDAwMDAwMDAwMzA0MDAwMDAwMDAwMDAwMDQwMDA0MDQwMDA0MDQwNDA0MDQwNDA0MDQwNDA0MDQwNDAwMDQwNDAyMDQwMDAwMDAwMDAwMDMwMDAwMDAwMDAwMDAwMTA0MDQwNDA0MDQwNDA0MDQwNDA0MDQwNDA0MDQwNDA2MjIyMjIyMjIyMjIyMjIyMjAyMDAwMDIwMDAwMDAwMjAwMDAyMjAyMDAwMjAwMDIwMDIyMjIwMjIyMDIwMjAyMDAyMDAyMjIwMjAwMDIwMjAwMjIyMjIwMDIwMDAyMDIwMDIwMDAwMDAyMDIwMjAyMDAyMjAyMjAyMjAyMjIwMjAwMjAwMDIwMDIwMjAyMDIwMDIyMjAyMjIyMjAwMjAyMDAyMDAwMDAyMDAwMDIwMjAwMjIwMjIyMjIyMjIyMDIwMDIwMDAwMDIwMDAwMDAyMDAyMjIyMjIyMjIyMjIyMDAwMjAyMDAwMDAwMDAwMDAwMjIyMjIyMjIyMjIyMjIwMg==\&quot;,\n        \&quot;tileset\&quot;: [\n            \&quot;myTiles.transparency16\&quot;,\n            \&quot;myTiles.tile1\&quot;,\n            \&quot;myTiles.tile6\&quot;,\n            \&quot;myTiles.tile9\&quot;,\n            \&quot;myTiles.tile2\&quot;,\n            \&quot;myTiles.tile3\&quot;,\n            \&quot;myTiles.tile4\&quot;\n        ],\n        \&quot;displayName\&quot;: \&quot;school_1\&quot;\n    },\n    \&quot;*\&quot;: {\n        \&quot;mimeType\&quot;: \&quot;image/x-mkcd-f4\&quot;,\n        \&quot;dataEncoding\&quot;: \&quot;base64\&quot;,\n        \&quot;namespace\&quot;: \&quot;myTiles\&quot;\n    }\n}&quot;,
+  &quot;tilemap.g.ts&quot;: &quot;// Auto-generated code. Do not edit.\nnamespace myTiles {\n    //% fixedInstance jres blockIdentity=images._tile\n    export const transparency16 = image.ofBuffer(hex``);\n    //% fixedInstance jres blockIdentity=images._tile\n    export const tile1 = image.ofBuffer(hex``);\n    //% fixedInstance jres blockIdentity=images._tile\n    export const tile9 = image.ofBuffer(hex``);\n    //% fixedInstance jres blockIdentity=images._tile\n    export const tile6 = image.ofBuffer(hex``);\n    //% fixedInstance jres blockIdentity=images._tile\n    export const tile2 = image.ofBuffer(hex``);\n    //% fixedInstance jres blockIdentity=images._tile\n    export const tile3 = image.ofBuffer(hex``);\n    //% fixedInstance jres blockIdentity=images._tile\n    export const tile4 = image.ofBuffer(hex``);\n\n    helpers._registerFactory(\&quot;tilemap\&quot;, function(name: string) {\n        switch(helpers.stringTrim(name)) {\n            case \&quot;school_1\&quot;:\n            case \&quot;level1\&quot;:return tiles.createTilemap(hex`1000100004040404040404040404040404040404040000000000000400000000000000040500040400040204000400040004000404000404030404040004000400040004040000000404030400040004000400040400040404040004000400000004000404000000000000000004030400040004040003040404040400040404000400040400000004000300000403040004000404000404040004040404000400040004040000000000040300000000000400040400040404040404040404040204000404000000000304000000000000040004040004040404040404040404040400040402040000000000030000000000000104040404040404040404040404040406`, img`\n2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 \n2 . . . . . . 2 . . . . . . . 2 \n. . 2 . . 2 . 2 . . . 2 . . . 2 \n2 . 2 2 . 2 2 2 . 2 . 2 . 2 . 2 \n2 . . . 2 2 . 2 . 2 . . . 2 . 2 \n2 . 2 2 2 2 . . . 2 . . . 2 . 2 \n2 . . . . . . . . 2 . 2 . 2 . 2 \n2 . . 2 2 2 2 . . 2 2 2 . 2 . 2 \n2 . . . 2 . . . . 2 . 2 . 2 . 2 \n2 . 2 2 2 . 2 2 2 2 . . . 2 . 2 \n2 . . . . . 2 . . . . . . 2 . 2 \n2 . . 2 2 2 2 2 2 2 2 2 . 2 . 2 \n2 . . . . . 2 . . . . . . . . 2 \n2 . 2 2 2 2 2 2 2 2 2 2 2 2 . . \n2 . 2 . . . . . . . . . . . . . \n2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 . \n`, [myTiles.transparency16,myTiles.tile1,myTiles.tile6,myTiles.tile9,myTiles.tile2,myTiles.tile3,myTiles.tile4], TileScale.Sixteen);\n        }\n        return null;\n    })\n\n    helpers._registerFactory(\&quot;tile\&quot;, function(name: string) {\n        switch(helpers.stringTrim(name)) {\n            case \&quot;transparency16\&quot;:return transparency16;\n            case \&quot;door\&quot;:\n            case \&quot;tile1\&quot;:return tile1;\n            case \&quot;paper\&quot;:\n            case \&quot;tile9\&quot;:return tile9;\n            case \&quot;teacher\&quot;:\n            case \&quot;tile6\&quot;:return tile6;\n            case \&quot;brick\&quot;:\n            case \&quot;tile2\&quot;:return tile2;\n            case \&quot;stairs\&quot;:\n            case \&quot;tile3\&quot;:return tile3;\n            case \&quot;outdoors\&quot;:\n            case \&quot;tile4\&quot;:return tile4;\n        }\n        return null;\n    })\n\n}\n// Auto-generated code. Do not edit.\n&quot;
+}</code></pre>
+
+        </div>
+    </div>
+
+    </div>
+
+					<div class="hideprint"></div>
+				</div>
+
+			</div>
+
+			
+<!-- include footer.html -->
+<footer class="ui vertical footer segment hideprint docs inverted" aria-hidden="false">
+    <div class="ui center aligned container">
+        <div class="ui horizontal link list">
+            <a
+                class="item"
+                href="https://twitter.com/intent/follow?screen_name=MsMakeCode"
+                title="Follow us on Twitter"
+                target="_blank"
+                rel="noopener">
+                <i class="huge icon twitter"></i>
+            </a>
+            <a class="item" href="https://www.youtube.com/channel/UCye7YlvFUUQ1dSy0WZZ1T_Q" title="Subscribe to our YouTube channel"
+                target="_blank" rel="noopened">
+                <i class="huge icon youtube"></i>
+            </a>
+            <a class="item" href="mailto:makecode@microsoft.com" title="Send us an Email"
+                target="_blank" rel="noopened">
+                <i class="huge icon mail"></i>
+            </a>
+        </div>
+        <div class="ui section divider"></div>
+        <div class="ui container horizontal small divided link list">
+            <a id="langpicker" tabindex="0" class="ui item" rel="noopener">
+                <i class="icon xicon globe" aria-hidden="true" role="presentation"></i>Language
+            </a>
+            <a class="item" href="https://makecode.com/privacy" target="_blank" rel="noopener">Privacy &amp; Cookies</a>
+            <a class="item" href="https://makecode.com/termsofuse" target="_blank" rel="noopener">Terms Of Use</a>
+            <a class="item" href="https://makecode.com/trademarks" target="_blank" rel="noopener">Trademarks</a>
+            <span class="item">© 2022 Microsoft</span>
+        </div>
+        <div class="ui container horizontal small link list poweredBy">
+            <span class="item">Powered by</span>
+            <a class="middle aligned" href="https://makecode.com/" title="Microsoft MakeCode"
+                target="_blank" rel="noopener">
+                <img width="100" src="/static/logo/Microsoft-logo_rgb_c-gray.png" alt="Microsoft">
+            </a>
+        </div>
+    </div>
+</footer>
+
+<!-- end include footer.html -->
+
+
+		</div>
+
+	</div>
+
+    
+<!-- include langpicker.html -->
+<div id="langmodal" class="ui modal docs" role="dialog" aria-modal="true" aria-describedby="langmodalheader" tabindex="-1">
+    <h2 id="langmodalheader" class="header">Select Language</h2>
+    <div role="button" class="closeIcon" tabindex="0" aria-label="Close">
+        <i class="icon close remove circle" aria-hidden="true"></i>
+    </div>
+
+	<div class="content">
+	    <div class="group">
+            <div id="availablelocales" class="ui cards centered" role="listbox" aria-label="List of available locales"></div>
+        </div>
+        <div class="ui" id="langmodalfooter">
+            <a class="ui" href="/pxt-arcade-app/docs/translate.html" target="_blank" rel="noopener noreferrer">
+                How do I add a new language?
+            </a>
+
+            <a id="translatebtn" class="ui button" role="button" tabindex="0">
+                Translate this page
+            </a>
+        </div>
+    </div>
+</div>
+
+
+<!-- end include langpicker.html -->
+
+	
+<!-- include macros.html -->
+<!-- macro button -->
+
+<!-- macro vimeo -->
+
+<!-- macro youtube -->
+
+<!-- macro section -->
+
+<!-- macro hide -->
+
+<!-- macro avatar -->
+
+<!-- macro hint -->
+
+<!-- macro codecard -->
+
+<!-- macro tutorialhint -->
+
+<!-- macro reminder -->
+
+<!-- macro alert -->
+
+<!-- macro tip -->
+
+<!-- wrapped around ordinary content -->
+<!-- macro main-container -->
+
+<!-- used for 'column' box - they are collected and wrapped in 'column-container' -->
+<!-- macro column -->
+<!-- macro column-container -->
+
+
+<!-- Menu on the top of the page -->
+<!-- macro item -->
+
+<!-- macro divider -->
+
+<!-- TOC in the sidebar -->
+<!-- macro item -->
+
+<!-- macro divider -->
+
+<!-- macro toc-dropdown -->
+
+<!-- macro toc-dropdown-noLink -->
+
+<!-- macro toc-dropdown-noHeading -->
+
+<!-- TODO: duplicates of above for compatability with docsrender.ts;
+    remove with pxtlib/docsrender.ts TOC TODOs after cloud bump. -->
+<!-- macro top-dropdown -->
+
+<!-- macro top-dropdown-noHeading -->
+
+<!-- macro inner-dropdown -->
+
+<!-- macro nested-dropdown -->
+<!-- end include macros.html -->
+
+	
+<!-- include tracking.html -->
+<script type="text/javascript" src="/pxt-arcade-app/pxtweb.js"></script>
+<script type="text/javascript">
+    window.loadAppInsights = function (includeCookie) {
+        //Backend will patch / + doccdn + / with CDN url and the check that URL ends with the sha would pass
+        var isProduction = includeCookie && (/[0-9a-f]{40}\/ai\.2\.min\.js$/.test("/pxt-arcade-app/ai.2.min.js"));
+        !function(T,l,y){var S=T.location,k="script",D="connectionString",C="ingestionendpoint",I="disableExceptionTracking",E="ai.device.",b="toLowerCase",w="crossOrigin",N="POST",e="appInsightsSDK",t=y.name||"appInsights";(y.name||T[e])&&(T[e]=t);var n=T[t]||function(d){var g=!1,f=!1,m={initialize:!0,queue:[],sv:"5",version:2,config:d};function v(e,t){var n={},a="Browser";return n[E+"id"]=a[b](),n[E+"type"]=a,n["ai.operation.name"]=S&&S.pathname||"_unknown_",n["ai.internal.sdkVersion"]="javascript:snippet_"+(m.sv||m.version),{time:function(){var e=new Date;function t(e){var t=""+e;return 1===t.length&&(t="0"+t),t}return e.getUTCFullYear()+"-"+t(1+e.getUTCMonth())+"-"+t(e.getUTCDate())+"T"+t(e.getUTCHours())+":"+t(e.getUTCMinutes())+":"+t(e.getUTCSeconds())+"."+((e.getUTCMilliseconds()/1e3).toFixed(3)+"").slice(2,5)+"Z"}(),iKey:e,name:"Microsoft.ApplicationInsights."+e.replace(/-/g,"")+"."+t,sampleRate:100,tags:n,data:{baseData:{ver:2}}}}var h=d.url||y.src;if(h){function a(e){var t,n,a,i,r,o,s,c,u,p,l;g=!0,m.queue=[],f||(f=!0,t=h,s=function(){var e={},t=d.connectionString;if(t)for(var n=t.split(";"),a=0;a<n.length;a++){var i=n[a].split("=");2===i.length&&(e[i[0][b]()]=i[1])}if(!e[C]){var r=e.endpointsuffix,o=r?e.location:null;e[C]="https://"+(o?o+".":"")+"dc."+(r||"services.visualstudio.com")}return e}(),c=s[D]||d[D]||"",u=s[C],p=u?u+"/v2/track":d.endpointUrl,(l=[]).push((n="SDK LOAD Failure: Failed to load Application Insights SDK script (See stack for details)",a=t,i=p,(o=(r=v(c,"Exception")).data).baseType="ExceptionData",o.baseData.exceptions=[{typeName:"SDKLoadFailed",message:n.replace(/\./g,"-"),hasFullStack:!1,stack:n+"\nSnippet failed to load ["+a+"] -- Telemetry is disabled\nHelp Link: https://go.microsoft.com/fwlink/?linkid=2128109\nHost: "+(S&&S.pathname||"_unknown_")+"\nEndpoint: "+i,parsedStack:[]}],r)),l.push(function(e,t,n,a){var i=v(c,"Message"),r=i.data;r.baseType="MessageData";var o=r.baseData;return o.message='AI (Internal): 99 message:"'+("SDK LOAD Failure: Failed to load Application Insights SDK script (See stack for details) ("+n+")").replace(/\"/g,"")+'"',o.properties={endpoint:a},i}(0,0,t,p)),function(e,t){if(JSON){var n=T.fetch;if(n&&!y.useXhr)n(t,{method:N,body:JSON.stringify(e),mode:"cors"});else if(XMLHttpRequest){var a=new XMLHttpRequest;a.open(N,t),a.setRequestHeader("Content-type","application/json"),a.send(JSON.stringify(e))}}}(l,p))}function i(e,t){f||setTimeout(function(){!t&&m.core||a()},500)}var e=function(){var n=l.createElement(k);n.src=h;var e=y[w];return!e&&""!==e||"undefined"==n[w]||(n[w]=e),n.onload=i,n.onerror=a,n.onreadystatechange=function(e,t){"loaded"!==n.readyState&&"complete"!==n.readyState||i(0,t)},n}();y.ld<0?l.getElementsByTagName("head")[0].appendChild(e):setTimeout(function(){l.getElementsByTagName(k)[0].parentNode.appendChild(e)},y.ld||0)}try{m.cookie=l.cookie}catch(p){}function t(e){for(;e.length;)!function(t){m[t]=function(){var e=arguments;g||m.queue.push(function(){m[t].apply(m,e)})}}(e.pop())}var n="track",r="TrackPage",o="TrackEvent";t([n+"Event",n+"PageView",n+"Exception",n+"Trace",n+"DependencyData",n+"Metric",n+"PageViewPerformance","start"+r,"stop"+r,"start"+o,"stop"+o,"addTelemetryInitializer","setAuthenticatedUserContext","clearAuthenticatedUserContext","flush"]),m.SeverityLevel={Verbose:0,Information:1,Warning:2,Error:3,Critical:4};var s=(d.extensionConfig||{}).ApplicationInsightsAnalytics||{};if(!0!==d[I]&&!0!==s[I]){var c="onerror";t(["_"+c]);var u=T[c];T[c]=function(e,t,n,a,i){var r=u&&u(e,t,n,a,i);return!0!==r&&m["_"+c]({message:e,url:t,lineNumber:n,columnNumber:a,error:i}),r},d.autoExceptionInstrumented=!0}return m}(y.cfg);function a(){y.onInit&&y.onInit(n)}(T[t]=n).queue&&0===n.queue.length?(n.queue.push(a),n.trackPageView({})):a()}(window,document,{
+            src: "https://js.monitor.azure.com/scripts/b/ai.2.min.js", // The SDK URL Source
+            onInit: function (sdk) {
+                sdk.addTelemetryInitializer(function (envelope) {
+                    // App Insights automatically sends a page view event on setup, but we send our own later with additional properties.
+                    // This stops the automatic event from firing, so we don't end up with duplicate page view events.
+                    if (envelope.baseType == "PageviewData" && !envelope.baseData.properties) {
+                        return false;
+                    }
+
+                    if (envelope.baseType == "PageviewPerformanceData") {
+                        var pageName = envelope.baseData.name;
+                        envelope.baseData.name = window.location.origin;
+                        if (!envelope.baseData.properties) {
+                            envelope.baseData.properties = {};
+                        }
+                        envelope.baseData.properties.pageName = pageName;
+                        var scrubbedUrl = scrubUrl(envelope.baseData.uri);
+                        envelope.baseData.uri = scrubbedUrl;
+                        var toUrl = new URL(scrubbedUrl);
+                        envelope.baseData.properties.pathName = toUrl ? toUrl.pathname : "";
+                        if (envelope.ext && envelope.ext.trace) {
+                            envelope.ext.trace.name = toUrl ? toUrl.pathname : "";
+                        }
+                    }
+
+                    var telemetryItem = envelope.baseData;
+                    telemetryItem.properties = telemetryItem.properties || {};
+                    telemetryItem.properties["cookie"] = isProduction;
+                    if (typeof pxtConfig === "undefined" || !pxtConfig || !pxtConfig.targetId) {
+                        telemetryItem.properties["target"] = "arcade";
+                        return true;
+                    }
+                    telemetryItem.properties["target"] = pxtConfig.targetId;
+                    telemetryItem.properties["stage"] = (pxtConfig.relprefix || "/--").replace(/[^a-z]/ig, '')
+                    if (typeof Windows !== "undefined")
+                        telemetryItem.properties["WindowsApp"] = 1;
+                    var userAgent = navigator.userAgent.toLowerCase();
+                    var electronRegexResult = /\belectron\/(\d+\.\d+\.\d+.*?)(?: |$)/i.exec(userAgent); // Example navigator.userAgent: "Mozilla/5.0 Chrome/61.0.3163.100 Electron/2.0.0 Safari/537.36"
+                    if (electronRegexResult) {
+                        telemetryItem.properties["Electron"] = 1;
+                        telemetryItem.properties["ElectronVersion"] = electronRegexResult[1];
+                    }
+                    if (typeof pxtElectron !== "undefined") {
+                        telemetryItem.properties["PxtElectron"] = 1;
+                        telemetryItem.properties["ElectronVersion"] = pxtElectron.versions.electronVersion;
+                        telemetryItem.properties["ChromiumVersion"] = pxtElectron.versions.chromiumVersion;
+                        telemetryItem.properties["NodeVersion"] = pxtElectron.versions.nodeVersion;
+                        telemetryItem.properties["PxtElectronVersion"] = pxtElectron.versions.pxtElectronVersion;
+                        telemetryItem.properties["PxtCoreVersion"] = pxtElectron.versions.pxtCoreVersion;
+                        telemetryItem.properties["PxtTargetVersion"] = pxtElectron.versions.pxtTargetVersion;
+                        telemetryItem.properties["PxtElectronIsProd"] = pxtElectron.versions.isProd;
+                    }
+                    // Kiosk UWP info is appended to the user agent by the makecode-dotnet-apps/arcade-kiosk UWP app
+                    var kioskUwpRegexResult = /\((MakeCode Arcade Kiosk UWP)\/([\S]+)\/([\S]+)\)/i.exec(userAgent); // Example navigator.userAgent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36 Edg/117.0.2045.60 (MakeCode Arcade Kiosk UWP/0.1.41.0/Windows.Xbox)"
+                    if (kioskUwpRegexResult) {
+                        telemetryItem.properties["KioskUwp"] = 1;
+                        telemetryItem.properties["KioskUwpVersion"] = kioskUwpRegexResult[2];
+                        telemetryItem.properties["KioskUwpPlatform"] = kioskUwpRegexResult[3];
+                    }
+                    return true;
+                });
+            },
+            cfg: {
+                instrumentationKey:"9801ed01-c40f-46ec-aa40-2a1742a9e71c",
+                disableAjaxTracking: true,
+                overridePageViewDuration: false,
+                disableExceptionTracking: true,
+                disableCorrelationHeaders: true,
+                disableCookiesUsage: !isProduction,
+                isStorageUseDisabled: !isProduction,
+                url: "/pxt-arcade-app/ai.2.min.js"
+            }
+        });
+        window.appInsights=appInsights;
+        var location = window.location.toString();
+        appInsights.trackPageView({
+            name: window.location.hostname,
+            uri: window.location.origin,
+            properties: {
+                url: scrubUrl(location),
+                urlReferrer: scrubUrl(document.referrer.toString())
+            }
+        });
+
+        // Scrub potential PII from the URL.
+        function scrubUrl(url) {
+            if (!url) return url;
+
+            var scriptIdRegex = /(?:S?\d{5}-\d{5}-\d{5}-\d{5})|(?:_[0-9a-zA-Z]{12})/g;
+            var scrubbedUrl = new URL(url.toLocaleLowerCase().replace(scriptIdRegex, "xxxxx-xxxxx-xxxxx-xxxxx"));
+
+            // Just as a precaution, strip any suspicious query parameters.
+            var blockedParamKeywords = ["username", "password", "token", "pwd"];
+            var searchParams = Array.from(scrubbedUrl.searchParams.keys());
+            for (var param of searchParams) {
+                if (blockedParamKeywords.some(k => param.indexOf(k) != -1)) {
+                    scrubbedUrl.searchParams.delete(param);
+                }
+            }
+
+            return scrubbedUrl.toString();
+        }
+
+        return isProduction;
+    }
+    pxt.initAnalyticsAsync();
+</script>
+
+<!-- end include tracking.html -->
+
+
+</body>
+
+</html>
