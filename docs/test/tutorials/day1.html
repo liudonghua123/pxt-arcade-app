@@ -1,0 +1,1010 @@
+<!DOCTYPE html>
+<html lang="" xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#"
+	xmlns:fb="http://www.facebook.com/2008/fbml">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Microsoft MakeCode Arcade</title>
+	<meta name="Description" content="Develop your programming skills by quickly creating and modding retro arcade games with Blocks and JavaScript in the MakeCode editor" />
+
+	<!-- ifdef incontexttranslations endif -->
+	
+<!-- include meta.html -->
+<!-- This file is typically overriden by the target, with own Twitter
+     account etc. Most data is taken from the theme file though.  
+  -->
+
+<!-- include robotsmeta.html -->
+
+<!-- end include robotsmeta.html -->
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@msmakecode" />
+<meta name="twitter:title" content="Microsoft MakeCode Arcade" />
+<meta name="twitter:description" content="Develop your programming skills by quickly creating and modding retro arcade games with Blocks and JavaScript in the MakeCode editor" />
+<meta name="twitter:image" content="https://github.com/Code-Ninjas-Home-Office/arctic-code-quest/blob/master/images/CN-Logo.png?raw=true" />
+
+<meta property="og:title" content="Microsoft MakeCode Arcade" />
+<meta property="og:site_name" content="Microsoft MakeCode" />
+<meta property="og:type" content="website" />
+<meta property="og:description" content="Develop your programming skills by quickly creating and modding retro arcade games with Blocks and JavaScript in the MakeCode editor" />
+<meta property="fb:app_id" content="" />
+<meta property="og:image" content="https://github.com/Code-Ninjas-Home-Office/arctic-code-quest/blob/master/images/CN-Logo.png?raw=true" />
+
+<meta name="format-detection" content="telephone=no">
+<link rel="apple-touch-icon" href="docs/static/icons/favicon.ico">
+<link rel="icon" type="image/png" href="docs/static/icons/favicon.ico">
+<link rel="shortcut icon" href="docs/static/icons/favicon.ico">
+<meta name="theme-color" content="">
+
+<!-- end include meta.html -->
+
+	
+<!-- include head.html -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width,height=device-height,user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
+
+<link rel="stylesheet" data-rtl="/blb/rtlsemantic.css" href="/pxt-arcade-app/semantic.css" />
+<link id="blocklycss"  data-rtl="/blb/rtlblockly.css" rel="stylesheet" href="/pxt-arcade-app/blockly.css" />
+<link rel="stylesheet" href="/pxt-arcade-app/docfiles/style.css" />
+<link rel="stylesheet" href="/pxt-arcade-app/docfiles/vs.css" />
+<link rel="stylesheet" href="/pxt-arcade-app/docfiles/target.css" />
+
+<script src="/pxt-arcade-app/jquery.js" type="text/javascript"></script>
+<script src="/pxt-arcade-app/semantic.js" type="text/javascript"></script>
+<script src="/pxt-arcade-app/docfiles/target.js" type="text/javascript"></script>
+<script src="/pxt-arcade-app/embed.js" type="text/javascript"></script>
+<script src="/pxt-arcade-app/docfiles/docs.js" type="text/javascript"></script>
+
+<style>
+    
+</style>
+
+<!-- end include head.html -->
+
+
+</head>
+
+<body id='root' class='root'>
+	<div id="accessibleMenu" class="ui accessibleMenu borderless fixed menu docs" role="menubar">
+		
+            <a href="#maincontent" class="ui item link" tabindex="0" role="menuitem">Skip to main content</a>
+        
+	</div>
+
+	
+<!-- include tocheader.html -->
+<div id="top-bar" class="ui fixed accent borderless inverted main menu hideprint docs" role="menubar">
+    <div>
+        
+            <a id="togglesidebar" class="launch icon item" tabindex="0" title="Side menu" aria-label="Side menu" role="menuitem" aria-expanded="false">
+                <i class="content icon"></i>
+            </a>
+        
+        <div class="item" role="menuitem">
+            <div class="header-org-logo">
+                <img src="/static/logo/Microsoft_logo_rgb_W-white_D.png" alt="Microsoft">
+            </div>
+            <div class="header-org-logo-sm">
+                <img src="/static/logo/Microsoft_logo_rgb_W-white_D-square.png" alt="Microsoft">
+            </div>
+            <div class="header-title"><span>MakeCode</span></div>
+        </div>
+    </div>
+    <div>
+        <div class="item">
+            <form id="tocsearch1" class="search" role="form" method="get" action="https://www.bing.com/search">
+                <div class="ui fluid icon input">
+                    <input type="hidden" name="q1" value="site:https://arcade.makecode.com/" />
+                    
+                <input type="search" name="q" placeholder="Search..." aria-label="Search Documentation">
+                <i onclick="document.getElementById('tocsearch1').submit();" tabindex="0" class="search link icon" aria-label="Search" role="button"></i>
+            
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div id="side-menu" class="ui vertical accent inverted sidebar menu left hideprint docs" role="menubar">
+    <!-- TOC Menu (tocheader.html) -->
+    <div class="menuContainer" role="menu">
+        
+    <a class="item " href="/pxt-arcade-app/docs/about.html" role="menuitem">About</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/faq.html" role="menuitem">FAQ</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/projects.html" role="menuitem">Projects</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/github.html" role="menuitem">GitHub</a>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/pxt-arcade-app/docs/reference.html">Reference</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-arcade-app/docs/reference/sprites.html" role="menuitem">sprites</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/reference/controller.html" role="menuitem">controller</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/reference/game.html" role="menuitem">game</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/reference/music.html" role="menuitem">music</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/reference/scene.html" role="menuitem">scene</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/reference/info.html" role="menuitem">info</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/reference/images.html" role="menuitem">images</a>
+
+        </div>
+    </div>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/pxt-arcade-app/docs/blocks.html">Blocks</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-arcade-app/docs/blocks/on-start.html" role="menuitem">On Start</a>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/pxt-arcade-app/docs/blocks/loops.html">Loops</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-arcade-app/docs/blocks/loops/repeat.html" role="menuitem">repeat</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/blocks/loops/for.html" role="menuitem">for</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/blocks/loops/while.html" role="menuitem">while</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/blocks/loops/for-of.html" role="menuitem">for of</a>
+
+        </div>
+    </div>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/pxt-arcade-app/docs/blocks/logic.html">Logic</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-arcade-app/docs/blocks/logic/if.html" role="menuitem">if</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/blocks/logic/boolean.html" role="menuitem">Boolean</a>
+
+        </div>
+    </div>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/pxt-arcade-app/docs/blocks/variables.html">Variables</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-arcade-app/docs/blocks/variables/assign.html" role="menuitem">assign</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/blocks/variables/change.html" role="menuitem">change var</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/blocks/variables/var.html" role="menuitem">var</a>
+
+        </div>
+    </div>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/blocks/math.html" role="menuitem">Math</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/blocks/javascript-blocks.html" role="menuitem">JavaScript blocks</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/blocks/custom.html" role="menuitem">Custom blocks</a>
+
+        </div>
+    </div>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/pxt-arcade-app/docs/python.html">Python</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-arcade-app/docs/python/call.html" role="menuitem">Calling</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/python/sequence.html" role="menuitem">Sequencing</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/python/variables.html" role="menuitem">Variables</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/python/operators.html" role="menuitem">Operators</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/python/statements.html" role="menuitem">Statements</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/python/functions.html" role="menuitem">Functions</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/python/classes.html" role="menuitem">Classes</a>
+
+        </div>
+    </div>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/pxt-arcade-app/docs/javascript.html">JavaScript</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-arcade-app/docs/javascript/call.html" role="menuitem">Calling</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/javascript/sequence.html" role="menuitem">Sequencing</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/javascript/variables.html" role="menuitem">Variables</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/javascript/operators.html" role="menuitem">Operators</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/javascript/statements.html" role="menuitem">Statements</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/javascript/functions.html" role="menuitem">Functions</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/javascript/types.html" role="menuitem">Types</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/javascript/classes.html" role="menuitem">Classes</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/javascript/interfaces.html" role="menuitem">Interfaces</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/javascript/generics.html" role="menuitem">Generics</a>
+
+        </div>
+    </div>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/pxt-arcade-app/docs/types.html">Types</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-arcade-app/docs/types/number.html" role="menuitem">Number</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/types/string.html" role="menuitem">String</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/types/boolean.html" role="menuitem">Boolean</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/types/array.html" role="menuitem">Array</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/types/function.html" role="menuitem">Function</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/types/image.html" role="menuitem">Image</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/types/sprite.html" role="menuitem">Sprite</a>
+
+        </div>
+    </div>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/block-gallery.html" role="menuitem">Blocks Gallery</a>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="">Miscellaneous</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-arcade-app/docs/about.html" role="menuitem">About</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/support.html" role="menuitem">Support</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/translate.html" role="menuitem">Translate</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/share.html" role="menuitem">Sharing projects</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/multiplayer.html" role="menuitem">Multiplayer</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/offline.html" role="menuitem">Offline support</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/save.html" role="menuitem">Save</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/identity/sign-in.html" role="menuitem">Sign In</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/identity/cloud-sync.html" role="menuitem">Cloud Sync</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/vscode.html" role="menuitem">VS Code</a>
+
+        </div>
+    </div>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/pxt-arcade-app/docs/hardware.html">Hardware</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-arcade-app/docs/hardware/errors.html" role="menuitem">Errors</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/hardware/adding.html" role="menuitem">Adding New Board</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/hardware/raspberry-pi.html" role="menuitem">Raspberry Pi</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/hardware/makey-makey.html" role="menuitem">Makey Makey</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/hardware/shoebox-controller.html" role="menuitem">Shoebox Controller</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/hardware/dev.html" role="menuitem">Dev</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/hardware/dbg.html" role="menuitem">Debug connector</a>
+
+        </div>
+    </div>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="">Developers</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-arcade-app/docs/cli.html" role="menuitem">Command Line Interface</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/code.html" role="menuitem">Visual Studio Code support</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/blocks-embed.html" role="menuitem">Blocks Embed</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/developer/images.html" role="menuitem">Art, images, colors</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/developer/sound.html" role="menuitem">Sounds</a>
+
+        </div>
+    </div>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/pxt-arcade-app/docs/lessons.html">Lessons</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-arcade-app/docs/lessons/cherry-pickr.html" role="menuitem">Cherry Pickr</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/lessons/barrel-dodger.html" role="menuitem">Barrel Dodger</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/lessons/dance-party.html" role="menuitem">Dance Party</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/lessons/block-out.html" role="menuitem">BlockOut</a>
+
+        </div>
+    </div>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/pxt-arcade-app/docs/courses.html">Courses</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-arcade-app/docs/courses/csintro1.html" role="menuitem">CS Intro 1</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/courses/csintro2.html" role="menuitem">CS Intro 2</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/courses/csintro3.html" role="menuitem">CS Intro 3</a>
+
+        </div>
+    </div>
+
+    </div>
+</div>
+<!-- end include tocheader.html -->
+
+
+	<div id="docs" class="pusher">
+
+		<div class="article" id="maincontent">
+			<div class="article-inner">
+
+				
+<!-- include header.html -->
+<div class="ui one column padded grid hideprint">
+    <div class="column ui container">
+        
+    </div>
+</div>
+<!-- end include header.html -->
+
+
+				<div class="main ui container fluid mainbody">
+					<button id="printbtn" class="circular ui icon right floated button hideprint hidemobile"
+						title="Print" aria-label="Print">
+						<i class="icon print"></i>
+					</button>
+					
+    <div class="ui text">
+        <h1 id="arctic-code-quest-day-1">Arctic Code Quest: Day 1</h1><pre><code class="lang-python">scene.set_background_image(assets.image(&quot;&quot;&quot;skyBackground&quot;&quot;&quot;))
+
+#player sprite
+my_sprite = sprites.create(assets.image(&quot;&quot;&quot;girlFront&quot;&quot;&quot;), SpriteKind.player)
+my_sprite.set_position(50, 50)
+controller.move_sprite(my_sprite)
+my_sprite.set_stay_in_screen(True)
+
+#food sprite
+candyCane = sprites.create(assets.image(&quot;&quot;&quot;candycane&quot;&quot;&quot;), SpriteKind.food)
+candyCane.set_position(100, 100)
+
+#enemy sprite
+penguin = sprites.create(assets.image(&quot;&quot;&quot;penguinFront&quot;&quot;&quot;), SpriteKind.enemy)
+penguin.set_position(100, 10)
+penguin.follow(my_sprite, 40)
+
+#sprite overlaps
+def on_overlap(sprite, otherSprite):
+    candyCane.set_position(randint(0,160), randint(0,120))
+sprites.on_overlap(SpriteKind.player, SpriteKind.food, on_overlap)
+
+def on_overlap2(sprite, otherSprite):
+    game.game_over(False)
+sprites.on_overlap(SpriteKind.player, SpriteKind.enemy, on_overlap2)</code></pre>
+<pre><code class="lang-assetjson">{
+  &quot;README.md&quot;: &quot; &quot;,
+  &quot;assets.json&quot;: &quot;&quot;,
+  &quot;images.g.jres&quot;: &quot;{\n    \&quot;image21\&quot;: {\n        \&quot;data\&quot;: \&quot;hwSgAHgAAACZmZmZmZmZmZmZmZmZmZmZmZmZmZkZEZkRERERERER0R0R3R3R3d/d3d/d3d3dvb27EREREZERERERERGZmZmZmZmZmZmZmZmZmZmZmZmZmZmZERERERERERERER3R3d3R3d/d3d/d3d29u727EREREZERERERERGZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmRkREREREd0REd3R3d3d3d/d3d/d3d27273bEREREZkRERERERGZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZkREREREdEdEdHd3R3d3d/d3d/d3b27273dEREREZkRERERERGZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZkZERERERHdEdHd3d3d3d/d3d/d3bu727vdEREREZkRERERERGZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZkZERERERERERHd3d3d3d/d3d/d3bu73fvfEREREZkRERERERGZmZmZmZ2ZmZmZmZmZmZmZmZmZmZmZmZkZERERERERERHd3d3d3d/d3d/d3bu7/f/0FhEREZkZERERERGZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZERERERERERHd3d0d3d/d3d/d3bu73/vhFhEREZmZERERERGZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZERERERERER3d3d0d3d/d3d/d3bv7///hFhEREZmZERERERGZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZGREREREREdHd3d3d3d/d3d+93fvf3/vhFhEREZmZERERERGZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZGRERERERERHd3d3d3d/d/d+9/b/b3/vhFhEREZmZERERERGZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZGRERERERERHd0d3d3d/d/d/b37+9v/3hFhEREZmZERERERGZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmRERERERERHR3d3dHd/d/b/b37+9v/3hFhEREZmZERERERGZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmRERERERERHR3d3dHd/d/f//37+9v/3hFhEREZmZERERERGZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmRERERERERHR3d3dHd/d3b+7v9+7v/3hFhERkZmZERERERGZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmRkRERERERHR3d3dHd/dvd+7v9+73/3hFhERkRkZERERERGZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmRkREREREREd3dHdHd/d/bu7v9+73/3hFhERkRkZERERERGZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmRkREREREREd3dHd3d/d/d27/b+73/3hFhERkRkRERERERGZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZkREREREdHRHdHd3d/d/d29u/2/3/HkFhERkRERERERERGZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZkREREREdHRHd3d3d/d/b3d3b37////FhERGRERERERERGZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZkZERERER3RHd3d/d3d/d3d3bu73xEfERERGRERERERERGZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZkZEREREd3R3d3d/d3d/d3d3bu73/ERERERGRERERERERGZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZkRERER0R3d0d3d/d3d393dvbu7/R8RERERGRERERERERGZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmRkRERER0R3d3d3d/d3d393dvbvbHRERERERGRERERERERGZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmRkRERER0RHd3d3d/d3d393dvbvdHRERERERGRERERERERGZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmRERERER3RHd0d3d393d393du7u7ERERERERGRERERERERGZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZGRERERHRHdHd3d3d393d393du727ERERERERGRERERERERGZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZERERERHR3dEd3d3d393d39u927u7ERERERERGRERERERERGZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZERERERHdHdEd3d3d3939vd29u7u7ERERERERGRERERERERGZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZkZEREREdHdHdHR3d3d39392927u7v7HxERERERGRERERERERGZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmRkZEREREdHdEd3R3d393d39vd27u/v/9BYRERERmRERERERERGZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZEREREREd3REd3R3d393d392727u7/74RYRERERmRERERERERGZmZmZmZmZmZmZmZmZmZmZmZmZmZmZGRkRERERER0dER3R3d393d392727/f//4RYRERERmRERERERERGZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmRERERER0R0d0R3d3d393d2/3bv937/74RYRERERmRkRERERERGZmZmZmZmZmZmZmZmZmZmZmZmZmZmZkRERERER0dER3RHd3d393f3f3fvfvb/74RYRERERmZkRERERERGZmZmZmZmZmZmZmZmZmZmZmZmZmZmZGRERERER3dHR3dHd3d393f2/29/fvb/74RYRERERmZkRERERERGZmZmZmZmZmZmZmZmZmZmZmZmZmZmZEREREREREd3d3dHd3d393f3f3d/fvb/x4RYRERERmZkRERERERGZmZmZmZmZmZmZmZmZmZmZmZmZmZkZERERERERER0d3dHd3d3f3f3//9/fvb/x4RYRERERmZkRERERERGZmZmZmZmZmZmZmZmZmZmZmZmZmZkZEREREREREREdHR3d3d3f3f3d3d/fu7/74RYRERERmZkRERERERGZmZmZmZmZmZmZmZmZmZmZmZmZmZkRERERERERERERHR3d3d3f3f3d3d/fu7/74RYRERERmZkRERERERGZmZmZmZmZmZmZmZmZmZmZmZmZmRkRERERERERER0RHRHd3d3f3f3d3d/fu7/74RYRERERmZkRERERERGZmZmZmZmZmZmZmZmZmZmZmZmZmRkRERERERERER0RHR3R3d3f3f3d3f3fu7/74RYRERGRmZkRERERERGZmZmZmZmZmZmZmZmZmZmZmZmZmRkRERERERERERERERHR3d3f3f3d3d39v7/75BYRERGRmZkRERERERGZmZmZmZmZmZmZmZmZmZmZmZmZmRkREREREREREfH/EREREf3d3d/d3d3d+////xYRERGRmRERERERERGZmZmZmZmZmZmZmZmZmZmZmZmZmRkREREREREREfHxERERHf3d3d/R3d3du78RHxERERGZmRERERERERGZmZmZmZmZmZmZmZmZmZmZmZmZmZkREREREREREfHx/xERHf3R3d/d3d3bu7/xERERERGZGRERERERERGZmZmZmZmZmZmZmZmZmZmZmZmZmZkZERERERER0fH/0R8RHf3d3d/d273bu/EfEREREREZERERERERERGZmZmZmZmZmZmZmZmZmZmZmZmZmZmZERERERER0dEd0fEdHR/d3d/d273buxEREREREREZERERERERERGZmZmZmZmZmZmZmZmZmZmZmZmZmZmZGREREREREd0d0f3d0f/d/d3d29vbuxEREREREREZERERERERERGZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmRERERERER0d0f3dEf/d/d3d2929GxEREREREREZERERERERERGZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmRkREREREdHd0f3d0f/d/d3d2929GxEREREREREZERERERERERGZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmRkRERER0dHd0f3f0f/d/d3d2929GxERERERERERERERERERERGZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZkRERER0RHd0f39//////////////////////8ZERERERERERGZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmRkRERERER3d3f3///////////////////////8ZERERERERERGZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmRkRERERER3R3f39/////////////////////x8RERERERERERGZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmRERERERER3R3f3f///93d3d3d27sRERERERERkRERERERERERGZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmREREREREdHR3f3d/f///////////////////xkRERERERERERGZmZmZmZmZmZmZmZmZmZmZmZmZmZmZGREREREREdER3f3d/f/f3d273dvbsRERERERERkRERERERERERGZmZmZmZmZmZmZmZmZmZmZmZmZmZmZGREREREREd0d3f3d/f/d3d3b3dvbuxERERERERkRERERERERERGZmZmZmZmZmZmZmZmZmZmZmZmZmZmZERERERER0R0d3f3d/f/d3d3d3dvbuxERERERERkRERERERERERGZmZmZmZmZmZmZmZmZmZmZmZmZmZmZERERERER3R3d3f3d/f/d3d3d3dvbGxERERERERkRERERERERERGZmZmZmZmZmZmZmZmZmZmZmZmZmZkZERERERHR3fH/3d/d/f3d3d3d3dvbGxERERERERkRERERERERERGZmZmZmZmZmZmZmZmZmZmZmZmZmZkRERERERHd3fHx/93d/f3d3d3d3du7GxERERERERkRERERERERERGZmZmZmZmZmZmZmZmZmZmZmZmZmZkRERER0dEdHf3x3d3d/f3d3d3dvbu7GxERERERERkRERERERERERGZmZmZmZmZmZmZmZmZmZmZmZmZmRkRERERHd3REf3/3d3d/f3d3d3dvbu7ERERERERkRERERERERERERGZmZmZmZmZmZmZmZmZmZmZmZmZGRERERHR3d3d3d3d3d3d/d3f3d3dvbv9HxERERERkRERERERERERERGZmZmZmZmZmZmZmZmZmZmZmZmZmRERERHd3d3d3d3d3d3d/d3f3d3dvfv/9BYRERERkRERERERERERERGZmZmZmZmZmZmZmZmZmZmZmZmZGREREdHd3d3d3d3d3d3d/d3f3d3dvb/74RYRERERmRERERERERERERGZmZmZmZmZmZmZmZmZmZmZmZmZEREREdHd3d3d3d3d3d3d/d3f3d3d/f//4RYRERERGRERERERERERERGZmZmZmZmZmZmZmZmZmZmZmZkZEREREd3d3d3d3d3d3d3d/d3f3b39v7/74RYRERERGRERERERERERERGZmZmZmZmZmZmZmZmZmZmZmZkRERER0d3d3d3d3d3d3d3d/f3f3f3fvb/94RYRERERmZEZERERERERERGZmZmZmZmZmZmZmZmZmZmZmZkRERER3dHd3d3d3d3d3d3d/f3f3b/fvR/x4RYRERERmZkZERERERERERGZmZmZmZmZmZmZmZmZmZmZmRkRERHRHd3d3d3d3d3d3d3d/f3f3b/fvR/x4RYRERERmZkZERERERERERGZmZmZmZmZmZmZmZmZmZmZmREREREd0d3d3d3d3d3d3d3d/f3//7/fvR/x4RYRERGRmZkZERERERERERGZmZmZmZmZmZmZmZmZmZmZGRERERHR3d3d3d3d3d3d3d3d/d3f3b/fvR/x4RYRERGRmZkZERERERERERGZmZmZmZmZmZmZmZmZmZkZEREREREd3d3d3d3d3d3dHd3d/d3f3b/fvR/x4RYRERGRmZkZERERERERERGZmZmZmZmZmZmZmZmZmZkRERERERHd3d3d3R3d3d3dHRHd/d3f3d+/vR/74RYRERGRmRkRERERERERERGZmZmZmZmZmZmZmZmZmZkREREREdEd3d3d3d3d3d3dERHd/d3f3f2/vb/74RYRERERmRkRERERERERERGZmZmZmZmZmZmZmZmZmRkRERERHd3RER0R3d3d3d0dERHd/d3f3d37v7/75BYRERERmRERERERERERERGZmZmZmZmZmZmZmZmZmRERERERERERERHR3d3d3d3d3d3d/d3f3d27/f///xYRERERmRERERERERERERGZmZmZmZmZmZmZmZmZGRERERERER0RERHd3d3d3d3d3d3d/d3f3d27vb8bHxERERERGRERERERERERERGZmZmZmZmZmZmZmZmZERERERERHREd0d3d3d3d3d3d3d3d/d3f3d27vb/xERERERERGRERERERERERERGZmZmZmZmZmZmZmZkZERERERHRERHR3d3d3d0dEd0dEd3d393f3d27vfEfERERERERGRERERERERERERGZmZmZmZmZmZmZmZkRERERERHREdHREd3d3d3R3REREd3d393f3d27vbERERERERGRERERERERERERERGZmZmZmZmZmZmZmRkRERERERHd3d3d3d3d3d0dERER0d3d393f3d27vRsRERERERGRERERERERERERERGZmZmZmZmZmZmZmREREREREREREdHd3d0dERERERER0d3d393f3b27vRsRERERERGRERERERERERERERGZmZmZmZmZmZmZmRERERERERERERER3RHRHRHRERER0d3d393f3bu7vRERERERERGRERERERERERERERGZmZmZmZmZmZmZGRERERERERERERHREdHd0REd3REREd3d393fvbu7vRERERERERGRERERERERERERERGZmZmZmZmZmZmZERERERERERERERHd3d3dHRHdHRER0d3d393fvdu7vRHxHxEREREZERERERERERERERGZmZmZmZmZmZkRERERERERERERERHR3d3d3dEd0RER3d3d393f3bu7HfH/9BYREREZERERERERERERERGZmZmZmZmZmRERERERERERERERERERERERERHdHRER3d393d3f3bu7HR/x4RYREZERERERERERERERERGZmZmZmZmZGRkRERERERERERERERERERERERHRERHR3d393d3f3du7+///4RYRERkREREREREREZERERGZmZmZmZmZGREREREREREREREREREREREREREdERHd3d3x3d3f3dv7Hx/x4RYREZmZEREREREREREZERGZmZmZmZmZkRkREREREREREREREREREREREdEREdHR3d393f3fvf2/HR/x4RYREZmZEREREREREZkZERGZmZmZmZkZGRERERERERERERERERERERERER0R0R3d3d393f3f29+/HR/x4RYREZmZEREREREREZkRERGZmZmZmZkZGRERERERERERERERERERERER3RHR3dHd3d393f3f3b+/ER/x4RYREZmZERERERERkZkRERGZmZmZmZkZERERERERERERERERERERERHREdEdHd3d3d3f3f3//7+/ER/x4RYREZmZERERERERkRkRERGZmZmZmZmZEREREREREREREREREREREdEd3d3d3d3d3d3f3d3fvb+/ER/x4RYREZmZERERERERkRkRERGZmZmZmZmZERERERERERERERERERERER3d3d0d3d3d3d3f3f3dvb+/ER/x4RYREZmZERERERERmRkRERGZmZmZmZmZGREREREREREREREREd3d3d3dHRHR3d3d0d0f3fvbu7+/G7/x4RYREZmZERERERERmRERERGZmZmZmZmZGRERERERERERERERERHR3d3d3d3d3d3d3f3d3fvbu/2/G7/x4RYREZmZERERERERmRERERGZmZmZmZmZmZEREREREREREREREREREREdEd3dHR3d3f3d3fvdvb37H7/x5BYREZmZERERERERmRERERGZmZmZmZmZmREREREREREREREREREREREREd3d0d3d3f3d3fvd3bu7+////xYREZmZERERERERmRERERGZmZmZmZmZmRkRERERERERERERERERERERERER3d3d3f3dvfvd3bu7u78RHxERERkZERERERERmRkRERGZmZmZmZmZmZkREREREREREREREREREREREREREd3d3f3dvfvdvbu7sb/xERERERkRERERERERmRkRERGZmZmZmZmZmZkREREREREREREREREREREREREREd3d3f3d3b/dvbu7EfEfERERkRkRERERERERmRkRERGZmZmZmZmZmZkZEREREREREREREREREREREREREdHd3f3d3b/d27u7EbERERERkRERERERERERkRkRERGZmZmZmZmZmZkZERERERERERERERERERERERERERHd3d/d3b/du7u7EbERERERkREREREREREREZkRERGZmZmZmZmZmZmZEREREREREREREREREREREREREdHd3d/d3b/du7u7EbERERERkREREREREREREZkRERGZmZmZmZmZmZmZGREREREREREREREREREREdEdEd3d3d/d3b+9u7sbEbERERERkREREREREREREZkRERGZmZmZmZmZmZmZmRERERERERERERERERERER0REd3d3d/d3b+9u7sbERERERERkREREREREREREZkRERGZmZmZmZmZmZmZmRkRERERERERERERERERERER0d3d3d/d3b+9u7sRERERERERkREREREREREREZERERGZmZmZmZmZmZmZmZkRERERERERERERERERERER0d3d3d+93b+9u7sRERERERERkREREREREREREZERERGZmZmZmZmZmZmZmZkRERERERERERERERERERER0dHd/d293b+9u7sREf8RERERkREREREREREREZERERGZmZmZmZmZmZmZmZkZERERERERERERERERERER0d3d/d29/b29uxsR/09vERERkREREREREREREZERERGZmZmZmZmZmZmZmZmRERERERERERERERERERHd0d3d/d29/b27uxvxER9uERERkRERERERERERERERERGZmZmZmZmZmZmZmZkZGRERERERERERERERER0R3d3d393d+727uxv//x9uERERmRERERERERERERERERGZmZmZmZmZmZmZmZmZmZERERERERERERERERHd3d3d393d+727u//xER9uERERmZERERERERERERERERGZmZmZmZmZmZmZmZmZkREREREREREREREREdHd3d3d393d/727/xvxER9uERERmZERERERERERERERERGZmZmZmZmZmZmZmZmZGRkREREREREREREREd3d3d393d3d/737+xvxER9uERGRmZERERERERERERERERGZmZmZmZmZmZmZmZmZmZkRERERERERERHd3d3d3d393d3d/737+xHxER9uERGRmZkRERERERERERERERGZmZmZmZmZmZmZmZmZmZEZERERERERERHd3d3d3d393d3d////+xHxER9uERGRmZkRERERERERERERERGZmZmZmZmZmZmZmZmZmZkZERERERERERHd3d3d3d3f3d3d3937+xHxER9uERGRmZkRERERERERERERERGZmZmZmZmZmZmZmZmZmZmZERERERERERHd3d3d3d3f3d3d3937+xHxER9uERGRmZkRERERERERERERERGZmZmZmZmZmZmZmZmZmZmZGRERERHdERHR3d3R3d3f3d39vb37+xHxER9uERGRkZkRERERERERERERERGZmZmZmZmZmZmZmZmZmZmZGRERERHRHR3R3d3d3f3d3d39vb27/xHxER9uERGRmZkRERERERERERERERGZmZmZmZmZmZmZmZmZmZmZmRERERER3d3R3d3d3f3d3d3fvb27Ef/xEU9uERGRmZkRERERERERERERERGZmZmZmZmZmZmZmZmZmZmZmRERERER0d3d3d3d3f3d3d3fvb27ERH///9vERGRmZEZERERERERERERERGZmZmZmZmZmZmZmZmZmZmZmRkREREREd3dHd3d3f3d3d3fvb27ERHxEfERERGRmZEZEREREZERERERERGZmZmZmZmZmZmZmZmZmZmZmZkREREREdHd3d3d3d/d3f3dvb27ERHxER8RERGRmZEZEREREZkRERERERGZmZmZmZmZmZmZmZmZmZmZmRkZEREREdHd3d3d3d/d3f3dvb27ERER/xERERGRmZEZEREREZkRERERERGZmZmZmZmZmZmZmZmZmZmZmZkRERHRERHd0d3d3d/d3d/dvb27ERERERERERGRGREZEREREZkRERERERGZmZmZmZmZmZmZmZmZmZmZmZmZERHRHRHd3d3d3d/d/d3du727ERERERERERGREREZEREREZkRERERERGZmZmZmZmZmZmZmZmZmZmZGZkZERERHRHR3d3d/d3d/d2927u7ERERERERERGRERERERERERkRERERERGZmZmZmZmZmZmZmZmZmZmZmZkZERER3RER3d3d/d3d/d3bu7u7G/8RERERERGRERERERERERkRERERERGZmZmZmZmZmZmZmZmZmZmZmZkRERER/x8d3d3d/d3d3927u7u7/09vERERERGRERERERERERkRERERERGZmZmZmZmZmZmZmZmZmZmZmRkRERERHx8d0d3d/d3d3929u7v7Gx9uERERERGZERERERERERkREREREZGZmZmZmZmZmZmZmZmZmZmZmRERERHRH/8f0d3939393d29u/v//x9uERERERGZERERERERERkREREREZGZmZmZmZmZmZmZmZmZmZmZmRERERHR/9/x0d39H9393d29+//7Gx9uERERERGZEREREREREZkREREREZmZmZmZmZmZmZmZmZmZmZmZmREREREREd3d3939H93f3d39v/v7Gx9uERERERGZEREREREREZkREREREZmZmZmZmZmZmZmZmZmZmZmRGREREREREd3d3939H93f3f3f2/v7Gx9uERERERGZEREREREREZkRERERkZGZmZmZmZmZmZmZmZmZmZmZERERERER0dHd3939H93f3d/fu/v7Gx9uEREREZGZEREREREREZkZERERkZGZmZmZmZmZmZmZmZmZmZkZGREZERER3R3d3939H/Hd3d/fvfv7Gx9uEREREZGREREREREREZkZERGRkZGZmZmZmZmZmZmZmZmZmZkRERERERHdHR3d/939H/Hd3d/fvfv7Gx9uEREREZEZEREREREREZkZERGRGZGZmZmZmZmZmZmZmZmZmRkREREREdHd3d3d3////////////////////////58REREREREREZmZERGRGZGZmZmZmZmZmZmZmZmZGRERERER0d3d3d3d/////////////////////////xkREREREREREZmZERGZEZGZmZmZmZmZmZmZmZmZERERERHd3d3d3d3R3////////////////////////xEREREREREREZmZGRGZEZGZmZmZmZmZmZmZmZkZERERERHd3d3d3d3d//39/93d3d29vf27H+9uERERkREREREREREREZmZGRGRERGZmZmZmZmZmZmZmZkRERERERHd3d3d3d3d393/////////////////////nxERERERERERkZmZmRERERGZmZmZmZmZmZmZmRmRERERHdHd3d0dEd3d3939/93d3d3d3b27uxERERERERkRERERERERkZmZmRkRERGZmZmZmZmZmZmZmRERERHR0RERERERERHd393939/d3d3d3b27uxERERERkZkRERERERERkZmRmRkRERGZmZmZmZmZmZmZGREREREdEREREREREdHd393939/d3d3d3b27uxERERERkRERERERERERmZkRmRkRERGZmZmZmZmZmZmZERERERERERERERER/9/93d393/3d3d3d3b29uxERERERkRERERERERERmZkRmZkRERGZmZmZmZmZmZkZERERERERERERERERH//f3d3d/f3d3d3d3b29uxERERERkRERERERERGRmZkRkZkRERGZmZmZmZmZmZkRERERERERERERERERH9/d3d3d/f3d3d3d3b29uxERERERGRERERERERGRmRkRkZkRERGZmZmZmZmZmRkRERkRERERERERERER/9/d3d3d/f3d3d3d3b0dERERERERGRERERERERGZmRERERkRERGZmZmZmZmZmRkZEREREREREREREdHd3d3d3d3d3d/d3d3d3b0RERERERERGRERERERkZGZGRERERERERGZmZmZmZmZmZEZEREREREREREREdHd3d3d3d3d/d/d3d3d3b0RERERERERGRERERERkZmZERERERERERGZmZmZmZmZGRkREREREREREREREdHd3d3d3d3d3//R3d3d3bERERERERGRERERERERGZkRERERERERERGZmZmZmZmZkREREREREREREREREdHd3d3d3d3d3//R3d3dHbERERERERGRERERERERkRERERERERERERE=\&quot;,\n        \&quot;mimeType\&quot;: \&quot;image/x-mkcd-f4\&quot;,\n        \&quot;displayName\&quot;: \&quot;skiBackground\&quot;\n    },\n    \&quot;image22\&quot;: {\n        \&quot;data\&quot;: \&quot;hwSgAHgAAACIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiGtmxsz8//////9mZmaIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiJtpxsz8//////9mZmaIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiGhmZmaZzMz8//////9mZoaIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIZmZmZpaZzMz8//////9mZoaIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIhoZmZma2mZzMz8//////9mZoaIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIhmu7trZpaczMz8//////9mZoaIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIa2ZmZpaczMz8//////9mZoaIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiGZmtrvLa5aczMzM//////9vZoaIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIuLvLm2mczMzM//////9vZoaIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIuLvLm2nMyczM////////ZoaIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIhmZmZmmWnMyczM////////ZoaIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIaIiIiIiIiIiIiGiGiLvLzJnMyczM////////b4aIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIhoZoaIiIiIiIiIiIiIaGZmZpnMyczP////////b4aIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIhmZmZmZomIiIiIiIiIiIiIuLvLzJnMmczP////////b4aIiIiIiIiIiIiIiIiIiIiIiIiIaGNjY2ZmZmZmZmZmZmaIiIiIiIiIiIiIuLvLzJzM/P//////////b4aIiIiIiIiIiIiIiIiIiIiIiDgzMzY2ZmZmZmZmZmZmZpaIiIiIiIiIiIiIZmZmZpbJzMzP////////b4aIiIiIiIiIiIiIiIiIiIiIOIOIiIiIiIiIaGZmZmZmZmaGiIiIiIiIiIiIuLvLzJzJzMzM/P//////b4aIiIiIiIiIiIiIiIiIiIg4g4iIiIiIiIiIiIiIiIiIZmaJiIiIiIiIiGhoaLZmbGbJzMzM/P//////b4aIiIiIiIiIiDiIiIiDODODiIiIiIiIiIiIiIiIiIiIaGZmiIiIiIiIiIiIuLvMzGzJzMzM/P//////b4aIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiWiIiIiIiIiIiIuLvMzMyZzMzM/P//////b4aIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIhmhoiIiIiIu4uIuLvMzMyWzMzM/P//////b4iIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiGZmZmZmiYiIiIiIu4u4uLtmxmyWzMzM/P//////b4iIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiGZmZmZmZmZmZoiIiIiIu7uLuLvMzMyczMzM/P///////4aIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIhoZmZmZmZmZmZmloiIiIiIu7uLuLvMzMxsyczMzP///////4aIiIiIiIiIiIiIiIiIiIiIiIiIiGhjYzZmZmZmZmZmZmZmZoaIiIiIuLuLtrtmZmZmyczMzP///////4aIiIiIiIiIiIiIiIiIg4iIOIiDMzMzNmZmY2ZmiIhmZmZmZomIiIiIuLuLuMvMzMxsyczMzP///////4aIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiGhmZpaIiIiIuLu7uMvMzMzMmczMzP///////4aIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIhoZmaIiIiIuLtrZsZsZmZmmczMzP///////4aIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIhoaJaIiIiIuLu7uMvMzMzMmcnMzP///////4aIiIiIiIiIiIiIiIiIiIiIM2MzNjZmZmZmZmZmZmZmZmZmZmaJiIiIuLu7u8vMzMzMmcnMzP///////4aIiIiIiIiIiIiIiIiIiDgziIiIiIiIiIiIiGhmZmZmZmZmZmaGiIiIuLu7u8vMZmZmmcnMzPz/////b4aIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIhoZmZmZmZmZmaJiIiIuLvMvMvMzMzMmcnMzPz/////b4aIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIZmZmZmZmZmZmZmaWiIiIuLvMvMzMzMzMmcnMzPz/////b4aIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiGZpiIiIuLvMbGZmZsbMacnMzPz/////ZoiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiGaWiIiIuLvMvMzMZmbMbGnMzPz///9vZoiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiGhpiIiIuLtmZmbGZmbMbJnMzPz///9vZoiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIaGZmZmaIiIiIiGaWiIiIiLvMvIhoZmbMbJnMzPz///9vhoiIiIiIiIiIiIiIiIiIiIiIiIiIiDiINmZmZmZmZmZmZmZmZmZpiIiIiLvMjIiIbGbMbJnMzPz///9vhoiIiIiIiIiIiIiIiIiIiIiIiIiIiIMzY2NjZmZmZmZmZmZmZmaWhoiIiLvMjIiIaGbMbJnMzPz///9vhoiIiIiIiIiIiIiIiIiIiDg4OIMzMzg4NoiIiIiIiGhmZmZmZmZpiYiIiLvMiIhoZmbMbJnMzPz///9vhoiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIhoZmaWhoiIiLvMiIiIaGbGbJnMzPz///9vhoiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIhoZmZpiYiIiLtsZmZmZmbGbJnMzPz///9vhoiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIZmaWhoiIiLvMiMiIiGbGbJnMzPz///9vhoiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIZmZpiYiIiLvMiMiIZmbGbJnMzPz///9vhoiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIhoZmZmZmaWhoiIiLvMiMiIiGbGZpnMzPz///9vhoiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiGZmhohmZmaZaYiIiLvMiGhohmbGlpnMzPz///9vaIiIiIiIiIiIiIiIiIiIiIiIOIg4ODYzNmZmZmZmZohmaGhmZmaZmYiIiLvMiMiGaGZmaZnMzPz///9vaIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIaGaIiIiIZmaZaYiIiLuMiMiIiGZmlsnMzPz///+PZoiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIhoZmaWmYiIiMuMiMiIiGZmZsnMzPz///+PZoiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIhoZmaWaYiIiMuMiMaGhmhmZsbMzPz///+PZmiIiIiIiIiIiIiIiIiIiIiIiIgzMzY2NmZmZoaIZmZmZmZmZmaWmYiIiMuMiMyIiGhmZvb8zPz///+PhmaIiIiIiIiIiIiIiIiIOIg4ODOIiIhjY2ZmZmZmZmZmZmZmZmaWaYiIiMiGaIyIZmZm9vb/z/z///+PaGiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiGhmZmaWmYaIiIiMiIyIiIhm//////////+PaGiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIZmaWmYaIiIiMiIyIiIj49v//z/z///+PaGaIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIZmZmmYaIiIiMiIyIiIjI9vb8zPz///+PiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIgzNjY2NmZmZmZmZmZmZmmYaIiIiMiIyIiIjI/Pz8zPz///+IiIiIiIiIiIiIiIiIiIiIiIiIiIgzMzMzMzg4NjZmZmZmZmZmZmZmmYaIiIiMiIyIiIjIzMzMzPz///+IiIiIiIiIiIiIiIiIiIiIiIg4ODgzMzOIiIiIY2NmZmZmZmZmZmZmmYaIiIiIjIyIiIjIzMzMzPz///+IiIiIiIiIiIiIiIiIiIiIiIiDg4OIiIiIiIiIiIiIiIiIiIiIZmZmmYaIiIiIjIiIiIjIzMzMzPz///+IiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiGhmmYaIiIiIjIiIiIjIzMzMzPz///+IiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiGhmmYaIiIiIzIiIzIjIzMzMzPz///+IiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIlpaWmYaIiIiIzIiIjIzIzMzMzPz///+IiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIhomWlpmYaIiIiIzIiIjIzLzMzMzPz///+IiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIhmhmZmmZmZmZmYaIiIiIzIiIjIzLzMzMzPz///+PiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIaGZmZmZmlpaZmZmZmYaIiIiIzIiIjIzLzMzMzPz///+PiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIhoZmZmZmZmZpmZmZmZaYiIiIiIyIiIjIzLzMzMzPz///+PiIiIiIiIiIiIiIiIiIiIiIiDgzM2MzY2NmZmZmZmZmZmlpaZZmaZaYiIiIiIjIzIiIzLzMzMzPz///+PiIiIiIiIiIiIiIiIOIiIgzM4ODMzNmNjZmaGiGZmZmZmZplpiGhmhoiIiIiIjIzIiIzLzMzMzPz///+PiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiGZmlpZpiIiIiIiIiIjIiIzIiIzLzMzMzP////+PiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiGhmZplpiIiIiIiIiIjIiIzIiIzLzMzMzP////+PiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiGhmlpZpiIiIiIiIiIjIiIzIiIzLzMzMzP////+IiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIhoZplpiIiIiIiIiIjMiMjIiIzLzMzMzP////+IiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIlpZphoiIiIiIiIiMiMjIiIzLzMzM/P////+IiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIaGZmZmZmZmZmZpmZhoiIiIiIiIiMiMjMiIzLzMzM/P///4+IiIiIiIiIiIiIiIiIiIiIgzMzNmNjZmZmZmZmZmZmZmZmlpaZhoiIiIiIiIiMiIiIiMjLzMzM/P///4+IiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiGhmZmZmZmmZhoiIiIiIiIiIiIiIiMjLzMzM/P///4+IiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIhmZpaZaYiIiIiIiIiIiIiIiMjLzMzM/////4+IiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiGaZaYiIiIiIiIiIiIiIiMjLzMzM/////4+IiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiGhmZmaGiGiWaYaIiIiIiIiIiIiIiMjLzMzM/////4+IiIiIiIiIiIiIiIiIiIiIiIg4ODg4hoaGhmZmZmZmZmZmZmaWmYaIiIiIiIiIiIiIiMjLzMzM/////4+IiIiIiIiIiIiIiIiIiDiIOIiDg4OGg2hoaGZmZmZmZmZmZmZmmWaIiIiIiIiIiIiIiIjIzMzM/////4+IiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiGhmmWmIiIiIiIiIiIiIiIjIzMz8/////4+IiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIlmmGiIiIiIiIiIiIuIjIzMz8/////4+IiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIhoiIiIlmmGiIiIiIiIiMiIuIjIzMz8/////4+IiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIhoZmZmZmZmZmaIlmmGiIiIiIiIiMiIuIjIzMz8/////4+IiIiIiIiIiIiIiIiIiIiIiIiIiIiIhmZmZoZmZmZmZmZmZmZmlpmGiIiIiIiIiIyIuIjIzMz8/////4+IiIiIiIiIiIiIg4g4iDg4Y2NjZmZmaIiIiIiIiIiIiIiIiIholpmGiIiIiIiIiIyIuIiIzMz8/////4+IiIiIiIiIiIiIiIiIiIiIiIiIiGhmZmaIZmZmZmZmZoiIiIiImJlpiIiIiIiIiIyIuIiIzMz8//////+IiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIZoiGZmZmZmZmZmZmZmlplpiIiIiIiIiIuIuIuIzMz8/////4+IiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiGZmZmZmZmZmZmZmlplpiIiIiIiIiIuIuIuIzMz8/////4+IiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIhoZmZmZmZmlpmZhoiIiIiIyIuIuIuIzMz8/////4+IiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIaJmZhoiIiIiIyIuIuIuIzMz8/////4+IiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIhoaGiJaZhoiIiIiIuIyIuMvMzMz//////4+IiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiYaGhoaJmZhoiIiIiIuMyIuMvMzMz//////4+IiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIaGZmZmZpmZmZhpaZhoiIiIiIuMyIuMvMzMz//////4iIiIiIiIiIiIiIiIiIiDiIiIiIiIiIiGhmZmZmZmZmZpaWmZmZaZmZhoiIiIiIuMuIuMvMzMz//////4iIiIiIiIiIiIiIiIiIg4iIiIiIaGZmZmZmZmZmZmZmZmmZmZmZmZmZhoiIiIiIuMyIuMvMzMz//////4iIiIiIiIiIiIiIiDiIiIiIMzg2ZmZmZmZmZmZmZmaWlpaZmZmZaZmZhoiIiIiIuMyIuMzMzMz//////4iIiIaIiIiIiIiIg4iIiDgzY2NjZmZmZmZmZmZmZmZmZpmZmYmJmZmZhoiIiIiIuMyIuMzMzMz//////4iIZoaIiIiIiIiIiDgzMzMzNjY2ZmZmZmZmZmZmZmZmlpaZmZiYmJmZhoiIiIiIuMy4u8zMzMz//////4hoZoiIiIiIg4iDODMzMzMzY2NjY2ZmZmZmZmZmZmZmZpmZiYiIiJmZhoiIyMiIuMu4u8zMzMz//////4hoZoiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiGhmlpaZmYiIiJaZhoiIiIiIuMu4u8zPz8z//////4hohoiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIhmZpmZaYiIiJmZhoiIyIiIuMu7u/z/z/z/////j4hohoiIiIiIiIiIiIiIiIiIiIiIiIiIiGZmZmZmZmZmZpaZmYiIiJaZhoiIyIiIuMu7+////8//////j4hohoiIiIiIiIiIiIiIiIiIiIiIiIiIZmZmZmZmZmZmZpmZaYiIiJlpiIiIyIiIuLu7u/z/z8z/////j4hohoiIiIiIiIiIiIiIiIiIiIhoZmZmZoaIZmZmZmZmZpaZmYiIiJZpiIiIyIiIuLu7u8zPz8z/////j4hohoiIiIiIiIiIiIOIOIiDM2OGiIiIiIiIiIiIiIhoaJaZaYiIiJlpiIiIyIyIuLu7u8zPz8z/////j4hohoiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiGZpaZiYiIiJZpiIiIyIyIuLu7u8zMzMz/////j4hohoiIiIiIiIiIiIiIiIiIiIiIiIiIiIhoZmZmZmZmZpaZiYiIiJZpiIiIyIyIuLu7u8zMzMz/////iIhohoiIiIiIiIiIiIiIiIiIiGhmZmZmZmZmZmZmZmZmZpaZiYiIiJZpiIiIyIyIuLu7u8zMzMz/////iIhohoiIiIiIiIiIiIiIiIiIOIOIiIiIiIiIiGhmZmZmZpaZhoiIiJaGiIiIuLuIuLu7u8zMzMz/////+IhohoiIiIiIiIOIiIg4iIiIg4iIiIiIiIiIiIiIiGhoZpaZiYiIiJaGiIiIuLuIuLu7u8zMzMz/////+IhohoiIiIiIiIiIiIiIiIgziIiIiIiIiIiIiIiIiIiGZpaZhoiIiIiIiIiIuLuIu7u7u8zMzMz/////+IhohoiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiGhoZpaZiYiIiIiIiIiIuLuLuLu7u8zMzMz///+P+IhohoiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIhoZmZmZpaZiIiIiIiIiIiIuLuLu7u7u8zMzMz///+P+IhohoiIiIiIiIiIiIiIiIiIiIiIiDg2NmZmZmZmZmZmZpZpiIiIiIiIiIiIuLuLu7u7u8vMzMz///+P+IhoZoiIiIiIiIiIiDiIiIg4iIiDOIOIiIhoZmZmZmZmZpaZiIiIiIiIiIiIuLuLu8u7u8zMzMz///+Pj4hoZoiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIZmZpZpiIiIiIiIyIiIuLuLu8u7u8zMzMz///+Pj4iIZmaIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiGhmZmmZiIiIiIiIyIiIyLu7u8u7u8zMzMz///+Pj4iIZmaIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIZmZpZpiIiIiIiIyIiIyLu7u8u8u8zMzMz///+Pj4iIaGaIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiGhmZmmJiIiIiIiIyIyIiLu7u8vMu8vMzMz///+Pj4iIiGaIiIiIiIiIiIiIiIiIiIiIiIiIiIiGhmZmZmZmZpaGiIiIiIiIyIyIiLu7u8vMu7vMzMz///+Pj4iIaGaIiIiIiIiIiIiIiIiIiDg2NmZmZmZmZmZmZmZmZmmJiIiIiIiIiIyIiLu7u8vMu7vMzPz///+Pj4iIiGaIiIiIiIiIiIiIiIiIOIOIiIiIiIiIiIhmZmZmZpaGiIiIiIiIiIyIiLu7u8vMzLzLy/z///+Pj4iIiGaIiIiIiIiIiIiIiIg4iIiIiIiIiIiIiIiIaGZmZmmIiIiIiIiIiMyIiLu7u8vMzLzMzPz///+Pj4iIiGaIiIiIiIiIiIiIiDiIiIiIiIiIiIiIiIiIiGhmZpaIiIiIiIiIiMyIiLu7u8vMzLvMzPz//4j//4+IiGaIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIhmZmmIiIiIiIiIiMyIuLu7u8vMzLvMzPz//4j//4+IiGaIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIhmZpaIiIiIiIiIiMyMu7u7u8vMzLvMzPz//4j//4+IiGaIiIiIiIiIiIiIiIiIiGNjY4iIiIiIiIiIiIhmZmmIiIiIiIiIiMy8u7u7u8vMzLvLzP///4j//4+IiGaIiIiIiIiIiIiIiIiIOIg2ZmZmhoiIiIiIiIhmZpaGiIiIiIiIyMy8u7u7u8u8y7y8zP///4j//4+IiGaIiIiIiIiIiIiIiIg4iIiIiIiIaGZmZmZmZmZmZmmJiIiIiIiIuMy7u7u7u8y8iLi7zP////j//4+IiGaIiIiIiIiIiIiIiIOIiIiIiIiIiIiIiIhoZmZmZpaGiIiIiMyIi8y7u7u7u8y8iMi8/P////j//4+IiGaIiIiIiIiIiIiDiIiIiIiIiIiIiIiIiIiIaGZmZmmJiIiIiIjIy8y7i7u7u8y8iMjM/P////j//4+IiGaIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiGZmZmaGiIiIiMjIy7y7i7u7u8y8iIjM//////j//4+IiGaIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiGhmZmaJiIiIiLiIy7y7i7u7u8y8iIjM//////j//4+IiGaIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiGhmZmaGiIiIiLuIy7y7iLvLjIi8iIj8//////j//4+IaGaIiIiIiIiIiIiIiIiIiIiIiIiIiIiIaGaIiGhmZmaJiIiIuMy7y7y7iLvLjIi8iIj8/////////4+IaGaIiIiIiIiIiIiIiIiIiIiIiIiIiIgzZmZmhmhmZmaGiIiIuMzMzLy7iLvLjIi8iIj4/////////4+IiGaIiIiIiIiIiIiIiIiIiIiIiIiIMzNjZmZmZmZmZmaJiIiIuMy8zLy7iLvMiIi8iIj4/////////4+IiGaIiIiIiIiIiIiIiIiIiIiIiDgzY4iIZmZmZmZmZmaGiIiIuMy7y7y7iLvMiIi8iIj//////////4iIiGaIiIiIiIiIiIiIiIiIiIiIODOGiIiIiIhoZmZmZmaJiIiIuLy7u7u7iLvMiMiLiIj//////////4iIiGaIiIiIiIiIiDiIiIiIg4iDg4iIiIiIiIiIZmZmZmaGiIiIuMu7u7vMiLvMiMiLiIj/z////////4iIiGaIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIaGZmZmaJiIiIyLvLu7vMiLiMiLiIiIj/z////////4iIiGaIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiGhmZmaWiIiIyLvLvLvMiLiMiLiIiIj//////////4iIiGaIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiGZmiIiIyLvMjMzMiLiLiM+IiIj//////////4iIiGaIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIaGZmiYiIyLvMjMzMiLiL+M/4iIj//////////4iIiGaIiIiIiIiIiIiIiIg4MzMzY2M2ZoiIiIiIiIhoZmZmhoiIuLjLjMzMiLiI+M//j/j//////////4iIaGaIiIiIiIiIiIiIiIOIiIiIiIhoZmZmZmZmZmZmZmZmiYiIuLjLu8vMiMiI////j/j//////////4+IaGaIiIiIiIiIiIiIiIiIiIiIiIiIiIhoZmZmZmZmZmZmloiIuLjLu8vMiMj4/////////////////4+IaGaIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIhmZoiIuMjLu8vMiIiI////j/j//////////4+IaGaIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiGhmloiIyLu7i8jMiIiI+I//j/j//////////4+IaGaIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiGZmZoiIyLu7i8jMiIiIiI/4iPj///////////+IaGaIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIhoZmZmloiIyLu7i8jMiIiIiIiIyPj///////////+IaGaIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIhmZmZmZmZmZoiIyLvMjMjMiIiIiIiIyPj///////////+IiGaIiIiIiIiIiIiIiIiIiIiIMzMzZmZmZmZmZoaIiGZmloiIyLvMjIiIiIiIiIiIyPj4//////////+IiGaIiIiIiIiIiIOIiDiIiIODiIiIiIiIiIiIiIiIiGZmZoiIyLvMjIiIiIiIiIiI/P/4//////////+PiGaIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIaGZmiYiIiLzMiIiIiIiIiIj4/4////////////+PiGaIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIZmZmhoiIiLy7i4iIiIiIiIj4//////////////+PiGaIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiGZmZmZmiYiIiLy7y4yIiIiIiPj///////////////+PiGaIiIiIiIiIiIiIiIiIiIiIiIiDY2NjZmZmZmZmZmZmhoiIiLy7y4yIiIiIiI+I////////////////iPg=\&quot;,\n        \&quot;mimeType\&quot;: \&quot;image/x-mkcd-f4\&quot;,\n        \&quot;displayName\&quot;: \&quot;skyBackground\&quot;\n    },\n    \&quot;image23\&quot;: {\n        \&quot;data\&quot;: \&quot;hwQQABAAAAAAAAAAAAAAAAAAAAAAAPAAAAD//wD/AA8A8GYd/2//DwBv1vH/v/8PAG8W/y2/i/jwZhb/77+L+B9mFu/uv4sPH2YW7+6/iw/wZhb/77+L+ABvFv8tv4v4AG/W8f+//w8A8GYd/2//DwAA//8A/wAPAAAAAAAA8AAAAAAAAAAAAA==\&quot;,\n        \&quot;mimeType\&quot;: \&quot;image/x-mkcd-f4\&quot;,\n        \&quot;displayName\&quot;: \&quot;girlFront\&quot;\n    },\n    \&quot;image27\&quot;: {\n        \&quot;data\&quot;: \&quot;hwQQABAAAAAAAAAAAAAAAAAAAAAAAAAAAAD//wD/AAAA8CIZDy8PAAAvkvH/gP8PAC8S/zGPaPbwIhL/3o9o9h8iEt/dH2gPHyIS392PaA/wIhL/3o9o9gAvEv8xj2j2AC+S8f+A/w8A8CIZDy8PAAAA//8A/wAAAAAAAAAAAAAAAAAAAAAAAA==\&quot;,\n        \&quot;mimeType\&quot;: \&quot;image/x-mkcd-f4\&quot;,\n        \&quot;displayName\&quot;: \&quot;boyFront\&quot;\n    },\n    \&quot;image31\&quot;: {\n        \&quot;data\&quot;: \&quot;hwQQABAAAAAAAAAAAAAAAAAAAAAPAAAAAAAA8P3/AAAA8P//3y8PAAB/FvH/b///8GcR/zEfd+Z/ZxH/2R935n9nEd/dHxEPf3cR390fdw9/dxH/2R935n92Ef8xH3fmf3YW8f9////wZ///3y8PAAB/b/H9/wAAAPAf8Q8AAAAAAPAPAAAAAA==\&quot;,\n        \&quot;mimeType\&quot;: \&quot;image/x-mkcd-f4\&quot;,\n        \&quot;displayName\&quot;: \&quot;elfFront\&quot;\n    },\n    \&quot;image35\&quot;: {\n        \&quot;data\&quot;: \&quot;hwQQABAAAAAAAAAAAAAAAAAAAAAA8AAAAAAAAP8fDwAA8P//ES8PAAAvGfH/8f//8JIR/zERL+IvkhH/3x/x4i+SEd/TH/ECLyIR39Mf8QIvIhH/3x/x4i8uEf8xHy/iLy4Z8f/x///w4v//ES8PAAAvn/H/Hw8AAPAfAQDwAAAAAPAPAAAAAA==\&quot;,\n        \&quot;mimeType\&quot;: \&quot;image/x-mkcd-f4\&quot;,\n        \&quot;displayName\&quot;: \&quot;santaFront\&quot;\n    },\n    \&quot;image39\&quot;: {\n        \&quot;data\&quot;: \&quot;hwQQABAAAAAAAAAA8AAAAAAAAAD/DwAAAAAAAP8PAAAAAADw3///UADw//8d//9fAP8R8xER/U/w388RERHR//AfEVQRERH/8B8RVBEREf/w388RERHR/wD/EfMREf1PAPD//x3//18AAADw3///UAAAAAD/DwAAAAAAAP8PAAAAAAAA8AAAAA==\&quot;,\n        \&quot;mimeType\&quot;: \&quot;image/x-mkcd-f4\&quot;,\n        \&quot;displayName\&quot;: \&quot;penguinFront\&quot;\n    },\n    \&quot;image43\&quot;: {\n        \&quot;data\&quot;: \&quot;hwQQABAAAAAAAAAAAAAAAAAAAAAA/wAAAAAAAPCRDwDwD/APH/EP8B/xP/kfGfGfHxkxIRkRERHw8R8REhER+QAf8RESEREPAB8RERIREQ/w8R8REhER+R8ZMSEpEhERH/E/+R8Z8Z/wD/APH/EP8AAAAADwkQ8AAAAAAAD/AAAAAAAAAAAAAA==\&quot;,\n        \&quot;mimeType\&quot;: \&quot;image/x-mkcd-f4\&quot;,\n        \&quot;displayName\&quot;: \&quot;bearFront\&quot;\n    },\n    \&quot;image1\&quot;: {\n        \&quot;data\&quot;: \&quot;hwQQABIAAAAAAAAAAAAAAAAAAAAAAAAA7gAAAAAAAAAAAADg3Q4A7g4AAAAAAADgdw7g3e0AAAAA7u7g3e3e3esAAADg3dO+3d3d3Q4AAADeHd3d3d3d7QAAAADe3d3d0tLSDgAAAAC+Hd3d3d3d6wAAAADg29NO3d3d3Q4AAAAA7u7g3eu+3e0AAAAAAADgdw7g2+sAAAAAAADgSw4A7g4AAAAAAAAA7gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=\&quot;,\n        \&quot;mimeType\&quot;: \&quot;image/x-mkcd-f4\&quot;,\n        \&quot;displayName\&quot;: \&quot;gingerbread\&quot;\n    },\n    \&quot;image9\&quot;: {\n        \&quot;data\&quot;: \&quot;hwQQABAAAAAAAAAAAAAAAAAAAAAA/wAAAAAAAPAyDwAAAAAAvxEMAAAAAPAi8wAAAAAAPxEMAAAAAPAi8wAAAAAAPxEMAAAAAPAi8wAAAAAAPxEMAAAAAAAvwgD/AAAAAL8h/xIPAAAALxISEg8AAADwIyPzAAAAAAD//w8AAAAAAAAAAAAAAA==\&quot;,\n        \&quot;mimeType\&quot;: \&quot;image/x-mkcd-f4\&quot;,\n        \&quot;displayName\&quot;: \&quot;candycane\&quot;\n    },\n    \&quot;image10\&quot;: {\n        \&quot;data\&quot;: \&quot;hwQQABAAAAAAAAAAAAAAAAAAAP//AAAAAADwIu4PAAAAAPAiIv4AAAAA8DIi4g8AAAAALyIi/gAAAAAvIiL+AAAA8CIiIv4AAPAvYiLiDwAAH8HmJv4AAPAREWzu/AAAAB8Ry87RDwAA8BHb/70PAAAAv90P/wAAAADw/QAAAAAAAAAPAAAAAA==\&quot;,\n        \&quot;mimeType\&quot;: \&quot;image/x-mkcd-f4\&quot;,\n        \&quot;displayName\&quot;: \&quot;stocking\&quot;\n    },\n    \&quot;image11\&quot;: {\n        \&quot;data\&quot;: \&quot;hwQQABAAAAAAAAAAAAAAAAAAAAAAAA8AAADwD/D/9QAAAO/if3f3AADwL/12dg8AAO/i72Z3DwAAL/0hb/cAAADw/+K/DwAAAPBn/3b3AAAAf2f2ZncPAAB/dvd3dg8AAH9293d2DwDwd3cPf3f3APD1/wDw//UA8A8AAAAA/wAAAAAAAAAAAA==\&quot;,\n        \&quot;mimeType\&quot;: \&quot;image/x-mkcd-f4\&quot;,\n        \&quot;displayName\&quot;: \&quot;holly\&quot;\n    },\n    \&quot;image12\&quot;: {\n        \&quot;data\&quot;: \&quot;hwQQABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/wAAAAAAAPAiDwAAAAAA8C7yAAAAAAAALyIP/wAA8P/uEvIRDwAvIiIi8d0P8CISIhLyEQ/wIiEhIvHdD/AiEiIS/hEP8C4uLuL93Q8A7+Li3v4RDwDw////D/8AAAAAAAAAAAAAAAAAAAAAAA==\&quot;,\n        \&quot;mimeType\&quot;: \&quot;image/x-mkcd-f4\&quot;,\n        \&quot;displayName\&quot;: \&quot;gloveRed\&quot;\n    },\n    \&quot;image15\&quot;: {\n        \&quot;data\&quot;: \&quot;hwQQABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMzMDAAAAADAIuLOAAAAABwjIuIMAMDMMyIi4s4AzC4iIiLizsDALSIiIuLODMwuIiIi4s4MDMwiIiLuzgwMAOwi4u4MDAwAwO7uzgAMDAAAzMwMAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==\&quot;,\n        \&quot;mimeType\&quot;: \&quot;image/x-mkcd-f4\&quot;,\n        \&quot;displayName\&quot;: \&quot;ornamentRed\&quot;\n    },\n    \&quot;image16\&quot;: {\n        \&quot;data\&quot;: \&quot;hwQQABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMzMDAAAAADAFpbIAAAAABxmZokMAMDMZmFhYcgAzMVmYWZhyMDAwWZhYWHIDMzFZmFmYcgMDMxoYWFhyAwMAJxmZoEMDAwAwJiYyAAMDAAAzMwMAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==\&quot;,\n        \&quot;mimeType\&quot;: \&quot;image/x-mkcd-f4\&quot;,\n        \&quot;displayName\&quot;: \&quot;ornamentBlue\&quot;\n    },\n    \&quot;image5\&quot;: {\n        \&quot;data\&quot;: \&quot;hwQQABAAAAAAAAAAAAAAAAAAgIiIAAAAAIDY2dmIAAAAmJmZmZ0IAACYkZGR2QgAgBkZGRmZjQCAGRERkZGJAIAZERERmY0AgBEREZGRiQCAEREREZmNAAAYERGRkQgAABgRERGZCAAAgBgRkYgAAAAAgIiIAAAAAAAAAAAAAAAAAAAAAAAAAA==\&quot;,\n        \&quot;mimeType\&quot;: \&quot;image/x-mkcd-f4\&quot;,\n        \&quot;displayName\&quot;: \&quot;snowball\&quot;\n    },\n    \&quot;image2\&quot;: {\n        \&quot;data\&quot;: \&quot;hwQQABAAAAAAAAD/////DwAA8O5u5u7+AP//7m7m7v7wd29mZmZm9vB3b2ZmZmb28Hfv7m7m7v4Ab+/ububu/gB/LyJyJyLyAG8vInInIvLwdy8icici8vB3f3d3d3f38Hd/d3d3d/cA/y8icici8gAALyJyJyLyAAAvInInIvIAAPD/////Dw==\&quot;,\n        \&quot;mimeType\&quot;: \&quot;image/x-mkcd-f4\&quot;,\n        \&quot;displayName\&quot;: \&quot;redGift\&quot;\n    },\n    \&quot;image3\&quot;: {\n        \&quot;data\&quot;: \&quot;hwQQABAAAAAAAAD/////DwAA8GhGZGb4AP//ZkZkZvbwVU9ERERE9PBVT0RERET08FVvZkZkZvYAT29mRmRm9gBff3dXdXf3AE9/d1d1d/fwVX93V3V39/BVX1VVVVX18FVfVVVVVfUA/393V3V39wAAf3dXdXf3AAB/d1d1d/cAAPD/////Dw==\&quot;,\n        \&quot;mimeType\&quot;: \&quot;image/x-mkcd-f4\&quot;,\n        \&quot;displayName\&quot;: \&quot;greenGift\&quot;\n    },\n    \&quot;image4\&quot;: {\n        \&quot;data\&quot;: \&quot;hwQQABAAAAAAAAD/////DwAA8IjYjYj4AP//iNiNiPjwEd/d3d3d/fAR393d3d398BGPiNiNiPgA34+I2I2I+AAfn5kZkZn5AN+fmRmRmfnwEZ+ZGZGZ+fARHxERERHx8BEfEREREfEA/5+ZGZGZ+QAAn5kZkZn5AACfmRmRmfkAAPD/////Dw==\&quot;,\n        \&quot;mimeType\&quot;: \&quot;image/x-mkcd-f4\&quot;,\n        \&quot;displayName\&quot;: \&quot;blueGift\&quot;\n    },\n    \&quot;image17\&quot;: {\n        \&quot;data\&quot;: \&quot;hwQQABAAAAAAAAAAAAAAAAAAAAAAAAAAAACAiIgIAAAAAJgZEYEIAAAAmJHd3YEIAACYmRERHQgAAJiZERERDwAAmBkREREPACLI3BERgQggAJgREYEIACAAgIiICAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==\&quot;,\n        \&quot;mimeType\&quot;: \&quot;image/x-mkcd-f4\&quot;,\n        \&quot;displayName\&quot;: \&quot;milkGlass\&quot;\n    },\n    \&quot;image20\&quot;: {\n        \&quot;data\&quot;: \&quot;hwQQABAAAAAAAAAAAAAAAAAAgIiICAAAAACYGRGBCAAAAJiR3d2BDwAAmJkREf3xAACYmRER8fEAAJgZERHx8QAiyNwREfEeIACYERGB3/0gAICIiPjt7QAAAAAA8N3bAAAAAADw3dsAAAAAAPDe3gAAAAAA8L39AAAAAAAA3/4AAAAAAADwDw==\&quot;,\n        \&quot;mimeType\&quot;: \&quot;image/x-mkcd-f4\&quot;,\n        \&quot;displayName\&quot;: \&quot;milkGlassCookie\&quot;\n    },\n    \&quot;image18\&quot;: {\n        \&quot;data\&quot;: \&quot;hwQUABQAAAAAAAAAAAAAAAAAAAAAAACIiIiIiIgIAAAAAICZmYiYmZkIAAAAiJiZmYiYmZkIAAAAmBmZmYiYmZkIAAAAmBmRmYiYmZkIAAAAmBkREREREREIAAAAmBkREZkZEREIAAAAmBkREZkZEREIAAAAmBkREZkZEREIAAAAmBkREZkZEREIAAAAiBkREZkZEREIAAAAABgREZkZEREIAAAAAIAREZkZEREIAAAAAACIiIiIiIgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=\&quot;,\n        \&quot;mimeType\&quot;: \&quot;image/x-mkcd-f4\&quot;,\n        \&quot;displayName\&quot;: \&quot;milkNoCookie\&quot;\n    },\n    \&quot;image19\&quot;: {\n        \&quot;data\&quot;: \&quot;hwQUABQAAAAAAAAAAAAAAAAAAAAAAACIiIiIiIgIAAAAAICZmYiYmZkIAAAAiJiZmYiYmZkIAAAAmBmZmYiYmZkIAAAAmBmRmYiYmZkIAAAAmBkREREREREIAAAAmBkREZkZEREIAAAAmBkREZkZEREIAAAAmBkREZkZEe4OAAAAmBkREZkZ4d8OAAAAiBkREZkZ3t0OAAAAABgREZkZ/u0OAAAAAIAREZkZ3t0OAAAAAACIiIiI3t0OAAAAAAAAAAAA394OAAAAAAAAAAAA3t0OAAAAAAAAAAAA4N8OAAAAAAAAAAAAAO4OAAAAAAAAAAAAAAAAAAA=\&quot;,\n        \&quot;mimeType\&quot;: \&quot;image/x-mkcd-f4\&quot;,\n        \&quot;displayName\&quot;: \&quot;milkCookie\&quot;\n    },\n    \&quot;image14\&quot;: {\n        \&quot;data\&quot;: \&quot;hwQUABQAAAAAAAAAAAAAAAAAAAAAAAAAAPAPAAAAAAAAAP///7/8AAAAAAAA8IiIiLj8AAAAAAAAAP///8/dDwAAAAAA8GZmZsbd/QAAAAAA8GZmZmbc3Q8AAAAA8P9oZmbG3f0AAAAAj4hmZmZm3B0PAADwiG9mYRZmxvEAAADw+GZhYWFmZg8AAACAb2YWEWZmZg8AAACAb2YRFhFm9gAAAACAb2YWEWZmDwAAAACAb2ZhYWH2AAAAAAAAbxZmYWYPAAAAAAAA8GZmZvYAAAAAAAAAAG9mZg8AAAAAAAAAAPD//wAAAAAAAAAAAAAAAAAAAAAAAAA=\&quot;,\n        \&quot;mimeType\&quot;: \&quot;image/x-mkcd-f4\&quot;,\n        \&quot;displayName\&quot;: \&quot;blueMittens\&quot;\n    },\n    \&quot;image47\&quot;: {\n        \&quot;data\&quot;: \&quot;hwSgAHgAAACZmZmZmZmZmZmZmbm7u7u7u7u7u7u7u2tmZmZmZmZmZmZmZmZmZt3d3d3d3d3d3d0RERERERERERERERGZmZmZmZmZmZmZmbu7u7u7u7u7u7u7u7trZmZmZmZmZmZmZmZmZt3d3d3d3d3d3R0RERERERERERERERGZmZmZmZmZmZmZubu7u7u7u7u7u7u7u7u7ZmZmZmZmZmZmZmZm1t3d3d3d3d3d3R0RERERERERERERERGZmZmZmZmZmZmZu7u7u7u7u7u7u7u7u7u7ZmZmZmZmZmZmZmZm1t3d3d3d3d3d3RERERERERERERERERGZmZmZmZmZmZm7u7u7u7u7u7u7u7u7u7u7u2ZmZmZmZmZmZmZm1t3d3d3d3d3d3RERERERERERERERERGZmZmZmZmZmbm7u7u7u7u7u7u7u7u7u7u2a2ZmZmZmZmZmZmZm1t3d3d3d3d3dHRERERERERERERERERGZmZmZmZmZmbu7u7u7u7u7u7u7u7u7u7tmZmZmZmZmZmZmZmZm1t3d3d3d3d3dHRERERERERERERERERGZmZmZmZmZu7u7u7u7u7u7u7u7u7u7u2ZmZmZmZmZmZmZmZmZm1t3d3d3d3d3dHRERERERERERERERERGZmZmZmZm7u7u7u7u7u7u7u7u7u7u7a2ZmZmZmZmZmZmZmZmZmZt3d3d3d3d3dERERERERERERERERERGZmZmZmbm7u7u7u7u7u7u7u7u7u7u7ZmZmZmZmZmZmZmZmZmZmZt3d3d3d3d3dERERERERERERERERERGZmZmZmZm5u7u7u7u7u7u7u7u7u7u7a2ZmZmZmZmZmZmZmZmZmZt3d3d3d3d3dERERERERERERERERERGZmZmZmZmZu7u7u7u7u7u7u7u7u7u7u7trZmZmZmZmZmZmZmZmZtbd3d3d3d0dERERERERERERERERERGZmZmZmZmZmbu7u7u7u7u7u7u7u7u7u7u7ZmZmZmZmZmZmZmZmZtbd3d3d3d0dERERERERERERERERERGZmZmZmZmZmZm7u7u7u7u7u7u7u7u7u7u7a2a7a2ZmZmZmZmZmZmbd3d3d3d0dERERERERERERERERERGZmZmZmZmZmZmZu7u7u7u7u7u7u7u7u7u7u2a7u2ZmZmZmZmZmZmbd3d3d3d0dERERERERERERERERERGZmZmZmZmZmZmZubu7u7u7u7u7u7u7u7u7u7trZmZmZmZmZmZmZmbW3d3d3d0dERERERERERERERERERGZmZmZmZmZmZmZmbm7u7u7u7u7u7u7u7u7u7trZmZmZmZmZmZmZmbW3d3d3d0dERERERERERERERERERGZmZmZmZmZmZmZmZm5u7u7u7u7u7u7u7u7u7tmZmZmZmZmZmZmZmZm3d3d3d3dERERERERERERERERERGZmZmZmZmZmZmZmZmZubu7u7u7u7u7u7u7u2ZmZmZmZmZmZmZmZmZm3d3d3d3dERERERERERERERERERGZmZmZmZmZmZmZmZmZmbu7u7u7u7u7u7u7u2ZmZmZmZmZmZmZmZmZm3d3d3d3dERERERERERERERERERGZmZmZmZmZmZmZmZmZmbm7u7u7u7u7u7u7u7tmZmZmZmZmZmZmZmZm1t3d3d3dERERERERERERERERERGZmZmZmZmZmZmZmZmZmZm7u7u7u7u7u7u7u7u7ZmZmZmZmZmZmZmZm1t3d3d3dERERERERERERERERERGZmZmZmZmZmZmZmZmZmZm7u7u7u7u7u7u7u7u7a2ZmZmZmZmZmZmZmZt3d3d3dERERERERERERERERERGZmZmZmZmZmZmZmZmZmbu7u7u7u7u7u7u7u7u7a2ZrZmZmZmZmZmZmZt3d3d3dERERERERERERERERERGZmZmZmZmZmZmZmZmZubu7u7u7u7u7u7u7u7u7u7trZmZmZmZmZmZmZt3d3d3dHRERERERERERERERERGZmZmZmZmZmZmZmZmZubu7u7u7u7u7u7u7u7u7u7u7a2ZmZmZmZmZmZtbd3d3dHRERERERERERERERERGZmZmZmZmZmZmZmZmZmbu7u7u7u7u7u7u7u7u7u7u7u2ZmZmZmZmZmZtbd3d3dHRERERERERERERERERGZmZmZmZmZmZmZmZmZmbm7u7u7u7u7u7u7u7u7u7u7a2ZmZmZmZmZmZmbd3d3dHRERERERERERERERERGZmZmZmZmZmZmZmZmZmZm7u7u7u7u7u7u7u7u7u7u7a2ZmZmZmZmZmZmbd3d3d3RERERERERERERERERGZmZmZmZmZmZmZmZmZmZm7u7u7u7u7u7u7u7u7u7u7ZmZmZmZmZmZmZmbd3d3d3RERERERERERERERERGZmZmZmZmZmZmZmZmZmZm7u7u7u7u7u7u7u7u7u7trZmZmZmZmZmZmZmbd3d3d3RERERERERERERERERGZmZmZmZmZmZmZmZmZmZm7u7u7u7u7u7u7u7u7u7trZmZmZmZmZmZmZmbd3d3d3RERERERERERERERERGZmZmZmZmZmZmZmZmZmZm7u7u7u7u7u7u7u7u7u7u7ZmZmZmZmZmZmZmbd3d3d3R0RERERERERERERERGZmZmZmZmZmZmZmZmZmZm5u7u7u7u7u7u7u7u7u7u7a2ZmZmZmZmZmZmbd3d3d3R0RERERERERERERERGZmZmZmZmZmZmZmZmZmZm5u7u7u7u7u7u7u7u7u7u7a2ZmZmZmZmZmZmbd3d3d3R0RERERERERERERERGZmZmZmZmZmZmZmZmZmZm5u7u7u7u7u7u7u7u7u7u7a2ZmZmZmZmZmZmbd3d3d3R0RERERERERERERERGZmZmZmZmZmZmZmZmZmZm5u7u7u7u7u7u7u7u7u7u7ZmZmZmZmZmZmZtbd3d3d3d0RERERERERERERERGZmZmZmZmZmZmZmZmZmbm7u7u7u7u7u7u7u7u7u7u7ZmZmZmZmZmZmZtbd3d3d3d0RERERERERERERERGZmZmZmZmZmZmZmZmZmbu7u7u7u7u7u7u7u7u7u7trZmZmZmZmZmZmZtbd3d3d3d0RERERERERERERERGZmZmZmZmZmZmZmZmZu7u7u7u7u7u7u7u7u7u7u2tmZmZmZmZmZmZmZtbd3d3d3d0RERERERERERERERGZmZmZmZmZmZmZmZmZmbu7u7u7u7u7u7u7u7u7u2tmZmZmZmZmZmZmZtbd3d3d3d0RERERERERERERERGZmZmZmZmZmZmZmZmZmbm7u7u7u7u7u7u7u7u7u7tmZmZmZmZmZmZmZt3d3d3d3d0dERERERERERERERGZmZmZmZmZmZmZmZmZmZm7u7u7u7u7u7u7u7u7u7u7ZmZmZmZmZmZmZt3d3d3d3d0dERERERERERERERGZmZmZmZmZmZmZmZmZmZm5u7u7u7u7u7u7u7u7u2tmZmZmZmZmZmZmZt3d3d3d3d0dERERERERERERERGZmZmZmZmZmZmZmZmZmZmZubu7u7u7u7u7u7u7a2ZmZmZmZmZmZmZmZt3d3d3d3d0dERERERERERERERGZmZmZmZmZmZmZmZmZmZmZmbu7u7u7u7u7u7u7a2ZmZmZmZmZmZmZm1t3d3d3d3d0dERERERERERERERGZmZmZmZmZmZmZmZmZmZmZmbm7u7u7u7u7u7u7a2ZmZmZmZmZmZmZm1t3d3d3d3d0dERERERERERERERGZmZmZmZmZmZmZmZmZmZmZmbm7u7u7u7u7u7u7ZmZmZmZmZmZmZmZm1t3d3d3d3d0dERERERERERERERGZmZmZmZmZmZmZmZmZmZmZmZm7u7u7u7u7u2tmZmZmZmZmZmZmZmZm3d3d3d3d3d0RERERERERERERERGZmZmZmZmZmZmZmZmZmZmZmZm7u7u7u7u7u2tmZmZmZmZmZmZmZmZm3d3d3d3d3d0RERERERERERERERGZmZmZmZmZmZmZmZmZmZmZmZm5u7u7u7u7u7tmZmZmZmZmZmZmZmbW3d3d3d3d3d0RERERERERERERERGZmZmZmZmZmZmZmZmZmZmZmZmZu7u7u7u7u7trZmZmZmZmZmZmZmbW3d3d3d3d3d0RERERERERERERERGZmZmZmZmZmZmZmZmZmZmZmZmZu7u7u7u7u7trZmZmZmZmZmZmZmbW3d3d3d3d3R0RERERERERERERERGZmZmZmZmZmZmZmZmZmZmZmZmZu7u7u7u7u7u7u2tmZmZmZmZmZmbd3d3d3d3d3R0RERERERERERERERGZmZmZmZmZmZmZmZmZmZmZmZmZubu7u7u7u7u7u2tmZmZmZmZmZmbd3d3d3d3d3R0RERERERERERERERGZmZmZmZmZmZmZmZmZmZmZmZmZubu7u7u7u7u7u2tmZmZmZmZmZmbd3d3d3d3d3RERERERERERERERERGZmZmZmZmZmZmZmZmZmZmZmZmZubu7u7u7u7u7u7tmZmZmZmZmZtbd3d3d3d3d3RERERERERERERERERGZmZmZmZmZmZmZmZmZmZmZmZmZu7u7u7u7u7u7u7tmZmZmZmZmZtbd3d3d3d3d3RERERERERERERERERGZmZmZmZmZmZmZmZmZmZmZmZmZu7u7u7u7u7u7u2tmZmZmZmZmZtbd3d3d3d3d3RERERERERERERERERGZmZmZmZmZmZmZmZmZmZmZmZm5u7u7u7u7u7u7a2ZmZmZmZmZmZtbd3d3d3d3dHRERERERERERERERERGZmZmZmZmZmZmZmZmZmZmZmZm5u7u7u7u7u7trZmZmZmZmZmZmZtbd3d3d3d3dHRERERERERERERERERGZmZmZmZmZmZmZmZmZmZmZmZm7u7u7u7u7u7tmZmZmZmZmZmZmZtbd3d3d3d3dHRERERERERERERERERGZmZmZmZmZmZmZmZmZmZmZmbm7u7u7u7u7u7tmZmZmZmZmZmZmZtbd3d3d3d3dERERERERERERERERERGZmZmZmZmZmZmZmZmZmZmZmbm7u7u7u7u7u7tmZmZmZmZmZmZmZtbd3d3d3d3dERERERERERERERERERGZmZmZmZmZmZmZmZmZmZmZmbm7u7u7u7u7u7tmZmZmZmZmZmZmZtbd3d3d3d0dERERERERERERERERERGZmZmZmZmZmZmZmZmZmZmZmZm7u7u7u7u7u2tmZmZmZmZmZmZmZtbd3d3d3d0dERERERERERERERERERGZmZmZmZmZmZmZmZmZmZmZmZm7u7u7u7u7ZmZmZmZmZmZmZmZmZmbd3d3d3d0dERERERERERERERERERGZmZmZmZmZmZmZmZmZmZmZmZm5u7u7u7u7ZmZmZmZmZmZmZmZmZmbd3d3d3d0RERERERERERERERERERGZmZmZmZmZmZmZmZmZmZmZmZm5u7u7u7u7ZmZmZmZmZmZmZmZmZmbd3d3d3d0RERERERERERERERERERGZmZmZmZmZmZmZmZmZmZmZmZm5u7u7u7u7a2ZmZmZmZmZmZmZmZmbd3d3d3R0RERERERERERERERERERGZmZmZmZmZmZmZmZmZmZmZmZm5u7u7u7u7a2ZmZmZmZmZmZmZmZmbW3d3d3R0RERERERERERERERERERGZmZmZmZmZmZmZmZmZmZmZmZm7u7u7u7u7u2ZmZmZmZmZmZmZmZmbW3d3d3RERERERERERERERERERERGZmZmZmZmZmZmZmZmZmZmZmZm7u7u7u7u7u7trZmZmZmZmZmZmZmbW3d3d3RERERERERERERERERERERGZmZmZmZmZmZmZmZmZmZmZmbm7u7u7u7u7u7tmZmZmZmZmZmZmZmZm3d3d3RERERERERERERERERERERGZmZmZmZmZmZmZmZmZmZmZmbm7u7u7u7u7u7tmZmZmZmZmZmZmZmZm3d3d3RERERERERERERERERERERGZmZmZmZmZmZmZmZmZmZmZmbm7u7u7u7u7u7tmZmZmZmZmZmZmZmZm1t3d3RERERERERERERERERERERGZmZmZmZmZmZmZmZmZmZmZmbu7u7u7u7u7u7tmZmZmZmZmZmZmZmZm1t3dHRERERERERERERERERERERGZmZmZmZmZmZmZmZmZmZmZubu7u7u7u7u7u7trZmZmZmZmZmZmZmZmZt3dHRERERERERERERERERERERGZmZmZmZmZmZmZmZmZmZmZu7u7u7u7u7u7u7tmZmZmZmZmZmZmZmZmZt3dHRERERERERERERERERERERGZmZmZmZmZmZmZmZmZmZm5u7u7u7u7u7u7u2tmZmZmZmZmZmZmZmZmZt3dHRERERERERERERERERERERGZmZmZmZmZmZmZmZmZmZm7u7u7u7u7u7u7u2tmZmZmZmZmZmZmZmZmZtbdHRERERERERERERERERERERGZmZmZmZmZmZmZmZmZmbm7u7u7u7u7u7u7ZmZmZmZmZmZmZmZmZmZmZtbdERERERERERERERERERERERGZmZmZmZmZmZmZmZmZmbm7u7u7u7u7u7u7ZmZmZmZmZmZmZmZmZmZmZtbdERERERERERERERERERERERGZmZmZmZmZmZmZmZmZubu7u7u7u7u7u7u7a2ZmZmZmZmZmZmZmZmZmZtbdERERERERERERERERERERERGZmZmZmZmZmZmZmZmZu7u7u7u7u7u7u7u7a2ZmZmZmZmZmZmZmZmZmZtbdERERERERERERERERERERERGZmZmZmZmZmZmZmZm5u7u7u7u7u7u7u7trZmZmZmZmZmZmZmZmZmZmZtbdERERERERERERERERERERERGZmZmZmZmZmZmZmZm5u7u7u7u7u7u7u2tmZmZmZmZmZmZmZmZmZmZmZmbdHRERERERERERERERERERERGZmZmZmZmZmZmZmZm5u7u7u7u7u7u7a2ZmZmZmZmZmZmZmZmZmZmZmZmbdHRERERERERERERERERERERGZmZmZmZmZmZmZmZmZu7u7u7u7u7u7a2ZmZmZmZmZmZmZmZmZmZmZmZmbdHRERERERERERERERERERERGZmZmZmZmZmZmZmZmZu7u7u7u7u7u7a2ZmZmZmZmZmZmZmZmZmZmZmZmbdHRERERERERERERERERERERGZmZmZmZmZmZmZmZmZubu7u7u7u7u7u2ZmZmZmZmZmZmZmZmZmZmZmZmbdHRERERERERERERERERERERGZmZmZmZmZmZmZmZmZubu7u7u7u7u7u2ZmZmZmZmZmZmZmZmZmZmZmZmbdHRERERERERERERERERERERGZmZmZmZmZmZmZmZmZmbu7u7u7u7u7u7u7ZmZmZmZmZmZmZmZmZmZmZtbdHRERERERERERERERERERERGZmZmZmZmZmZmZmZmZmbu7u7u7u7u7u7u7a2ZmZmZmZmZmZmZmZmZmZtbdHRERERERERERERERERERERGZmZmZmZmZmZmZmZmZmbu7u7u7u7u7u7u7u2ZmZmZmZmZmZmZmZmZmZt3d3RERERERERERERERERERERGZmZmZmZmZmZmZmZmZmbu7u7u7u7u7u7u7u2ZmZmZmZmZmZmZmZmZmZt3d3RERERERERERERERERERERGZmZmZmZmZmZmZmZmZmbu7u7u7u7u7u7u7u2ZmZmZmZmZmZmZmZmZm1t3d3RERERERERERERERERERERGZmZmZmZmZmZmZmZmZmbu7u7u7u7u7u7u7a2ZmZmZmZmZmZmZmZmZm3d3d3RERERERERERERERERERERGZmZmZmZmZmZmZmZmZmbu7u7u7u7u7u7u7ZmZmZmZmZmZmZmZmZmbW3d3d3RERERERERERERERERERERGZmZmZmZmZmZmZmZmZubu7u7u7u7u7u7tmZmZmZmZmZmZmZmZmZmbW3d3d3RERERERERERERERERERERGZmZmZmZmZmZmZmZmZubu7u7u7u7u7u7tmZmZmZmZmZmZmZmZmZmbd3d3d3RERERERERERERERERERERGZmZmZmZmZmZmZmZmZu7u7u7u7u7u7u2ZmZmZmZmZmZmZmZmZmZtbd3d3d3RERERERERERERERERERERGZmZmZmZmZmZmZmZmZu7u7u7u7u7u7a2ZmZmZmZmZmZmZmZmZmZtbd3d3d3RERERERERERERERERERERGZmZmZmZmZmZmZmZm5u7u7u7u7u7u7a2ZmZmZmZmZmZmZmZmZmZt3d3d3d3R0RERERERERERERERERERGZmZmZmZmZmZmZmZm7u7u7u7u7u7u7a2ZmZmZmZmZmZmZmZmZm1t3d3d3d3R0RERERERERERERERERERGZmZmZmZmZmZmZmbu7u7u7u7u7u7u7u2tmZmZmZmZmZmZmZmZm1t3d3d3d3d0RERERERERERERERERERGZmZmZmZmZmZmZmbu7u7u7u7u7u7u7u7trZmZmZmZmZmZmZmZm3d3d3d3d3d0RERERERERERERERERERGZmZmZmZmZmZmZu7u7u7u7u7u7u7u7u7u7ZmZmZmZmZmZmZmZm3d3d3d3d3d0RERERERERERERERERERGZmZmZmZmZmZm5u7u7u7u7u7u7u7u7u7u7a2ZmZmZmZmZmZmZm3d3d3d3d3d0RERERERERERERERERERGZmZmZmZmZmZm5u7u7u7u7u7u7u7u7u7u7a2ZmZmZmZmZmZmbW3d3d3d3d3d0RERERERERERERERERERGZmZmZmZmZmZm7u7u7u7u7u7u7u7u7u7u7u2ZmZmZmZmZmZmbW3d3d3d3d3d0RERERERERERERERERERGZmZmZmZmZmbu7u7u7u7u7u7u7u7u7u7u7u2ZmZmZmZmZmZmbd3d3d3d3d3d0RERERERERERERERERERGZmZmZmZmZmbu7u7u7u7u7u7u7u7u7u7u7u2ZmZmZmZmZmZmbd3d3d3d3d3d0RERERERERERERERERERGZmZmZmZmZmbu7u7u7u7u7u7u7u7u7u7u7u2ZmZmZmZmZmZtbd3d3d3d3d3d0RERERERERERERERERERGZmZmZmZmZmbu7u7u7u7u7u7u7u7u7u7u7u2ZmZmZmZmZmZtbd3d3d3d3d3d0RERERERERERERERERERGZmZmZmZmZmbm7u7u7u7u7u7u7u7u7u7u7a2ZmZmZmZmZmZtbd3d3d3d3d3d0RERERERERERERERERERGZmZmZmZmZmbm7u7u7u7u7u7u7u7tru2ZmZmZmZmZmZmZmZt3d3d3d3d3d3d0RERERERERERERERERERGZmZmZmZmZmbm7u7u7u7u7u7u7u2tma2ZmZmZmZmZmZmZmZt3d3d3d3d3d3d0RERERERERERERERERERGZmZmZmZmZmZm7u7u7u7u7u7tmZmZmZmZmZmZmZmZmZmZmZt3d3d3d3d3d3R0RERERERERERERERERERGZmZmZmZmZmZm5u7u7u7u7u2ZmZmZmZmZmZmZmZmZmZmZmZt3d3d3d3d3d3R0RERERERERERERERERERGZmZmZmZmZmZm5u7u7u7u7a2ZmZmZmZmZmZmZmZmZmZmZm1t3d3d3d3d3d3RERERERERERERERERERERGZmZmZmZmZmZm5u7u7u7trZmZmZmZmZmZmZmZmZmZmZmZm1t3d3d3d3d3d3RERERERERERERERERERERGZmZmZmZmZmZm5u7u7u7tmZmZmZmZmZmZmZmZmZmZmZmZm1t3d3d3d3d3dERERERERERERERERERERERGZmZmZmZmZmZm5u7u7u2tmZmZmZmZmZmZmZmZmZmZmZmZm3d3d3d3d3d0dERERERERERERERERERERERGZmZmZmZmZmZm7u7u7u7trZmZmZmZmZmZmZmZmZmZmZmZm3d3d3d3d3d0dERERERERERERERERERERERGZmZmZmZmZmZm7u7u7u7u7u2tmZmZmZmZmZmZmZmZmZmZm3d3d3d3d3d0RERERERERERERERERERERERGZmZmZmZmZmbm7u7u7u7u7u7u7ZmZmZmZmZmZmZmZmZmZm3d3d3d3d3d0RERERERERERERERERERERERGZmZmZmZmZmbm7u7u7u7u7u7u7a2ZmZmZmZmZmZmZmZmZm3d3d3d3d3R0RERERERERERERERERERERERGZmZmZmZmZmbm7u7u7u7u7u7u7u2tmZmZmZmZmZmZmZmZm3d3d3d3d3RERERERERERERERERERERERERGZmZmZmZmZmZm7u7u7u7u7u7u7u2tmZmZmZmZmZmZmZmbW3d3d3d3dHRERERERERERERERERERERERERGZmZmZmZmZmZm7u7u7u7u7u7u7u7u7u2ZmZmZmZmZmZmbW3d3d3d3dHRERERERERERERERERERERERERGZmZmZmZmZmZmZu7u7u7u7u7u7u7u7u2tmZmZmZmZmZmbW3d3d3d3dERERERERERERERERERERERERERGZmZmZmZmZmZmZu7u7u7u7u7u7u7u7u2tmZmZmZmZmZmbW3d3d3d3dERERERERERERERERERERERERERGZmZmZmZmZmZmZubu7u7u7u7u7u7u7ZmZmZmZmZmZmZmbW3d3d3d3dERERERERERERERERERERERERERGZmZmZmZmZmZmZmbu7u7u7u7u7u7trZmZmZmZmZmZmZmbd3d3d3d0dERERERERERERERERERERERERERGZmZmZmZmZmZmZmbm7u7u7u7u7u7tmZmZmZmZmZmZmZmbd3d3d3d0dERERERERERERERERERERERERERGZmZmZmZmZmZmZmZm7u7u7u7u7u2tmZmZmZmZmZmZmZtbd3d3d3d0RERERERERERERERERERERERERERGZmZmZmZmZmZmZmZm7u7u7u7u7u2tmZmZmZmZmZmZmZtbd3d3d3d0RERERERERERERERERERERERERERGZmZmZmZmZmZmZmZm5u7u7u7u7u2ZmZmZmZmZmZmZmZtbd3d3d3d0RERERERERERERERERERERERERERGZmZmZmZmZmZmZmZmZu7u7u7u7a2ZmZmZmZmZmZmZmZtbd3d3d3R0RERERERERERERERERERERERERERGZmZmZmZmZmZmZmZmZubu7u7u7ZmZmZmZmZmZmZmZmZtbd3d3d3R0RERERERERERERERERERERERERERGZmZmZmZmZmZmZmZmZubu7u7tmZmZmZmZmZmZmZmZmZtbd3d3d3R0RERERERERERERERERERERERERERGZmZmZmZmZmZmZmZmZmbu7u7tmZmZmZmZmZmZmZmZmZmbd3d3d3R0RERERERERERERERERERERERERERGZmZmZmZmZmZmZmZmZmbu7u7tmZmZmZmZmZmZmZmZmZmbd3d3d3R0RERERERERERERERERERERERERERGZmZmZmZmZmZmZmZmZmbm7u7tmZmZmZmZmZmZmZmZmZmbd3d3d3R0RERERERERERERERERERERERERERGZmZmZmZmZmZmZmZmZmbm7u7tmZmZmZmZmZmZmZmZmZmbd3d3d3R0RERERERERERERERERERERERERERGZmZmZmZmZmZmZmZmZmbm7ZmZmZmZmZmZmZmZmZmZmZmbd3d3d3R0RERERERERERERERERERERERERERGZmZmZmZmZmZmZmZmZmZlrZmZmZmZmZmZmZmZmZmZmZmbd3d3d3R0RERERERERERERERERERERERERERGZmZmZmZmZmZmZmZmZmZm7a2ZmZmZmZmZmZmZmZmZmZmbd3d3d3R0RERERERERERERERERERERERERERGZmZmZmZmZmZmZmZmZmbm7a2ZmZmZmZmZmZmZmZmZmZmbW3d3d3R0RERERERERERERERERERERERERERGZmZmZmZmZmZmZmZmZmbu7a2ZmZmZmZmZmZmZmZmZmZmbW3d3d3R0RERERERERERERERERERERERERERGZmZmZmZmZmZmZmZmZubu7ZmZmZmZmZmZmZmZmZmZmZmbW3d3d3R0RERERERERERERERERERERERERERGZmZmZmZmZmZmZmZmZu7trZmZmZmZmZmZmZmZmZmZmZmbW3d3d3R0RERERERERERERERERERERERERERGZmZmZmZmZmZmZmZm5u2tmZmZmZmZmZmZmZmZmZmZmZmbW3d3d3d0RERERERERERERERERERERERERERGZmZmZmZmZmZmZmZm7u2tmZmZmZmZmZmZmZmZmZmZmZmbW3d3d3d0RERERERERERERERERERERERERERGZmZmZmZmZmZmZmbm7u7trZmZmZmZmZmZmZmZmZmZmZmbW3d3d3d0RERERERERERERERERERERERERERGZmZmZmZmZmZmZmbu7u7u7ZmZmZmZmZmZmZmZmZmZmZmZm3d3d3d0RERERERERERERERERERERERERERGZmZmZmZmZmZmZmbu7u7u7u2ZmZmZmZmZmZmZmZmZmZmZm3d3d3d0dERERERERERERERERERERERERERGZmZmZmZmZmZmZmbu7u7u7u2tmZmZmZmZmZmZmZmZmZmZm3d3d3d0dERERERERERERERERERERERERERGZmZmZmZmZmZmZu7u7u7u7u2tmZmZmZmZmZmZmZmZmZmZm3d3d3d0dERERERERERERERERERERERERERE=\&quot;,\n        \&quot;mimeType\&quot;: \&quot;image/x-mkcd-f4\&quot;,\n        \&quot;displayName\&quot;: \&quot;winterBackground\&quot;\n    },\n    \&quot;*\&quot;: {\n        \&quot;mimeType\&quot;: \&quot;image/x-mkcd-f4\&quot;,\n        \&quot;dataEncoding\&quot;: \&quot;base64\&quot;,\n        \&quot;namespace\&quot;: \&quot;myImages\&quot;\n    }\n}&quot;,
+  &quot;images.g.ts&quot;: &quot;// Auto-generated code. Do not edit.\nnamespace myImages {\n\n    helpers._registerFactory(\&quot;image\&quot;, function(name: string) {\n        switch(helpers.stringTrim(name)) {\n            case \&quot;image21\&quot;:\n            case \&quot;skiBackground\&quot;:return img`\n9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999\n9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999\n9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999\n9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999\n9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999\n9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999\n9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999\n9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999\n9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999\n9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999\n999999d999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999\n9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999\n9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999\n9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999111999999999999999999999999999999999999999999999999999999999999999\n9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999991991119999999999999999999999999999999999999999999999999999999999991\n9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999119111111199999999999999999999999999999999999999999999999999999999919\n9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999991919111111111999999999999999999999999999999999999999999999999999999191\n9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999991111111111191199999999999999999999999999999999999999999999999999911911\n9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999911111111111111111999999999999999999999999999999999999999999999999119911\n9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999911111111111111111119999999999999999999999999999999999999999999991111111\n9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999111111111111111111111999999999999999999999999999999999999999999911111111\n9999999999999999999999999999999999999999999999999999999999999999999999999999999999999991111111111111111111111199999999999999999999999999999999999999999111111111\n9999999999999999999999999999999999999999999999999999999999999999999999999999999999999111111111111111111111111119999999999999999999999999999999999999991111191111\n9999999999999999999999999999999999999999999999999999999999999999999999999999999999991111111111111111111111111111999999999999999999999999999999999999911111111111\n9999999999999999999999999999999999999999999999999999999999999999999999999999999999911111111111111111111111111111119199999999999999999999999999999999111111111111\n9999999999999999999999999999999999999999999999999999999999999999999999999999999999111111111111111111111111111111111919999999999999999999999999999991191111111111\n9999999999999999999999999999999999999999999999999999999999999999999999999999999991111111111111111111111111111111111199199999999999999999999999999911111111111111\n9999999999999999999999999999999999999999999999999999999999999999999999999999999911111111111111111111111111111111111119919999999999999999999999999111111111111111\n9999999999999999999999999999999999999999999999999999999999999999999999999999999111111111111111111111111111111111111111199199999999999999999999999111111111111111\n9999999999999999999999999999999999999999999999999999999999999999999999999999991111111111111111111111111111111111111119119999999999999999999999991111111111111111\n9999999999999999999999999999999999999999999999999999999999999999999999999999111111111111111111111111111111111111111111111999999999999999999919911111111d11111111\n999999999999999999999999999999999999999999999999999999999999999999999999999111111111111111111111111111111111111111111111111999999999999999999911111111d111111111\n99999999999999999999999999999999999999999999999999999999999999999999999999911111111111111111111111111111111111111111111111119999999999999999919111111d1111111111\n999999999999999999999999999999999999999999999999999999999999999999999999991111111111111111111111111111111111111111111111111111999999919999991111111111d111111111\n9999999999999999999999999999999999999999999999999999999999999999999999999111111111111111111111111111111111111111111111111111111199999999911111111111111111111111\n99999999999999999999999999999999999999999999999999999999999999999999999911111111111111111111111111111111111111111111111111111111191999991111111111111d1111111111\n999999999999999999999999999999999999999999999999999999999999999999999911111111111111d1111111111111111111111111111111111111111111119199911111119111dddd1111111111\n9999999999999999999999999999999999999999999999999999999999999999999991111111111111ddd1111111111111111111111111111111111111111111111191111111111111dddd1111111111\n999999999999999999999999999999999999999999999999999999999999999999991111111111d11d11d1111111111111111111111111111111111111111111111111111111111111dddd1111111111\n999999999999999999999999999999999999999999999999999999999999999991911111111111111111d111111111111111111111111111111111111111111111111111111111111ddddd1111111111\n999999999999999999999999999999999999999999999999999999999999999991111111111111d1d111d11111111111111d111111111111111111111111111111111111111111111ddddd1111111111\n99999999999999999999999999999999999999991111199999999999999999991111111111111dd1111ddd1111111111111d11111111111111111111111111111111111111111111dddddd111111dddd\n9999999999999999999999999999999999999991111111999999999999999911111111111d1ddd111d11dd11d1111111111d111111111111111111111111d111111111111111111ddddddd111111dddd\n199999999999999999999999999999999999911111111119999999999999911111111111d1d1d1d111dddd1ddd111111111dd11111111111111111111111dd11111dd1111dd1111dddddd1111111dddd\n11999999999999999999999999999999991911111111111199999999999111111111111dd1dddd1111d1ddd1dd111111111dd111111111111111111111111dd11111dddffff111ddddddd111ffffdddd\n1199999999999999999999999999999919911111111111111999999991111111111111dd1ddddd111dd1ddd1dd111111111dd1111111111111111111111111dd111111df11f11dd1ddddd111f11fdddd\n919999999999999999999999999999919111111111111111119999911111111111111dd1ddddddd11ddddd11dd11111111ddd111111111111111111111111dddd111111ffffdd1dddddddd11ffffdddd\n9119999999999999999999999999991911111111111111111111911111111111111ddddddddddd111ddddd1ddd1111111d1dd1111111111111111111111111ddddd111111fdddd11dddddd1ddfdddddd\n111199999999999999999999999999911111111111111111111111111111111111dddddddddddd11dddddd1ddd1111111ddddd111111111111111111dddd111dddddd11ddf1ddddddd1ddddddfdddddd\n11111119999999999999999999999111111111111111111111111111111111111ddddddddddddd1dddddd1dddd111111d1ddd1111111111111111111dddddddddddddd1111fdddddddddddddfddddddd\n1111111119999999999999999991111111111111111111111111111111111111ddddddddddddddddddddd1d1dd11111d1dddd1111111111111111111ddddddddddd1dddd111fffffffffffffdddddddd\n111111111111999999999999991111111111111111111111111111111111111d1dddddddddddddddddddd11d1d11111d1dd1d1111111111111111111dddddddd1ddddddddddddddfdfdfdddddddddddd\n1111111111111119999999999111111111111111111111111111111111111111ddddddddddddddddddddd111111111d11dd1ddd1111111d11111d11dddddddddddddddddddddddddfffddddddddddddd\n111111111111111111999991111111111111111111111111111111111111111ddddddddddddd1dddddddd1111d111d11ddd1ddd111111d11111111ddddddddddddddddddddddddddffffdddddddddddd\n11111111111111111111991111111111111111111111111111111111111111dd1dddddddddddddddddd1d11dddd1d111ddd1ddd111111d11111d1ddddddd1dddddddddddddddddddfffdfddddddddddd\n1111111111111111111111111111111111111111111111111111111111111dd1dddddddddddddddddd1d11d1d1dd111d1d1dddd111111111111d1ddddddddddddddddddddffffffffffffffffddddddd\n11111111111111111111111111111111111d111111111111111111111111dddd1ddddddddddddddddd1d111dd1d1111ddddddd1d111111111111dddddddddddddddddddddffffffffffffffffdddddff\n111111111111111111111111111111111ddd1111111111dd111dd111111dddd11ddddddddddddddddd1d111d1d1111dd1dddd1dd1111111ddddddddddddddddddddddffffd111111ffffffdddfffdfdd\n11d1111111111111111111111111111ddd11dd11dd111111dd111ddd11ddd11dddddddddddddddddddd11111111111d1dddddddddd111dddd1dddddddddddddddffffddddddddd11fffdfdffddddffff\n11dd1111111111111111111111111ddd11ddd111111ffffdd1dd1111ddd11ffffdddddddddddddddddd1111111111d1dddddd1ddddd1dddddddddddddddddffffdddddddddddddfffffdfdddffffddff\n111dd11111111111111111111111ddd1dd11ddd1111f11fddddddd1111dddf11fdddddddddddddddddd111111111d1ddddddddddddddddddddddddddddfffddddddddddddddfffddfffdfddddddddd11\n1111d111111111111111111111dddddd111dd111111ffff111ddddddd111dffffddddddddddddd1ddd111111111ddddddddddddddddddddddddddddfffdddddddddddddddffdddddfffdfddddddddddd\n1111111111111111111111111ddddd1111dddddddd111f1111111dddddddddfdddddddddddddd11ddd1111111dddddddddd1ddddddddddddddddfffddddddddddddddddffdddddddfffdfddddddddddd\nd111111111111111111111dddd1d11111ddddd1111111fddddddddddddddddfdddddddddddd1111ddd11ddd1dddddddddddddddddddddddddfffddddddddddddddddfffdddddddddfffdfddddddddddd\nddd11111d11111111111dddd111111dddd1111dd1d1111f1dddddddddddddfdddddddddddddd111ddddddddddddddddddddddddddddffffffddddddddddddddddddfdddddddddffffffdfddddddddddd\n11ddd1111d11111111dd1d1111dddddd111ddd111111111ffffffffffffffddddddddddddddd111dddddddddddddddddddddfffffffddddddddddddddddddddddffdddddddddfdddfffdfddddddddddd\n111ddddddddd1111dd1111ddddddd1111dddddddd111111ddddfdfdfdddddddddddddddddddddddddddddddddddd1dddffffddddddddddddddddddddddddddfffdddddbbddddfffffffdfddddddddddd\n1ddddddddddddddd11ddddddddd11dddddddddddddd11111ddddfffdddddddddddddddddddddddddddddddddddffffffddd1ddddddddddddbbbbddddddddffdddddddbdbbbbfddddfffbfddddddddddd\nddddddddddd1dddddddddd1dd1ddddddddddddddddd1dddd1111ffffddddddddddddddddddddddddddffffffffddddddddddddddddddddddddddbbffffffddddddddbbbbbbbfbbddfffdfddddddddddd\ndddddddddddddddddd111dddddddddddddddddddddd11111d1ddffffffffffffffffffffffffffffffdddddddddddddddddddddbbdddddddddffffffffddbbbbbbbbbdbbbbfbdbbbfffbfdddddddddd1\ndddddddddddddddd111ddddddddddddddddddddddddddddffffffffffffffddddddddddddddddddddddddddddddddddddddbbbbbbfffffffffdddddddfdddddddddddbbbbbfbbbbbfffdfddddddddd11\n1dd1dddddddddddddddddddddddddddddddddddddddffff1fffffffffffffffffdddddffffdddddddddddddddddddffffdfffffffbbbbbbbbbbbbbbbbfddbbbbbbbbbbbbbffffffffffffbbbbbbbbbbb\n11dddddddddddddddddddddddddddddddddddffffffdd1ddddddfffdffdddddddfffffffffffffffffffffffffffffffffdbbddddddddddddddbbbbbbfbbbbbbbbbbbbbbbfbbbbbbfffbfbbbdddd1111\nddddddd11dddddddddddddddddddddfffffffdddddddddddddddfffffddddddddddddddddfddddddddddddddddddddddfddddddddddddbbbbbbbbbbffffffbbbbbbbbbbbfffffffffffbfbbbbbb11111\ndddddddddddddddddddddddddfffffddddddddddddddddddddddfffdfddddddddddddddddfddddddddddddddddddddbdfddbbdddddbbbbbbbbbbbbfbbbbbbf11111111bfbfbbbbbbfffffbbbbbb11111\ndddddddddddd11111dddfffffdddddddddddddddddddddddfffffffdfddddddddddddddddfdddddddddddddbbddddbddfbbbbbddbbdbbbbbbbbbbbffffffff111111111f1f111111fff1fbbbbbb11111\nffffffffffffffffffffdddddddddddddddddddddddfffffddddfffdfddddddddddddddffffffdddddddddbbbbbbbdffffffddbbbbbbbbbbbbbbbfbb111111f1111111fffffffffffffff11111111111\nddddddddddddddddddddddddddddddddddfffffffffdddddddddfffdfddddddddddddbfbbbbbdfdddddddbbbdbbddfdbbbbbfbbbbbbbbbbbbb111f11111111f1111111f411111111fffef11111111111\ndddddddddddddddddddddddddddddddddfffffdddddd1dddddddfffdfbbdddddddddddffffffffbbbbbbbbbbbbbbbffffffffbbbbbbbbbb11111f1111111111f1111111feeeeeeeefffef11111111111\nddddddddddddddddddddddddddddfffffbdbdfddddddddddddddfffdfbdddddddddddfddddddbbfbbbbbbbbbbbbbfbbbbbbbbfbbbbbbb111111fffffffffffffff11111666666666fff6f11111111111\nddddddddddddddddddddddffffffdbdbbddbdfddddddddbbbbbbfffdfddddddddddddfddddddddfddddddddddddbfdd1111bbfbb1111111111f1f1111111111f11f1111111111111fff1f11111111111\nddddddddddffffdbffffffddddddbdbddddddfddddddddddddddfffdfddddddbbbbbfbbbbbbbbbbfbbbbbbbbb11f1111111111fbb111111111f1f1111111111f11f1111111111111fff1f11111111111\nffffffffffffffffbddddddddddbdddddbbffffffdddddddbdddfffdfbbbbbbbbbbfffffffffffffff11bb1111fffffffffffffff11111111fffffffffffffff1f11111111111111fff1f11111111111\nddddddddddddbfbdbddbdddddddddddbbbfddddddfddddbbddddfffdfddddddbbbfbfbb111111bbfbbfb11111f1f1111111bbbfbbfbbbb111f4111111111114ff111111111111111fff1f11111111111\ndddddddddddbbfbbbbdddddddddddbbbbdffffffffdddbbbbdddfffbfbbbbbbbbdfbfbd11111bbbfb1f111111f1f1111111111f11f11111111feeeeeeeeeeeef1111111111111111fff1f11111111111\ndddddddddbbddfbbbbbddddddddbbbbbbfddddddddfddddddbbbfffbfdddddbbbfffffffffffffff1f111111fffffffffffffff1f111111111666666666666661111111111111111fff1f11111111199\ndddddddddddffffffdbddddddbbbbbbbdfddddbbbbfbbbbbbbbbfff1f1bbbbbb1f4111111111114ff1111111f4111111111114ff1111111111111111111111111111111111111111fff1f11111999911\nddddddddddfdddbbbfbdddbbbbbdbbbbfdbbbbbbbbbfbbbbb111fffbfbbb111111feeeeeeeeeeeef111111111feeeeeeeeeeeef11111111111111111111111111111111111111111fff9919999111111\nddddbbbbbbffffffffddbbbbbbdbbbbfffffffffffffff111111fff1f111111111666666666666661111111116666666666666611111111111111111111111111111111111111111f911199111111111\ndddbbbbbbfbbbbdddbfbbbbbbbbbbbfbfbbbbbbbbbbfbbf11111fff1f1111111111111111111111111111111111111111111111111111111111111111111111111111111111119999111119111111111\nddbbbbbbbfbdddbbbbfbbbbbdbbbbbfbfbbb11bbbbbf11f11111fff1f1111111111111111111111111111111111111111111111111111111111111111111111111111111999999191111111111111111\ndbbbbbbbfddbbbbbbbbfbbbddbbbbfffffffffffffff1f111111fff1f1111111111111111111111111111111111111111111111111111111111111199999999999999999999999911111111111111111\ndbbbbddfffffffffffffffddd1111f4111111111114ff1111111fff1f1111111111111111111111111111111111111111111111111111111111199999999199999991111111111111111111111111111\nbbddddfdfddbbbbddddfddf1111111feeeeeeeeeeeef11111111fff1f1111111111111111111111111111111111111111111111119999999999999999999999999911111111111111111111111111111\nddddbbfbfbbddddddd1f11f11111116666666666666611111111fff1f1111111111111111111111111111111111999999999999999111111111111119999999111111111111111111111111111111111\nbbbbbfffffffffffffff1f111111111111111111111111111111fff1f1111111111111111111111111111111119199999999999111111111111119999999999999911111111111111111111111111111\nbbbddf4111111111114ff1111111111111111111111111111111fff1f1111111111111111111111111111111991199999999999911111111111111111111111999999111111111111111111111111111\nbbddddfeeeeeeeeeeeef11111111111111111111111111111111fff1f1111111111111111999911111199999111199999999999111111111111111111111111111111111111111111111111111111111\n1111116666666666666611111111111111111111111111111111fff1f1111111111999999999999999911111111111111111111111111111111111111111111111111111111111111111111111111191\n1111111111111111111111111111111111111111111111111111fff1f1111111999911999999999911111111111111111111111111111111111111111111111111111111111111111111111111119919\n1111111111111111111111111111111111111111111111111111fff999999999111111199999991111111111111111111111111111111111111111111111111111111111111111111111111111111991\n1111111111111111111111111111111111111111111111111111ff1111111111111111999999111111111111111111111111111111111111111111111111111111111111111111111111111111119991\n1111111111111111111111111111111111111111111199999991991111111111111111999999111111111111111111111111111111111111111111111111111111111111111111111111111111199911\n1111111111111111111111111111111111111111199999111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111119999911\n1111111111111111111999999999999999999999999999111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111999999111\n1111111111111199999111111111119999999999999991111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111999999991111\n1199999999999999991111111111111119999999999111111111111111111111111111111111111111111111111111111111111111111111111111111111111119999999999999999999999999911111\n9999999999999991111111111111111111999999999111111111111111111111111111111111111111111111111111111111111111111111111111111111111199999111119999999999999999111111\n1111119999999999911111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111119999999991111111111\n1111111999999991111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111119999999111111111\n1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111199999999111111111111111111111111111111111111111199999991111111\n1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111199999999999911111111111111111111111111111111111111111999999911111\n1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111119999991111999999991111111111111111111111111111111111111199999991111\n1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111919991111111111199999999111111111111111111111111111111111111199911111\n1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111199111111111111111111111111111111111111111111111111111991111111111111\n1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111999999111111111111\n1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111199111111111111111\n1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111199911111111111111111\n1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111119911111111111111111111\n1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111999999999991111111111111\n`;\n            case \&quot;image22\&quot;:\n            case \&quot;skyBackground\&quot;:return img`\n8888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888\n8888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888\n8888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888\n8888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888\n8888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888\n8888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888\n8888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888\n8888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888\n8888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888388888888888888888888888888888888888888888888888888888888888\n8888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888\n8888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888883888888888888888888888888888888888888888888888888\n8888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888\n8888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888388888888888888888888888888888888888888888888888888888888888\n8888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888\n8888888888888888888888888888888888888888888888888888888888888888888888888888888888888838888888888838888888888888888888888888888888888888888888888888888888888888\n8888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888388888888888888888888888888888888888888888888888888888888888\n8888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888388888388888888888888888888888888888888888888888888888838888\n8888888888888888883888888888888888888888888888888888888888888888888888888888888888888888888888888383388888888888888838888888888888888888888883888888888888888888\n8888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888883388888888888888888888888888888883888888888888888888888888888\n8888888888888888888888888888888888888888888888888888888888888888888888888888888888888838888888888883388888888883888888888888888888888888888888888888888888888888\n8888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888883883388888888888888888888888888888888888888888888888888888888888\n8888888888888888888888888888888888888888888888888888888888888888888388888888888888888888888888888883388888388888888888888888888888888888888888888888888888888888\n8888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888883388888888888888888888888888888838888888888888883888888888888\n8888888888888888888888888888888888888888888888888888888888888888888888888888888838888838888888838833388888888888888888888888838888888888888888888888888888838888\n8888888888888888883888888888888888888888888888888888888888888888888888888888888888888888888888888833388888388888388888888888888888888888888888888888888888888888\n8888888888888888888888888888888888888888888888888888888888888888888888888888888888888838888888888833388888888888388838888888388888388888888888888838888888888888\n8888888888888888888888888388888888888888888888888888888888888888888388888838888888888838888888888336388888388883888888888888888888888888888883888838888888888888\n8888888888888888883888888888888888888888888888888883888888888888888888888888888838888868888888888363688888388838888888888883888883888888888888888838888888888888\n8888888888888888883888888888888888888888888888888888888888888888888388888838888888888838888888888836388888388838888888888883888838888888888888888838888888838888\n8888888888888888883888888888883888888883888888888888888888888888888388888838888888888868888888888363688888688688888888888838888868888888888888888838888888888888\n8888888888888888883888888888883888888888888888888888888888388888883888888838888838888838888888888636388888688688888838888868888836888888888883888838888888838888\n8888888888888888838888888888883888888883888888888883888883888888888388888838888388888868888888888363688886888688888888888838888863888888888888888838888888888888\n8888888888888888838888888888838888888888888888888888888888388888883888888868888838888868888888888666388886888688888888888868888836888888888883888838888888388888\n8888888888888888388888888388838888888883888888388883888883888888888388888838888388888868888888886666688886888688888838888838888866888888888838888868888888388888\n8888888888888888388888888888838888888883888888888883888888388888883388888838888838888868888888886666688886888688888838888868888886888888888838888838888888388888\n8888888888888883888888888888868888888888888888888883888883888888883388888868888388888866888888886666688886888688888388888868888886888888888338888868888888388888\n8888888888888883888888888388838888888883888888888838888833888888886388888838888868888866888888886666688886888688888688888868888886888888888368888868888888388883\n8888888888888883888888888888838888888883888888388838888833888888883388888868888388888866888888886666688886888688888388888868888886888888888388888836888888388888\n8888888888888883888888888388868888888883888888888838888833888888883688888868888638888686888888886666688866888688888688888868888886888888883388888866888888688883\n8888888888888863888888888388838888888883888888388838888833888888883388888868888888888866888888886666688866888688888388888868888888688888883688888866888888688886\n8888888888888836888888888388868888888838888888688868888833888888886388888868888688888686688888886666688666888688888688888868888888688888883888888886888888688883\n8888888888888863888888886388838888888383888888388838888833888888883688888868888868888686888888866666688668888688888688888868888888688888883888888886888888688886\n8888888888888836888888883388868888888838888888388863888838888888886388888868888688888688888888866666688668888688888688888668888888688888833888888886888888688883\n8888888888888863888888886388868888888833888888388836888838888888883688888868888868888688688888866666688668886688888668888868888888688888836888888886688888688886\n8888888888888836888888883688868888888636888888688863888338888888886688888868888688888686888888866666688666886688888668888668888888688888866688888886688888688886\n8888888888888866888888886388868888888363888888388836888838888888883688888668888868888686888888866666688666886688888668888868888888688888666688888886688888688886\n8888888888888866888888886688868888888638888888688866888388888888886688888668888668888686668888866666688666886688888668888668888888688888666688888886688888688886\n8888888888888866888888883688868888888668888888688866888338888888886688888668888668888886668888866666688666886668888668888668888888688888666688888886688888688886\n8888888888888866888888886688868888888638888888688866888388888888886688888668888668888686668888866666688666886668888668888666888888688888866688888886688886688886\n8888888888888866888888866688868888888668888888688866888638888888866888888668888668886686668888866666688666886668886668888666888888668888866668888886688886688886\n8888888888888866888888866388868868888668888888688866888363888888866888888668888668886686668888866666688666886668886668888666888888668888866666888886688886688886\n8888888888888866688888866688868868886668888888688866888636888888666888888668888668886686668888666666688666886668886668888666688888666888886666688886688886688886\n8888888888888866688888666688868868886668888888688866888363888888666688888668888668886686668888666666688666886668886666868666688888666688886666688886688886688866\n8888888888888866688888666688866868886668888888688886888636888888666688888666886668886686668888666666668666886666866668686666668888666666666666668886688886888866\n8888888888888666688888666688866868886668888888688886888666888888666688888666886668886686668888666666666666866668686666666666666666666666666666668886688886888866\n8888888888888666688888666688866668886668888888688886888666888888666688888666886668886686666888666966666666686666866666666666666666666666666666668866688866888866\n8888888888888666688888666888866668886668888888688866888666888886666688888666886668886686666888666666666666866666666666666666666666666666666666668866688866888666\n8888888888888666688888666888866668886668888888668866888666888888666688888666886668886686666888666969696666666666666666666666666666666666666666668666688866886666\n8888888888888666688886666888866668886668888886868866888666888888666668888666886668886688666888669696969696666666666666969696969696969666666666666666688666666666\n8888888888888666688886666888866668886666888886868866888666888886666666688666886668886688666888696999999999999999999999696969696969696666666666666666686666666666\n8888888888888666688886666688866668888666888886688866888666888886666666688666686668886688666888969999999999999999999999999696888886969696969696966666666666666666\n8888888888886666688886666688866668888666888866688866888666888886666666668666688668866688666889699999999999999999999696968888888888888888888888896666666666666666\n8888888888886666668886666688866668888666888866888866888666888886666666666666688668886688666868999999999999999969698888888888888888888888888888888969666666669696\n8888888888866666666886666688866668888666888868688866888666888886969696969696688668886688666886999999896969688888888888888888888888888888888888888888969696968888\n8888888888886966666886666688866668888666888868888866888666888889696969696969668668886688666868999998888888888888888888888888888888888888888888888888888888888888\n8888888888888869666886666668866668888666888868688866688666888886999999999996966666886688666886999989888888888888888888888888888888888888888888888888888888888888\n8888888888888888696666666668866668888666888866688866688666888889999999999999996666888688666868999998888888888888888888888888888888888888888888888888888888888888\n8888888888888888886966666666666668888666668866686666688666888869999666666999999966888668666886999989888888888888888888888888888888888888888888888888888888888888\n8888888888888888888869666666866668888666666666666666666666688699996888886666999999666668666888699998888888888888888888888888888888888888888888888888888888888888\n8888888888888888888888696666666668888666666666666666666666688999996888888888666999999999999686869699888888888888888888888888888888888888bbbbbbccccbbbbcccccc8888\n88888888888888888888888869666666666866666666666666666666666886999968888888888866699999999999696999999696969666668888888888888888888c888bcccccbbbbb8888bbbbbbcccc\n88888888888888888888888888969666666666666666666666666666666669699966888888888888666669999999999999999999999999998888888888888888888c8cbbccccbcbbbbbbbcbbbbbbbbbb\n8888888888888888888888888888896969696969696969996666666666666699999688888888888888666669999999999999999999999966888888888888888888888888bccbbbbbccbbbbbbbccccbbb\n888888888888888888888888888888889696969696969999999999666666696999968888888888888888888666999999999999996666668888888888888888888888cc88bcbbbbccccccccbbbccccbbb\n88888888888888888888888888888888888888696969699999999999999999999996888888888888888888888866666666666666888888888888888888888888888bbbbbbccbbbbccccbbbbbbccc8bbb\n888888888888888888888888888888888888888888888696969699999999999996688888888888888888888888888888888888888888888888888ccccc8888888cb8ccccccccbbbb888bbb88888888cc\n888888888888888888888888888888888888888888888888888866666666666668888888888888888888888888888888888888888888888888888888ccccccccccccccccccccbbbbcccbbb88888888cc\n8888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888cccccccccbbbbbbbbbbbcccccccccc888888\n8888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888cccbbbbbbbbbbbccccccccccccc888888\n88888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888bbbbbbbbbbbbbccccccccccccc888888\n88888888888888888888bbbb8888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888bbbbbbbb8888888888888888888888888\n88888888888888888888bbbbbbbbbbbbbbbb8888888888888888888888888888888888888888888888888888888888888888c8ccccccccbbbbbbbbcc888888bbbbbb8888888888888888888888888888\n88888886888888888888bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb8888888888888888888888888888888888888888888888888888888ccccbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb888888888888888888\n8888888688868888868888bbbbbbbbbbbbbbbbbbbbbbbbbbcccc888888888888888888888888888888888888888888888888c888888888bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbcc88888888888\n8888868688668888888888bbbbbbbbbcccc6ccccccccccccccc6ccccc88888888888888cccc88888888888888888888888888888888888888bbbbbbbbbbbbbbbbbbbbbbbbbccccccbb88888888888888\n888866868868888886888b8888b6bbbcccc6ccccc6ccccc888888888888888888888cccc8888888888888888888888888888888888888888888888bbbbbbbbbbbbbbbbbccccccc888888f88888888888\n88866bb6886888868888888868868bbcccc6ccc886888888888888888cccccccc8cc88888888888888888888888888888888888888888888b8bbbbbbbbbbbbbbbbbbbbbccc888888888fff8888888888\n88866b6bbb686bb6b6bbbbbbbbb6bbbbb6b6b88886888888888688888888cccccc888888888888888888888888ccbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb8888888888ffffff888888888\n88866b6bbb6b6bb6b6bbbbbbbbb6bbbbc6c688888688888886cccccccc88888888ccccc88888888888888cccbbbbcccbccccbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbccccc888888888ffffffff8888888f\n88666b6bbb6b6bb6bbbbbbbbbcccccccc6c6888886ccc6ccccc88888888888888888888ccc888888888cc88888888cccccccccccbbbbbbbbbbbbccccccccccccccccccc88888ccbbcccfff88888888f8\n88666b6bbb6b6bb6b6ccc6cc6cccccccc6c68888868888688688888888888888888888888c8888888888888888888888888888bbbbbbbbbbbbbbbbbcccccccccccccccccccccbb8888fffff8888888f8\n8866666ccc6c6cc6c6ccc6cc6cc6ccccc6cc688686888688888888888888888888cccccccc8888888888888888888888888bbbbbbbbbbbbbbbbbbbbbcccccccccbbbbbbbbbbb88888fffffff8888fff8\n8866b66bbb9c6cc6ccccc6cc6cc6cc6cc6666c8686868688868688888888cccccc888888888888888888888888888888888bbbbbbbbbbbbbbbbbbbbbbbbccccccb8888888888888888fffff8888cffff\n88666666999c6cc6c6cccccc6cc6cc6cc666666666868868888688888888c888888888888888888888bbbbbbbbbbbbbbbbbbbbbfbbbbbbbbbbbbbbbbbbbccccccc888888888888888888f888cccfffff\nbb669666999999c6c6cccccc6cc6cc6cc6666666666666666886888888888ccccccccccccc88888888888888bbbbbbbbbccccccfcccccccccccbccccbbbccbbbbc888888888888888888f888888fffff\n6969699966699999966cc6cc6cc6cc6ccc6666666666666666668888888888888888888888cccccc888888888888ccccccccccfffccccccccccccccccbbbbbbbbbbcc8888888888888ffffffffff8fff\n69999cccccccccc9999966cc6cc6cc6ccccccccc6666666666666888888888bbbbbbbbbbbbbbbbbb888888888888cccccccccffffffccccccccccccccccbccccbcbcccccc88fffffffffffffff88ffff\n669999999cccccccccc9999666c6cc6ccccccccccccccc6666666fcccccccccccccccccccccccccccccccc888888ccccccccccfffccccccccccccccccccccccccbbbcccfffffffffffffffffffffffff\n66ccccccc99999ccccccccc99999999999cccccccccc66966666f66ccccccccccccccccccccccccccccccccccccccccccccccffffffccccccccccccccccbcccccccccfffffffffffffffffffffffffff\nccccccccccccc9fccccccccccc9999999666666666666969666fffffcccccccccccccccccccccccccccccccccccccccccccccccfcccccccccccccccccccccccccccffffffffffccfffffffffffffffff\nccccccccccccccfccccccccccccc999999999999999999999666ff6ccccccccccccccccccccccccccccccccccccccccccccccccfccccccccccccccccccccccccffffffffffffffffffffffffffffffff\nccccccccccccccfccccccccccccccccccc6999999999999cccffffffccccccccccccccccccccccccccccccccccccccccccccccfcccccccccccccccccccffffffffffffffffffffffffffffffffffffff\nccccccccccccffffcccccccccccccccccccccccccccccccccccfffccccccccccccccccccccccccccccccccccccccffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff\nfffffffcccccccfcccccccccccccccccccccccccccccccccccffffffcccccccccccccccccccccccccfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff\nffffffffffffffffcccccccccccccccccccccccccccccccccccfffccccccccccccccccccccccffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff\nfffffffffffffffffffffffcccccccccccccccccccccccccccccfcccccccccccccccccccffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff\nffffffffffffffffffffffffffffffccccccccccccccccccccccfcccccccccccccccfffffffffffffffffffffffffffffffffffffffffffffffffffffffff88888888888ffffffffffffffffffffffff\nfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff88888ffffffffffffffffffffffffffffff\nffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff\nfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff888888888888fffffffffffffffffffffffffffffffffff\nffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff88888888ffffffffffffffffffffffffffffffffffffffffffff\nffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff88888888ffffff888888888fffffffffffffffffffffffffffffffffff\nffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff8888888888888888888888888888888ffffffffffffff88888888fffffffffffff\nfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff88888888888888f888888888888888888888888888888888888888888888888888888888888888fffffffff\n6666666ffffffffffffffffffffffffffffffffffffffffffffffff88888888fffffff8888888888888888888888888888888888888888888888888888888888888888888888888888888888888fffff\n666666666fffffffffffffffffffffffff66666666666668888888888888888888888888888888888888888888888888888666666666666666666888888888888888888888888888888888888888888f\n66666666666ffffffffffffffffffffff6666666666668866668888888888888888888888888888888888888888888888866666666666666666666688888888888888888888888888888888888888888\n6666666666666666666666ffffffff6666668888888886666686668888888888888888888888888888888888888888888866688888888888888666668688888888888886688888888866666668888888\n6666666666666666666688666666666668888888888888888868868888888888888888888888888888888888888888888668888888888888888886666666666666666666666666666666666666666668\n668888888888888888888888888888888888888888888888866666888888888888888888888888888888888888888888888888888888888888888666666666666666666666666666666666666666666f\n`;\n            case \&quot;image23\&quot;:\n            case \&quot;girlFront\&quot;:return img`\n. . . . . . . f f . . . . . . . \n. . . . . . f 1 1 f . . . . . . \n. . . . f f 6 6 6 6 f f . . . . \n. . . f 6 6 6 6 6 6 6 6 f . . . \n. . f 6 6 6 6 6 6 6 6 6 6 f . . \n. . f 6 d 1 1 1 1 1 1 d 6 f . . \n. . f d 1 f f f f f f 1 d f . . \n. . f 1 f f f e e f f f 1 f . . \n. . . f f d f e e f d f f . . . \n. . . f f 2 e e e e 2 f f . . . \n. . f f f f f f f f f f f f . . \n. . f 6 b b b b b b b b 6 f . . \n. . . f f b b b b b b f f . . . \n. f . f f 8 8 8 8 8 8 f f . f . \n. . f f f 8 8 f f 8 8 f f f . . \n. . . . . f f . . f f . . . . . \n`;\n            case \&quot;image27\&quot;:\n            case \&quot;boyFront\&quot;:return img`\n. . . . . . . f f . . . . . . . \n. . . . . . f 1 1 f . . . . . . \n. . . . f f 2 2 2 2 f f . . . . \n. . . f 2 2 2 2 2 2 2 2 f . . . \n. . f 2 2 2 2 2 2 2 2 2 2 f . . \n. . f 2 9 1 1 1 1 1 1 9 2 f . . \n. . f 9 1 f f f f f f 1 9 f . . \n. . f 1 f f f d d f f f 1 f . . \n. . . f f 1 e d d e 1 f f . . . \n. . . . f 3 d d d d 3 f . . . . \n. . f f . f f f f f f . f f . . \n. . f 2 8 8 8 1 8 8 8 8 2 f . . \n. . . f f 8 8 8 8 8 8 f f . . . \n. . . . f 6 6 6 6 6 6 f . . . . \n. . . . f 6 6 f f 6 6 f . . . . \n. . . . . f f . . f f . . . . . \n`;\n            case \&quot;image31\&quot;:\n            case \&quot;elfFront\&quot;:return img`\n. . . . . . f f f f f f . . . . \n. . . . . f 7 7 7 7 7 7 f . . . \n. . . . f 7 7 7 7 7 6 6 7 f . . \n. . . f 7 6 6 6 7 7 7 7 6 7 f . \n. . . f 6 1 1 1 1 1 1 6 f f f . \n. . . f 1 1 1 1 1 1 1 1 f 6 1 f \n. . . f 1 f f f f f f 1 f 1 1 f \n. . f f f f f d d f f f f f f . \n. f d f f 1 9 d d 9 1 f f d f . \n. . f d f 3 d d d d 3 f d f . . \n. . f f f f f f f f f f f f . . \n. . f 2 6 1 1 1 1 1 1 7 2 f . . \n. . . f f 7 7 1 7 7 7 f f . . . \n. . . . f 7 7 1 7 7 7 f . . . . \n. . . . f 6 6 f f 6 6 f . . . . \n. . . . f e e . . e e f . . . . \n`;\n            case \&quot;image35\&quot;:\n            case \&quot;santaFront\&quot;:return img`\n. . . . . . f f f f f f . . . . \n. . . . . f 2 2 2 2 2 2 f . . . \n. . . . f 2 2 2 2 2 e e 2 f . . \n. . . f 2 9 9 9 2 2 2 2 e 2 f . \n. . . f 9 1 1 1 1 1 1 9 f f f . \n. . . f 1 1 1 1 1 1 1 1 f 9 1 f \n. . . f 1 f f f f f f 1 f 1 1 f \n. . . f f f f d d f f f f f . . \n. . f 1 f 1 f 3 3 f 1 f 1 f . . \n. . f 1 f 3 d d d d 3 f 1 f . . \n. . f f 1 1 f f f f f 1 f f . . \n. f 1 2 f 1 1 1 1 1 1 f 2 1 f . \n. . f f f f 1 1 1 1 f f f f . . \n. . . . f 2 f f f f 2 f . . . . \n. . . . f 2 2 2 2 2 2 f . . . . \n. . . . f e e . . e e f . . . . \n`;\n            case \&quot;image39\&quot;:\n            case \&quot;penguinFront\&quot;:return img`\n. . . . . . . . . . . . . . . . \n. . . . . . f f f f . . . . . . \n. . . . . f f f f f f . . . . . \n. . . . f f d 1 1 d f f . . . . \n. . . . f 1 f 1 1 f 1 f . . . . \n. . . . f 1 c 1 1 c 1 f . . . . \n. . . . f 3 1 4 4 1 3 f . . . . \n. . . f f f 1 5 5 1 f f f . . . \n. f f f d 1 1 1 1 1 1 d f f f . \nf f f d 1 1 1 1 1 1 1 1 d f f f \n. f f f f 1 1 1 1 1 1 f f f f . \n. . . f f 1 1 1 1 1 1 f f . . . \n. . . f f d 1 1 1 1 d f f . . . \n. . . f f f d 1 1 d f f f . . . \n. . . . f f f f f f f f . . . . \n. . . 5 5 4 f f f f 4 5 5 . . . \n`;\n            case \&quot;image43\&quot;:\n            case \&quot;bearFront\&quot;:return img`\n. . . . f f . . . . f f . . . . \n. . . f 1 1 f . . f 1 1 f . . . \n. . . f 1 9 1 f f 1 9 1 f . . . \n. . . . f 1 f 1 1 f 1 f . . . . \n. . . . f 1 f 1 1 f 1 f . . . . \n. . . f 3 3 1 f 1 1 3 3 f . . . \n. . . f 9 1 1 1 1 1 1 9 f . . . \n. . . . f 2 1 1 1 1 2 f . . . . \n. . . f f 9 2 2 2 2 9 f f . . . \n. . f 1 1 1 1 1 1 1 2 1 1 f . . \n. f 1 1 9 1 1 1 1 1 2 9 1 1 f . \n. f 9 f 1 1 1 1 1 1 1 1 f 9 f . \n. . f f 1 1 1 1 1 1 1 1 f f . . \n. . . . f 1 1 1 1 1 1 f . . . . \n. . . . f 1 9 f f 9 1 f . . . . \n. . . f 9 1 f . . f 1 9 f . . . \n`;\n            case \&quot;image1\&quot;:\n            case \&quot;gingerbread\&quot;:return img`\n. . . . . . e e e . . . . . . . \n. . . . . e d d b e . . . . . . \n. . . . e d d d d b e . . . . . \n. . . . e d 1 d 1 d e . . . . . \n. . . . e 3 d d d 3 e . . . . . \n. . . . e d d d d d e . . . . . \n. . . . . e d d d e . . . . . . \n. . e e e b d d d 4 e e e . . . \n. e d 7 d d d 2 d d d 7 b e . . \n. e d 7 d d d d d d d 7 4 e . . \n. . e e d d d 2 d d b e e . . . \n. . . . e d d d d d e . . . . . \n. . . . e d d 2 d d e . . . . . \n. . . e d d d d d d b e . . . . \n. . e d d d d e b d d b e . . . \n. . e d d d e . e d d d e . . . \n. . e d b e . . . e d b e . . . \n. . . e e . . . . . e e . . . . \n`;\n            case \&quot;image9\&quot;:\n            case \&quot;candycane\&quot;:return img`\n. . . . . . . . . . . . . . . . \n. . . . . . . . . . . . . . . . \n. . . . . . . . . f f f f . . . \n. . . . . . . . f 3 2 b 2 f . . \n. . . . . . . f 2 1 2 1 2 3 f . \n. . . . . . f 3 2 1 c 2 1 2 f . \n. . . . . f 2 1 3 c . f 2 3 f . \n. . . . f 3 2 1 f . . f 1 2 f . \n. . . f 2 1 3 c . . f 2 2 3 f . \n. . f b 2 1 f . . . f 1 1 f . . \n. f 2 1 3 c . . . . . f f . . . \n. f 3 1 f . . . . . . . . . . . \n. . f c . . . . . . . . . . . . \n. . . . . . . . . . . . . . . . \n. . . . . . . . . . . . . . . . \n. . . . . . . . . . . . . . . . \n`;\n            case \&quot;image10\&quot;:\n            case \&quot;stocking\&quot;:return img`\n. . . . . . . . . . . . . . . . \n. . . . . . . . . . f . . . . . \n. . . . . . . . . f 1 f . . . . \n. . . . . . . . f 1 1 1 f . . . \n. . . . . . . . f 1 1 1 1 f . . \n. . f f f . . f 2 c 1 1 1 b f . \n. f 2 2 2 f f 2 2 6 c b b d d f \n. f 2 2 3 2 2 2 6 e 6 c d d f . \n. f e 2 2 2 2 2 2 6 e e f f . . \n. f e 2 2 2 2 2 2 2 e c f . . . \n. . f e 2 2 2 2 2 e c 1 d f . . \n. . . f e 2 2 2 e f f d b f . . \n. . . . f e e e f . . f f . . . \n. . . . . f f f . . . . . . . . \n. . . . . . . . . . . . . . . . \n. . . . . . . . . . . . . . . . \n`;\n            case \&quot;image11\&quot;:\n            case \&quot;holly\&quot;:return img`\n. . . . . . . . . . . . . . . . \n. . . . . . . . . . . . f f f . \n. . . . . f f . . f f f 7 5 f . \n. . . . f e 2 f f 7 7 7 7 f . . \n. . . f f 2 d f 7 7 6 6 7 f . . \n. . f e 2 e f f 6 6 7 7 7 f . . \n. . f 2 d f 1 2 f 6 7 7 f . . . \n. . . e f e 2 e f f f f . . . . \n. . . f 6 6 f f 6 6 7 7 f . . . \n. . f 7 7 6 6 b 7 6 7 7 7 f . . \n. . f 7 6 7 7 f 7 7 6 6 7 f . . \n. . f 7 7 7 f . f 7 7 7 7 f . . \n. f 5 7 f f . . . f f f 7 5 f . \n. . f f . . . . . . . . f f f . \n. . . . . . . . . . . . . . . . \n. . . . . . . . . . . . . . . . \n`;\n            case \&quot;image12\&quot;:\n            case \&quot;gloveRed\&quot;:return img`\n. . . . . . . . . . . . . . . . \n. . . . . . . . f f f f . . . . \n. . . . . . . f 2 2 2 e f . . . \n. . . . . . f 2 2 2 2 2 e f . . \n. . . . . . f 2 2 1 2 e 2 f . . \n. . . f f . f 2 1 2 1 2 e f . . \n. . f 2 e f e 2 2 1 2 e 2 f . . \n. . f 2 2 2 e 2 2 2 2 2 e f . . \n. . . f 2 2 2 2 2 2 2 2 e f . . \n. . . . f 2 1 2 1 2 1 e d f . . \n. . . . . f 2 1 2 1 e d e f . . \n. . . . . . f f f f f f f . . . \n. . . . . f 1 d 1 d 1 d 1 f . . \n. . . . . f 1 d 1 d 1 d 1 f . . \n. . . . . . f f f f f f f . . . \n. . . . . . . . . . . . . . . . \n`;\n            case \&quot;image15\&quot;:\n            case \&quot;ornamentRed\&quot;:return img`\n. . . . . . . . c c c c c . . . \n. . . . . . . c . . . . . c . . \n. . . . . . c . c c c c c . . . \n. . . . . c c c c . . . . . . . \n. . . . . c e d e c . . . . . . \n. . . . . c 2 2 2 c . . . . . . \n. . . . c 3 2 2 2 2 c . . . . . \n. . . c 1 3 2 2 2 2 e c . . . . \n. . c 2 3 2 2 2 2 2 2 e c . . . \n. . c 2 2 2 2 2 2 2 2 e c . . . \n. . c 2 2 2 2 2 2 2 2 e c . . . \n. . c e 2 2 2 2 2 2 e e c . . . \n. . c e 2 2 2 2 2 e e e c . . . \n. . . c e e e e e e e c . . . . \n. . . . c e e e e e c . . . . . \n. . . . . c c c c c . . . . . . \n`;\n            case \&quot;image16\&quot;:\n            case \&quot;ornamentBlue\&quot;:return img`\n. . . . . . . . c c c c c . . . \n. . . . . . . c . . . . . c . . \n. . . . . . c . c c c c c . . . \n. . . . . c c c c . . . . . . . \n. . . . . c 5 1 5 c . . . . . . \n. . . . . c c c c c . . . . . . \n. . . . c 6 6 6 6 8 c . . . . . \n. . . c 1 6 6 6 6 6 9 c . . . . \n. . c 6 6 1 1 1 1 1 6 8 c . . . \n. . c 1 6 6 6 6 6 6 6 9 c . . . \n. . c 6 6 1 6 1 6 1 6 8 c . . . \n. . c 9 6 6 6 6 6 6 6 9 c . . . \n. . c 8 9 1 1 1 1 1 1 8 c . . . \n. . . c 8 6 6 6 6 6 8 c . . . . \n. . . . c 8 8 8 8 8 c . . . . . \n. . . . . c c c c c . . . . . . \n`;\n            case \&quot;image5\&quot;:\n            case \&quot;snowball\&quot;:return img`\n. . . . . . . . . . . . . . . . \n. . . . . 8 8 8 8 8 . . . . . . \n. . . 8 8 9 9 9 1 1 8 8 . . . . \n. . 8 9 9 1 1 1 1 1 1 1 8 . . . \n. . 8 9 1 9 1 1 1 1 1 1 8 . . . \n. 8 d 9 9 1 1 1 1 1 1 1 1 8 . . \n. 8 9 9 1 9 1 1 1 1 1 1 1 8 . . \n. 8 d 9 9 1 1 1 1 1 1 1 1 8 . . \n. 8 9 9 1 9 1 1 1 1 1 1 1 8 . . \n. 8 d 9 9 1 9 1 9 1 9 1 9 8 . . \n. . 8 d 9 9 1 9 1 9 1 9 8 . . . \n. . 8 9 d 9 9 9 9 9 9 9 8 . . . \n. . . 8 8 d 9 d 9 d 8 8 . . . . \n. . . . . 8 8 8 8 8 . . . . . . \n. . . . . . . . . . . . . . . . \n. . . . . . . . . . . . . . . . \n`;\n            case \&quot;image2\&quot;:\n            case \&quot;redGift\&quot;:return img`\n. . . . . . . . . . . . . . . . \n. . . f f f . . . f f f . . . . \n. . f 7 7 7 f f f 7 7 7 f . . . \n. . f 7 7 7 6 7 6 7 7 7 f . . . \n. . f f f f f f f f f f f f f . \n. f f 6 6 e e 2 2 2 7 7 2 2 2 f \nf e e 6 6 e e 2 2 2 7 7 2 2 2 f \nf e e 6 6 e e 2 2 2 7 7 2 2 2 f \nf e e 6 6 e e 2 2 2 7 7 2 2 2 f \nf 6 6 6 6 6 6 7 7 7 7 7 7 7 7 f \nf 6 6 6 6 6 6 7 7 7 7 7 7 7 7 f \nf e e 6 6 e e 2 2 2 7 7 2 2 2 f \nf e e 6 6 e e 2 2 2 7 7 2 2 2 f \nf e e 6 6 e e 2 2 2 7 7 2 2 2 f \nf e e 6 6 e e 2 2 2 7 7 2 2 2 f \n. f f f f f f f f f f f f f f . \n`;\n            case \&quot;image3\&quot;:\n            case \&quot;greenGift\&quot;:return img`\n. . . . . . . . . . . . . . . . \n. . . f f f . . . f f f . . . . \n. . f 5 5 5 f f f 5 5 5 f . . . \n. . f 5 5 5 4 5 4 5 5 5 f . . . \n. . f f f f f f f f f f f f f . \n. f f 4 4 6 6 7 7 7 5 5 7 7 7 f \nf 8 6 4 4 6 6 7 7 7 5 5 7 7 7 f \nf 6 6 4 4 6 6 7 7 7 5 5 7 7 7 f \nf 6 6 4 4 6 6 7 7 7 5 5 7 7 7 f \nf 4 4 4 4 4 4 5 5 5 5 5 5 5 5 f \nf 4 4 4 4 4 4 5 5 5 5 5 5 5 5 f \nf 6 6 4 4 6 6 7 7 7 5 5 7 7 7 f \nf 6 6 4 4 6 6 7 7 7 5 5 7 7 7 f \nf 6 6 4 4 6 6 7 7 7 5 5 7 7 7 f \nf 8 6 4 4 6 6 7 7 7 5 5 7 7 7 f \n. f f f f f f f f f f f f f f . \n`;\n            case \&quot;image4\&quot;:\n            case \&quot;blueGift\&quot;:return img`\n. . . . . . . . . . . . . . . . \n. . . f f f . . . f f f . . . . \n. . f 1 1 1 f f f 1 1 1 f . . . \n. . f 1 1 1 d 1 d 1 1 1 f . . . \n. . f f f f f f f f f f f f f . \n. f f d d 8 8 9 9 9 1 1 9 9 9 f \nf 8 8 d d 8 8 9 9 9 1 1 9 9 9 f \nf 8 8 d d 8 8 9 9 9 1 1 9 9 9 f \nf 8 8 d d 8 8 9 9 9 1 1 9 9 9 f \nf d d d d d d 1 1 1 1 1 1 1 1 f \nf d d d d d d 1 1 1 1 1 1 1 1 f \nf 8 8 d d 8 8 9 9 9 1 1 9 9 9 f \nf 8 8 d d 8 8 9 9 9 1 1 9 9 9 f \nf 8 8 d d 8 8 9 9 9 1 1 9 9 9 f \nf 8 8 d d 8 8 9 9 9 1 1 9 9 9 f \n. f f f f f f f f f f f f f f . \n`;\n            case \&quot;image17\&quot;:\n            case \&quot;milkGlass\&quot;:return img`\n. . . . . . . . . . . . . . . . \n. . . . . . . . . 2 2 . . . . . \n. . . . . . . . 2 . . . . . . . \n. . . . . . . . 2 . . . . . . . \n. . . 8 8 8 8 8 8 8 . . . . . . \n. . 8 9 9 9 9 9 c 9 8 . . . . . \n. . 8 9 1 9 9 9 c 1 8 . . . . . \n. . 8 1 9 9 9 1 d 1 8 . . . . . \n. . 8 1 d 1 1 1 1 1 8 . . . . . \n. . 8 1 d 1 1 1 1 1 8 . . . . . \n. . 8 1 d 1 1 1 1 1 8 . . . . . \n. . . 8 d 1 1 1 1 8 . . . . . . \n. . . 8 1 d 1 1 1 8 . . . . . . \n. . . . 8 1 1 1 8 . . . . . . . \n. . . . 8 8 f f 8 . . . . . . . \n. . . . . . . . . . . . . . . . \n`;\n            case \&quot;image20\&quot;:\n            case \&quot;milkGlassCookie\&quot;:return img`\n. . . . . . . . . . . . . . . . \n. . . . . . . . 2 2 . . . . . . \n. . . . . . . 2 . . . . . . . . \n. . . . . . . 2 . . . . . . . . \n. . 8 8 8 8 8 8 8 . . . . . . . \n. 8 9 9 9 9 9 c 9 8 . . . . . . \n. 8 9 1 9 9 9 c 1 8 . . . . . . \n. 8 1 9 9 9 1 d 1 8 . . . . . . \n. 8 1 d 1 1 1 1 1 8 . . . . . . \n. 8 1 d 1 1 1 1 1 8 . . . . . . \n. 8 1 d 1 1 1 1 1 8 . . . . . . \n. . 8 d 1 1 1 1 8 f f f f f . . \n. . 8 1 d 1 1 1 f d d d e d f . \n. . . 8 f f f f d e d d d b d f \n. . . f 1 1 1 e d d b b e d e f \n. . . . f f f 1 f e d d d f f . \n`;\n            case \&quot;image18\&quot;:\n            case \&quot;milkNoCookie\&quot;:return img`\n....................\n....................\n...888888888........\n...899999998........\n...8999999998.......\n..891111111118......\n.89991111111118.....\n.89999111111118.....\n.89999111111118.....\n.89999111111118.....\n.88888199999998.....\n.88888199999998.....\n.88888199999998.....\n.89999111111118.....\n.89999111111118.....\n.89999111111118.....\n.89999111111118.....\n.89999111111118.....\n.88888888888888.....\n....................\n`;\n            case \&quot;image19\&quot;:\n            case \&quot;milkCookie\&quot;:return img`\n....................\n....................\n...888888888........\n...899999998........\n...8999999998.......\n..891111111118......\n.89991111111118.....\n.89999111111118.....\n.89999111111118.....\n.89999111111118.....\n.88888199999998.....\n.88888199999998.....\n.88888199999998.....\n.89999111111118.....\n.8999911111eeeefe...\n.899991111edfdddde..\n.89999111efddddedfe.\n.89999111eddeddddde.\n.88888888eeeeeeeeee.\n....................\n`;\n            case \&quot;image14\&quot;:\n            case \&quot;blueMittens\&quot;:return img`\n....................\n.........ff8888.....\n........f88fffff....\n...f.fff88f66666f...\n..f8f66f8f6666666f..\n..f8f66f8666666166f.\n..f8f6686616161666f.\n..f8f6666661116666f.\n..f8f6666111611166f.\n..f8f6666661116666f.\n..f8f666661616166f..\n.fbbcc6661661666f...\n.fccddc66666666f....\n..ffdddc666666f.....\n....fdddc6666f......\n.....fdddc66f.......\n......fdd1ff........\n.......f1f..........\n........f...........\n....................\n`;\n            case \&quot;image47\&quot;:\n            case \&quot;winterBackground\&quot;:return img`\n9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999\n9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999\n9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999\n9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999\n9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999\n9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999\n9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999\n9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999\n9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999\n9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999\n9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999\n999999999b999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999\n99999999bb999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999\n99999999bbb99999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999\n9999999bbbbb9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999\n9999999bbbbb9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999\n999999bbbbbbb99999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999bbbb999999999999999999999999999999999999999999999\n99999bbbbbbbb99999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999bbbbbbb99999999bbb9999999999999999999999999999999\n9999bbbbbbbbbb999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999bbbbbbbbb99999bbbbbbb99999999999999999999999999999\n9999bbbbbbbbbb9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999bbbbbbbbbbbbbbbbbbbbbbb99999999999999999999999999999\n999bbbbbbbbbbbb99999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999bbbbbbbbbbbbbbbbbbbbbbbbbb99999999999999999999999999b\n99bbbbbbbbbbbbbb9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999bbbbbbbbbbbbbbbbbbbbbbbbbbb9999999999999999999999999b\n9bbbbbbbbbbbbbbb99999999999999999999999999999999999999999999999999999999999999999999999999999999999999999bbbbbbbbbbbbbbbbbbbbbbbbbbbbbb999999999999999999999bbbb\nbbbbbbbbbbbbbbbbb9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb9999999999999999999bbbbb\nbbbbbbbbbbbbbbbbb999999999999999999999999999999999999999999999999999999999999999999999999999999999999999bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb9999999999999999bbbbbb\nbbbbbbbbbbbbbbbbbb9999999999999999999999999999999999999999999999999999999999999999999bbb999999999999999bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb99999999999999bbbbbbb\nbbbbbbbbbbbbbbbbbb999999999999999999999b99999999999999999999999999999999999999999999bbbbbb99999999999bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb999999999999bbbbbbbb\nbbbbbbbbbbbbbbbbbbb99999bb9999999999999b9999999999999999999999999999999999999999999bbbbbbbbb9999999bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb999999999bbbbbbbbb\nbbbbbbbbbbbbbbbbbbbb999bbbb99999999999bbb999999999999999999999999999999999999999999bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb999999bbbbbbbbbb\nbbbbbbbbbbbbbbbbbbbbb99bbbbb999999999bbbbb999999999999999999999999999999999999999bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb6bbbbbbbbbbbbbbbbbbbbbbb99bbbb66bbbbb\nbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb9999bbbbbb9999999999999999999999999999999999999bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb66bbbbbbbbbbbbbbbbbbbbbbbbbbbbb66bbbbb\nbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb99999999999999999999999999999999999bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb6666bbbbbbbbbbbbbbbbbbbbbb6bbbb6666bbbb\nbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb9999999999999999999999999999999999bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb6666bbbbbbbbbbbbbbbbbbbbb66bbb666666bbb\nbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb99999999999999999999999999999999bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb66666bbbbbbbbbbbbbbbbbbbbb66666666666bbb\nbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb999999999999999999999999999999bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb666666bbbbbbbbbbbbbbbbbbbbb666666666666bb\nbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb99999999999999bbb99999999bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb6666666bbbbbbbbbbbbbbbbbbbb66666666666666\nbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb99999999999bbbbbb9999bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb66666666bbbbbbbbbbbbbbb6666666666666666666\nbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb99999999bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb66666666bbbbbbbbbbbbbbb6666666666666666666\nbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb999bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb666666666bbbbbbbbbbbbb66666666666666666666\nbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb6666666666bbbbbbbbbbb666666666666666666666\nbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb6666666666bbbbbbbbbb6666666666666666666666\nbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb6666666666666bbbbbb666666666666666666666666\nbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb6666666666666bbbbb6666666666666666666666666\nbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb66666666666666bbbb66666666666666666666666666\nbbbbbbbbb6bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb666666666666bbb666666666666666666666666666\nbbbbbbbb666bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb666bbbbbbbbbbbb666bbbbbbbbbbbb6666666666666bbb666666666666666666666666666\nbbbbbbb6666bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb66666bbbbbbbbb6666bbbbbbbbbbb666666666666666bb666666666666666666666666666\n6bbbbbb6666bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb666666bbbbbbbbb66666bbbbbbbbbb66666666666666666666666666666666666666666666\n6bbbb666666bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb666666bbbbbbb6666666bbbbbbbbbb66666666666666666666666666666666666666666666\n66bbbb666666bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb6666666bbbbbbb66666666bbbbbbbbb66666666666666666666666666666666666666666666\n6666bb6666666bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb666bbbbbbbbbbbb66bb66666666bbbbb6666666666bbbbbbbb66666666666666666666666666666666666666666666\n6666b666666666bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb66666bbbbbbbbbb6666666666666bbb6666666666666bbbbb666666666666666666666666666666666666666666666\n666666666666666bbb66bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb666666bbbbbbbbb6666666666666666666666666666666666666666666666666666666666666666666666666666666\n666666666666666bbb66bbbbbbbbbbbbbbbbbbbbbbbbbbbb66bbbbbbbbbbbbbbb6666666bbbbbbb666666666666666666666666666666666666666666666666666666666666666666666666666666666\n6666666666666bbbb6666bbbbbbbbbbbbbbbbbbbbbbbbbbb666bbbbbbbbbb66666666666b6666b6666666666666666666666666666666666666666666666666666666666666666666666666666666666\n6666666666666bb666666bbbbbbbbbbbbbbbbbbbbbbbbbbb66666bbbbbbb6666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666\n6666666666666bb6666666bbbbbbbbbbbbbbbbbbbbbbbbb666666bbbbbbb6666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666\n66666666666666b666666666bbbbbbbbbbbbbbbbbbbb666666666bbbbbb66666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666\n666666666666666666666666bbbbbbbbbbbbbbbbbbbb666666666bbbbbb66666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666\n666666666666666666666666bbbbbbbbbbbbbbb66bb6666666666666bb666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666\n66666666666666666666666bbbbbbbbbbbbbbbb666b666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666\n6666666666666666666666666bbbbb66bbbbbb6666b666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666\n6666666666666666666666666bbbb6666bbb6666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666\n66666666666666666666666666b6666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666\n6666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666\n6666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666dddddd666666666666666666\n66666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666ddddddddddddddd66666666666\n666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666ddddddddddddddddddddddddddd6666\n666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666ddddddddddddddddddddddddddddddddddddd\n666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666dddddddddddddddddddddddddddddddddddddddd\n66666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666dddddddddddddddddddddddddddddddddddddddddddd\n66666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666ddddddddddddddddddddddddddddddddddddddddddddddd\n666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666ddddddddddddddddddddddddddddddddddddddddddddddddd\n6666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666ddddddddddddddddddddddddddddddddddddddddddddddddddd\n6666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666dddddddddddddddddddddddddddddddddddddddddddddddddddddd\n66dddddd666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666dddddddddddddddddddddddddddddddddddddddddddddddddddddddd\nddddddddddd66666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666ddddddddddddddddddddddddddddddddddddddddddddddddddddddddd\nddddddddddddd6666666666666666666666666666666666666666666dddddddddd66666666666666666666666666666666666dddddddddddddddddddddddddddddddddddddd11111111111111ddddddd\nddddddddddddddd66666666666666666666666666666666666666ddddddddddddddddd666666666666666666666666666666dddddddddddddddddddddddddddddddddddd111111111111111111111ddd\nddddddddddddddddd666666666666666666666666666666666ddddddddddddddddddddddd6666666666666666666666666dddddddddddddddddddddddddddddddddddd11111111111111111111111111\ndddddddddddddddddddd6666666666666666666666666666ddddddddddddddddddddddddddd6666666666666666666666dddddddddddddddddddddddddddddddddd11111111111111111111111111111\ndddddddddddddddddddddd66666666666666666666666dddddddddddddddddddddddddddddddd6666666666666666666ddddddddddddddddddddddddddddddddd1111111111111111111111111111111\nddddddddddddddddddddddddd6666666666666666ddddddddddddddddddddddddddddddddddddddd66666666666666dddddddddddddddddddddddddddddddddd11111111111111111111111111111111\nddddddddddddddddddddddddddd666666666dddddddddddddddddddddddddddddddddddddddddddddddddd666666ddddddddddddddddddddddddddddddddddd111111111111111111111111111111111\nddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd11111111111111111111111111111111111\nddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd1111111111111111111111111111111111111\nddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd11111dddddddddddddddddddddddddddddddddddd11111111111111111111111111111111111111\ndddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd111111111111111111dddddddddddddddddddddddddddd11111111111111111111111111111111111111\nddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd11111111111111111111111111111111ddddddddddddddddd1111111111111111111111111111111111111111\nddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd111111111111111111111111111111111111ddddddddddddd111111111111111111111111111111111111111111\nddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111\nddddddddddd111111ddddddddddddddddddddddddddddddddddddddddddddddd111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111\ndddddddd1111111111111111dddddddddddddddddddddddddddddddddddddd11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111\nddddd11111111111111111111111ddddddddddddddddddddddddddddddd11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111\nddd11111111111111111111111111111ddddddddddddddddddddddd111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111\nd11111111111111111111111111111111111dddddddddddddddd111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111\n11111111111111111111111111111111111111111ddddddd1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111\n1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111\n1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111\n1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111\n1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111\n1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111\n1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111\n1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111\n1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111\n1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111\n1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111\n1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111\n1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111\n1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111\n1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111\n1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111\n1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111\n1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111\n1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111\n1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111\n1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111\n1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111\n1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111\n1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111\n`;\n        }\n        return null;\n    })\n\n    helpers._registerFactory(\&quot;animation\&quot;, function(name: string) {\n        switch(helpers.stringTrim(name)) {\n\n        }\n        return null;\n    })\n\n    helpers._registerFactory(\&quot;song\&quot;, function(name: string) {\n        switch(helpers.stringTrim(name)) {\n\n        }\n        return null;\n    })\n\n}\n// Auto-generated code. Do not edit.\n&quot;,
+  &quot;main.blocks&quot;: &quot;&lt;xml xmlns=\&quot;https://developers.google.com/blockly/xml\&quot;&gt;&lt;variables&gt;&lt;variable type=\&quot;KIND_SpriteKind\&quot; id=\&quot;%1cxk5^N?w`0^]h2:LA]\&quot;&gt;Player&lt;/variable&gt;&lt;variable type=\&quot;KIND_SpriteKind\&quot; id=\&quot;~tE=AAwq8iv;#+)7E5dt\&quot;&gt;Projectile&lt;/variable&gt;&lt;variable type=\&quot;KIND_SpriteKind\&quot; id=\&quot;Kxp@B-Hm:!vfuqR;aIMP\&quot;&gt;Food&lt;/variable&gt;&lt;variable type=\&quot;KIND_SpriteKind\&quot; id=\&quot;]^CCZXnDYCa/4-UJ;J5W\&quot;&gt;Enemy&lt;/variable&gt;&lt;variable id=\&quot;Bgc~yCg/Qs#iH/XyK`kS\&quot;&gt;mySprite&lt;/variable&gt;&lt;variable id=\&quot;]7T/=j5H%kB#*+f}`exb\&quot;&gt;boyList&lt;/variable&gt;&lt;variable id=\&quot;1659GMM*@jt*E@Hx9M.C\&quot;&gt;value&lt;/variable&gt;&lt;variable id=\&quot;P+2A|]}u5VbCdXdGsQfq\&quot;&gt;girlList&lt;/variable&gt;&lt;variable id=\&quot;rdTD!8lUGhPK^$(dU]+R\&quot;&gt;elfList&lt;/variable&gt;&lt;variable id=\&quot;LX1i:qkLf76kMn_8o:r)\&quot;&gt;santaList&lt;/variable&gt;&lt;variable id=\&quot;2A|=da*yhay_YfFY#T,4\&quot;&gt;penguinList&lt;/variable&gt;&lt;variable id=\&quot;4Cp$P72`Z*AmE=VF~;AL\&quot;&gt;bearList&lt;/variable&gt;&lt;variable id=\&quot;6CH+7F`ubVk$M@){Y0m7\&quot;&gt;presentList&lt;/variable&gt;&lt;variable id=\&quot;C=X`R;%|ORLbF]b1PC=t\&quot;&gt;itemList&lt;/variable&gt;&lt;variable id=\&quot;O.@fqw^~muj{M+`rE@xx\&quot;&gt;giftList&lt;/variable&gt;&lt;variable id=\&quot;o6[%?X.pMwvn@|;KiHzn\&quot;&gt;milkList&lt;/variable&gt;&lt;variable id=\&quot;0f;CqH);oMxngR$.(Rg}\&quot;&gt;largeItemList&lt;/variable&gt;&lt;/variables&gt;&lt;block type=\&quot;pxt-on-start\&quot; x=\&quot;0\&quot; y=\&quot;0\&quot;&gt;&lt;/block&gt;&lt;/xml&gt;&quot;,
+  &quot;main.py&quot;: &quot;# ...&quot;,
+  &quot;main.ts&quot;: &quot;\n&quot;,
+  &quot;pxt.json&quot;: &quot;{\n    \&quot;name\&quot;: \&quot;Winter Assets for json file\&quot;,\n    \&quot;description\&quot;: \&quot;\&quot;,\n    \&quot;dependencies\&quot;: {\n        \&quot;device\&quot;: \&quot;*\&quot;\n    },\n    \&quot;files\&quot;: [\n        \&quot;main.blocks\&quot;,\n        \&quot;main.ts\&quot;,\n        \&quot;README.md\&quot;,\n        \&quot;assets.json\&quot;,\n        \&quot;images.g.jres\&quot;,\n        \&quot;images.g.ts\&quot;,\n        \&quot;tilemap.g.jres\&quot;,\n        \&quot;tilemap.g.ts\&quot;,\n        \&quot;main.py\&quot;\n    ],\n    \&quot;targetVersions\&quot;: {\n        \&quot;branch\&quot;: \&quot;v1.12.46\&quot;,\n        \&quot;tag\&quot;: \&quot;v1.12.46\&quot;,\n        \&quot;commits\&quot;: \&quot;https://github.com/microsoft/pxt-arcade/commits/e66fb08db35df2249cd64300195259c64d497106\&quot;,\n        \&quot;target\&quot;: \&quot;1.12.46\&quot;,\n        \&quot;pxt\&quot;: \&quot;8.5.57\&quot;\n    },\n    \&quot;preferredEditor\&quot;: \&quot;blocksprj\&quot;\n}\n&quot;,
+  &quot;tilemap.g.jres&quot;: &quot;{\n    \&quot;transparency16\&quot;: {\n        \&quot;data\&quot;: \&quot;hwQQABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==\&quot;,\n        \&quot;mimeType\&quot;: \&quot;image/x-mkcd-f4\&quot;,\n        \&quot;tilemapTile\&quot;: true\n    },\n    \&quot;*\&quot;: {\n        \&quot;mimeType\&quot;: \&quot;image/x-mkcd-f4\&quot;,\n        \&quot;dataEncoding\&quot;: \&quot;base64\&quot;,\n        \&quot;namespace\&quot;: \&quot;myTiles\&quot;\n    }\n}&quot;,
+  &quot;tilemap.g.ts&quot;: &quot;// Auto-generated code. Do not edit.\nnamespace myTiles {\n    //% fixedInstance jres blockIdentity=images._tile\n    export const transparency16 = image.ofBuffer(hex``);\n\n    helpers._registerFactory(\&quot;tile\&quot;, function(name: string) {\n        switch(helpers.stringTrim(name)) {\n            case \&quot;transparency16\&quot;:return transparency16;\n        }\n        return null;\n    })\n\n}\n// Auto-generated code. Do not edit.\n&quot;
+}</code></pre>
+<h2 id="arctic-code-quest-python-edition-day-1-">Arctic Code Quest: Python Edition - Day 1! </h2><p>Welcome to your first Python project code along! Today you will be creating a project with a background image, 3 different sprites positioned across the screen, and 2 overlap functions that make something happen when the different sprites collide! </p>
+<p>Click <code>||loops:Ok||</code> to get started!</p>
+<p><img class="ui image" src="https://github.com/Code-Ninjas-Home-Office/arctic-code-quest/blob/master/images/CN-Logo.png?raw=true" alt="Logo" title="CN Logo" loading="lazy"> </p>
+<h2 id="add-a-background-image-">Add a Background Image!</h2><p>Add a background image for our winter-themed game!</p>
+<hr>
+<ul>
+<li>:tree: To start, type <code>||scene:scene||</code> and a dot operator <code>||.||</code></li>
+<li>:tree: Type <strong>set</strong> then select <code>||scene:set_background_image||</code> from the code completion tool.</li>
+<li>:mouse pointer: Click on the palette to open the Gallery. <img class="ui image" src="https://github.com/Code-Ninjas-Home-Office/arctic-code-quest/blob/master/images/DrawTool.png?raw=true" alt="Scene" title="Draw Tool" loading="lazy"></li>
+<li>:mouse pointer: Select a background image from the Gallery or My Assets. <img class="ui image" src="https://github.com/Code-Ninjas-Home-Office/arctic-code-quest/blob/master/images/MyAssets.png?raw=true" alt="Scene" title="My Assets Tab" loading="lazy"></li>
+<li>:mouse pointer: Click DONE at the bottom right of the screen!</li>
+</ul>
+<p><img class="ui image" src="https://github.com/Code-Ninjas-Home-Office/arctic-code-quest/blob/master/images/CN-Logo.png?raw=true" alt="Logo" title="CN Logo" loading="lazy"> </p>
+<pre><code class="lang-python">scene.set_background_image(assets.image(&quot;&quot;&quot;skyBackground&quot;&quot;&quot;))</code></pre>
+<h2 id="add-your-first-sprite-">Add your first sprite!</h2><p>Let’s add a sprite to that fancy background! A sprite is something that you interact with or control some way in the game!</p>
+<hr>
+<ul>
+<li>:paper plane: To start, type a variable name such as <code>||sprites:my_sprite||</code> to declare your sprite. Then type an assignment operator <code>||=||</code>.</li>
+<li>:paper plane: Start typing the function <code>||sprites:sprites.create||</code> then select the function name from the code completion tool.</li>
+<li>:mouse pointer: Click on the palette to open the Gallery. <img class="ui image" src="https://github.com/Code-Ninjas-Home-Office/arctic-code-quest/blob/master/images/DrawTool.png?raw=true" alt="Scene" title="Draw Tool" loading="lazy"></li>
+<li>:mouse pointer: Select a sprite image from the Gallery or My Assets. <img class="ui image" src="https://github.com/Code-Ninjas-Home-Office/arctic-code-quest/blob/master/images/MyAssets.png?raw=true" alt="Scene" title="My Assets Tab" loading="lazy"></li>
+<li>:mouse pointer: Click DONE at the bottom right of the screen again!</li>
+<li>:paper plane: Notice the <code>||sprites:SpriteKind.player||</code> parameter; leave it alone for now. You will change this for other sprites in the next step!</li>
+</ul>
+<p><img class="ui image" src="https://github.com/Code-Ninjas-Home-Office/arctic-code-quest/blob/master/images/CN-Logo.png?raw=true" alt="Logo" title="CN Logo" loading="lazy"> </p>
+<pre><code class="lang-python">scene.set_background_image(assets.image(&quot;&quot;&quot;skyBackground&quot;&quot;&quot;))
+#player sprite
+# @highlight
+my_sprite = sprites.create(assets.image(&quot;&quot;&quot;girlFront&quot;&quot;&quot;), SpriteKind.player)</code></pre>
+<h2 id="challenge-time-">Challenge Time!</h2><p>Now it’s your turn! Using what you just learned, add 2 more sprites to your project!</p>
+<ul>
+<li>:paper plane: One sprite should be a <code>||sprites:SpriteKind.enemy||</code> that you will program to chase the Player in a later step.</li>
+<li>:paper plane: The other sprite should be a <code>||sprites:SpriteKind.food||</code> that the Player will collect.</li>
+</ul>
+<hr>
+<p><strong>Hints!</strong></p>
+<p>💡 <em>What code do you need to create a sprite?</em></p>
+<p>💡 <em>What should you click on to change the sprite’s image?</em></p>
+<p>💡 <em>Where can you find the SpriteKind to change it?</em></p>
+<p>💡 <em>If your code is looking a little too long, click on the arrow next to the palette to shorten it!</em></p>
+<hr>
+<p>Great job: now you have 3 sprites in your game! But do you see an issue? They’re all on top of each other! In the next step, you will change their positions!</p>
+<p><img class="ui image" src="https://github.com/Code-Ninjas-Home-Office/arctic-code-quest/blob/master/images/CN-Logo.png?raw=true" alt="Logo" title="CN Logo" loading="lazy"> </p>
+<h2 id="set-the-sprite-positions">Set the sprite positions</h2><p>All of your sprites should have their own variable name. This is how you will set their position!</p>
+<p>To set a sprite’s position in MakeCode, you will use <strong>x-values</strong> between <strong>0-160</strong> to set it’s left-right position and <strong>y-values</strong> between <strong>0-120</strong> to set it’s up-down position.</p>
+<hr>
+<ul>
+<li>:paper plane: Type a sprite’s name and a dot operator <code>||.||</code>. Select <code>||sprites:set_position||</code> from the code completion tool.</li>
+<li>:keyboard: Use the Tab key to select the x parameter, then type a number 0-160.</li>
+<li>:keyboard: Press Tab again to select the y parameter, then type a number 0-120.</li>
+<li>:play: Click the Play button on the emulator to see the sprite’s position. Tinker with the x and y values until the sprite is where you want it to be!</li>
+<li>:paper plane: Now, follow these steps to set the position for the other 2 sprites!</li>
+</ul>
+<hr>
+<p><strong>Pro-Tip</strong></p>
+<p>💡 <em>Organize your code by placing the position code under the sprites.create code for each sprite!</em></p>
+<p>💡 <em>Use code comments to specify where the code for each sprite exists in the code editor. Code comments in Python start with a # sign.</em></p>
+<p><img class="ui image" src="https://github.com/Code-Ninjas-Home-Office/arctic-code-quest/blob/master/images/CN-Logo.png?raw=true" alt="Logo" title="CN Logo" loading="lazy"></p>
+<pre><code class="lang-python">scene.set_background_image(assets.image(&quot;&quot;&quot;skyBackground&quot;&quot;&quot;))
+
+#player sprite
+my_sprite = sprites.create(assets.image(&quot;&quot;&quot;girlFront&quot;&quot;&quot;), SpriteKind.player)
+# @highlight
+my_sprite.set_position(50, 50)
+
+#food sprite
+candyCane = sprites.create(assets.image(&quot;&quot;&quot;candycane&quot;&quot;&quot;), SpriteKind.food)
+# @highlight
+candyCane.set_position(100, 100)
+
+#enemy sprite
+penguin = sprites.create(assets.image(&quot;&quot;&quot;penguinFront&quot;&quot;&quot;), SpriteKind.enemy)
+# @highlight
+penguin.set_position(100, 10)</code></pre>
+<h2 id="move-your-player-sprite">Move your Player sprite</h2><p>You now have the basics of a game in place! Now you need to make your player move around the screen!</p>
+<hr>
+<ul>
+<li>:game controller: To start, type <code>||controller:controller||</code> and a dot operator <code>||.||</code>, then select <code>||controller:move_sprite||</code>.</li>
+<li>:game controller: Replace None with the variable name of the Player sprite.</li>
+<li>:play: Click the Play button to test out the sprite movement with the emulator’s keypad or your computer’s arrow keys.</li>
+</ul>
+<p>Oh no! Your sprite can move off the screen! To fix this:</p>
+<ul>
+<li>:paper plane: Type the name of your sprite, a dot operator <code>||.||</code>, and select <code>||sprites:set_stay_in_screen||</code>. </li>
+<li>:paper plane: Leave the parameter set to True so your Player sprite won’t be able to leave the screen!</li>
+</ul>
+<p><img class="ui image" src="https://github.com/Code-Ninjas-Home-Office/arctic-code-quest/blob/master/images/CN-Logo.png?raw=true" alt="Logo" title="CN Logo" loading="lazy"> </p>
+<pre><code class="lang-python">scene.set_background_image(assets.image(&quot;&quot;&quot;skyBackground&quot;&quot;&quot;))
+
+#player sprite
+my_sprite = sprites.create(assets.image(&quot;&quot;&quot;girlFront&quot;&quot;&quot;), SpriteKind.player)
+my_sprite.set_position(50, 50)
+# @highlight
+controller.move_sprite(my_sprite)
+# @highlight
+my_sprite.set_stay_in_screen(True)
+
+#food sprite
+candyCane = sprites.create(assets.image(&quot;&quot;&quot;candycane&quot;&quot;&quot;), SpriteKind.food)
+candyCane.set_position(100, 100)
+
+#enemy sprite
+penguin = sprites.create(assets.image(&quot;&quot;&quot;penguinFront&quot;&quot;&quot;), SpriteKind.enemy)
+penguin.set_position(100, 10)</code></pre>
+<h2 id="make-your-enemy-chase-the-player-">Make your Enemy chase the Player!</h2><p>Making the Enemy sprite chase the Player sprite is really easy! </p>
+<ul>
+<li>:paper plane: Type the Enemy sprite’s variable name and a dot operator <code>||.||</code>, then select <code>||sprites:follow||</code> from the code completion tool.</li>
+<li>:paper plane: Replace None with the Player sprite’s variable name.</li>
+<li>:keyboard: Change the speed the Enemy follows the Player by typing a comma in the parentheses after the Player sprite name, followed by a number.</li>
+<li>:play: Click the Play button then tinker with the speed parameter to find a number that is just right!</li>
+</ul>
+<p><img class="ui image" src="https://github.com/Code-Ninjas-Home-Office/arctic-code-quest/blob/master/images/CN-Logo.png?raw=true" alt="Logo" title="CN Logo" loading="lazy"> </p>
+<pre><code class="lang-python">scene.set_background_image(assets.image(&quot;&quot;&quot;skyBackground&quot;&quot;&quot;))
+
+#player sprite
+my_sprite = sprites.create(assets.image(&quot;&quot;&quot;girlFront&quot;&quot;&quot;), SpriteKind.player)
+my_sprite.set_position(50, 50)
+controller.move_sprite(my_sprite)
+my_sprite.set_stay_in_screen(True)
+
+#food sprite
+candyCane = sprites.create(assets.image(&quot;&quot;&quot;candycane&quot;&quot;&quot;), SpriteKind.food)
+candyCane.set_position(100, 100)
+
+#enemy sprite
+penguin = sprites.create(assets.image(&quot;&quot;&quot;penguinFront&quot;&quot;&quot;), SpriteKind.enemy)
+penguin.set_position(100, 10)
+# @highlight
+penguin.follow(my_sprite, 40)</code></pre>
+<h2 id="eat-your-food-">Eat your Food!</h2><p>Make something happen when the Player sprite runs into the Food sprite using an <code>||sprites:on_overlap||</code> function!</p>
+<hr>
+<ul>
+<li>:paper plane: To make it easier to use the <code>||sprites:on_overlap||</code> function, click on <code>||sprites:Sprites||</code> in the code menu, then select this block and drag it into the coding canvas beneath the existing code:
+<img class="ui image" src="https://github.com/Code-Ninjas-Home-Office/arctic-code-quest/blob/master/images/overlap%20code%20python.png?raw=true" alt="code" title="overlap code image" loading="lazy"></li>
+<li>:mouse pointer: def means define, and defines the overlap function with 2 parameters: sprite and otherSprite. The code after the colon will run whenever the function is called.</li>
+<li>:paper plane: On the line where the <code>||sprites:on_overlap||</code> function is called (<em>not where it is defined!</em>) replace the second <code>||sprites:SpriteKind.player||</code> with <code>||sprites:SpriteKind.food||</code> to make something happen when those 2 sprite kinds overlap. </li>
+<li>:paper plane: Inside the function definition, delete the word “pass” then type <code>||sprites:otherSprite||</code> to reference the Food sprite, followed by a dot operator <code>||.||</code> and the <code>||sprites:set_position||</code> function.</li>
+<li>:calculator: To set the Food sprite to a random position after each overlap, use <code>||math: randint||</code> for both the x and y parameters, setting the low and high range as 0 and 160 for x and 0 and 120 for y.</li>
+</ul>
+<p><img class="ui image" src="https://github.com/Code-Ninjas-Home-Office/arctic-code-quest/blob/master/images/CN-Logo.png?raw=true" alt="Logo" title="CN Logo" loading="lazy"> </p>
+<pre><code class="lang-python">scene.set_background_image(assets.image(&quot;&quot;&quot;skyBackground&quot;&quot;&quot;))
+
+#player sprite
+my_sprite = sprites.create(assets.image(&quot;&quot;&quot;girlFront&quot;&quot;&quot;), SpriteKind.player)
+my_sprite.set_position(50, 50)
+controller.move_sprite(my_sprite)
+my_sprite.set_stay_in_screen(True)
+
+#food sprite
+candyCane = sprites.create(assets.image(&quot;&quot;&quot;candycane&quot;&quot;&quot;), SpriteKind.food)
+candyCane.set_position(100, 100)
+
+#enemy sprite
+penguin = sprites.create(assets.image(&quot;&quot;&quot;penguinFront&quot;&quot;&quot;), SpriteKind.enemy)
+penguin.set_position(100, 10)
+penguin.follow(my_sprite, 40)
+
+#sprite overlaps
+# @highlight
+def on_overlap(sprite, otherSprite):
+    # @highlight
+    candyCane.set_position(randint(0,160), randint(0,120))
+    # @highlight
+# @highlight
+sprites.on_overlap(SpriteKind.player, SpriteKind.food, on_overlap)</code></pre>
+<h2 id="end-the-game-">End the Game!</h2><p>Use another <code>||sprites:on_overlap||</code> function to end the game when the Enemy sprite collides with the Player!</p>
+<hr>
+<ul>
+<li>:paper plane: Drag another <code>||sprites:on_overlap||</code> function from the <code>||sprites:Sprites||</code> code menu. Update the Sprite Kinds to <code>||sprites:Player||</code> and <code>||sprites:Enemy||</code>.</li>
+<li>:circle: Inside, delete “pass” and type <code>||game:game||</code> and a dot operator <code>||.||</code> then select <code>||game:game_over||</code> from the code completion tool.</li>
+<li>:play: Click the Play button to see what happens when True is used in the <code>||game:game_over||</code> function. Then, see what happens when False is used.</li>
+</ul>
+<p><img class="ui image" src="https://github.com/Code-Ninjas-Home-Office/arctic-code-quest/blob/master/images/CN-Logo.png?raw=true" alt="Logo" title="CN Logo" loading="lazy"> </p>
+<pre><code class="lang-python">scene.set_background_image(assets.image(&quot;&quot;&quot;skyBackground&quot;&quot;&quot;))
+
+#player sprite
+my_sprite = sprites.create(assets.image(&quot;&quot;&quot;girlFront&quot;&quot;&quot;), SpriteKind.player)
+my_sprite.set_position(50, 50)
+controller.move_sprite(my_sprite)
+my_sprite.set_stay_in_screen(True)
+
+#food sprite
+candyCane = sprites.create(assets.image(&quot;&quot;&quot;candycane&quot;&quot;&quot;), SpriteKind.food)
+candyCane.set_position(100, 100)
+
+#enemy sprite
+penguin = sprites.create(assets.image(&quot;&quot;&quot;penguinFront&quot;&quot;&quot;), SpriteKind.enemy)
+penguin.set_position(100, 10)
+penguin.follow(my_sprite, 40)
+
+#sprite overlaps
+def on_overlap(sprite, otherSprite):
+    candyCane.set_position(randint(0,160), randint(0,120))
+sprites.on_overlap(SpriteKind.player, SpriteKind.food, on_overlap)
+
+# @highlight
+def on_overlap2(sprite, otherSprite):
+    # @highlight
+    game.game_over(False)
+# @highlight
+sprites.on_overlap(SpriteKind.player, SpriteKind.enemy, on_overlap2)</code></pre>
+<h2 id="finishing-your-game-">Finishing your game!</h2><p>Congratulations! You just finished the Day 1 code along! </p>
+<p>Get ready because you are now going to use everything you just learned to create your own original project using Python!</p>
+<p><img class="ui image" src="https://github.com/Code-Ninjas-Home-Office/arctic-code-quest/blob/master/images/CN-Logo.png?raw=true" alt="Logo" title="CN Logo" loading="lazy"> </p>
+
+    </div>
+
+					<div class="hideprint"></div>
+				</div>
+
+			</div>
+
+			
+<!-- include footer.html -->
+<footer class="ui vertical footer segment hideprint docs inverted" aria-hidden="false">
+    <div class="ui center aligned container">
+        <div class="ui horizontal link list">
+            <a
+                class="item"
+                href="https://twitter.com/intent/follow?screen_name=MsMakeCode"
+                title="Follow us on Twitter"
+                target="_blank"
+                rel="noopener">
+                <i class="huge icon twitter"></i>
+            </a>
+            <a class="item" href="https://www.youtube.com/channel/UCye7YlvFUUQ1dSy0WZZ1T_Q" title="Subscribe to our YouTube channel"
+                target="_blank" rel="noopened">
+                <i class="huge icon youtube"></i>
+            </a>
+            <a class="item" href="mailto:makecode@microsoft.com" title="Send us an Email"
+                target="_blank" rel="noopened">
+                <i class="huge icon mail"></i>
+            </a>
+        </div>
+        <div class="ui section divider"></div>
+        <div class="ui container horizontal small divided link list">
+            <a id="langpicker" tabindex="0" class="ui item" rel="noopener">
+                <i class="icon xicon globe" aria-hidden="true" role="presentation"></i>Language
+            </a>
+            <a class="item" href="https://makecode.com/privacy" target="_blank" rel="noopener">Privacy &amp; Cookies</a>
+            <a class="item" href="https://makecode.com/termsofuse" target="_blank" rel="noopener">Terms Of Use</a>
+            <a class="item" href="https://makecode.com/trademarks" target="_blank" rel="noopener">Trademarks</a>
+            <span class="item">© 2022 Microsoft</span>
+        </div>
+        <div class="ui container horizontal small link list poweredBy">
+            <span class="item">Powered by</span>
+            <a class="middle aligned" href="https://makecode.com/" title="Microsoft MakeCode"
+                target="_blank" rel="noopener">
+                <img width="100" src="/static/logo/Microsoft-logo_rgb_c-gray.png" alt="Microsoft">
+            </a>
+        </div>
+    </div>
+</footer>
+
+<!-- end include footer.html -->
+
+
+		</div>
+
+	</div>
+
+    
+<!-- include langpicker.html -->
+<div id="langmodal" class="ui modal docs" role="dialog" aria-modal="true" aria-describedby="langmodalheader" tabindex="-1">
+    <h2 id="langmodalheader" class="header">Select Language</h2>
+    <div role="button" class="closeIcon" tabindex="0" aria-label="Close">
+        <i class="icon close remove circle" aria-hidden="true"></i>
+    </div>
+
+	<div class="content">
+	    <div class="group">
+            <div id="availablelocales" class="ui cards centered" role="listbox" aria-label="List of available locales"></div>
+        </div>
+        <div class="ui" id="langmodalfooter">
+            <a class="ui" href="/pxt-arcade-app/docs/translate.html" target="_blank" rel="noopener noreferrer">
+                How do I add a new language?
+            </a>
+
+            <a id="translatebtn" class="ui button" role="button" tabindex="0">
+                Translate this page
+            </a>
+        </div>
+    </div>
+</div>
+
+
+<!-- end include langpicker.html -->
+
+	
+<!-- include macros.html -->
+<!-- macro button -->
+
+<!-- macro vimeo -->
+
+<!-- macro youtube -->
+
+<!-- macro section -->
+
+<!-- macro hide -->
+
+<!-- macro avatar -->
+
+<!-- macro hint -->
+
+<!-- macro codecard -->
+
+<!-- macro tutorialhint -->
+
+<!-- macro reminder -->
+
+<!-- macro alert -->
+
+<!-- macro tip -->
+
+<!-- wrapped around ordinary content -->
+<!-- macro main-container -->
+
+<!-- used for 'column' box - they are collected and wrapped in 'column-container' -->
+<!-- macro column -->
+<!-- macro column-container -->
+
+
+<!-- Menu on the top of the page -->
+<!-- macro item -->
+
+<!-- macro divider -->
+
+<!-- TOC in the sidebar -->
+<!-- macro item -->
+
+<!-- macro divider -->
+
+<!-- macro toc-dropdown -->
+
+<!-- macro toc-dropdown-noLink -->
+
+<!-- macro toc-dropdown-noHeading -->
+
+<!-- TODO: duplicates of above for compatability with docsrender.ts;
+    remove with pxtlib/docsrender.ts TOC TODOs after cloud bump. -->
+<!-- macro top-dropdown -->
+
+<!-- macro top-dropdown-noHeading -->
+
+<!-- macro inner-dropdown -->
+
+<!-- macro nested-dropdown -->
+<!-- end include macros.html -->
+
+	
+<!-- include tracking.html -->
+<script type="text/javascript" src="/pxt-arcade-app/pxtweb.js"></script>
+<script type="text/javascript">
+    window.loadAppInsights = function (includeCookie) {
+        //Backend will patch / + doccdn + / with CDN url and the check that URL ends with the sha would pass
+        var isProduction = includeCookie && (/[0-9a-f]{40}\/ai\.2\.min\.js$/.test("/pxt-arcade-app/ai.2.min.js"));
+        !function(T,l,y){var S=T.location,k="script",D="connectionString",C="ingestionendpoint",I="disableExceptionTracking",E="ai.device.",b="toLowerCase",w="crossOrigin",N="POST",e="appInsightsSDK",t=y.name||"appInsights";(y.name||T[e])&&(T[e]=t);var n=T[t]||function(d){var g=!1,f=!1,m={initialize:!0,queue:[],sv:"5",version:2,config:d};function v(e,t){var n={},a="Browser";return n[E+"id"]=a[b](),n[E+"type"]=a,n["ai.operation.name"]=S&&S.pathname||"_unknown_",n["ai.internal.sdkVersion"]="javascript:snippet_"+(m.sv||m.version),{time:function(){var e=new Date;function t(e){var t=""+e;return 1===t.length&&(t="0"+t),t}return e.getUTCFullYear()+"-"+t(1+e.getUTCMonth())+"-"+t(e.getUTCDate())+"T"+t(e.getUTCHours())+":"+t(e.getUTCMinutes())+":"+t(e.getUTCSeconds())+"."+((e.getUTCMilliseconds()/1e3).toFixed(3)+"").slice(2,5)+"Z"}(),iKey:e,name:"Microsoft.ApplicationInsights."+e.replace(/-/g,"")+"."+t,sampleRate:100,tags:n,data:{baseData:{ver:2}}}}var h=d.url||y.src;if(h){function a(e){var t,n,a,i,r,o,s,c,u,p,l;g=!0,m.queue=[],f||(f=!0,t=h,s=function(){var e={},t=d.connectionString;if(t)for(var n=t.split(";"),a=0;a<n.length;a++){var i=n[a].split("=");2===i.length&&(e[i[0][b]()]=i[1])}if(!e[C]){var r=e.endpointsuffix,o=r?e.location:null;e[C]="https://"+(o?o+".":"")+"dc."+(r||"services.visualstudio.com")}return e}(),c=s[D]||d[D]||"",u=s[C],p=u?u+"/v2/track":d.endpointUrl,(l=[]).push((n="SDK LOAD Failure: Failed to load Application Insights SDK script (See stack for details)",a=t,i=p,(o=(r=v(c,"Exception")).data).baseType="ExceptionData",o.baseData.exceptions=[{typeName:"SDKLoadFailed",message:n.replace(/\./g,"-"),hasFullStack:!1,stack:n+"\nSnippet failed to load ["+a+"] -- Telemetry is disabled\nHelp Link: https://go.microsoft.com/fwlink/?linkid=2128109\nHost: "+(S&&S.pathname||"_unknown_")+"\nEndpoint: "+i,parsedStack:[]}],r)),l.push(function(e,t,n,a){var i=v(c,"Message"),r=i.data;r.baseType="MessageData";var o=r.baseData;return o.message='AI (Internal): 99 message:"'+("SDK LOAD Failure: Failed to load Application Insights SDK script (See stack for details) ("+n+")").replace(/\"/g,"")+'"',o.properties={endpoint:a},i}(0,0,t,p)),function(e,t){if(JSON){var n=T.fetch;if(n&&!y.useXhr)n(t,{method:N,body:JSON.stringify(e),mode:"cors"});else if(XMLHttpRequest){var a=new XMLHttpRequest;a.open(N,t),a.setRequestHeader("Content-type","application/json"),a.send(JSON.stringify(e))}}}(l,p))}function i(e,t){f||setTimeout(function(){!t&&m.core||a()},500)}var e=function(){var n=l.createElement(k);n.src=h;var e=y[w];return!e&&""!==e||"undefined"==n[w]||(n[w]=e),n.onload=i,n.onerror=a,n.onreadystatechange=function(e,t){"loaded"!==n.readyState&&"complete"!==n.readyState||i(0,t)},n}();y.ld<0?l.getElementsByTagName("head")[0].appendChild(e):setTimeout(function(){l.getElementsByTagName(k)[0].parentNode.appendChild(e)},y.ld||0)}try{m.cookie=l.cookie}catch(p){}function t(e){for(;e.length;)!function(t){m[t]=function(){var e=arguments;g||m.queue.push(function(){m[t].apply(m,e)})}}(e.pop())}var n="track",r="TrackPage",o="TrackEvent";t([n+"Event",n+"PageView",n+"Exception",n+"Trace",n+"DependencyData",n+"Metric",n+"PageViewPerformance","start"+r,"stop"+r,"start"+o,"stop"+o,"addTelemetryInitializer","setAuthenticatedUserContext","clearAuthenticatedUserContext","flush"]),m.SeverityLevel={Verbose:0,Information:1,Warning:2,Error:3,Critical:4};var s=(d.extensionConfig||{}).ApplicationInsightsAnalytics||{};if(!0!==d[I]&&!0!==s[I]){var c="onerror";t(["_"+c]);var u=T[c];T[c]=function(e,t,n,a,i){var r=u&&u(e,t,n,a,i);return!0!==r&&m["_"+c]({message:e,url:t,lineNumber:n,columnNumber:a,error:i}),r},d.autoExceptionInstrumented=!0}return m}(y.cfg);function a(){y.onInit&&y.onInit(n)}(T[t]=n).queue&&0===n.queue.length?(n.queue.push(a),n.trackPageView({})):a()}(window,document,{
+            src: "https://js.monitor.azure.com/scripts/b/ai.2.min.js", // The SDK URL Source
+            onInit: function (sdk) {
+                sdk.addTelemetryInitializer(function (envelope) {
+                    // App Insights automatically sends a page view event on setup, but we send our own later with additional properties.
+                    // This stops the automatic event from firing, so we don't end up with duplicate page view events.
+                    if (envelope.baseType == "PageviewData" && !envelope.baseData.properties) {
+                        return false;
+                    }
+
+                    if (envelope.baseType == "PageviewPerformanceData") {
+                        var pageName = envelope.baseData.name;
+                        envelope.baseData.name = window.location.origin;
+                        if (!envelope.baseData.properties) {
+                            envelope.baseData.properties = {};
+                        }
+                        envelope.baseData.properties.pageName = pageName;
+                        var scrubbedUrl = scrubUrl(envelope.baseData.uri);
+                        envelope.baseData.uri = scrubbedUrl;
+                        var toUrl = new URL(scrubbedUrl);
+                        envelope.baseData.properties.pathName = toUrl ? toUrl.pathname : "";
+                        if (envelope.ext && envelope.ext.trace) {
+                            envelope.ext.trace.name = toUrl ? toUrl.pathname : "";
+                        }
+                    }
+
+                    var telemetryItem = envelope.baseData;
+                    telemetryItem.properties = telemetryItem.properties || {};
+                    telemetryItem.properties["cookie"] = isProduction;
+                    if (typeof pxtConfig === "undefined" || !pxtConfig || !pxtConfig.targetId) {
+                        telemetryItem.properties["target"] = "arcade";
+                        return true;
+                    }
+                    telemetryItem.properties["target"] = pxtConfig.targetId;
+                    telemetryItem.properties["stage"] = (pxtConfig.relprefix || "/--").replace(/[^a-z]/ig, '')
+                    if (typeof Windows !== "undefined")
+                        telemetryItem.properties["WindowsApp"] = 1;
+                    var userAgent = navigator.userAgent.toLowerCase();
+                    var electronRegexResult = /\belectron\/(\d+\.\d+\.\d+.*?)(?: |$)/i.exec(userAgent); // Example navigator.userAgent: "Mozilla/5.0 Chrome/61.0.3163.100 Electron/2.0.0 Safari/537.36"
+                    if (electronRegexResult) {
+                        telemetryItem.properties["Electron"] = 1;
+                        telemetryItem.properties["ElectronVersion"] = electronRegexResult[1];
+                    }
+                    if (typeof pxtElectron !== "undefined") {
+                        telemetryItem.properties["PxtElectron"] = 1;
+                        telemetryItem.properties["ElectronVersion"] = pxtElectron.versions.electronVersion;
+                        telemetryItem.properties["ChromiumVersion"] = pxtElectron.versions.chromiumVersion;
+                        telemetryItem.properties["NodeVersion"] = pxtElectron.versions.nodeVersion;
+                        telemetryItem.properties["PxtElectronVersion"] = pxtElectron.versions.pxtElectronVersion;
+                        telemetryItem.properties["PxtCoreVersion"] = pxtElectron.versions.pxtCoreVersion;
+                        telemetryItem.properties["PxtTargetVersion"] = pxtElectron.versions.pxtTargetVersion;
+                        telemetryItem.properties["PxtElectronIsProd"] = pxtElectron.versions.isProd;
+                    }
+                    // Kiosk UWP info is appended to the user agent by the makecode-dotnet-apps/arcade-kiosk UWP app
+                    var kioskUwpRegexResult = /\((MakeCode Arcade Kiosk UWP)\/([\S]+)\/([\S]+)\)/i.exec(userAgent); // Example navigator.userAgent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36 Edg/117.0.2045.60 (MakeCode Arcade Kiosk UWP/0.1.41.0/Windows.Xbox)"
+                    if (kioskUwpRegexResult) {
+                        telemetryItem.properties["KioskUwp"] = 1;
+                        telemetryItem.properties["KioskUwpVersion"] = kioskUwpRegexResult[2];
+                        telemetryItem.properties["KioskUwpPlatform"] = kioskUwpRegexResult[3];
+                    }
+                    return true;
+                });
+            },
+            cfg: {
+                instrumentationKey:"9801ed01-c40f-46ec-aa40-2a1742a9e71c",
+                disableAjaxTracking: true,
+                overridePageViewDuration: false,
+                disableExceptionTracking: true,
+                disableCorrelationHeaders: true,
+                disableCookiesUsage: !isProduction,
+                isStorageUseDisabled: !isProduction,
+                url: "/pxt-arcade-app/ai.2.min.js"
+            }
+        });
+        window.appInsights=appInsights;
+        var location = window.location.toString();
+        appInsights.trackPageView({
+            name: window.location.hostname,
+            uri: window.location.origin,
+            properties: {
+                url: scrubUrl(location),
+                urlReferrer: scrubUrl(document.referrer.toString())
+            }
+        });
+
+        // Scrub potential PII from the URL.
+        function scrubUrl(url) {
+            if (!url) return url;
+
+            var scriptIdRegex = /(?:S?\d{5}-\d{5}-\d{5}-\d{5})|(?:_[0-9a-zA-Z]{12})/g;
+            var scrubbedUrl = new URL(url.toLocaleLowerCase().replace(scriptIdRegex, "xxxxx-xxxxx-xxxxx-xxxxx"));
+
+            // Just as a precaution, strip any suspicious query parameters.
+            var blockedParamKeywords = ["username", "password", "token", "pwd"];
+            var searchParams = Array.from(scrubbedUrl.searchParams.keys());
+            for (var param of searchParams) {
+                if (blockedParamKeywords.some(k => param.indexOf(k) != -1)) {
+                    scrubbedUrl.searchParams.delete(param);
+                }
+            }
+
+            return scrubbedUrl.toString();
+        }
+
+        return isProduction;
+    }
+    pxt.initAnalyticsAsync();
+</script>
+
+<!-- end include tracking.html -->
+
+
+</body>
+
+</html>

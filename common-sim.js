@@ -3179,6 +3179,7 @@ var pxsim;
         input.setLoudSoundThreshold = setLoudSoundThreshold;
     })(input = pxsim.input || (pxsim.input = {}));
 })(pxsim || (pxsim = {}));
+/// <reference path="../../core/sim/analogSensor.ts" />
 var pxsim;
 (function (pxsim) {
     class MicrophoneState extends pxsim.AnalogSensorState {
@@ -3792,7 +3793,9 @@ var pxsim;
     var ImageMethods;
     (function (ImageMethods) {
         function XX(x) { return (x << 16) >> 16; }
+        ImageMethods.XX = XX;
         function YY(x) { return x >> 16; }
+        ImageMethods.YY = YY;
         function width(img) { return img._width; }
         ImageMethods.width = width;
         function height(img) { return img._height; }
@@ -4236,57 +4239,58 @@ var pxsim;
         }
         ImageMethods.drawLine = drawLine;
         function drawIcon(img, icon, x, y, color) {
-            const img2 = icon.data;
+            const src = icon.data;
             if (!pxsim.image.isValidImage(icon))
                 return;
-            if (img2[1] != 1)
+            if (src[1] != 1)
                 return; // only mono
-            let w = pxsim.image.bufW(img2);
-            let h = pxsim.image.bufH(img2);
-            let byteH = pxsim.image.byteHeight(h, 1);
+            let width = pxsim.image.bufW(src);
+            let height = pxsim.image.bufH(src);
+            let byteH = pxsim.image.byteHeight(height, 1);
             x |= 0;
             y |= 0;
-            const sh = img._height;
-            const sw = img._width;
-            if (x + w <= 0)
+            const destHeight = img._height;
+            const destWidth = img._width;
+            if (x + width <= 0)
                 return;
-            if (x >= sw)
+            if (x >= destWidth)
                 return;
-            if (y + h <= 0)
+            if (y + height <= 0)
                 return;
-            if (y >= sh)
+            if (y >= destHeight)
                 return;
             img.makeWritable();
-            let p = 8;
+            let srcPointer = 8;
             color = img.color(color);
             const screen = img.data;
-            for (let i = 0; i < w; ++i) {
-                let xxx = x + i;
-                if (0 <= xxx && xxx < sw) {
-                    let dst = xxx + y * sw;
-                    let src = p;
-                    let yy = y;
-                    let end = Math.min(sh, h + y);
+            for (let i = 0; i < width; ++i) {
+                let destX = x + i;
+                if (0 <= destX && destX < destWidth) {
+                    let destIndex = destX + y * destWidth;
+                    let srcIndex = srcPointer;
+                    let destY = y;
+                    let destEnd = Math.min(destHeight, height + y);
                     if (y < 0) {
-                        src += ((-y) >> 3);
-                        yy += ((-y) >> 3) * 8;
+                        srcIndex += ((-y) >> 3);
+                        destY += ((-y) >> 3) * 8;
+                        destIndex += (destY - y) * destWidth;
                     }
                     let mask = 0x01;
-                    let v = img2[src++];
-                    while (yy < end) {
-                        if (yy >= 0 && (v & mask)) {
-                            screen[dst] = color;
+                    let srcByte = src[srcIndex++];
+                    while (destY < destEnd) {
+                        if (destY >= 0 && (srcByte & mask)) {
+                            screen[destIndex] = color;
                         }
                         mask <<= 1;
                         if (mask == 0x100) {
                             mask = 0x01;
-                            v = img2[src++];
+                            srcByte = src[srcIndex++];
                         }
-                        dst += sw;
-                        yy++;
+                        destIndex += destWidth;
+                        destY++;
                     }
                 }
-                p += byteH;
+                srcPointer += byteH;
             }
         }
         ImageMethods.drawIcon = drawIcon;
@@ -5128,6 +5132,35 @@ var pxsim;
         }
         settings._list = _list;
     })(settings = pxsim.settings || (pxsim.settings = {}));
+})(pxsim || (pxsim = {}));
+/// <reference path="../../screen/sim/image.ts" />
+var pxsim;
+(function (pxsim) {
+    var ShaderMethods;
+    (function (ShaderMethods) {
+        function _mergeImage(dst, src, xy) {
+            mergeImage(dst, src, pxsim.ImageMethods.XX(xy), pxsim.ImageMethods.YY(xy));
+        }
+        ShaderMethods._mergeImage = _mergeImage;
+        function mergeImage(dst, src, x0, y0) {
+            for (let x = 0; x < src._width; x++) {
+                for (let y = 0; y < src._height; y++) {
+                    pxsim.ImageMethods.setPixel(dst, x0 + x, y0 + y, Math.min(pxsim.ImageMethods.getPixel(dst, x0 + x, y0 + y), pxsim.ImageMethods.getPixel(src, x, y)));
+                }
+            }
+        }
+        function _mapImage(dst, src, xy, buf) {
+            mapImage(dst, src, pxsim.ImageMethods.XX(xy), pxsim.ImageMethods.YY(xy), buf);
+        }
+        ShaderMethods._mapImage = _mapImage;
+        function mapImage(dst, src, x0, y0, buf) {
+            for (let x = 0; x < src._width; x++) {
+                for (let y = 0; y < src._height; y++) {
+                    pxsim.ImageMethods.setPixel(dst, x0 + x, y0 + y, buf.data[pxsim.ImageMethods.getPixel(dst, x0 + x, y0 + y) + (pxsim.ImageMethods.getPixel(src, x, y) << 4)]);
+                }
+            }
+        }
+    })(ShaderMethods = pxsim.ShaderMethods || (pxsim.ShaderMethods = {}));
 })(pxsim || (pxsim = {}));
 var pxsim;
 (function (pxsim) {

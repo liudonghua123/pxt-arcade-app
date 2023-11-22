@@ -228,6 +228,7 @@
 * [Arcade Compatible Devices](/arcade-devices)
   * [Meowbit](https://www.kittenbot.cc/collections/frontpage/products/meowbit-codable-console-for-microsoft-makecode-arcade)
   * [TinkerGen GameGo](https://www.tinkergen.com/gamego)
+  * [MRT Game Maker Kit](https://www.myrobottime.co.kr/gamemakerkit)
   * [Kitronik ARCADE](https://www.kitronik.co.uk/arcade)
   * [Retro Arcade for Education](https://shop.elecfreaks.com/products/elecfreaks-retro-makecode-arcade-for-education)
   * [Adafruit PyBadge](https://www.adafruit.com/product/4200)
