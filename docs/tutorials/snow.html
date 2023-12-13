@@ -1,0 +1,1369 @@
+<!DOCTYPE html>
+<html lang="" xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#"
+	xmlns:fb="http://www.facebook.com/2008/fbml">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Microsoft MakeCode Arcade</title>
+	<meta name="Description" content="Develop your programming skills by quickly creating and modding retro arcade games with Blocks and JavaScript in the MakeCode editor" />
+
+	<!-- ifdef incontexttranslations endif -->
+	
+<!-- include meta.html -->
+<!-- This file is typically overriden by the target, with own Twitter
+     account etc. Most data is taken from the theme file though.  
+  -->
+
+<!-- include robotsmeta.html -->
+
+<!-- end include robotsmeta.html -->
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@msmakecode" />
+<meta name="twitter:title" content="Microsoft MakeCode Arcade" />
+<meta name="twitter:description" content="Develop your programming skills by quickly creating and modding retro arcade games with Blocks and JavaScript in the MakeCode editor" />
+<meta name="twitter:image" content="/static/tutorials/snow/globe.gif" />
+
+<meta property="og:title" content="Microsoft MakeCode Arcade" />
+<meta property="og:site_name" content="Microsoft MakeCode" />
+<meta property="og:type" content="website" />
+<meta property="og:description" content="Develop your programming skills by quickly creating and modding retro arcade games with Blocks and JavaScript in the MakeCode editor" />
+<meta property="fb:app_id" content="" />
+<meta property="og:image" content="/static/tutorials/snow/globe.gif" />
+
+<meta name="format-detection" content="telephone=no">
+<link rel="apple-touch-icon" href="docs/static/icons/favicon.ico">
+<link rel="icon" type="image/png" href="docs/static/icons/favicon.ico">
+<link rel="shortcut icon" href="docs/static/icons/favicon.ico">
+<meta name="theme-color" content="">
+
+<!-- end include meta.html -->
+
+	
+<!-- include head.html -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width,height=device-height,user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
+
+<link rel="stylesheet" data-rtl="/blb/rtlsemantic.css" href="/pxt-arcade-app/semantic.css" />
+<link id="blocklycss"  data-rtl="/blb/rtlblockly.css" rel="stylesheet" href="/pxt-arcade-app/blockly.css" />
+<link rel="stylesheet" href="/pxt-arcade-app/docfiles/style.css" />
+<link rel="stylesheet" href="/pxt-arcade-app/docfiles/vs.css" />
+<link rel="stylesheet" href="/pxt-arcade-app/docfiles/target.css" />
+
+<script src="/pxt-arcade-app/jquery.js" type="text/javascript"></script>
+<script src="/pxt-arcade-app/semantic.js" type="text/javascript"></script>
+<script src="/pxt-arcade-app/docfiles/target.js" type="text/javascript"></script>
+<script src="/pxt-arcade-app/embed.js" type="text/javascript"></script>
+<script src="/pxt-arcade-app/docfiles/docs.js" type="text/javascript"></script>
+
+<style>
+    
+</style>
+
+<!-- end include head.html -->
+
+
+</head>
+
+<body id='root' class='root'>
+	<div id="accessibleMenu" class="ui accessibleMenu borderless fixed menu docs" role="menubar">
+		
+            <a href="#maincontent" class="ui item link" tabindex="0" role="menuitem">Skip to main content</a>
+        
+	</div>
+
+	
+<!-- include tocheader.html -->
+<div id="top-bar" class="ui fixed accent borderless inverted main menu hideprint docs" role="menubar">
+    <div>
+        
+            <a id="togglesidebar" class="launch icon item" tabindex="0" title="Side menu" aria-label="Side menu" role="menuitem" aria-expanded="false">
+                <i class="content icon"></i>
+            </a>
+        
+        <div class="item" role="menuitem">
+            <div class="header-org-logo">
+                <img src="/static/logo/Microsoft_logo_rgb_W-white_D.png" alt="Microsoft">
+            </div>
+            <div class="header-org-logo-sm">
+                <img src="/static/logo/Microsoft_logo_rgb_W-white_D-square.png" alt="Microsoft">
+            </div>
+            <div class="header-title"><span>MakeCode</span></div>
+        </div>
+    </div>
+    <div>
+        <div class="item">
+            <form id="tocsearch1" class="search" role="form" method="get" action="https://www.bing.com/search">
+                <div class="ui fluid icon input">
+                    <input type="hidden" name="q1" value="site:https://arcade.makecode.com/" />
+                    
+                <input type="search" name="q" placeholder="Search..." aria-label="Search Documentation">
+                <i onclick="document.getElementById('tocsearch1').submit();" tabindex="0" class="search link icon" aria-label="Search" role="button"></i>
+            
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div id="side-menu" class="ui vertical accent inverted sidebar menu left hideprint docs" role="menubar">
+    <!-- TOC Menu (tocheader.html) -->
+    <div class="menuContainer" role="menu">
+        
+    <a class="item " href="/pxt-arcade-app/docs/about.html" role="menuitem">About</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/faq.html" role="menuitem">FAQ</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/projects.html" role="menuitem">Projects</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/github.html" role="menuitem">GitHub</a>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/pxt-arcade-app/docs/reference.html">Reference</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-arcade-app/docs/reference/sprites.html" role="menuitem">sprites</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/reference/controller.html" role="menuitem">controller</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/reference/game.html" role="menuitem">game</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/reference/music.html" role="menuitem">music</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/reference/scene.html" role="menuitem">scene</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/reference/info.html" role="menuitem">info</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/reference/images.html" role="menuitem">images</a>
+
+        </div>
+    </div>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/pxt-arcade-app/docs/blocks.html">Blocks</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-arcade-app/docs/blocks/on-start.html" role="menuitem">On Start</a>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/pxt-arcade-app/docs/blocks/loops.html">Loops</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-arcade-app/docs/blocks/loops/repeat.html" role="menuitem">repeat</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/blocks/loops/for.html" role="menuitem">for</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/blocks/loops/while.html" role="menuitem">while</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/blocks/loops/for-of.html" role="menuitem">for of</a>
+
+        </div>
+    </div>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/pxt-arcade-app/docs/blocks/logic.html">Logic</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-arcade-app/docs/blocks/logic/if.html" role="menuitem">if</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/blocks/logic/boolean.html" role="menuitem">Boolean</a>
+
+        </div>
+    </div>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/pxt-arcade-app/docs/blocks/variables.html">Variables</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-arcade-app/docs/blocks/variables/assign.html" role="menuitem">assign</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/blocks/variables/change.html" role="menuitem">change var</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/blocks/variables/var.html" role="menuitem">var</a>
+
+        </div>
+    </div>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/blocks/math.html" role="menuitem">Math</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/blocks/javascript-blocks.html" role="menuitem">JavaScript blocks</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/blocks/custom.html" role="menuitem">Custom blocks</a>
+
+        </div>
+    </div>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/pxt-arcade-app/docs/python.html">Python</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-arcade-app/docs/python/call.html" role="menuitem">Calling</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/python/sequence.html" role="menuitem">Sequencing</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/python/variables.html" role="menuitem">Variables</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/python/operators.html" role="menuitem">Operators</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/python/statements.html" role="menuitem">Statements</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/python/functions.html" role="menuitem">Functions</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/python/classes.html" role="menuitem">Classes</a>
+
+        </div>
+    </div>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/pxt-arcade-app/docs/javascript.html">JavaScript</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-arcade-app/docs/javascript/call.html" role="menuitem">Calling</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/javascript/sequence.html" role="menuitem">Sequencing</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/javascript/variables.html" role="menuitem">Variables</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/javascript/operators.html" role="menuitem">Operators</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/javascript/statements.html" role="menuitem">Statements</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/javascript/functions.html" role="menuitem">Functions</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/javascript/types.html" role="menuitem">Types</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/javascript/classes.html" role="menuitem">Classes</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/javascript/interfaces.html" role="menuitem">Interfaces</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/javascript/generics.html" role="menuitem">Generics</a>
+
+        </div>
+    </div>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/pxt-arcade-app/docs/types.html">Types</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-arcade-app/docs/types/number.html" role="menuitem">Number</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/types/string.html" role="menuitem">String</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/types/boolean.html" role="menuitem">Boolean</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/types/array.html" role="menuitem">Array</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/types/function.html" role="menuitem">Function</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/types/image.html" role="menuitem">Image</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/types/sprite.html" role="menuitem">Sprite</a>
+
+        </div>
+    </div>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/block-gallery.html" role="menuitem">Blocks Gallery</a>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="">Miscellaneous</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-arcade-app/docs/about.html" role="menuitem">About</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/support.html" role="menuitem">Support</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/translate.html" role="menuitem">Translate</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/share.html" role="menuitem">Sharing projects</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/multiplayer.html" role="menuitem">Multiplayer</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/offline.html" role="menuitem">Offline support</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/save.html" role="menuitem">Save</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/identity/sign-in.html" role="menuitem">Sign In</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/identity/cloud-sync.html" role="menuitem">Cloud Sync</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/vscode.html" role="menuitem">VS Code</a>
+
+        </div>
+    </div>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/pxt-arcade-app/docs/hardware.html">Hardware</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-arcade-app/docs/hardware/errors.html" role="menuitem">Errors</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/hardware/adding.html" role="menuitem">Adding New Board</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/hardware/raspberry-pi.html" role="menuitem">Raspberry Pi</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/hardware/makey-makey.html" role="menuitem">Makey Makey</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/hardware/shoebox-controller.html" role="menuitem">Shoebox Controller</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/hardware/dev.html" role="menuitem">Dev</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/hardware/dbg.html" role="menuitem">Debug connector</a>
+
+        </div>
+    </div>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="">Developers</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-arcade-app/docs/cli.html" role="menuitem">Command Line Interface</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/code.html" role="menuitem">Visual Studio Code support</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/blocks-embed.html" role="menuitem">Blocks Embed</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/developer/images.html" role="menuitem">Art, images, colors</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/developer/sound.html" role="menuitem">Sounds</a>
+
+        </div>
+    </div>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/pxt-arcade-app/docs/lessons.html">Lessons</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-arcade-app/docs/lessons/cherry-pickr.html" role="menuitem">Cherry Pickr</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/lessons/barrel-dodger.html" role="menuitem">Barrel Dodger</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/lessons/dance-party.html" role="menuitem">Dance Party</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/lessons/block-out.html" role="menuitem">BlockOut</a>
+
+        </div>
+    </div>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/pxt-arcade-app/docs/courses.html">Courses</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-arcade-app/docs/courses/csintro1.html" role="menuitem">CS Intro 1</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/courses/csintro2.html" role="menuitem">CS Intro 2</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/courses/csintro3.html" role="menuitem">CS Intro 3</a>
+
+        </div>
+    </div>
+
+    </div>
+</div>
+<!-- end include tocheader.html -->
+
+
+	<div id="docs" class="pusher">
+
+		<div class="article" id="maincontent">
+			<div class="article-inner">
+
+				
+<!-- include header.html -->
+<div class="ui one column padded grid hideprint">
+    <div class="column ui container">
+        
+    </div>
+</div>
+<!-- end include header.html -->
+
+
+				<div class="main ui container fluid mainbody">
+					<button id="printbtn" class="circular ui icon right floated button hideprint hidemobile"
+						title="Print" aria-label="Print">
+						<i class="icon print"></i>
+					</button>
+					
+    <div class="ui text">
+        <h1 id="let-it-snow">Let it Snow</h1><!-- hints --><h2 id="send-a-holiday-card-">Send a Holiday Card </h2><p>In this tutorial, we’ll show you how to create your own Holiday Snow Globe Card.</p>
+<p><img class="ui image" src="/static/tutorials/snow/globe.gif" alt="Make a Snow Globe" title="Make Your Own" loading="lazy"></p>
+<h2 id="2-your-first-block">2. Your First Block</h2><p><strong>Ready to start coding?</strong></p>
+<p>Let’s set the color of the background.</p>
+<hr>
+<ul>
+<li>:tree: Go to the <code>||scene: Scene||</code> category <strong>in the toolbox</strong> and grab<pre><code class="lang-block">scene.setBackgroundColor(7)</code></pre>
+then snap it inside the empty <br />
+<code>||loops(noclick): on start||</code> <br />
+container already in the workspace.</li>
+</ul>
+<p>💡 <em>You can change this color later if it doesn’t work with your globe.</em></p>
+
+    <div class="ui hint message">
+        <div class="content">
+            <pre><code class="lang-blocks">//@highlight
+scene.setBackgroundColor(7)</code></pre>
+<h2 id="3-choose-your-globe">3. Choose Your Globe</h2><p><strong>Choose Your Globe</strong></p>
+<hr>
+<ul>
+<li>:paper plane: Open the <code>||sprites:Sprites||</code> category and drag the<pre><code class="lang-block">sprites.wrap1(function () {
+  let globe = sprites.create(img`.`, SpriteKind.Player)
+  globe.z = 1000
+})</code></pre>
+bundle into <strong>the end</strong> of the<br />
+<code>||loops(noclick): on start||</code> <br />
+container already in the workspace.</li>
+</ul>
+<p>~hint What did that do? 🤷🏽‍♀️</p>
+<hr>
+<p>You just dragged a bundle of code into your workspace and connected the blocks inside of the <code>||loops(noclick):on start||</code> container. </p>
+<p>Here’s what that code does:</p>
+<pre><code class="lang-block">    let globe = sprites.create(img`.`, SpriteKind.Player)</code></pre>
+<p>This block defines and names the item that you’ll be using as the “globe” image.
+(Ignore the “kind”. You won’t be using that in this project.)</p>
+<p><br /></p>
+<pre><code class="lang-block">    let globe: Sprite = null
+    globe.z = 1000
+</code></pre>
+<p>This block sets the depth (also called z-index) of the globe to be much closer to the camera than the following items will be. This is important for making sure everything else happens behind this frame. </p>
+<p>❗️ <strong>You won’t see the result of any of this until you choose an image in the next step.</strong></p>
+<p>hint~</p>
+
+    <div class="ui hint message">
+        <div class="content">
+            <pre><code class="lang-block">scene.setBackgroundColor(7)
+//@highlight
+sprites.wrap1(function () {
+    let globe = sprites.create(img`.`, SpriteKind.Player)
+    globe.z = 1000
+})</code></pre>
+<h2 id="4-set-globe">4. Set Globe</h2><ul>
+<li>:mouse pointer: Click the empty grey square inside the <br />
+<code>||variables(noclick):set [globe] to||</code> <br />
+block and switch to the <strong>Gallery</strong>.<br />
+<img class="ui image" src="/static/skillmap/assets/gallery.png" alt="Switch to Gallery" title=" " loading="lazy">
+Choose one of the globe images.
+<img class="ui image" src="/static/tutorials/snow/globe1.png" alt="Choose a globe" title=" " loading="lazy"></li>
+</ul>
+
+    <div class="ui hint message">
+        <div class="content">
+            <pre><code class="lang-blocks">scene.setBackgroundColor(7)
+sprites.wrap1(function () {
+    //@highlight
+    let globe = sprites.create(snow_imgs.globe1, SpriteKind.Player)
+    globe.z = 1000
+})</code></pre>
+<h2 id="5-check-your-game-">5. Check Your Game!</h2><ul>
+<li>:binoculars: Look at your project in the game window.</li>
+</ul>
+<p>You should see your globe filled with the color that you chose in the first step.</p>
+<h2 id="6-make-a-scene">6. Make a Scene</h2><p><strong>Time to make a scene!</strong></p>
+<hr>
+<ul>
+<li>:paper plane: Open the <code>||sprites:Sprites||</code> category and drag the<pre><code class="lang-block">sprites.wrap2(function () {
+  let scenery = sprites.create(img`.`, SpriteKind.Player)
+  scenery.top = 5
+})</code></pre>
+bundle into <strong>the end</strong> of the<br />
+<code>||loops(noclick): on start||</code> <br />
+container already in the workspace.</li>
+</ul>
+<p>~hint What did that do? 🤷🏽‍♀️</p>
+<hr>
+<pre><code class="lang-block">    let scenery = sprites.create(img`.`, SpriteKind.Player)</code></pre>
+<p>This block defines and names the item that you’ll be using to show your “scenery”
+image. (Ignore the “kind”. You won’t be using that in this project.)</p>
+<p><br /></p>
+<pre><code class="lang-block">    let scenery: Sprite = null
+    scenery.top = 5</code></pre>
+<p>This block places the top of the <strong>scenery</strong> image to 5 pixels below the top edge of the screen.  </p>
+<p>❗️ <strong>You won’t see the result of any of this until you choose an image in the next step.</strong></p>
+<p>hint~</p>
+
+    <div class="ui hint message">
+        <div class="content">
+            <pre><code class="lang-blocks">scene.setBackgroundColor(7)
+sprites.wrap1(function () {
+    let globe = sprites.create(snow_imgs.globe1, SpriteKind.Player)
+    globe.z = 1000
+})
+
+//@highlight
+
+sprites.wrap2(function () {
+    let scenery = sprites.create(img`.`, SpriteKind.Player)
+    scenery.top = 5
+})
+</code></pre>
+<h2 id="7-make-a-scene-cont-">7. Make a Scene, Cont.</h2><ul>
+<li>:mouse pointer: Click the empty grey square inside the <br />
+<code>||variables(noclick):set [scenery] to||</code> <br />
+block and draw the scene you want to see inside of your globe.<br /><br />
+(Or choose a scene from our gallery.)</li>
+</ul>
+
+    <div class="ui hint message">
+        <div class="content">
+            <pre><code class="lang-blocks">scene.setBackgroundColor(7)
+sprites.wrap1(function () {
+    let globe = sprites.create(snow_imgs.globe1, SpriteKind.Player)
+    globe.z = 1000
+})
+
+//@highlight
+
+sprites.wrap2(function () {
+    let scenery = sprites.create(snow_imgs.tree, SpriteKind.Player)
+    scenery.top = 5
+})
+</code></pre>
+<h2 id="8-look-again">8. Look Again</h2><ul>
+<li>:binoculars: Look at your project in the game window again.</li>
+</ul>
+<p>You should see your new scene inside of the globe you chose.</p>
+<h2 id="9-animate-it">9. Animate It</h2><p><strong>Add some animation!</strong></p>
+<hr>
+<ul>
+<li>:paper plane: Open the <code>||sprites:Sprites||</code> category and drag the<pre><code class="lang-block">sprites.wrap3(function () {
+  let anim = sprites.create(img`.`, SpriteKind.Player)
+  anim.bottom = 65
+  animation.runImageAnimation(
+  anim,
+  [img`.`],
+  200,
+  true
+  )
+})</code></pre>
+bundle into <strong>the end</strong> of the<br />
+<code>||loops(noclick): on start||</code> <br />
+container already in the workspace.</li>
+</ul>
+<p>~hint What did that do? 🤷🏽‍♀️</p>
+<hr>
+<pre><code class="lang-block">    let anim = sprites.create(img`.`, SpriteKind.Player)</code></pre>
+<p>This block defines and names the animation that goes inside your globe. 
+(Ignore the “kind”. You won’t be using that in this project.)</p>
+<p><br /></p>
+<pre><code class="lang-block">    let anim: Sprite = null
+    anim.bottom = 65
+</code></pre>
+<p>This block aligns the bottom of the animation to 65 pixels below the top edge of the 
+screen.  </p>
+<p><br /></p>
+<pre><code class="lang-block">    let anim: Sprite = null
+    animation.runImageAnimation(
+    anim,
+    [img`.`],
+    200,
+    true
+    )
+</code></pre>
+<p>This block replaces the static image of your “anim” sprite with a series of moving frames. </p>
+<p>❗️ <strong>You won’t see the result of any of this until you choose an image in the next step.</strong></p>
+<p>hint~</p>
+
+    <div class="ui hint message">
+        <div class="content">
+            <pre><code class="lang-blocks">scene.setBackgroundColor(7)
+sprites.wrap1(function () {
+    let globe = sprites.create(snow_imgs.globe1, SpriteKind.Player)
+    globe.z = 1000
+})
+
+sprites.wrap2(function () {
+    let scenery = sprites.create(img`.`, SpriteKind.Player)
+    scenery.top = 5
+})
+
+//@highlight
+sprites.wrap3(function () {
+    let anim = sprites.create(img`.`, SpriteKind.Player)
+    anim.bottom = 65
+    animation.runImageAnimation(
+    anim,
+    [img`.`],
+    200,
+    true
+    )
+})</code></pre>
+<h2 id="10-animate-it-cont-">10. Animate It, Cont.</h2><ul>
+<li>:mouse pointer: Click the empty grey square inside the <br />
+<code>||variables(noclick):set [anim] to||</code> <br />
+block and choose one of the placeholder images from the <strong>Gallery</strong>.<br /><br />
+<img class="ui image" src="/static/tutorials/snow/place.png" alt="Choose a Placeholder" title="The skater, the string of lights, or the squirrel." loading="lazy"></li>
+</ul>
+<ul>
+<li>:mouse pointer: Click the empty grey square inside the <br />
+<code>||animation(noclick):animate [anim]||</code> <br />
+block and choose the animation that looks most like your placeholder image.<br /><br />
+<img class="ui image" src="/static/tutorials/snow/anim.png" alt="Choose an Animation" title="The skater, the string of lights, or the squirrel." loading="lazy"></li>
+</ul>
+
+    <div class="ui hint message">
+        <div class="content">
+            <pre><code class="lang-blocks">scene.setBackgroundColor(7)
+sprites.wrap1(function () {
+    let globe = sprites.create(snow_imgs.globe1, SpriteKind.Player)
+    globe.z = 1000
+})
+
+sprites.wrap2(function () {
+    let scenery = sprites.create(snow_imgs.tree, SpriteKind.Player)
+    scenery.top = 5
+})
+
+sprites.wrap3(function () {
+    //@highlight
+    let anim = sprites.create(snow_imgs.lights, SpriteKind.Player)
+    anim.bottom = 65
+    //@highlight
+    animation.runImageAnimation(
+    anim,
+    [img`
+...............................................................
+...............................................................
+...............................................................
+................................dd.............................
+...............................dd2.............................
+..............................dd.22............................
+..............................d..22............................
+..............................dd...............................
+...............................6dd.............................
+..............................96.d.............................
+..............................99..d............................
+..................................d222.........................
+..................................d.22.........................
+..............................ddddd............................
+.........................dddddd66..............................
+.....................dddd2......69.............................
+....................dd...22.....99.............................
+..................ddd....22....................................
+..................d6...........................................
+..................96...........................................
+..................99...........................................
+..................d............................................
+..................dd...........................................
+....................dddddddddddd...............................
+......................2.....6...dddd...........................
+.....................22.....69.....ddd.........................
+.....................22.....99......2dddddd....................
+....................................22....ddd..................
+....................................22......6d.................
+...........................................96d.................
+...........................................99d.................
+............................................d..................
+..........................dddd6dddddddddddddd..................
+.....................dddddd...69.......2.......................
+...................ddd2.......99......22.......................
+................dddd..22..............22.......................
+.............dddd.....22.......................................
+...........ddd..6..............................................
+.........dd....96..............................................
+........dd.....99..............................................
+........d......................................................
+........2......................................................
+.......22d.....................................................
+.......22dd....................................................
+..........dd...................................................
+...........ddd.................................................
+.............d6dddddddd2dddddddddddddddd.......................
+.............96........22.......6.......d2ddddddd..............
+.............99........22.......69......22.....6dddddd.........
+................................99......22.....69....dd........
+...............................................99.....d........
+......................................................d........
+......................................................2........
+.....................................................22........
+...................................................dd22........
+............................................ddd6dddd...........
+.................................dddddddddddd.96...............
+.......dddd........ddddddd2ddddddd.....2......99...............
+........2.dddddd6ddd.....22.......6....22......................
+........22......69.......22......96....22......................
+........22......99...............99............................
+...............................................................
+`],
+    200,
+    true
+    )
+})
+</code></pre>
+<h2 id="11-check-it-out">11. Check it Out</h2><ul>
+<li>:binoculars: Check out what you have so far.</li>
+</ul>
+<p>You should see your animation playing against your scene.</p>
+<p>~hint My animation isn’t right 🤔</p>
+<hr>
+<p>Your animation aligns based on the image you choose for the <strong>anim</strong> sprite.</p>
+<p>If you’re having a hard time getting your animation to line up correctly, here are some steps you can take:</p>
+<ul>
+<li><strong>Make sure that your animation is the same size in pixels</strong> as the image you chose when setting up your <code>anim</code> sprite.</li>
+<li><strong>Try changing where the <code>bottom</code> of the sprite is.</strong> Instead of setting it to <code>65</code>, you may need to set it to <code>30</code> or <code>100</code></li>
+<li>If you want to move your animation sideways a bit, <strong>try switching to the block shown below</strong> so that you can adjust both the side-to-side position as well as the up-and-down position.</li>
+</ul>
+<pre><code class="lang-block">let anim: Sprite = null
+anim.setPosition(80, 60)</code></pre>
+<p>hint~</p>
+<h2 id="12-shake-it-up">12. Shake it Up</h2><p><strong>Let’s shake things up!</strong></p>
+<hr>
+<ul>
+<li>:paper plane: Open the <code>||controller:Controller||</code> category and drag the<pre><code class="lang-block">controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
+  scene.cameraShake(12, 500)
+  snow.bigShortBlizzard(scenery)
+  music.play(music.createSong(), music.PlaybackMode.InBackground)
+})</code></pre>
+bundle into <strong>an empty area </strong> of the workspace.</li>
+</ul>
+<p>~hint What did that do? 🤷🏽‍♀️</p>
+<hr>
+<pre><code class="lang-block">controller.A.onEvent(ControllerButtonEvent.Pressed, function () { })</code></pre>
+<p>This container tells the computer to run the code inside when the (A) button (or space bar) is pressed.</p>
+<p><br /></p>
+<pre><code class="lang-block">    scene.cameraShake(12, 500)</code></pre>
+<p>This block makes it look like the camera is shaking by 12 pixels for 500 miliseconds (half a second.)</p>
+<p><br /></p>
+<pre><code class="lang-block">    snow.bigShortBlizzard(scenery)</code></pre>
+<p>This block adds a blizzard effect to the inside of the snowglobe.</p>
+<p><br /></p>
+<pre><code class="lang-block">    music.play(music.createSong(), music.PlaybackMode.InBackground)</code></pre>
+<p>This block allows you to add a song to your snowglobe.</p>
+<p>hint~</p>
+
+    <div class="ui hint message">
+        <div class="content">
+            <pre><code class="lang-blocks">
+//@highlight
+
+controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
+    scene.cameraShake(12, 500)
+    snow.bigShortBlizzard(scenery)
+    music.play(music.createSong(), music.PlaybackMode.InBackground)
+})</code></pre>
+<h2 id="13-shake-it-up-contd-">13. Shake it Up (Contd.)</h2><ul>
+<li>:mouse pointer: Click the empty grey rectangle in the <br />
+<code>||music:play song||</code><br />
+block and create a song for your snowglobe.<br /><br />
+(You can switch to the <strong>My Assets</strong> tab at the top of the editor to use a song of ours.)</li>
+</ul>
+
+    <div class="ui hint message">
+        <div class="content">
+            <pre><code class="lang-blocks">
+//@highlight
+
+controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
+    scene.cameraShake(12, 500)
+    snow.bigShortBlizzard(scenery)
+    music.play(music.createSong(assets.song`winter_wonderland`), music.PlaybackMode.InBackground)
+})</code></pre>
+<h2 id="14-give-it-a-shake">14. Give it a Shake</h2><ul>
+<li>:binoculars: Take a look!</li>
+</ul>
+<p>When you press the (A) button (or space bar) the globe should look like it’s shaking, 
+then snow should fall while music plays. </p>
+<p>~hint Don’t hear anything? 🔇</p>
+<hr>
+<p>There are a few reasons you might not be able to hear your music 
+even if the code is correct.</p>
+<ul>
+<li>Make sure the music player is unmuted (🔊)</li>
+<li>Try turning up the volume on your computer</li>
+<li>Add a <code>||music:set volume [100]||</code> block to your <code>||loops(noclick):on start||</code> container.</li>
+</ul>
+<p>If you still can’t hear your song, 
+go back and look at previous steps to make sure your code matches the instructions.</p>
+<p>hint~</p>
+<p>~hint Is the volume too loud? 🔊</p>
+<hr>
+<p>Look for this block in the <code>||music:Music||</code> category</p>
+<pre><code class="lang-block">music.setVolume(30)</code></pre>
+<p>and add it to the <code>||loops(noclick):on start||</code> container.</p>
+<p>hint~</p>
+<h2 id="15-make-it-meaningful">15. Make it Meaningful</h2><p><strong>Let’s add a message.</strong></p>
+<hr>
+<ul>
+<li>:paper plane: Open the <code>||controller:Controller||</code> category and drag the<pre><code class="lang-block">controller.B.onEvent(ControllerButtonEvent.Pressed, function () {
+  game.showLongText(&quot;Happy Holidays!&quot;, DialogLayout.Bottom)
+})</code></pre>
+bundle into <strong>an empty area </strong> of the workspace.</li>
+</ul>
+<p>💡 <em>Feel free to change the message to something that is special to you!</em></p>
+<p>~hint What did that do? 🤷🏽‍♀️</p>
+<hr>
+<pre><code class="lang-block">controller.B.onEvent(ControllerButtonEvent.Pressed, function () {})</code></pre>
+<p>This container tells the computer to run the code inside when the (B) button (or enter key) is pressed.</p>
+<p><br /></p>
+<pre><code class="lang-block">    game.showLongText(&quot;Happy Holidays!&quot;, DialogLayout.Bottom)</code></pre>
+<p>This block displays your chosen text at the bottom of the screen until the (A) button is pressed.</p>
+<p>hint~</p>
+
+    <div class="ui hint message">
+        <div class="content">
+            <pre><code class="lang-blocks">
+//@highlight
+controller.B.onEvent(ControllerButtonEvent.Pressed, function () {
+    game.showLongText(&quot;Happy Holidays!&quot;, DialogLayout.Bottom)
+})</code></pre>
+<pre><code class="lang-blockconfig.local">controller.B.onEvent(ControllerButtonEvent.Pressed, function () {
+    game.showLongText(&quot;Happy Holidays!&quot;, DialogLayout.Bottom)
+})</code></pre>
+<h2 id="16-appreciate-your-work">16. Appreciate Your Work</h2><ul>
+<li>:binoculars: Check out your final creation!</li>
+</ul>
+<p>Press the (A) button to shake your globe, then press (B) to see your message.</p>
+<p><strong>❄️ Magical! ❄️</strong></p>
+<pre><code class="lang-blockconfig.local">controller.B.onEvent(ControllerButtonEvent.Pressed, function () {
+    game.showLongText(&quot;Happy Holidays!&quot;, DialogLayout.Bottom)
+})</code></pre>
+<h2 id="11-finale">11. Finale</h2><p><strong>☃️ Way to Go ☃️</strong></p>
+<p>You finished your extra special holiday card!</p>
+<p>When you’re ready, click <strong>Done</strong> to share it with family and friends!</p>
+<pre><code class="lang-blockconfig.global">let globe: Sprite = null
+let scenery: Sprite = null
+let anim: Sprite = null
+
+scene.setBackgroundColor(7)
+
+sprites.wrap1(function () {
+    globe = sprites.create(img`.`, SpriteKind.Player)
+    globe.z = 1000
+})
+
+sprites.wrap2(function () {
+    scenery = sprites.create(img`.`, SpriteKind.Player)
+    scenery.top = 5
+})
+
+sprites.wrap3(function () {
+    let anim = sprites.create(img`.`, SpriteKind.Player)
+    anim.bottom = 65
+    animation.runImageAnimation(
+    anim,
+    [img`.`],
+    200,
+    true
+    )
+})
+
+music.setVolume(30)
+
+controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
+    scene.cameraShake(12, 500)
+    snow.bigShortBlizzard(scenery)
+    music.play(music.createSong(snow_imgs.winter_wonderland), music.PlaybackMode.InBackground)
+})
+
+anim.setPosition(80, 60)
+globe.z = 1000
+globe = sprites.create(img`.`, SpriteKind.Player)</code></pre>
+<pre><code class="lang-package">arcade-text=github:microsoft/arcade-text
+snow_imgs=github:kiki-lee/snow_imgs#v0.0.4</code></pre>
+<pre><code class="lang-ghost">controller.B.onEvent(ControllerButtonEvent.Pressed, function () {
+    game.showLongText(&quot;Happy Holidays!&quot;, DialogLayout.Bottom)
+})
+controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
+    scene.cameraShake(12, 500)
+    music.stopAllSounds()
+    snow.bigShortBlizzard(scenery)
+    music.play(music.createSong(assets.song`winter_wonderland`), music.PlaybackMode.InBackground)
+})
+let scenery: Sprite = null
+let globe: Sprite = null
+scene.setBackgroundColor(7)
+globe = sprites.create(snow_imgs.globe1, SpriteKind.Player)
+globe.z = 1000
+scenery = sprites.create(snow_imgs.snow_being, SpriteKind.Player)
+scenery.top = 5
+snow.bigShortBlizzard(scenery)
+let anim = sprites.create(snow_imgs.squirrel, SpriteKind.Player)
+anim.bottom = 65
+animation.runImageAnimation(
+anim,
+snow_imgs.running_squirrel,
+200,
+true
+)
+thisSprite.startEffect(effects.blizzard, 2000)
+music.setVolume(30)
+
+game.setDialogTextColor(1)
+game.setDialogFrame(snow_imgs.snowBox)
+anim.setPosition(80, 60)
+</code></pre>
+<pre><code class="lang-customts">
+game.setDialogTextColor(1)
+game.setDialogFrame(snow_imgs.snow_box)
+
+
+/**
+* An extension for snowglobe making
+*/
+//% color=#c292d2 icon=&quot;\uf2dc&quot;
+namespace snow {
+
+
+    //% blockId=short_blizz
+    //% block=&quot;add blizzard to $thisSprite&quot;
+    //% thisSprite.defl=&quot;scenery&quot;
+    //% thisSprite.shadow=&quot;variables_get&quot;
+    //% help=github:docs/short_blizz
+    export function bigShortBlizzard(thisSprite: Sprite) {
+        music.stopAllSounds()
+
+        thisSprite.startEffect(effects.blizzard, 2000)
+        thisSprite.startEffect(effects.blizzard, 2000)
+        thisSprite.startEffect(effects.blizzard, 2000)
+        thisSprite.startEffect(effects.blizzard, 2000)
+    }
+
+}
+
+
+namespace sprites{
+    /**
+    * Bundle together code blocks
+    */
+    //% block=&quot;add globe&quot;  weight=300
+    //% handlerStatement=1
+    export function wrap1(handler: () =&gt; void) {
+        handler();
+    }
+
+    /**
+    * Bundle together code blocks
+    */
+    //% block=&quot;add scenery&quot;  weight=200
+    //% handlerStatement=1
+    export function wrap2(handler: () =&gt; void) {
+        handler();
+    }
+
+
+    /**
+    * Bundle together code blocks
+    */
+    //% block=&quot;add animation&quot;  weight=100
+    //% handlerStatement=1
+    export function wrap3(handler: () =&gt; void) {
+        handler();
+    }
+}
+
+</code></pre>
+<pre><code class="lang-simtheme">{
+    &quot;palette&quot;: [
+       &quot;#000000&quot;,
+        &quot;#FFFFFF&quot;,
+        &quot;#A3006E&quot;,
+        &quot;#FF93C4&quot;,
+        &quot;#2278A1&quot;,
+        &quot;#99D8FD&quot;,
+        &quot;#249CA3&quot;,
+        &quot;#00AAD0&quot;,
+        &quot;#003FAD&quot;,
+        &quot;#87F2FF&quot;,
+        &quot;#8E2EC4&quot;,
+        &quot;#A4839F&quot;,
+        &quot;#5C406c&quot;,
+        &quot;#E5CDC4&quot;,
+        &quot;#91463d&quot;,
+        &quot;#000000&quot;
+    ]
+}</code></pre>
+<pre><code class="lang-assetjson">{
+  &quot;README.md&quot;: &quot;&quot;,
+  &quot;assets.json&quot;: &quot;&quot;,
+  &quot;images.g.jres&quot;: &quot;{\n    \&quot;image9\&quot;: {\n        \&quot;data\&quot;: \&quot;hwQwADAAAABxEXERERERERERERERERERERERERERmZkRcRF3d3d3d3d3d3d3d3d3d3d3d3d3d5cXF3d3d3d3d3d3d3d3d3d3d3d3d3d3d5cRcXF3d3d3d3d3d3d3d3d3d3d3d3d3d5dxcRd3d3d3d3d3d3d3d3d3d3d3d3d3d5dxd3d3d3d3d3d3d3d3d3d3d3d3d3d3d5dxd3d3d3d3d3d3d3d3d3d3d3d3d3d3d5cRd3d3d3d3d3d3d3d3d3d3d3d3d3d3d5cRd3d3d3d3d3d3d3d3d3d3d3d3d3d3d5cXcXF3d3d3d3d3d3d3d3d3d3d3d3d3d5cXcXF3d3d3d3d3d3d3d3d3d3d3d3d3d5dxERd3d3d3d3d3d3d3d3d3d3d3d3d3d5cRd3d3d3d3d3d3d3d3d3d3d3d3d3d3d5cRF3d3d3d3d3d3d3d3d3d3d3d3d3d3d5dxcRF3d3d3d3d3d3d3d3d3d3d3d3d3d5cXd3F3d3d3d3d3d3d3d3d3d3d3d3d3d5cXcXF3d3d3d3d3d3d3d3d3d3d3d3d3d5cRcXd3d3d3d3d3d3d3d3d3d3d3d3d3d5cRd3d3d3d3d3d3d3d3d3d3d3d3d3d3d5cRd3d3d3d3d3d3d3d3d3d3d3d3d3d3d5dxd3d3d3d3d3d3d3d3d3d3d3d3d3d3d5dxd3d3d3d3d3d3d3d3d3d3d3d3d3d3d5dxdxd3d3d3d3d3d3d3d3d3d3d3d3d3d5cXcXF3d3d3d3d3d3d3d3d3d3d3d3d3d5dxFxd3d3d3d3d3d3d3d3d3d3d3d3d3d5dxcXd3d3d3d3d3d3d3d3d3d3d3d3d3d5cRF3d3d3d3d3d3d3d3d3d3d3d3d3d3d5dxd3F3d3d3d3d3d3d3d3d3d3d3d3d3d5cXFxd3d3d3d3d3d3d3d3d3d3d3d3d3d5cRd3d3d3d3d3d3d3d3d3d3d3d3d3d3d5cRd3d3d3d3d3d3d3d3d3d3d3d3d3d3d5cRd3d3d3d3d3d3d3d3d3d3d3d3d3d3d5cRcXd3d3d3d3d3d3d3d3d3d3d3d3d3d5d3cXd3d3d3d3d3d3d3d3d3d3d3d3d3d5cXdxd3d3d3d3d3d3d3d3d3d3d3d3d3d5dxdxF3d3d3d3d3d3d3d3d3d3d3d3d3d5cRF3d3d3d3d3d3d3d3d3d3d3d3d3d3d5dxcXd3d3d3d3d3d3d3d3d3d3d3d3d3d5cRF3dxd3d3d3d3d3d3d3d3d3d3d3d3d5dxcRF3d3d3d3d3d3d3d3d3d3d3d3d3d5cXd3d3d3d3d3d3d3d3d3d3d3d3d3d3d5cRd3d3d3d3d3d3d3d3d3d3d3d3d3d3d5cRd3d3d3d3d3d3d3d3d3d3d3d3d3d3d5dxcRd3d3d3d3d3d3d3d3d3d3d3d3d3d5cRcXF3d3d3d3d3d3d3d3d3d3d3d3d3d5cXF3d3d3d3d3d3d3d3d3d3d3d3d3d3d5cRcRF3d3d3d3d3d3d3d3d3d3d3d3d3d5dxEXERERERERERERERERERERERERGZmZk=\&quot;,\n        \&quot;mimeType\&quot;: \&quot;image/x-mkcd-f4\&quot;,\n        \&quot;displayName\&quot;: \&quot;snow_box\&quot;,\n        \&quot;tags\&quot;: [\n            \&quot;snow\&quot;\n        ]\n    },\n    \&quot;anim3\&quot;: {\n        \&quot;namespace\&quot;: \&quot;myAnimations\&quot;,\n        \&quot;id\&quot;: \&quot;anim3\&quot;,\n        \&quot;mimeType\&quot;: \&quot;application/mkcd-animation\&quot;,\n        \&quot;data\&quot;: \&quot;MmMwMTNmMDAzZTAwMDIwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDBkMDBkMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMGQwMmQwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwZDAwZDIyMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDBkMjAwMjAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwZDAwZDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDYwZGQwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwOTAwNjBkMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDk5MDAwZDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMGQwMjIwMjAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwZDIyMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwZDBkZGRkMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMGQwZGRkZDZkMDYwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMGRkZGQwMjAwMDA2MDA5MDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwZGQwMDIwMDIwMDAwOTkwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwZDBkZDAwMDAyMjAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDZkMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwOTAwNjAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDk5MDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwZDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMGRkMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDBkMGRkZGRkZGRkZGQwZDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMjAwMDAwNjAwZGRkZDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDIyMDAwMDYwMDkwMDAwZGQwZDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMjAwMjAwMDA5OTAwMDAwMGQyZGRkZDBkMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMjAwMjAwZDBkZDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDIyMDAwMDAwZDYwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDA2OTBkMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDkwZDkwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDBkMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwZGRkZGQ2ZGRkZGRkZGRkZGRkMGQwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMGRkZGRkZDAwNjAwOTAwMDAwMDAyMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMGQwZGQwMjAwMDAwMDk5MDAwMDAwMjIwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMGQwZGQwZDIwMDIwMDAwMDAwMDAwMDAyMDAyMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMGQwZGQwZDAwMDAyMjAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwZGQwZDYwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwZDAwZDAwOTAwNjAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDBkMDBkMDAwMDk5MDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMGQwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAyMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDIwZDIwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAyMmRkMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDBkZDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwZGQwZDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMGQwZDZkZGRkZGQyZGRkZGRkZGRkZGRkZGRkZGQwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDA2OTAwMDAwMDAwMjIwMDAwMDA2MDAwMDAwMGQwZDJkZGRkZGQwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDkwMDkwMDAwMDAyMDAyMDAwMDAwOTYwMDAwMDAyMjAwMDA2MGRkZGRkZDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDA5MDA5MDAwMDIwMDIwMDAwOTYwMDAwZGQwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDA5MDA5MDAwMDBkMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwZDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAyMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMjIwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwZDAyZDAyMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDBkMGRkZDZkZDBkMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwZDBkZGRkZGRkZGRkMGQ2OTAwMDAwMDAwMDAwMDAwMDAwMDAwMDBkZGRkMDAwMDAwMDBkZGRkZGQyZGRkZGRkZDBkMDAwMDAyMDAwMDkwMDkwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDJkZGRkZGRkNmRkMDAwMDIwMDIwMDAwMDAwNjAwMjAwMjAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAyMDAyMDAwMDYwMDkwMDAwMDAyMjAwMDAwMDY5MDAwMDIyMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMjIwMDAwMDA5OTAwMDAwMDAwMDAwMDAwOTAwOTAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDBkMDBkMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMGQwMmQwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwZDAwZDMyMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDBkMzAwMzAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwZDAwZDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDYwZGQwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwNjAwNjBkMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDY2MDAwZDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMGQwMjIwMzAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwZDMzMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwZDBkZGRkMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMGQwZGRkZDZkMDYwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMGRkZGQwMjAwMDA2MDA2MDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwZGQwMDIwMDMwMDAwNjYwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwZDBkZDAwMDAzMzAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDZkMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwNjAwNjAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDY2MDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwZDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMGRkMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDBkMGRkZGRkZGRkZGQwZDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMjAwMDAwNjAwZGRkZDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDIzMDAwMDYwMDYwMDAwZGQwZDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMzAwMzAwMDA2NjAwMDAwMGQyZGRkZDBkMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMjAwMzAwZDBkZDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDMzMDAwMDAwZDYwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDA2NjBkMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDYwZDYwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDBkMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwZGRkZGQ2ZGRkZGRkZGRkZGRkMGQwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMGRkZGRkZDAwNjAwNjAwMDAwMDAyMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMGQwZGQwMjAwMDAwMDY2MDAwMDAwMjMwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMGQwZGQwZDIwMDMwMDAwMDAwMDAwMDAzMDAzMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMGQwZGQwZDAwMDAzMzAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwZGQwZDYwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwZDAwZDAwNjAwNjAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDBkMDBkMDAwMDY2MDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMGQwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAyMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDMwZDIwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAzM2RkMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDBkZDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwZGQwZDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMGQwZDZkZGRkZGQyZGRkZGRkZGRkZGRkZGRkZGQwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDA2NjAwMDAwMDAwMzIwMDAwMDA2MDAwMDAwMGQwZDJkZGRkZGQwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDYwMDYwMDAwMDAzMDAzMDAwMDAwNjYwMDAwMDAyMzAwMDA2MGRkZGRkZDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDA2MDA2MDAwMDMwMDMwMDAwNjYwMDAwZGQwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDA2MDA2MDAwMDBkMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwZDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAyMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMjMwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwZDAzZDAzMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDBkMGRkZDZkZDBkMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwZDBkZGRkZGRkZGRkMGQ2NjAwMDAwMDAwMDAwMDAwMDAwMDAwMDBkZGRkMDAwMDAwMDBkZGRkZGQyZGRkZGRkZDBkMDAwMDAyMDAwMDYwMDYwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDJkZGRkZGRkNmRkMDAwMDMwMDIwMDAwMDAwNjAwMjAwMzAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAyMDAzMDAwMDYwMDYwMDAwMDAzMzAwMDAwMDY2MDAwMDMzMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMzMwMDAwMDA2NjAwMDAwMDAwMDAwMDAwNjAwNjAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMA==\&quot;,\n        \&quot;displayName\&quot;: \&quot;blinking_lights\&quot;,\n        \&quot;tags\&quot;: [\n            \&quot;snow\&quot;\n        ]\n    },\n    \&quot;song1\&quot;: {\n        \&quot;data\&quot;: \&quot;0078000408040301001c000f05001202c102c201000405002800000064002800030500060000049c0000000200012904000600012908000e00012910001200012914001600012918001a00012920002200012924002600012c28002a0001252e003000012730003200012940004200012a44004600012a48004a00012a4e005000012a50005200012a54005600012958005a0001295c005e0001295e006000012962006400012964006600012768006a0001276c006e00012970007200012778007a00012c03001c0001dc00690000045e01000400000000000000000000050500010000039c0000000200012904000600012908000e00012910001200012914001600012918001e00012920002200012924002600012c28002c0001252e003000012730003e00012940004200012a44004600012a48004c00012a4e005000012a50005200012a54005600012958005a0001295c005e0001295e006000012962006400012964006600012768006a0001276c006e00012970007600012778007e00012c09010e02026400000403780000040a000301000000640001c80000040100000000640001640000040100000000fa0004af00000401c80000040a00019600000414000501006400140005010000002c0104dc00000401fa0000040a0001c8000004140005d0076400140005d0070000c800029001f40105c201f4010a0005900114001400039001000005c201f4010500058403050032000584030000fa00049001000005c201f4010500058403c80032000584030500640005840300009001049001000005c201f4010500058403c80064000584030500c8000584030000f40105ac0d000404a00f00000a0004ac0d2003010004a00f0000280004ac0d9001010004a00f0000280002d00700040408070f0064000408070000c80003c800c8000e7d00c80019000e64000f0032000e78000000fa00032c01c8000ee100c80019000ec8000f0032000edc000000fa0003f401c8000ea901c80019000e90010f0032000ea4010000fa0001c8000004014b000000c800012c01000401c8000000c8000190010004012c010000c80002c800000404c8000f0064000496000000c80002c2010004045e010f006400042c010000640002c409000404c4096400960004f6090000f40102b80b000404b80b64002c0104f40b0000f401022003000004200300040a000420030000ea01029001000004900100040a000490010000900102d007000410d0076400960010d0070000c8006000000001000106080009000106100011000106180019000106200021000106280029000106300031000106380039000106400041000106480049000106500051000106580059000106600061000106680069000106700071000106780079000106\&quot;,\n        \&quot;mimeType\&quot;: \&quot;application/mkcd-song\&quot;,\n        \&quot;displayName\&quot;: \&quot;jingle_bells\&quot;,\n        \&quot;namespace\&quot;: \&quot;mySongs.\&quot;\n    },\n    \&quot;song2\&quot;: {\n        \&quot;data\&quot;: \&quot;005a000408080300001c00010a006400f4016400000400000000000000000000000000050000046c0008000a0001120c000e00011910001200010d14001600011918001a0001121c001e00011920002400010d28002a0001192c002e00011430003200011934003600010d38003a0001193c003e0001144000440001194a005400011458006000011466007200011176007e00011105001c000f0a006400f4010a0000040000000000000000000000000000000002e1000000040002252904000600022529080010000225291200160002252916001800012918001c000222251c0020000225292400280002252928002a000225292c00340002252936003a000225293a003c000225293c004000022427400044000225294a004e000225294e00500002292c5200540002292c5600580002292c5a00620002272a66006a0002272a6c006e000225297000720002252974007600022529780080000225278400880002222588008a000222258c0090000222259000920002222594009800012098009a0001209c00a0000120a000a2000120a400b000011d07001c00020a006400f401640000040000000000000000000000000000000003c60000000200012c04000600012c08001000012c12001400012c16001800012c18001a0001291c002000012c24002600012c28002a00012c2c003400012c36003800012c3a003c00012c3c003e00012940004400012c4a004c0001294e00500001255200540001255600580001255a00620001246600680001246c006e00012270007200012274007600012278008000012084008600012988008a0001298c008e00012990009200012994009600012798009a0001279c009e000127a000a2000127a400b0000125\&quot;,\n        \&quot;mimeType\&quot;: \&quot;application/mkcd-song\&quot;,\n        \&quot;displayName\&quot;: \&quot;winter_wonderland\&quot;,\n        \&quot;namespace\&quot;: \&quot;mySongs.\&quot;\n    },\n    \&quot;*\&quot;: {\n        \&quot;mimeType\&quot;: \&quot;image/x-mkcd-f4\&quot;,\n        \&quot;dataEncoding\&quot;: \&quot;base64\&quot;,\n        \&quot;namespace\&quot;: \&quot;myImages\&quot;\n    }\n}&quot;,
+  &quot;images.g.ts&quot;: &quot;// Auto-generated code. Do not edit.\nnamespace myImages {\n\n    helpers._registerFactory(\&quot;image\&quot;, function(name: string) {\n        switch(helpers.stringTrim(name)) {\n            case \&quot;image9\&quot;:\n            case \&quot;snow_box\&quot;:return img`\n117111111771111771111117111171111771111171111711\n711177711117117111117771771711111717171711171117\n117117777111771711777771717777771177717177711711\n171777777771717777777777171717777777171777777171\n117177777117771117777771777177777771777177771711\n717717777771771777777717177717777711777177717717\n177777777777777777777777777777777777771777777771\n177777777777777777777777777777777777777777777771\n177777777777777777777777777777777777777777777771\n177777777777777777777777777777777777777777777771\n177777777777777777777777777777777777777777777771\n177777777777777777777777777777777777777777777771\n177777777777777777777777777777777777777777777771\n177777777777777777777777777777777777777777777771\n177777777777777777777777777777777777777777777771\n177777777777777777777777777777777777777777777771\n177777777777777777777777777777777777777777777771\n177777777777777777777777777777777777777777777771\n177777777777777777777777777777777777777777777771\n177777777777777777777777777777777777777777777771\n177777777777777777777777777777777777777777777771\n177777777777777777777777777777777777777777777771\n177777777777777777777777777777777777777777777771\n177777777777777777777777777777777777777777777771\n177777777777777777777777777777777777777777777771\n177777777777777777777777777777777777777777777771\n177777777777777777777777777777777777777777777771\n177777777777777777777777777777777777777777777771\n177777777777777777777777777777777777777777777771\n177777777777777777777777777777777777777777777771\n177777777777777777777777777777777777777777777771\n177777777777777777777777777777777777777777777771\n177777777777777777777777777777777777777777777771\n177777777777777777777777777777777777777777777771\n177777777777777777777777777777777777777777777771\n177777777777777777777777777777777777777777777771\n177777777777777777777777777777777777777777777771\n177777777777777777777777777777777777777777777771\n177777777777777777777777777777777777777777777771\n177777777777777777777777777777777777777777777771\n177777777777777777777777777777777777777777777771\n177777777777777777777777777777777777777777777771\n177777777777777777777777777777777777777777777779\n177777777777777777777777777777777777777777777779\n977777777777777777777777777777777777777777777779\n977777777777777777777777777777777777777777777779\n977777777777777777777777777777777777777777777779\n999999999999999999999999999999999999999999999999\n`;\n        }\n        return null;\n    })\n\n    helpers._registerFactory(\&quot;animation\&quot;, function(name: string) {\n        switch(helpers.stringTrim(name)) {\n            case \&quot;blinking_lights\&quot;:\n            case \&quot;anim3\&quot;:return [img`\n...............................................................\n...............................................................\n...............................................................\n................................dd.............................\n...............................dd2.............................\n..............................dd.22............................\n..............................d..22............................\n..............................dd...............................\n...............................6dd.............................\n..............................96.d.............................\n..............................99..d............................\n..................................d222.........................\n..................................d.22.........................\n..............................ddddd............................\n.........................dddddd66..............................\n.....................dddd2......69.............................\n....................dd...22.....99.............................\n..................ddd....22....................................\n..................d6...........................................\n..................96...........................................\n..................99...........................................\n..................d............................................\n..................dd...........................................\n....................dddddddddddd...............................\n......................2.....6...dddd...........................\n.....................22.....69.....ddd.........................\n.....................22.....99......2dddddd....................\n....................................22....ddd..................\n....................................22......6d.................\n...........................................96d.................\n...........................................99d.................\n............................................d..................\n..........................dddd6dddddddddddddd..................\n.....................dddddd...69.......2.......................\n...................ddd2.......99......22.......................\n................dddd..22..............22.......................\n.............dddd.....22.......................................\n...........ddd..6..............................................\n.........dd....96..............................................\n........dd.....99..............................................\n........d......................................................\n........2......................................................\n.......22d.....................................................\n.......22dd....................................................\n..........dd...................................................\n...........ddd.................................................\n.............d6dddddddd2dddddddddddddddd.......................\n.............96........22.......6.......d2ddddddd..............\n.............99........22.......69......22.....6dddddd.........\n................................99......22.....69....dd........\n...............................................99.....d........\n......................................................d........\n......................................................2........\n.....................................................22........\n...................................................dd22........\n............................................ddd6dddd...........\n.................................dddddddddddd.96...............\n.......dddd........ddddddd2ddddddd.....2......99...............\n........2.dddddd6ddd.....22.......6....22......................\n........22......69.......22......96....22......................\n........22......99...............99............................\n...............................................................\n`, img`\n...............................................................\n...............................................................\n...............................................................\n................................dd.............................\n...............................dd2.............................\n..............................dd.23............................\n..............................d..33............................\n..............................dd...............................\n...............................6dd.............................\n..............................66.d.............................\n..............................66..d............................\n..................................d223.........................\n..................................d.33.........................\n..............................ddddd............................\n.........................dddddd66..............................\n.....................dddd2......66.............................\n....................dd...23.....66.............................\n..................ddd....33....................................\n..................d6...........................................\n..................66...........................................\n..................66...........................................\n..................d............................................\n..................dd...........................................\n....................dddddddddddd...............................\n......................2.....6...dddd...........................\n.....................32.....66.....ddd.........................\n.....................33.....66......2dddddd....................\n....................................23....ddd..................\n....................................33......6d.................\n...........................................66d.................\n...........................................66d.................\n............................................d..................\n..........................dddd6dddddddddddddd..................\n.....................dddddd...66.......2.......................\n...................ddd2.......66......32.......................\n................dddd..23..............33.......................\n.............dddd.....33.......................................\n...........ddd..6..............................................\n.........dd....66..............................................\n........dd.....66..............................................\n........d......................................................\n........2......................................................\n.......32d.....................................................\n.......33dd....................................................\n..........dd...................................................\n...........ddd.................................................\n.............d6dddddddd2dddddddddddddddd.......................\n.............66........23.......6.......d2ddddddd..............\n.............66........33.......66......32.....6dddddd.........\n................................66......33.....66....dd........\n...............................................66.....d........\n......................................................d........\n......................................................2........\n.....................................................32........\n...................................................dd33........\n............................................ddd6dddd...........\n.................................dddddddddddd.66...............\n.......dddd........ddddddd2ddddddd.....2......66...............\n........2.dddddd6ddd.....32.......6....23......................\n........23......66.......33......66....33......................\n........33......66...............66............................\n...............................................................\n`];\n        }\n        return null;\n    })\n\n    helpers._registerFactory(\&quot;song\&quot;, function(name: string) {\n        switch(helpers.stringTrim(name)) {\n            case \&quot;song1\&quot;:\n            case \&quot;jingle_bells\&quot;:return hex`0078000408040301001c000f05001202c102c201000405002800000064002800030500060000049c0000000200012904000600012908000e00012910001200012914001600012918001a00012920002200012924002600012c28002a0001252e003000012730003200012940004200012a44004600012a48004a00012a4e005000012a50005200012a54005600012958005a0001295c005e0001295e006000012962006400012964006600012768006a0001276c006e00012970007200012778007a00012c03001c0001dc00690000045e01000400000000000000000000050500010000039c0000000200012904000600012908000e00012910001200012914001600012918001e00012920002200012924002600012c28002c0001252e003000012730003e00012940004200012a44004600012a48004c00012a4e005000012a50005200012a54005600012958005a0001295c005e0001295e006000012962006400012964006600012768006a0001276c006e00012970007600012778007e00012c09010e02026400000403780000040a000301000000640001c80000040100000000640001640000040100000000fa0004af00000401c80000040a00019600000414000501006400140005010000002c0104dc00000401fa0000040a0001c8000004140005d0076400140005d0070000c800029001f40105c201f4010a0005900114001400039001000005c201f4010500058403050032000584030000fa00049001000005c201f4010500058403c80032000584030500640005840300009001049001000005c201f4010500058403c80064000584030500c8000584030000f40105ac0d000404a00f00000a0004ac0d2003010004a00f0000280004ac0d9001010004a00f0000280002d00700040408070f0064000408070000c80003c800c8000e7d00c80019000e64000f0032000e78000000fa00032c01c8000ee100c80019000ec8000f0032000edc000000fa0003f401c8000ea901c80019000e90010f0032000ea4010000fa0001c8000004014b000000c800012c01000401c8000000c8000190010004012c010000c80002c800000404c8000f0064000496000000c80002c2010004045e010f006400042c010000640002c409000404c4096400960004f6090000f40102b80b000404b80b64002c0104f40b0000f401022003000004200300040a000420030000ea01029001000004900100040a000490010000900102d007000410d0076400960010d0070000c8006000000001000106080009000106100011000106180019000106200021000106280029000106300031000106380039000106400041000106480049000106500051000106580059000106600061000106680069000106700071000106780079000106`;\n            case \&quot;song2\&quot;:\n            case \&quot;winter_wonderland\&quot;:return hex`005a000408080300001c00010a006400f4016400000400000000000000000000000000050000046c0008000a0001120c000e00011910001200010d14001600011918001a0001121c001e00011920002400010d28002a0001192c002e00011430003200011934003600010d38003a0001193c003e0001144000440001194a005400011458006000011466007200011176007e00011105001c000f0a006400f4010a0000040000000000000000000000000000000002e1000000040002252904000600022529080010000225291200160002252916001800012918001c000222251c0020000225292400280002252928002a000225292c00340002252936003a000225293a003c000225293c004000022427400044000225294a004e000225294e00500002292c5200540002292c5600580002292c5a00620002272a66006a0002272a6c006e000225297000720002252974007600022529780080000225278400880002222588008a000222258c0090000222259000920002222594009800012098009a0001209c00a0000120a000a2000120a400b000011d07001c00020a006400f401640000040000000000000000000000000000000003c60000000200012c04000600012c08001000012c12001400012c16001800012c18001a0001291c002000012c24002600012c28002a00012c2c003400012c36003800012c3a003c00012c3c003e00012940004400012c4a004c0001294e00500001255200540001255600580001255a00620001246600680001246c006e00012270007200012274007600012278008000012084008600012988008a0001298c008e00012990009200012994009600012798009a0001279c009e000127a000a2000127a400b0000125`;\n        }\n        return null;\n    })\n\n}\n// Auto-generated code. Do not edit.\n&quot;,
+  &quot;main.blocks&quot;: &quot;&lt;xml xmlns=\&quot;https://developers.google.com/blockly/xml\&quot;&gt;&lt;/xml&gt;&quot;,
+  &quot;main.ts&quot;: &quot;\n&quot;,
+  &quot;pxt.json&quot;: &quot;{\n    \&quot;name\&quot;: \&quot;snow_imgs_json\&quot;,\n    \&quot;version\&quot;: \&quot;0.0.2\&quot;,\n    \&quot;description\&quot;: \&quot;\&quot;,\n    \&quot;dependencies\&quot;: {\n        \&quot;device\&quot;: \&quot;*\&quot;\n    },\n    \&quot;files\&quot;: [\n        \&quot;main.blocks\&quot;,\n        \&quot;main.ts\&quot;,\n        \&quot;README.md\&quot;,\n        \&quot;assets.json\&quot;,\n        \&quot;images.g.jres\&quot;,\n        \&quot;images.g.ts\&quot;,\n        \&quot;tilemap.g.jres\&quot;,\n        \&quot;tilemap.g.ts\&quot;\n    ],\n    \&quot;testFiles\&quot;: [\n        \&quot;test.ts\&quot;\n    ],\n    \&quot;targetVersions\&quot;: {\n        \&quot;branch\&quot;: \&quot;v1.12.46\&quot;,\n        \&quot;tag\&quot;: \&quot;v1.12.46\&quot;,\n        \&quot;commits\&quot;: \&quot;https://github.com/microsoft/pxt-arcade/commits/e66fb08db35df2249cd64300195259c64d497106\&quot;,\n        \&quot;target\&quot;: \&quot;1.12.46\&quot;,\n        \&quot;pxt\&quot;: \&quot;8.5.57\&quot;,\n        \&quot;targetId\&quot;: \&quot;arcade\&quot;\n    },\n    \&quot;supportedTargets\&quot;: [\n        \&quot;arcade\&quot;\n    ],\n    \&quot;preferredEditor\&quot;: \&quot;tsprj\&quot;,\n    \&quot;palette\&quot;: [\n        \&quot;#000000\&quot;,\n        \&quot;#FFFFFF\&quot;,\n        \&quot;#A3006E\&quot;,\n        \&quot;#FF93C4\&quot;,\n        \&quot;#2278A1\&quot;,\n        \&quot;#99D8FD\&quot;,\n        \&quot;#249CA3\&quot;,\n        \&quot;#00AAD0\&quot;,\n        \&quot;#003FAD\&quot;,\n        \&quot;#87F2FF\&quot;,\n        \&quot;#8E2EC4\&quot;,\n        \&quot;#A4839F\&quot;,\n        \&quot;#5C406c\&quot;,\n        \&quot;#E5CDC4\&quot;,\n        \&quot;#91463d\&quot;,\n        \&quot;#000000\&quot;\n    ],\n    \&quot;assetPack\&quot;: true\n}\n&quot;,
+  &quot;test.ts&quot;: &quot;// tests go here; this will not be compiled when this package is used as an extension.\n&quot;,
+  &quot;tilemap.g.jres&quot;: &quot;{\n    \&quot;transparency17\&quot;: {\n        \&quot;data\&quot;: \&quot;hwQQABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==\&quot;,\n        \&quot;mimeType\&quot;: \&quot;image/x-mkcd-f4\&quot;,\n        \&quot;tilemapTile\&quot;: true\n    },\n    \&quot;*\&quot;: {\n        \&quot;mimeType\&quot;: \&quot;image/x-mkcd-f4\&quot;,\n        \&quot;dataEncoding\&quot;: \&quot;base64\&quot;,\n        \&quot;namespace\&quot;: \&quot;myTiles\&quot;\n    }\n}&quot;,
+  &quot;tilemap.g.ts&quot;: &quot;// Auto-generated code. Do not edit.\nnamespace myTiles {\n    //% fixedInstance jres blockIdentity=images._tile\n    export const transparency17 = image.ofBuffer(hex``);\n\n    helpers._registerFactory(\&quot;tile\&quot;, function(name: string) {\n        switch(helpers.stringTrim(name)) {\n            case \&quot;transparency17\&quot;:return transparency17;\n        }\n        return null;\n    })\n\n}\n// Auto-generated code. Do not edit.\n&quot;
+}</code></pre>
+
+        </div>
+    </div>
+
+    </div>
+
+					<div class="hideprint"></div>
+				</div>
+
+			</div>
+
+			
+<!-- include footer.html -->
+<footer class="ui vertical footer segment hideprint docs inverted" aria-hidden="false">
+    <div class="ui center aligned container">
+        <div class="ui horizontal link list">
+            <a
+                class="item"
+                href="https://twitter.com/intent/follow?screen_name=MsMakeCode"
+                title="Follow us on Twitter"
+                target="_blank"
+                rel="noopener">
+                <i class="huge icon twitter"></i>
+            </a>
+            <a class="item" href="https://www.youtube.com/channel/UCye7YlvFUUQ1dSy0WZZ1T_Q" title="Subscribe to our YouTube channel"
+                target="_blank" rel="noopened">
+                <i class="huge icon youtube"></i>
+            </a>
+            <a class="item" href="mailto:makecode@microsoft.com" title="Send us an Email"
+                target="_blank" rel="noopened">
+                <i class="huge icon mail"></i>
+            </a>
+        </div>
+        <div class="ui section divider"></div>
+        <div class="ui container horizontal small divided link list">
+            <a id="langpicker" tabindex="0" class="ui item" rel="noopener">
+                <i class="icon xicon globe" aria-hidden="true" role="presentation"></i>Language
+            </a>
+            <a class="item" href="https://makecode.com/privacy" target="_blank" rel="noopener">Privacy &amp; Cookies</a>
+            <a class="item" href="https://makecode.com/termsofuse" target="_blank" rel="noopener">Terms Of Use</a>
+            <a class="item" href="https://makecode.com/trademarks" target="_blank" rel="noopener">Trademarks</a>
+            <span class="item">© 2022 Microsoft</span>
+        </div>
+        <div class="ui container horizontal small link list poweredBy">
+            <span class="item">Powered by</span>
+            <a class="middle aligned" href="https://makecode.com/" title="Microsoft MakeCode"
+                target="_blank" rel="noopener">
+                <img width="100" src="/static/logo/Microsoft-logo_rgb_c-gray.png" alt="Microsoft">
+            </a>
+        </div>
+    </div>
+</footer>
+
+<!-- end include footer.html -->
+
+
+		</div>
+
+	</div>
+
+    
+<!-- include langpicker.html -->
+<div id="langmodal" class="ui modal docs" role="dialog" aria-modal="true" aria-describedby="langmodalheader" tabindex="-1">
+    <h2 id="langmodalheader" class="header">Select Language</h2>
+    <div role="button" class="closeIcon" tabindex="0" aria-label="Close">
+        <i class="icon close remove circle" aria-hidden="true"></i>
+    </div>
+
+	<div class="content">
+	    <div class="group">
+            <div id="availablelocales" class="ui cards centered" role="listbox" aria-label="List of available locales"></div>
+        </div>
+        <div class="ui" id="langmodalfooter">
+            <a class="ui" href="/pxt-arcade-app/docs/translate.html" target="_blank" rel="noopener noreferrer">
+                How do I add a new language?
+            </a>
+
+            <a id="translatebtn" class="ui button" role="button" tabindex="0">
+                Translate this page
+            </a>
+        </div>
+    </div>
+</div>
+
+
+<!-- end include langpicker.html -->
+
+	
+<!-- include macros.html -->
+<!-- macro button -->
+
+<!-- macro vimeo -->
+
+<!-- macro youtube -->
+
+<!-- macro section -->
+
+<!-- macro hide -->
+
+<!-- macro avatar -->
+
+<!-- macro hint -->
+
+<!-- macro codecard -->
+
+<!-- macro tutorialhint -->
+
+<!-- macro reminder -->
+
+<!-- macro alert -->
+
+<!-- macro tip -->
+
+<!-- wrapped around ordinary content -->
+<!-- macro main-container -->
+
+<!-- used for 'column' box - they are collected and wrapped in 'column-container' -->
+<!-- macro column -->
+<!-- macro column-container -->
+
+
+<!-- Menu on the top of the page -->
+<!-- macro item -->
+
+<!-- macro divider -->
+
+<!-- TOC in the sidebar -->
+<!-- macro item -->
+
+<!-- macro divider -->
+
+<!-- macro toc-dropdown -->
+
+<!-- macro toc-dropdown-noLink -->
+
+<!-- macro toc-dropdown-noHeading -->
+
+<!-- TODO: duplicates of above for compatability with docsrender.ts;
+    remove with pxtlib/docsrender.ts TOC TODOs after cloud bump. -->
+<!-- macro top-dropdown -->
+
+<!-- macro top-dropdown-noHeading -->
+
+<!-- macro inner-dropdown -->
+
+<!-- macro nested-dropdown -->
+<!-- end include macros.html -->
+
+	
+<!-- include tracking.html -->
+<script type="text/javascript" src="/pxt-arcade-app/pxtweb.js"></script>
+<script type="text/javascript">
+    window.loadAppInsights = function (includeCookie) {
+        //Backend will patch / + doccdn + / with CDN url and the check that URL ends with the sha would pass
+        var isProduction = includeCookie && (/[0-9a-f]{40}\/ai\.2\.min\.js$/.test("/pxt-arcade-app/ai.2.min.js"));
+        !function(T,l,y){var S=T.location,k="script",D="connectionString",C="ingestionendpoint",I="disableExceptionTracking",E="ai.device.",b="toLowerCase",w="crossOrigin",N="POST",e="appInsightsSDK",t=y.name||"appInsights";(y.name||T[e])&&(T[e]=t);var n=T[t]||function(d){var g=!1,f=!1,m={initialize:!0,queue:[],sv:"5",version:2,config:d};function v(e,t){var n={},a="Browser";return n[E+"id"]=a[b](),n[E+"type"]=a,n["ai.operation.name"]=S&&S.pathname||"_unknown_",n["ai.internal.sdkVersion"]="javascript:snippet_"+(m.sv||m.version),{time:function(){var e=new Date;function t(e){var t=""+e;return 1===t.length&&(t="0"+t),t}return e.getUTCFullYear()+"-"+t(1+e.getUTCMonth())+"-"+t(e.getUTCDate())+"T"+t(e.getUTCHours())+":"+t(e.getUTCMinutes())+":"+t(e.getUTCSeconds())+"."+((e.getUTCMilliseconds()/1e3).toFixed(3)+"").slice(2,5)+"Z"}(),iKey:e,name:"Microsoft.ApplicationInsights."+e.replace(/-/g,"")+"."+t,sampleRate:100,tags:n,data:{baseData:{ver:2}}}}var h=d.url||y.src;if(h){function a(e){var t,n,a,i,r,o,s,c,u,p,l;g=!0,m.queue=[],f||(f=!0,t=h,s=function(){var e={},t=d.connectionString;if(t)for(var n=t.split(";"),a=0;a<n.length;a++){var i=n[a].split("=");2===i.length&&(e[i[0][b]()]=i[1])}if(!e[C]){var r=e.endpointsuffix,o=r?e.location:null;e[C]="https://"+(o?o+".":"")+"dc."+(r||"services.visualstudio.com")}return e}(),c=s[D]||d[D]||"",u=s[C],p=u?u+"/v2/track":d.endpointUrl,(l=[]).push((n="SDK LOAD Failure: Failed to load Application Insights SDK script (See stack for details)",a=t,i=p,(o=(r=v(c,"Exception")).data).baseType="ExceptionData",o.baseData.exceptions=[{typeName:"SDKLoadFailed",message:n.replace(/\./g,"-"),hasFullStack:!1,stack:n+"\nSnippet failed to load ["+a+"] -- Telemetry is disabled\nHelp Link: https://go.microsoft.com/fwlink/?linkid=2128109\nHost: "+(S&&S.pathname||"_unknown_")+"\nEndpoint: "+i,parsedStack:[]}],r)),l.push(function(e,t,n,a){var i=v(c,"Message"),r=i.data;r.baseType="MessageData";var o=r.baseData;return o.message='AI (Internal): 99 message:"'+("SDK LOAD Failure: Failed to load Application Insights SDK script (See stack for details) ("+n+")").replace(/\"/g,"")+'"',o.properties={endpoint:a},i}(0,0,t,p)),function(e,t){if(JSON){var n=T.fetch;if(n&&!y.useXhr)n(t,{method:N,body:JSON.stringify(e),mode:"cors"});else if(XMLHttpRequest){var a=new XMLHttpRequest;a.open(N,t),a.setRequestHeader("Content-type","application/json"),a.send(JSON.stringify(e))}}}(l,p))}function i(e,t){f||setTimeout(function(){!t&&m.core||a()},500)}var e=function(){var n=l.createElement(k);n.src=h;var e=y[w];return!e&&""!==e||"undefined"==n[w]||(n[w]=e),n.onload=i,n.onerror=a,n.onreadystatechange=function(e,t){"loaded"!==n.readyState&&"complete"!==n.readyState||i(0,t)},n}();y.ld<0?l.getElementsByTagName("head")[0].appendChild(e):setTimeout(function(){l.getElementsByTagName(k)[0].parentNode.appendChild(e)},y.ld||0)}try{m.cookie=l.cookie}catch(p){}function t(e){for(;e.length;)!function(t){m[t]=function(){var e=arguments;g||m.queue.push(function(){m[t].apply(m,e)})}}(e.pop())}var n="track",r="TrackPage",o="TrackEvent";t([n+"Event",n+"PageView",n+"Exception",n+"Trace",n+"DependencyData",n+"Metric",n+"PageViewPerformance","start"+r,"stop"+r,"start"+o,"stop"+o,"addTelemetryInitializer","setAuthenticatedUserContext","clearAuthenticatedUserContext","flush"]),m.SeverityLevel={Verbose:0,Information:1,Warning:2,Error:3,Critical:4};var s=(d.extensionConfig||{}).ApplicationInsightsAnalytics||{};if(!0!==d[I]&&!0!==s[I]){var c="onerror";t(["_"+c]);var u=T[c];T[c]=function(e,t,n,a,i){var r=u&&u(e,t,n,a,i);return!0!==r&&m["_"+c]({message:e,url:t,lineNumber:n,columnNumber:a,error:i}),r},d.autoExceptionInstrumented=!0}return m}(y.cfg);function a(){y.onInit&&y.onInit(n)}(T[t]=n).queue&&0===n.queue.length?(n.queue.push(a),n.trackPageView({})):a()}(window,document,{
+            src: "https://js.monitor.azure.com/scripts/b/ai.2.min.js", // The SDK URL Source
+            onInit: function (sdk) {
+                sdk.addTelemetryInitializer(function (envelope) {
+                    // App Insights automatically sends a page view event on setup, but we send our own later with additional properties.
+                    // This stops the automatic event from firing, so we don't end up with duplicate page view events.
+                    if (envelope.baseType == "PageviewData" && !envelope.baseData.properties) {
+                        return false;
+                    }
+
+                    if (envelope.baseType == "PageviewPerformanceData") {
+                        var pageName = envelope.baseData.name;
+                        envelope.baseData.name = window.location.origin;
+                        if (!envelope.baseData.properties) {
+                            envelope.baseData.properties = {};
+                        }
+                        envelope.baseData.properties.pageName = pageName;
+                        var scrubbedUrl = scrubUrl(envelope.baseData.uri);
+                        envelope.baseData.uri = scrubbedUrl;
+                        var toUrl = new URL(scrubbedUrl);
+                        envelope.baseData.properties.pathName = toUrl ? toUrl.pathname : "";
+                        if (envelope.ext && envelope.ext.trace) {
+                            envelope.ext.trace.name = toUrl ? toUrl.pathname : "";
+                        }
+                    }
+
+                    var telemetryItem = envelope.baseData;
+                    telemetryItem.properties = telemetryItem.properties || {};
+                    telemetryItem.properties["cookie"] = isProduction;
+                    if (typeof pxtConfig === "undefined" || !pxtConfig || !pxtConfig.targetId) {
+                        telemetryItem.properties["target"] = "arcade";
+                        return true;
+                    }
+                    telemetryItem.properties["target"] = pxtConfig.targetId;
+                    telemetryItem.properties["stage"] = (pxtConfig.relprefix || "/--").replace(/[^a-z]/ig, '')
+                    if (typeof Windows !== "undefined")
+                        telemetryItem.properties["WindowsApp"] = 1;
+                    var userAgent = navigator.userAgent.toLowerCase();
+                    var electronRegexResult = /\belectron\/(\d+\.\d+\.\d+.*?)(?: |$)/i.exec(userAgent); // Example navigator.userAgent: "Mozilla/5.0 Chrome/61.0.3163.100 Electron/2.0.0 Safari/537.36"
+                    if (electronRegexResult) {
+                        telemetryItem.properties["Electron"] = 1;
+                        telemetryItem.properties["ElectronVersion"] = electronRegexResult[1];
+                    }
+                    if (typeof pxtElectron !== "undefined") {
+                        telemetryItem.properties["PxtElectron"] = 1;
+                        telemetryItem.properties["ElectronVersion"] = pxtElectron.versions.electronVersion;
+                        telemetryItem.properties["ChromiumVersion"] = pxtElectron.versions.chromiumVersion;
+                        telemetryItem.properties["NodeVersion"] = pxtElectron.versions.nodeVersion;
+                        telemetryItem.properties["PxtElectronVersion"] = pxtElectron.versions.pxtElectronVersion;
+                        telemetryItem.properties["PxtCoreVersion"] = pxtElectron.versions.pxtCoreVersion;
+                        telemetryItem.properties["PxtTargetVersion"] = pxtElectron.versions.pxtTargetVersion;
+                        telemetryItem.properties["PxtElectronIsProd"] = pxtElectron.versions.isProd;
+                    }
+                    // Kiosk UWP info is appended to the user agent by the makecode-dotnet-apps/arcade-kiosk UWP app
+                    var kioskUwpRegexResult = /\((MakeCode Arcade Kiosk UWP)\/([\S]+)\/([\S]+)\)/i.exec(userAgent); // Example navigator.userAgent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36 Edg/117.0.2045.60 (MakeCode Arcade Kiosk UWP/0.1.41.0/Windows.Xbox)"
+                    if (kioskUwpRegexResult) {
+                        telemetryItem.properties["KioskUwp"] = 1;
+                        telemetryItem.properties["KioskUwpVersion"] = kioskUwpRegexResult[2];
+                        telemetryItem.properties["KioskUwpPlatform"] = kioskUwpRegexResult[3];
+                    }
+                    return true;
+                });
+            },
+            cfg: {
+                instrumentationKey:"9801ed01-c40f-46ec-aa40-2a1742a9e71c",
+                disableAjaxTracking: true,
+                overridePageViewDuration: false,
+                disableExceptionTracking: true,
+                disableCorrelationHeaders: true,
+                disableCookiesUsage: !isProduction,
+                isStorageUseDisabled: !isProduction,
+                url: "/pxt-arcade-app/ai.2.min.js"
+            }
+        });
+        window.appInsights=appInsights;
+        var location = window.location.toString();
+        appInsights.trackPageView({
+            name: window.location.hostname,
+            uri: window.location.origin,
+            properties: {
+                url: scrubUrl(location),
+                urlReferrer: scrubUrl(document.referrer.toString())
+            }
+        });
+
+        // Scrub potential PII from the URL.
+        function scrubUrl(url) {
+            if (!url) return url;
+
+            var scriptIdRegex = /(?:S?\d{5}-\d{5}-\d{5}-\d{5})|(?:_[0-9a-zA-Z]{12})/g;
+            var scrubbedUrl = new URL(url.toLocaleLowerCase().replace(scriptIdRegex, "xxxxx-xxxxx-xxxxx-xxxxx"));
+
+            // Just as a precaution, strip any suspicious query parameters.
+            var blockedParamKeywords = ["username", "password", "token", "pwd"];
+            var searchParams = Array.from(scrubbedUrl.searchParams.keys());
+            for (var param of searchParams) {
+                if (blockedParamKeywords.some(k => param.indexOf(k) != -1)) {
+                    scrubbedUrl.searchParams.delete(param);
+                }
+            }
+
+            return scrubbedUrl.toString();
+        }
+
+        return isProduction;
+    }
+    pxt.initAnalyticsAsync();
+</script>
+
+<!-- end include tracking.html -->
+
+
+</body>
+
+</html>

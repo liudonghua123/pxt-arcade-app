@@ -500,7 +500,7 @@
 					</button>
 					
     <div class="ui text">
-        <h1 id="play">play</h1><p>Play a song, melody, or tone from a playable music source.</p>
+        <h1 id="play">play</h1><p>Play a song, melody, tone, or a sound effect from a playable music source.</p>
 <pre><code class="lang-sig">music.play(music.createSong(hex`00780004080200`), music.PlaybackMode.UntilDone)</code></pre>
 <p>Music is played for a simple tone, a melody, or a song. Each of these music sources is called a <a  rel="nofollow noopener" href="/pxt-arcade-app/docs/types/playable.html">playble</a> object. The <code>||music:play||</code> block can take any of these playable objects and play them as sound output for your game.</p>
 <p>The simpliest music source is a <strong>tone</strong>, on note play for a duration of time:</p>
@@ -587,12 +587,15 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.Enemy, function (sprite, otherSp
     sprites.destroy(sprite, effects.blizzard, 500)
     music.play(music.melodyPlayable(music.zapped), music.PlaybackMode.UntilDone)
 })</code></pre>
+<h3 id="play-a-sound-effect">Play a sound effect</h3><p>Play a sine wave sound effect for <code>5</code> seconds.</p>
+<pre><code class="lang-blocks">music.play(music.createSoundEffect(WaveShape.Sine, 5000, 0, 255, 0, 500, SoundExpressionEffect.None, InterpolationCurve.Linear), music.PlaybackMode.UntilDone)</code></pre>
 <h2 id="seealso">See also </h2><p><a  rel="nofollow noopener" href="/pxt-arcade-app/docs/reference/music/tone-playable.html">tone playable</a>,
 <a  rel="nofollow noopener" href="/pxt-arcade-app/docs/reference/music/string-playable.html">string playable</a>,
 <a  rel="nofollow noopener" href="/pxt-arcade-app/docs/reference/music/melody-playable.html">melody playable</a>,
 <a  rel="nofollow noopener" href="/pxt-arcade-app/docs/reference/music/create-song.html">create song</a>,
 <a  rel="nofollow noopener" href="/pxt-arcade-app/docs/reference/music/stop-all-sounds.html">stop all sounds</a>,
-<a  rel="nofollow noopener" href="/pxt-arcade-app/docs/reference/music/song-editor.html">song editor</a></p>
+<a  rel="nofollow noopener" href="/pxt-arcade-app/docs/reference/music/song-editor.html">song editor</a>,
+<a  rel="nofollow noopener" href="/pxt-arcade-app/docs/reference/music/create-sound-effect.html">create sound effect</a></p>
 
     </div>
 
