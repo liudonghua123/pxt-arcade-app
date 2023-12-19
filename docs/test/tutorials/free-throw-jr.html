@@ -500,33 +500,16 @@
 					</button>
 					
     <div class="ui text">
-        <h1 id="basketball-free-throw">Basketball Free Throw</h1><!-- hints --><h2 id="1-introduction">1. Introduction</h2><p>Line up your shot and see if you can slam dunk this Basketball free throw game!</p>
+        <h1 id="basketball-free-throw">Basketball Free Throw</h1><!-- hints --><!-- flyout --><h2 id="1-introduction">1. Introduction</h2><p>Line up your shot and see if you can slam dunk this Basketball free throw game!</p>
 <p><img class="ui image" src="/static/tutorials/free-throw/freethrow.gif" alt="Free throw shot from player" loading="lazy"></p>
-<h2 id="2-your-first-block">2. Your First Block</h2><p><strong>Ready to start coding?</strong></p>
-<p>Let’s add the basketball court background.</p>
+<h2 id="2-your-first-block">2. Your First Block</h2><p>Add the court!</p>
 <hr>
-<ul>
-<li>:tree: Go to the <code>||scene: Scene||</code> category <strong>in the toolbox</strong> and grab <br />
-<code>||scene:set background image to [ ]||</code><br />
-then snap it inside the empty <br />
-<code>||loops(noclick): on start||</code> <br />
-block already in the workspace.</li>
-</ul>
-<p>~hint What does that mean? 🤷🏽</p>
-<hr>
-<p>When giving instructions, we’ll highlight some text to give you a better idea of what you are looking for.</p>
-<p>For example, when we suggest the <br />
-<code>||scene:set background image to [ ]||</code><br />
-block, we are pointing you toward <br /></p>
-<pre><code class="lang-block">scene.setBackgroundImage(img`.`)</code></pre>
-<p>hint~</p>
-<p><br /><br />
-💡 <em>The court image should be preloaded in the block, but you are welcome to edit the image if you like.</em></p>
+<pre><code class="lang-block">freethrow.setCourt()</code></pre>
 
     <div class="ui hint message">
         <div class="content">
             <pre><code class="lang-blocks">//@highlight
-scene.setBackgroundImage(throw_imgs.court)</code></pre>
+freethrow.setCourt()</code></pre>
 <h2 id="3-look-at-the-game-window">3. Look at the game window</h2><ul>
 <li>:binoculars: Look at your project in the game window!</li>
 </ul>
@@ -535,173 +518,39 @@ scene.setBackgroundImage(throw_imgs.court)</code></pre>
 <h2 id="4-create-the-player-character">4. Create the Player Character</h2><p><strong>Pick your player!</strong><br />
 ⛹🏾 ⛹🏼‍♀️ ⛹🏿‍♂️</p>
 <hr>
-<ul>
-<li>:paper plane: From <code>||sprites:Sprites||</code>, drag<br />
-<code>||variables(sprites):set [athlete] to sprite [ ] of kind [Player]||</code><br />
-to <strong>the end</strong> of the
-<code>||loops:on start||</code> container.</li>
-</ul>
-<p>~hint What’s a sprite? 💡</p>
+<pre><code class="lang-block">freethrow.addPlayer(throw_imgs.dunk)</code></pre>
 <hr>
-<p>In Arcade, each character or image that does something is called a <strong>SPRITE</strong>.</p>
-<p>Sprites have properties that you can use and change — things like scale, position, and lifespan are all properties of sprites.</p>
-<p>Our athlete will be a sprite, too.</p>
-<p>hint~</p>
-<p><br /><br />
-💡 <em>The athlete image should be preloaded in the block, but you are welcome to edit the image if you like.</em></p>
+<p>💡 <em>You can click the image of the player to make changes.</em></p>
 
     <div class="ui hint message">
         <div class="content">
-            <pre><code class="lang-blocks">scene.setBackgroundImage(throw_imgs.court)
+            <pre><code class="lang-blocks">freethrow.setCourt()
 //@highlight
-let athlete = sprites.create(throw_imgs.dunk, SpriteKind.Player)
-</code></pre>
-<h2 id="5-position-the-player-character-at-the-bottom-of-the-screen">5. Position the Player Character at the bottom of the screen</h2><p>Let’s move the athlete down to give it room to grow.</p>
-<hr>
-<ul>
-<li>:paper plane: From the <code>||sprites: Sprites||</code> category in the toolbox, grab <br />
-<code>||sprites: set [athlete] position to x [80] y [90]||</code> <br />
-and snap it inside at the <strong>end</strong> of the
-<code>||loops(noclick): on start||</code>
-block already in your workspace.</li>
-</ul>
-<p>~hint Why use 80 and 90? 💡</p>
-<hr>
-<p>The width of the screen is 160 pixels, so an <strong>x</strong> value of <strong>80</strong> will place the athlete in the middle of the screen from left to right.</p>
-<p>The <strong>y</strong> value of <strong>90</strong> will put the athlete near the bottom of the screen because the screen height is 120 pixels.</p>
-<p>These numbers were carefully selected to put the athlete in the right place for the next several steps…but you can also play around with the values to see what happens when you make them larger or smaller.</p>
-<p>hint~</p>
-
-    <div class="ui hint message">
-        <div class="content">
-            <pre><code class="lang-blocks">scene.setBackgroundImage(throw_imgs.court)
-let athlete = sprites.create(throw_imgs.dunk, SpriteKind.Player)
-//@highlight
-athlete.setPosition(80, 90)</code></pre>
-<h2 id="6-set-the-player-s-velocity-movement-">6. Set the player’s velocity (movement)</h2><p>In this game, your player will be moving back and forth.</p>
-<hr>
-<ul>
-<li>:paper plane:  From <code>||sprites:Sprites||</code>, drag<br />
-<code>||sprites:set [athelete] velocity to vx [50] vy [0]||</code><br />
-to <strong>the end</strong> of the <br />
-<code>||loops(onclick):on start||</code> container.</li>
-</ul>
-<p>~hint What are vx and vy?💡</p>
-<hr>
-<p>In MakeCode Arcade, <strong>vx</strong> stands for the “velocity in the direction of x” — which is a complicated way of saying “the speed from side to side.”</p>
-<ul>
-<li>The larger your <strong>vx</strong> value is, the faster something will travel to the right.</li>
-<li>The lower your <strong>vx</strong>, the faster it will travel to the left.</li>
-<li>If your <strong>vx</strong> is 0, the item won’t move from side to side at all.</li>
-</ul>
-<p>Similarly, <strong>vy</strong> stands for the “velocity in the direction of y” — which is a
-complicated way of saying “the speed from top to bottom.”</p>
-<ul>
-<li>The larger your <strong>vy</strong> value is, the faster something will travel downward.</li>
-<li>The lower your <strong>vy</strong>, the faster it will travel upward.</li>
-<li>If your <strong>vy</strong> is 0, the item won’t move either up or down.</li>
-</ul>
-<p>hint~</p>
-
-    <div class="ui hint message">
-        <div class="content">
-            <pre><code class="lang-blocks">scene.setBackgroundImage(throw_imgs.court)
-let athlete = sprites.create(throw_imgs.dunk, SpriteKind.Player)
-athlete.setPosition(80, 90)
-//@highlight
-athlete.setVelocity(50, 0)</code></pre>
+freethrow.throw_imgs.dunk</code></pre>
 <h2 id="7-look-at-the-game-window-again">7. Look at the game window again</h2><ul>
 <li>:binoculars: Look at your project in the game window!</li>
 </ul>
 <p>You should see the athlete start running forward.</p>
-<h2 id="8-make-the-player-bounce-off-walls">8. Make the player bounce off walls</h2><p><strong>The athlete ran away!</strong> <br />
-Let’s add a block to keep them inside the court.</p>
-<hr>
-<ul>
-<li>:paper plane: From <code>||sprites:Sprites||</code>, grab a <br />
-<code>||sprites:set [athlete] bounce on wall &lt;on&gt;||</code> <br />
-block and snap it into the  <strong>the end</strong> of the <br />
-<code>||loops(noclick):on start||</code> container. <br /></li>
-</ul>
+<h2 id="9-create-the-basketball-hoop">9. Create the Basketball Hoop</h2><p><strong>Add the hoop!</strong></p>
+<pre><code class="lang-block">freethrow.addHoop()</code></pre>
 
     <div class="ui hint message">
         <div class="content">
-            <pre><code class="lang-blocks">scene.setBackgroundImage(throw_imgs.court)
-let athlete = sprites.create(throw_imgs.dunk, SpriteKind.Player)
-athlete.setPosition(80, 90)
-athlete.setVelocity(50, 0)
+            <pre><code class="lang-blocks">freethrow.setCourt()
+freethrow.throw_imgs.dunk
 //@highlight
-athlete.setBounceOnWall(true)
+freethrow.addHoop()
 </code></pre>
-<h2 id="9-create-the-basketball-hoop">9. Create the Basketball Hoop</h2><p>Using what you learned when adding the athlete, add a hoop to the scene then position it against the backboard.</p>
-<hr>
-<p>~hint Remind me 🤨</p>
-<ul>
-<li><p>:paper plane: From <code>||sprites:Sprites||</code>, drag<br />
-<code>||variables(sprites):set [hoop] to sprite [ ] of kind [Goal]||</code><br />
-to <strong>the end</strong> of the
-<code>||loops(noclick):on start||</code> container.</p>
-</li>
-<li><p>:paper plane: From the <code>||sprites: Sprites||</code> category in the toolbox, grab <br />
-<code>||sprites: set [hoop] position to x [80] y [35]||</code> <br />
-and snap it inside at the <strong>end</strong> of the
-<code>||loops(noclick): on start||</code>
-block already in your workspace.</p>
-</li>
-</ul>
-<p>hint~</p>
-<pre><code class="lang-blockconfig.local">let hoop = sprites.create(throw_imgs.hoop, SpriteKind.Goal)
-hoop.setPosition(80, 35)</code></pre>
-
-    <div class="ui hint message">
-        <div class="content">
-            <pre><code class="lang-blocks">scene.setBackgroundImage(throw_imgs.court)
-let athlete = sprites.create(throw_imgs.dunk, SpriteKind.Player)
-athlete.setPosition(80, 90)
-athlete.setVelocity(50, 0)
-athlete.setBounceOnWall(true)
-//@highlight
-let hoop = sprites.create(throw_imgs.hoop, SpriteKind.Goal)
-//@highlight
-hoop.setPosition(80, 35)</code></pre>
-<h2 id="10-use-a-button-to-toss">10. Use (A) Button to Toss</h2><p>Let’s code the athlete to shoot basketballs when the (A) button is pressed.</p>
-<ul>
-<li>:game: From <code>||controller:Controller||</code>, drag the<br />
-<code>||controller:on [A] button pressed ||</code><br />
-container into <strong>an empty area</strong> of the workspace.</li>
-</ul>
-<pre><code class="lang-blockconfig.local">let hoop = sprites.create(throw_imgs.hoop, SpriteKind.Goal)
-hoop.setPosition(80, 35)</code></pre>
+<h2 id="10-use-a-button-to-toss">10. Use (A) Button to Toss</h2><p><strong>Make (A) toss the ball</strong></p>
+<pre><code class="lang-blocks">freethrow.onA(function () {
+    freethrow.throwBall()
+})</code></pre>
 
     <div class="ui hint message">
         <div class="content">
             <pre><code class="lang-blocks">//@highlight
-controller.A.onEvent(ControllerButtonEvent.Pressed, function () { })</code></pre>
-<h2 id="11-shoot-the-basketballs">11. Shoot the Basketballs</h2><p><strong>Add the basketball projectiles.</strong></p>
-<p>~hint What are projectiles?💡</p>
-<hr>
-<p>In MakeCode Arcade, projectiles are sprites that move on their own,
-often in large quantities.</p>
-<p>Projectiles have extra properties that normal sprites don’t have.
-For example, they destroy themselves once they leave the screen so
-the user’s computer doesn’t get overwhelmed.</p>
-<p>hint~</p>
-<hr>
-<ul>
-<li>:paper plane: Snap <br />
-<code>||variables(sprites):set [projectile] to projectile [🏀] from [athlete] with vx [0] vy [-100]||</code> <br />
-inside <strong>the empty</strong> <br />
-<code>||controller(noclick):on [A] button pressed ||</code><br />
-container.</li>
-</ul>
-<p>💡 <em>The projectile is a basketball, but you can click the ball and change it to whatever you like.</em></p>
-<pre><code class="lang-blockconfig.local">let hoop = sprites.create(throw_imgs.hoop, SpriteKind.Goal)
-hoop.setPosition(80, 35)</code></pre>
-
-    <div class="ui hint message">
-        <div class="content">
-            <pre><code class="lang-blocks">controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
-    projectile = sprites.createProjectileFromSprite(throw_imgs.ball, athlete, 0, -100)
+freethrow.onA(function () {
+    freethrow.throwBall()
 })</code></pre>
 <h2 id="12-test-it-out">12. Test it Out</h2><ul>
 <li><p>:binoculars: Look at your game!</p>
@@ -710,104 +559,45 @@ hoop.setPosition(80, 35)</code></pre>
 </li>
 <li>When you press the (A) button (or space bar) the player should shoot a basketball toward the top of the screen</li>
 </ul>
-<p>~hint Mine isn’t working 🤷‍♂️ </p>
+<p>~hint It isn’t working 🤷‍♂️ </p>
 <hr>
 <p>Take a look at the blocks below to see if your code is missing anything:</p>
-<pre><code class="lang-blocks">controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
-    projectile = sprites.createProjectileFromSprite(throw_imgs.ball, athlete, 0, -100)
+<pre><code class="lang-blocks">
+freethrow.onA(function () {
+    freethrow.throwBall()
 })
-
-
-scene.setBackgroundImage(throw_imgs.court)
-let athlete = sprites.create(throw_imgs.dunk, SpriteKind.Player)
-athlete.setPosition(80, 90)
-athlete.setVelocity(50, 0)
-athlete.setBounceOnWall(true)
-let hoop = sprites.create(throw_imgs.hoop, SpriteKind.Goal)
-hoop.setPosition(80, 35)</code></pre>
+freethrow.setCourt()
+freethrow.addPlayer(throw_imgs.dunk)
+freethrow.addHoop()</code></pre>
 <p>hint~</p>
-<pre><code class="lang-blockconfig.local">let hoop = sprites.create(throw_imgs.hoop, SpriteKind.Goal)
-hoop.setPosition(80, 35)</code></pre>
-<h2 id="13-points-when-we-get-a-basket">13. Points when we get a basket</h2><p><strong>Run code when the ball overlaps the hoop!</strong></p>
+<h2 id="13-points-when-we-get-a-basket">13. Points when we get a basket</h2><p><strong>Add points for each basket</strong></p>
 <hr>
-<ul>
-<li>:paper plane: From <code>||sprites:Sprites||</code>, drag the<br />
-<code>||sprites:on [sprite] of kind [Projectile] overlaps [othersprite] of kind [Goal]||</code><br />
-container into <strong>an empty area</strong> of the workspace.</li>
-</ul>
-<pre><code class="lang-blockconfig.local">let hoop = sprites.create(throw_imgs.hoop, SpriteKind.Goal)
-hoop.setPosition(80, 35)</code></pre>
-
-    <div class="ui hint message">
-        <div class="content">
-            <pre><code class="lang-blocks">sprites.onOverlap(SpriteKind.Projectile, SpriteKind.Goal, function (sprite, otherSprite) {
-
+<pre><code class="lang-blocks">freethrow.onOverlapHoop(function () {
+    freethrow.changeScoreAddPoint(1)
+    freethrow.destroyBall()
 })</code></pre>
-<h2 id="14-win-when-we-get-a-basket">14. Win when we get a basket</h2><p><strong>Add a point and destroy the ball.</strong></p>
-<hr>
-<ul>
-<li>:id card: From <code>||info:Info||</code>, grab <br />
-<code>||info:change score by [1]||</code>  <br />
-and snap it into <strong>the empty</strong>  <br />
-<code>||sprites(noclick):on [sprite] of kind [Projectile] overlaps...||</code><br />
-containter already in the workspace.</li>
-</ul>
-<ul>
-<li>:paper plane: From <code>||sprites:Sprites||</code>, grab <br />
-<code>||sprites:destroy [sprite]||</code> <br />
-and snap it into <strong>the end</strong> of the <br />
-<code>||sprites(noclick):on [sprite] of kind [Projectile] overlaps...||</code><br />
-containter in the workspace.</li>
-</ul>
-<p>~hint Why “destroy sprite”? 💡</p>
-<hr>
-<p>You may think we should destroy <strong>projectile</strong> or even <strong>ball</strong> to get rid of the 
-basketball that overlapped the hoop, but this overlap container requires you to 
-choose either <br />
-<code>||variables:sprite||</code> or <code>||variables:otherSprite||</code><br /> 
-when you want to select one of the <strong>exact</strong> items that touched.</p>
-<p>hint~</p>
-<pre><code class="lang-blockconfig.local">let hoop = sprites.create(throw_imgs.hoop, SpriteKind.Goal)
-hoop.setPosition(80, 35)</code></pre>
 
     <div class="ui hint message">
         <div class="content">
-            <pre><code class="lang-blocks">sprites.onOverlap(SpriteKind.Projectile, SpriteKind.Goal, function (sprite, otherSprite) {
-    info.changeScoreBy(1)
-    sprites.destroy(sprite)
+            <pre><code class="lang-blocks">//@highlight
+freethrow.onOverlapHoop(function () {
+    freethrow.changeScoreAddPoint(1)
+    freethrow.destroyBall()
 })</code></pre>
 <h2 id="15-look-at-the-game-window-again-again">15. Look at the game window again, again</h2><ul>
 <li>:binoculars: Look at your project in the game window!</li>
 </ul>
 <p>You should get a point every time your basketball overlaps the hoop!</p>
-<pre><code class="lang-blockconfig.local">let hoop = sprites.create(throw_imgs.hoop, SpriteKind.Goal)
-hoop.setPosition(80, 35)</code></pre>
-<h2 id="16-add-a-time-limit">16. Add a time limit</h2><p><strong>Does this game feel long to you?</strong><br />
-🕔 🕔 🕔</p>
-<p>We haven’t added a way to win.
-Let’s add a countdown timer.</p>
-<hr>
-<ul>
-<li>:id card:  From <code>||info:Info||</code>,  grab<br />
-<code>||info:start countdown [30] (s)||</code><br />
-and snap it in at <strong>the end of</strong> the <br />
-<code>||loops(noclick):on start||</code> container.</li>
-</ul>
-<hr>
-<p>🎮 <strong>Play your game and see how many points you can get in 30 seconds!</strong></p>
-<pre><code class="lang-blockconfig.local">let hoop = sprites.create(throw_imgs.hoop, SpriteKind.Goal)
-hoop.setPosition(80, 35)</code></pre>
+<h2 id="16-add-a-time-limit">16. Add a time limit</h2><p><strong> Add a timer</strong></p>
+<pre><code class="lang-block">freethrow.gameCountdown(30)</code></pre>
 
     <div class="ui hint message">
         <div class="content">
-            <pre><code class="lang-blocks">scene.setBackgroundImage(throw_imgs.court)
-let athlete = sprites.create(throw_imgs.dunk, SpriteKind.Player)
-athlete.setPosition(80, 90)
-athlete.setVelocity(50, 0)
-athlete.setBounceOnWall(true)
-let hoop = sprites.create(throw_imgs.hoop, SpriteKind.Goal)
-hoop.setPosition(80, 35)
-info.startCountdown(30)</code></pre>
+            <pre><code class="lang-blocks">freethrow.setCourt()
+freethrow.addPlayer(throw_imgs.dunk)
+freethrow.addHoop()
+//@highlight
+freethrow.gameCountdown(30)</code></pre>
 <h2 id="you-did-a-great-job-">You did a great job!!! </h2><h3 id="what-did-you-think-of-this-tutorial-">What did you think of this tutorial?</h3><h3 id="-">😍  😑  ☹️</h3><p>Would you like to tell us more?</p>
 <p>(Yes)  (No)</p>
 <h2 id="18-finale">18. Finale</h2><p><strong>🏀 Well Done 🏀</strong></p>
@@ -818,67 +608,272 @@ info.startCountdown(30)</code></pre>
 
     <div class="ui hint message">
         <div class="content">
-            <pre><code class="lang-blocks">scene.setBackgroundImage(throw_imgs.court)
-let athlete = sprites.create(throw_imgs.dunk, SpriteKind.Player)
-athlete.setPosition(80, 90)
-athlete.setVelocity(50, 0)
-athlete.setBounceOnWall(true)
-let hoop = sprites.create(throw_imgs.hoop, SpriteKind.Goal)
-hoop.setPosition(80, 35)
-//@highlight
-info.startCountdown(30)
+            <pre><code class="lang-blocks">freethrow.onOverlapHoop(function () {
+    freethrow.changeScoreAddPoint(1)
+    freethrow.destroyBall()
+})
+freethrow.onA(function () {
+    freethrow.throwBall()
+})
+freethrow.setCourt()
+freethrow.addPlayer(throw_imgs.dunk)
+freethrow.addHoop()
+freethrow.gameCountdown(30)
 </code></pre>
-<pre><code class="lang-blockconfig.global">namespace SpriteKind {
-    export const Goal = SpriteKind.create()
-}
-let athlete = sprites.create(throw_imgs.dunk, SpriteKind.Player)
-athlete.setPosition(80, 90)
-athlete.setVelocity(50, 0)
+<pre><code class="lang-blockconfig.global">freethrow.gameCountdown(30)
 
-athlete.setBounceOnWall(true)
-info.startCountdown(30)
-sprites.destroy(sprite)
+freethrow.addPlayer(throw_imgs.dunk)
 
-sprites.onOverlap(SpriteKind.Projectile, SpriteKind.Goal, function (sprite, otherSprite) { })
-projectile = sprites.createProjectileFromSprite(throw_imgs.ball, athlete, 0, -100)
-music.play(music.createSong(hex`00780004080200`), music.PlaybackMode.InBackground)
+freethrow.onA(function () {
+    freethrow.throwBall()
+})
 
-scene.setBackgroundImage(throw_imgs.court)</code></pre>
-<pre><code class="lang-package">throw_imgs=github:kiki-lee/throw_imgs</code></pre>
-<pre><code class="lang-customts">namespace SpriteKind {
+freethrow.onOverlapHoop(function () {
+    freethrow.changeScoreAddPoint(1)
+    freethrow.destroyBall()
+})
+</code></pre>
+<pre><code class="lang-package">throw_imgs=github:kiki-lee/throw_imgs
+arcade-block-icons=github:kiki-lee/arcade-block-icons#v0.0.13
+arcade-text=github:microsoft/arcade-text#v1.3.0</code></pre>
+<pre><code class="lang-ghost">freethrow.onOverlapHoop(function () {
+    freethrow.changeScoreAddPoint(1)
+    freethrow.destroyBall()
+})
+freethrow.onA(function () {
+    freethrow.throwBall()
+})
+freethrow.setCourt()
+freethrow.addPlayer(throw_imgs.dunk)
+freethrow.addHoop()
+</code></pre>
+<pre><code class="lang-customts">
+namespace SpriteKind {
     //% isKind
     export const Goal = SpriteKind.create()
 }
 
-info.onCountdownEnd(function () {
-    game.gameOver(true)
-})</code></pre>
-<pre><code class="lang-ghost">
-    music.play(music.createSoundEffect(WaveShape.Sine, 5000, 0, 255, 0, 500, SoundExpressionEffect.None, InterpolationCurve.Linear), music.PlaybackMode.UntilDone)
-controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
-    projectile = sprites.createProjectileFromSprite(assets.image`ball`, athlete, 0, -100)
-})
-sprites.onOverlap(SpriteKind.Projectile, SpriteKind.Goal, function (sprite, otherSprite) {
-    info.changeScoreBy(1)
-    sprites.destroy(sprite)
-})
-let projectile: Sprite = null
-let athlete: Sprite = null
-scene.setBackgroundImage(throw_imgs.court)
-athlete = sprites.create(throw_imgs.dunk, SpriteKind.Player)
-athlete.setPosition(80, 90)
-athlete.setVelocity(50, 0)
-athlete.setBounceOnWall(true)
-let hoop = sprites.create(throw_imgs.hoop, SpriteKind.Goal)
-hoop.setPosition(80, 35)
-info.startCountdown(30)
+
 info.onCountdownEnd(function () {
     game.gameOver(true)
 })
 
-game.setGameOverEffect(true, effects.confetti)
-game.setGameOverMessage(true, &quot;GAME OVER!&quot;)
-game.setGameOverScoringType(game.ScoringType.HighScore)</code></pre>
+
+//% color=#f84c08
+namespace freethrow {
+
+    export let projectile: Sprite = null
+    export let athlete: Sprite = null
+    export let mostRecent: Sprite = null
+    export let scoreText = textsprite.create(&quot;&quot;, 15, 1)
+    scoreText.setFlag(SpriteFlag.RelativeToCamera, true)
+
+    /**
+     * Run code when the play button is pressed
+     * (Like on start, but jr)
+     */
+    //% color=#a62e08
+    //% help=game/on-start-simple 
+    //% weight=99 
+    //% afterOnStart=false
+    //% blockId=on_start_simple 
+    //% block=&quot;on `ICON.play`&quot;
+    //% blockAllowMultiple=0
+    export function onStartSimple(a: () =&gt; void): void {
+        a();
+    }
+
+
+    /**
+    * Play music in background
+    */
+    //% blockId=play_music
+    //% block=&quot;`ICON.arrow-play-white` $thisSong&quot;
+    //% thisSong.shadow=music_song_field_editor
+    //% help=github:docs/play_music
+    export function playSong(thisSong: music.Playable) {
+        music.play(thisSong, music.PlaybackMode.InBackground)
+    }
+
+    /**
+    * Repeat music in background
+    */
+    //% blockId=repeat_music
+    //% block=&quot;`ICON.arrow-repeat-white` $thisSong&quot;
+    //% thisSong.shadow=music_song_field_editor
+    //% help=github:docs/repeat_music
+    export function repeatSong(thisSong: music.Playable) {
+        music.play(thisSong, music.PlaybackMode.LoopingInBackground)
+    }
+
+
+    /**
+    * Play soundeffect in background
+    */
+    //% blockId=play_sef
+    //% block=&quot;`ICON.arrow-play-white` $thisSound&quot;
+    //% thisSound.shadow=soundExpression_createSoundEffect
+    //% help=github:docs/play_sef
+    export function playSound(thisSound: music.Playable) {
+        music.play(thisSound, music.PlaybackMode.InBackground)
+    }
+
+
+    /**
+    * Set Court
+    */
+    //% blockId=set_court
+    //% block=&quot;add `ICON.court`&quot;
+    //% help=github:docs/set_court
+    export function setCourt() {
+        scene.setBackgroundImage(throw_imgs.court)
+    }
+
+
+    /**
+    * Player throw basketball
+    */
+    //% blockId=throw_ball
+    //% block=&quot;throw `ICON.bball`&quot;
+    //% help=github:docs/throw_ball
+    export function throwBall() {
+        freethrow.projectile = sprites.createProjectileFromSprite(throw_imgs.ball, freethrow.athlete, 0, -100)
+    }
+
+
+
+    /**
+      * Make the turkey appear to jump
+      */
+    //% blockId=destroy_ball
+    //% block=&quot;destroy `ICON.bball`&quot;
+    //% help=github:docs/destroy_ball
+    export function destroyBall() {
+        sprites.destroy(mostRecent)
+    }
+
+
+
+    /**
+    * Add the player and mechanics to the game
+    */
+    //% blockId=add_player
+    //% block=&quot;⛹🏻 = $thisImg&quot;
+    //% thisImg.shadow=screen_image_picker
+    //% help=github:docs/add_player
+    export function addPlayer(thisImg:Image) {
+        freethrow.athlete = sprites.create(throw_imgs.dunk, SpriteKind.Player)
+        freethrow.athlete.setPosition(76, 90)
+        freethrow.athlete.setVelocity(50, 0)
+        freethrow.athlete.setBounceOnWall(true)
+    }
+
+    /**
+    * Add the hoop and mechanics to the game
+    */
+    //% blockId=add_hoop
+    //% block=&quot;place `ICON.hoop`&quot;
+    //% help=github:docs/add_hoop
+    export function addHoop() {
+        let hoop = sprites.create(throw_imgs.hoop, SpriteKind.Goal)
+        hoop.setPosition(80, 35)
+    }
+
+
+    /**
+    * Start the game timer
+    */
+    //% blockId=game_countdown
+    //% block=&quot;`ICON.clock-white` $thisSec (s)&quot;
+    //% thisSec.defl = 30
+    //% help=github:docs/game_coundown
+    export function gameCountdown(thisSec:number) {
+        info.startCountdown(thisSec)
+    }
+
+
+
+    /**
+     * Register code run when a controller event occurs
+    * @param event
+    * @param handler
+    */
+    //% weight=99 blockGap=8
+    //% blockId=ctrlonA block=&quot;on `ICON.a-button-white-invert`&quot;
+    //% color=#a62e08
+    //% help=docs/on-a
+    export function onA(handler: () =&gt; void) {
+        controller.A.onEvent(ControllerButtonEvent.Pressed, handler)
+    }
+
+
+
+    /**
+     * Runs code when ball overlaps net
+    * @param event
+    * @param handler
+    */
+    //% weight=99 blockGap=8
+    //% blockId=on-overlap-hoop
+    //% block=&quot;`ICON.bball` `ICON.point-right-white` `ICON.hoop`&quot;
+    //% color=#a62e08
+    //% help=docs/on-overlap-hoop
+    export function onOverlapHoop(handler: () =&gt; void) {
+        if (!handler) return;
+        sprites.onOverlap(SpriteKind.Projectile, SpriteKind.Goal, function (sprite, otherSprite) {
+            freethrow.mostRecent = sprite;
+            handler();
+        })
+    }
+
+
+    /**
+    * Overrides the normal score UI with an iconified version
+    */
+    //% blockId=set_hoop_override
+    //% block=&quot;set `ICON.hoop` to $thisScore&quot;
+    //% thisScore.defl=0
+    //% help=github:docs/set_hoop_override
+    export function setScoreOverride(thisScore: number) {
+        info.setScore(thisScore)
+        freethrow.scoreText.setText(&quot; x &quot; + convertToText(info.score()))
+        scoreText.setIcon(img`
+. . 3 4 4 4 4 3 . . 
+. 3 4 1 . . 1 4 4 . 
+3 4 . 1 . . . . 4 3 
+4 3 1 1 1 1 . 1 4 4 
+. 4 4 4 4 4 4 4 4 . 
+. 1 . 1 . . 1 . 1 . 
+. 1 . 1 . . 1 . 1 . 
+. 1 . . 1 1 . . 1 . 
+. 1 1 1 1 1 . 1 1 . 
+. 1 . 1 . . 1 . 1 . 
+`)
+
+        scoreText.setBorder(1, 3, 1)
+        scoreText.setMaxFontHeight(9)
+        scoreText.right = 160
+        scoreText.top = 1
+        scoreText.update()
+        info.showScore(false)
+    }
+
+
+    /**
+    * Changes the score 
+    */
+    //% blockId=change_score_jr
+    //% block=&quot;`ICON.hoop` + $thisMuch&quot;
+    //% thisMuch.defl=1
+    //% help=github:docs/change_score_jr
+    export function changeScoreAddPoint(thisMuch:number) {
+        info.changeScoreBy(thisMuch)
+        freethrow.setScoreOverride(info.score())
+    }
+
+}
+
+freethrow.setScoreOverride(0)</code></pre>
 <pre><code class="lang-simtheme">{
     &quot;palette&quot;: [
        &quot;#000000&quot;,

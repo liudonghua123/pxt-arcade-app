@@ -1,0 +1,983 @@
+<!DOCTYPE html>
+<html lang="" xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#"
+	xmlns:fb="http://www.facebook.com/2008/fbml">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Microsoft MakeCode Arcade</title>
+	<meta name="Description" content="Develop your programming skills by quickly creating and modding retro arcade games with Blocks and JavaScript in the MakeCode editor" />
+
+	<!-- ifdef incontexttranslations endif -->
+	
+<!-- include meta.html -->
+<!-- This file is typically overriden by the target, with own Twitter
+     account etc. Most data is taken from the theme file though.  
+  -->
+
+<!-- include robotsmeta.html -->
+
+<!-- end include robotsmeta.html -->
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@msmakecode" />
+<meta name="twitter:title" content="Microsoft MakeCode Arcade" />
+<meta name="twitter:description" content="Develop your programming skills by quickly creating and modding retro arcade games with Blocks and JavaScript in the MakeCode editor" />
+<meta name="twitter:image" content="/static/mcj/gopher/gopher4.gif" />
+
+<meta property="og:title" content="Microsoft MakeCode Arcade" />
+<meta property="og:site_name" content="Microsoft MakeCode" />
+<meta property="og:type" content="website" />
+<meta property="og:description" content="Develop your programming skills by quickly creating and modding retro arcade games with Blocks and JavaScript in the MakeCode editor" />
+<meta property="fb:app_id" content="" />
+<meta property="og:image" content="/static/mcj/gopher/gopher4.gif" />
+
+<meta name="format-detection" content="telephone=no">
+<link rel="apple-touch-icon" href="docs/static/icons/favicon.ico">
+<link rel="icon" type="image/png" href="docs/static/icons/favicon.ico">
+<link rel="shortcut icon" href="docs/static/icons/favicon.ico">
+<meta name="theme-color" content="">
+
+<!-- end include meta.html -->
+
+	
+<!-- include head.html -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width,height=device-height,user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
+
+<link rel="stylesheet" data-rtl="/blb/rtlsemantic.css" href="/pxt-arcade-app/semantic.css" />
+<link id="blocklycss"  data-rtl="/blb/rtlblockly.css" rel="stylesheet" href="/pxt-arcade-app/blockly.css" />
+<link rel="stylesheet" href="/pxt-arcade-app/docfiles/style.css" />
+<link rel="stylesheet" href="/pxt-arcade-app/docfiles/vs.css" />
+<link rel="stylesheet" href="/pxt-arcade-app/docfiles/target.css" />
+
+<script src="/pxt-arcade-app/jquery.js" type="text/javascript"></script>
+<script src="/pxt-arcade-app/semantic.js" type="text/javascript"></script>
+<script src="/pxt-arcade-app/docfiles/target.js" type="text/javascript"></script>
+<script src="/pxt-arcade-app/embed.js" type="text/javascript"></script>
+<script src="/pxt-arcade-app/docfiles/docs.js" type="text/javascript"></script>
+
+<style>
+    
+</style>
+
+<!-- end include head.html -->
+
+
+</head>
+
+<body id='root' class='root'>
+	<div id="accessibleMenu" class="ui accessibleMenu borderless fixed menu docs" role="menubar">
+		
+            <a href="#maincontent" class="ui item link" tabindex="0" role="menuitem">Skip to main content</a>
+        
+	</div>
+
+	
+<!-- include tocheader.html -->
+<div id="top-bar" class="ui fixed accent borderless inverted main menu hideprint docs" role="menubar">
+    <div>
+        
+            <a id="togglesidebar" class="launch icon item" tabindex="0" title="Side menu" aria-label="Side menu" role="menuitem" aria-expanded="false">
+                <i class="content icon"></i>
+            </a>
+        
+        <div class="item" role="menuitem">
+            <div class="header-org-logo">
+                <img src="/static/logo/Microsoft_logo_rgb_W-white_D.png" alt="Microsoft">
+            </div>
+            <div class="header-org-logo-sm">
+                <img src="/static/logo/Microsoft_logo_rgb_W-white_D-square.png" alt="Microsoft">
+            </div>
+            <div class="header-title"><span>MakeCode</span></div>
+        </div>
+    </div>
+    <div>
+        <div class="item">
+            <form id="tocsearch1" class="search" role="form" method="get" action="https://www.bing.com/search">
+                <div class="ui fluid icon input">
+                    <input type="hidden" name="q1" value="site:https://arcade.makecode.com/" />
+                    
+                <input type="search" name="q" placeholder="Search..." aria-label="Search Documentation">
+                <i onclick="document.getElementById('tocsearch1').submit();" tabindex="0" class="search link icon" aria-label="Search" role="button"></i>
+            
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div id="side-menu" class="ui vertical accent inverted sidebar menu left hideprint docs" role="menubar">
+    <!-- TOC Menu (tocheader.html) -->
+    <div class="menuContainer" role="menu">
+        
+    <a class="item " href="/pxt-arcade-app/docs/about.html" role="menuitem">About</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/faq.html" role="menuitem">FAQ</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/projects.html" role="menuitem">Projects</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/github.html" role="menuitem">GitHub</a>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/pxt-arcade-app/docs/reference.html">Reference</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-arcade-app/docs/reference/sprites.html" role="menuitem">sprites</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/reference/controller.html" role="menuitem">controller</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/reference/game.html" role="menuitem">game</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/reference/music.html" role="menuitem">music</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/reference/scene.html" role="menuitem">scene</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/reference/info.html" role="menuitem">info</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/reference/images.html" role="menuitem">images</a>
+
+        </div>
+    </div>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/pxt-arcade-app/docs/blocks.html">Blocks</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-arcade-app/docs/blocks/on-start.html" role="menuitem">On Start</a>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/pxt-arcade-app/docs/blocks/loops.html">Loops</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-arcade-app/docs/blocks/loops/repeat.html" role="menuitem">repeat</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/blocks/loops/for.html" role="menuitem">for</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/blocks/loops/while.html" role="menuitem">while</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/blocks/loops/for-of.html" role="menuitem">for of</a>
+
+        </div>
+    </div>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/pxt-arcade-app/docs/blocks/logic.html">Logic</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-arcade-app/docs/blocks/logic/if.html" role="menuitem">if</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/blocks/logic/boolean.html" role="menuitem">Boolean</a>
+
+        </div>
+    </div>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/pxt-arcade-app/docs/blocks/variables.html">Variables</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-arcade-app/docs/blocks/variables/assign.html" role="menuitem">assign</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/blocks/variables/change.html" role="menuitem">change var</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/blocks/variables/var.html" role="menuitem">var</a>
+
+        </div>
+    </div>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/blocks/math.html" role="menuitem">Math</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/blocks/javascript-blocks.html" role="menuitem">JavaScript blocks</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/blocks/custom.html" role="menuitem">Custom blocks</a>
+
+        </div>
+    </div>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/pxt-arcade-app/docs/python.html">Python</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-arcade-app/docs/python/call.html" role="menuitem">Calling</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/python/sequence.html" role="menuitem">Sequencing</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/python/variables.html" role="menuitem">Variables</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/python/operators.html" role="menuitem">Operators</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/python/statements.html" role="menuitem">Statements</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/python/functions.html" role="menuitem">Functions</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/python/classes.html" role="menuitem">Classes</a>
+
+        </div>
+    </div>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/pxt-arcade-app/docs/javascript.html">JavaScript</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-arcade-app/docs/javascript/call.html" role="menuitem">Calling</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/javascript/sequence.html" role="menuitem">Sequencing</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/javascript/variables.html" role="menuitem">Variables</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/javascript/operators.html" role="menuitem">Operators</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/javascript/statements.html" role="menuitem">Statements</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/javascript/functions.html" role="menuitem">Functions</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/javascript/types.html" role="menuitem">Types</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/javascript/classes.html" role="menuitem">Classes</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/javascript/interfaces.html" role="menuitem">Interfaces</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/javascript/generics.html" role="menuitem">Generics</a>
+
+        </div>
+    </div>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/pxt-arcade-app/docs/types.html">Types</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-arcade-app/docs/types/number.html" role="menuitem">Number</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/types/string.html" role="menuitem">String</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/types/boolean.html" role="menuitem">Boolean</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/types/array.html" role="menuitem">Array</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/types/function.html" role="menuitem">Function</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/types/image.html" role="menuitem">Image</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/types/sprite.html" role="menuitem">Sprite</a>
+
+        </div>
+    </div>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/block-gallery.html" role="menuitem">Blocks Gallery</a>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="">Miscellaneous</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-arcade-app/docs/about.html" role="menuitem">About</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/support.html" role="menuitem">Support</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/translate.html" role="menuitem">Translate</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/share.html" role="menuitem">Sharing projects</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/multiplayer.html" role="menuitem">Multiplayer</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/offline.html" role="menuitem">Offline support</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/save.html" role="menuitem">Save</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/identity/sign-in.html" role="menuitem">Sign In</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/identity/cloud-sync.html" role="menuitem">Cloud Sync</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/vscode.html" role="menuitem">VS Code</a>
+
+        </div>
+    </div>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/pxt-arcade-app/docs/hardware.html">Hardware</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-arcade-app/docs/hardware/errors.html" role="menuitem">Errors</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/hardware/adding.html" role="menuitem">Adding New Board</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/hardware/raspberry-pi.html" role="menuitem">Raspberry Pi</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/hardware/makey-makey.html" role="menuitem">Makey Makey</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/hardware/shoebox-controller.html" role="menuitem">Shoebox Controller</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/hardware/dev.html" role="menuitem">Dev</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/hardware/dbg.html" role="menuitem">Debug connector</a>
+
+        </div>
+    </div>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="">Developers</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-arcade-app/docs/cli.html" role="menuitem">Command Line Interface</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/code.html" role="menuitem">Visual Studio Code support</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/blocks-embed.html" role="menuitem">Blocks Embed</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/developer/images.html" role="menuitem">Art, images, colors</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/developer/sound.html" role="menuitem">Sounds</a>
+
+        </div>
+    </div>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/pxt-arcade-app/docs/lessons.html">Lessons</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-arcade-app/docs/lessons/cherry-pickr.html" role="menuitem">Cherry Pickr</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/lessons/barrel-dodger.html" role="menuitem">Barrel Dodger</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/lessons/dance-party.html" role="menuitem">Dance Party</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/lessons/block-out.html" role="menuitem">BlockOut</a>
+
+        </div>
+    </div>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/pxt-arcade-app/docs/courses.html">Courses</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-arcade-app/docs/courses/csintro1.html" role="menuitem">CS Intro 1</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/courses/csintro2.html" role="menuitem">CS Intro 2</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/courses/csintro3.html" role="menuitem">CS Intro 3</a>
+
+        </div>
+    </div>
+
+    </div>
+</div>
+<!-- end include tocheader.html -->
+
+
+	<div id="docs" class="pusher">
+
+		<div class="article" id="maincontent">
+			<div class="article-inner">
+
+				
+<!-- include header.html -->
+<div class="ui one column padded grid hideprint">
+    <div class="column ui container">
+        
+    </div>
+</div>
+<!-- end include header.html -->
+
+
+				<div class="main ui container fluid mainbody">
+					<button id="printbtn" class="circular ui icon right floated button hideprint hidemobile"
+						title="Print" aria-label="Print">
+						<i class="icon print"></i>
+					</button>
+					
+    <div class="ui text">
+        <h1 id="gopher-the-gold">Gopher the Gold</h1><!-- hints --><!-- flyout --><h2 id="let-s-get-gopher-crazy-">Let’s Get Gopher Crazy! </h2><p>Get the gopher to the acorn.</p>
+<p><img class="ui image" src="/static/mcj/gopher/gopher4.gif" alt="An anigif of what we need to do" title="Look what we&#39;re about to do today!" loading="lazy"></p>
+<h2 id="get-to-the-acorns">Get to the Acorns</h2><p>Use a loop to get the acorn!</p>
+<hr>
+<pre><code class="lang-block">loops.loopThis(4, function (){ })</code></pre>
+<hr>
+
+    <div class="ui hint message">
+        <div class="content">
+            <pre><code class="lang-blocks">  controller.onA( function () {
+    //@highlight
+    loops.loopThis(4, function () {
+        sprites.step_down()
+    })
+})</code></pre>
+<pre><code class="lang-validation.global"># BlocksExistValidator</code></pre>
+<pre><code class="lang-package">pxt-tilemaps=github:microsoft/pxt-tilemaps
+pxt-characterAnimations=github:microsoft/arcade-character-animations
+makecodejr-assets=github:kiki-lee/makecodejr-assets
+arcade-block-icons=github:kiki-lee/arcade-block-icons#v0.0.13
+</code></pre>
+<pre><code class="lang-template">  controller.onA( function () {})</code></pre>
+<pre><code class="lang-customts">
+// can&#39;t use controller events because it would override
+// the user&#39;s controller handlers. this works okay but
+// it&#39;s a little glitchy in the grid layout
+let debounce = 100
+control.runInParallel(function () {
+    while (true) {
+        controller.pauseUntilAnyButtonIsPressed();
+        if (controller.A.isPressed()) {
+            onAButtonPressed();
+            pause(debounce);
+        }
+    }
+})
+
+// Check to see if user has started their program
+function onAButtonPressed() {
+    aPressed = 1
+}
+
+
+// Behind the scenes set-up
+let mySprite: Sprite = null
+let stillWalking = 0
+let aPressed = 0
+let nuts = 0
+
+// Set up background and tilemap
+scene.setBackgroundImage(assets.image`bg1`)
+scene.setBackgroundColor(1)
+tiles.setTilemap(tilemap`ground4`)
+
+
+sprites.onCreated(SpriteKind.Food, function (sprite) {
+    sprite.setImage(assets.image`nut`)
+    nuts += 1
+    //info.setScore(nuts)
+})
+sprites.onOverlap(SpriteKind.Player, SpriteKind.Food, function (sprite, otherSprite) {
+    sprites.destroy(otherSprite, effects.disintegrate, 100)
+    nuts += -1
+    //info.setScore(nuts)
+})
+
+// Put nuts in each hole tile
+tiles.createSpritesOnTiles(assets.tile`nut`, SpriteKind.Food)
+
+
+
+// Set up sprite, animation, and location
+mySprite = sprites.create(assets.image`gopher`, SpriteKind.Player)
+tiles.placeOnRandomTile(mySprite, assets.tile`start`)
+animation.runImageAnimation(
+    mySprite,
+    assets.animation`bob`,
+    75,
+    true
+)
+
+
+game.onUpdateInterval(1000, function () {
+    if (characterAnimations.matchesRule(mySprite, characterAnimations.rule(Predicate.NotMoving)) &amp;&amp; stillWalking &lt;= 0) {
+        if (aPressed == 1 &amp;&amp; nuts==0) {
+            game.over(true)
+        } else if (aPressed == 1) {
+            game.over(false)
+        }
+    }
+    stillWalking += -1
+})
+
+
+
+namespace sprites {
+
+
+    //% block=&quot;`ICON.arrow-right-white`&quot;
+    export function step_right() {
+        stillWalking = 2
+        tiles.setWallAt(mySprite.tilemapLocation().getNeighboringLocation(CollisionDirection.Right), false)
+        tiles.setTileAt(mySprite.tilemapLocation().getNeighboringLocation(CollisionDirection.Right), assets.tile`hole`)
+        for (let index = 0; index &lt; 8; index++) {
+            mySprite.x += 2
+            pause(50)
+        }
+        pause(500)
+    }
+
+    //% block=&quot;`ICON.arrow-left-white`&quot;
+    export function step_left() {
+        stillWalking = 2
+        tiles.setWallAt(mySprite.tilemapLocation().getNeighboringLocation(CollisionDirection.Left), false)
+        tiles.setTileAt(mySprite.tilemapLocation().getNeighboringLocation(CollisionDirection.Left), assets.tile`hole`)
+        for (let index = 0; index &lt; 8; index++) {
+            mySprite.x -= 2
+            pause(50)
+        }
+        pause(500)
+    }
+
+        //% block=&quot;`ICON.arrow-up-white`&quot;
+        export function step_up() {
+            stillWalking = 2
+            tiles.setWallAt(mySprite.tilemapLocation().getNeighboringLocation(CollisionDirection.Top), false)
+            tiles.setTileAt(mySprite.tilemapLocation().getNeighboringLocation(CollisionDirection.Top), assets.tile`hole`)
+            for (let index = 0; index &lt; 8; index++) {
+                mySprite.y -= 2
+                pause(50)
+            }
+            pause(500)
+        }
+
+
+        //% block=&quot;`ICON.arrow-down-white`&quot;
+        export function step_down() {
+            stillWalking = 2    
+            tiles.setWallAt(mySprite.tilemapLocation().getNeighboringLocation(CollisionDirection.Bottom), false)
+            tiles.setTileAt(mySprite.tilemapLocation().getNeighboringLocation(CollisionDirection.Bottom), assets.tile`hole`)
+            for (let index = 0; index &lt; 8; index++) {
+                mySprite.y += 2
+                pause(50)
+            }
+            pause(500)
+        }
+
+
+
+    }
+
+    namespace loops{
+
+        //% block=&quot;`ICON.arrow-repeat-white` x $times&quot;
+        //% times.defl=4
+        //% handlerStatement
+        export function loopThis(times:number, handler: () =&gt; void): void {
+            for (let index = 0; index &lt; times; index++) {
+                handler();
+            }
+        }
+
+    }
+
+    namespace controller {
+        /**
+         * Register code run when a controller event occurs
+        * @param event
+        * @param handler
+        */
+        //% weight=99 blockGap=8
+        //% blockId=ctrlonA block=&quot;on `ICON.a-button-white-invert`&quot;
+        //% help=docs/on-a
+        export function onA(handler: () =&gt; void) {
+        controller.A.onEvent(ControllerButtonEvent.Pressed, handler)
+        }
+    }
+
+</code></pre>
+<pre><code class="lang-simtheme">{
+    &quot;theme&quot;: &quot;junior&quot;,
+    &quot;palette&quot;: [
+            &quot;#000000&quot;,
+            &quot;#FFFFFF&quot;,
+            &quot;#FF2121&quot;,
+            &quot;#FF93C4&quot;,
+            &quot;#FF8135&quot;,
+            &quot;#FFF609&quot;,
+            &quot;#249CA3&quot;,
+            &quot;#78DC52&quot;,
+            &quot;#AAAAAA&quot;,
+            &quot;#87F2FF&quot;,
+            &quot;#8E2EC4&quot;,
+            &quot;#A4839F&quot;,
+            &quot;#5C406c&quot;,
+            &quot;#DA9E96&quot;,
+            &quot;#91463d&quot;,
+            &quot;#000000&quot;
+        ]
+}</code></pre>
+<pre><code class="lang-assetjson">{
+  &quot;assets.json&quot;: &quot;&quot;,
+  &quot;images.g.jres&quot;: &quot;{\n    \&quot;image2\&quot;: {\n        \&quot;data\&quot;: \&quot;hwSgAHgAAACZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmdkdkZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZGd0dEZGZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZ3R0RERGZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZkZ3REREbGbmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZnZHREREbEbmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZnZHRERERG7mZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZnZHRERERG7mZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZnZHRERERG7mZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZnZHRERERG7mZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZnZHRERERG7mZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZnZHRERERG7mZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZnZHRERERG7mZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmRER3RERERG7mZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZERER0RERERG7mZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZkZERERERERERG7mZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZkZEREREREREbGbmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZnZEREREREREbGbmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZndEREREREREbGbmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZndEREREREREREbmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZnZERERERERERG7mZmZmZmZkZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZnZHRERERERERG7kZmZmZkREZGZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZ3d0dERERERG7kZmZmRkRERGZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmd3dERERERG7kZmZmdkREbGbmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmRERERERERG7mZmZmdkREbGbmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmRkRERHdEbEbmZmZmdkREbGbmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmdERERHd3b2bmZmZmdkRERGbmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmd0RERER3b2ZmZmZmdERERGbmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmd0REREREZuZmZmZGd0RERGbmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmd0REREREZuZmZmZGd0REbGbmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmdkRERERsZuZmZmZEdEREbGbmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmdkRERERsZuZmZmZHdEREbGbmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmdndERERsZuZmZnZHREREbuZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmdndERERERuZmZnZHREREbuZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmdndERERERuZmZnZHREREbuZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZndEREREZuZmZnZHREREbuZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZndERERsZuZmZnZHREREbuZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZkZERERsZuZmZnZEREREbGZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZERERu5mZmZnZHREREbGZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZGRERkZmZmZnZHREREbGbmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZnZHREREbGbmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZkZ3REREb2ZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZkR3REREb2ZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZkR0R0REbGZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmdkd0R0REbGZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmdkdEREREbGZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmdkdEREREbGZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmdkREREREbuZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmdkREREREbuZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmdkREREREbuZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmdkdEREREbuZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmdndEREREbuZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmdndEREREbuZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmdkdEREREbuZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmd0REREREbuZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmd0REREREbuZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmd0REREREbuZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmd0REREREbGZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmd0RERHdEbGZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmdkRERHd3b2ZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmdkdERER3bGbmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmdkdEREREbGbmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZndEREREbGbmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZndEREREbGbmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZnZHREREbGbmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZ3R0REbGbmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZEREREbGbmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZEREREbGbmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZGREREbGbmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZGREREbGbmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmdndHZGZmZmZGREREbGbmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmd0dERGZmZmZGREREbGbmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZ2d0RERG7mZmZ2R0REbGbmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZ2R0RERG7mZmZ2R0REbGbmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZnR0RERERG7mZmZmR0REbGbmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmdnd3R0RERG7mZmZmd0RERGbmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZ2d0dER0RERG7mZmZmdkdERGZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZ2R0RERERERG7mZmZmZndHZGZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZ3RERERERERG7mZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZ3RERERERERG7mZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZ3RERERERERG7mZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZ3RERERERERG7mZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZ3RERERERERG7mZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZ3REREd0RERGxm5mZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZ3R0R0d0RERGxm5mZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZkZ0RER0RERERERu5mZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmRkRERERERERERERu5mZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmRkRERERERERERERsZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmRERERERERERERERsZuZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmRERERERERERERERsZuZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmRERERERERERERERsZuZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmRERERERERERERERsZuZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmR0RERERERERERERsZuZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmd0RERERERERERERsZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmd0RERERERERERERu5mZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmdkdERERERERERERu5mZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmdkdERERERER0d3dvZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZnd3RERERER0d3dm5mZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZnZ3R0RERERERGxm5mZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZGRERERERERGxm5mZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmRERERERERGxm5mZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmRERERERERGxm5mZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmRnRHRERERGxm5mZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZndHRERERGxm5mZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmdkdERERERGxmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmdkdERERERGxmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmdkdERERERGxmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZndERER0R2RmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZndHRHR3RGZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZnZ3d3dnZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZ2d2dmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmdkREZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmd0REZGZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmd0REbGbmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmR0REbGbmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmR0REbGbmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZ2R0REbGZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmR0REbGZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmR0REbGZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmd0REbGZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmd0REbGZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmd0REbGZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZGdEdEbGZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZEdEdEbGbmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZnZHREREbGbmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZndEREREbGbmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZndERERERGbmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZndERERERGbmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZndERERERGbmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZndEREREbGbmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmRnREREREbGbmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmRHRHREREbGbmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmRHRHREREbGbmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZGREREREREb2bmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZGREREREREb2bmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZ2RERERER3b2ZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZ2R0RERER3b2ZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZ2R0REREREb2ZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZ2R0REREREbGZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmd0REREREbGZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmd0dEREREbGZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmdndHREREbGZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZndHREREbGZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZkREREREbGbmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmRkREREREbGbmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmRkREREREbGbmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmRkREREREbGZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmRndEREREbuZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmRndERER3ZGZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZnRERHRHZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZnR3d3dEZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZkZ3d0dmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZGZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZk=\&quot;,\n        \&quot;mimeType\&quot;: \&quot;image/x-mkcd-f4\&quot;,\n        \&quot;displayName\&quot;: \&quot;bg1\&quot;\n    },\n    \&quot;image5\&quot;: {\n        \&quot;data\&quot;: \&quot;hwQQABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAALALAAAAAAAAu0xEBAAAAAC7TERFBAAAALtMRFQEAAALu0xERAQAALu7TEREBAAAsLtMREQEAAAAu0xERAQAAAC7TEREBAAAALtMRAQAAAAAsAsAAAAAAAAAAAAAAAAAAAAAAAAAAA==\&quot;,\n        \&quot;mimeType\&quot;: \&quot;image/x-mkcd-f4\&quot;,\n        \&quot;displayName\&quot;: \&quot;nut\&quot;\n    },\n    \&quot;image4\&quot;: {\n        \&quot;data\&quot;: \&quot;hwQQABAAAAAAAAAAAAAA4AAAAMzMzMzeAADAvLu7u+0AAMy7u7u77gAAvLu7u7vuAAC8u7u7u+0AALy7v4u73gAAvLu7j7HuAAC8u7uPse4AALy7v4u77gAAvLu7u7veAAC8u7u7u+0AAMy7u7u77gAAwLy7u7vtAAAAzMzMzNwAAAAAAAAA4A==\&quot;,\n        \&quot;mimeType\&quot;: \&quot;image/x-mkcd-f4\&quot;,\n        \&quot;displayName\&quot;: \&quot;gopher\&quot;\n    },\n    \&quot;anim3\&quot;: {\n        \&quot;namespace\&quot;: \&quot;myAnimations\&quot;,\n        \&quot;id\&quot;: \&quot;anim3\&quot;,\n        \&quot;mimeType\&quot;: \&quot;application/mkcd-animation\&quot;,\n        \&quot;data\&quot;: \&quot;NGIwMDEwMDAxMDAwMDUwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMGMwY2NjY2NjY2MwYzAwMDBjY2JiYmJiYmJiY2MwMGMwYmNiYmJiYmJiYmNiMGNjMGJiYmJiYmJiYmJiYjBjYzBiYmJiYmZmYmJiYmIwY2MwYmJiYmJiYmJiYmJiMGNjMGJiYmJmYmJmYmJiYjBjYzBiYmJiODg4OGJiYmIwY2MwYmJiYjFiYjFiYmJiMGNjMGJiYmJiYmJiYmJiYjBjZTBlZGRlZWVlZWRlZGUwY2RlZWVlZWVkZWVlZGVlZWQwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwY2NjY2NjY2NjYzAwMDBjMGJjYmJiYmJiY2IwYzAwY2NiYmJiYmJiYmJiY2MwMGJjYmJiYmJiYmJiYmNiMDBiY2JiZmJiYmJmYmJjYjAwYmNiYmJiYmJiYmJiY2IwMGJjYmJiYmZmYmJiYmNiMDBiY2JiOGI4OGI4YmJjYjAwYmNiYmJiMTFiYmJiY2IwMGUwZWRkZWVlZWVkZWRlMGNkZWVlZWVlZGVlZWRlZWVkMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDBjMGNjY2NjY2NjMGMwMDAwY2NiYmJiYmJiYmNjMDBjMGJjYmJiYmJiYmJjYjBjYzBiYmJiYmJiYmJiYmIwY2MwYmJiYmJiYmJiYmJiMGNjMGJiYmJiYmJiYmJiYjBjYzBiYmJiZmJiZmJiYmIwY2MwYmJiYjg4ODhiYmJiMGNlMGVkZGVlZWVlZGVkZTBjZGVlZWVlZWRlZWVkZWVlZDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMGNjY2NjY2NjY2MwMDAwYzBiY2JiYmJiYmNiMGMwMGNjYmJiYmJiYmJiYmNjMDBiY2JiYmJiYmJiYmJjYjAwYmNiYmZiYmJiZmJiY2IwMGJjYmJiYmJiYmJiYmNiMDBiY2JiYmJmZmJiYmJjYjAwYmNiYjhiODhiOGJiY2IwMGJjYmJiYjExYmJiYmNiZTBlZGRlZWVlZWRlZGUwY2RlZWVlZWVkZWVlZGVlZWQwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDBjMGNjY2NjY2NjMGMwMDAwY2NiYmJiYmJiYmNjMDBjMGJjYmJiYmJiYmJjYjBjYzBiYmJiYmJiYmJiYmIwY2MwYmJiYmJmZmJiYmJiMGNjMGJiYmJiYmJiYmJiYjBjYzBiYmJiZmJiZmJiYmIwY2MwYmJiYjg4ODhiYmJiMGNjMGJiYmIxYmIxYmJiYjBjYzBiYmJiYmJiYmJiYmIwY2UwZWRkZWVlZWVkZWRlMGNkZWVlZWVlZGVlZWRlZWVk\&quot;,\n        \&quot;displayName\&quot;: \&quot;bob\&quot;\n    },\n    \&quot;*\&quot;: {\n        \&quot;mimeType\&quot;: \&quot;image/x-mkcd-f4\&quot;,\n        \&quot;dataEncoding\&quot;: \&quot;base64\&quot;,\n        \&quot;namespace\&quot;: \&quot;myImages\&quot;\n    }\n}&quot;,
+  &quot;images.g.ts&quot;: &quot;// Auto-generated code. Do not edit.\nnamespace myImages {\n\n    helpers._registerFactory(\&quot;image\&quot;, function(name: string) {\n        switch(helpers.stringTrim(name)) {\n            case \&quot;image2\&quot;:\n            case \&quot;bg1\&quot;:return img`\n9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999\n9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999\n9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999\n9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999\n999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999991111ddd9999999999999999999999999999999999999999999999999999999999999\n9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999991111111dddd99999999999999999999999999999999999999999999999999999999999\n9999999999999999999999dd999999999999999999999999999999999999999999999999999999999999999999111111111ddd9999999999999999999999999999999999999999999999999999999999\n999999999999999999911ddddd999999999999999999999999999999999999999999999999999999999999999111111111111dd999999999999999999999999999999999999999999999999999999999\n9999999999999999991111111dd9999999999999999999999999999999999999999999999999999999ddddddd111111111111dd999999999999999999999999999999999999999999999999999999999\n99999999999999999911111111d99999999999999999999999999999999999999999999999999999dddddddddd11111111111dd199999999999999999999999999999999999999999999999999999999\n99999999999999999111111111dd191ddd9999999999999999999999999999999999999999999999dd111111d1111111111111d111999999999999999999999999999999999999999999999999999999\n99999999999999999111111111dd11ddddddddd9999999999999999999999999999999999999999dd111111111111111111111111119ddd9999999999999999999999999999999999999999999999999\n99999999999999999111111111dd11111111ddddd99999999999999999999999999999999999991dd11111111111111111111111111dddddd99999999999999999999999999999999999999999999999\n999999991dddddddd1111111111d11111111ddddd1999999999999999999999999999999999999dd11111111111111111111111111dd111ddd9999999999999999999999999999999999999999999999\n9999999ddddddddddd1111111111111111111111111999999999999999999999999999999999991d11111111111111111111111111dd1111dd9999999999999999999999999999999999999999999999\n9999991dd11111111dd111111111111111111111111199999999999999999999999999999999dddd11111111dd11111111111111111111111dd999999999999999999999999999999999999999999999\n999999dd1111111111111111111111111111111111119999999999999999999999999999999ddd1dd111111dd111111111111111111111111dd999999999999999999999999999999999999999999999\n99999dd1111111111111111111111111111111111111999999999999999999999999999999ddd1111111111dd111111111111111111111111dd999999999999999999999999999999999999999999999\n99999dd1111111111111111111111dd1111111111111999999999999999999999999999999dd1111111111111111111111111111111111111dd999999999999999999999999999999999999999999999\n99999111111111111111111111111dd1111111111111999999999999999999999999999999d1111111111111111111111111111111111111dd9999999999999999999999999999999999999999999999\n999991111111111111111111111111dd1111111111b1999999999999999999999999999999d1111111111111111111111111111111111111dd9999999999999999999999999999999999999999999999\n999999111111111111111111111111dd11bbb111bbb999999999999999999999999999999911111111111111111111111111dd111111111dd99999999999999999999999911dddd99999999999999999\n999999111111111111111111111111ddbbbbbbbbbb9999999999999999999999999999999911111111111111111111111111dd111111111d1999999999999999999999911111ddddd999999999999999\n99999991bb1111111111bbb111111bbb99999119999999999999999999999999999999999991111111111111111111111111dd11111111111999999999999999999999111111111ddd99111119999999\n99999999bbbbbbbbbbbbbbbbbbbbbbb999999999999999999999999999999999999999999999bbbbbbbbbbb1111111111111dd111111111199999999999999999ddddd1111111111ddd1111dd1199999\n9999999991bbbbbbbbbb9991bbbbb19999999999999999999999999999999999999999999999bbbbbbbbbbbbb11111111111ddbbbbbbbbb99999999999999999ddddddddd11111111dd1111dddd19999\n999999999999999999999999911199999999999999999999999999999999999999999999999999999999999bbbb1111111bbdbbbbbbb99999999999999999991d111111dd11111111dd1111111dd9999\n99999999999999999999999999999999999999999999999999999999999999999999999999999999999999999bbbbbbbbbbbb9999999999999999999d999991111111111111111111111111111dd9999\n9999999999999999999999999999999999999999999999999999999999ddddd99999999999999999999999999999bbbbb9999999999999999999dddddddddd1111111111111111111111111111dd1999\n999999999999999999999999999999999999999999999999dddddddddddddddddd9999999999999999999999999999999999999999999999999ddd11111ddddd11111111111111111111111111dd9999\n999999999999999999999999999999999999999999999911ddd111dddd111111dddd9999999999999999999999999999999999999999999999911111111111dd11111111111111111111111111dd9999\n999999999999999999999999999999999999ddddddddd1111111111dd111111111ddd999999999999999999999999999999999999999999999911111111111111111111111111111111111111dd19999\n99999999999999999999999999999999991dddddd1ddddd111111111111111111111dd119999999999999999999999999999999999999999999111111111111111111111111dd11111111111dd199999\n999999999999999999999999999999991111111111111dddd11111111111111111111d111111dd9999999999999999999999999999999999999111111111111111111111111dd11111111111d1199999\n99999999999999999999999999999991dd1111111111111dd11111111111111111111d111111dddd999999999999999999999999999999999999111111111111111111111ddddd111111111b19999999\n999999999999999999999999991ddddddddd1111111111111111111111111111111111111111111dd999999999999999999999999999999999999bbbbbbbbbbbbb111bbbbbbbbbbbbbbbbbbb99999999\n99999999999999999999999991111111111111111111111111111111111111dd1111111111111111dd99999999999999999999999999999999999bbb9999999bbbbbbbbbbbb99999999bbb9999999999\n99999999999999999999999991111111111111111111111111111111111111dd11111111111111111d999999999999999999999999999999999999999999999999999999999999999999999999999999\n999999999999999999999999111111111111111111111111111111111111111dd1111111111111111d999999999999999999999999999999999999999999999999999999999999999999999999999999\n999999999999999999999999911111111111111111111111111111111111111dd11111111111111111999999999999999999999999999999999999999999999999999999999999999999999999999999\n999999999999999999999999911111111111bbbbb1111dd1111bbbbbbbbbb11d111111111111111111999999999999999999999999999999999999999999999999999999999999999999999999999999\n999999999999999999999999991bbb111bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb119999999999999999999999999999999999999999999999999999999999999999999999999999999\n999999999999999999999999999bbbbbbbbb9999999bb9999999999999999999bbbbbbbbbbbbbbbb99999999999999999999999999999999999999999999999999999999999999999999999999999999\n9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999\n9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999\n9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999\n9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999\n9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999\n9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999\n9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999\n9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999\n9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999\n9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999\n9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999\n9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999\n9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999\n9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999\n9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999\n9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999\n9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999\n9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999\n9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999\n9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999\n9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999\n9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999\n9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999\n9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999\n9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999\n9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999\n9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999\n9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999\n9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999\n9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999\n9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999\n9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999\n9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999\n9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999\n9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999\n9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999\n9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999\n9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999\n9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999\n9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999\n9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999\n9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999\n9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999\n9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999\n9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999\n9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999\n9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999\n9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999\n9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999\n9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999\n9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999\n9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999\n9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999\n9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999\n9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999\n9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999\n9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999\n9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999\n9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999\n9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999\n9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999\n9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999\n9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999\n9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999\n9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999\n9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999\n9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999\n9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999\n9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999\n9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999\n9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999\n9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999\n9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999\n9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999\n9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999\n9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999\n9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999\n`;\n            case \&quot;image5\&quot;:\n            case \&quot;nut\&quot;:return img`\n. . . . . . . . . . . . . . . . \n. . . . . . . . . . . . . . . . \n. . . . . . . b b . . . . . . . \n. . . . . . . . b b . . . . . . \n. . . . b b b b b b b b b . . . \n. . . b b b b b b b b b b b . . \n. . . b c c c c c c c c c b . . \n. . . . 4 4 4 4 4 4 4 4 4 . . . \n. . . . 4 4 4 4 4 4 4 4 4 . . . \n. . . . 4 4 4 4 4 4 4 4 4 . . . \n. . . . 4 5 4 4 4 4 4 4 4 . . . \n. . . . . 4 5 4 4 4 4 4 . . . . \n. . . . . 4 4 4 4 4 4 4 . . . . \n. . . . . . . . . . . . . . . . \n. . . . . . . . . . . . . . . . \n. . . . . . . . . . . . . . . . \n`;\n            case \&quot;image4\&quot;:\n            case \&quot;gopher\&quot;:return img`\n. . . . . . . . . . . . . . . . \n. . . . . . . . . . . . . . . . \n. . . . . . . . . . . . . . . . \n. . . . . . . . . . . . . . . . \n. . . c c c c c c c c c c . . . \n. . c c b b b b b b b b c c . . \n. c c b b b b b b b b b b c c . \n. c b b b b b b b b b b b b c . \n. c b b b b f b b f b b b b c . \n. c b b b b b b b b b b b b c . \n. c b b b b b f f b b b b b c . \n. c b b b b 8 8 8 8 b b b b c . \n. c b b b b b 1 1 b b b b b c . \n. c b b b b b b b b b b b b c . \n. e d e e d e e e e e d e d c . \ne d e e e e d e e e d e e e d e \n`;\n        }\n        return null;\n    })\n\n    helpers._registerFactory(\&quot;animation\&quot;, function(name: string) {\n        switch(helpers.stringTrim(name)) {\n            case \&quot;bob\&quot;:\n            case \&quot;anim3\&quot;:return [img`\n. . . . . . . . . . . . . . . . \n. . . . . . . . . . . . . . . . \n. . . . . . . . . . . . . . . . \n. . . . . . . . . . . . . . . . \n. . . c c c c c c c c c c . . . \n. . c c b b b b b b b b c c . . \n. c c b b b b b b b b b b c c . \n. c b b b b b b b b b b b b c . \n. c b b b b f b b f b b b b c . \n. c b b b b b b b b b b b b c . \n. c b b b b b f f b b b b b c . \n. c b b b b 8 8 8 8 b b b b c . \n. c b b b b b 1 1 b b b b b c . \n. c b b b b b b b b b b b b c . \n. e d e e d e e e e e d e d c . \ne d e e e e d e e e d e e e d e \n`, img`\n. . . . . . . . . . . . . . . . \n. . . . . . . . . . . . . . . . \n. . . . . . . . . . . . . . . . \n. . . . . . . . . . . . . . . . \n. . . . . . . . . . . . . . . . \n. . c c c c c c c c c c . . . . \n. c c b b b b b b b b c c . . . \nc c b b b b b b b b b b c c . . \nc b b b b b b b b b b b b c . . \nc b b b b f b b f b b b b c . . \nc b b b b b b b b b b b b c . . \nc b b b b b f f b b b b b c . . \nc b b b b 8 8 8 8 b b b b c . . \nc b b b b b 1 1 b b b b b c . . \n. e d e e d e e e e e d e d c . \ne d e e e e d e e e d e e e d e \n`, img`\n. . . . . . . . . . . . . . . . \n. . . . . . . . . . . . . . . . \n. . . . . . . . . . . . . . . . \n. . . . . . . . . . . . . . . . \n. . . . . . . . . . . . . . . . \n. . . . . . . . . . . . . . . . \n. . . c c c c c c c c c c . . . \n. . c c b b b b b b b b c c . . \n. c c b b b b b b b b b b c c . \n. c b b b b b b b b b b b b c . \n. c b b b b b b b b b b b b c . \n. c b b b b b b b b b b b b c . \n. c b b b b b f f b b b b b c . \n. c b b b b 8 8 8 8 b b b b c . \n. e d e e d e e e e e d e d c . \ne d e e e e d e e e d e e e d e \n`, img`\n. . . . . . . . . . . . . . . . \n. . . . . . . . . . . . . . . . \n. . . . . . . . . . . . . . . . \n. . . . . . . . . . . . . . . . \n. . . . . . . . . . . . . . . . \n. . . . c c c c c c c c c c . . \n. . . c c b b b b b b b b c c . \n. . c c b b b b b b b b b b c c \n. . c b b b b b b b b b b b b c \n. . c b b b b f b b f b b b b c \n. . c b b b b b b b b b b b b c \n. . c b b b b b f f b b b b b c \n. . c b b b b 8 8 8 8 b b b b c \n. . c b b b b b 1 1 b b b b b c \n. e d e e d e e e e e d e d c . \ne d e e e e d e e e d e e e d e \n`, img`\n. . . . . . . . . . . . . . . . \n. . . . . . . . . . . . . . . . \n. . . . . . . . . . . . . . . . \n. . . . . . . . . . . . . . . . \n. . . c c c c c c c c c c . . . \n. . c c b b b b b b b b c c . . \n. c c b b b b b b b b b b c c . \n. c b b b b b b b b b b b b c . \n. c b b b b f b b f b b b b c . \n. c b b b b b b b b b b b b c . \n. c b b b b b f f b b b b b c . \n. c b b b b 8 8 8 8 b b b b c . \n. c b b b b b 1 1 b b b b b c . \n. c b b b b b b b b b b b b c . \n. e d e e d e e e e e d e d c . \ne d e e e e d e e e d e e e d e \n`];\n        }\n        return null;\n    })\n\n    helpers._registerFactory(\&quot;song\&quot;, function(name: string) {\n        switch(helpers.stringTrim(name)) {\n\n        }\n        return null;\n    })\n\n}\n// Auto-generated code. Do not edit.\n&quot;,
+  &quot;main.blocks&quot;: &quot;&lt;xml xmlns=\&quot;https://developers.google.com/blockly/xml\&quot;&gt;&lt;block type=\&quot;keyonevent\&quot; x=\&quot;0\&quot; y=\&quot;0\&quot;&gt;&lt;field name=\&quot;button\&quot;&gt;controller.A&lt;/field&gt;&lt;field name=\&quot;event\&quot;&gt;ControllerButtonEvent.Pressed&lt;/field&gt;&lt;statement name=\&quot;HANDLER\&quot;&gt;&lt;block type=\&quot;sprites_step_down\&quot;&gt;&lt;/block&gt;&lt;/statement&gt;&lt;/block&gt;&lt;/xml&gt;&quot;,
+  &quot;main.ts&quot;: &quot;&quot;,
+  &quot;pxt.json&quot;: &quot;{\n    \&quot;name\&quot;: \&quot;MakeCodeJr-Gopher-json\&quot;,\n    \&quot;description\&quot;: \&quot;\&quot;,\n    \&quot;dependencies\&quot;: {\n        \&quot;device\&quot;: \&quot;*\&quot;,\n        \&quot;core\&quot;: \&quot;*\&quot;\n    },\n    \&quot;files\&quot;: [\n        \&quot;main.blocks\&quot;,\n        \&quot;main.ts\&quot;,\n        \&quot;assets.json\&quot;,\n        \&quot;tilemap.g.jres\&quot;,\n        \&quot;tilemap.g.ts\&quot;,\n        \&quot;images.g.jres\&quot;,\n        \&quot;images.g.ts\&quot;,\n        \&quot;pxt.json\&quot;\n    ],\n    \&quot;targetVersions\&quot;: {\n        \&quot;branch\&quot;: \&quot;v1.12.32\&quot;,\n        \&quot;tag\&quot;: \&quot;v1.12.32\&quot;,\n        \&quot;commits\&quot;: \&quot;https://github.com/microsoft/pxt-arcade/commits/2bc63c8f9e7915ee02ddc6f113204107954f24b6\&quot;,\n        \&quot;target\&quot;: \&quot;1.12.32\&quot;,\n        \&quot;pxt\&quot;: \&quot;8.5.44\&quot;\n    },\n    \&quot;preferredEditor\&quot;: \&quot;tsprj\&quot;,\n    \&quot;theme\&quot;: \&quot;junior\&quot;,\n    \&quot;palette\&quot;: [\n        \&quot;#000000\&quot;,\n        \&quot;#FFFFFF\&quot;,\n        \&quot;#FF2121\&quot;,\n        \&quot;#FF93C4\&quot;,\n        \&quot;#FF8135\&quot;,\n        \&quot;#FFF609\&quot;,\n        \&quot;#249CA3\&quot;,\n        \&quot;#78DC52\&quot;,\n        \&quot;#AAAAAA\&quot;,\n        \&quot;#87F2FF\&quot;,\n        \&quot;#8E2EC4\&quot;,\n        \&quot;#A4839F\&quot;,\n        \&quot;#5C406c\&quot;,\n        \&quot;#DA9E96\&quot;,\n        \&quot;#91463d\&quot;,\n        \&quot;#000000\&quot;\n    ]\n}\n&quot;,
+  &quot;tilemap.g.jres&quot;: &quot;{\n    \&quot;transparency16\&quot;: {\n        \&quot;data\&quot;: \&quot;hwQQABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==\&quot;,\n        \&quot;mimeType\&quot;: \&quot;image/x-mkcd-f4\&quot;,\n        \&quot;tilemapTile\&quot;: true\n    },\n    \&quot;tile1\&quot;: {\n        \&quot;data\&quot;: \&quot;hwQQABAAAAAAAAAAAAAA0AAAAAAAAADQAAAAAAAAANAAAAAAAAAA0AAAAAAAAADQAAAAAAAAANAAAAAAAAAA0AAAAAAAAADQAAAAAAAAANAAAAAAAAAA0AAAAAAAAADQAAAAAAAAANAAAAAAAAAA0AAAAAAAAADQAAAAAAAAANDd3d3d3d3d3Q==\&quot;,\n        \&quot;mimeType\&quot;: \&quot;image/x-mkcd-f4\&quot;,\n        \&quot;tilemapTile\&quot;: true,\n        \&quot;displayName\&quot;: \&quot;grid\&quot;\n    },\n    \&quot;tile3\&quot;: {\n        \&quot;data\&quot;: \&quot;hwQQABAAAAAAAAAAAAAAcAAAAAAAAADQAAAAAAAAAHAAAAAAAAAA0AAAAAAAAABwAAAAAAAAANAAAAAAAAAAcAAAAAAAAADQAAAAAAAAAHAAAAAAAAAA0AAAAAAAAABwAAAAAAAAANAAAAAAAAAAcAAAAAAAAADQAAAAAAAAAHDd3d3d3d3d3Q==\&quot;,\n        \&quot;mimeType\&quot;: \&quot;image/x-mkcd-f4\&quot;,\n        \&quot;tilemapTile\&quot;: true,\n        \&quot;displayName\&quot;: \&quot;start_old\&quot;\n    },\n    \&quot;tile6\&quot;: {\n        \&quot;data\&quot;: \&quot;hwQQABAAAAAAAAAAAADgAAAAAAAAAOAOAAAAAAAAYO4AAAAAAAAA7gAAAAAAAADuAAAAAAAAZu4AAAAAAAAA5gAAAAAAAODuAAAAAAAA4O4AAAAAAADu7gAAAAAAAHDuAAAAAAAAYO4AAAAAAADg7gAAAAAAAGbuAAAAAAAAAAYAAAAAAABgAA==\&quot;,\n        \&quot;mimeType\&quot;: \&quot;image/x-mkcd-f4\&quot;,\n        \&quot;tilemapTile\&quot;: true,\n        \&quot;displayName\&quot;: \&quot;start\&quot;\n    },\n    \&quot;tile7\&quot;: {\n        \&quot;data\&quot;: \&quot;hwQQABAAAADd3d3d3d3d3e7u7u7u7u7ezM7u7v8fzN7s///////s3sH//////8/eEf///////97u////////3u7////////e7v///////97+////////3v7//////+/e7v///////97O////////3uz8///////ey8z/////797O7O7u7u7M3g==\&quot;,\n        \&quot;mimeType\&quot;: \&quot;image/x-mkcd-f4\&quot;,\n        \&quot;tilemapTile\&quot;: true,\n        \&quot;displayName\&quot;: \&quot;nut\&quot;\n    },\n    \&quot;tile5\&quot;: {\n        \&quot;data\&quot;: \&quot;hwQQABAAAADd3d3d3d3d3e7u7u7uHuHe7u7r7u7u7t4e4e7u7u7u3h7h7u7u7u7e7u7u7uvu7t7u7u7u7u4e3u7u7u7u7u7e7u7u7u7u7t7u7rvu7u7u3u7uu+7u7u7e7u7u7u7u7t7u7u7u7u7r3r7u7u7u7u7e7u7u7u7u7t7u7u7u7u7u3g==\&quot;,\n        \&quot;mimeType\&quot;: \&quot;image/x-mkcd-f4\&quot;,\n        \&quot;tilemapTile\&quot;: true,\n        \&quot;displayName\&quot;: \&quot;dirt\&quot;\n    },\n    \&quot;tile8\&quot;: {\n        \&quot;data\&quot;: \&quot;hwQQABAAAADd3d3d3d3d3f/////////f/////////9//////////3//////////f/////////9//////////3//////////f/////////9//////////3//////////f/////////9//////////3//////////f/////////9//////////3w==\&quot;,\n        \&quot;mimeType\&quot;: \&quot;image/x-mkcd-f4\&quot;,\n        \&quot;tilemapTile\&quot;: true,\n        \&quot;displayName\&quot;: \&quot;hole\&quot;\n    },\n    \&quot;tile4\&quot;: {\n        \&quot;data\&quot;: \&quot;hwQQABAAAAAAAAAAANDd3QAAAAAAcObeAAAAAABwZ94AAAAAAHB23gAAAAAAcHfeAAAAAABwZt4AAAAAAHB31gAAAAAAcObeAAAAAABw5t4AAAAAAHDu3gAAAAAAcHbeAAAAAABwZ94AAAAAAHDn3gAAAAAAcGbeAAAAAABwd9YAAAAAAHBn3g==\&quot;,\n        \&quot;mimeType\&quot;: \&quot;image/x-mkcd-f4\&quot;,\n        \&quot;tilemapTile\&quot;: true,\n        \&quot;displayName\&quot;: \&quot;top\&quot;\n    },\n    \&quot;ground1\&quot;: {\n        \&quot;id\&quot;: \&quot;ground1\&quot;,\n        \&quot;mimeType\&quot;: \&quot;application/mkcd-tilemap\&quot;,\n        \&quot;data\&quot;: \&quot;MTAxMDAwMTAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMTAxMDEwMzAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAyMDIwMjAyMDIwMjAyMDIwMjAyMDIwMjAyMDIwMjAyMDIwMjAyMDIwMjAyMDIwMjAyMDIwMjAyMDIwMjAyMDIwMjAyMDIwMjAyMDIwMjAyMDIwMjAyMDIwMjAyMDIwMjAyMDIwMjA0MDIwMjAyMDIwMjAyMDIwMjAyMDIwMjAyMDIwMjAyMDIwMjAyMDIwMjAyMDIwMjAyMDIwMjAyMDIwMjAyMDIwMjAyMDIwMjAyMDIwMjAyMDIwMjAyMDIwMjAyMDIwMjAyMDIwMjAyMDIwMjAyMDIwMjAyMDIwMjAyMDIwMjAyMDIwMjAyMDIwMjAyMDIwMjAyMDIwMjAyMDIwMjAyMDIwMjAyMDIwMjAyMDIwMjAyMDIwMjAyMDIwMjAyMDIwMjAyMDIwMjAyMDIwMjAyMDIwMjAyMDIwMjAyMDIwMjAyMDIwMjAyMDIwMjAyMDIwMjAyMDIwMjAyMDIwMjAyMDIwMjAyMDIwMjAyMDIwMjAyMDIwMjAyMDIwMjAyMDIwMjAyMDIwMjAyMDIwMjAyMDIwMjAyMDIwMjAyMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMg==\&quot;,\n        \&quot;tileset\&quot;: [\n            \&quot;myTiles.transparency16\&quot;,\n            \&quot;myTiles.tile4\&quot;,\n            \&quot;myTiles.tile5\&quot;,\n            \&quot;myTiles.tile6\&quot;,\n            \&quot;myTiles.tile7\&quot;\n        ],\n        \&quot;displayName\&quot;: \&quot;ground4\&quot;\n    },\n    \&quot;*\&quot;: {\n        \&quot;mimeType\&quot;: \&quot;image/x-mkcd-f4\&quot;,\n        \&quot;dataEncoding\&quot;: \&quot;base64\&quot;,\n        \&quot;namespace\&quot;: \&quot;myTiles\&quot;\n    }\n}&quot;,
+  &quot;tilemap.g.ts&quot;: &quot;// Auto-generated code. Do not edit.\nnamespace myTiles {\n    //% fixedInstance jres blockIdentity=images._tile\n    export const transparency16 = image.ofBuffer(hex``);\n    //% fixedInstance jres blockIdentity=images._tile\n    export const tile1 = image.ofBuffer(hex``);\n    //% fixedInstance jres blockIdentity=images._tile\n    export const tile3 = image.ofBuffer(hex``);\n    //% fixedInstance jres blockIdentity=images._tile\n    export const tile6 = image.ofBuffer(hex``);\n    //% fixedInstance jres blockIdentity=images._tile\n    export const tile7 = image.ofBuffer(hex``);\n    //% fixedInstance jres blockIdentity=images._tile\n    export const tile5 = image.ofBuffer(hex``);\n    //% fixedInstance jres blockIdentity=images._tile\n    export const tile8 = image.ofBuffer(hex``);\n    //% fixedInstance jres blockIdentity=images._tile\n    export const tile4 = image.ofBuffer(hex``);\n\n    helpers._registerFactory(\&quot;tilemap\&quot;, function(name: string) {\n        switch(helpers.stringTrim(name)) {\n            case \&quot;ground4\&quot;:\n            case \&quot;ground1\&quot;:return tiles.createTilemap(hex`1000100000000000000000000000000000000000000000000000000000000000000000000101010301010101010101010101010102020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020204020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202`, img`\n. . . . . . . . . . . . . . . . \n. . . . . . . . . . . . . . . . \n. . . . . . . . . . . . . . . . \n2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 \n2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 \n2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 \n2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 \n2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 \n2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 \n2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 \n2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 \n2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 \n2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 \n2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 \n2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 \n2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 \n`, [myTiles.transparency16,myTiles.tile4,myTiles.tile5,myTiles.tile6,myTiles.tile7], TileScale.Sixteen);\n        }\n        return null;\n    })\n\n    helpers._registerFactory(\&quot;tile\&quot;, function(name: string) {\n        switch(helpers.stringTrim(name)) {\n            case \&quot;transparency16\&quot;:return transparency16;\n            case \&quot;grid\&quot;:\n            case \&quot;tile1\&quot;:return tile1;\n            case \&quot;start_old\&quot;:\n            case \&quot;tile3\&quot;:return tile3;\n            case \&quot;start\&quot;:\n            case \&quot;tile6\&quot;:return tile6;\n            case \&quot;nut\&quot;:\n            case \&quot;tile7\&quot;:return tile7;\n            case \&quot;dirt\&quot;:\n            case \&quot;tile5\&quot;:return tile5;\n            case \&quot;hole\&quot;:\n            case \&quot;tile8\&quot;:return tile8;\n            case \&quot;top\&quot;:\n            case \&quot;tile4\&quot;:return tile4;\n        }\n        return null;\n    })\n\n}\n// Auto-generated code. Do not edit.\n&quot;
+}
+</code></pre>
+
+        </div>
+    </div>
+
+    </div>
+
+					<div class="hideprint"></div>
+				</div>
+
+			</div>
+
+			
+<!-- include footer.html -->
+<footer class="ui vertical footer segment hideprint docs inverted" aria-hidden="false">
+    <div class="ui center aligned container">
+        <div class="ui horizontal link list">
+            <a
+                class="item"
+                href="https://twitter.com/intent/follow?screen_name=MsMakeCode"
+                title="Follow us on Twitter"
+                target="_blank"
+                rel="noopener">
+                <i class="huge icon twitter"></i>
+            </a>
+            <a class="item" href="https://www.youtube.com/channel/UCye7YlvFUUQ1dSy0WZZ1T_Q" title="Subscribe to our YouTube channel"
+                target="_blank" rel="noopened">
+                <i class="huge icon youtube"></i>
+            </a>
+            <a class="item" href="mailto:makecode@microsoft.com" title="Send us an Email"
+                target="_blank" rel="noopened">
+                <i class="huge icon mail"></i>
+            </a>
+        </div>
+        <div class="ui section divider"></div>
+        <div class="ui container horizontal small divided link list">
+            <a id="langpicker" tabindex="0" class="ui item" rel="noopener">
+                <i class="icon xicon globe" aria-hidden="true" role="presentation"></i>Language
+            </a>
+            <a class="item" href="https://makecode.com/privacy" target="_blank" rel="noopener">Privacy &amp; Cookies</a>
+            <a class="item" href="https://makecode.com/termsofuse" target="_blank" rel="noopener">Terms Of Use</a>
+            <a class="item" href="https://makecode.com/trademarks" target="_blank" rel="noopener">Trademarks</a>
+            <span class="item">© 2022 Microsoft</span>
+        </div>
+        <div class="ui container horizontal small link list poweredBy">
+            <span class="item">Powered by</span>
+            <a class="middle aligned" href="https://makecode.com/" title="Microsoft MakeCode"
+                target="_blank" rel="noopener">
+                <img width="100" src="/static/logo/Microsoft-logo_rgb_c-gray.png" alt="Microsoft">
+            </a>
+        </div>
+    </div>
+</footer>
+
+<!-- end include footer.html -->
+
+
+		</div>
+
+	</div>
+
+    
+<!-- include langpicker.html -->
+<div id="langmodal" class="ui modal docs" role="dialog" aria-modal="true" aria-describedby="langmodalheader" tabindex="-1">
+    <h2 id="langmodalheader" class="header">Select Language</h2>
+    <div role="button" class="closeIcon" tabindex="0" aria-label="Close">
+        <i class="icon close remove circle" aria-hidden="true"></i>
+    </div>
+
+	<div class="content">
+	    <div class="group">
+            <div id="availablelocales" class="ui cards centered" role="listbox" aria-label="List of available locales"></div>
+        </div>
+        <div class="ui" id="langmodalfooter">
+            <a class="ui" href="/pxt-arcade-app/docs/translate.html" target="_blank" rel="noopener noreferrer">
+                How do I add a new language?
+            </a>
+
+            <a id="translatebtn" class="ui button" role="button" tabindex="0">
+                Translate this page
+            </a>
+        </div>
+    </div>
+</div>
+
+
+<!-- end include langpicker.html -->
+
+	
+<!-- include macros.html -->
+<!-- macro button -->
+
+<!-- macro vimeo -->
+
+<!-- macro youtube -->
+
+<!-- macro section -->
+
+<!-- macro hide -->
+
+<!-- macro avatar -->
+
+<!-- macro hint -->
+
+<!-- macro codecard -->
+
+<!-- macro tutorialhint -->
+
+<!-- macro reminder -->
+
+<!-- macro alert -->
+
+<!-- macro tip -->
+
+<!-- wrapped around ordinary content -->
+<!-- macro main-container -->
+
+<!-- used for 'column' box - they are collected and wrapped in 'column-container' -->
+<!-- macro column -->
+<!-- macro column-container -->
+
+
+<!-- Menu on the top of the page -->
+<!-- macro item -->
+
+<!-- macro divider -->
+
+<!-- TOC in the sidebar -->
+<!-- macro item -->
+
+<!-- macro divider -->
+
+<!-- macro toc-dropdown -->
+
+<!-- macro toc-dropdown-noLink -->
+
+<!-- macro toc-dropdown-noHeading -->
+
+<!-- TODO: duplicates of above for compatability with docsrender.ts;
+    remove with pxtlib/docsrender.ts TOC TODOs after cloud bump. -->
+<!-- macro top-dropdown -->
+
+<!-- macro top-dropdown-noHeading -->
+
+<!-- macro inner-dropdown -->
+
+<!-- macro nested-dropdown -->
+<!-- end include macros.html -->
+
+	
+<!-- include tracking.html -->
+<script type="text/javascript" src="/pxt-arcade-app/pxtweb.js"></script>
+<script type="text/javascript">
+    window.loadAppInsights = function (includeCookie) {
+        //Backend will patch / + doccdn + / with CDN url and the check that URL ends with the sha would pass
+        var isProduction = includeCookie && (/[0-9a-f]{40}\/ai\.2\.min\.js$/.test("/pxt-arcade-app/ai.2.min.js"));
+        !function(T,l,y){var S=T.location,k="script",D="connectionString",C="ingestionendpoint",I="disableExceptionTracking",E="ai.device.",b="toLowerCase",w="crossOrigin",N="POST",e="appInsightsSDK",t=y.name||"appInsights";(y.name||T[e])&&(T[e]=t);var n=T[t]||function(d){var g=!1,f=!1,m={initialize:!0,queue:[],sv:"5",version:2,config:d};function v(e,t){var n={},a="Browser";return n[E+"id"]=a[b](),n[E+"type"]=a,n["ai.operation.name"]=S&&S.pathname||"_unknown_",n["ai.internal.sdkVersion"]="javascript:snippet_"+(m.sv||m.version),{time:function(){var e=new Date;function t(e){var t=""+e;return 1===t.length&&(t="0"+t),t}return e.getUTCFullYear()+"-"+t(1+e.getUTCMonth())+"-"+t(e.getUTCDate())+"T"+t(e.getUTCHours())+":"+t(e.getUTCMinutes())+":"+t(e.getUTCSeconds())+"."+((e.getUTCMilliseconds()/1e3).toFixed(3)+"").slice(2,5)+"Z"}(),iKey:e,name:"Microsoft.ApplicationInsights."+e.replace(/-/g,"")+"."+t,sampleRate:100,tags:n,data:{baseData:{ver:2}}}}var h=d.url||y.src;if(h){function a(e){var t,n,a,i,r,o,s,c,u,p,l;g=!0,m.queue=[],f||(f=!0,t=h,s=function(){var e={},t=d.connectionString;if(t)for(var n=t.split(";"),a=0;a<n.length;a++){var i=n[a].split("=");2===i.length&&(e[i[0][b]()]=i[1])}if(!e[C]){var r=e.endpointsuffix,o=r?e.location:null;e[C]="https://"+(o?o+".":"")+"dc."+(r||"services.visualstudio.com")}return e}(),c=s[D]||d[D]||"",u=s[C],p=u?u+"/v2/track":d.endpointUrl,(l=[]).push((n="SDK LOAD Failure: Failed to load Application Insights SDK script (See stack for details)",a=t,i=p,(o=(r=v(c,"Exception")).data).baseType="ExceptionData",o.baseData.exceptions=[{typeName:"SDKLoadFailed",message:n.replace(/\./g,"-"),hasFullStack:!1,stack:n+"\nSnippet failed to load ["+a+"] -- Telemetry is disabled\nHelp Link: https://go.microsoft.com/fwlink/?linkid=2128109\nHost: "+(S&&S.pathname||"_unknown_")+"\nEndpoint: "+i,parsedStack:[]}],r)),l.push(function(e,t,n,a){var i=v(c,"Message"),r=i.data;r.baseType="MessageData";var o=r.baseData;return o.message='AI (Internal): 99 message:"'+("SDK LOAD Failure: Failed to load Application Insights SDK script (See stack for details) ("+n+")").replace(/\"/g,"")+'"',o.properties={endpoint:a},i}(0,0,t,p)),function(e,t){if(JSON){var n=T.fetch;if(n&&!y.useXhr)n(t,{method:N,body:JSON.stringify(e),mode:"cors"});else if(XMLHttpRequest){var a=new XMLHttpRequest;a.open(N,t),a.setRequestHeader("Content-type","application/json"),a.send(JSON.stringify(e))}}}(l,p))}function i(e,t){f||setTimeout(function(){!t&&m.core||a()},500)}var e=function(){var n=l.createElement(k);n.src=h;var e=y[w];return!e&&""!==e||"undefined"==n[w]||(n[w]=e),n.onload=i,n.onerror=a,n.onreadystatechange=function(e,t){"loaded"!==n.readyState&&"complete"!==n.readyState||i(0,t)},n}();y.ld<0?l.getElementsByTagName("head")[0].appendChild(e):setTimeout(function(){l.getElementsByTagName(k)[0].parentNode.appendChild(e)},y.ld||0)}try{m.cookie=l.cookie}catch(p){}function t(e){for(;e.length;)!function(t){m[t]=function(){var e=arguments;g||m.queue.push(function(){m[t].apply(m,e)})}}(e.pop())}var n="track",r="TrackPage",o="TrackEvent";t([n+"Event",n+"PageView",n+"Exception",n+"Trace",n+"DependencyData",n+"Metric",n+"PageViewPerformance","start"+r,"stop"+r,"start"+o,"stop"+o,"addTelemetryInitializer","setAuthenticatedUserContext","clearAuthenticatedUserContext","flush"]),m.SeverityLevel={Verbose:0,Information:1,Warning:2,Error:3,Critical:4};var s=(d.extensionConfig||{}).ApplicationInsightsAnalytics||{};if(!0!==d[I]&&!0!==s[I]){var c="onerror";t(["_"+c]);var u=T[c];T[c]=function(e,t,n,a,i){var r=u&&u(e,t,n,a,i);return!0!==r&&m["_"+c]({message:e,url:t,lineNumber:n,columnNumber:a,error:i}),r},d.autoExceptionInstrumented=!0}return m}(y.cfg);function a(){y.onInit&&y.onInit(n)}(T[t]=n).queue&&0===n.queue.length?(n.queue.push(a),n.trackPageView({})):a()}(window,document,{
+            src: "https://js.monitor.azure.com/scripts/b/ai.2.min.js", // The SDK URL Source
+            onInit: function (sdk) {
+                sdk.addTelemetryInitializer(function (envelope) {
+                    // App Insights automatically sends a page view event on setup, but we send our own later with additional properties.
+                    // This stops the automatic event from firing, so we don't end up with duplicate page view events.
+                    if (envelope.baseType == "PageviewData" && !envelope.baseData.properties) {
+                        return false;
+                    }
+
+                    if (envelope.baseType == "PageviewPerformanceData") {
+                        var pageName = envelope.baseData.name;
+                        envelope.baseData.name = window.location.origin;
+                        if (!envelope.baseData.properties) {
+                            envelope.baseData.properties = {};
+                        }
+                        envelope.baseData.properties.pageName = pageName;
+                        var scrubbedUrl = scrubUrl(envelope.baseData.uri);
+                        envelope.baseData.uri = scrubbedUrl;
+                        var toUrl = new URL(scrubbedUrl);
+                        envelope.baseData.properties.pathName = toUrl ? toUrl.pathname : "";
+                        if (envelope.ext && envelope.ext.trace) {
+                            envelope.ext.trace.name = toUrl ? toUrl.pathname : "";
+                        }
+                    }
+
+                    var telemetryItem = envelope.baseData;
+                    telemetryItem.properties = telemetryItem.properties || {};
+                    telemetryItem.properties["cookie"] = isProduction;
+                    if (typeof pxtConfig === "undefined" || !pxtConfig || !pxtConfig.targetId) {
+                        telemetryItem.properties["target"] = "arcade";
+                        return true;
+                    }
+                    telemetryItem.properties["target"] = pxtConfig.targetId;
+                    telemetryItem.properties["stage"] = (pxtConfig.relprefix || "/--").replace(/[^a-z]/ig, '')
+                    if (typeof Windows !== "undefined")
+                        telemetryItem.properties["WindowsApp"] = 1;
+                    var userAgent = navigator.userAgent.toLowerCase();
+                    var electronRegexResult = /\belectron\/(\d+\.\d+\.\d+.*?)(?: |$)/i.exec(userAgent); // Example navigator.userAgent: "Mozilla/5.0 Chrome/61.0.3163.100 Electron/2.0.0 Safari/537.36"
+                    if (electronRegexResult) {
+                        telemetryItem.properties["Electron"] = 1;
+                        telemetryItem.properties["ElectronVersion"] = electronRegexResult[1];
+                    }
+                    if (typeof pxtElectron !== "undefined") {
+                        telemetryItem.properties["PxtElectron"] = 1;
+                        telemetryItem.properties["ElectronVersion"] = pxtElectron.versions.electronVersion;
+                        telemetryItem.properties["ChromiumVersion"] = pxtElectron.versions.chromiumVersion;
+                        telemetryItem.properties["NodeVersion"] = pxtElectron.versions.nodeVersion;
+                        telemetryItem.properties["PxtElectronVersion"] = pxtElectron.versions.pxtElectronVersion;
+                        telemetryItem.properties["PxtCoreVersion"] = pxtElectron.versions.pxtCoreVersion;
+                        telemetryItem.properties["PxtTargetVersion"] = pxtElectron.versions.pxtTargetVersion;
+                        telemetryItem.properties["PxtElectronIsProd"] = pxtElectron.versions.isProd;
+                    }
+                    // Kiosk UWP info is appended to the user agent by the makecode-dotnet-apps/arcade-kiosk UWP app
+                    var kioskUwpRegexResult = /\((MakeCode Arcade Kiosk UWP)\/([\S]+)\/([\S]+)\)/i.exec(userAgent); // Example navigator.userAgent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36 Edg/117.0.2045.60 (MakeCode Arcade Kiosk UWP/0.1.41.0/Windows.Xbox)"
+                    if (kioskUwpRegexResult) {
+                        telemetryItem.properties["KioskUwp"] = 1;
+                        telemetryItem.properties["KioskUwpVersion"] = kioskUwpRegexResult[2];
+                        telemetryItem.properties["KioskUwpPlatform"] = kioskUwpRegexResult[3];
+                    }
+                    return true;
+                });
+            },
+            cfg: {
+                instrumentationKey:"9801ed01-c40f-46ec-aa40-2a1742a9e71c",
+                disableAjaxTracking: true,
+                overridePageViewDuration: false,
+                disableExceptionTracking: true,
+                disableCorrelationHeaders: true,
+                disableCookiesUsage: !isProduction,
+                isStorageUseDisabled: !isProduction,
+                url: "/pxt-arcade-app/ai.2.min.js"
+            }
+        });
+        window.appInsights=appInsights;
+        var location = window.location.toString();
+        appInsights.trackPageView({
+            name: window.location.hostname,
+            uri: window.location.origin,
+            properties: {
+                url: scrubUrl(location),
+                urlReferrer: scrubUrl(document.referrer.toString())
+            }
+        });
+
+        // Scrub potential PII from the URL.
+        function scrubUrl(url) {
+            if (!url) return url;
+
+            var scriptIdRegex = /(?:S?\d{5}-\d{5}-\d{5}-\d{5})|(?:_[0-9a-zA-Z]{12})/g;
+            var scrubbedUrl = new URL(url.toLocaleLowerCase().replace(scriptIdRegex, "xxxxx-xxxxx-xxxxx-xxxxx"));
+
+            // Just as a precaution, strip any suspicious query parameters.
+            var blockedParamKeywords = ["username", "password", "token", "pwd"];
+            var searchParams = Array.from(scrubbedUrl.searchParams.keys());
+            for (var param of searchParams) {
+                if (blockedParamKeywords.some(k => param.indexOf(k) != -1)) {
+                    scrubbedUrl.searchParams.delete(param);
+                }
+            }
+
+            return scrubbedUrl.toString();
+        }
+
+        return isProduction;
+    }
+    pxt.initAnalyticsAsync();
+</script>
+
+<!-- end include tracking.html -->
+
+
+</body>
+
+</html>
