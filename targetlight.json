@@ -522,8 +522,8 @@
     ],
     "versions": {
         "branch": "main",
-        "commits": "https://github.com/liudonghua123/pxt-arcade-app/commits/d8347af01ab0fb6626aef3a27c0b0a851806c421",
-        "target": "1.13.54",
+        "commits": "https://github.com/liudonghua123/pxt-arcade-app/commits/89c40feb82078745328c90d709f8f9d763be77a2",
+        "target": "1.13.55",
         "pxt": "9.3.10"
     },
     "blocksprj": {
