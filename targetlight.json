@@ -76,6 +76,7 @@
             "libs/servo",
             "libs/settings",
             "libs/sevenseg",
+            "libs/shader",
             "libs/thermometer"
         ]
     },
@@ -461,6 +462,12 @@
                 "shareFinishedTutorials": false,
                 "hideReplaceMyCode": false
             }
+        },
+        "teachertool=1": {
+            "appTheme": {
+                "hideMenuBar": true,
+                "workspaceSearch": true
+            }
         }
     },
     "unsupportedBrowsers": [
@@ -522,8 +529,8 @@
     ],
     "versions": {
         "branch": "main",
-        "commits": "https://github.com/liudonghua123/pxt-arcade-app/commits/89c40feb82078745328c90d709f8f9d763be77a2",
-        "target": "1.13.55",
+        "commits": "https://github.com/liudonghua123/pxt-arcade-app/commits/c85df7d8a40c6d8f109fb416ed7c37f6538f24b6",
+        "target": "1.13.56",
         "pxt": "9.3.10"
     },
     "blocksprj": {
