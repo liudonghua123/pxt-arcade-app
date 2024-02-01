@@ -8,7 +8,7 @@ It support windows (x86, x64, arm64) and linux (amd64, i386, arm64, armhf) and m
 
 ## Downloads
 
-Current version: 1.13.55.
+Current version: 1.13.56.
 
 <table class="is-fullwidth">
 </thead>
@@ -21,30 +21,30 @@ Current version: 1.13.55.
     </td>
     <td>
       <span>64-bit</span>
-      <a href="https://github.com/liudonghua123/pxt-arcade-app/releases/latest/download/pxt-arcade-app-windows-1.13.55_x64.exe">
+      <a href="https://github.com/liudonghua123/pxt-arcade-app/releases/latest/download/pxt-arcade-app-windows-1.13.56_x64.exe">
         📦 Executable
       </a> |
-      <a href="https://github.com/liudonghua123/pxt-arcade-app/releases/latest/download/pxt-arcade-app-windows-1.13.55_x64.msi">
+      <a href="https://github.com/liudonghua123/pxt-arcade-app/releases/latest/download/pxt-arcade-app-windows-1.13.56_x64.msi">
         💿 MSI Installer
       </a> |
-      <a href="https://github.com/liudonghua123/pxt-arcade-app/releases/latest/download/pxt-arcade-app-windows-1.13.55_x64-setup.exe">
+      <a href="https://github.com/liudonghua123/pxt-arcade-app/releases/latest/download/pxt-arcade-app-windows-1.13.56_x64-setup.exe">
         💿 NSIS Installer
       </a><br />
       <span>32-bit</span>
-      <a href="https://github.com/liudonghua123/pxt-arcade-app/releases/latest/download/pxt-arcade-app-windows-1.13.55_x86.exe">
+      <a href="https://github.com/liudonghua123/pxt-arcade-app/releases/latest/download/pxt-arcade-app-windows-1.13.56_x86.exe">
         📦 Executable
       </a> |
-      <a href="https://github.com/liudonghua123/pxt-arcade-app/releases/latest/download/pxt-arcade-app-windows-1.13.55_x86.msi">
+      <a href="https://github.com/liudonghua123/pxt-arcade-app/releases/latest/download/pxt-arcade-app-windows-1.13.56_x86.msi">
         💿 MSI Installer
       </a> |
-      <a href="https://github.com/liudonghua123/pxt-arcade-app/releases/latest/download/pxt-arcade-app-windows-1.13.55_x86-setup.exe">
+      <a href="https://github.com/liudonghua123/pxt-arcade-app/releases/latest/download/pxt-arcade-app-windows-1.13.56_x86-setup.exe">
         💿 NSIS Installer
       </a><br />
       <span>arm64</span>
-      <a href="https://github.com/liudonghua123/pxt-arcade-app/releases/latest/download/pxt-arcade-app-windows-1.13.55_arm64.exe">
+      <a href="https://github.com/liudonghua123/pxt-arcade-app/releases/latest/download/pxt-arcade-app-windows-1.13.56_arm64.exe">
         📦 Executable
       </a> |
-      <a href="https://github.com/liudonghua123/pxt-arcade-app/releases/latest/download/pxt-arcade-app-windows-1.13.55_arm64-setup.exe">
+      <a href="https://github.com/liudonghua123/pxt-arcade-app/releases/latest/download/pxt-arcade-app-windows-1.13.56_arm64-setup.exe">
         💿 NSIS Installer
       </a><br />
       <span>
@@ -59,33 +59,33 @@ Current version: 1.13.55.
     </td>
     <td>
       <span>Intel Processor</span>
-      <a href="https://github.com/liudonghua123/pxt-arcade-app/releases/latest/download/pxt-arcade-app-macos-1.13.55_x64">
+      <a href="https://github.com/liudonghua123/pxt-arcade-app/releases/latest/download/pxt-arcade-app-macos-1.13.56_x64">
         📦 Executable
       </a> |
-      <a href="https://github.com/liudonghua123/pxt-arcade-app/releases/latest/download/pxt-arcade-app-macos-1.13.55_x64.dmg">
+      <a href="https://github.com/liudonghua123/pxt-arcade-app/releases/latest/download/pxt-arcade-app-macos-1.13.56_x64.dmg">
         💿 DMG bundle
       </a> |
-      <a href="https://github.com/liudonghua123/pxt-arcade-app/releases/latest/download/pxt-arcade-app-macos-1.13.55_x64.app.zip">
+      <a href="https://github.com/liudonghua123/pxt-arcade-app/releases/latest/download/pxt-arcade-app-macos-1.13.56_x64.app.zip">
         💿 APP bundle
       </a><br />
       <span>Apple M1 Processor</span>
-      <a href="https://github.com/liudonghua123/pxt-arcade-app/releases/latest/download/pxt-arcade-app-macos-1.13.55_aarch64">
+      <a href="https://github.com/liudonghua123/pxt-arcade-app/releases/latest/download/pxt-arcade-app-macos-1.13.56_aarch64">
         📦 Executable
       </a> |
-      <a href="https://github.com/liudonghua123/pxt-arcade-app/releases/latest/download/pxt-arcade-app-macos-1.13.55_aarch64.dmg">
+      <a href="https://github.com/liudonghua123/pxt-arcade-app/releases/latest/download/pxt-arcade-app-macos-1.13.56_aarch64.dmg">
         💿 DMG bundle
       </a> |
-      <a href="https://github.com/liudonghua123/pxt-arcade-app/releases/latest/download/pxt-arcade-app-macos-1.13.55_aarch64.app.zip">
+      <a href="https://github.com/liudonghua123/pxt-arcade-app/releases/latest/download/pxt-arcade-app-macos-1.13.56_aarch64.app.zip">
         💿 APP bundle
       </a><br />
       <span><a href="https://developer.apple.com/documentation/apple-silicon/building-a-universal-macos-binary">Universal</a></span>
-      <a href="https://github.com/liudonghua123/pxt-arcade-app/releases/latest/download/pxt-arcade-app-macos-1.13.55_universal">
+      <a href="https://github.com/liudonghua123/pxt-arcade-app/releases/latest/download/pxt-arcade-app-macos-1.13.56_universal">
         📦 Executable
       </a> |
-      <a href="https://github.com/liudonghua123/pxt-arcade-app/releases/latest/download/pxt-arcade-app-macos-1.13.55_universal.dmg">
+      <a href="https://github.com/liudonghua123/pxt-arcade-app/releases/latest/download/pxt-arcade-app-macos-1.13.56_universal.dmg">
         💿 DMG bundle
       </a> |
-      <a href="https://github.com/liudonghua123/pxt-arcade-app/releases/latest/download/pxt-arcade-app-macos-1.13.55_universal.app.zip">
+      <a href="https://github.com/liudonghua123/pxt-arcade-app/releases/latest/download/pxt-arcade-app-macos-1.13.56_universal.app.zip">
         💿 APP bundle
       </a><br />
       <span>
@@ -104,37 +104,37 @@ Current version: 1.13.55.
     </td>
     <td>
       <span>64-bit</span>
-      <a href="https://github.com/liudonghua123/pxt-arcade-app/releases/latest/download/pxt-arcade-app-linux-1.13.55_amd64">
+      <a href="https://github.com/liudonghua123/pxt-arcade-app/releases/latest/download/pxt-arcade-app-linux-1.13.56_amd64">
         📦 Executable
       </a> |
-      <a href="https://github.com/liudonghua123/pxt-arcade-app/releases/latest/download/pxt-arcade-app-linux-1.13.55_amd64.AppImage">
+      <a href="https://github.com/liudonghua123/pxt-arcade-app/releases/latest/download/pxt-arcade-app-linux-1.13.56_amd64.AppImage">
         💿 AppImage bundle
       </a> |
-      <a href="https://github.com/liudonghua123/pxt-arcade-app/releases/latest/download/pxt-arcade-app-linux-1.13.55_amd64.deb">
+      <a href="https://github.com/liudonghua123/pxt-arcade-app/releases/latest/download/pxt-arcade-app-linux-1.13.56_amd64.deb">
         💿 DEB bundle
       </a><br />
       <span>32-bit</span>
-      <a href="https://github.com/liudonghua123/pxt-arcade-app/releases/latest/download/pxt-arcade-app-linux-1.13.55_i386">
+      <a href="https://github.com/liudonghua123/pxt-arcade-app/releases/latest/download/pxt-arcade-app-linux-1.13.56_i386">
         📦 Executable
       </a> |
-      <a href="https://github.com/liudonghua123/pxt-arcade-app/releases/latest/download/pxt-arcade-app-linux-1.13.55_i386.AppImage">
+      <a href="https://github.com/liudonghua123/pxt-arcade-app/releases/latest/download/pxt-arcade-app-linux-1.13.56_i386.AppImage">
         💿 AppImage bundle
       </a> |
-      <a href="https://github.com/liudonghua123/pxt-arcade-app/releases/latest/download/pxt-arcade-app-linux-1.13.55_i386.deb">
+      <a href="https://github.com/liudonghua123/pxt-arcade-app/releases/latest/download/pxt-arcade-app-linux-1.13.56_i386.deb">
         💿 DEB bundle
       </a><br />
       <span>arm64</span>
-      <a href="https://github.com/liudonghua123/pxt-arcade-app/releases/latest/download/pxt-arcade-app-linux-1.13.55_arm64">
+      <a href="https://github.com/liudonghua123/pxt-arcade-app/releases/latest/download/pxt-arcade-app-linux-1.13.56_arm64">
         📦 Executable
       </a> |
-      <a href="https://github.com/liudonghua123/pxt-arcade-app/releases/latest/download/pxt-arcade-app-linux-1.13.55_arm64.deb">
+      <a href="https://github.com/liudonghua123/pxt-arcade-app/releases/latest/download/pxt-arcade-app-linux-1.13.56_arm64.deb">
         💿 DEB bundle
       </a><br />
       <span>armv7</span>
-      <a href="https://github.com/liudonghua123/pxt-arcade-app/releases/latest/download/pxt-arcade-app-linux-1.13.55_armhf">
+      <a href="https://github.com/liudonghua123/pxt-arcade-app/releases/latest/download/pxt-arcade-app-linux-1.13.56_armhf">
         📦 Executable
       </a> |
-      <a href="https://github.com/liudonghua123/pxt-arcade-app/releases/latest/download/pxt-arcade-app-linux-1.13.55_armhf.deb">
+      <a href="https://github.com/liudonghua123/pxt-arcade-app/releases/latest/download/pxt-arcade-app-linux-1.13.56_armhf.deb">
         💿 DEB bundle
       </a><br />
       <span>
