@@ -10,7 +10,7 @@
     "gifworkerjs": "/pxt-arcade-app/gifjs/gif.worker.js",
     "serviceworkerjs": "/pxt-arcade-app/serviceworker.js",
     "typeScriptWorkerJs": "/pxt-arcade-app/tsworker.js",
-    "pxtVersion": "9.3.10",
+    "pxtVersion": "9.3.14",
     "pxtRelId": "localDirRelId",
     "pxtCdnUrl": "/pxt-arcade-app/",
     "commitCdnUrl": "/pxt-arcade-app/",
@@ -59,7 +59,7 @@
     window.ksRunnerWhenLoaded = function() {
         pxt.docs.requireHighlightJs = function() { return hljs; }
         pxt.setupWebConfig(pxtConfig || window.pxtWebConfig)
-        pxt.runner.initCallbacks = pxtCallbacks
+        pxt.runner.setInitCallbacks(pxtCallbacks)
         pxtCallbacks.push(function() {
             pxtCallbacks = null
         })
