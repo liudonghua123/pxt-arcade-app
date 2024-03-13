@@ -614,10 +614,9 @@ and drag it into the empty <code>||game(noclick):on game update [5000]ms||</code
 
     <div class="ui hint message">
         <div class="content">
-            <pre><code class="lang-blocks">let projectile: Sprite = null
-game.onUpdateInterval(5000, function () {
+            <pre><code class="lang-blocks">game.onUpdateInterval(5000, function () {
     //@highlight
-    clover = sprites.createProjectileFromSide(assets.image`collect`, 50, 50)
+    let clover = sprites.createProjectileFromSide(assets.image`collect`, 50, 50)
 })</code></pre>
 <h2 id="step-11-add-random-movements">Step 11 - Add Random Movements</h2><p>Our clovers are always coming from the top right and dropping to the bottom left.</p>
 <p>Let’s add variety using random numbers.</p>
@@ -633,7 +632,7 @@ block.</li>
 <p>~hint What are random numbers? 💡</p>
 <hr>
 <p><strong>Random</strong> numbers are numbers that don’t appear to have a predictable pattern. Using our <code>random</code> block, you’ll be given a number between the minimum and maximum that you set, but you won’t know which number will be chosen beforehand.</p>
-<p>This number is rechosen every time the block runs, and each time you may randomly end up with a number that is either the same or different than the last.</p>
+<p>This number is chosen again every time the block runs, and each time you may randomly end up with a number that is either the same or different than the last.</p>
 <p>hint~</p>
 <p>~hint What are vx and vy? 💡</p>
 <hr>
@@ -823,18 +822,6 @@ container that’s already in your workspace.</li>
 //@highlight
     info.changeScoreBy(1)
 })</code></pre>
-<h2 id="step-20-add-overlaps-behavior-for-bee">Step 20 - Add Overlaps behavior for Bee</h2><p><strong>We need an overlap behavior for the bee</strong></p>
-<ul>
-<li>:mouse pointer: Right-click on the the<br />
-<code>||sprites(noclick):on sprite overlaps||</code> <br />
-container that’s already in your workspace.<pre><code class="lang-blocks">sprites.onOverlap(SpriteKind.Player, SpriteKind.Projectile, function (sprite, otherSprite) {
-  otherSprite.destroy(effects.confetti, 100)
-  music.baDing.play()
-  info.changeScoreBy(1)
-})</code></pre>
-and choose <strong>duplicate</strong>.</li>
-</ul>
-<p><em>Don’t worry if it looks disabled, we’ll fix that.</em></p>
 <h2 id="step-20-add-overlaps-behavior-for-bee">Step 20 - Add Overlaps behavior for Bee</h2><p><strong>We need an overlap behavior for the bee</strong></p>
 <ul>
 <li>:mouse pointer: Right-click on the the<br />

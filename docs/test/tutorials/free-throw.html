@@ -503,7 +503,7 @@
         <h1 id="basketball-free-throw">Basketball Free Throw</h1><!-- hints --><h2 id="1-introduction">1. Introduction</h2><p>Line up your shot and see if you can slam dunk this Basketball free throw game!</p>
 <p><img class="ui image" src="/static/tutorials/free-throw/freethrow.gif" alt="Free throw shot from player" loading="lazy"></p>
 <h2 id="2-your-first-block">2. Your First Block</h2><p><strong>Ready to start coding?</strong></p>
-<p>Let’s add the basketball court background.</p>
+<p>Let’s add a basketball court as the background.</p>
 <hr>
 <ul>
 <li>:tree: Go to the <code>||scene: Scene||</code> category <strong>in the toolbox</strong> and grab <br />
@@ -519,9 +519,14 @@ block already in the workspace.</li>
 <code>||scene:set background image to [ ]||</code><br />
 block, we are pointing you toward <br /></p>
 <pre><code class="lang-block">scene.setBackgroundImage(img`.`)</code></pre>
+<p>which is located in the <code>||scene:Scene||</code> category in the Toolbox.</p>
 <p>hint~</p>
-<p><br /><br />
-💡 <em>The court image should be preloaded in the block, but you are welcome to edit the image if you like.</em></p>
+<ul>
+<li>:paint brush: Click the empty grey box in the background block to draw a basketball court <br />
+(or switch to the <strong>Gallery</strong> to pick the one that we created.)</li>
+</ul>
+<p>
+</p>
 
     <div class="ui hint message">
         <div class="content">
@@ -539,7 +544,7 @@ scene.setBackgroundImage(throw_imgs.court)</code></pre>
 <li>:paper plane: From <code>||sprites:Sprites||</code>, drag<br />
 <code>||variables(sprites):set [athlete] to sprite [ ] of kind [Player]||</code><br />
 to <strong>the end</strong> of the
-<code>||loops:on start||</code> container.</li>
+<code>||loops(noclick):on start||</code> container.</li>
 </ul>
 <p>~hint What’s a sprite? 💡</p>
 <hr>
@@ -547,8 +552,12 @@ to <strong>the end</strong> of the
 <p>Sprites have properties that you can use and change — things like scale, position, and lifespan are all properties of sprites.</p>
 <p>Our athlete will be a sprite, too.</p>
 <p>hint~</p>
-<p><br /><br />
-💡 <em>The athlete image should be preloaded in the block, but you are welcome to edit the image if you like.</em></p>
+<ul>
+<li>:paint brush: Click the empty grey box in the sprite block to draw your player <br />
+(or switch to the <strong>Gallery</strong> to pick one that we created.)</li>
+</ul>
+<p>
+</p>
 
     <div class="ui hint message">
         <div class="content">
@@ -640,7 +649,7 @@ athlete.setBounceOnWall(true)
 <li><p>:paper plane: From <code>||sprites:Sprites||</code>, drag<br />
 <code>||variables(sprites):set [hoop] to sprite [ ] of kind [Goal]||</code><br />
 to <strong>the end</strong> of the
-<code>||loops(noclick):on start||</code> container.</p>
+<code>||loops(noclick):on start||</code> container, then select the hoop from the Gallery.</p>
 </li>
 <li><p>:paper plane: From the <code>||sprites: Sprites||</code> category in the toolbox, grab <br />
 <code>||sprites: set [hoop] position to x [80] y [35]||</code> <br />
@@ -689,12 +698,17 @@ the user’s computer doesn’t get overwhelmed.</p>
 <hr>
 <ul>
 <li>:paper plane: Snap <br />
-<code>||variables(sprites):set [projectile] to projectile [🏀] from [athlete] with vx [0] vy [-100]||</code> <br />
+<code>||variables(sprites):set [projectile] to projectile [ ] from [athlete] with vx [0] vy [-100]||</code> <br />
 inside <strong>the empty</strong> <br />
 <code>||controller(noclick):on [A] button pressed ||</code><br />
 container.</li>
 </ul>
-<p>💡 <em>The projectile is a basketball, but you can click the ball and change it to whatever you like.</em></p>
+<ul>
+<li>:paint brush: Click the empty grey box in the projectile block to draw a basketball <br />
+(or switch to the <strong>Gallery</strong> to pick the one that we created.)</li>
+</ul>
+<p>
+</p>
 <pre><code class="lang-blockconfig.local">let hoop = sprites.create(throw_imgs.hoop, SpriteKind.Goal)
 hoop.setPosition(80, 35)</code></pre>
 
@@ -704,12 +718,10 @@ hoop.setPosition(80, 35)</code></pre>
     projectile = sprites.createProjectileFromSprite(throw_imgs.ball, athlete, 0, -100)
 })</code></pre>
 <h2 id="12-test-it-out">12. Test it Out</h2><ul>
-<li><p>:binoculars: Look at your game!</p>
-</li>
-<li><p>Your player should be moving back and forth on the court  </p>
-</li>
-<li>When you press the (A) button (or space bar) the player should shoot a basketball toward the top of the screen</li>
+<li>:binoculars: Look at your game!</li>
 </ul>
+<p>Your player should be moving back and forth on the court.</p>
+<p>When you press the (A) button (or space bar) the player should shoot a basketball toward the top of the screen.</p>
 <p>💡 <em>We will add points in the next step.</em></p>
 <p>~hint Mine isn’t working 🤷‍♂️ </p>
 <hr>
@@ -760,7 +772,7 @@ and snap it into <strong>the end</strong> of the <br />
 <code>||sprites(noclick):on [sprite] of kind [Projectile] overlaps...||</code><br />
 containter in the workspace.</li>
 </ul>
-<p>~hint Why “destroy sprite”? 💡</p>
+<p>~hint Why destroy “sprite”? 💡</p>
 <hr>
 <p>You may think we should destroy <strong>projectile</strong> or even <strong>ball</strong> to get rid of the 
 basketball that overlapped the hoop, but this overlap container requires you to 
@@ -780,7 +792,7 @@ hoop.setPosition(80, 35)</code></pre>
 <h2 id="15-look-at-the-game-window-again-again">15. Look at the game window again, again</h2><ul>
 <li>:binoculars: Look at your project in the game window!</li>
 </ul>
-<p>You should get a point every time your basketball overlaps the hoop!</p>
+<p>You should get exactly one point every time your basketball overlaps the hoop!</p>
 <pre><code class="lang-blockconfig.local">let hoop = sprites.create(throw_imgs.hoop, SpriteKind.Goal)
 hoop.setPosition(80, 35)</code></pre>
 <h2 id="16-add-a-time-limit">16. Add a time limit</h2><p><strong>Does this game feel long to you?</strong><br />
@@ -809,8 +821,8 @@ athlete.setBounceOnWall(true)
 let hoop = sprites.create(throw_imgs.hoop, SpriteKind.Goal)
 hoop.setPosition(80, 35)
 info.startCountdown(30)</code></pre>
-<h2 id="you-did-a-great-job-">You did a great job!!! </h2><h3 id="what-did-you-think-of-this-tutorial-">What did you think of this tutorial?</h3><h3 id="-">😍  😑  ☹️</h3><p>Would you like to tell us more?</p>
-<p>(Yes)  (No)</p>
+<p>
+</p>
 <h2 id="18-finale">18. Finale</h2><p><strong>🏀 Well Done 🏀</strong></p>
 <hr>
 <p>You’ve coded an amazing game!</p>
@@ -844,7 +856,7 @@ sprites.onOverlap(SpriteKind.Projectile, SpriteKind.Goal, function (sprite, othe
 projectile = sprites.createProjectileFromSprite(throw_imgs.ball, athlete, 0, -100)
 music.play(music.createSong(hex`00780004080200`), music.PlaybackMode.InBackground)
 
-scene.setBackgroundImage(throw_imgs.court)</code></pre>
+scene.setBackgroundImage(img`.`)</code></pre>
 <pre><code class="lang-package">throw_imgs=github:kiki-lee/throw_imgs</code></pre>
 <pre><code class="lang-customts">namespace SpriteKind {
     //% isKind

@@ -223,6 +223,7 @@
 * [Courses](/courses)
   * [AP Computer Science Principles](https://makecode.com/csp)
   * [Introduction to Computer Science with Microsoft MakeCode Arcade](/courses/introcs)
+  * [Code a Carnival](/courses/carnival)
   * [GameGo Beginner Programming Course](https://make2learn.tinkergen.com/course/?sku=604182001)
   * [GameGo Intermediate Programming Course](https://make2learn.tinkergen.com/course/?sku=604182003)
 * [Arcade Compatible Devices](/arcade-devices)
