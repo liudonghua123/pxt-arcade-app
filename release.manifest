@@ -11,7 +11,6 @@ CACHE:
 /pxt-arcade-app/pxtlib.js
 /pxt-arcade-app/pxtcompiler.js
 /pxt-arcade-app/pxtpy.js
-/pxt-arcade-app/pxtblockly.js
 /pxt-arcade-app/pxteditor.js
 /pxt-arcade-app/pxtsim.js
 /pxt-arcade-app/pxtembed.js
@@ -60,7 +59,7 @@ CACHE:
 /pxt-arcade-app/worker.js
 /pxt-arcade-app/monacoworker.js
 
-# ver Wed Mar 13 2024 23:11:33 GMT+0000 (Coordinated Universal Time)
+# ver Thu Mar 14 2024 23:11:37 GMT+0000 (Coordinated Universal Time)
 
 # target
 /pxt-arcade-app/docs/static/providers/github-mark.png

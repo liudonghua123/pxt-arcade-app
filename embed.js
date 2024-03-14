@@ -10,7 +10,7 @@
     "gifworkerjs": "/pxt-arcade-app/gifjs/gif.worker.js",
     "serviceworkerjs": "/pxt-arcade-app/serviceworker.js",
     "typeScriptWorkerJs": "/pxt-arcade-app/tsworker.js",
-    "pxtVersion": "9.3.15",
+    "pxtVersion": "10.0.11",
     "pxtRelId": "localDirRelId",
     "pxtCdnUrl": "/pxt-arcade-app/",
     "commitCdnUrl": "/pxt-arcade-app/",
@@ -28,12 +28,12 @@
     "docsUrl": "/pxt-arcade-app/docs.html",
     "multiUrl": "/pxt-arcade-app/multi.html",
     "asseteditorUrl": "/pxt-arcade-app/asseteditor.html",
-    "skillmapUrl": "/pxt-arcade-app/skillmap.html",
-    "authcodeUrl": "/pxt-arcade-app/authcode.html",
-    "multiplayerUrl": "/pxt-arcade-app/multiplayer.html",
+    "isStatic": true,
     "kioskUrl": "/pxt-arcade-app/kiosk.html",
     "teachertoolUrl": "/pxt-arcade-app/teachertool.html",
-    "isStatic": true
+    "skillmapUrl": "/pxt-arcade-app/skillmap.html",
+    "multiplayerUrl": "/pxt-arcade-app/multiplayer.html",
+    "authcodeUrl": "/pxt-arcade-app/authcode.html"
 };
 
     var scripts = [

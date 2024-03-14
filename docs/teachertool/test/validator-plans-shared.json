@@ -1,0 +1,20 @@
+{
+    "validatorPlans": [
+        {
+            ".desc": "Block used n times (to be filled in by the user)",
+            "name": "block_used_n_times",
+            "threshold": 1,
+            "checks": [
+                {
+                    "validator": "blocksExist",
+                    "blockCounts": [
+                        {
+                            "blockId": "",
+                            "count": 0
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
