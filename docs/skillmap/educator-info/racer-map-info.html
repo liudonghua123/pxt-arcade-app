@@ -22,14 +22,14 @@
 <meta name="twitter:site" content="@msmakecode" />
 <meta name="twitter:title" content="Microsoft MakeCode Arcade" />
 <meta name="twitter:description" content="Develop your programming skills by quickly creating and modding retro arcade games with Blocks and JavaScript in the MakeCode editor" />
-<meta name="twitter:image" content="/static/skillmap/forest/forest1.gif" />
+<meta name="twitter:image" content="https://makecode.com/api/_biY17aMhFFpJ/thumb" />
 
 <meta property="og:title" content="Microsoft MakeCode Arcade" />
 <meta property="og:site_name" content="Microsoft MakeCode" />
 <meta property="og:type" content="website" />
 <meta property="og:description" content="Develop your programming skills by quickly creating and modding retro arcade games with Blocks and JavaScript in the MakeCode editor" />
 <meta property="fb:app_id" content="" />
-<meta property="og:image" content="/static/skillmap/forest/forest1.gif" />
+<meta property="og:image" content="https://makecode.com/api/_biY17aMhFFpJ/thumb" />
 
 <meta name="format-detection" content="telephone=no">
 <link rel="apple-touch-icon" href="docs/static/icons/favicon.ico">
@@ -503,7 +503,7 @@
         <h1 id="about-monster-racer">About Monster Racer</h1><p><strong>A page for Educators &amp; Parents</strong></p>
 <p>The <strong>Monster Racer</strong> map uses basic code blocks and extensions in MakeCode Arcade to implement simple game concepts.</p>
 <p>In this short set of activities, … This map is intended for students who are new to MakeCode with little or no previous coding experience.</p>
-<p>Designed for students between the ages of 11 &amp; 18, this experience contains a total of 6 tutorials (approximating 54 minutes of instruction).  At the end of the learning path, students receive a certificate of completion.</p>
+<p>Designed for students between the ages of 10 &amp; 16, this experience contains a total of 3 tutorials (approximating 35 minutes of instruction).  At the end of the learning path, students receive a certificate of completion.</p>
 <table>
 <thead>
 <tr>
@@ -514,197 +514,111 @@
 </thead>
 <tbody>
 <tr>
-<td>Prepare Your Plane</td>
-<td>7</td>
+<td>Ready, Set, Go!</td>
+<td>9</td>
 <td>movement, sprites</td>
 </tr>
 <tr>
-<td>Burning Issues</td>
-<td>8</td>
-<td>events, loops, random</td>
+<td>Over and Under</td>
+<td>11</td>
+<td>events, game over</td>
 </tr>
 <tr>
-<td>Fire Fighting</td>
-<td>10</td>
-<td>events, projectiles</td>
-</tr>
-<tr>
-<td>Spreads Like Wildfire</td>
-<td>10</td>
-<td>events, variables, collisions</td>
-</tr>
-<tr>
-<td>Head’s Up!</td>
-<td>9</td>
-<td>displays, customization</td>
-</tr>
-<tr>
-<td>Keep Going</td>
-<td>10</td>
-<td>animations, sounds</td>
+<td>Going Further</td>
+<td>15</td>
+<td>animation, tilemaps</td>
 </tr>
 </tbody>
 </table>
 <p>* Minutes are approximate, based on time to follow instructions as written. Times do not include time spent on designing elements or re-aquainting with previously-written code. Providing extra time for creativity and debugging is encouraged.</p>
-<h3 id="objectives">Objectives</h3><p>After completing Monster Racer…</p>
-<p>Specifically, they will experience the following topics:</p>
+<h3 id="objectives">Objectives</h3><p>After completing Monster Racer, students will experience the following topics:</p>
 <ul>
-<li>Loops</li>
 <li>Events</li>
 <li>Variables</li>
 <li>Tilemaps</li>
 <li>Movement</li>
 <li>Collisions</li>
-<li>Projectiles</li>
 <li>Animation</li>
 <li>Sounds</li>
-<li>Strength/Life Mechanics</li>
 </ul>
 <h3 id="projects">Projects</h3><p>As students progress through these projects, they will progressively build a game where …</p>
 <pre><code class="lang-package">pxt-forest-special=github:kiki-lee/forest-special/</code></pre>
-<h4 id="1-prepare-your-plane">1. Prepare Your Plane</h4><table>
+<h4 id="1-ready-set-go-">1. Ready, Set, Go!</h4><table>
 <thead>
 <tr>
 <th>Activity</th>
-<th>Prepare Your Plane (7 min)</th>
+<th>Ready, Set, Go! (7 min)</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><img class="ui image" src="/static/skillmap/forest/forest1.gif" alt="Prepare Your Plane thumbnail" loading="lazy"></td>
-<td>Set up your plane to make sure you can get everywhere you need to be!</td>
+<td><img class="ui image" src="https://makecode.com/api/_biY17aMhFFpJ/thumb" alt="Ready, Set, Go! thumbnail" loading="lazy"></td>
+<td>Choose a truck and get moving.</td>
 </tr>
 <tr>
 <td>Blocks used</td>
-<td><code>[let mySprite = sprites.create(img`.`, SpriteKind.Player)]</code><br /><code>[let mySprite: Sprite=null; controller.moveSprite(mySprite)]</code><br /><code>[let mySprite: Sprite=null; scene.cameraFollowSprite(mySprite)]</code></td>
+<td><code>[let truck = sprites.create(img`.`, SpriteKind.Player)]</code><br /><code>[let truck: Sprite=null; truck.ay = 500]</code> <br /> <code>[let truck: Sprite=null;truck.vx = 100]</code><br /><code>[let truck: Sprite=null; scene.cameraFollowSprite(mySprite)]</code></td>
 </tr>
 <tr>
 <td>Solution option</td>
-<td><a target="_blank" rel="nofollow noopener" href="https://makecode.com/_0CbLhcf6TW1W">Prepare Your Plane Project</a></td>
+<td><a target="_blank" rel="nofollow noopener" href="https://makecode.com/_biY17aMhFFpJ">Ready, Set, Go! Project</a></td>
 </tr>
 </tbody>
 </table>
-<h4 id="2-burning-issues">2. Burning Issues</h4><table>
+<h4 id="2-over-and-under">2. Over and Under</h4><table>
 <thead>
 <tr>
 <th>Activity</th>
-<th>Burning Issues (8 min)</th>
+<th>Over and Under (8 min)</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><img class="ui image" src="/static/skillmap/forest/forest2.gif" alt="Burning Issues thumbnail" loading="lazy"></td>
-<td>Use loops to add random fires to your map!</td>
+<td><img class="ui image" src="https://makecode.com/api/_FYseeH2FhhHR/thumb" alt="Over and Under thumbnail" loading="lazy"></td>
+<td>Add the ability to jump, win, and lose.</td>
 </tr>
 <tr>
 <td>Blocks used</td>
-<td><code>[for (let index = 0; index &lt; 4; index++) {}]</code><br /><code>[newFire = sprites.create(img`.`, SpriteKind.Player)]</code><br /><code>[tiles.placeOnRandomTile(newFire, assets.tile`transparency16`)]</code><br /><code>[sprites.onCreated()]</code><br /><code>[let sprite: Sprite=null; sprite.startEffect(effects.fire)]</code></td>
+<td><code>[scene.onOverlapTile()]</code><br /><code>[game.over(true)]</code></td>
 </tr>
 <tr>
 <td>Solution option</td>
-<td><a target="_blank" rel="nofollow noopener" href="https://makecode.com/_EdjVbU6eMTPW">Burning Issues Project</a></td>
+<td><a target="_blank" rel="nofollow noopener" href="https://makecode.com/_FYseeH2FhhHR">Over and Under Project</a></td>
 </tr>
 </tbody>
 </table>
-<h4 id="3-fire-fighting">3. Fire Fighting</h4><table>
+<h4 id="3-going-further">3. Going Further</h4><table>
 <thead>
 <tr>
 <th>Activity</th>
-<th>Fire Fighting (10 min)</th>
+<th>Going Further (10 min)</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><img class="ui image" src="/static/skillmap/forest/forest3.gif" alt="Fire Fighting! thumbnail" loading="lazy"></td>
-<td>Add a water hose to your plane so you can keep your fires under control.</td>
+<td><img class="ui image" src="https://makecode.com/api/_1yfTMtFAe5yC/thumb" alt="Going Further! thumbnail" loading="lazy"></td>
+<td>Add animation and sound to your project!</td>
 </tr>
 <tr>
 <td>Blocks used</td>
-<td><code>[controller.A.onEvent(ControllerButtonEvent.Repeated, function () {})]</code><br /><code>[let mySprite: Sprite=null; sprites.spray(mySprite, img`.`)]</code><br /><code>[sprites.set_flame_strength(sprite, 10)]</code><br /><code>[sprites.onOverlap()]</code><br /><code>[let sprite: Sprite=null; sprite.destroy()]</code><br /><code>[sprites.change_flame_strength_by(sprite, -1)]</code></td>
+<td><code>[animation.runImageAnimation()]</code><br /><code>[music.play(music.melodyPlayable(music.knock), music.PlaybackMode.InBackground)]</code></td>
 </tr>
 <tr>
 <td>Solution option</td>
-<td><a target="_blank" rel="nofollow noopener" href="https://makecode.com/_9p32WzfzX1uv">Fire Fighting Project</a></td>
-</tr>
-</tbody>
-</table>
-<h4 id="4-spreads-like-wildfire">4. Spreads Like Wildfire</h4><table>
-<thead>
-<tr>
-<th>Activity</th>
-<th>Spreads Like Wildfire (10 min)</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><img class="ui image" src="/static/skillmap/forest/forest4.gif" alt="Spreads Like Wildfire thumbnail" loading="lazy"></td>
-<td>Conditions in the weather and environment such as drought, winds, vegetation density and dryness can cause fires to spread more quickly.  Let’s simulate these conditions in our game.</td>
-</tr>
-<tr>
-<td>Blocks used</td>
-<td><code>[game.set_health_of_trees(7)]</code><br /><code>[game.set_strength_of_wind(3)]</code><br /><code>[game.set_dryness_of_grass(3)]</code><br /><code>[game.onUpdate(function () {})]</code><br /><code>[sprites.random_spread(img`.`]</code><br /><code>[sprites.onDestroyed(SpriteKind.Player, function (sprite) {})]</code><br /><code>[tiles.setTileAt(tiles.locationOfSprite(sprite), assets.tile`transparency16`)]</code><br /><code>[scene.onOverlapTile()]</code><br /><code>[sprites.onOverlap()]</code><br /><code>[let otherSprite: Sprite=null; otherSprite.destroy()]</code><br /></td>
-</tr>
-<tr>
-<td>Solution option</td>
-<td><a target="_blank" rel="nofollow noopener" href="https://makecode.com/_ifR6pigEHKP7">Spreads Like Wildfire Project</a></td>
-</tr>
-</tbody>
-</table>
-<h4 id="5-head-s-up-">5. Head’s Up!</h4><table>
-<thead>
-<tr>
-<th>Activity</th>
-<th>Head’s Up! (9 min)</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><img class="ui image" src="/static/skillmap/forest/forest5.gif" alt="Head&#39;s Up!" loading="lazy"></td>
-<td>Computer science is more important to firefighting than ever before. Let’s add a heads-up-display (HUD) to help the pilot get information from their fire database in real-time.</td>
-</tr>
-<tr>
-<td>Blocks used</td>
-<td><code>[hud.forest_hud(true)]</code><br /><code>[hud.danger_hud(true)]</code><br /><code>[hud.forest_hud(true)]</code></td>
-</tr>
-<tr>
-<td>Solution option</td>
-<td><a target="_blank" rel="nofollow noopener" href="https://makecode.com/_77cLwx4b120o">Head’s Up Project</a></td>
-</tr>
-</tbody>
-</table>
-<h4 id="4-keep-going">4. Keep Going</h4><table>
-<thead>
-<tr>
-<th>Activity</th>
-<th>Keep Going (10 min)</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><img class="ui image" src="/static/skillmap/forest/forest6.gif" alt="Keep Going thumbnail" loading="lazy"></td>
-<td>Add more to your game! Experiment with sounds and animation to make your game truly unique.</td>
-</tr>
-<tr>
-<td>Blocks used</td>
-<td><code>[controller.left.onEvent(ControllerButtonEvent.Pressed, function () {})]</code><br /><code>[animation.runImageAnimation()]</code><br /><code>[music.thump.play()]</code></td>
-</tr>
-<tr>
-<td>Solution option</td>
-<td><a target="_blank" rel="nofollow noopener" href="https://makecode.com/_0kzFyAgPMa4A">Keep Going Project</a></td>
+<td><a target="_blank" rel="nofollow noopener" href="https://makecode.com/_1yfTMtFAe5yC">Going Further Project</a></td>
 </tr>
 </tbody>
 </table>
 <h5 id="game-mod-ideas">Game Mod Ideas</h5><p>As students work on <strong>Keep Going</strong>, we encourage them to plan out ways they can dive even deeper using the full editor after opening their game using the [SAVE TO MY PROJECTS] button. </p>
 <ul>
-<li>What other environment could my plane explore? Neighborhoods? The desert?</li>
-<li>What could pop-up randomly instead of fires? Fish? Mice? Snowmen?</li>
-<li>What could you move around instead of an airplane? A boat? A magnifying glass?</li>
+<li>What other tiles can you add to the cave?</li>
+<li>Could something chase you as you travel through the cave?</li>
+<li>How can you make your truck go faster or slower with the arrow keys?</li>
 </ul>
-<h5 id="what-s-next-">What’s Next?</h5><p>When students are finished with <strong>Save the Forest!</strong> consider graduating them to another map to work on skills further.</p>
+<h5 id="what-s-next-">What’s Next?</h5><p>When students are finished with <strong>Monster Racer</strong> consider graduating them to another map to work on skills further.</p>
 <ul>
-<li><a  rel="nofollow noopener" href="/pxt-arcade-app/docs/skillmap/beginner.html">Try the Beginner Skillmap</a></li>
 <li><a  rel="nofollow noopener" href="/pxt-arcade-app/docs/skillmap/jungle.html">Try the Jungle Monkey Skillmap</a></li>
-<li><a  rel="nofollow noopener" href="/pxt-arcade-app/docs/skillmap/space.html">Try the Space Explorer Map</a></li>
+<li><a  rel="nofollow noopener" href="/pxt-arcade-app/docs/skillmap/galaxy.html">Try the Save the Galaxy Map</a></li>
 <li><a  rel="nofollow noopener" href="/pxt-arcade-app/docs/tutorials/froggy.html">Try our Time Flies Tutorial</a></li>
 </ul>
 

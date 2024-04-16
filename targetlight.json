@@ -475,7 +475,7 @@
             "id": "ie"
         }
     ],
-    "uploadDocs": true,
+    "uploadDocs": false,
     "noSimShims": true,
     "defaultBadges": [
         {
@@ -529,9 +529,9 @@
     ],
     "versions": {
         "branch": "main",
-        "commits": "https://github.com/liudonghua123/pxt-arcade-app/commits/0c443b649bcfaf8fa9fbea6a8a9eed0e60a2d9f9",
-        "target": "2.0.1",
-        "pxt": "10.0.11"
+        "commits": "https://github.com/liudonghua123/pxt-arcade-app/commits/318ead7102a4c49073ae8f94ca680e6f7488fd33",
+        "target": "2.0.2",
+        "pxt": "10.0.18"
     },
     "blocksprj": {
         "id": "blocksprj",
