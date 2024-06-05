@@ -56,6 +56,8 @@ jobs:
           # fs.readdirSync(top) try to readdir of `public` in the root of pxt-arcade
           # The fix could just make an empty `public` dir or config allowMissing: true
           mkdir public 
+          # To fix build error for 2.0.3, see also https://github.com/microsoft/pxt-arcade/issues/6439#issuecomment-2150358251
+          rm -rf docs/courses/checklist.md 
         working-directory: pxt-arcade
       - name: 'Building pxt-arcade'
         run: |
