@@ -1,0 +1,890 @@
+<!DOCTYPE html>
+<html lang="" xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#"
+	xmlns:fb="http://www.facebook.com/2008/fbml">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Microsoft MakeCode Arcade</title>
+	<meta name="Description" content="Develop your programming skills by quickly creating and modding retro arcade games with Blocks and JavaScript in the MakeCode editor" />
+
+	<!-- ifdef incontexttranslations endif -->
+	
+<!-- include meta.html -->
+<!-- This file is typically overriden by the target, with own Twitter
+     account etc. Most data is taken from the theme file though.  
+  -->
+
+<!-- include robotsmeta.html -->
+
+<!-- end include robotsmeta.html -->
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@msmakecode" />
+<meta name="twitter:title" content="Microsoft MakeCode Arcade" />
+<meta name="twitter:description" content="Develop your programming skills by quickly creating and modding retro arcade games with Blocks and JavaScript in the MakeCode editor" />
+<meta name="twitter:image" content="/static/tutorials/bubbles/io2_title.png" />
+
+<meta property="og:title" content="Microsoft MakeCode Arcade" />
+<meta property="og:site_name" content="Microsoft MakeCode" />
+<meta property="og:type" content="website" />
+<meta property="og:description" content="Develop your programming skills by quickly creating and modding retro arcade games with Blocks and JavaScript in the MakeCode editor" />
+<meta property="fb:app_id" content="" />
+<meta property="og:image" content="/static/tutorials/bubbles/io2_title.png" />
+
+<meta name="format-detection" content="telephone=no">
+<link rel="apple-touch-icon" href="docs/static/icons/favicon.ico">
+<link rel="icon" type="image/png" href="docs/static/icons/favicon.ico">
+<link rel="shortcut icon" href="docs/static/icons/favicon.ico">
+<meta name="theme-color" content="">
+
+<!-- end include meta.html -->
+
+	
+<!-- include head.html -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width,height=device-height,user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
+
+<link rel="stylesheet" data-rtl="/blb/rtlsemantic.css" href="/pxt-arcade-app/semantic.css" />
+<link id="blocklycss"  data-rtl="/blb/rtlblockly.css" rel="stylesheet" href="/pxt-arcade-app/blockly.css" />
+<link rel="stylesheet" href="/pxt-arcade-app/docfiles/style.css" />
+<link rel="stylesheet" href="/pxt-arcade-app/docfiles/vs.css" />
+<link rel="stylesheet" href="/pxt-arcade-app/docfiles/target.css" />
+
+<script src="/pxt-arcade-app/jquery.js" type="text/javascript"></script>
+<script src="/pxt-arcade-app/semantic.js" type="text/javascript"></script>
+<script src="/pxt-arcade-app/docfiles/target.js" type="text/javascript"></script>
+<script src="/pxt-arcade-app/embed.js" type="text/javascript"></script>
+<script src="/pxt-arcade-app/docfiles/docs.js" type="text/javascript"></script>
+
+<style>
+    
+</style>
+
+<!-- end include head.html -->
+
+
+</head>
+
+<body id='root' class='root'>
+	<div id="accessibleMenu" class="ui accessibleMenu borderless fixed menu docs" role="menubar">
+		
+            <a href="#maincontent" class="ui item link" tabindex="0" role="menuitem">Skip to main content</a>
+        
+	</div>
+
+	
+<!-- include tocheader.html -->
+<div id="top-bar" class="ui fixed accent borderless inverted main menu hideprint docs" role="menubar">
+    <div>
+        
+            <a id="togglesidebar" class="launch icon item" tabindex="0" title="Side menu" aria-label="Side menu" role="menuitem" aria-expanded="false">
+                <i class="content icon"></i>
+            </a>
+        
+        <div class="item" role="menuitem">
+            <div class="header-org-logo">
+                <img src="/static/logo/Microsoft_logo_rgb_W-white_D.png" alt="Microsoft">
+            </div>
+            <div class="header-org-logo-sm">
+                <img src="/static/logo/Microsoft_logo_rgb_W-white_D-square.png" alt="Microsoft">
+            </div>
+            <div class="header-title"><span>MakeCode</span></div>
+        </div>
+    </div>
+    <div>
+        <div class="item">
+            <form id="tocsearch1" class="search" role="form" method="get" action="https://www.bing.com/search">
+                <div class="ui fluid icon input">
+                    <input type="hidden" name="q1" value="site:https://arcade.makecode.com/" />
+                    
+                <input type="search" name="q" placeholder="Search..." aria-label="Search Documentation">
+                <i onclick="document.getElementById('tocsearch1').submit();" tabindex="0" class="search link icon" aria-label="Search" role="button"></i>
+            
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div id="side-menu" class="ui vertical accent inverted sidebar menu left hideprint docs" role="menubar">
+    <!-- TOC Menu (tocheader.html) -->
+    <div class="menuContainer" role="menu">
+        
+    <a class="item " href="/pxt-arcade-app/docs/about.html" role="menuitem">About</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/faq.html" role="menuitem">FAQ</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/projects.html" role="menuitem">Projects</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/github.html" role="menuitem">GitHub</a>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/pxt-arcade-app/docs/reference.html">Reference</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-arcade-app/docs/reference/sprites.html" role="menuitem">sprites</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/reference/controller.html" role="menuitem">controller</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/reference/game.html" role="menuitem">game</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/reference/music.html" role="menuitem">music</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/reference/scene.html" role="menuitem">scene</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/reference/info.html" role="menuitem">info</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/reference/images.html" role="menuitem">images</a>
+
+        </div>
+    </div>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/pxt-arcade-app/docs/blocks.html">Blocks</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-arcade-app/docs/blocks/on-start.html" role="menuitem">On Start</a>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/pxt-arcade-app/docs/blocks/loops.html">Loops</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-arcade-app/docs/blocks/loops/repeat.html" role="menuitem">repeat</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/blocks/loops/for.html" role="menuitem">for</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/blocks/loops/while.html" role="menuitem">while</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/blocks/loops/for-of.html" role="menuitem">for of</a>
+
+        </div>
+    </div>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/pxt-arcade-app/docs/blocks/logic.html">Logic</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-arcade-app/docs/blocks/logic/if.html" role="menuitem">if</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/blocks/logic/boolean.html" role="menuitem">Boolean</a>
+
+        </div>
+    </div>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/pxt-arcade-app/docs/blocks/variables.html">Variables</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-arcade-app/docs/blocks/variables/assign.html" role="menuitem">assign</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/blocks/variables/change.html" role="menuitem">change var</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/blocks/variables/var.html" role="menuitem">var</a>
+
+        </div>
+    </div>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/blocks/math.html" role="menuitem">Math</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/blocks/javascript-blocks.html" role="menuitem">JavaScript blocks</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/blocks/custom.html" role="menuitem">Custom blocks</a>
+
+        </div>
+    </div>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/pxt-arcade-app/docs/python.html">Python</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-arcade-app/docs/python/call.html" role="menuitem">Calling</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/python/sequence.html" role="menuitem">Sequencing</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/python/variables.html" role="menuitem">Variables</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/python/operators.html" role="menuitem">Operators</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/python/statements.html" role="menuitem">Statements</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/python/functions.html" role="menuitem">Functions</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/python/classes.html" role="menuitem">Classes</a>
+
+        </div>
+    </div>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/pxt-arcade-app/docs/javascript.html">JavaScript</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-arcade-app/docs/javascript/call.html" role="menuitem">Calling</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/javascript/sequence.html" role="menuitem">Sequencing</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/javascript/variables.html" role="menuitem">Variables</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/javascript/operators.html" role="menuitem">Operators</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/javascript/statements.html" role="menuitem">Statements</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/javascript/functions.html" role="menuitem">Functions</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/javascript/types.html" role="menuitem">Types</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/javascript/classes.html" role="menuitem">Classes</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/javascript/interfaces.html" role="menuitem">Interfaces</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/javascript/generics.html" role="menuitem">Generics</a>
+
+        </div>
+    </div>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/pxt-arcade-app/docs/types.html">Types</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-arcade-app/docs/types/number.html" role="menuitem">Number</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/types/string.html" role="menuitem">String</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/types/boolean.html" role="menuitem">Boolean</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/types/array.html" role="menuitem">Array</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/types/function.html" role="menuitem">Function</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/types/image.html" role="menuitem">Image</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/types/sprite.html" role="menuitem">Sprite</a>
+
+        </div>
+    </div>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/block-gallery.html" role="menuitem">Blocks Gallery</a>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="">Miscellaneous</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-arcade-app/docs/about.html" role="menuitem">About</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/support.html" role="menuitem">Support</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/translate.html" role="menuitem">Translate</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/share.html" role="menuitem">Sharing projects</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/multiplayer.html" role="menuitem">Multiplayer</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/offline.html" role="menuitem">Offline support</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/save.html" role="menuitem">Save</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/identity/sign-in.html" role="menuitem">Sign In</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/identity/cloud-sync.html" role="menuitem">Cloud Sync</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/vscode.html" role="menuitem">VS Code</a>
+
+        </div>
+    </div>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/pxt-arcade-app/docs/hardware.html">Hardware</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-arcade-app/docs/hardware/errors.html" role="menuitem">Errors</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/hardware/adding.html" role="menuitem">Adding New Board</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/hardware/raspberry-pi.html" role="menuitem">Raspberry Pi</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/hardware/makey-makey.html" role="menuitem">Makey Makey</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/hardware/shoebox-controller.html" role="menuitem">Shoebox Controller</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/hardware/dev.html" role="menuitem">Dev</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/hardware/dbg.html" role="menuitem">Debug connector</a>
+
+        </div>
+    </div>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="">Developers</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-arcade-app/docs/cli.html" role="menuitem">Command Line Interface</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/code.html" role="menuitem">Visual Studio Code support</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/blocks-embed.html" role="menuitem">Blocks Embed</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/developer/images.html" role="menuitem">Art, images, colors</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/developer/sound.html" role="menuitem">Sounds</a>
+
+        </div>
+    </div>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/pxt-arcade-app/docs/lessons.html">Lessons</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-arcade-app/docs/lessons/cherry-pickr.html" role="menuitem">Cherry Pickr</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/lessons/barrel-dodger.html" role="menuitem">Barrel Dodger</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/lessons/dance-party.html" role="menuitem">Dance Party</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/lessons/block-out.html" role="menuitem">BlockOut</a>
+
+        </div>
+    </div>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="right chevron icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/pxt-arcade-app/docs/courses.html">Courses</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/pxt-arcade-app/docs/courses/csintro1.html" role="menuitem">CS Intro 1</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/courses/csintro2.html" role="menuitem">CS Intro 2</a>
+
+
+    <a class="item " href="/pxt-arcade-app/docs/courses/csintro3.html" role="menuitem">CS Intro 3</a>
+
+        </div>
+    </div>
+
+    </div>
+</div>
+<!-- end include tocheader.html -->
+
+
+	<div id="docs" class="pusher">
+
+		<div class="article" id="maincontent">
+			<div class="article-inner">
+
+				
+<!-- include header.html -->
+<div class="ui one column padded grid hideprint">
+    <div class="column ui container">
+        
+    </div>
+</div>
+<!-- end include header.html -->
+
+
+				<div class="main ui container fluid mainbody">
+					<button id="printbtn" class="circular ui icon right floated button hideprint hidemobile"
+						title="Print" aria-label="Print">
+						<i class="icon print"></i>
+					</button>
+					
+    <div class="ui text">
+        <h1 id="bubble-stacking-with-joy">Bubble Stacking with Joy</h1><!-- hints --><h2 id="intro-">Intro </h2><p>Are you ready to have an adventure with Joy and the rest of the emotions from Inside Out 2? Click <strong>Next</strong> to make your own game!</p>
+<p><img class="ui image" src="/static/tutorials/bubbles/io2_title.png" alt="Play Bubble Stacking with Joy" title="How many memories can you store?" loading="lazy"></p>
+<h2 id="2-your-first-block">2. Your First Block</h2><h2 id="2-your-first-block">2. Your First Block</h2><p><strong>Add your emotion!</strong></p>
+<p>To do this, we’ll need to add a <strong>sprite</strong> to the bottom of the screen.</p>
+<p>~hint What’s a sprite? 💡</p>
+<hr>
+<p>In Arcade, each character or image that does something is called a <strong>SPRITE</strong>.</p>
+<p>Sprites have properties that you can use and change – things like scale, position, and lifespan are all properties of sprites.</p>
+<p>Our players will be sprites, too.</p>
+<p>hint~</p>
+<ul>
+<li>:paper plane: Open the <code>||sprites:Sprites||</code> category and drag <br />
+<code>||variables(sprites):set [mySprite] to sprite [ ] of kind [Player]||</code><br />
+into <strong>the empty</strong> <br />
+<code>||loops(noclick): on start||</code> <br />
+container already in the workspace.</li>
+</ul>
+<p>~hint Pizza category? 🍕</p>
+<hr>
+<p>Within special tutorials, you’ll sometimes see custom categories that we don’t offer in our normal interface. These categories are <strong>Extensions</strong>.</p>
+<p>When creating custom projects or tutorials, people can craft their own blocks that others can add into their toolbox as an extension.  Since we can’t get to the <strong>Extensions</strong> gallery from a tutorial, the categories you need have been provided in the toolbox by default.</p>
+<p>If you want to use the <code>||bubble:Bubble||</code> category in another tutorial someday, make sure to grab the share link for this finished project and you’ll be able to import the blocks from this tutorial into another project!</p>
+<p>hint~</p>
+
+    <div class="ui hint message">
+        <div class="content">
+            <pre><code class="lang-blocks">//@highlight
+let mySprite = sprites.create(io2_images.joy, SpriteKind.Player)</code></pre>
+<h2 id="5-check-your-game-">5. Check Your Game!</h2><ul>
+<li>:binoculars: Look at your project in the game window to see what your code has done.</li>
+</ul>
+<p>You should see a single sprite in the game window that looks like the first image in your array.</p>
+<p><strong>Click on the game window and try moving your <em>sprite</em> using the arrow keys or joypad.</strong></p>
+<h2 id="13-test-">13. Test!</h2><ul>
+<li>:binoculars: Test your project with two or more players.</li>
+</ul>
+<p>As <strong>Player 1</strong>, try holding down the (A) button (or space bar) and running into another player.  What happens?</p>
+<p>📝 <em>Note: At the moment, a player can only bump someone with a higher number. We’ll fix that in the next step.</em></p>
+<h2 id="18-test-it">18. Test It</h2><ul>
+<li>:binoculars: Test your final experience.</li>
+</ul>
+<p>You should be able to rack up points as you grab pizza until you press the (A) button, then the pizza should fly right by you.</p>
+<p><strong>For extra fun, login so you can play online with friends!</strong></p>
+<h2 id="finale">Finale</h2><p><strong>🍕 Cowabunga 🍕</strong></p>
+<p>You have finished your multiplayer experience!</p>
+<p>When you’re ready, sign-in, then select <strong>Done</strong> to start an online multiplayer session with up to three friends.</p>
+<p><strong>Who will be the first to score 20 points?</strong></p>
+<pre><code class="lang-blockconfig.global">let mySprite = sprites.create(img`.`, SpriteKind.Player)
+mySprite.top = 102</code></pre>
+<pre><code class="lang-ghost">
+scene.onHitWall(SpriteKind.Bubble, function (sprite, location) {
+    bubble.stick_to_wall(sprite, location)
+    music.play(music.melodyPlayable(music.baDing), music.PlaybackMode.UntilDone)
+})
+controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
+    console.log(&quot;Calling Toss Ball&quot;)
+    bubble.tossBubble()
+    console.log(&quot;Calling load_bubble&quot;)
+    bubble.load_bubble()
+})
+controller.right.onEvent(ControllerButtonEvent.Repeated, function () {
+    bubble.tilt_angle_right()
+})
+info.onScore(100, function () {
+    game.setGameOverEffect(true, effects.confetti)
+    game.setGameOverPlayable(true, music.melodyPlayable(music.powerUp), false)
+    game.setGameOverMessage(true, &quot;GAME OVER!&quot;)
+})
+controller.left.onEvent(ControllerButtonEvent.Repeated, function () {
+    bubble.tilt_angle_left()
+})
+scene.setBackgroundColor(14)
+music.play(music.createSong(hex`0078000408010105001c000f0a006400f4010a00000400000000000000000000000000000000021a0000000400011d04000800011e08000c00021e2010001400021d1e`), music.PlaybackMode.InBackground)
+let mySprite = sprites.create(assets.image`myImage`, SpriteKind.Player)
+mySprite.top = 102
+mySprite.startEffect(effects.fountain)
+bubble.createBoard()
+bubble.load_bubble()
+
+</code></pre>
+<pre><code class="lang-package">multiplayer
+io2_images=github:kiki-lee/io2_images#v0.0.1
+bubble=github:kiki-lee/bubble_ext#v0.0.12</code></pre>
+<pre><code class="lang-simtheme">{
+    &quot;palette&quot;: [
+        &quot;#000000&quot;,
+        &quot;#FFFFFF&quot;,
+        &quot;#E40C0C&quot;,
+        &quot;#FF8FDB&quot;,
+        &quot;#FFF700&quot;,
+        &quot;#3AF2B5&quot;,
+        &quot;#0B9EF9&quot;,
+        &quot;#56E3F5&quot;,
+        &quot;#C4C3F4&quot;,
+        &quot;#E0E6E6&quot;,
+        &quot;#729280&quot;,
+        &quot;#A4839F&quot;,
+        &quot;#5C406c&quot;,
+        &quot;#E5CDC4&quot;,
+        &quot;#8A0A0A&quot;,
+        &quot;#000000&quot;
+    ]
+}</code></pre>
+<pre><code class="lang-assetjson">
+{
+  &quot;README.md&quot;: &quot; \n\n\n&gt; Open this page at [https://kiki-lee.github.io/bubble_ext/](https://kiki-lee.github.io/bubble_ext/)\n\n## Use as Extension\n\nThis repository can be added as an **extension** in MakeCode.\n\n* open [https://arcade.makecode.com/](https://arcade.makecode.com/)\n* click on **New Project**\n* click on **Extensions** under the gearwheel menu\n* search for **https://github.com/kiki-lee/bubble_ext** and import\n\n## Edit this project ![Build status badge](https://github.com/kiki-lee/bubble_ext/workflows/MakeCode/badge.svg)\n\nTo edit this repository in MakeCode.\n\n* open [https://arcade.makecode.com/](https://arcade.makecode.com/)\n* click on **Import** then click on **Import URL**\n* paste **https://github.com/kiki-lee/bubble_ext** and click import\n\n## Blocks preview\n\nThis image shows the blocks code from the last commit in master.\nThis image may take a few minutes to refresh.\n\n![A rendered view of the blocks](https://github.com/kiki-lee/bubble_ext/raw/master/.github/makecode/blocks.png)\n\n#### Metadata (used for search, rendering)\n\n* for PXT/arcade\n&lt;script src=\&quot;https://makecode.com/gh-pages-embed.js\&quot;&gt;&lt;/script&gt;&lt;script&gt;makeCodeRender(\&quot;{{ site.makecode.home_url }}\&quot;, \&quot;{{ site.github.owner_name }}/{{ site.github.repository_name }}\&quot;);&lt;/script&gt;\n&quot;,
+  &quot;assets.json&quot;: &quot;&quot;,
+  &quot;bubble.ts&quot;: &quot;namespace SpriteKind {\n    //% isKind\n    export const Bubbles = SpriteKind.create()\n}\ntiles.setCurrentTilemap(tilemap` `)\n\n\n//% color=#32c4de icon=\&quot;\\uf192\&quot;\nnamespace bubble {\n\n    let codingThisBall = 0\n    export let list: Image[] = []\n    let burstBubble: Sprite = null\n    let ShotNumber = 0\n    let bonus = 0\n    let totalBallsOut = 0\n    let foundRoot = false\n    let currentLocation: tiles.Location = null\n    let locationsToClear: tiles.Location[] = []\n    let lookingForTile: Image = null\n    let clearCount = 0\n    let locationQueue: tiles.Location[] = []\n    let alreadyVisited: Image = null\n    let aimingAngle = 0\n    let myBall: Sprite = null\n\n\n    /**\n    * Appear to toss the bubble\n    */\n    //% blockId=tossBubble \n    //% block=\&quot;toss bubble\&quot;\n    //% help=bubble/toss_bubble\n    export function tossBubble() {\n        if (!(stateTransitions.stateIs(\&quot;aiming\&quot;))) {\n            return\n        }\n        stateTransitions.changeState(\&quot;throwing\&quot;)\n        spriteutils.setVelocityAtAngle(myBall, spriteutils.degreesToRadians(aimingAngle), 300)\n        sprites.setDataNumber(myBall, \&quot;vx\&quot;, myBall.vx)\n        sprites.setDataNumber(myBall, \&quot;vy\&quot;, myBall.vy)\n    }\n\n\n\n    function maybeAddToQueue(column: number, row: number) {\n        if (alreadyVisited.getPixel(column, row) == 0) {\n            locationQueue.push(tiles.getTileLocation(column, row))\n            alreadyVisited.setPixel(column, row, 15)\n        }\n    }\n\n    function checkForMatches(thisBall: Sprite) {\n        if (tiles.tileAtLocationEquals(myBall.tilemapLocation(), assets.tile`myTile0`)) {\n            game.gameOver(false)\n        }\n        sprites.destroy(thisBall)\n        tiles.setTileAt(thisBall.tilemapLocation(), thisBall.image)\n        tiles.setWallAt(thisBall.tilemapLocation(), true)\n        alreadyVisited = image.create(20, 15)\n        clearCount = 0\n        lookingForTile = thisBall.image\n        locationQueue = []\n        locationsToClear = []\n        maybeAddToQueue(thisBall.tilemapLocation().column, thisBall.tilemapLocation().row)\n        alreadyVisited.drawRect(0, 0, 20, 15, 15)\n        stateTransitions.changeState(\&quot;scoring\&quot;)\n        timer.background(function () {\n            while (locationQueue.length &gt; 0) {\n                currentLocation = locationQueue.removeAt(0)\n                if (tileUtil.tileIs(tileUtil.currentTilemap(), currentLocation, lookingForTile)) {\n                    locationsToClear.push(currentLocation)\n                    maybeAddToQueue(currentLocation.column + 1, currentLocation.row + 0)\n                    maybeAddToQueue(currentLocation.column - 1, currentLocation.row + 0)\n                    maybeAddToQueue(currentLocation.column + 0, currentLocation.row + 1)\n                    maybeAddToQueue(currentLocation.column + 0, currentLocation.row - 1)\n                }\n            }\n            if (locationsToClear.length &gt;= 3) {\n                pause(100)\n                for (let value of locationsToClear) {\n                    clearLocation(value.column, value.row)\n                    info.changeScoreBy(1)\n                }\n                info.changeScoreBy(Math.floor(1.5 ** locationsToClear.length) - 3)\n                alreadyVisited.fill(0)\n                alreadyVisited.drawRect(0, 0, 20, 15, 15)\n                for (let indexX = 0; indexX &lt;= 19; indexX++) {\n                    for (let indexY = 0; indexY &lt;= 14; indexY++) {\n                        maybeAddToQueue(indexX, indexY)\n                        if (locationQueue.length &gt; 0) {\n                            locationsToClear = []\n                            while (locationQueue.length &gt; 0) {\n                                currentLocation = locationQueue.removeAt(0)\n                                if (tiles.tileAtLocationIsWall(currentLocation)) {\n                                    locationsToClear.push(currentLocation)\n                                    maybeAddToQueue(currentLocation.column + 1, currentLocation.row + 0)\n                                    maybeAddToQueue(currentLocation.column - 1, currentLocation.row + 0)\n                                    maybeAddToQueue(currentLocation.column + 0, currentLocation.row + 1)\n                                    maybeAddToQueue(currentLocation.column + 0, currentLocation.row - 1)\n                                }\n                            }\n                            foundRoot = false\n                            for (let value2 of locationsToClear) {\n                                if (value2.row == 1) {\n                                    foundRoot = true\n                                    break;\n                                }\n                            }\n                            if (!(foundRoot)) {\n                                for (let value3 of locationsToClear) {\n                                    clearLocation(value3.column, value3.row)\n                                }\n                            }\n                        }\n                    }\n                }\n            }\n            totalBallsOut = tiles.getTilesByType(assets.tile`myTile1`).length + (tiles.getTilesByType(assets.tile`myTile2`).length + (tiles.getTilesByType(assets.tile`myTile3`).length + (tiles.getTilesByType(assets.tile`myTile4`).length + tiles.getTilesByType(assets.tile`myTile5`).length)))\n            if (totalBallsOut &lt;= 0) {\n                bonus = Math.round((120000 - game.runtime()) / 200)\n                if (bonus &gt; 0) {\n                    game.setGameOverMessage(true, \&quot;Speed Bonus:\&quot; + bonus + \&quot; points!\&quot;)\n                    info.changeScoreBy(bonus)\n                }\n                game.gameOver(true)\n            }\n        })\n        stateTransitions.changeState(\&quot;aiming\&quot;)\n    }\n\n\n\n    /**\n    * Appear to aim further left\n    */\n    //% blockId=aimLeft \n    //% block=\&quot;change angle left\&quot;\n    //% help=bubble/aim_left\n    export function tilt_angle_left() {\n        if (stateTransitions.stateIs(\&quot;aiming\&quot;)) {\n            aimingAngle = Math.constrain(aimingAngle - 1.5, -175, -5)\n        }\n    }\n\n    /**\n    * Appear to aim further right\n    */\n    //% blockId=aimRight \n    //% block=\&quot;change angle right\&quot;\n    //% help=bubble/aim_right\n    export function tilt_angle_right() {\n        if (stateTransitions.stateIs(\&quot;aiming\&quot;)) {\n            aimingAngle = Math.constrain(aimingAngle + 1.5, -175, -5)\n        }\n    }\n\n\n\n\n    function clearLocation(column: number, row: number) {\n        burstBubble = sprites.create(img`\n        . . . . . . . . . . . . . . . . \n        . . . . . . . . . . . . . . . . \n        . . . . . . . . . . . . . . . . \n        . . . . . . . . . . . . . . . . \n        . . . . . . . . . . . . . . . . \n        . . . . . . . . . . . . . . . . \n        . . . . . . . . . . . . . . . . \n        . . . . . . . . . . . . . . . . \n        . . . . . . . . . . . . . . . . \n        . . . . . . . . . . . . . . . . \n        . . . . . . . . . . . . . . . . \n        . . . . . . . . . . . . . . . . \n        . . . . . . . . . . . . . . . . \n        . . . . . . . . . . . . . . . . \n        . . . . . . . . . . . . . . . . \n        . . . . . . . . . . . . . . . . \n        `, SpriteKind.Player)\n        tiles.placeOnTile(burstBubble, tiles.getTileLocation(column, row))\n        if (tiles.tileAtLocationEquals(tiles.getTileLocation(column, row), assets.tile`myTile2`)) {\n            animation.runImageAnimation(\n                burstBubble,\n                [img`\n                    . . . . . . . . . . . . . . . .\n                    . . . . . . . . . . . . . . . .\n                    . . . . . . . . . . . . . . . .\n                    . . . . . . . . . . . . . . . .\n                    . . . . . . 3 3 3 . . . . . . .\n                    . . . . . 3 . . . 3 . . . . . .\n                    . . . . 3 . . . . . 3 . . . . .\n                    . . . . 3 . . . . . 3 . . . . .\n                    . . . . 3 . . . . . 3 . . . . .\n                    . . . . . 3 . . . 3 . . . . . .\n                    . . . . . . 3 3 3 . . . . . . .\n                    . . . . . . . . . . . . . . . .\n                    . . . . . . . . . . . . . . . .\n                    . . . . . . . . . . . . . . . .\n                    . . . . . . . . . . . . . . . .\n                    . . . . . . . . . . . . . . . .\n                `, img`\n            . . . . . . . . . . . . . . . . \n            . . . . . . . . . . . . . . . . \n            . . . . . . . . . . . . . . . . \n            . . . . . . . 3 . . . . . . . . \n            . . . . 3 . . . . . 3 . . . . . \n            . . . . . . . . . . . . . . . . \n            . . . . . . . . . . . . . . . . \n            . . . 3 . . . . . . . 3 . . . . \n            . . . . . . . . . . . . . . . . \n            . . . . . . . . . . . . . . . . \n            . . . . 3 . . . . . 3 . . . . . \n            . . . . . . . 3 . . . . . . . . \n            . . . . . . . . . . . . . . . . \n            . . . . . . . . . . . . . . . . \n            . . . . . . . . . . . . . . . . \n            . . . . . . . . . . . . . . . . \n            `, img`\n            . . . . . . . . . . . . . . . . \n            . . . . . . . . . . . . . . . . \n            . . . . . . . . . . . . . . . . \n            . . . . . . . . . . . . . . . . \n            . . . . . . . 3 . . . . . . . . \n            . . . 3 . . . . . . . 3 . . . . \n            . . . . . . . . . . . . . . . . \n            . . . . . . . . . . . . . . . . \n            . . 3 . . . . . . . . . 3 . . . \n            . . . . . . . . . . . . . . . . \n            . . . . . . . . . . . . . . . . \n            . . . 3 . . . . . . . 3 . . . . \n            . . . . . . . . . . . . . . . . \n            . . . . . . . 3 . . . . . . . . \n            . . . . . . . . . . . . . . . . \n            . . . . . . . . . . . . . . . . \n            `, img`\n            . . . . . . . . . . . . . . . . \n            . . . . . . . . . . . . . . . . \n            . . . . . . . . . . . . . . . . \n            . . . . . . . . . . . . . . . . \n            . . . . . . . . . . . . . . . . \n            . . . . . . . . . . . . . . . . \n            . . . . . . . . . . . . . . . . \n            . . . 3 . . . . . . 3 . . . . . \n            . . . . . . . . . . . . . . . . \n            . . . . . . . 3 . . . . . . . . \n            . 3 . . . . . . . . . . . 3 . . \n            . . . . . . . . . . . . . . . . \n            . . . . . . . . . . . . . . . . \n            . . 3 . . . . . . . . . 3 . . . \n            . . . . . . . . . . . . . . . . \n            . . . . . . . 3 . . . . . . . . \n            `],\n                50,\n                false\n            )\n        } else if (tiles.tileAtLocationEquals(tiles.getTileLocation(column, row), assets.tile`myTile1`)) {\n            animation.runImageAnimation(\n                burstBubble,\n                [img`\n            . . . . . . . . . . . . . . . . \n            . . . . . . . . . . . . . . . . \n            . . . . . . . . . . . . . . . . \n            . . . . . . . . . . . . . . . . \n            . . . . . . 2 2 2 . . . . . . . \n            . . . . . 2 . . . 2 . . . . . . \n            . . . . 2 . . . . . 2 . . . . . \n            . . . . 2 . . . . . 2 . . . . . \n            . . . . 2 . . . . . 2 . . . . . \n            . . . . . 2 . . . 2 . . . . . . \n            . . . . . . 2 2 2 . . . . . . . \n            . . . . . . . . . . . . . . . . \n            . . . . . . . . . . . . . . . . \n            . . . . . . . . . . . . . . . . \n            . . . . . . . . . . . . . . . . \n            . . . . . . . . . . . . . . . . \n            `, img`\n            . . . . . . . . . . . . . . . . \n            . . . . . . . . . . . . . . . . \n            . . . . . . . . . . . . . . . . \n            . . . . . . . 2 . . . . . . . . \n            . . . . 2 . . . . . 2 . . . . . \n            . . . . . . . . . . . . . . . . \n            . . . . . . . . . . . . . . . . \n            . . . 2 . . . . . . . 2 . . . . \n            . . . . . . . . . . . . . . . . \n            . . . . . . . . . . . . . . . . \n            . . . . 2 . . . . . 2 . . . . . \n            . . . . . . . 2 . . . . . . . . \n            . . . . . . . . . . . . . . . . \n            . . . . . . . . . . . . . . . . \n            . . . . . . . . . . . . . . . . \n            . . . . . . . . . . . . . . . . \n            `, img`\n            . . . . . . . . . . . . . . . . \n            . . . . . . . . . . . . . . . . \n            . . . . . . . . . . . . . . . . \n            . . . . . . . . . . . . . . . . \n            . . . . . . . 2 . . . . . . . . \n            . . . 2 . . . . . . . 2 . . . . \n            . . . . . . . . . . . . . . . . \n            . . . . . . . . . . . . . . . . \n            . . 2 . . . . . . . . . 2 . . . \n            . . . . . . . . . . . . . . . . \n            . . . . . . . . . . . . . . . . \n            . . . 2 . . . . . . . 2 . . . . \n            . . . . . . . . . . . . . . . . \n            . . . . . . . 2 . . . . . . . . \n            . . . . . . . . . . . . . . . . \n            . . . . . . . . . . . . . . . . \n            `, img`\n            . . . . . . . . . . . . . . . . \n            . . . . . . . . . . . . . . . . \n            . . . . . . . . . . . . . . . . \n            . . . . . . . . . . . . . . . . \n            . . . . . . . . . . . . . . . . \n            . . . . . . . . . . . . . . . . \n            . . . . . . . . . . . . . . . . \n            . . . 2 . . . . . . 2 . . . . . \n            . . . . . . . . . . . . . . . . \n            . . . . . . . 2 . . . . . . . . \n            . 2 . . . . . . . . . . . 2 . . \n            . . . . . . . . . . . . . . . . \n            . . . . . . . . . . . . . . . . \n            . . 2 . . . . . . . . . 2 . . . \n            . . . . . . . . . . . . . . . . \n            . . . . . . . 2 . . . . . . . . \n            `],\n                50,\n                false\n            )\n        } else if (tiles.tileAtLocationEquals(tiles.getTileLocation(column, row), assets.tile`myTile4`)) {\n            animation.runImageAnimation(\n                burstBubble,\n                [img`\n            . . . . . . . . . . . . . . . . \n            . . . . . . . . . . . . . . . . \n            . . . . . . . . . . . . . . . . \n            . . . . . . . . . . . . . . . . \n            . . . . . . 5 5 5 . . . . . . . \n            . . . . . 5 . . . 5 . . . . . . \n            . . . . 5 . . . . . 5 . . . . . \n            . . . . 5 . . . . . 5 . . . . . \n            . . . . 5 . . . . . 5 . . . . . \n            . . . . . 5 . . . 5 . . . . . . \n            . . . . . . 5 5 5 . . . . . . . \n            . . . . . . . . . . . . . . . . \n            . . . . . . . . . . . . . . . . \n            . . . . . . . . . . . . . . . . \n            . . . . . . . . . . . . . . . . \n            . . . . . . . . . . . . . . . . \n            `, img`\n            . . . . . . . . . . . . . . . . \n            . . . . . . . . . . . . . . . . \n            . . . . . . . . . . . . . . . . \n            . . . . . . . 5 . . . . . . . . \n            . . . . 5 . . . . . 5 . . . . . \n            . . . . . . . . . . . . . . . . \n            . . . . . . . . . . . . . . . . \n            . . . 5 . . . . . . . 5 . . . . \n            . . . . . . . . . . . . . . . . \n            . . . . . . . . . . . . . . . . \n            . . . . 5 . . . . . 5 . . . . . \n            . . . . . . . 5 . . . . . . . . \n            . . . . . . . . . . . . . . . . \n            . . . . . . . . . . . . . . . . \n            . . . . . . . . . . . . . . . . \n            . . . . . . . . . . . . . . . . \n            `, img`\n            . . . . . . . . . . . . . . . . \n            . . . . . . . . . . . . . . . . \n            . . . . . . . . . . . . . . . . \n            . . . . . . . . . . . . . . . . \n            . . . . . . . 5 . . . . . . . . \n            . . . 5 . . . . . . . 5 . . . . \n            . . . . . . . . . . . . . . . . \n            . . . . . . . . . . . . . . . . \n            . . 5 . . . . . . . . . 5 . . . \n            . . . . . . . . . . . . . . . . \n            . . . . . . . . . . . . . . . . \n            . . . 5 . . . . . . . 5 . . . . \n            . . . . . . . . . . . . . . . . \n            . . . . . . . 5 . . . . . . . . \n            . . . . . . . . . . . . . . . . \n            . . . . . . . . . . . . . . . . \n            `, img`\n            . . . . . . . . . . . . . . . . \n            . . . . . . . . . . . . . . . . \n            . . . . . . . . . . . . . . . . \n            . . . . . . . . . . . . . . . . \n            . . . . . . . . . . . . . . . . \n            . . . . . . . . . . . . . . . . \n            . . . . . . . . . . . . . . . . \n            . . . 5 . . . . . . 5 . . . . . \n            . . . . . . . . . . . . . . . . \n            . . . . . . . 5 . . . . . . . . \n            . 5 . . . . . . . . . . . 5 . . \n            . . . . . . . . . . . . . . . . \n            . . . . . . . . . . . . . . . . \n            . . 5 . . . . . . . . . 5 . . . \n            . . . . . . . . . . . . . . . . \n            . . . . . . . 5 . . . . . . . . \n            `],\n                50,\n                false\n            )\n        } else if (tiles.tileAtLocationEquals(tiles.getTileLocation(column, row), assets.tile`myTile5`)) {\n            animation.runImageAnimation(\n                burstBubble,\n                [img`\n            . . . . . . . . . . . . . . . . \n            . . . . . . . . . . . . . . . . \n            . . . . . . . . . . . . . . . . \n            . . . . . . . . . . . . . . . . \n            . . . . . . 6 6 6 . . . . . . . \n            . . . . . 6 . . . 6 . . . . . . \n            . . . . 6 . . . . . 6 . . . . . \n            . . . . 6 . . . . . 6 . . . . . \n            . . . . 6 . . . . . 6 . . . . . \n            . . . . . 6 . . . 6 . . . . . . \n            . . . . . . 6 6 6 . . . . . . . \n            . . . . . . . . . . . . . . . . \n            . . . . . . . . . . . . . . . . \n            . . . . . . . . . . . . . . . . \n            . . . . . . . . . . . . . . . . \n            . . . . . . . . . . . . . . . . \n            `, img`\n            . . . . . . . . . . . . . . . . \n            . . . . . . . . . . . . . . . . \n            . . . . . . . . . . . . . . . . \n            . . . . . . . 6 . . . . . . . . \n            . . . . 6 . . . . . 6 . . . . . \n            . . . . . . . . . . . . . . . . \n            . . . . . . . . . . . . . . . . \n            . . . 6 . . . . . . . 6 . . . . \n            . . . . . . . . . . . . . . . . \n            . . . . . . . . . . . . . . . . \n            . . . . 6 . . . . . 6 . . . . . \n            . . . . . . . 6 . . . . . . . . \n            . . . . . . . . . . . . . . . . \n            . . . . . . . . . . . . . . . . \n            . . . . . . . . . . . . . . . . \n            . . . . . . . . . . . . . . . . \n            `, img`\n            . . . . . . . . . . . . . . . . \n            . . . . . . . . . . . . . . . . \n            . . . . . . . . . . . . . . . . \n            . . . . . . . . . . . . . . . . \n            . . . . . . . 6 . . . . . . . . \n            . . . 6 . . . . . . . 6 . . . . \n            . . . . . . . . . . . . . . . . \n            . . . . . . . . . . . . . . . . \n            . . 6 . . . . . . . . . 6 . . . \n            . . . . . . . . . . . . . . . . \n            . . . . . . . . . . . . . . . . \n            . . . 6 . . . . . . . 6 . . . . \n            . . . . . . . . . . . . . . . . \n            . . . . . . . 6 . . . . . . . . \n            . . . . . . . . . . . . . . . . \n            . . . . . . . . . . . . . . . . \n            `, img`\n            . . . . . . . . . . . . . . . . \n            . . . . . . . . . . . . . . . . \n            . . . . . . . . . . . . . . . . \n            . . . . . . . . . . . . . . . . \n            . . . . . . . . . . . . . . . . \n            . . . . . . . . . . . . . . . . \n            . . . . . . . . . . . . . . . . \n            . . . 6 . . . . . . 6 . . . . . \n            . . . . . . . . . . . . . . . . \n            . . . . . . . 6 . . . . . . . . \n            . 6 . . . . . . . . . . . 6 . . \n            . . . . . . . . . . . . . . . . \n            . . . . . . . . . . . . . . . . \n            . . 6 . . . . . . . . . 6 . . . \n            . . . . . . . . . . . . . . . . \n            . . . . . . . 6 . . . . . . . . \n            `],\n                50,\n                false\n            )\n        } else if (tiles.tileAtLocationEquals(tiles.getTileLocation(column, row), assets.tile`myTile3`)) {\n            animation.runImageAnimation(\n                burstBubble,\n                [img`\n            . . . . . . . . . . . . . . . . \n            . . . . . . . . . . . . . . . . \n            . . . . . . . . . . . . . . . . \n            . . . . . . . . . . . . . . . . \n            . . . . . . 4 4 4 . . . . . . . \n            . . . . . 4 . . . 4 . . . . . . \n            . . . . 4 . . . . . 4 . . . . . \n            . . . . 4 . . . . . 4 . . . . . \n            . . . . 4 . . . . . 4 . . . . . \n            . . . . . 4 . . . 4 . . . . . . \n            . . . . . . 4 4 4 . . . . . . . \n            . . . . . . . . . . . . . . . . \n            . . . . . . . . . . . . . . . . \n            . . . . . . . . . . . . . . . . \n            . . . . . . . . . . . . . . . . \n            . . . . . . . . . . . . . . . . \n            `, img`\n            . . . . . . . . . . . . . . . . \n            . . . . . . . . . . . . . . . . \n            . . . . . . . . . . . . . . . . \n            . . . . . . . 4 . . . . . . . . \n            . . . . 4 . . . . . 4 . . . . . \n            . . . . . . . . . . . . . . . . \n            . . . . . . . . . . . . . . . . \n            . . . 4 . . . . . . . 4 . . . . \n            . . . . . . . . . . . . . . . . \n            . . . . . . . . . . . . . . . . \n            . . . . 4 . . . . . 4 . . . . . \n            . . . . . . . 4 . . . . . . . . \n            . . . . . . . . . . . . . . . . \n            . . . . . . . . . . . . . . . . \n            . . . . . . . . . . . . . . . . \n            . . . . . . . . . . . . . . . . \n            `, img`\n            . . . . . . . . . . . . . . . . \n            . . . . . . . . . . . . . . . . \n            . . . . . . . . . . . . . . . . \n            . . . . . . . . . . . . . . . . \n            . . . . . . . 4 . . . . . . . . \n            . . . 4 . . . . . . . 4 . . . . \n            . . . . . . . . . . . . . . . . \n            . . . . . . . . . . . . . . . . \n            . . 4 . . . . . . . . . 4 . . . \n            . . . . . . . . . . . . . . . . \n            . . . . . . . . . . . . . . . . \n            . . . 4 . . . . . . . 4 . . . . \n            . . . . . . . . . . . . . . . . \n            . . . . . . . 4 . . . . . . . . \n            . . . . . . . . . . . . . . . . \n            . . . . . . . . . . . . . . . . \n            `, img`\n            . . . . . . . . . . . . . . . . \n            . . . . . . . . . . . . . . . . \n            . . . . . . . . . . . . . . . . \n            . . . . . . . . . . . . . . . . \n            . . . . . . . . . . . . . . . . \n            . . . . . . . . . . . . . . . . \n            . . . . . . . . . . . . . . . . \n            . . . 4 . . . . . . 4 . . . . . \n            . . . . . . . . . . . . . . . . \n            . . . . . . . 4 . . . . . . . . \n            . 4 . . . . . . . . . . . 4 . . \n            . . . . . . . . . . . . . . . . \n            . . . . . . . . . . . . . . . . \n            . . 4 . . . . . . . . . 4 . . . \n            . . . . . . . . . . . . . . . . \n            . . . . . . . 4 . . . . . . . . \n            `],\n                50,\n                false\n            )\n        } else {\n\n        }\n        burstBubble.lifespan = 150\n        tiles.setTileAt(tiles.getTileLocation(column, row), assets.tile`transparency8`)\n        tiles.setWallAt(tiles.getTileLocation(column, row), false)\n        clearCount += 1\n        music.play(music.createSoundEffect(\n            WaveShape.Sawtooth,\n            100 * clearCount,\n            3000 + 500 * clearCount,\n            255,\n            0,\n            100,\n            SoundExpressionEffect.None,\n            InterpolationCurve.Logarithmic\n        ), music.PlaybackMode.UntilDone)\n    }\n    spriteutils.createRenderable(0, function (screen2) {\n        if (stateTransitions.stateIs(\&quot;aiming\&quot;)) {\n            for (let index = 0; index &lt;= 4; index++) {\n                if(myBall){\n                    screen2.setPixel(myBall.x + (index + 1) * 8 * Math.cos(spriteutils.degreesToRadians(aimingAngle)), myBall.y + (index + 1) * 8 * Math.sin(spriteutils.degreesToRadians(aimingAngle)), 11)\n                }\n            }\n        }\n    })\n\n\n    /**\n    * Appear to load the bubble\n    */\n    //% blockId=loadBubble \n    //% block=\&quot;load new bubble\&quot;\n    //% help=bubble/load_bubble\n    export function load_bubble() {\n        pauseUntil(() =&gt; stateTransitions.stateIs(\&quot;aiming\&quot;))\n        if (totalBallsOut &lt; 8) {\n            for (let value4 of bubble.list) {\n                if (tiles.getTilesByType(value4).length == 0 &amp;&amp; bubble.list.indexOf(value4) &gt;= 0) {\n                    bubble.list.removeAt(bubble.list.indexOf(value4))\n                } else if (tiles.getTilesByType(value4).length &gt; 0 &amp;&amp; bubble.list.indexOf(value4) &lt; 0) {\n                    bubble.list.push(value4)\n                }\n            }\n        }\n        codingThisBall = randint(0, bubble.list.length - 1)\n        ShotNumber += 1\n        myBall = sprites.create(bubble.list[codingThisBall], SpriteKind.Bubbles)\n        myBall.x = 80\n        myBall.bottom = 102\n\n    }\n\n\n    /**\n    * Set up the board grid\n    */\n    //% blockId=createBoard \n    //% block=\&quot;arrange board\&quot;\n    //% help=bubble/create_board\n    export function createBoard() {\n        tiles.setCurrentTilemap(tileUtil.createSmallMap(tilemap`level0`))\n        bubble.list = [\n            assets.tile`myTile1`,\n            assets.tile`myTile2`,\n            assets.tile`myTile3`,\n            assets.tile`myTile4`,\n            assets.tile`myTile5`\n        ]\n        aimingAngle = -90\n        for (let indexX2 = 0; indexX2 &lt;= 17; indexX2++) {\n            for (let indexY2 = 0; indexY2 &lt;= 1; indexY2++) {\n                if(bubble.list.length &gt; 0){\n                    tiles.setWallAt(tiles.getTileLocation(indexX2 + 1, indexY2 + 1), true)\n                    tiles.setTileAt(tiles.getTileLocation(indexX2 + 1, indexY2 + 1), bubble.list._pickRandom())\n                }\n            }\n        }\n        controller.configureRepeatEventDefaults(0, 30)\n        ShotNumber = 0\n        stateTransitions.changeState(\&quot;aiming\&quot;)\n    }\n\n\n    /**\n    * Decides where the bubble should stick\n    * \n    */\n    //% blockId=stick_to_wall\n    //% block=\&quot;stick $sprite to $location\&quot;\n    //% sprite.shadow=variables_get\n    //% sprite.defl=sprite\n    //% location.shadow=variables_get\n    //% location.defl=location\n    export function stick_to_wall(sprite: Sprite, location: tiles.Location) {\n        stateTransitions.changeState(\&quot;checking\&quot;)\n        if (!(tiles.tileAtLocationEquals(location, assets.tile`myTile`))) {\n            if (tiles.tileAtLocationEquals(location, assets.tile`bottom_row`)) {\n                sprites.destroy(sprite)\n                info.changeScoreBy(-1)\n            } else if (tiles.tileAtLocationIsWall(sprite.tilemapLocation().getNeighboringLocation(CollisionDirection.Bottom)) || tiles.tileAtLocationIsWall(sprite.tilemapLocation().getNeighboringLocation(CollisionDirection.Right)) || tiles.tileAtLocationIsWall(sprite.tilemapLocation().getNeighboringLocation(CollisionDirection.Top)) || tiles.tileAtLocationIsWall(sprite.tilemapLocation().getNeighboringLocation(CollisionDirection.Left))) {\n                sprite.setVelocity(0, 0)\n                checkForMatches(sprite)\n            } else {\n                sprite.setVelocity(0, 0)\n                sprite.y += -8\n                checkForMatches(sprite)\n            }\n        } else {\n            if (sprite.isHittingTile(CollisionDirection.Left)) {\n                sprites.setDataNumber(myBall, \&quot;vx\&quot;, Math.abs(sprites.readDataNumber(sprite, \&quot;vx\&quot;)))\n            }\n            if (sprite.isHittingTile(CollisionDirection.Right)) {\n                sprites.setDataNumber(myBall, \&quot;vx\&quot;, 0 - Math.abs(sprites.readDataNumber(sprite, \&quot;vx\&quot;)))\n            }\n            if (sprite.isHittingTile(CollisionDirection.Top)) {\n                sprite.setVelocity(0, 0)\n                checkForMatches(sprite)\n            }\n            if (sprite.isHittingTile(CollisionDirection.Bottom)) {\n                sprites.setDataNumber(myBall, \&quot;vy\&quot;, 0 - Math.abs(sprites.readDataNumber(sprite, \&quot;vy\&quot;)))\n            }\n        }\n    }\n\n}\n&quot;,
+  &quot;images.g.jres&quot;: &quot;{\n    \&quot;*\&quot;: {\n        \&quot;mimeType\&quot;: \&quot;image/x-mkcd-f4\&quot;,\n        \&quot;dataEncoding\&quot;: \&quot;base64\&quot;,\n        \&quot;namespace\&quot;: \&quot;myImages\&quot;\n    }\n}&quot;,
+  &quot;images.g.ts&quot;: &quot;// Auto-generated code. Do not edit.\nnamespace myImages {\n\n    helpers._registerFactory(\&quot;image\&quot;, function(name: string) {\n        switch(helpers.stringTrim(name)) {\n\n        }\n        return null;\n    })\n\n    helpers._registerFactory(\&quot;animation\&quot;, function(name: string) {\n        switch(helpers.stringTrim(name)) {\n\n        }\n        return null;\n    })\n\n    helpers._registerFactory(\&quot;song\&quot;, function(name: string) {\n        switch(helpers.stringTrim(name)) {\n\n        }\n        return null;\n    })\n\n}\n// Auto-generated code. Do not edit.\n&quot;,
+  &quot;main.blocks&quot;: &quot;&lt;xml xmlns=\&quot;https://developers.google.com/blockly/xml\&quot;&gt;&lt;variables&gt;&lt;variable type=\&quot;KIND_SpriteKind\&quot; id=\&quot;(=g{`(u4A!~6zJ4:AOHf\&quot;&gt;Player&lt;/variable&gt;&lt;variable type=\&quot;KIND_SpriteKind\&quot; id=\&quot;2Ax-Z9kI5`5ac56P1F(o\&quot;&gt;Projectile&lt;/variable&gt;&lt;variable type=\&quot;KIND_SpriteKind\&quot; id=\&quot;4~9w#4-lQ^GIRWKMqUu=\&quot;&gt;Food&lt;/variable&gt;&lt;variable type=\&quot;KIND_SpriteKind\&quot; id=\&quot;C2bm]eTv+;X)RXKZbHqn\&quot;&gt;Enemy&lt;/variable&gt;&lt;variable type=\&quot;KIND_SpriteKind\&quot; id=\&quot;%BApd*[YXPwQ?uOc$joJ\&quot;&gt;Bubbles&lt;/variable&gt;&lt;variable id=\&quot;B3^c7f|u~pyS7;$tr{q@\&quot;&gt;sprite&lt;/variable&gt;&lt;variable id=\&quot;vfq?|d1PC(!q^(^-GS!D\&quot;&gt;location&lt;/variable&gt;&lt;/variables&gt;&lt;/xml&gt;&quot;,
+  &quot;main.ts&quot;: &quot;\n&quot;,
+  &quot;pxt.json&quot;: &quot;{\n    \&quot;name\&quot;: \&quot;bubble_ext_for_assetjson\&quot;,\n    \&quot;version\&quot;: \&quot;0.0.10\&quot;,\n    \&quot;description\&quot;: \&quot;\&quot;,\n    \&quot;dependencies\&quot;: {\n        \&quot;device\&quot;: \&quot;*\&quot;,\n        \&quot;arcade-tile-util\&quot;: \&quot;github:microsoft/arcade-tile-util#v1.2.0\&quot;,\n        \&quot;arcade-sprite-util\&quot;: \&quot;github:jwunderl/arcade-sprite-util#v0.3.1\&quot;,\n        \&quot;arcade-state-transitions\&quot;: \&quot;github:riknoll/arcade-state-transitions#v0.0.2\&quot;,\n        \&quot;controller\&quot;: \&quot;*\&quot;,\n        \&quot;Timers\&quot;: \&quot;github:microsoft/arcade-timers#v1.1.0\&quot;,\n        \&quot;arcade-sprite-data\&quot;: \&quot;github:microsoft/arcade-sprite-data#v0.2.1\&quot;\n    },\n    \&quot;files\&quot;: [\n        \&quot;main.blocks\&quot;,\n        \&quot;main.ts\&quot;,\n        \&quot;README.md\&quot;,\n        \&quot;assets.json\&quot;,\n        \&quot;tilemap.g.jres\&quot;,\n        \&quot;tilemap.g.ts\&quot;,\n        \&quot;images.g.jres\&quot;,\n        \&quot;images.g.ts\&quot;,\n        \&quot;bubble.ts\&quot;\n    ],\n    \&quot;testFiles\&quot;: [\n        \&quot;test.ts\&quot;\n    ],\n    \&quot;targetVersions\&quot;: {\n        \&quot;branch\&quot;: \&quot;v1.12.49\&quot;,\n        \&quot;tag\&quot;: \&quot;v1.12.49\&quot;,\n        \&quot;commits\&quot;: \&quot;https://github.com/microsoft/pxt-arcade/commits/8b39eda27ca91b27b57fc1f30c6b3b33d3fc2029\&quot;,\n        \&quot;target\&quot;: \&quot;1.12.51\&quot;,\n        \&quot;pxt\&quot;: \&quot;8.5.60\&quot;,\n        \&quot;targetId\&quot;: \&quot;arcade\&quot;\n    },\n    \&quot;supportedTargets\&quot;: [\n        \&quot;arcade\&quot;\n    ],\n    \&quot;preferredEditor\&quot;: \&quot;blocksprj\&quot;,\n    \&quot;palette\&quot;: [\n        \&quot;#000000\&quot;,\n        \&quot;#FFFFFF\&quot;,\n        \&quot;#DF012E\&quot;,\n        \&quot;#F696F8\&quot;,\n        \&quot;#708DFF\&quot;,\n        \&quot;#FF9500\&quot;,\n        \&quot;#5FDF5D\&quot;,\n        \&quot;#94BD84\&quot;,\n        \&quot;#3E76F9\&quot;,\n        \&quot;#87F2FF\&quot;,\n        \&quot;#FFF5FD\&quot;,\n        \&quot;#A4839F\&quot;,\n        \&quot;#5C406c\&quot;,\n        \&quot;#E5CDC4\&quot;,\n        \&quot;#E5F7FF\&quot;,\n        \&quot;#000000\&quot;\n    ]\n}\n&quot;,
+  &quot;test.ts&quot;: &quot;// tests go here; this will not be compiled when this package is used as an extension.\n&quot;,
+  &quot;tilemap.g.jres&quot;: &quot;{\n    \&quot;tile1\&quot;: {\n        \&quot;data\&quot;: \&quot;hwQIAAgAAAC8u7y7vLu8u7y7vLvMzLy7vLu8u7y7vLu8u8zMvLu8uw==\&quot;,\n        \&quot;mimeType\&quot;: \&quot;image/x-mkcd-f4\&quot;,\n        \&quot;tilemapTile\&quot;: true,\n        \&quot;displayName\&quot;: \&quot;myTile\&quot;\n    },\n    \&quot;tile4\&quot;: {\n        \&quot;data\&quot;: \&quot;hwQIAAgAAAAAMwMAMDMzADMzMwMzMzMDMzMzAzAzMwAAMwMAAAAAAA==\&quot;,\n        \&quot;mimeType\&quot;: \&quot;image/x-mkcd-f4\&quot;,\n        \&quot;tilemapTile\&quot;: true,\n        \&quot;displayName\&quot;: \&quot;myTile2\&quot;\n    },\n    \&quot;tile5\&quot;: {\n        \&quot;data\&quot;: \&quot;hwQIAAgAAAAARAQAQEREAERERAREREQEREREBEBERAAARAQAAAAAAA==\&quot;,\n        \&quot;mimeType\&quot;: \&quot;image/x-mkcd-f4\&quot;,\n        \&quot;tilemapTile\&quot;: true,\n        \&quot;displayName\&quot;: \&quot;myTile3\&quot;\n    },\n    \&quot;tile6\&quot;: {\n        \&quot;data\&quot;: \&quot;hwQIAAgAAAAAVQUAUFVVAFVVVQVVVVUFVVVVBVBVVQAAVQUAAAAAAA==\&quot;,\n        \&quot;mimeType\&quot;: \&quot;image/x-mkcd-f4\&quot;,\n        \&quot;tilemapTile\&quot;: true,\n        \&quot;displayName\&quot;: \&quot;myTile4\&quot;\n    },\n    \&quot;tile7\&quot;: {\n        \&quot;data\&quot;: \&quot;hwQIAAgAAAAAZgYAYGZmAGZmZgZmZmYGZmZmBmBmZgAAZgYAAAAAAA==\&quot;,\n        \&quot;mimeType\&quot;: \&quot;image/x-mkcd-f4\&quot;,\n        \&quot;tilemapTile\&quot;: true,\n        \&quot;displayName\&quot;: \&quot;myTile5\&quot;\n    },\n    \&quot;tile9\&quot;: {\n        \&quot;data\&quot;: \&quot;hwQIAAgAAAAAAAC8AAAAvAAAALwAAADMAAAAvAAAALwAAAC8AAAAvA==\&quot;,\n        \&quot;mimeType\&quot;: \&quot;image/x-mkcd-f4\&quot;,\n        \&quot;tilemapTile\&quot;: true,\n        \&quot;displayName\&quot;: \&quot;bottom_row\&quot;\n    },\n    \&quot;tile3\&quot;: {\n        \&quot;data\&quot;: \&quot;hwQIAAgAAAAAIgIAICIiACIiIgIiIiICIiIiAiAiIgAAIgIAAAAAAA==\&quot;,\n        \&quot;mimeType\&quot;: \&quot;image/x-mkcd-f4\&quot;,\n        \&quot;tilemapTile\&quot;: true,\n        \&quot;displayName\&quot;: \&quot;myTile1\&quot;\n    },\n    \&quot;tile2\&quot;: {\n        \&quot;data\&quot;: \&quot;hwQIAAgAAAAMAAAADAAAAAwAAAAAAAAADAAAAAwAAAAMAAAAAAAAAA==\&quot;,\n        \&quot;mimeType\&quot;: \&quot;image/x-mkcd-f4\&quot;,\n        \&quot;tilemapTile\&quot;: true,\n        \&quot;displayName\&quot;: \&quot;myTile0\&quot;\n    },\n    \&quot;transparency16\&quot;: {\n        \&quot;data\&quot;: \&quot;hwQQABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==\&quot;,\n        \&quot;mimeType\&quot;: \&quot;image/x-mkcd-f4\&quot;,\n        \&quot;tilemapTile\&quot;: true\n    },\n    \&quot;transparency8\&quot;: {\n        \&quot;data\&quot;: \&quot;hwQIAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==\&quot;,\n        \&quot;mimeType\&quot;: \&quot;image/x-mkcd-f4\&quot;,\n        \&quot;tilemapTile\&quot;: true\n    },\n    \&quot;level4\&quot;: {\n        \&quot;id\&quot;: \&quot;level4\&quot;,\n        \&quot;mimeType\&quot;: \&quot;application/mkcd-tilemap\&quot;,\n        \&quot;data\&quot;: \&quot;MTAxMDAwMTAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMA==\&quot;,\n        \&quot;tileset\&quot;: [\n            \&quot;myTiles.transparency16\&quot;\n        ],\n        \&quot;displayName\&quot;: \&quot;level4\&quot;\n    },\n    \&quot;level2\&quot;: {\n        \&quot;id\&quot;: \&quot;level2\&quot;,\n        \&quot;mimeType\&quot;: \&quot;application/mkcd-tilemap\&quot;,\n        \&quot;data\&quot;: \&quot;MDgxNDAwMGYwMDAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAxMDEwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMTAxMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDEwMTAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAxMDEwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMTAxMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDEwMTAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAxMDEwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMTAxMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDEwMTAzMDMwMzAzMDMwMzAzMDMwMzAzMDMwMzAzMDMwMzAzMDMwMzAxMDEwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMTAxMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDEwMTAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAxMDEwMjAyMDIwMjAyMDIwMjAyMDIwMjAyMDIwMjAyMDIwMjAyMDIwMTIyMjIyMjIyMjIyMjIyMjIyMjIyMDIwMDAwMDAwMDAwMDAwMDAwMjAwMjAwMDAwMDAwMDAwMDAwMDAyMDAyMDAwMDAwMDAwMDAwMDAwMDIwMDIwMDAwMDAwMDAwMDAwMDAwMjAwMjAwMDAwMDAwMDAwMDAwMDAyMDAyMDAwMDAwMDAwMDAwMDAwMDIwMDIwMDAwMDAwMDAwMDAwMDAwMjAwMjAwMDAwMDAwMDAwMDAwMDAyMDAyMDAwMDAwMDAwMDAwMDAwMDIwMDIwMDAwMDAwMDAwMDAwMDAwMjAwMjAwMDAwMDAwMDAwMDAwMDAyMDAyMDAwMDAwMDAwMDAwMDAwMDIwMDIwMDAwMDAwMDAwMDAwMDAwMjAwMjAwMDAwMDAwMDAwMDAwMDAyMA==\&quot;,\n        \&quot;tileset\&quot;: [\n            \&quot;myTiles.transparency8\&quot;,\n            \&quot;myTiles.tile1\&quot;,\n            \&quot;myTiles.tile9\&quot;,\n            \&quot;myTiles.tile2\&quot;\n        ],\n        \&quot;displayName\&quot;: \&quot;level0\&quot;\n    },\n    \&quot;*\&quot;: {\n        \&quot;mimeType\&quot;: \&quot;image/x-mkcd-f4\&quot;,\n        \&quot;dataEncoding\&quot;: \&quot;base64\&quot;,\n        \&quot;namespace\&quot;: \&quot;myTiles\&quot;\n    }\n}&quot;,
+  &quot;tilemap.g.ts&quot;: &quot;// Auto-generated code. Do not edit.\nnamespace myTiles {\n    //% fixedInstance jres blockIdentity=images._tile\n    export const tile1 = image.ofBuffer(hex``);\n    //% fixedInstance jres blockIdentity=images._tile\n    export const tile4 = image.ofBuffer(hex``);\n    //% fixedInstance jres blockIdentity=images._tile\n    export const tile5 = image.ofBuffer(hex``);\n    //% fixedInstance jres blockIdentity=images._tile\n    export const tile6 = image.ofBuffer(hex``);\n    //% fixedInstance jres blockIdentity=images._tile\n    export const tile7 = image.ofBuffer(hex``);\n    //% fixedInstance jres blockIdentity=images._tile\n    export const tile9 = image.ofBuffer(hex``);\n    //% fixedInstance jres blockIdentity=images._tile\n    export const tile3 = image.ofBuffer(hex``);\n    //% fixedInstance jres blockIdentity=images._tile\n    export const tile2 = image.ofBuffer(hex``);\n    //% fixedInstance jres blockIdentity=images._tile\n    export const transparency16 = image.ofBuffer(hex``);\n    //% fixedInstance jres blockIdentity=images._tile\n    export const transparency8 = image.ofBuffer(hex``);\n\n    helpers._registerFactory(\&quot;tilemap\&quot;, function(name: string) {\n        switch(helpers.stringTrim(name)) {\n            case \&quot;level4\&quot;:\n            case \&quot;level4\&quot;:return tiles.createTilemap(hex`1000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000`, img`\n. . . . . . . . . . . . . . . . \n. . . . . . . . . . . . . . . . \n. . . . . . . . . . . . . . . . \n. . . . . . . . . . . . . . . . \n. . . . . . . . . . . . . . . . \n. . . . . . . . . . . . . . . . \n. . . . . . . . . . . . . . . . \n. . . . . . . . . . . . . . . . \n. . . . . . . . . . . . . . . . \n. . . . . . . . . . . . . . . . \n. . . . . . . . . . . . . . . . \n. . . . . . . . . . . . . . . . \n. . . . . . . . . . . . . . . . \n. . . . . . . . . . . . . . . . \n. . . . . . . . . . . . . . . . \n. . . . . . . . . . . . . . . . \n`, [myTiles.transparency16], TileScale.Sixteen);\n            case \&quot;level0\&quot;:\n            case \&quot;level2\&quot;:return tiles.createTilemap(hex`14000f00010101010101010101010101010101010101010101000000000000000000000000000000000000010100000000000000000000000000000000000001010000000000000000000000000000000000000101000000000000000000000000000000000000010100000000000000000000000000000000000001010000000000000000000000000000000000000101000000000000000000000000000000000000010100000000000000000000000000000000000001010000000000000000000000000000000000000101030303030303030303030303030303030303010100000000000000000000000000000000000001010000000000000000000000000000000000000101000000000000000000000000000000000000010102020202020202020202020202020202020201`, img`\n2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 \n2 . . . . . . . . . . . . . . . . . . 2 \n2 . . . . . . . . . . . . . . . . . . 2 \n2 . . . . . . . . . . . . . . . . . . 2 \n2 . . . . . . . . . . . . . . . . . . 2 \n2 . . . . . . . . . . . . . . . . . . 2 \n2 . . . . . . . . . . . . . . . . . . 2 \n2 . . . . . . . . . . . . . . . . . . 2 \n2 . . . . . . . . . . . . . . . . . . 2 \n2 . . . . . . . . . . . . . . . . . . 2 \n2 . . . . . . . . . . . . . . . . . . 2 \n2 . . . . . . . . . . . . . . . . . . 2 \n2 . . . . . . . . . . . . . . . . . . 2 \n2 . . . . . . . . . . . . . . . . . . 2 \n2 . . . . . . . . . . . . . . . . . . 2 \n`, [myTiles.transparency8,myTiles.tile1,myTiles.tile9,myTiles.tile2], TileScale.Eight);\n        }\n        return null;\n    })\n\n    helpers._registerFactory(\&quot;tile\&quot;, function(name: string) {\n        switch(helpers.stringTrim(name)) {\n            case \&quot;myTile\&quot;:\n            case \&quot;tile1\&quot;:return tile1;\n            case \&quot;myTile2\&quot;:\n            case \&quot;tile4\&quot;:return tile4;\n            case \&quot;myTile3\&quot;:\n            case \&quot;tile5\&quot;:return tile5;\n            case \&quot;myTile4\&quot;:\n            case \&quot;tile6\&quot;:return tile6;\n            case \&quot;myTile5\&quot;:\n            case \&quot;tile7\&quot;:return tile7;\n            case \&quot;bottom_row\&quot;:\n            case \&quot;tile9\&quot;:return tile9;\n            case \&quot;myTile1\&quot;:\n            case \&quot;tile3\&quot;:return tile3;\n            case \&quot;myTile0\&quot;:\n            case \&quot;tile2\&quot;:return tile2;\n            case \&quot;transparency16\&quot;:return transparency16;\n            case \&quot;transparency8\&quot;:return transparency8;\n        }\n        return null;\n    })\n\n}\n// Auto-generated code. Do not edit.\n&quot;
+}
+</code></pre>
+
+        </div>
+    </div>
+
+    </div>
+
+					<div class="hideprint"></div>
+				</div>
+
+			</div>
+
+			
+<!-- include footer.html -->
+<footer class="ui vertical footer segment hideprint docs inverted" aria-hidden="false">
+    <div class="ui center aligned container">
+        <div class="ui horizontal link list">
+            <a
+                class="item"
+                href="https://twitter.com/intent/follow?screen_name=MsMakeCode"
+                title="Follow us on Twitter"
+                target="_blank"
+                rel="noopener">
+                <i class="huge icon twitter"></i>
+            </a>
+            <a class="item" href="https://www.youtube.com/channel/UCye7YlvFUUQ1dSy0WZZ1T_Q" title="Subscribe to our YouTube channel"
+                target="_blank" rel="noopened">
+                <i class="huge icon youtube"></i>
+            </a>
+            <a class="item" href="mailto:makecode@microsoft.com" title="Send us an Email"
+                target="_blank" rel="noopened">
+                <i class="huge icon mail"></i>
+            </a>
+        </div>
+        <div class="ui section divider"></div>
+        <div class="ui container horizontal small divided link list">
+            <a id="langpicker" tabindex="0" class="ui item" rel="noopener">
+                <i class="icon xicon globe" aria-hidden="true" role="presentation"></i>Language
+            </a>
+            <a class="item" href="https://makecode.com/privacy" target="_blank" rel="noopener">Privacy &amp; Cookies</a>
+            <a class="item" href="https://makecode.com/termsofuse" target="_blank" rel="noopener">Terms Of Use</a>
+            <a class="item" href="https://makecode.com/trademarks" target="_blank" rel="noopener">Trademarks</a>
+            <span class="item">© 2022 Microsoft</span>
+        </div>
+        <div class="ui container horizontal small link list poweredBy">
+            <span class="item">Powered by</span>
+            <a class="middle aligned" href="https://makecode.com/" title="Microsoft MakeCode"
+                target="_blank" rel="noopener">
+                <img width="100" src="/static/logo/Microsoft-logo_rgb_c-gray.png" alt="Microsoft">
+            </a>
+        </div>
+    </div>
+</footer>
+
+<!-- end include footer.html -->
+
+
+		</div>
+
+	</div>
+
+    
+<!-- include langpicker.html -->
+<div id="langmodal" class="ui modal docs" role="dialog" aria-modal="true" aria-describedby="langmodalheader" tabindex="-1">
+    <h2 id="langmodalheader" class="header">Select Language</h2>
+    <div role="button" class="closeIcon" tabindex="0" aria-label="Close">
+        <i class="icon close remove circle" aria-hidden="true"></i>
+    </div>
+
+	<div class="content">
+	    <div class="group">
+            <div id="availablelocales" class="ui cards centered" role="listbox" aria-label="List of available locales"></div>
+        </div>
+        <div class="ui" id="langmodalfooter">
+            <a class="ui" href="/pxt-arcade-app/docs/translate.html" target="_blank" rel="noopener noreferrer">
+                How do I add a new language?
+            </a>
+
+            <a id="translatebtn" class="ui button" role="button" tabindex="0">
+                Translate this page
+            </a>
+        </div>
+    </div>
+</div>
+
+
+<!-- end include langpicker.html -->
+
+	
+<!-- include macros.html -->
+<!-- macro button -->
+
+<!-- macro vimeo -->
+
+<!-- macro youtube -->
+
+<!-- macro section -->
+
+<!-- macro hide -->
+
+<!-- macro avatar -->
+
+<!-- macro hint -->
+
+<!-- macro codecard -->
+
+<!-- macro tutorialhint -->
+
+<!-- macro reminder -->
+
+<!-- macro alert -->
+
+<!-- macro tip -->
+
+<!-- wrapped around ordinary content -->
+<!-- macro main-container -->
+
+<!-- used for 'column' box - they are collected and wrapped in 'column-container' -->
+<!-- macro column -->
+<!-- macro column-container -->
+
+
+<!-- Menu on the top of the page -->
+<!-- macro item -->
+
+<!-- macro divider -->
+
+<!-- TOC in the sidebar -->
+<!-- macro item -->
+
+<!-- macro divider -->
+
+<!-- macro toc-dropdown -->
+
+<!-- macro toc-dropdown-noLink -->
+
+<!-- macro toc-dropdown-noHeading -->
+
+<!-- TODO: duplicates of above for compatability with docsrender.ts;
+    remove with pxtlib/docsrender.ts TOC TODOs after cloud bump. -->
+<!-- macro top-dropdown -->
+
+<!-- macro top-dropdown-noHeading -->
+
+<!-- macro inner-dropdown -->
+
+<!-- macro nested-dropdown -->
+<!-- end include macros.html -->
+
+	
+<!-- include tracking.html -->
+<script type="text/javascript" src="/pxt-arcade-app/pxtweb.js"></script>
+<script type="text/javascript">
+    window.loadAppInsights = function (includeCookie) {
+        //Backend will patch / + doccdn + / with CDN url and the check that URL ends with the sha would pass
+        var isProduction = includeCookie && (/[0-9a-f]{40}\/ai\.2\.min\.js$/.test("/pxt-arcade-app/ai.2.min.js"));
+        !function(T,l,y){var S=T.location,k="script",D="connectionString",C="ingestionendpoint",I="disableExceptionTracking",E="ai.device.",b="toLowerCase",w="crossOrigin",N="POST",e="appInsightsSDK",t=y.name||"appInsights";(y.name||T[e])&&(T[e]=t);var n=T[t]||function(d){var g=!1,f=!1,m={initialize:!0,queue:[],sv:"5",version:2,config:d};function v(e,t){var n={},a="Browser";return n[E+"id"]=a[b](),n[E+"type"]=a,n["ai.operation.name"]=S&&S.pathname||"_unknown_",n["ai.internal.sdkVersion"]="javascript:snippet_"+(m.sv||m.version),{time:function(){var e=new Date;function t(e){var t=""+e;return 1===t.length&&(t="0"+t),t}return e.getUTCFullYear()+"-"+t(1+e.getUTCMonth())+"-"+t(e.getUTCDate())+"T"+t(e.getUTCHours())+":"+t(e.getUTCMinutes())+":"+t(e.getUTCSeconds())+"."+((e.getUTCMilliseconds()/1e3).toFixed(3)+"").slice(2,5)+"Z"}(),iKey:e,name:"Microsoft.ApplicationInsights."+e.replace(/-/g,"")+"."+t,sampleRate:100,tags:n,data:{baseData:{ver:2}}}}var h=d.url||y.src;if(h){function a(e){var t,n,a,i,r,o,s,c,u,p,l;g=!0,m.queue=[],f||(f=!0,t=h,s=function(){var e={},t=d.connectionString;if(t)for(var n=t.split(";"),a=0;a<n.length;a++){var i=n[a].split("=");2===i.length&&(e[i[0][b]()]=i[1])}if(!e[C]){var r=e.endpointsuffix,o=r?e.location:null;e[C]="https://"+(o?o+".":"")+"dc."+(r||"services.visualstudio.com")}return e}(),c=s[D]||d[D]||"",u=s[C],p=u?u+"/v2/track":d.endpointUrl,(l=[]).push((n="SDK LOAD Failure: Failed to load Application Insights SDK script (See stack for details)",a=t,i=p,(o=(r=v(c,"Exception")).data).baseType="ExceptionData",o.baseData.exceptions=[{typeName:"SDKLoadFailed",message:n.replace(/\./g,"-"),hasFullStack:!1,stack:n+"\nSnippet failed to load ["+a+"] -- Telemetry is disabled\nHelp Link: https://go.microsoft.com/fwlink/?linkid=2128109\nHost: "+(S&&S.pathname||"_unknown_")+"\nEndpoint: "+i,parsedStack:[]}],r)),l.push(function(e,t,n,a){var i=v(c,"Message"),r=i.data;r.baseType="MessageData";var o=r.baseData;return o.message='AI (Internal): 99 message:"'+("SDK LOAD Failure: Failed to load Application Insights SDK script (See stack for details) ("+n+")").replace(/\"/g,"")+'"',o.properties={endpoint:a},i}(0,0,t,p)),function(e,t){if(JSON){var n=T.fetch;if(n&&!y.useXhr)n(t,{method:N,body:JSON.stringify(e),mode:"cors"});else if(XMLHttpRequest){var a=new XMLHttpRequest;a.open(N,t),a.setRequestHeader("Content-type","application/json"),a.send(JSON.stringify(e))}}}(l,p))}function i(e,t){f||setTimeout(function(){!t&&m.core||a()},500)}var e=function(){var n=l.createElement(k);n.src=h;var e=y[w];return!e&&""!==e||"undefined"==n[w]||(n[w]=e),n.onload=i,n.onerror=a,n.onreadystatechange=function(e,t){"loaded"!==n.readyState&&"complete"!==n.readyState||i(0,t)},n}();y.ld<0?l.getElementsByTagName("head")[0].appendChild(e):setTimeout(function(){l.getElementsByTagName(k)[0].parentNode.appendChild(e)},y.ld||0)}try{m.cookie=l.cookie}catch(p){}function t(e){for(;e.length;)!function(t){m[t]=function(){var e=arguments;g||m.queue.push(function(){m[t].apply(m,e)})}}(e.pop())}var n="track",r="TrackPage",o="TrackEvent";t([n+"Event",n+"PageView",n+"Exception",n+"Trace",n+"DependencyData",n+"Metric",n+"PageViewPerformance","start"+r,"stop"+r,"start"+o,"stop"+o,"addTelemetryInitializer","setAuthenticatedUserContext","clearAuthenticatedUserContext","flush"]),m.SeverityLevel={Verbose:0,Information:1,Warning:2,Error:3,Critical:4};var s=(d.extensionConfig||{}).ApplicationInsightsAnalytics||{};if(!0!==d[I]&&!0!==s[I]){var c="onerror";t(["_"+c]);var u=T[c];T[c]=function(e,t,n,a,i){var r=u&&u(e,t,n,a,i);return!0!==r&&m["_"+c]({message:e,url:t,lineNumber:n,columnNumber:a,error:i}),r},d.autoExceptionInstrumented=!0}return m}(y.cfg);function a(){y.onInit&&y.onInit(n)}(T[t]=n).queue&&0===n.queue.length?(n.queue.push(a),n.trackPageView({})):a()}(window,document,{
+            src: "https://js.monitor.azure.com/scripts/b/ai.2.min.js", // The SDK URL Source
+            onInit: function (sdk) {
+                sdk.addTelemetryInitializer(function (envelope) {
+                    // App Insights automatically sends a page view event on setup, but we send our own later with additional properties.
+                    // This stops the automatic event from firing, so we don't end up with duplicate page view events.
+                    if (envelope.baseType == "PageviewData" && !envelope.baseData.properties) {
+                        return false;
+                    }
+
+                    if (envelope.baseType == "PageviewPerformanceData") {
+                        var pageName = envelope.baseData.name;
+                        envelope.baseData.name = window.location.origin;
+                        if (!envelope.baseData.properties) {
+                            envelope.baseData.properties = {};
+                        }
+                        envelope.baseData.properties.pageName = pageName;
+                        var scrubbedUrl = scrubUrl(envelope.baseData.uri);
+                        envelope.baseData.uri = scrubbedUrl;
+                        var toUrl = new URL(scrubbedUrl);
+                        envelope.baseData.properties.pathName = toUrl ? toUrl.pathname : "";
+                        if (envelope.ext && envelope.ext.trace) {
+                            envelope.ext.trace.name = toUrl ? toUrl.pathname : "";
+                        }
+                    }
+
+                    var telemetryItem = envelope.baseData;
+                    telemetryItem.properties = telemetryItem.properties || {};
+                    telemetryItem.properties["cookie"] = isProduction;
+                    if (typeof pxtConfig === "undefined" || !pxtConfig || !pxtConfig.targetId) {
+                        telemetryItem.properties["target"] = "arcade";
+                        return true;
+                    }
+                    telemetryItem.properties["target"] = pxtConfig.targetId;
+                    telemetryItem.properties["stage"] = (pxtConfig.relprefix || "/--").replace(/[^a-z]/ig, '')
+                    if (typeof Windows !== "undefined")
+                        telemetryItem.properties["WindowsApp"] = 1;
+                    var userAgent = navigator.userAgent.toLowerCase();
+                    var electronRegexResult = /\belectron\/(\d+\.\d+\.\d+.*?)(?: |$)/i.exec(userAgent); // Example navigator.userAgent: "Mozilla/5.0 Chrome/61.0.3163.100 Electron/2.0.0 Safari/537.36"
+                    if (electronRegexResult) {
+                        telemetryItem.properties["Electron"] = 1;
+                        telemetryItem.properties["ElectronVersion"] = electronRegexResult[1];
+                    }
+                    if (typeof pxtElectron !== "undefined") {
+                        telemetryItem.properties["PxtElectron"] = 1;
+                        telemetryItem.properties["ElectronVersion"] = pxtElectron.versions.electronVersion;
+                        telemetryItem.properties["ChromiumVersion"] = pxtElectron.versions.chromiumVersion;
+                        telemetryItem.properties["NodeVersion"] = pxtElectron.versions.nodeVersion;
+                        telemetryItem.properties["PxtElectronVersion"] = pxtElectron.versions.pxtElectronVersion;
+                        telemetryItem.properties["PxtCoreVersion"] = pxtElectron.versions.pxtCoreVersion;
+                        telemetryItem.properties["PxtTargetVersion"] = pxtElectron.versions.pxtTargetVersion;
+                        telemetryItem.properties["PxtElectronIsProd"] = pxtElectron.versions.isProd;
+                    }
+                    // Kiosk UWP info is appended to the user agent by the makecode-dotnet-apps/arcade-kiosk UWP app
+                    var kioskUwpRegexResult = /\((MakeCode Arcade Kiosk UWP)\/([\S]+)\/([\S]+)\)/i.exec(userAgent); // Example navigator.userAgent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36 Edg/117.0.2045.60 (MakeCode Arcade Kiosk UWP/0.1.41.0/Windows.Xbox)"
+                    if (kioskUwpRegexResult) {
+                        telemetryItem.properties["KioskUwp"] = 1;
+                        telemetryItem.properties["KioskUwpVersion"] = kioskUwpRegexResult[2];
+                        telemetryItem.properties["KioskUwpPlatform"] = kioskUwpRegexResult[3];
+                    }
+                    return true;
+                });
+            },
+            cfg: {
+                instrumentationKey:"9801ed01-c40f-46ec-aa40-2a1742a9e71c",
+                disableAjaxTracking: true,
+                overridePageViewDuration: false,
+                disableExceptionTracking: true,
+                disableCorrelationHeaders: true,
+                disableCookiesUsage: !isProduction,
+                isStorageUseDisabled: !isProduction,
+                url: "/pxt-arcade-app/ai.2.min.js"
+            }
+        });
+        window.appInsights=appInsights;
+        var location = window.location.toString();
+        appInsights.trackPageView({
+            name: window.location.hostname,
+            uri: window.location.origin,
+            properties: {
+                url: scrubUrl(location),
+                urlReferrer: scrubUrl(document.referrer.toString())
+            }
+        });
+
+        // Scrub potential PII from the URL.
+        function scrubUrl(url) {
+            if (!url) return url;
+
+            var scriptIdRegex = /(?:S?\d{5}-\d{5}-\d{5}-\d{5})|(?:_[0-9a-zA-Z]{12})/g;
+            var scrubbedUrl = new URL(url.toLocaleLowerCase().replace(scriptIdRegex, "xxxxx-xxxxx-xxxxx-xxxxx"));
+
+            // Just as a precaution, strip any suspicious query parameters.
+            var blockedParamKeywords = ["username", "password", "token", "pwd"];
+            var searchParams = Array.from(scrubbedUrl.searchParams.keys());
+            for (var param of searchParams) {
+                if (blockedParamKeywords.some(k => param.indexOf(k) != -1)) {
+                    scrubbedUrl.searchParams.delete(param);
+                }
+            }
+
+            return scrubbedUrl.toString();
+        }
+
+        return isProduction;
+    }
+    pxt.initAnalyticsAsync();
+</script>
+
+<!-- end include tracking.html -->
+
+
+</body>
+
+</html>

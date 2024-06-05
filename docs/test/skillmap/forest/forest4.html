@@ -529,7 +529,7 @@ container that’s already in the workspace.</li>
 //@highlight
 game.set_health_of_trees(7)
 tiles.setTilemap(tilemap`level1`)
-let myPlane = sprites.create(assets.image`Fire Plane Right`, SpriteKind.Player)
+let myPlane = sprites.create(forest_imgs.Fire_Plane_2_Right, SpriteKind.Player)
 controller.moveSprite(myPlane)
 scene.cameraFollowSprite(myPlane)
 
@@ -559,7 +559,7 @@ and add them to <strong>the top</strong> of the <code>||loops: on start||</code>
 game.set_strength_of_wind(3)
 game.set_dryness_of_grass(3)
 tiles.setTilemap(tilemap`level1`)
-let myPlane = sprites.create(assets.image`Fire Plane Right`, SpriteKind.Player)
+let myPlane = sprites.create(forest_imgs.Fire_Plane_2_Right, SpriteKind.Player)
 controller.moveSprite(myPlane)
 scene.cameraFollowSprite(myPlane)
 
@@ -569,13 +569,12 @@ for (let index = 0; index &lt; 4; index++) {
 <h2 id="5-fires-spreading">5. Fires Spreading</h2><p>Now that the environment is set, we can add code to make the fires spread.</p>
 <hr>
 <ul>
-<li>:circle: From <code>||game:Game||</code>, snap <br /></li>
-</ul>
-<pre><code class="lang-blocks">game.onUpdate(function () {
-    sprites.random_spread()
+<li>:circle: From <code>||game:Game||</code>, snap<pre><code class="lang-blocks">game.onUpdate(function () {
+  sprites.random_spread()
 })</code></pre>
-<p>into an <strong>empty area</strong> of your workspace to run
-each time the game updates.</p>
+into an <strong>empty area</strong> of your workspace to run
+each time the game updates.</li>
+</ul>
 
     <div class="ui hint message">
         <div class="content">
@@ -597,11 +596,11 @@ each time the game updates.</p>
 <hr>
 <p>Once you’ve put out the fires, click <strong>Done</strong> to
 keep moving through the skillmap to find out how to add a heads-up display to your game.</p>
-<pre><code class="lang-blockconfig.global">let myPlane = sprites.create(img`.`, SpriteKind.Player)
+<pre><code class="lang-blockconfig.global">let myPlane = sprites.create(forest_imgs.Fire_Plane_2_Right, SpriteKind.Player)
 controller.moveSprite(myPlane)
 scene.cameraFollowSprite(myPlane)
 controller.A.onEvent(ControllerButtonEvent.Repeated, function () {
-    sprites.spray(myPlane, img`.`)
+    sprites.spray(myPlane, forest_imgs.water)
 })
 
 tiles.setTileAt(location, assets.tile`transparency16`)
@@ -619,10 +618,10 @@ game.onUpdate(function () {
 })
 </code></pre>
 <pre><code class="lang-template">controller.A.onEvent(ControllerButtonEvent.Repeated, function () {
-    sprites.spray(myPlane, assets.image`water`)
+    sprites.spray(myPlane, forest_imgs.water)
 })
 
-let myPlane = sprites.create(assets.image`Fire Plane Right`, SpriteKind.Player)
+let myPlane = sprites.create(forest_imgs.Fire_Plane_2_Right, SpriteKind.Player)
 controller.moveSprite(myPlane)
 scene.cameraFollowSprite(myPlane)
 

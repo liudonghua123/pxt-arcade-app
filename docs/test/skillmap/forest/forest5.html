@@ -528,7 +528,7 @@ game.set_health_of_trees(7)
 game.set_strength_of_wind(3)
 game.set_dryness_of_grass(3)
 tiles.setTilemap(tilemap`level1`)
-let myPlane = sprites.create(assets.image`Fire Plane Right`, SpriteKind.Player)
+let myPlane = sprites.create(forest_imgs.Fire_Plane_2_Right, SpriteKind.Player)
 controller.moveSprite(myPlane)
 scene.cameraFollowSprite(myPlane)
 
@@ -564,7 +564,7 @@ game.set_health_of_trees(7)
 game.set_strength_of_wind(3)
 game.set_dryness_of_grass(3)
 tiles.setTilemap(tilemap`level1`)
-let myPlane = sprites.create(assets.image`Fire Plane Right`, SpriteKind.Player)
+let myPlane = sprites.create(forest_imgs.Fire_Plane_2_Right, SpriteKind.Player)
 controller.moveSprite(myPlane)
 scene.cameraFollowSprite(myPlane)
 
@@ -596,7 +596,7 @@ game.set_health_of_trees(7)
 game.set_strength_of_wind(3)
 game.set_dryness_of_grass(3)
 tiles.setTilemap(tilemap`level1`)
-let myPlane = sprites.create(assets.image`Fire Plane Right`, SpriteKind.Player)
+let myPlane = sprites.create(forest_imgs.Fire_Plane_2_Right, SpriteKind.Player)
 controller.moveSprite(myPlane)
 scene.cameraFollowSprite(myPlane)
 
@@ -630,7 +630,7 @@ game.set_health_of_trees(7)
 game.set_strength_of_wind(3)
 game.set_dryness_of_grass(3)
 tiles.setTilemap(tilemap`level1`)
-let myPlane = sprites.create(assets.image`Fire Plane Right`, SpriteKind.Player)
+let myPlane = sprites.create(forest_imgs.Fire_Plane_2_Right, SpriteKind.Player)
 controller.moveSprite(myPlane)
 scene.cameraFollowSprite(myPlane)
 
@@ -655,20 +655,20 @@ Try reducing the wind or the dryness of the grass.</p>
 <p>✈️🔥</p>
 <p>When you’re done playing, you can click <strong>“Done”</strong>
 and head back out to the skillmap to share it with friends or save it in your gallery.</p>
-<pre><code class="lang-blockconfig.global">let myPlane = sprites.create(assets.image`Fire Plane Right`, SpriteKind.Player)
+<pre><code class="lang-blockconfig.global">let myPlane = sprites.create(forest_imgs.Fire_Plane_2_Right, SpriteKind.Player)
 controller.moveSprite(myPlane)
 scene.cameraFollowSprite(myPlane)
 </code></pre>
 <pre><code class="lang-package">pxt-arcade-forest-fire=github:microsoft/arcade-forest-fire</code></pre>
 <pre><code class="lang-template">
 controller.A.onEvent(ControllerButtonEvent.Repeated, function () {
-    sprites.spray(myPlane, assets.image`water`)
+    sprites.spray(myPlane, forest_imgs.water)
 })
 
 game.set_health_of_trees(7)
 game.set_strength_of_wind(3)
 game.set_dryness_of_grass(3)
-let myPlane = sprites.create(assets.image`Fire Plane Right`, SpriteKind.Player)
+let myPlane = sprites.create(forest_imgs.Fire_Plane_2_Right, SpriteKind.Player)
 controller.moveSprite(myPlane)
 scene.cameraFollowSprite(myPlane)
 
@@ -702,11 +702,11 @@ hud.forest_hud_burned(4)
 hud.forest_hud_label (&quot;Healthy Forest:&quot;)
 hud.danger_hud_label (&quot;Fire Danger:&quot;)
 hud.fire_hud_label (&quot;Nope:&quot;)</code></pre>
-<pre><code class="lang-blockconfig.global">let myPlane = sprites.create(img`.`, SpriteKind.Player)
+<pre><code class="lang-blockconfig.global">let myPlane = sprites.create(forest_imgs.Fire_Plane_2_Right, SpriteKind.Player)
 controller.moveSprite(myPlane)
 scene.cameraFollowSprite(myPlane)
 controller.A.onEvent(ControllerButtonEvent.Repeated, function () {
-    sprites.spray(myPlane, img`.`)
+    sprites.spray(myPlane, forest_imgs.water)
 })
 
 tiles.setTileAt(location, assets.tile`transparency16`)
@@ -724,13 +724,13 @@ game.onUpdate(function () {
 })
 </code></pre>
 <pre><code class="lang-template">controller.A.onEvent(ControllerButtonEvent.Repeated, function () {
-    sprites.spray(myPlane, assets.image`water`)
+    sprites.spray(myPlane, forest_imgs.water)
 })
 
 game.set_health_of_trees(7)
 game.set_strength_of_wind(3)
 game.set_dryness_of_grass(3)
-let myPlane = sprites.create(assets.image`Fire Plane Right`, SpriteKind.Player)
+let myPlane = sprites.create(forest_imgs.Fire_Plane_2_Right, SpriteKind.Player)
 controller.moveSprite(myPlane)
 scene.cameraFollowSprite(myPlane)
 

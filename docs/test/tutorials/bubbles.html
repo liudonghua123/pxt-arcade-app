@@ -22,14 +22,14 @@
 <meta name="twitter:site" content="@msmakecode" />
 <meta name="twitter:title" content="Microsoft MakeCode Arcade" />
 <meta name="twitter:description" content="Develop your programming skills by quickly creating and modding retro arcade games with Blocks and JavaScript in the MakeCode editor" />
-<meta name="twitter:image" content="/static/tutorials/pizza-party/playtime.gif" />
+<meta name="twitter:image" content="/static/tutorials/bubbles/io2_title.png" />
 
 <meta property="og:title" content="Microsoft MakeCode Arcade" />
 <meta property="og:site_name" content="Microsoft MakeCode" />
 <meta property="og:type" content="website" />
 <meta property="og:description" content="Develop your programming skills by quickly creating and modding retro arcade games with Blocks and JavaScript in the MakeCode editor" />
 <meta property="fb:app_id" content="" />
-<meta property="og:image" content="/static/tutorials/pizza-party/playtime.gif" />
+<meta property="og:image" content="/static/tutorials/bubbles/io2_title.png" />
 
 <meta name="format-detection" content="telephone=no">
 <link rel="apple-touch-icon" href="docs/static/icons/favicon.ico">
@@ -500,644 +500,307 @@
 					</button>
 					
     <div class="ui text">
-        <h1 id="core-memories-with-joy">Core Memories with Joy</h1><!-- hints --><h2 id="intro-">Intro </h2><p>Are you ready to code a pizza party?</p>
-<p>Follow this tutorial to create your own multiplayer experience that you can play online together with family and friends!</p>
-<p><img class="ui image" src="/static/tutorials/pizza-party/playtime.gif" alt="Play Pizza Party" title="You can play with up to 4 people!" loading="lazy"></p>
-<h2 id="2-your-first-block">2. Your First Block</h2><p><strong>Meet the Cast!</strong></p>
-<p>We’ve already loaded the images of each character into an array.</p>
-<p>This is how the program will know which image
-to assign to each player.</p>
-<p>~hint What is an array?🕵🏽</p>
+        <h1 id="bubble-stacking-with-joy">Bubble Stacking with Joy</h1><!-- hints --><h2 id="intro-">Intro </h2><p>Are you ready to try something new with Joy and the rest of the emotions from Inside Out 2? Click <strong>Next</strong> to make your own game!</p>
+<p><img class="ui image" src="/static/tutorials/bubbles/io2_title.png" alt="Play Bubble Stacking with Joy" title="How many memories can you store?" loading="lazy"></p>
+<h2 id="2-your-first-block">2. Your First Block</h2><p><strong>Ready to start coding?</strong></p>
+<p>Let’s set the scene by adding “core memories” to the game window.</p>
 <hr>
-<p>In computer science, an <strong>ARRAY</strong> is an ordered list of items.</p>
-<p>We give this list a name, so that we can ask for items from this list later.</p>
-<p>For example, the list in our program is called <strong>characters</strong>.
-If we want to flip the first image from this list, we can add a block
-like this to our program:</p>
-<pre><code class="lang-block">let characters: Image[] = []
-characters[0].flipX()</code></pre>
-<p>hint~</p>
-<pre><code class="lang-blocks">let characters: Image[] = []
-
-characters = [
-pizzaassets.P1,
-pizzaassets.P2,
-pizzaassets.P3,
-pizzaassets.P4
-]</code></pre>
-
-    <div class="ui hint message">
-        <div class="content">
-            <pre><code class="lang-blocks">let characters: Image[] = []
-
-characters = [
-pizzaassets.P1,
-pizzaassets.P2,
-pizzaassets.P3,
-pizzaassets.P4
-]</code></pre>
-<h2 id="3-set-the-scene">3. Set the Scene</h2><p><strong>Let’s decide where the action happens.</strong></p>
 <ul>
-<li><p>:tree: Open the <code>||scene:Scene||</code> category and drag <br />
-<code>||scene:set background image to [ ]||</code><br />
-into <strong>the end</strong> of the<br />
+<li>:dot circle: Open the <code>||bubble: Bubble||</code> category <strong>in the toolbox</strong> and grab <br />
+<code>||bubble:create board||</code><br />
+then snap it inside the empty <br />
 <code>||loops(noclick): on start||</code> <br />
-container already in the workspace.</p>
-</li>
-<li><p>:paint brush: Click the empty square in the background block and flip to the <strong>Gallery</strong> tab.
-<img class="ui image" src="/static/skillmap/assets/gallery.png" alt="Switch to the Gallery tab" title=" " loading="lazy">
-then choose the first background image called <strong>City</strong>.</p>
-</li>
+block already in the workspace.</li>
 </ul>
-
-    <div class="ui hint message">
-        <div class="content">
-            <pre><code class="lang-blocks">let characters: Image[] = []
-
-characters = [
-pizzaassets.P1,
-pizzaassets.P2,
-pizzaassets.P3,
-pizzaassets.P4
-]
-
-//@highlight
-scene.setBackgroundImage(pizzaassets.City)</code></pre>
-<h2 id="4-set-players">4. Set players</h2><p><strong>Add Player 1</strong></p>
-<ul>
-<li>:suitcase: Open the <code>||pizza:Pizza||</code> category and drag <br />
-<code>||pizza:set game for [1] player(s) with [characters]||</code><br />
-into <strong>the end</strong> of the<br />
-<code>||loops(noclick): on start||</code> <br />
-container already in the workspace.</li>
-</ul>
-<p>~hint Pizza category? 🍕</p>
 <hr>
-<p>Within special tutorials, you’ll sometimes see custom categories that we don’t offer in our normal interface. These categories are <strong>Extensions</strong>.</p>
-<p>When creating custom projects or tutorials, people can craft their own blocks that others can add into their toolbox as an extension.  Since we can’t get to the <strong>Extensions</strong> gallery from a tutorial, the categories you need have been provided in the toolbox by default.</p>
-<p>If you want to use the <code>||pizza:Pizza||</code> category in another tutorial someday, make sure to grab the share link for this finished project and you’ll be able to import the blocks from this tutorial into another project!</p>
+<p>~hint What does that mean? 🤷🏽</p>
+<hr>
+<p>When giving instructions, we’ll color some text to give you a better idea of what you are looking for.</p>
+<p>For example, when we suggest the <br />
+<code>||bubble:create board||</code><br />
+block, we are pointing you toward <br /></p>
+<pre><code class="lang-block">bubble.createBoard()</code></pre>
 <p>hint~</p>
 
     <div class="ui hint message">
         <div class="content">
-            <pre><code class="lang-blocks">let characters: Image[] = []
-
-characters = [
-pizzaassets.P1,
-pizzaassets.P2,
-pizzaassets.P3,
-pizzaassets.P4
-]
-scene.setBackgroundImage(pizzaassets.City)
-//@highlight
-pizza.setPlayersWith (characters, 1)</code></pre>
-<h2 id="5-check-your-game-">5. Check Your Game!</h2><ul>
+            <pre><code class="lang-blocks">//@highlight
+bubble.createBoard()</code></pre>
+<h2 id="3-check-your-screen-">3. Check Your Screen!</h2><ul>
 <li>:binoculars: Look at your project in the game window to see what your code has done.</li>
 </ul>
-<p>You should see a single sprite in the game window that looks like the first image in your array.</p>
-<p><strong>Click on the game window and try moving your <em>sprite</em> using the arrow keys or joypad.</strong></p>
+<p>You should see two rows of memory bubbles lining the top of the game window. </p>
+<p><img class="ui image" src="/static/tutorials/bubbles/game.png" alt="The game window is in the lower left corner" title="Your game will automatically load in this window after every step." loading="lazy"></p>
+<h2 id="4-add-bubble">4. Add Bubble</h2><p><strong>Let’s add a memory bubble to aim.</strong></p>
+<hr>
+<ul>
+<li>:dot circle: Open the <code>||bubble: Bubble||</code> category <strong>in the toolbox</strong> and grab <br />
+<code>||bubble:load new bubble||</code><br />
+then snap it inside at <strong>the end of</strong> the <br />
+<code>||loops(noclick): on start||</code> <br />
+block already in the workspace.</li>
+</ul>
+<hr>
+<p>~hint ⁉️ No bubbles showing?</p>
+<hr>
+<p>This game relies on setting the scene before you add your main bubble.  If you don’t see anything loaded in your game window, you may have instructions in the wrong order.  </p>
+<p>Check to see that your code looks like this:</p>
+<pre><code class="lang-blocks">bubble.createBoard()
+//@highlight
+bubble.load_bubble()</code></pre>
+<p>hint~</p>
+
+    <div class="ui hint message">
+        <div class="content">
+            <pre><code class="lang-blocks">bubble.createBoard()
+//@highlight
+bubble.load_bubble()</code></pre>
+<h2 id="5-gaming-with-joy">5. Gaming with Joy</h2><p><strong>Add your emotion!</strong></p>
+<p>To do this, we’ll need to add a <strong>sprite</strong> to the bottom of the screen.</p>
 <p>~hint What’s a sprite? 💡</p>
 <hr>
 <p>In Arcade, each character or image that does something is called a <strong>SPRITE</strong>.</p>
 <p>Sprites have properties that you can use and change – things like scale, position, and lifespan are all properties of sprites.</p>
-<p>Our players will be sprites, too.</p>
+<p>Our characters will be sprites, too.</p>
 <p>hint~</p>
-<h2 id="6-add-more">6. Add more</h2><p><strong>Add more players.</strong></p>
 <ul>
-<li>:game: From the <code>||mp:Multiplayer||</code> category, drag the <br />
-<code>||mp:on [thisPlayer][connected]||</code> <br />
-bundle into <strong>an empty</strong> area of the workspace. <br /></li>
-</ul>
-<p>Now, when other players join, more sprites will appear in the game window.</p>
-<p><strong>Test it out by clicking the player icons to the left of the game window.</strong></p>
-<p><img class="ui image" src="/static/tutorials/pizza-party/players1.png" alt="Test with the player buttons to the left of the game window" title="An image highlighting the player icons" loading="lazy"></p>
-<p>📝 <em>Note: In actual game play, each player will join in order. To simulate this, make sure to test with <strong>Player 1</strong> first, then <strong>Player 2</strong>, then <strong>Player 3</strong>, etc.</em></p>
-
-    <div class="ui hint message">
-        <div class="content">
-            <pre><code class="lang-blocks">//@highlight
-mp.onControllerEvent(ControllerEvent.Connected, function (thisPlayer) {
-    pizza.setPlayersWith(characters, mp.getPlayerProperty(thisPlayer, mp.PlayerProperty.Number))
-})</code></pre>
-<h2 id="7-add-pizza">7. Add Pizza</h2><p><strong>Let the Pizza Fly!</strong></p>
-<ul>
-<li>:circle: Open the <code>||game:Game||</code> category and drag the<br />
-<code>||game: on game update every [500] ms||</code><br />
-bundle into <strong>an empty</strong> area of the workspace.</li>
-</ul>
-<ul>
-<li>:mouse pointer: Click the empty grey square inside the bundle to select an image for the projectile.
-<br />Switch to the <strong>Gallery</strong> tab to choose the <strong>pizza</strong>.</li>
-</ul>
-
-    <div class="ui hint message">
-        <div class="content">
-            <pre><code class="lang-blocks">//@highlight
-game.onUpdateInterval(500, function () {
-    projectile = sprites.createProjectileFromSide(img`
-        . . . . . . b b b b . . . . . .
-        . . . . . . b 4 4 4 b . . . . .
-        . . . . . . b b 4 4 4 b . . . .
-        . . . . . b 4 b b b 4 4 b . . .
-        . . . . b d 5 5 5 4 b 4 4 b . .
-        . . . . b 3 2 3 5 5 4 e 4 4 b .
-        . . . b d 2 2 2 5 7 5 4 e 4 4 e
-        . . . b 5 3 2 3 5 5 5 5 e e e e
-        . . b d 7 5 5 5 3 2 3 5 5 e e e
-        . . b 5 5 5 5 5 2 2 2 5 5 d e e
-        . b 3 2 3 5 7 5 3 2 3 5 d d e 4
-        . b 2 2 2 5 5 5 5 5 5 d d e 4 .
-        b d 3 2 d 5 5 5 d d d 4 4 . . .
-        b 5 5 5 5 d d 4 4 4 4 . . . . .
-        4 d d d 4 4 4 . . . . . . . . .
-        4 4 4 4 . . . . . . . . . . . .
-        `, randint(-100, 100), randint(-100, 100))
-})</code></pre>
-<h2 id="8-take-a-look">8. Take a look</h2><ul>
-<li>:binoculars: Take another look at your project.</li>
-</ul>
-<p>You should see pizza flying every which way!</p>
-<p>~hint Why is this happening? 🤷🏽‍♂️</p>
-<hr>
-<p>Let’s take a look at the blocks you just added.</p>
-<hr>
-<p><br />
-This <strong>event</strong> block triggers an action every 500 milliseconds. (That means, every  half second, the code inside of this container will run.)</p>
-<pre><code class="lang-block">game.onUpdateInterval(500, function () { })</code></pre>
-<hr>
-<p><br />
-This block launches the <strong> projectile</strong> of your choosing from the side of the screen with a <strong>velocity</strong> that’s randomly assigned each time the code runs.</p>
-<pre><code class="lang-block">    projectile = sprites.createProjectileFromSide(img`
-        . . . . . . b b b b . . . . . .
-        . . . . . . b 4 4 4 b . . . . .
-        . . . . . . b b 4 4 4 b . . . .
-        . . . . . b 4 b b b 4 4 b . . .
-        . . . . b d 5 5 5 4 b 4 4 b . .
-        . . . . b 3 2 3 5 5 4 e 4 4 b .
-        . . . b d 2 2 2 5 7 5 4 e 4 4 e
-        . . . b 5 3 2 3 5 5 5 5 e e e e
-        . . b d 7 5 5 5 3 2 3 5 5 e e e
-        . . b 5 5 5 5 5 2 2 2 5 5 d e e
-        . b 3 2 3 5 7 5 3 2 3 5 d d e 4
-        . b 2 2 2 5 5 5 5 5 5 d d e 4 .
-        b d 3 2 d 5 5 5 d d d 4 4 . . .
-        b 5 5 5 5 d d 4 4 4 4 . . . . .
-        4 d d d 4 4 4 . . . . . . . . .
-        4 4 4 4 . . . . . . . . . . . .
-        `, randint(-100, 100), randint(-100, 100))
-</code></pre>
-<p>hint~</p>
-<p>~hint Tell me about events! 🕵🏿‍♂️</p>
-<hr>
-<p><strong>EVENTS</strong> are things that might or might not happen while the code is running.
-A player might press a button, a timer might run out, or one sprite might overlap with another.</p>
-<p>Each of those things is an event that you can assign a special action to in Arcade.</p>
-<p>hint~</p>
-<p>~hint What are projectiles? 🕵️</p>
-<hr>
-<p>In MakeCode Arcade, <strong>PROJECTILES</strong> are sprites that move on their own,
-often in large quantities.</p>
-<p>Projectiles have extra properties that normal sprites don’t have.
-For example, they destroy themselves once they leave the screen so
-the user’s computer doesn’t get overwhelmed.</p>
-<p>hint~</p>
-<p>~hint What is velocity? 🕵🏻‍♀️</p>
-<hr>
-<p><strong>VELOCITY</strong> is the speed that something is moving in a certain direction.</p>
-<p>In MakeCode, we have velocity in two directions, <strong>vx</strong> and <strong>vy</strong>.</p>
-<p>The field <strong>vx</strong> is for the velocity going side to side.<br /></p>
-<p><em>Velocity in the x (horizontal) direction</em></p>
-<ul>
-<li>A <strong>vx</strong> greater than 0 will send something moving right.</li>
-<li>A <strong>vx</strong> less than 0 will send something moving left.</li>
-<li>A <strong>vx</strong> of 0 will not change its position.</li>
-</ul>
-<p>The field <strong>vy</strong> is for the velocity going up and down.<br /></p>
-<p><em>Velocity in the y (vertical) direction</em></p>
-<ul>
-<li>A <strong>vy</strong> greater than 0 will send something moving down.</li>
-<li>A <strong>vy</strong> less than 0 will send something moving up.</li>
-<li>A <strong>vy</strong> of 0 will not change its position.</li>
-</ul>
-<p>hint~</p>
-<h2 id="9-add-points">9. Add points</h2><p><strong>Add points when a player overlaps with a projectile.</strong></p>
-<ul>
-<li>:paper plane: Open the <code>||sprites:Sprites||</code> category and drag the<br />
-<code>||sprites:on [sprite] of kind [Player] overlaps...||</code>
-<br />bundle into <strong>an empty</strong> area of the workspace.</li>
-</ul>
-<p>~hint What does this bundle do? 🤷🏽‍♂️</p>
-<hr>
-<p>Let’s take a look at the blocks you just added.</p>
-<hr>
-<p><br />
-This <strong>event</strong> block triggers an action every time one of your Player sprites overlaps one of the projectile sprites. (Whenever a character overlaps the pizza.)</p>
-<pre><code class="lang-block">sprites.onOverlap(SpriteKind.Player, SpriteKind.Projectile, function (sprite, otherSprite) { })</code></pre>
-<hr>
-<p><br />
-This block deletes the pizza sprite (otherSprite) which was overlapped. It also
-adds a special disintigrate effect to the image while it’s happening.</p>
-<pre><code class="lang-block">    sprites.destroy(otherSprite, effects.disintegrate, 100)</code></pre>
-<hr>
-<p><br />
-This block adds one point to the score of the Player that overlapped the pizza.</p>
-<pre><code class="lang-block">    mp.changePlayerStateBy(mp.getPlayerBySprite(sprite), MultiplayerState.score, 1)</code></pre>
-<p>hint~</p>
-
-    <div class="ui hint message">
-        <div class="content">
-            <pre><code class="lang-blocks">//@highlight
-sprites.onOverlap(SpriteKind.Player, SpriteKind.Projectile, function (sprite, otherSprite) {
-    sprites.destroy(otherSprite, effects.disintegrate, 100)
-    mp.changePlayerStateBy(mp.getPlayerBySprite(sprite), MultiplayerState.score, 1)
-})</code></pre>
-<h2 id="10-test-">10. Test!</h2><ul>
-<li>:binoculars: Test your project!</li>
-</ul>
-<p>Use the multiplayer icons to test your game with each player.</p>
-<p>Each character should get a point when they overlap pizza.</p>
-<h2 id="11-first-to-20-wins-">11. First to 20 Wins!</h2><p><strong>First to 20 wins!</strong></p>
-<ul>
-<li>:users: Open the <code>||mp:Multiplayer||</code> category and drag the<br />
-<code>||mp:on score [20] for [thisPlayer]||</code>
-<br />bundle into <strong>an empty</strong> area of the workspace.</li>
-</ul>
-<p>~hint What does this bundle do? 🤷🏽‍♂️</p>
-<hr>
-<p>Let’s take a look at the blocks you just added.</p>
-<hr>
-<p><br />
-This <strong>event</strong> block triggers an action when a player’s score reaches 20. (It even has the potential to tell which player reached that score, though we won’t use that feature.)</p>
-<pre><code class="lang-block">mp.onScore(20, function (thisPlayer) { })</code></pre>
-<hr>
-<p><br />
-This block signals that the game should immediatedly end in a win.</p>
-<pre><code class="lang-block">    game.gameOver(true)</code></pre>
-<p>hint~</p>
-
-    <div class="ui hint message">
-        <div class="content">
-            <pre><code class="lang-blocks">//@highlight
-mp.onScore(20, function (thisPlayer) {
-    game.gameOver(true)
-})</code></pre>
-<h2 id="12-shake-it-up-">12. Shake it up!</h2><p><strong>Let’s shake things up!</strong></p>
-<p>Let’s make things a little more competitive by allowing sprites to bump one another out of the way.</p>
-<ul>
-<li>:paper plane: Open the <code>||sprites:Sprites||</code> category and drag the<br />
-<code>||sprites:on sprite of kind [Player] overlaps...||</code>
-<br />bundle into <strong>an empty</strong> area of the workspace.</li>
-</ul>
-<p>~hint What does this bundle do? 🤷🏽‍♂️</p>
-<hr>
-<p>Let’s take a look at the blocks you just added.</p>
-<hr>
-<p><br />
-This <strong>event</strong> block triggers an action whenever two Players (characters) overlap.</p>
-<pre><code class="lang-block">sprites.onOverlap(SpriteKind.Player, SpriteKind.Player, function (sprite, otherSprite) {  })</code></pre>
-<hr>
-<p><br />
-This block checks to see <strong>if</strong> the first player is holding down their (A) button. If so, the code inside will run.</p>
-<pre><code class="lang-block">    if (mp.isButtonPressed(mp.getPlayerBySprite(sprite), mp.MultiplayerButton.A)) {}</code></pre>
-<hr>
-<p><br />
-This code makes it look like the camera is shaking around by 4 pixels for half a second.</p>
-<pre><code class="lang-block">        scene.cameraShake(4, 500)</code></pre>
-<hr>
-<p><br />
-This is a custom block made for this tutorial. It bumps the other sprite to the opposite side of the screen from where the first sprite is located.</p>
-<pre><code class="lang-block">        pizza.bumpSprite(sprite, otherSprite)</code></pre>
-<hr>
-<p><br />
-This block takes a point away from the other sprite.</p>
-<pre><code class="lang-block">        mp.changePlayerStateBy(mp.getPlayerBySprite(otherSprite), MultiplayerState.score, -1)</code></pre>
-<p>hint~</p>
-
-    <div class="ui hint message">
-        <div class="content">
-            <pre><code class="lang-blocks">sprites.onOverlap(SpriteKind.Player, SpriteKind.Player, function (sprite, otherSprite) {
-    if (mp.isButtonPressed(mp.getPlayerBySprite(sprite), mp.MultiplayerButton.A)) {
-        scene.cameraShake(4, 500)
-        pizza.bumpSprite(sprite, otherSprite)
-        mp.changePlayerStateBy(mp.getPlayerBySprite(otherSprite), MultiplayerState.score, -1)
-    }
-})</code></pre>
-<pre><code class="lang-blockconfig.local">sprites.onOverlap(SpriteKind.Player, SpriteKind.Player, function (sprite, otherSprite) {
-    if (mp.isButtonPressed(mp.getPlayerBySprite(sprite), mp.MultiplayerButton.A)) {
-        scene.cameraShake(4, 500)
-        pizza.bumpSprite(sprite, otherSprite)
-        mp.changePlayerStateBy(mp.getPlayerBySprite(otherSprite), MultiplayerState.score, -1)
-    }
-})</code></pre>
-<h2 id="13-test-">13. Test!</h2><ul>
-<li>:binoculars: Test your project with two or more players.</li>
-</ul>
-<p>As <strong>Player 1</strong>, try holding down the (A) button (or space bar) and running into another player.  What happens?</p>
-<p>📝 <em>Note: At the moment, a player can only bump someone with a higher number. We’ll fix that in the next step.</em></p>
-<h2 id="14-again">14. Again</h2><p>What if the other player is holding down <em>their</em> (A) button?  Let’s add code that reverses the whammy.</p>
-<ul>
-<li><p>:mouse pointer: Right click on the <code>||logic(noclick):if||</code> statement and when the dropdown menu appears, select <strong>Duplicate</strong>.</p>
-</li>
-<li><p>:mouse pointer: Grab the deactivated <code>||logic(noclick):if||</code> statement and snap it in beneath the original.</p>
-</li>
-<li><p>:mouse pointer: Swap all of the <code>||variables(noclick):sprite||</code> and  <code>||variables(noclick):otherSprite||</code> variables within the second <code>||logic(noclick):if||</code> statement.</p>
-</li>
-</ul>
-<p><img class="ui image" src="/static/tutorials/pizza-party/duplicate.gif" alt="Duplicated the if-statement and swap sprite variables" title="Duplicate the if-statement and swap the sprite variables." loading="lazy"></p>
-
-    <div class="ui hint message">
-        <div class="content">
-            <pre><code class="lang-blocks">sprites.onOverlap(SpriteKind.Player, SpriteKind.Player, function (sprite, otherSprite) {
-    if (mp.isButtonPressed(mp.getPlayerBySprite(sprite), mp.MultiplayerButton.A)) {
-        scene.cameraShake(4, 500)
-        pizza.bumpSprite(sprite, otherSprite)
-        mp.changePlayerStateBy(mp.getPlayerBySprite(otherSprite), MultiplayerState.score, -1)
-    }
-    if (mp.isButtonPressed(mp.getPlayerBySprite(otherSprite), mp.MultiplayerButton.A)) {
-        scene.cameraShake(4, 500)
-        pizza.bumpSprite(otherSprite, sprite)
-        mp.changePlayerStateBy(mp.getPlayerBySprite(sprite), MultiplayerState.score, -1)
-    }
-})</code></pre>
-<pre><code class="lang-blockconfig.local">sprites.onOverlap(SpriteKind.Player, SpriteKind.Player, function (sprite, otherSprite) {
-    if (mp.isButtonPressed(mp.getPlayerBySprite(sprite), mp.MultiplayerButton.A)) {
-        scene.cameraShake(4, 500)
-        pizza.bumpSprite(sprite, otherSprite)
-        mp.changePlayerStateBy(mp.getPlayerBySprite(otherSprite), MultiplayerState.score, -1)
-    }
-    if (mp.isButtonPressed(mp.getPlayerBySprite(otherSprite), mp.MultiplayerButton.A)) {
-        scene.cameraShake(4, 500)
-        pizza.bumpSprite(otherSprite, sprite)
-        mp.changePlayerStateBy(mp.getPlayerBySprite(sprite), MultiplayerState.score, -1)
-    }
-})</code></pre>
-<h2 id="15-noop">15. NOOP</h2><p>The game won’t be fun if everyone holds (A) the whole time! Let’s make it so players only get a point if they’re <strong>not</strong> holding the (A) button.</p>
-<ul>
-<li>:binoculars: Find the <strong>Player/Projectile</strong> <code>||sprites(noclick):on overlap||</code> event that’s <strong>already in your workspace.</strong></li>
-</ul>
-<pre><code class="lang-blocks">sprites.onOverlap(SpriteKind.Player, SpriteKind.Projectile, function (sprite, otherSprite) {
-    sprites.destroy(otherSprite, effects.disintegrate, 100)
-    mp.changePlayerStateBy(mp.getPlayerBySprite(sprite), MultiplayerState.score, 1)
-})</code></pre>
-<ul>
-<li>:random: from the<code>||logic:Logic||</code> category, grab an empty <br />
-<code>||logic:if &lt;true&gt; then||</code> statement and snap it in <strong>above</strong> the <br />
-<code>||sprites(noclick):destroy [otherSprite]...||</code> block in your workspace.</li>
-</ul>
-<ul>
-<li>:random: from the<code>||logic:Logic||</code> category, grab<br />
-<code>||logic:not &lt; &gt;||</code> and snap it into the <br />
-<code>||logic(noclick):if &lt;true&gt; then||</code> statement to replace <code>||logic(noclick):&lt;true&gt;||</code></li>
-</ul>
-
-    <div class="ui hint message">
-        <div class="content">
-            <pre><code class="lang-blocks">sprites.onOverlap(SpriteKind.Player, SpriteKind.Projectile, function (sprite, otherSprite) {
-    if (!(mp.isButtonPressed(mp.getPlayerBySprite(sprite), mp.MultiplayerButton.A))) {  }
-    sprites.destroy(otherSprite, effects.disintegrate, 100)
-    mp.changePlayerStateBy(mp.getPlayerBySprite(sprite), MultiplayerState.score, 1)
-})</code></pre>
-<pre><code class="lang-blockconfig.local">sprites.onOverlap(SpriteKind.Player, SpriteKind.Projectile, function (sprite, otherSprite) {  })</code></pre>
-<h2 id="16-noop-cont-">16. NOOP Cont.</h2><ul>
-<li>:mouse pointer: Right click on the<pre><code class="lang-block">let sprite: Sprite = null
-mp.isButtonPressed(mp.getPlayerBySprite(sprite), mp.MultiplayerButton.A</code></pre>
-block already in the workspace and choose <strong>Duplicate</strong>.
-Drag the copy into the empty area inside <br /> <code>||logic(noclick):not &lt; &gt; ||</code>.</li>
-</ul>
-<ul>
-<li>:mouse pointer: Drag both of the blocks that were connected below the empty<br />
-<code>||logic(noclick):if||</code> statement and move them inside.</li>
-</ul>
-
-    <div class="ui hint message">
-        <div class="content">
-            <pre><code class="lang-blocks">sprites.onOverlap(SpriteKind.Player, SpriteKind.Projectile, function (sprite, otherSprite) {
-    if (!(mp.isButtonPressed(mp.getPlayerBySprite(sprite), mp.MultiplayerButton.A))) {
-        sprites.destroy(otherSprite, effects.disintegrate, 100)
-        mp.changePlayerStateBy(mp.getPlayerBySprite(sprite), MultiplayerState.score, 1)
-    }
-})</code></pre>
-<h2 id="17-ready-set-go">17. Ready, Set, Go</h2><p>Make sure everyone is prepared to play by adding a holding screen with sound effects at the beginning of the game.</p>
-<ul>
-<li>:circle: From the <code>||game:Game||</code> category, drag<br />
-<code>||game:splash [&quot;Press (A) when everyone is&quot;]...||</code> into the end of the <br />
+<li>:paper plane: Open the <code>||sprites:Sprites||</code> category and drag <br />
+<code>||variables(sprites):set [mySprite] to sprite [ ] of kind [Player]||</code><br />
+into the <strong>end of</strong> the <br />
 <code>||loops(noclick): on start||</code> <br />
 container already in the workspace.</li>
 </ul>
-<ul>
-<li><p>:headphones: From the <code>||music:Music||</code> category, drag<br />
-<code>||music:play [song ] [until done]||</code> into the end of the <br />
-<code>||loops(noclick): on start||</code> <br />
-container already in the workspace.</p>
-</li>
-<li><p>:mouse pointer: Click the empty rectagle in the<br />
-<code>||music(noclick):play song...||</code> block and switch to <strong>My Assets</strong> to choose the <strong>countdown</strong>.</p>
-</li>
-</ul>
+<p>💡 <em>To change sprites, click the character in the box and look under the <strong>Gallery</strong> tab.</em></p>
 
     <div class="ui hint message">
         <div class="content">
-            <pre><code class="lang-blocks">let characters = [
-pizzaassets.P1,
-pizzaassets.P2,
-pizzaassets.P3,
-pizzaassets.P4
-]
-scene.setBackgroundImage(assets.image`cityscape`)
-pizza.setPlayersWith (characters, 1)
-game.splash(&quot;Press (A) when everyone is&quot;, &quot;ready to start the game&quot;)
-
-music.play(music.createSong(assets.song`countdown`), music.PlaybackMode.UntilDone)
-
-</code></pre>
-<h2 id="18-test-it">18. Test It</h2><ul>
-<li>:binoculars: Test your final experience.</li>
+            <pre><code class="lang-blocks">bubble.createBoard()
+bubble.load_bubble()
+//@highlight
+let mySprite = sprites.create(io2_images.joy, SpriteKind.Player)</code></pre>
+<h2 id="6-check-your-game-">6. Check Your Game!</h2><ul>
+<li>:binoculars: Take a look at the game window again.</li>
 </ul>
-<p>You should be able to rack up points as you grab pizza until you press the (A) button, then the pizza should fly right by you.</p>
-<p><strong>For extra fun, login so you can play online with friends!</strong></p>
-<h2 id="finale">Finale</h2><p><strong>🍕 Cowabunga 🍕</strong></p>
-<p>You have finished your multiplayer experience!</p>
-<p>When you’re ready, sign-in, then select <strong>Done</strong> to start an online multiplayer session with up to three friends.</p>
-<p><strong>Who will be the first to score 20 points?</strong></p>
-<pre><code class="lang-blockconfig.global">game.onUpdateInterval(500, function () {
-    projectile = sprites.createProjectileFromSide(img`
-        . . . . . . b b b b . . . . . .
-        . . . . . . b 4 4 4 b . . . . .
-        . . . . . . b b 4 4 4 b . . . .
-        . . . . . b 4 b b b 4 4 b . . .
-        . . . . b d 5 5 5 4 b 4 4 b . .
-        . . . . b 3 2 3 5 5 4 e 4 4 b .
-        . . . b d 2 2 2 5 7 5 4 e 4 4 e
-        . . . b 5 3 2 3 5 5 5 5 e e e e
-        . . b d 7 5 5 5 3 2 3 5 5 e e e
-        . . b 5 5 5 5 5 2 2 2 5 5 d e e
-        . b 3 2 3 5 7 5 3 2 3 5 d d e 4
-        . b 2 2 2 5 5 5 5 5 5 d d e 4 .
-        b d 3 2 d 5 5 5 d d d 4 4 . . .
-        b 5 5 5 5 d d 4 4 4 4 . . . . .
-        4 d d d 4 4 4 . . . . . . . . .
-        4 4 4 4 . . . . . . . . . . . .
-        `, randint(-100, 100), randint(-100, 100))
-})
+<p>Your sprite should be in the middle of the screen.  </p>
+<p>In the next step, we’ll move it to a location that makes it look like it’s aiming the bubble.</p>
+<h2 id="7-gaming-with-joy">7. Gaming with Joy</h2><p><strong>Move your sprite.</strong></p>
+<p>Let’s add a block to make sure that the top of the sprite is right below the memory bubble. </p>
+<ul>
+<li>:paper plane: Open the <code>||sprites:Sprites||</code> category and drag <br />
+<code>||sprites:set [mySprite] [top] to [102]||</code><br />
+into the <strong>end of</strong> the <br />
+<code>||loops(noclick): on start||</code> <br />
+container already in the workspace.</li>
+</ul>
+<hr>
+<p>~hint Why 102? 🤷🏽‍♀️</p>
+<hr>
+<p>The coordinates of our screen go from <strong>0</strong> at the top to <strong>120</strong> at the very bottom. </p>
+<p>Since we want just a little bit of our character peeking up from below, we’ll set the top of our character to <strong>102</strong> so it rests just below the bubble that we will be aiming. </p>
+<p>hint~</p>
 
-let characters: Image[] = []
-pizza.setPlayersWith(characters, 1)
-
-mp.onControllerEvent(ControllerEvent.Connected, function (thisPlayer) {
-    pizza.setPlayersWith(characters, mp.getPlayerProperty(thisPlayer, mp.PlayerProperty.Number))
-})
-
-sprites.onOverlap(SpriteKind.Player, SpriteKind.Projectile, function (sprite, otherSprite) {
-    sprites.destroy(otherSprite, effects.disintegrate, 100)
-    mp.changePlayerStateBy(mp.getPlayerBySprite(sprite), MultiplayerState.score, 1)
-})
-
-mp.changePlayerStateBy(mp.getPlayerBySprite(sprite), MultiplayerState.score, 1)
-
-mp.onScore(20, function (thisPlayer) {
-    game.gameOver(true)
-})
-
-game.splash(&quot;Press (A) when everyone is&quot;, &quot;ready to start the game&quot;)
+    <div class="ui hint message">
+        <div class="content">
+            <pre><code class="lang-blocks">bubble.createBoard()
+bubble.load_bubble()
+let mySprite = sprites.create(io2_images.joy, SpriteKind.Player)
+//@highlight
+mySprite.top = 102
 </code></pre>
-<pre><code class="lang-template">let characters: Image[] = []
+<h2 id="8-aim-the-bubble-right">8. Aim the Bubble Right</h2><p><strong>Now that everything is on screen, it’s time to aim your shot.</strong></p>
+<ul>
+<li>:game: Open the <code>||controller:Controller||</code> category and drag the<br />
+<code>||controller:on [right] button [repeat]||</code><br />
+bundle into <strong>an empty area</strong> of the workspace. <br /></li>
+</ul>
+<hr>
+<p>You should be able to aim your bubble further to the right. </p>
 
-characters = [
-pizzaassets.P1,
-pizzaassets.P2,
-pizzaassets.P3,
-pizzaassets.P4
-]
+    <div class="ui hint message">
+        <div class="content">
+            <pre><code class="lang-blocks">
+//@highlight
+controller.right.onEvent(ControllerButtonEvent.Repeated, function () {
+    bubble.tilt_angle(bubble.Choice.Right)
+})</code></pre>
+<h2 id="9-aim-the-bubble-left">9. Aim the Bubble Left</h2><ul>
+<li>:mouse pointer: Right-click to <strong>Duplicate</strong> your <br />
+<code>||controller:on [right] button [repeat]||</code><br />
+bundle, then change both <strong>right</strong> options to <strong>left</strong>. <br /></li>
+</ul>
+<hr>
+<p>You should now be able to aim your bubble further to the left. </p>
 
+    <div class="ui hint message">
+        <div class="content">
+            <pre><code class="lang-blocks">
+//@highlight
+controller.left.onEvent(ControllerButtonEvent.Repeated, function () {
+    bubble.tilt_angle(bubble.Choice.Left)
+})</code></pre>
+<h2 id="10-time-to-toss">10. Time to Toss</h2><p><strong>Time to toss!</strong></p>
+<ul>
+<li>:game: Open the <code>||controller:Controller||</code> category and drag the<br />
+<code>||controller:on [A] button [pressed]||</code><br />
+bundle into <strong>an empty area</strong> of the workspace. <br /></li>
+</ul>
+<pre><code class="lang-blockconfig.local">controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
+    bubble.tossBubble()
+})</code></pre>
+
+    <div class="ui hint message">
+        <div class="content">
+            <pre><code class="lang-blocks">
+//@highlight
+controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
+    bubble.tossBubble()
+})</code></pre>
+<h2 id="11-test-">11. Test!</h2><ul>
+<li>:binoculars: Test your game.</li>
+</ul>
+<p>You should be able to toss a bubble in the direction it’s aimed when you press either the (A) button or the <strong>space bar</strong>.</p>
+<p>Give it a try!</p>
+<p>💡 <em>Notice that your bubble doesn’t properly stick where it hits, yet. There’s also no option to throw another bubble. We’ll fix both of those things in the steps that follow.</em></p>
+<pre><code class="lang-blockconfig.local">controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
+    bubble.tossBubble()
+})</code></pre>
+<h2 id="12-connecting-bubbles">12. Connecting Bubbles</h2><p><strong>Time to make the memories stick!</strong></p>
+<p>We want the bubbles to stick whenever they connect to the top wall or to another bubble.</p>
+<hr>
+<ul>
+<li>:tree: Open the <code>||scene: Scene||</code> category and grab the<br />
+<code>||scene:on [sprite] of kind [Bubble] ...||</code><br />
+bundle and drop it into <strong>an empty</strong> area of the workspace. <br /></li>
+</ul>
+<pre><code class="lang-blockconfig.local">controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
+    bubble.tossBubble()
+})</code></pre>
+
+    <div class="ui hint message">
+        <div class="content">
+            <pre><code class="lang-blocks">//@highlight
+scene.onHitWall(SpriteKind.Bubble, function (sprite, location) {
+    bubble.stick_to_wall(sprite, location)
+})</code></pre>
+<h2 id="13-check-your-screen-">13. Check Your Screen!</h2><ul>
+<li>:binoculars: Take a shot in the game window!</li>
+</ul>
+<p>When your bubble hits a grouping at the top, it should stick! If that grouping has three or more of the same color, you should also get points as they pop.</p>
+<h2 id="14-need-a-refill-">14. Need a Refill?</h2><p><strong>Let’s load a new bubble every time we toss the old one.</strong></p>
+<hr>
+<ul>
+<li>:dot circle: Open the <code>||bubble: Bubble||</code> category <strong>in the toolbox</strong> and grab <br />
+<code>||bubble:load new bubble||</code><br />
+then snap it inside at <strong>the end of</strong> the <br />
+<code>||controller(noclick):on [A] button [pressed]||</code><br />
+container already in the workspace.</li>
+</ul>
+<pre><code class="lang-blockconfig.local">controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
+    bubble.tossBubble()
+    bubble.load_bubble()
+})</code></pre>
+
+    <div class="ui hint message">
+        <div class="content">
+            <pre><code class="lang-blocks">
+controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
+    bubble.tossBubble()
+        //@highlight
+    bubble.load_bubble()
+})</code></pre>
+<h2 id="15-test-it">15. Test It</h2><ul>
+<li>:binoculars: <strong>Time to play your finished game!</strong></li>
+</ul>
+<p>Aim your bubble using the arrow keys, then toss with the (A) button or <strong>space bar</strong>.</p>
+<p>Can you clear the board fast enough to get a bonus?</p>
+<p>~hint Want to add more? 🫧</p>
+<hr>
+<p>Feel like going above and beyond? There are enough blocks in the toolbox to make these customizations:</p>
+<ul>
+<li>Add music in the background</li>
+<li>Add a background color to the board</li>
+<li>Win the game by reaching a score instead of clearing the board</li>
+<li>Change your character with each new ball</li>
+</ul>
+<p>hint~</p>
+<pre><code class="lang-blockconfig.local">controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
+    bubble.tossBubble()
+    bubble.load_bubble()
+})</code></pre>
+<h2 id="finale">Finale</h2><p><strong>🥳 Great Job 🥳</strong></p>
+<p>You have finished the tutorial!</p>
+<p>When you’re ready, click <strong>Done</strong> to share your game with family and friends!</p>
+<pre><code class="lang-blockconfig.global">
+let characters: Image[] = []
+let mySprite = sprites.create(io2_images.joy, SpriteKind.Player)
+mySprite.top = 102
+controller.right.onEvent(ControllerButtonEvent.Repeated, function () {
+    bubble.tilt_angle(bubble.Choice.Right)
+})
+scene.setBackgroundColor(14)
+
+music.play(music.createSong(hex`0096000408080106001c00010a006400f401640000040000000000000000000000000000000002d80000000200011608000a00011110001200011618001a00011120002200011628002a00011130003200011638003a00011140004200011848004a00011150005200011858005a00011160006200011868006a00011170007200011878007a00011180008200011288008a00010d90009200011298009a00010da000a2000112a800aa00010db000b2000112b800ba00010dc000c2000118c400c6000118cc00ce000118d000d2000118d800da00011ddc00de00011de400e600011de800ea00011df000f2000120f400f6000120f800fa000120fc00fe000120`), music.PlaybackMode.LoopingInBackground)
+scene.onHitWall(SpriteKind.Bubble, function (sprite, location) {
+    bubble.stick_to_wall(sprite, location)
+})
+mySprite.setImage(io2_images.fear)
+characters = [io2_images.joy, io2_images.anger, io2_images.envy, io2_images.fear]
+mySprite.setImage(characters[randint(0, characters.length - 1)])
 </code></pre>
 <pre><code class="lang-ghost">
-scene.setBackgroundColor(1)
+let characters: Image[] = []
+scene.onHitWall(SpriteKind.Bubble, function (sprite, location) {
+    bubble.stick_to_wall(sprite, location)
+    music.play(music.melodyPlayable(music.baDing), music.PlaybackMode.UntilDone)
+})
+controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
+    bubble.tossBubble()
+    bubble.load_bubble()
+})
+controller.right.onEvent(ControllerButtonEvent.Repeated, function () {
+    bubble.tilt_angle(bubble.Choice.Right)
+})
+info.onScore(100, function () {
+    game.setGameOverEffect(true, effects.confetti)
+    game.setGameOverPlayable(true, music.melodyPlayable(music.powerUp), false)
+    game.setGameOverMessage(true, &quot;GAME OVER!&quot;)
+})
+controller.left.onEvent(ControllerButtonEvent.Repeated, function () {
+    bubble.tilt_angle(bubble.Choice.Left)
+})
+scene.setBackgroundColor(14)
+music.play(music.createSong(hex`0096000408080106001c00010a006400f401640000040000000000000000000000000000000002d80000000200011608000a00011110001200011618001a00011120002200011628002a00011130003200011638003a00011140004200011848004a00011150005200011858005a00011160006200011868006a00011170007200011878007a00011180008200011288008a00010d90009200011298009a00010da000a2000112a800aa00010db000b2000112b800ba00010dc000c2000118c400c6000118cc00ce000118d000d2000118d800da00011ddc00de00011de400e600011de800ea00011df000f2000120f400f6000120f800fa000120fc00fe000120`), music.PlaybackMode.LoopingInBackground)
+let mySprite = sprites.create(io2_images.joy, SpriteKind.Player)
+mySprite.top = 102
+mySprite.startEffect(effects.fountain)
+bubble.createBoard()
+bubble.load_bubble()
+mySprite.setImage(io2_images.fear)
+characters = [io2_images.joy, io2_images.anger, io2_images.envy, io2_images.fear]
+mySprite.setImage(characters[randint(0, characters.length - 1)])
 </code></pre>
 <pre><code class="lang-package">multiplayer
-pizza-assets=github:kiki-lee/pizza-assets#v0.0.4</code></pre>
-<pre><code class="lang-customts">
-//% color=#b79900 icon=&quot;\uf1ce&quot;
-namespace pizza {
-
-    // Make sure not to remove later player when earlier player tested
-    export let playersConnected=0;
-
-    //% blockId=set_players
-    //% block=&quot;set game for $num player(s) with $list&quot;
-    //% num.defl=1
-    //% list.shadow=variables_get
-    //% list.defl=characters
-
-    export function setPlayersWith(list: Image[], num: number) {
-        if(num &gt;= pizza.playersConnected){
-            pizza.playersConnected = num;
-            sprites.destroyAllSpritesOfKind(SpriteKind.Player)
-            let xloc = [
-            40,
-            120,
-            40,
-            120
-            ]
-            let yloc = [
-            30,
-            30,
-            90,
-            90
-            ]
-            for (let index = 0; index &lt;= num - 1; index++) {
-                mp.setPlayerSprite(mp.getPlayerByIndex(index), sprites.create(list[index], SpriteKind.Player))
-                mp.getPlayerSprite(mp.getPlayerByIndex(index)).setStayInScreen(true)
-                mp.getPlayerSprite(mp.getPlayerByIndex(index)).setPosition(xloc.shift(), yloc.shift())
-                mp.getPlayerSprite(mp.getPlayerByIndex(index)).z = 1000
-                mp.moveWithButtons(mp.getPlayerByIndex(index))
-            }
-        }
-    }
-
-    //% blockId=bump_sprite
-    //% block=&quot;$thisSprite bump $thatSprite&quot;
-    //% thisSprite.shadow=variables_get
-    //% thisSprite.defl=sprite
-    //% thatSprite.shadow=variables_get
-    //% thatSprite.defl=otherSprite
-    export function bumpSprite(thisSprite: Sprite, thatSprite: Sprite) {
-        thatSprite.setPosition((thisSprite.x + 80) % 160, thisSprite.y)
-    }
-
-}
-
-namespace logic{
-    /**
-    * this just holds code
-    */
-    //% block=&quot;check if A button pressed&quot;  weight=300
-    //% handlerStatement=1
-    export function wrap1(handler: () =&gt; void) {
-        handler();
-    }
-}
-
-
-//% color=#6d5ba4 icon=&quot;\uf0f2&quot;
-namespace bundles{
-    /**
-    * this just holds code
-    */
-    //% block=&quot;check if A button pressed&quot;  weight=300
-    //% handlerStatement=1
-    export function wrap1(handler: () =&gt; void) {
-        handler();
-    }
-
-    /**
-    * this just holds code
-    */
-    //% block=&quot;create finish line&quot;  weight=300
-    //% handlerStatement=1
-    export function wrap2(handler: () =&gt; void) {
-        handler();
-    }
-
-    /**
-    * this just holds code
-    */
-    //% block=&quot;create players&quot;  weight=300
-    //% handlerStatement=1
-    export function wrap3(handler: () =&gt; void) {
-        handler();
-    }
-
-}
-</code></pre>
+io2_images=github:kiki-lee/io2_images#v0.0.1
+bubble=github:kiki-lee/bubble_ext#v0.1.0</code></pre>
 <pre><code class="lang-simtheme">{
     &quot;palette&quot;: [
         &quot;#000000&quot;,
         &quot;#FFFFFF&quot;,
-        &quot;#FF2121&quot;,
-        &quot;#DFDDDE&quot;,
-        &quot;#FF8135&quot;,
-        &quot;#FFF609&quot;,
-        &quot;#8E2EC4&quot;,
-        &quot;#408325&quot;,
-        &quot;#003FAD&quot;,
-        &quot;#87F2FF&quot;,
-        &quot;#EBF8F9&quot;,
+        &quot;#E40C0C&quot;,
+        &quot;#FF8FDB&quot;,
+        &quot;#FFF700&quot;,
+        &quot;#3AF2B5&quot;,
+        &quot;#0B9EF9&quot;,
+        &quot;#56E3F5&quot;,
+        &quot;#C4C3F4&quot;,
+        &quot;#E0E6E6&quot;,
+        &quot;#729280&quot;,
         &quot;#A4839F&quot;,
-        &quot;#F9F6E1&quot;,
+        &quot;#5C406c&quot;,
         &quot;#E5CDC4&quot;,
-        &quot;#91463d&quot;,
+        &quot;#8A0A0A&quot;,
         &quot;#000000&quot;
     ]
-}</code></pre>
-<pre><code class="lang-assetjson">{
-  &quot;assets.json&quot;: &quot;&quot;,
-  &quot;images.g.jres&quot;: &quot;{\n    \&quot;EM~exxT809P9NBm_MJip\&quot;: {\n        \&quot;data\&quot;: \&quot;003c000408010204001c00100500640000041e000004000000000000000000000000000a000004120000000400012408000c00012410001400012407001c00020a006400f401640000040000000000000000000000000000000003060018001c000124\&quot;,\n        \&quot;mimeType\&quot;: \&quot;application/mkcd-song\&quot;,\n        \&quot;displayName\&quot;: \&quot;countdown\&quot;,\n        \&quot;namespace\&quot;: \&quot;mySongs.\&quot;\n    },\n    \&quot;*\&quot;: {\n        \&quot;mimeType\&quot;: \&quot;image/x-mkcd-f4\&quot;,\n        \&quot;dataEncoding\&quot;: \&quot;base64\&quot;,\n        \&quot;namespace\&quot;: \&quot;myImages\&quot;\n    }\n}&quot;,
-  &quot;images.g.ts&quot;: &quot;// Auto-generated code. Do not edit.\nnamespace myImages {\n\n    helpers._registerFactory(\&quot;image\&quot;, function(name: string) {\n        switch(helpers.stringTrim(name)) {\n\n        }\n        return null;\n    })\n\n    helpers._registerFactory(\&quot;animation\&quot;, function(name: string) {\n        switch(helpers.stringTrim(name)) {\n\n        }\n        return null;\n    })\n\n    helpers._registerFactory(\&quot;song\&quot;, function(name: string) {\n        switch(helpers.stringTrim(name)) {\n            case \&quot;EM~exxT809P9NBm_MJip\&quot;:\n            case \&quot;countdown\&quot;:return hex`003c000408010204001c00100500640000041e000004000000000000000000000000000a000004120000000400012408000c00012410001400012407001c00020a006400f401640000040000000000000000000000000000000003060018001c000124`;\n        }\n        return null;\n    })\n\n}\n// Auto-generated code. Do not edit.\n&quot;,
-  &quot;main.blocks&quot;: &quot;&lt;xml xmlns=\&quot;https://developers.google.com/blockly/xml\&quot;&gt;&lt;variables&gt;&lt;variable type=\&quot;KIND_SpriteKind\&quot; id=\&quot;FYZr@.A$rvN+8LAu/_$h\&quot;&gt;Player&lt;/variable&gt;&lt;variable type=\&quot;KIND_SpriteKind\&quot; id=\&quot;:x9Q1i5{znaav46Y1~,x\&quot;&gt;Projectile&lt;/variable&gt;&lt;variable type=\&quot;KIND_SpriteKind\&quot; id=\&quot;8?=r?1s$%!|AR+tf7xhO\&quot;&gt;Food&lt;/variable&gt;&lt;variable type=\&quot;KIND_SpriteKind\&quot; id=\&quot;k;xtmP}{Hv8/XJ4JfmDy\&quot;&gt;Enemy&lt;/variable&gt;&lt;variable type=\&quot;KIND_SpriteKind\&quot; id=\&quot;puO5l3FbJBWQ5r:v.SFZ\&quot;&gt;Text&lt;/variable&gt;&lt;variable type=\&quot;KIND_SpriteKind\&quot; id=\&quot;rqrZnC|Ly643G5Xj;3Kh\&quot;&gt;StatusBar&lt;/variable&gt;&lt;variable type=\&quot;KIND_SpriteKind\&quot; id=\&quot;1:,xBs$=yz,5EBRM;^{.\&quot;&gt;Ball&lt;/variable&gt;&lt;variable type=\&quot;KIND_SpriteKind\&quot; id=\&quot;-wYv[`!q~SM,o+^P@sIF\&quot;&gt;Booth&lt;/variable&gt;&lt;variable type=\&quot;KIND_SpriteKind\&quot; id=\&quot;!uwdEu29lQNP1EOAR;vi\&quot;&gt;Mouse&lt;/variable&gt;&lt;variable type=\&quot;KIND_SpriteKind\&quot; id=\&quot;la/jdCwimN=V^:,%UZ0a\&quot;&gt;Crosshair&lt;/variable&gt;&lt;variable type=\&quot;KIND_SpriteKind\&quot; id=\&quot;fL~@5nmZB#3Y()i{17,`\&quot;&gt;Moon&lt;/variable&gt;&lt;variable type=\&quot;KIND_MultiplayerState\&quot; id=\&quot;4aX]Tag}almSu1Yh#8Y=\&quot;&gt;score&lt;/variable&gt;&lt;variable type=\&quot;KIND_MultiplayerState\&quot; id=\&quot;nq=+2BtO@:,/Mrxd`(.|\&quot;&gt;life&lt;/variable&gt;&lt;variable id=\&quot;T^uPUb:rM1`*KXuDUK3c\&quot;&gt;locations&lt;/variable&gt;&lt;variable id=\&quot;JS!BfWA8,N#*@#}3vHAw\&quot;&gt;projectile&lt;/variable&gt;&lt;variable id=\&quot;sqUr3drqXd6o;h|zkI_$\&quot;&gt;characters&lt;/variable&gt;&lt;variable id=\&quot;FVI~Q$-s??nIKC-CPr/|\&quot;&gt;index&lt;/variable&gt;&lt;variable id=\&quot;vx~4_DS4tc2BE;Y^dEC.\&quot;&gt;mySprite&lt;/variable&gt;&lt;variable id=\&quot;2$bvHnUD|Gf%IKIk|w(b\&quot;&gt;myBall&lt;/variable&gt;&lt;variable id=\&quot;mKX7Jy~^SYAp6|Fxv{vl\&quot;&gt;x-loc&lt;/variable&gt;&lt;variable id=\&quot;_dgCA+xg+vE.z_lmer$%\&quot;&gt;y-loc&lt;/variable&gt;&lt;variable id=\&quot;C;y/-#PAqdSa80Uk-a}F\&quot;&gt;list&lt;/variable&gt;&lt;variable id=\&quot;A-8gX8[k4p~V1+h$f@Ih\&quot;&gt;number&lt;/variable&gt;&lt;/variables&gt;&lt;/xml&gt;&quot;,
-  &quot;main.ts&quot;: &quot;\n&quot;,
-  &quot;pxt.json&quot;: &quot;{\n    \&quot;name\&quot;: \&quot;TMNT_Music\&quot;,\n    \&quot;description\&quot;: \&quot;\&quot;,\n    \&quot;dependencies\&quot;: {\n        \&quot;device\&quot;: \&quot;*\&quot;\n    },\n    \&quot;files\&quot;: [\n        \&quot;main.blocks\&quot;,\n        \&quot;main.ts\&quot;,\n        \&quot;assets.json\&quot;,\n        \&quot;images.g.jres\&quot;,\n        \&quot;images.g.ts\&quot;,\n        \&quot;tilemap.g.jres\&quot;,\n        \&quot;tilemap.g.ts\&quot;\n    ],\n    \&quot;targetVersions\&quot;: {\n        \&quot;branch\&quot;: \&quot;v1.12.30\&quot;,\n        \&quot;tag\&quot;: \&quot;v1.12.30\&quot;,\n        \&quot;commits\&quot;: \&quot;https://github.com/microsoft/pxt-arcade/commits/33228b1cc7e1bea3f728c26a6047bdef35fd2c09\&quot;,\n        \&quot;target\&quot;: \&quot;1.12.30\&quot;,\n        \&quot;pxt\&quot;: \&quot;8.5.41\&quot;\n    },\n    \&quot;preferredEditor\&quot;: \&quot;tsprj\&quot;,\n    \&quot;palette\&quot;: [\n        \&quot;#000000\&quot;,\n        \&quot;#FFFFFF\&quot;,\n        \&quot;#FF2121\&quot;,\n        \&quot;#DFDDDE\&quot;,\n        \&quot;#FF8135\&quot;,\n        \&quot;#FFF609\&quot;,\n        \&quot;#8E2EC4\&quot;,\n        \&quot;#408325\&quot;,\n        \&quot;#003FAD\&quot;,\n        \&quot;#87F2FF\&quot;,\n        \&quot;#EBF8F9\&quot;,\n        \&quot;#A4839F\&quot;,\n        \&quot;#F9F6E1\&quot;,\n        \&quot;#E5CDC4\&quot;,\n        \&quot;#91463d\&quot;,\n        \&quot;#000000\&quot;\n    ]\n}\n&quot;,
-  &quot;tilemap.g.jres&quot;: &quot;{\n    \&quot;transparency16\&quot;: {\n        \&quot;data\&quot;: \&quot;hwQQABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==\&quot;,\n        \&quot;mimeType\&quot;: \&quot;image/x-mkcd-f4\&quot;,\n        \&quot;tilemapTile\&quot;: true\n    },\n    \&quot;*\&quot;: {\n        \&quot;mimeType\&quot;: \&quot;image/x-mkcd-f4\&quot;,\n        \&quot;dataEncoding\&quot;: \&quot;base64\&quot;,\n        \&quot;namespace\&quot;: \&quot;myTiles\&quot;\n    }\n}&quot;,
-  &quot;tilemap.g.ts&quot;: &quot;// Auto-generated code. Do not edit.\nnamespace myTiles {\n    //% fixedInstance jres blockIdentity=images._tile\n    export const transparency16 = image.ofBuffer(hex``);\n\n    helpers._registerFactory(\&quot;tile\&quot;, function(name: string) {\n        switch(helpers.stringTrim(name)) {\n            case \&quot;transparency16\&quot;:return transparency16;\n        }\n        return null;\n    })\n\n}\n// Auto-generated code. Do not edit.\n&quot;
 }</code></pre>
 
         </div>
